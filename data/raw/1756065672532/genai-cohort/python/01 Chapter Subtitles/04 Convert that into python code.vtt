@@ -1,0 +1,1157 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.640
+All right, continuing this
+
+2
+00:00:02.640 --> 00:00:04.040
+exact same thing that okay,
+
+3
+00:00:04.040 --> 00:00:05.520
+we do have the steps.
+
+4
+00:00:05.520 --> 00:00:07.600
+Can we convert these steps
+
+5
+00:00:07.600 --> 00:00:09.520
+into Python program?
+
+6
+00:00:09.520 --> 00:00:11.160
+Not really the perfect Python
+
+7
+00:00:11.160 --> 00:00:13.400
+program, but somewhat little bit
+
+8
+00:00:13.400 --> 00:00:14.920
+like that so that I get an idea what
+
+9
+00:00:14.920 --> 00:00:16.640
+it's like to code in the Python.
+
+10
+00:00:16.640 --> 00:00:17.840
+So I will go into the code
+
+11
+00:00:17.840 --> 00:00:19.400
+editor, this is how it looks like
+
+12
+00:00:19.400 --> 00:00:21.440
+and I literally have just drag
+
+13
+00:00:21.440 --> 00:00:23.600
+and dropped a folder to it.
+
+14
+00:00:23.600 --> 00:00:25.200
+A super easy work on that.
+
+15
+00:00:25.750 --> 00:00:26.790
+So I'll even show
+
+16
+00:00:26.790 --> 00:00:28.230
+you what I did here.
+
+17
+00:00:28.230 --> 00:00:30.150
+So let me just show you.
+
+18
+00:00:30.150 --> 00:00:31.350
+I do have a couple of other
+
+19
+00:00:31.350 --> 00:00:32.710
+stuff as well going on,
+
+20
+00:00:32.710 --> 00:00:34.070
+but let me just show you.
+
+21
+00:00:34.070 --> 00:00:35.950
+So I opened the program and once
+
+22
+00:00:35.950 --> 00:00:38.150
+I opened this up, or I can actually
+
+23
+00:00:38.150 --> 00:00:39.310
+go ahead and show you again.
+
+24
+00:00:39.310 --> 00:00:39.990
+Fresh.
+
+25
+00:00:39.990 --> 00:00:41.670
+So this is how it freshly looks
+
+26
+00:00:41.670 --> 00:00:43.190
+like when you open this up.
+
+27
+00:00:43.190 --> 00:00:44.390
+This is VS code.
+
+28
+00:00:44.390 --> 00:00:45.830
+I have installed a couple of themes.
+
+29
+00:00:45.830 --> 00:00:47.380
+I will walk you through as well.
+
+30
+00:00:47.380 --> 00:00:48.470
+But I have just literally
+
+31
+00:00:49.080 --> 00:00:51.333
+created empty folder on my English
+
+32
+00:00:51.333 --> 00:00:52.460
+subfolder there.
+
+33
+00:00:52.460 --> 00:00:53.980
+Python udemy is where we are going
+
+34
+00:00:53.980 --> 00:00:54.980
+to write all of our code.
+
+35
+00:00:54.980 --> 00:00:56.700
+I'll just drag and drop up here.
+
+36
+00:00:56.700 --> 00:00:58.540
+So that's all I did here.
+
+37
+00:00:58.540 --> 00:01:00.220
+Now once I go ahead and open this up,
+
+38
+00:01:00.220 --> 00:01:01.220
+first of all the theme
+
+39
+00:01:01.220 --> 00:01:02.220
+that I use because a lot of
+
+40
+00:01:02.220 --> 00:01:04.540
+people love it and I'm super proud
+
+41
+00:01:04.540 --> 00:01:06.140
+of it that I created this.
+
+42
+00:01:06.140 --> 00:01:07.860
+So you can go up here and search
+
+43
+00:01:07.860 --> 00:01:09.260
+for a chai theme.
+
+44
+00:01:09.260 --> 00:01:10.860
+It actually comes up very top.
+
+45
+00:01:10.860 --> 00:01:11.820
+So chai theme.
+
+46
+00:01:11.820 --> 00:01:12.660
+I love chai.
+
+47
+00:01:12.660 --> 00:01:13.580
+I love T.
+
+48
+00:01:13.580 --> 00:01:14.620
+So go ahead and use it.
+
+49
+00:01:14.620 --> 00:01:16.260
+I use a dark color of it.
+
+50
+00:01:16.260 --> 00:01:17.820
+The code looks absolutely
+
+51
+00:01:17.820 --> 00:01:18.580
+beautiful in this.
+
+52
+00:01:18.580 --> 00:01:20.140
+So that's why I go ahead and use it.
+
+53
+00:01:20.830 --> 00:01:21.950
+You can also install this,
+
+54
+00:01:21.950 --> 00:01:23.430
+it will look absolutely good
+
+55
+00:01:23.430 --> 00:01:24.590
+on your screen as well.
+
+56
+00:01:24.590 --> 00:01:25.950
+And we do have a couple
+
+57
+00:01:25.950 --> 00:01:27.470
+of Python extension as well.
+
+58
+00:01:27.470 --> 00:01:28.630
+If you just go ahead and search
+
+59
+00:01:28.630 --> 00:01:30.950
+for Python you will find other
+
+60
+00:01:30.950 --> 00:01:32.990
+instructions, other extensions which
+
+61
+00:01:32.990 --> 00:01:34.270
+will make your life a little easier.
+
+62
+00:01:34.270 --> 00:01:35.270
+For example, you just have
+
+63
+00:01:35.270 --> 00:01:36.910
+this Python install it.
+
+64
+00:01:36.910 --> 00:01:37.910
+It will give you the color
+
+65
+00:01:37.910 --> 00:01:39.030
+codes and type hinting.
+
+66
+00:01:39.030 --> 00:01:41.150
+You can also install Pylance as well.
+
+67
+00:01:41.150 --> 00:01:42.950
+Again color code, type hinting.
+
+68
+00:01:42.950 --> 00:01:44.270
+They will help you to write the code.
+
+69
+00:01:44.270 --> 00:01:45.070
+You don't have to type
+
+70
+00:01:45.070 --> 00:01:46.340
+everything manually.
+
+71
+00:01:46.340 --> 00:01:48.580
+They literally helps you out in that.
+
+72
+00:01:48.580 --> 00:01:49.900
+Now in this we can click
+
+73
+00:01:49.900 --> 00:01:51.180
+up here at the top to create
+
+74
+00:01:51.180 --> 00:01:52.460
+a folder and create a file.
+
+75
+00:01:52.460 --> 00:01:53.500
+We'll create a folder because
+
+76
+00:01:53.500 --> 00:01:54.500
+we want to mimic this.
+
+77
+00:01:54.500 --> 00:01:55.260
+So this is not going
+
+78
+00:01:55.260 --> 00:01:56.660
+to be original code.
+
+79
+00:01:56.660 --> 00:01:59.180
+Let's call this one as 00 and we'll
+
+80
+00:01:59.180 --> 00:02:00.940
+use an underscore and we're going
+
+81
+00:02:00.940 --> 00:02:02.260
+to call this one as Python.
+
+82
+00:02:02.260 --> 00:02:05.060
+So this is my chapter 00 inside
+
+83
+00:02:05.060 --> 00:02:06.300
+this I'll create a new file
+
+84
+00:02:06.300 --> 00:02:07.340
+and we're going to call this
+
+85
+00:02:07.340 --> 00:02:11.860
+one as non Python code because
+
+86
+00:02:11.860 --> 00:02:13.460
+it's not really a Python code
+
+87
+00:02:13.460 --> 00:02:14.430
+but, but the extension is
+
+88
+00:02:14.430 --> 00:02:14.670
+important.
+
+89
+00:02:14.670 --> 00:02:16.830
+We're going to call this as PY so
+
+90
+00:02:16.830 --> 00:02:18.510
+that we get a feel of what it's like
+
+91
+00:02:18.510 --> 00:02:20.350
+to code in the Python itself.
+
+92
+00:02:20.350 --> 00:02:21.470
+Now don't worry, I will walk
+
+93
+00:02:21.470 --> 00:02:22.630
+you through with installation
+
+94
+00:02:22.630 --> 00:02:23.710
+and everything of it.
+
+95
+00:02:23.710 --> 00:02:25.470
+And in fact let me write this.
+
+96
+00:02:25.470 --> 00:02:26.990
+This whole part is just
+
+97
+00:02:26.990 --> 00:02:27.870
+to get an experience.
+
+98
+00:02:28.990 --> 00:02:31.110
+You don't have to write the code
+
+99
+00:02:31.110 --> 00:02:32.590
+or even follow along with me.
+
+100
+00:02:32.590 --> 00:02:34.830
+So I will just say do not follow or
+
+101
+00:02:34.830 --> 00:02:38.110
+probably I'll say just experience.
+
+102
+00:02:43.000 --> 00:02:44.200
+Just experience it.
+
+103
+00:02:44.200 --> 00:02:45.960
+It's really hard to type in.
+
+104
+00:02:46.520 --> 00:02:48.400
+To type and talk at the same time.
+
+105
+00:02:48.400 --> 00:02:49.840
+But go ahead and just
+
+106
+00:02:49.840 --> 00:02:50.880
+experience this part.
+
+107
+00:02:50.880 --> 00:02:51.760
+You don't have to write any
+
+108
+00:02:51.760 --> 00:02:53.320
+code, even if it's actually
+
+109
+00:02:53.320 --> 00:02:54.600
+not a real code itself.
+
+110
+00:02:54.600 --> 00:02:55.800
+It's not going to work.
+
+111
+00:02:55.800 --> 00:02:57.480
+But I just wanted to have
+
+112
+00:02:57.480 --> 00:02:59.960
+explanation or brief overview.
+
+113
+00:03:00.680 --> 00:03:01.680
+So just like we have
+
+114
+00:03:01.680 --> 00:03:02.880
+actually extracted the things
+
+115
+00:03:02.880 --> 00:03:04.440
+into a separate box.
+
+116
+00:03:04.440 --> 00:03:05.800
+This box in the world
+
+117
+00:03:05.800 --> 00:03:07.880
+of programming known as function.
+
+118
+00:03:08.570 --> 00:03:10.890
+And yeah, function means I will just
+
+119
+00:03:10.890 --> 00:03:12.490
+wrap the things, whatever
+
+120
+00:03:12.490 --> 00:03:14.250
+my instruction is, into a box.
+
+121
+00:03:14.250 --> 00:03:16.250
+So literally function is a box.
+
+122
+00:03:16.250 --> 00:03:18.410
+So this is how you create your box.
+
+123
+00:03:18.410 --> 00:03:20.970
+So we'll call our box as makechai.
+
+124
+00:03:21.690 --> 00:03:22.250
+Pretty good.
+
+125
+00:03:22.250 --> 00:03:24.010
+And we use a syntax of these
+
+126
+00:03:24.010 --> 00:03:26.210
+parenthesis, then a simple column.
+
+127
+00:03:26.210 --> 00:03:27.530
+This is syntax.
+
+128
+00:03:27.530 --> 00:03:29.490
+You don't have to even remember that.
+
+129
+00:03:29.490 --> 00:03:31.690
+Eventually you will just learn them.
+
+130
+00:03:31.690 --> 00:03:33.690
+Then I hit enter and I see that I
+
+131
+00:03:33.690 --> 00:03:35.570
+do have four spaces automatically.
+
+132
+00:03:35.570 --> 00:03:36.370
+This is Python.
+
+133
+00:03:36.370 --> 00:03:38.010
+Python works on indentation.
+
+134
+00:03:38.010 --> 00:03:39.450
+If you go ahead and remove
+
+135
+00:03:39.450 --> 00:03:41.350
+this, this is bad.
+
+136
+00:03:41.350 --> 00:03:42.630
+Your code is not going to work.
+
+137
+00:03:42.630 --> 00:03:43.910
+We will learn about these
+
+138
+00:03:43.910 --> 00:03:45.030
+details later on.
+
+139
+00:03:45.030 --> 00:03:47.190
+But you should give indentation.
+
+140
+00:03:47.190 --> 00:03:48.390
+And it's usually not
+
+141
+00:03:48.390 --> 00:03:49.590
+recommended as tab, it's
+
+142
+00:03:49.590 --> 00:03:51.550
+recommended as four spaces.
+
+143
+00:03:51.550 --> 00:03:53.110
+So 1, 2, 3, 4.
+
+144
+00:03:53.110 --> 00:03:54.430
+I will walk you through why it
+
+145
+00:03:54.430 --> 00:03:56.150
+is four spaces, not the tab.
+
+146
+00:03:56.150 --> 00:03:57.550
+And internally tab also
+
+147
+00:03:57.550 --> 00:03:58.590
+gives you four spaces.
+
+148
+00:03:58.590 --> 00:03:59.910
+But we'll talk about it later.
+
+149
+00:04:00.550 --> 00:04:01.790
+Then we go ahead and simply
+
+150
+00:04:01.790 --> 00:04:04.710
+say not if not.
+
+151
+00:04:04.710 --> 00:04:06.110
+And yeah, it's a little bit
+
+152
+00:04:06.110 --> 00:04:07.910
+weird, but you'll understand that
+
+153
+00:04:07.910 --> 00:04:10.310
+kettle has water.
+
+154
+00:04:11.510 --> 00:04:13.270
+And then I simply go ahead and put
+
+155
+00:04:13.270 --> 00:04:14.910
+the same parenthesis colon
+
+156
+00:04:14.910 --> 00:04:19.910
+and we simply say fill cattle.
+
+157
+00:04:19.910 --> 00:04:20.630
+There we go.
+
+158
+00:04:21.350 --> 00:04:22.150
+Can you understand
+
+159
+00:04:22.150 --> 00:04:23.510
+this piece of code?
+
+160
+00:04:23.510 --> 00:04:24.910
+And I'm pretty sure you can.
+
+161
+00:04:24.910 --> 00:04:26.910
+It's saying if not kettle has water.
+
+162
+00:04:26.910 --> 00:04:28.230
+So it's probably saying that if
+
+163
+00:04:28.230 --> 00:04:29.590
+cattle doesn't have the water,
+
+164
+00:04:30.150 --> 00:04:32.390
+go ahead and fill it with the water.
+
+165
+00:04:34.000 --> 00:04:35.280
+And yes, if you can understand
+
+166
+00:04:35.280 --> 00:04:37.120
+this part, yeah, this is it.
+
+167
+00:04:37.120 --> 00:04:38.480
+That's how we actually go
+
+168
+00:04:38.480 --> 00:04:39.840
+ahead and write our program.
+
+169
+00:04:40.560 --> 00:04:42.320
+Let's go ahead and move on further.
+
+170
+00:04:42.320 --> 00:04:43.600
+So Katl part is done.
+
+171
+00:04:44.160 --> 00:04:45.760
+Then let's go ahead and ask somebody
+
+172
+00:04:45.760 --> 00:04:48.640
+to say that plug in kettle so
+
+173
+00:04:48.640 --> 00:04:50.080
+that they can actually plug in.
+
+174
+00:04:50.080 --> 00:04:50.920
+So we'll just go ahead
+
+175
+00:04:50.920 --> 00:04:52.160
+and say plug in the cattle.
+
+176
+00:04:52.160 --> 00:04:53.320
+That's another function that
+
+177
+00:04:53.320 --> 00:04:54.320
+means somebody will do it.
+
+178
+00:04:54.320 --> 00:04:55.400
+There's more instruction how
+
+179
+00:04:55.400 --> 00:04:58.000
+to do it, like pull up the cord,
+
+180
+00:04:58.000 --> 00:05:00.820
+move nearby, switch, plug it.
+
+181
+00:05:00.820 --> 00:05:01.980
+Like there are more instructions,
+
+182
+00:05:01.980 --> 00:05:02.940
+but let's just call this,
+
+183
+00:05:02.940 --> 00:05:04.220
+this is again a function.
+
+184
+00:05:04.780 --> 00:05:06.060
+Then this will help you
+
+185
+00:05:06.060 --> 00:05:08.300
+to actually, boil water.
+
+186
+00:05:08.300 --> 00:05:08.860
+There we go.
+
+187
+00:05:08.860 --> 00:05:10.620
+Write another function for it.
+
+188
+00:05:10.620 --> 00:05:12.220
+And we're going to say if not,
+
+189
+00:05:14.290 --> 00:05:17.380
+let's just say is cup clean?
+
+190
+00:05:17.380 --> 00:05:18.220
+So what should I do if
+
+191
+00:05:18.220 --> 00:05:19.580
+the cup is not clean?
+
+192
+00:05:20.140 --> 00:05:21.020
+You might be saying,
+
+193
+00:05:21.020 --> 00:05:22.780
+hey, just wash the cup.
+
+194
+00:05:22.780 --> 00:05:23.460
+Probably yes.
+
+195
+00:05:23.460 --> 00:05:24.380
+Or pick another cup.
+
+196
+00:05:24.380 --> 00:05:25.740
+It could also be correct.
+
+197
+00:05:27.070 --> 00:05:28.070
+After that we simply go
+
+198
+00:05:28.070 --> 00:05:31.750
+ahead and say add to cup.
+
+199
+00:05:31.750 --> 00:05:33.150
+What do you want to add to the cup?
+
+200
+00:05:33.870 --> 00:05:36.430
+Now probably, we'll see T leaves.
+
+201
+00:05:37.310 --> 00:05:37.950
+Yes.
+
+202
+00:05:37.950 --> 00:05:38.790
+And let's go ahead.
+
+203
+00:05:38.790 --> 00:05:40.190
+And what else do you want to add?
+
+204
+00:05:40.190 --> 00:05:41.230
+Maybe sugar.
+
+205
+00:05:41.230 --> 00:05:42.870
+So let's use the same method because
+
+206
+00:05:42.870 --> 00:05:45.710
+we are adding to the cup itself.
+
+207
+00:05:45.710 --> 00:05:48.390
+Then we probably want to pour it.
+
+208
+00:05:48.390 --> 00:05:49.630
+So let's just go ahead and say
+
+209
+00:05:49.630 --> 00:05:51.630
+there's a pouring, method
+
+210
+00:05:52.380 --> 00:05:53.380
+which says that, hey,
+
+211
+00:05:53.380 --> 00:05:54.460
+where do you want to pour?
+
+212
+00:05:54.460 --> 00:05:57.500
+We want to pour it into a pour.
+
+213
+00:05:57.500 --> 00:05:58.460
+What to pour?
+
+214
+00:05:58.460 --> 00:06:02.140
+Probably let's just say boiled water.
+
+215
+00:06:02.140 --> 00:06:03.660
+Maybe just like that.
+
+216
+00:06:03.660 --> 00:06:05.420
+Then probably you want to stir.
+
+217
+00:06:05.420 --> 00:06:06.780
+Where do you want to stir?
+
+218
+00:06:06.780 --> 00:06:07.740
+Maybe cup.
+
+219
+00:06:08.780 --> 00:06:09.900
+Oops, cup.
+
+220
+00:06:10.620 --> 00:06:12.100
+And then we simply want
+
+221
+00:06:12.100 --> 00:06:15.100
+to say serve, chai.
+
+222
+00:06:15.100 --> 00:06:16.140
+And there we go.
+
+223
+00:06:16.140 --> 00:06:17.460
+And function in the world
+
+224
+00:06:17.460 --> 00:06:18.940
+of Python also needs to be called.
+
+225
+00:06:18.940 --> 00:06:20.020
+So we'll just move a little
+
+226
+00:06:20.020 --> 00:06:21.220
+bit there and we'll just
+
+227
+00:06:21.220 --> 00:06:22.980
+call this as make chai.
+
+228
+00:06:22.980 --> 00:06:23.980
+And there we go, we
+
+229
+00:06:23.980 --> 00:06:24.900
+call the function.
+
+230
+00:06:25.700 --> 00:06:26.940
+So although you probably didn't
+
+231
+00:06:26.940 --> 00:06:28.220
+understand how to write this,
+
+232
+00:06:28.220 --> 00:06:29.860
+but if you can understand, okay,
+
+233
+00:06:29.860 --> 00:06:32.780
+I get like 60% of it or even 30%
+
+234
+00:06:32.780 --> 00:06:34.820
+of it, that how this is.
+
+235
+00:06:34.820 --> 00:06:36.060
+Eventually our Python code
+
+236
+00:06:36.060 --> 00:06:37.220
+will look exactly like this.
+
+237
+00:06:37.220 --> 00:06:39.180
+And this, believe it or not,
+
+238
+00:06:39.180 --> 00:06:40.660
+is Python programming.
+
+239
+00:06:40.660 --> 00:06:42.060
+That is why everybody says that
+
+240
+00:06:42.060 --> 00:06:43.460
+it is super easy to learn.
+
+241
+00:06:43.460 --> 00:06:45.460
+If you can read English, you can
+
+242
+00:06:45.460 --> 00:06:46.700
+definitely read Python code.
+
+243
+00:06:46.700 --> 00:06:47.340
+And this is actually
+
+244
+00:06:47.340 --> 00:06:48.380
+a legit Python code.
+
+245
+00:06:48.380 --> 00:06:49.380
+We have used so much of
+
+246
+00:06:49.380 --> 00:06:50.820
+the functionality already into it.
+
+247
+00:06:51.340 --> 00:06:52.820
+Now surely it's not an accurate code.
+
+248
+00:06:52.820 --> 00:06:55.540
+I would 100% say that, but it's
+
+249
+00:06:55.540 --> 00:06:56.860
+fairly understandable.
+
+250
+00:06:56.860 --> 00:06:58.420
+And that's the whole point of
+
+251
+00:06:58.420 --> 00:07:00.860
+the Python that anybody can learn it
+
+252
+00:07:00.860 --> 00:07:02.820
+as long as you know how to read it.
+
+253
+00:07:02.820 --> 00:07:04.300
+Like, if not, kettle has water.
+
+254
+00:07:04.300 --> 00:07:05.980
+So probably it's saying, if kettle
+
+255
+00:07:05.980 --> 00:07:08.780
+doesn't have it, we'll fill this.
+
+256
+00:07:08.780 --> 00:07:10.500
+So based on condition, we have
+
+257
+00:07:10.500 --> 00:07:11.620
+learned so much conditions
+
+258
+00:07:11.620 --> 00:07:13.340
+and functions and whatnot, even
+
+259
+00:07:13.340 --> 00:07:15.260
+methods and strings and whatnot.
+
+260
+00:07:15.260 --> 00:07:17.300
+But the whole point is that you
+
+261
+00:07:17.300 --> 00:07:18.980
+understand this piece of code and we
+
+262
+00:07:18.980 --> 00:07:21.260
+have converted this whole thing,
+
+263
+00:07:21.260 --> 00:07:23.100
+probably not line by line, but a lot
+
+264
+00:07:23.100 --> 00:07:25.540
+of it, into this piece of code.
+
+265
+00:07:25.540 --> 00:07:26.780
+And that's exactly what we'll be
+
+266
+00:07:26.780 --> 00:07:27.540
+doing throughout the course.
+
+267
+00:07:27.540 --> 00:07:29.100
+We'll design the diagrams like this.
+
+268
+00:07:29.100 --> 00:07:30.500
+Hey, these are my steps.
+
+269
+00:07:30.500 --> 00:07:31.460
+And now let's convert
+
+270
+00:07:31.460 --> 00:07:33.140
+these steps into the code.
+
+271
+00:07:33.140 --> 00:07:35.260
+That is whole programming experience.
+
+272
+00:07:35.900 --> 00:07:37.100
+So I hope now you understand
+
+273
+00:07:37.980 --> 00:07:39.980
+that what it is like to experience
+
+274
+00:07:40.540 --> 00:07:43.060
+in writing the Python code,
+
+275
+00:07:43.060 --> 00:07:43.900
+it has a lot more.
+
+276
+00:07:43.900 --> 00:07:45.140
+We will definitely explore
+
+277
+00:07:45.140 --> 00:07:46.460
+that part, but at least this
+
+278
+00:07:46.460 --> 00:07:47.540
+gives you a little bit.
+
+279
+00:07:47.540 --> 00:07:49.660
+Probably 20% would be good.
+
+280
+00:07:49.660 --> 00:07:51.300
+20% confidence that, yes,
+
+281
+00:07:51.300 --> 00:07:52.500
+you can also write it.
+
+282
+00:07:52.500 --> 00:07:53.340
+As long as you got
+
+283
+00:07:53.340 --> 00:07:54.580
+this, that is okay.
+
+284
+00:07:54.580 --> 00:07:55.860
+That's all I want.
+
+285
+00:07:55.860 --> 00:07:57.100
+So let's go ahead and move on
+
+286
+00:07:57.100 --> 00:07:58.620
+to the next video where we are
+
+287
+00:07:58.620 --> 00:08:00.500
+going to discuss more
+
+288
+00:08:00.500 --> 00:08:02.900
+on the Pythonic stuff of the things.
+
+289
+00:08:02.900 --> 00:08:04.180
+Let's move into the next video.

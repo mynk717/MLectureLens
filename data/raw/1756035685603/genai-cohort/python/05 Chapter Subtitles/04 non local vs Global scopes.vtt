@@ -1,0 +1,1353 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.120
+All right, let's go ahead
+
+2
+00:00:02.120 --> 00:00:03.440
+and talk about something
+
+3
+00:00:03.440 --> 00:00:05.360
+much more interesting now.
+
+4
+00:00:05.360 --> 00:00:07.360
+So let's just say you have designed
+
+5
+00:00:07.360 --> 00:00:09.080
+this particular function
+
+6
+00:00:09.080 --> 00:00:10.560
+here that we discussed earlier.
+
+7
+00:00:10.560 --> 00:00:12.240
+And we also have one more
+
+8
+00:00:12.240 --> 00:00:13.120
+function inside it.
+
+9
+00:00:13.120 --> 00:00:14.640
+There could be many, but let's
+
+10
+00:00:14.640 --> 00:00:15.680
+not go too much in depth.
+
+11
+00:00:15.680 --> 00:00:17.200
+And that's a crazy way of writing
+
+12
+00:00:17.200 --> 00:00:18.920
+this, these kinds of functions,
+
+13
+00:00:18.920 --> 00:00:20.640
+but this is justifiable.
+
+14
+00:00:20.640 --> 00:00:21.760
+You have a function inside
+
+15
+00:00:21.760 --> 00:00:23.120
+that probably for some reason
+
+16
+00:00:23.120 --> 00:00:25.560
+you have decided to have one
+
+17
+00:00:25.560 --> 00:00:26.600
+more function inside it.
+
+18
+00:00:26.600 --> 00:00:27.720
+Usually I don't recommend it.
+
+19
+00:00:27.720 --> 00:00:29.680
+I try to keep it separate up here so
+
+20
+00:00:29.680 --> 00:00:31.540
+that I can call it whenever needed.
+
+21
+00:00:31.540 --> 00:00:32.100
+But let's just say
+
+22
+00:00:32.100 --> 00:00:33.220
+there are some issues.
+
+23
+00:00:33.220 --> 00:00:35.940
+So what if some variable are there?
+
+24
+00:00:35.940 --> 00:00:37.940
+So for example, this is maybe a tea,
+
+25
+00:00:38.670 --> 00:00:41.940
+order and I want to access this,
+
+26
+00:00:41.940 --> 00:00:43.260
+this is here, and I want
+
+27
+00:00:43.260 --> 00:00:44.580
+to access it from here.
+
+28
+00:00:44.580 --> 00:00:45.980
+So is there a way that I can go
+
+29
+00:00:45.980 --> 00:00:47.700
+ahead and access this tea order?
+
+30
+00:00:47.700 --> 00:00:49.220
+Or maybe this tea order
+
+31
+00:00:49.220 --> 00:00:51.260
+exists outside as well and from
+
+32
+00:00:51.260 --> 00:00:52.140
+within the function.
+
+33
+00:00:52.140 --> 00:00:53.540
+From this inside one,
+
+34
+00:00:53.540 --> 00:00:55.140
+I just want to access this one.
+
+35
+00:00:55.140 --> 00:00:56.580
+So is there any way that I
+
+36
+00:00:56.580 --> 00:00:57.700
+can go ahead and do this?
+
+37
+00:00:58.370 --> 00:00:59.650
+Yes, actually.
+
+38
+00:00:59.650 --> 00:01:00.930
+But you have to be very cautious
+
+39
+00:01:00.930 --> 00:01:01.890
+that how you're doing it
+
+40
+00:01:01.890 --> 00:01:03.090
+and you should know about this.
+
+41
+00:01:03.090 --> 00:01:04.129
+This is known as non
+
+42
+00:01:04.129 --> 00:01:05.330
+local and global.
+
+43
+00:01:05.330 --> 00:01:06.570
+I'll give you code example
+
+44
+00:01:06.570 --> 00:01:07.730
+because code examples
+
+45
+00:01:07.730 --> 00:01:09.650
+are much easier and fun.
+
+46
+00:01:09.650 --> 00:01:11.450
+And of course you are going
+
+47
+00:01:11.450 --> 00:01:13.010
+to build more code friendly
+
+48
+00:01:13.010 --> 00:01:15.250
+application, not just research work.
+
+49
+00:01:15.250 --> 00:01:16.730
+So research work has its
+
+50
+00:01:16.730 --> 00:01:17.730
+own place by the way.
+
+51
+00:01:17.730 --> 00:01:19.530
+But I think you want to build
+
+52
+00:01:19.530 --> 00:01:20.930
+something based on the research.
+
+53
+00:01:20.930 --> 00:01:22.690
+So there it is.
+
+54
+00:01:22.690 --> 00:01:25.740
+Let's call this one as non local.
+
+55
+00:01:26.460 --> 00:01:26.860
+Local.
+
+56
+00:01:27.500 --> 00:01:28.780
+That's a good name.
+
+57
+00:01:28.780 --> 00:01:29.580
+Py.
+
+58
+00:01:29.580 --> 00:01:31.180
+Let's have our example first.
+
+59
+00:01:31.180 --> 00:01:32.540
+I'll just close this one.
+
+60
+00:01:32.540 --> 00:01:34.140
+Have this on the full screen.
+
+61
+00:01:34.140 --> 00:01:35.860
+Come on, expand a little.
+
+62
+00:01:35.860 --> 00:01:36.940
+There we go.
+
+63
+00:01:36.940 --> 00:01:37.580
+Finally.
+
+64
+00:01:38.140 --> 00:01:39.500
+Okay, so how does it work?
+
+65
+00:01:39.500 --> 00:01:41.340
+Let's just say we have a simple
+
+66
+00:01:41.340 --> 00:01:44.060
+method that says update order.
+
+67
+00:01:44.060 --> 00:01:44.740
+There we go.
+
+68
+00:01:44.740 --> 00:01:46.220
+No problem at all.
+
+69
+00:01:46.220 --> 00:01:49.820
+Now inside this we have a chai type
+
+70
+00:01:49.820 --> 00:01:52.460
+which is not one of my favorite.
+
+71
+00:01:53.920 --> 00:01:57.520
+This is Indian spice Eli Chi.
+
+72
+00:01:57.520 --> 00:01:59.640
+So maybe just like me,
+
+73
+00:01:59.640 --> 00:02:00.720
+you don't like it.
+
+74
+00:02:00.720 --> 00:02:02.080
+And there's also a method
+
+75
+00:02:02.080 --> 00:02:03.280
+which is kitchen.
+
+76
+00:02:04.720 --> 00:02:06.400
+Kitchen and kitchen can actually
+
+77
+00:02:06.400 --> 00:02:07.760
+go ahead and want to
+
+78
+00:02:07.760 --> 00:02:09.199
+for some reason want to update.
+
+79
+00:02:09.199 --> 00:02:10.520
+They don't have the lychee,
+
+80
+00:02:10.520 --> 00:02:11.600
+they don't serve it.
+
+81
+00:02:11.600 --> 00:02:13.280
+So what they can do, they can use
+
+82
+00:02:13.280 --> 00:02:15.200
+a keyword that says non local.
+
+83
+00:02:15.200 --> 00:02:16.800
+The moment you say non local
+
+84
+00:02:16.800 --> 00:02:18.080
+that means you want to refer
+
+85
+00:02:18.080 --> 00:02:19.870
+something which may be just
+
+86
+00:02:19.870 --> 00:02:21.630
+outside the scope of it.
+
+87
+00:02:21.630 --> 00:02:22.990
+Like in this case
+
+88
+00:02:22.990 --> 00:02:24.470
+just above function.
+
+89
+00:02:24.470 --> 00:02:25.630
+So in that case I can just
+
+90
+00:02:25.630 --> 00:02:26.870
+Go ahead and refer this.
+
+91
+00:02:26.870 --> 00:02:28.630
+Now you have access to the chai
+
+92
+00:02:28.630 --> 00:02:29.750
+type which is above this.
+
+93
+00:02:29.750 --> 00:02:31.270
+Previously we didn't have access
+
+94
+00:02:31.270 --> 00:02:32.510
+and now I can just go
+
+95
+00:02:32.510 --> 00:02:33.830
+ahead and override this one.
+
+96
+00:02:33.830 --> 00:02:36.190
+So I'll just go ahead and use another
+
+97
+00:02:36.190 --> 00:02:38.150
+Indian spice, which is kesar.
+
+98
+00:02:38.150 --> 00:02:38.990
+So I'll say that.
+
+99
+00:02:38.990 --> 00:02:41.030
+Okay, now if I go ahead and run
+
+100
+00:02:41.030 --> 00:02:42.590
+this function as Kitchen.
+
+101
+00:02:42.590 --> 00:02:44.480
+So Kitchen has implemented this,
+
+102
+00:02:44.480 --> 00:02:44.960
+what you're going
+
+103
+00:02:44.960 --> 00:02:46.880
+to notice that the value
+
+104
+00:02:46.880 --> 00:02:49.600
+of the chai type is actually keser.
+
+105
+00:02:49.600 --> 00:02:50.880
+It's being changed.
+
+106
+00:02:50.880 --> 00:02:52.240
+So that's a fun one.
+
+107
+00:02:52.240 --> 00:02:53.360
+And make sure to keep it
+
+108
+00:02:53.360 --> 00:02:54.480
+in the notes as well.
+
+109
+00:02:54.480 --> 00:02:56.160
+Non local means from
+
+110
+00:02:56.160 --> 00:02:57.760
+inside to inside function.
+
+111
+00:02:57.760 --> 00:02:58.760
+You are just targeting
+
+112
+00:02:58.760 --> 00:02:59.480
+outside the function.
+
+113
+00:02:59.480 --> 00:03:00.200
+I'll show you one more
+
+114
+00:03:00.200 --> 00:03:02.160
+interesting part of this as well.
+
+115
+00:03:02.160 --> 00:03:03.240
+Right now let's just go ahead
+
+116
+00:03:03.240 --> 00:03:06.400
+and print this and we'll say after
+
+117
+00:03:07.040 --> 00:03:08.190
+Kitchen update,
+
+118
+00:03:09.360 --> 00:03:12.810
+what's the value of chai type?
+
+119
+00:03:12.810 --> 00:03:13.770
+Pretty simple.
+
+120
+00:03:13.770 --> 00:03:15.450
+Now let's go ahead and run this.
+
+121
+00:03:15.450 --> 00:03:16.970
+Have we updated the order?
+
+122
+00:03:16.970 --> 00:03:18.090
+Pretty simple actually.
+
+123
+00:03:18.090 --> 00:03:19.370
+Not a big deal.
+
+124
+00:03:19.370 --> 00:03:21.050
+Let's go ahead and run this again.
+
+125
+00:03:21.050 --> 00:03:22.290
+Python 3 is going
+
+126
+00:03:22.290 --> 00:03:24.250
+to run 07 non local.
+
+127
+00:03:24.250 --> 00:03:25.290
+And there we go.
+
+128
+00:03:25.290 --> 00:03:26.650
+After Kitchen, the value
+
+129
+00:03:26.650 --> 00:03:27.930
+is updated as caser.
+
+130
+00:03:27.930 --> 00:03:31.010
+But what if I go ahead and say
+
+131
+00:03:31.010 --> 00:03:32.210
+this line doesn't exist.
+
+132
+00:03:32.210 --> 00:03:34.530
+So if I comment this line out, what
+
+133
+00:03:34.530 --> 00:03:36.170
+is going to happen in that case?
+
+134
+00:03:36.170 --> 00:03:37.770
+So whatever you have added as a case
+
+135
+00:03:37.770 --> 00:03:39.780
+or child type, let's see the result.
+
+136
+00:03:39.780 --> 00:03:40.740
+That's easier.
+
+137
+00:03:40.740 --> 00:03:42.500
+It's always going to be lychee
+
+138
+00:03:43.140 --> 00:03:44.780
+because you don't have access this.
+
+139
+00:03:44.780 --> 00:03:46.500
+Although you have made a new variable
+
+140
+00:03:46.500 --> 00:03:48.420
+here, but this actually proves
+
+141
+00:03:48.420 --> 00:03:50.020
+the point that you are not accessing
+
+142
+00:03:50.020 --> 00:03:51.940
+this one here, outside this one.
+
+143
+00:03:51.940 --> 00:03:53.060
+This one line
+
+144
+00:03:53.060 --> 00:03:54.420
+is the whole difference.
+
+145
+00:03:54.420 --> 00:03:55.220
+Got it.
+
+146
+00:03:55.220 --> 00:03:56.660
+Pretty simple, no big deal.
+
+147
+00:03:57.300 --> 00:03:58.980
+Let's just say we are here
+
+148
+00:03:58.980 --> 00:04:00.820
+to make some more fun stuff.
+
+149
+00:04:00.820 --> 00:04:01.820
+So this is our chai
+
+150
+00:04:01.820 --> 00:04:03.120
+type that we have.
+
+151
+00:04:03.120 --> 00:04:04.180
+Can we go ahead and comment
+
+152
+00:04:04.180 --> 00:04:05.140
+out all of this?
+
+153
+00:04:05.890 --> 00:04:08.170
+Yes, but I think keeping a new file
+
+154
+00:04:08.170 --> 00:04:10.290
+would be much safer and much fun.
+
+155
+00:04:10.290 --> 00:04:11.330
+I'll create a new one.
+
+156
+00:04:11.330 --> 00:04:12.290
+We are not running short
+
+157
+00:04:12.290 --> 00:04:13.210
+of the variable names
+
+158
+00:04:13.210 --> 00:04:15.130
+or the files herein.
+
+159
+00:04:15.130 --> 00:04:16.010
+So we'll just go ahead
+
+160
+00:04:16.010 --> 00:04:17.329
+and call this one as global.
+
+161
+00:04:18.370 --> 00:04:20.769
+Global scope.
+
+162
+00:04:21.810 --> 00:04:23.890
+I can write that for sure.
+
+163
+00:04:23.890 --> 00:04:25.250
+Global scope py.
+
+164
+00:04:25.890 --> 00:04:27.290
+Let's just say in this case you
+
+165
+00:04:27.290 --> 00:04:29.130
+again have a chai type variable.
+
+166
+00:04:29.130 --> 00:04:30.970
+This time it's a global variable that
+
+167
+00:04:30.970 --> 00:04:33.090
+everybody looks for a plain chai.
+
+168
+00:04:33.090 --> 00:04:34.690
+Don't want to ask it anything.
+
+169
+00:04:34.690 --> 00:04:36.450
+Now there is also a method
+
+170
+00:04:36.450 --> 00:04:38.450
+that says front, desk.
+
+171
+00:04:38.450 --> 00:04:41.090
+And on the front desk of our chai,
+
+172
+00:04:41.090 --> 00:04:42.890
+you might want to define a kitchen.
+
+173
+00:04:42.890 --> 00:04:44.050
+So let's just say this is
+
+174
+00:04:44.690 --> 00:04:47.090
+kitchen, Kitchen.
+
+175
+00:04:47.090 --> 00:04:48.809
+And this kitchen wants
+
+176
+00:04:48.809 --> 00:04:49.850
+to update some things.
+
+177
+00:04:49.850 --> 00:04:50.610
+So there we go.
+
+178
+00:04:51.250 --> 00:04:52.210
+In this case, I want
+
+179
+00:04:52.210 --> 00:04:53.450
+to access the chai type which
+
+180
+00:04:53.450 --> 00:04:54.490
+is available globally.
+
+181
+00:04:54.490 --> 00:04:55.650
+And by the way, you can actually
+
+182
+00:04:55.650 --> 00:04:58.050
+refer this from any place,
+
+183
+00:04:58.050 --> 00:04:59.690
+from function within the function.
+
+184
+00:04:59.690 --> 00:05:01.600
+Within, within, within the function.
+
+185
+00:05:01.600 --> 00:05:02.720
+You got the idea.
+
+186
+00:05:02.720 --> 00:05:04.320
+All I have to do is use a keyword
+
+187
+00:05:04.320 --> 00:05:06.280
+global, and this global now can
+
+188
+00:05:06.280 --> 00:05:08.640
+access the chai type just like this.
+
+189
+00:05:08.640 --> 00:05:10.560
+Now I can actually refer, to this
+
+190
+00:05:10.560 --> 00:05:13.040
+chai type and I will call this one.
+
+191
+00:05:13.040 --> 00:05:14.760
+So there's a very popular chai
+
+192
+00:05:14.760 --> 00:05:17.040
+in India, which is Irani.
+
+193
+00:05:17.040 --> 00:05:18.400
+It's a pretty good, very
+
+194
+00:05:18.400 --> 00:05:20.440
+tasty chai, usually found
+
+195
+00:05:20.440 --> 00:05:21.640
+in the area near Mumbai.
+
+196
+00:05:21.640 --> 00:05:22.880
+But again, enough of the chai
+
+197
+00:05:22.880 --> 00:05:23.960
+knowledge, let's go ahead
+
+198
+00:05:23.960 --> 00:05:25.120
+and work on with this
+
+199
+00:05:25.120 --> 00:05:27.040
+kitchen function is running now.
+
+200
+00:05:27.580 --> 00:05:29.220
+And let's just say we run the whole
+
+201
+00:05:29.220 --> 00:05:30.700
+of the front desk,
+
+202
+00:05:31.340 --> 00:05:33.340
+use this method very, very carefully
+
+203
+00:05:33.340 --> 00:05:35.620
+and be extra, extra cautious.
+
+204
+00:05:35.620 --> 00:05:36.860
+Not just extra cautious,
+
+205
+00:05:36.860 --> 00:05:38.620
+extra, extra cautious.
+
+206
+00:05:38.620 --> 00:05:39.220
+Yes, I know.
+
+207
+00:05:39.820 --> 00:05:41.060
+You might be thinking why.
+
+208
+00:05:41.060 --> 00:05:42.060
+Too much of caution.
+
+209
+00:05:42.060 --> 00:05:42.860
+I'll show you.
+
+210
+00:05:42.860 --> 00:05:44.460
+I'll tell you a reason as well.
+
+211
+00:05:44.980 --> 00:05:47.900
+Final global chai.
+
+212
+00:05:47.900 --> 00:05:49.220
+And what's the value of it?
+
+213
+00:05:49.220 --> 00:05:50.020
+You might have already
+
+214
+00:05:50.020 --> 00:05:50.780
+guessed the value.
+
+215
+00:05:51.420 --> 00:05:53.170
+We are definitely updating it.
+
+216
+00:05:53.170 --> 00:05:53.970
+That's why I'm teaching you.
+
+217
+00:05:53.970 --> 00:05:55.810
+Otherwise why would I.
+
+218
+00:05:55.810 --> 00:05:57.010
+All right, so this time
+
+219
+00:05:57.010 --> 00:05:58.130
+let's just say we are running
+
+220
+00:05:58.130 --> 00:05:59.290
+this one and obviously
+
+221
+00:05:59.290 --> 00:06:00.610
+the chai has been updated.
+
+222
+00:06:00.610 --> 00:06:03.170
+The reason this alone keyword.
+
+223
+00:06:03.170 --> 00:06:05.250
+Now there is another thing which
+
+224
+00:06:05.250 --> 00:06:06.770
+might be bothering you that
+
+225
+00:06:06.770 --> 00:06:08.210
+instead of the global,
+
+226
+00:06:08.210 --> 00:06:10.610
+can I go ahead and use non local?
+
+227
+00:06:10.610 --> 00:06:12.050
+What happens in that case?
+
+228
+00:06:12.050 --> 00:06:13.530
+Let's just say if I go ahead and say
+
+229
+00:06:13.530 --> 00:06:15.170
+non local, then it says, hey,
+
+230
+00:06:15.170 --> 00:06:16.370
+there's already an error.
+
+231
+00:06:16.370 --> 00:06:18.090
+No binding for non local chai
+
+232
+00:06:18.090 --> 00:06:19.570
+type found because it's looking
+
+233
+00:06:19.570 --> 00:06:21.740
+for just above the function.
+
+234
+00:06:21.740 --> 00:06:23.460
+The non local is designed
+
+235
+00:06:23.460 --> 00:06:25.660
+specifically in such a way that it
+
+236
+00:06:25.660 --> 00:06:27.900
+should be looking up just in this
+
+237
+00:06:27.900 --> 00:06:29.980
+outer function, not the global.
+
+238
+00:06:29.980 --> 00:06:31.020
+So don't use non local.
+
+239
+00:06:31.020 --> 00:06:33.180
+There's a specific case for this one.
+
+240
+00:06:33.180 --> 00:06:34.780
+Okay, so let's go ahead and say
+
+241
+00:06:34.780 --> 00:06:36.220
+we want to access the global.
+
+242
+00:06:36.220 --> 00:06:37.900
+Just want to show you one more thing.
+
+243
+00:06:37.900 --> 00:06:40.380
+In the non local of this, let's
+
+244
+00:06:40.380 --> 00:06:42.300
+just say we have, another thing.
+
+245
+00:06:42.300 --> 00:06:43.540
+So let's just say we go ahead
+
+246
+00:06:43.540 --> 00:06:45.580
+and say chai type here as well.
+
+247
+00:06:45.580 --> 00:06:46.820
+Chai type.
+
+248
+00:06:46.820 --> 00:06:48.700
+And that's going to be ginger.
+
+249
+00:06:49.350 --> 00:06:50.870
+It's one of my favorite one.
+
+250
+00:06:50.870 --> 00:06:52.350
+And I want to access this.
+
+251
+00:06:52.350 --> 00:06:53.830
+Can I go ahead and access this?
+
+252
+00:06:53.830 --> 00:06:54.950
+Yes, you can.
+
+253
+00:06:54.950 --> 00:06:56.270
+Here you are accessing still
+
+254
+00:06:56.270 --> 00:06:57.870
+the code will run as it is.
+
+255
+00:06:57.870 --> 00:06:58.830
+No problem there because
+
+256
+00:06:58.830 --> 00:06:59.990
+you're using non local.
+
+257
+00:07:00.790 --> 00:07:02.230
+So if I go ahead and try
+
+258
+00:07:02.230 --> 00:07:04.310
+to use the non local just above.
+
+259
+00:07:04.310 --> 00:07:05.910
+No problem, you can go in.
+
+260
+00:07:05.910 --> 00:07:07.430
+But this is your global scope.
+
+261
+00:07:07.430 --> 00:07:09.070
+Remember always where the global
+
+262
+00:07:09.070 --> 00:07:11.590
+scope is for this entire file.
+
+263
+00:07:11.590 --> 00:07:13.230
+Anything which is outside of this
+
+264
+00:07:13.230 --> 00:07:14.550
+function in the global space.
+
+265
+00:07:14.550 --> 00:07:15.590
+This is global space.
+
+266
+00:07:15.590 --> 00:07:17.560
+Line number 11, line line number two.
+
+267
+00:07:17.560 --> 00:07:18.920
+If you want to access this,
+
+268
+00:07:18.920 --> 00:07:20.320
+you can actually, you can
+
+269
+00:07:20.320 --> 00:07:21.240
+just go ahead and say I want
+
+270
+00:07:21.240 --> 00:07:22.280
+to update the global one.
+
+271
+00:07:22.280 --> 00:07:24.200
+And you can just update the global
+
+272
+00:07:24.200 --> 00:07:25.720
+directly here as well.
+
+273
+00:07:25.720 --> 00:07:27.160
+So global is a reference
+
+274
+00:07:27.160 --> 00:07:29.600
+to global object from anywhere.
+
+275
+00:07:29.600 --> 00:07:31.000
+You can access this anywhere.
+
+276
+00:07:31.000 --> 00:07:32.520
+But if you just want to access
+
+277
+00:07:32.520 --> 00:07:33.800
+just above in the function
+
+278
+00:07:33.800 --> 00:07:35.160
+non local is your friend.
+
+279
+00:07:35.160 --> 00:07:37.000
+You should be doing it like that.
+
+280
+00:07:37.000 --> 00:07:38.760
+All right, I hope you got this.
+
+281
+00:07:38.760 --> 00:07:39.920
+One last thing which we want
+
+282
+00:07:39.920 --> 00:07:41.600
+to mention why you should be
+
+283
+00:07:41.600 --> 00:07:42.520
+extra, extra cautious
+
+284
+00:07:42.520 --> 00:07:44.000
+in using this global keyword.
+
+285
+00:07:44.000 --> 00:07:44.600
+I'll tell you.
+
+286
+00:07:45.420 --> 00:07:46.500
+So let's just say again, we
+
+287
+00:07:46.500 --> 00:07:47.660
+have a beautiful diagram.
+
+288
+00:07:47.660 --> 00:07:49.260
+This is your global scope.
+
+289
+00:07:49.260 --> 00:07:50.580
+And you say that I want
+
+290
+00:07:50.580 --> 00:07:52.260
+to use this chai type.
+
+291
+00:07:52.260 --> 00:07:52.900
+So there we go.
+
+292
+00:07:52.900 --> 00:07:54.140
+Chai type shouldn't be capital.
+
+293
+00:07:54.700 --> 00:07:55.900
+I don't prefer it.
+
+294
+00:07:55.900 --> 00:07:57.260
+Lowercase is good for me.
+
+295
+00:07:57.260 --> 00:07:58.220
+This is our global
+
+296
+00:07:58.220 --> 00:07:59.180
+scope that we have.
+
+297
+00:07:59.900 --> 00:08:01.260
+Now in this you are defining
+
+298
+00:08:01.260 --> 00:08:01.980
+different function.
+
+299
+00:08:01.980 --> 00:08:03.660
+This function is written by you,
+
+300
+00:08:03.660 --> 00:08:04.700
+this function is written
+
+301
+00:08:04.700 --> 00:08:06.540
+by your friend and this function is
+
+302
+00:08:06.540 --> 00:08:08.300
+written by another coworker.
+
+303
+00:08:08.300 --> 00:08:10.220
+Similarly, another coworker.
+
+304
+00:08:10.220 --> 00:08:12.060
+Now if everybody's trying to access
+
+305
+00:08:12.060 --> 00:08:13.860
+this chai type and trying to update
+
+306
+00:08:13.860 --> 00:08:15.260
+it, let's just say somebody says
+
+307
+00:08:15.260 --> 00:08:17.980
+true and, and this guy expects that
+
+308
+00:08:17.980 --> 00:08:19.980
+this function should always be true.
+
+309
+00:08:19.980 --> 00:08:21.980
+But this guy goes ahead and update
+
+310
+00:08:21.980 --> 00:08:23.100
+this, that, hey, I'm not going
+
+311
+00:08:23.100 --> 00:08:24.820
+to be saying this true, I
+
+312
+00:08:24.820 --> 00:08:26.340
+probably need this in a string.
+
+313
+00:08:26.340 --> 00:08:28.060
+And that should be saying,
+
+314
+00:08:28.060 --> 00:08:30.060
+ginger, because that makes sense.
+
+315
+00:08:30.700 --> 00:08:32.139
+Then what you have done, this
+
+316
+00:08:32.139 --> 00:08:33.780
+guy is also accessing this and now
+
+317
+00:08:33.780 --> 00:08:34.700
+you have changed the value.
+
+318
+00:08:34.700 --> 00:08:36.539
+So this whole piece of code
+
+319
+00:08:36.539 --> 00:08:37.980
+is not going to work.
+
+320
+00:08:37.980 --> 00:08:39.740
+So this is absolutely,
+
+321
+00:08:39.740 --> 00:08:41.828
+absolutely gone case here.
+
+322
+00:08:41.828 --> 00:08:42.948
+This code will break.
+
+323
+00:08:42.948 --> 00:08:45.509
+So usage of this local global, all
+
+324
+00:08:45.509 --> 00:08:46.949
+of this should be very, very
+
+325
+00:08:46.949 --> 00:08:47.949
+carefully done because you
+
+326
+00:08:47.949 --> 00:08:49.389
+might break somebody else's code
+
+327
+00:08:49.389 --> 00:08:51.109
+who is dependent on this one.
+
+328
+00:08:51.109 --> 00:08:52.389
+That's why it is recommended.
+
+329
+00:08:52.389 --> 00:08:53.589
+A lot of people you are going
+
+330
+00:08:53.589 --> 00:08:54.589
+to see that they avoid
+
+331
+00:08:54.589 --> 00:08:56.309
+totally using of the global.
+
+332
+00:08:56.309 --> 00:08:57.709
+But again, it's a use case
+
+333
+00:08:57.709 --> 00:08:59.429
+and there might be a specific use
+
+334
+00:08:59.429 --> 00:09:01.149
+case for you in this case or
+
+335
+00:09:01.149 --> 00:09:03.029
+in that, in your code case.
+
+336
+00:09:03.029 --> 00:09:04.389
+That is it for this video.
+
+337
+00:09:04.389 --> 00:09:05.469
+Let's go ahead and catch
+
+338
+00:09:05.469 --> 00:09:06.789
+up in the next one.

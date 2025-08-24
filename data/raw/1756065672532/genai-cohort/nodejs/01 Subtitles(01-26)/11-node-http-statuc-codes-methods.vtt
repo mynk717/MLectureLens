@@ -1,0 +1,1225 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:01.560
+Right, so now you have understood
+
+2
+00:00:01.560 --> 00:00:03.200
+that what a server does.
+
+3
+00:00:03.200 --> 00:00:05.080
+Now as a backend developer,
+
+4
+00:00:05.080 --> 00:00:06.760
+what's our duty that we have
+
+5
+00:00:06.760 --> 00:00:07.800
+to create this server?
+
+6
+00:00:07.800 --> 00:00:09.680
+We have to create a machine
+
+7
+00:00:09.680 --> 00:00:11.880
+which is able to handle
+
+8
+00:00:11.880 --> 00:00:13.200
+the incoming request, right?
+
+9
+00:00:13.200 --> 00:00:14.720
+You should be able to accept
+
+10
+00:00:14.720 --> 00:00:16.000
+the incoming request,
+
+11
+00:00:16.000 --> 00:00:17.720
+do some magical stuff on it
+
+12
+00:00:17.720 --> 00:00:19.120
+and send back a response.
+
+13
+00:00:19.120 --> 00:00:21.120
+So this is what we have to do.
+
+14
+00:00:21.120 --> 00:00:22.680
+Now there is one thing that
+
+15
+00:00:22.680 --> 00:00:24.260
+I'll be using a lot
+
+16
+00:00:24.260 --> 00:00:25.800
+while we are in this course, that
+
+17
+00:00:25.800 --> 00:00:27.160
+is these kind of diagrams.
+
+18
+00:00:27.160 --> 00:00:29.100
+Okay, so, so what we are going to do
+
+19
+00:00:29.100 --> 00:00:31.100
+is, so in order to represent that,
+
+20
+00:00:31.100 --> 00:00:33.100
+how, how the request response cycle
+
+21
+00:00:33.100 --> 00:00:35.300
+was done, so we construct two lines.
+
+22
+00:00:35.300 --> 00:00:36.940
+So this first line is for
+
+23
+00:00:36.940 --> 00:00:38.500
+the client, let's say like
+
+24
+00:00:38.500 --> 00:00:40.180
+we can name it as client.
+
+25
+00:00:40.180 --> 00:00:41.900
+The second line is let's say
+
+26
+00:00:41.900 --> 00:00:44.260
+for the what do you call server?
+
+27
+00:00:44.260 --> 00:00:45.260
+Okay, they can be third line
+
+28
+00:00:45.260 --> 00:00:46.500
+for database and all.
+
+29
+00:00:46.500 --> 00:00:47.580
+So what we can do is we can
+
+30
+00:00:47.580 --> 00:00:49.060
+represent it in this way.
+
+31
+00:00:49.060 --> 00:00:51.140
+So let's say client
+
+32
+00:00:51.140 --> 00:00:54.930
+sends a request right now, now
+
+33
+00:00:55.490 --> 00:00:57.210
+server processes the request.
+
+34
+00:00:57.210 --> 00:00:58.850
+So let's say that it took five
+
+35
+00:00:58.850 --> 00:01:00.650
+seconds, okay, it took five seconds.
+
+36
+00:01:00.650 --> 00:01:01.730
+So let's say five seconds
+
+37
+00:01:01.730 --> 00:01:03.250
+request, it took.
+
+38
+00:01:03.250 --> 00:01:05.690
+And after five seconds what you
+
+39
+00:01:05.690 --> 00:01:07.250
+can do is you can return,
+
+40
+00:01:07.250 --> 00:01:09.250
+you can return back the response.
+
+41
+00:01:09.810 --> 00:01:11.370
+So you can just read, you
+
+42
+00:01:11.370 --> 00:01:12.530
+can just name it as, hey,
+
+43
+00:01:13.170 --> 00:01:14.850
+there was a request, right?
+
+44
+00:01:14.850 --> 00:01:16.690
+So there was a request
+
+45
+00:01:16.690 --> 00:01:18.530
+made by the client.
+
+46
+00:01:18.530 --> 00:01:19.800
+Okay, you took five
+
+47
+00:01:19.800 --> 00:01:21.200
+seconds to process it.
+
+48
+00:01:21.200 --> 00:01:22.960
+Then, then you sent
+
+49
+00:01:22.960 --> 00:01:24.040
+back the response.
+
+50
+00:01:24.040 --> 00:01:26.880
+Okay, so you here
+
+51
+00:01:26.880 --> 00:01:29.760
+sent back the response.
+
+52
+00:01:29.760 --> 00:01:32.080
+That is whatever client needed.
+
+53
+00:01:32.080 --> 00:01:34.760
+And then this response, this request
+
+54
+00:01:34.760 --> 00:01:36.800
+response cycle was terminated here.
+
+55
+00:01:36.800 --> 00:01:38.080
+So basically client
+
+56
+00:01:38.080 --> 00:01:39.120
+closes the connection.
+
+57
+00:01:39.120 --> 00:01:41.120
+So client closed
+
+58
+00:01:41.120 --> 00:01:43.640
+the connection because you know,
+
+59
+00:01:43.640 --> 00:01:45.210
+this one cycle is completed.
+
+60
+00:01:45.210 --> 00:01:46.570
+So if client needs something it can
+
+61
+00:01:46.570 --> 00:01:47.970
+again send a request and response
+
+62
+00:01:47.970 --> 00:01:49.130
+and the cycle continues.
+
+63
+00:01:49.130 --> 00:01:50.290
+So this is where the client
+
+64
+00:01:50.290 --> 00:01:51.850
+actually close the connection.
+
+65
+00:01:51.850 --> 00:01:52.490
+Okay.
+
+66
+00:01:52.490 --> 00:01:53.810
+And yeah, there is a possibility
+
+67
+00:01:53.810 --> 00:01:55.090
+that client can even keep
+
+68
+00:01:55.090 --> 00:01:56.530
+the connection open that is
+
+69
+00:01:56.530 --> 00:01:57.890
+known as server sent events.
+
+70
+00:01:57.890 --> 00:01:59.290
+So yeah, don't worry about that.
+
+71
+00:01:59.290 --> 00:02:02.050
+Okay, so this diagram helps us
+
+72
+00:02:02.050 --> 00:02:02.970
+to visualize that
+
+73
+00:02:02.970 --> 00:02:04.090
+what exactly happened.
+
+74
+00:02:04.090 --> 00:02:05.090
+Okay, so these kind
+
+75
+00:02:05.090 --> 00:02:07.090
+of diagrams you will see a lot if
+
+76
+00:02:07.090 --> 00:02:08.330
+you are into system design
+
+77
+00:02:08.330 --> 00:02:09.169
+or something like that.
+
+78
+00:02:09.169 --> 00:02:10.490
+But yeah, again, again it's
+
+79
+00:02:10.490 --> 00:02:11.850
+a high level because it's
+
+80
+00:02:11.850 --> 00:02:13.130
+a beginner friendly course.
+
+81
+00:02:13.130 --> 00:02:14.490
+So I don't just want to,
+
+82
+00:02:14.490 --> 00:02:16.250
+you know, confuse you.
+
+83
+00:02:16.250 --> 00:02:18.650
+So I hope you are getting it now
+
+84
+00:02:18.650 --> 00:02:21.050
+with this knowledge, with this
+
+85
+00:02:21.050 --> 00:02:22.970
+knowledge there is little bit more
+
+86
+00:02:22.970 --> 00:02:24.250
+that you need to understand.
+
+87
+00:02:24.250 --> 00:02:25.290
+Okay.
+
+88
+00:02:25.290 --> 00:02:27.010
+Number one, when we talk
+
+89
+00:02:27.010 --> 00:02:29.650
+about this HTTP thing, okay, so
+
+90
+00:02:29.650 --> 00:02:31.050
+in HTTP you have to understand
+
+91
+00:02:31.050 --> 00:02:31.850
+that there is something
+
+92
+00:02:31.850 --> 00:02:34.090
+known as HTTP methods, okay.
+
+93
+00:02:34.090 --> 00:02:35.250
+Which includes like you have
+
+94
+00:02:35.250 --> 00:02:36.530
+a Get method, you have a post
+
+95
+00:02:36.530 --> 00:02:37.970
+method, you have a put method,
+
+96
+00:02:37.970 --> 00:02:39.320
+you have a path patch
+
+97
+00:02:39.320 --> 00:02:41.240
+method, you have a delete method.
+
+98
+00:02:41.240 --> 00:02:43.000
+So there are some methods
+
+99
+00:02:43.000 --> 00:02:44.160
+and there are something known
+
+100
+00:02:44.160 --> 00:02:46.480
+as HTTP status codes, which
+
+101
+00:02:46.480 --> 00:02:48.000
+includes one of the famous
+
+102
+00:02:48.000 --> 00:02:50.440
+RS404 which says not found.
+
+103
+00:02:50.440 --> 00:02:51.880
+So there are a lot of status codes
+
+104
+00:02:51.880 --> 00:02:52.760
+that you have to understand.
+
+105
+00:02:53.880 --> 00:02:57.960
+So a good API or a good backend
+
+106
+00:02:57.960 --> 00:02:59.720
+should follow these rules.
+
+107
+00:02:59.720 --> 00:03:00.680
+Okay?
+
+108
+00:03:00.680 --> 00:03:02.920
+So let's cover them one by one.
+
+109
+00:03:03.560 --> 00:03:06.870
+First is the HTTP methods, right?
+
+110
+00:03:06.870 --> 00:03:08.950
+What are, what are HTTP methods?
+
+111
+00:03:08.950 --> 00:03:10.870
+See, when a client
+
+112
+00:03:11.510 --> 00:03:13.190
+sends a request, right?
+
+113
+00:03:13.830 --> 00:03:16.070
+This request has something
+
+114
+00:03:16.070 --> 00:03:18.590
+known as HTTP method, okay?
+
+115
+00:03:18.590 --> 00:03:20.950
+It has some method attached to it.
+
+116
+00:03:20.950 --> 00:03:24.230
+For example, there can be a request
+
+117
+00:03:24.230 --> 00:03:27.030
+of get type, there can be a request
+
+118
+00:03:27.030 --> 00:03:29.150
+of post type, there can be a request
+
+119
+00:03:29.150 --> 00:03:30.710
+of delete type and all that.
+
+120
+00:03:31.590 --> 00:03:35.590
+If client wants to get some data
+
+121
+00:03:35.590 --> 00:03:37.830
+from the server, the client
+
+122
+00:03:37.830 --> 00:03:39.670
+should send a get request.
+
+123
+00:03:39.670 --> 00:03:42.270
+So get request is made when, when
+
+124
+00:03:42.270 --> 00:03:46.789
+client, when client want to read
+
+125
+00:03:46.789 --> 00:03:48.790
+some data or to get some data
+
+126
+00:03:48.790 --> 00:03:51.910
+to get some data from the server.
+
+127
+00:03:51.910 --> 00:03:54.510
+So this is where you make a get
+
+128
+00:03:54.510 --> 00:03:59.820
+request post when client want
+
+129
+00:03:59.820 --> 00:04:03.740
+to send some data to server.
+
+130
+00:04:03.740 --> 00:04:05.020
+So let me give you an example.
+
+131
+00:04:05.020 --> 00:04:06.900
+Okay, so for the first example that
+
+132
+00:04:06.900 --> 00:04:10.080
+is the get, let's say you want to
+
+133
+00:04:10.080 --> 00:04:12.860
+see all the tweets, See all the
+
+134
+00:04:12.860 --> 00:04:17.180
+tweets, or you want to Var a video,
+
+135
+00:04:17.180 --> 00:04:21.029
+or you want to see comments on a
+
+136
+00:04:21.029 --> 00:04:21.740
+video.
+
+137
+00:04:21.740 --> 00:04:22.820
+These all are what, these
+
+138
+00:04:22.820 --> 00:04:24.020
+all are get requests.
+
+139
+00:04:24.020 --> 00:04:24.980
+Because you can see that
+
+140
+00:04:24.980 --> 00:04:27.290
+these requests is something
+
+141
+00:04:27.290 --> 00:04:28.890
+like that you want to get something
+
+142
+00:04:28.890 --> 00:04:29.890
+from the server.
+
+143
+00:04:29.890 --> 00:04:32.330
+Post examples for post, it
+
+144
+00:04:32.330 --> 00:04:34.130
+can be like you want to create
+
+145
+00:04:34.130 --> 00:04:36.250
+a tweet, you want to upload
+
+146
+00:04:36.250 --> 00:04:39.250
+a video, upload a video.
+
+147
+00:04:39.250 --> 00:04:41.410
+Or it can be like, you know, you
+
+148
+00:04:41.410 --> 00:04:42.770
+create a comment,
+
+149
+00:04:42.770 --> 00:04:44.410
+you comment below this video that is
+
+150
+00:04:44.410 --> 00:04:45.330
+going to be a post request,
+
+151
+00:04:45.330 --> 00:04:46.610
+you create a new comment.
+
+152
+00:04:46.610 --> 00:04:47.690
+So these all are what,
+
+153
+00:04:47.690 --> 00:04:49.170
+these are post requests.
+
+154
+00:04:49.170 --> 00:04:50.570
+Now similar to this, similar
+
+155
+00:04:50.570 --> 00:04:51.690
+to this, you have something
+
+156
+00:04:51.690 --> 00:04:53.170
+known as patch request.
+
+157
+00:04:53.170 --> 00:04:55.250
+Patch is basically when,
+
+158
+00:04:55.250 --> 00:04:59.410
+okay, when client wants
+
+159
+00:04:59.410 --> 00:05:02.050
+to update, some existing data.
+
+160
+00:05:03.170 --> 00:05:04.490
+So when you have some existing data
+
+161
+00:05:04.490 --> 00:05:06.010
+and you want to update it, you can
+
+162
+00:05:06.010 --> 00:05:08.370
+send a patch request and delete.
+
+163
+00:05:08.370 --> 00:05:11.530
+When client wants to delete some
+
+164
+00:05:11.530 --> 00:05:15.010
+data, okay, to delete some data.
+
+165
+00:05:15.010 --> 00:05:17.690
+So whenever client makes a request
+
+166
+00:05:17.690 --> 00:05:19.290
+to the server, this request can
+
+167
+00:05:19.290 --> 00:05:20.930
+be a get request, a post request,
+
+168
+00:05:20.930 --> 00:05:22.540
+delete request, patch request.
+
+169
+00:05:22.540 --> 00:05:23.620
+So there is a request.
+
+170
+00:05:23.620 --> 00:05:26.700
+Okay, so these are the HTTP methods.
+
+171
+00:05:26.700 --> 00:05:27.540
+These all are what,
+
+172
+00:05:27.540 --> 00:05:29.340
+these are HTTP methods.
+
+173
+00:05:29.340 --> 00:05:31.180
+Get, post, delete, patch, put.
+
+174
+00:05:31.180 --> 00:05:33.780
+Okay, then, then there is something
+
+175
+00:05:33.780 --> 00:05:36.900
+known as HTTP status codes.
+
+176
+00:05:37.460 --> 00:05:40.460
+Now these were request, okay,
+
+177
+00:05:40.460 --> 00:05:42.220
+these, these things that we just
+
+178
+00:05:42.220 --> 00:05:44.060
+discussed this was related to the
+
+179
+00:05:44.060 --> 00:05:46.300
+request that when client sends the
+
+180
+00:05:46.300 --> 00:05:48.760
+request, this particular thing is,
+
+181
+00:05:48.760 --> 00:05:50.560
+is taken into the consideration
+
+182
+00:05:50.560 --> 00:05:52.600
+right now.
+
+183
+00:05:52.600 --> 00:05:53.680
+This part is fine.
+
+184
+00:05:53.680 --> 00:05:55.680
+This part is relatively very easy.
+
+185
+00:05:55.680 --> 00:05:57.640
+I know, Just one second.
+
+186
+00:05:57.640 --> 00:05:59.040
+My OCD is kicking in.
+
+187
+00:05:59.040 --> 00:05:59.480
+Yeah.
+
+188
+00:06:00.120 --> 00:06:03.720
+Now when you send a response, okay,
+
+189
+00:06:03.720 --> 00:06:06.600
+now when you send a response back,
+
+190
+00:06:07.400 --> 00:06:11.160
+the server sends some status code.
+
+191
+00:06:11.160 --> 00:06:12.640
+Status code is nothing
+
+192
+00:06:12.640 --> 00:06:14.210
+but just a number.
+
+193
+00:06:14.210 --> 00:06:15.410
+Okay, these are nothing, but these
+
+194
+00:06:15.410 --> 00:06:16.690
+are some bunch of numbers.
+
+195
+00:06:16.690 --> 00:06:17.450
+So I'll tell you what
+
+196
+00:06:17.450 --> 00:06:18.370
+these numbers means.
+
+197
+00:06:19.170 --> 00:06:21.730
+So while sending back the
+
+198
+00:06:21.730 --> 00:06:23.690
+response, the server can say
+
+199
+00:06:23.690 --> 00:06:25.850
+for example, Hey, 404, which
+
+200
+00:06:25.850 --> 00:06:27.130
+basically tells the client that
+
+201
+00:06:27.130 --> 00:06:28.730
+hey, the thing that you are
+
+202
+00:06:28.730 --> 00:06:30.089
+trying to access does not
+
+203
+00:06:30.089 --> 00:06:31.250
+exist, not found.
+
+204
+00:06:31.250 --> 00:06:33.450
+It can be a 500 internal server
+
+205
+00:06:33.450 --> 00:06:35.090
+error, it can be a 200.
+
+206
+00:06:35.090 --> 00:06:36.690
+That means everything is okay.
+
+207
+00:06:36.690 --> 00:06:38.890
+It can be a 401 that is unauthorized.
+
+208
+00:06:38.890 --> 00:06:40.330
+It can be a four or three.
+
+209
+00:06:40.330 --> 00:06:42.880
+It can be it can be of,
+
+210
+00:06:42.880 --> 00:06:43.800
+let's say 501.
+
+211
+00:06:43.800 --> 00:06:44.960
+It can be a 201.
+
+212
+00:06:44.960 --> 00:06:47.080
+So server is basically sending some
+
+213
+00:06:47.080 --> 00:06:50.880
+kind of numeric data to indicate
+
+214
+00:06:50.880 --> 00:06:52.720
+what kind of response it is.
+
+215
+00:06:52.720 --> 00:06:54.800
+So this status code is used
+
+216
+00:06:54.800 --> 00:06:58.800
+to tell what kind of response it is.
+
+217
+00:06:59.600 --> 00:07:00.840
+Okay, so it can be like
+
+218
+00:07:00.840 --> 00:07:02.280
+a successful response, it
+
+219
+00:07:02.280 --> 00:07:03.760
+can be an error response.
+
+220
+00:07:03.760 --> 00:07:05.090
+What kind of error is that?
+
+221
+00:07:05.090 --> 00:07:06.320
+It can be a redirect thing.
+
+222
+00:07:06.320 --> 00:07:07.200
+So that thing.
+
+223
+00:07:07.200 --> 00:07:08.760
+Okay, so let me give
+
+224
+00:07:08.760 --> 00:07:09.960
+you a few examples.
+
+225
+00:07:09.960 --> 00:07:14.360
+For example, if backend sends 200,
+
+226
+00:07:14.360 --> 00:07:16.360
+this means everything was okay.
+
+227
+00:07:16.360 --> 00:07:18.800
+If backend sends 211, it means it
+
+228
+00:07:18.800 --> 00:07:21.320
+was okay and something is created.
+
+229
+00:07:21.320 --> 00:07:22.360
+You created some resource
+
+230
+00:07:22.360 --> 00:07:23.160
+on the server.
+
+231
+00:07:23.160 --> 00:07:25.240
+If server sends 400, that
+
+232
+00:07:25.240 --> 00:07:27.320
+means it's a bad request.
+
+233
+00:07:27.320 --> 00:07:29.160
+It's a bad request.
+
+234
+00:07:29.160 --> 00:07:31.080
+So that means your request was bad.
+
+235
+00:07:31.080 --> 00:07:33.080
+If it sends a 404 it means
+
+236
+00:07:33.080 --> 00:07:35.080
+not found that something.
+
+237
+00:07:35.080 --> 00:07:37.040
+If it sends 500 it means that
+
+238
+00:07:37.040 --> 00:07:39.270
+there is some server error.
+
+239
+00:07:39.270 --> 00:07:40.630
+Server error, that server
+
+240
+00:07:40.630 --> 00:07:41.510
+there, there is something
+
+241
+00:07:41.510 --> 00:07:42.790
+wrong with the server.
+
+242
+00:07:42.790 --> 00:07:44.270
+So these are some status
+
+243
+00:07:44.270 --> 00:07:45.590
+codes which we use commonly.
+
+244
+00:07:45.590 --> 00:07:46.670
+And there is even more.
+
+245
+00:07:46.670 --> 00:07:49.190
+Like for example, there is a 301
+
+246
+00:07:49.190 --> 00:07:50.470
+that is for a redirect.
+
+247
+00:07:50.470 --> 00:07:52.230
+Okay, that is for a redirect.
+
+248
+00:07:52.230 --> 00:07:53.870
+So let me show you all the status
+
+249
+00:07:53.870 --> 00:07:54.630
+codes that are there.
+
+250
+00:07:54.630 --> 00:07:57.270
+So just search for HTTP status codes.
+
+251
+00:07:57.270 --> 00:07:59.510
+Okay, so HTTP status codes.
+
+252
+00:07:59.510 --> 00:08:01.270
+So you can see that it ranges
+
+253
+00:08:01.270 --> 00:08:03.990
+from 100 to all the way to 599.
+
+254
+00:08:03.990 --> 00:08:07.750
+Now if a status code starts with 1,
+
+255
+00:08:07.750 --> 00:08:08.950
+okay, now this is very important.
+
+256
+00:08:09.670 --> 00:08:12.790
+If a status code starts with one like
+
+257
+00:08:12.790 --> 00:08:18.750
+111-1111103 this basically means
+
+258
+00:08:18.750 --> 00:08:20.870
+it's an informational response.
+
+259
+00:08:20.870 --> 00:08:23.830
+Okay, so this is first thing.
+
+260
+00:08:23.830 --> 00:08:25.830
+Second, if it starts with 2.
+
+261
+00:08:25.830 --> 00:08:28.870
+So like that is from 200 to 299.
+
+262
+00:08:28.870 --> 00:08:31.030
+If it starts with 2 2,
+
+263
+00:08:31.030 --> 00:08:33.549
+so 2xx, this basically means
+
+264
+00:08:33.549 --> 00:08:35.750
+it's a success response.
+
+265
+00:08:35.750 --> 00:08:38.150
+Okay, then if it starts
+
+266
+00:08:38.150 --> 00:08:39.830
+with three, if it starts
+
+267
+00:08:39.830 --> 00:08:41.830
+with three, it's a redirect.
+
+268
+00:08:42.549 --> 00:08:43.909
+Just one second.
+
+269
+00:08:43.909 --> 00:08:45.990
+Yeah, so if it starts with
+
+270
+00:08:46.550 --> 00:08:48.630
+3xx, it's a redirect.
+
+271
+00:08:48.630 --> 00:08:49.630
+Let's say server wants
+
+272
+00:08:49.630 --> 00:08:51.190
+to redirect you to somewhere.
+
+273
+00:08:51.190 --> 00:08:53.310
+If it starts with four, it basically
+
+274
+00:08:53.310 --> 00:08:55.190
+means it's a client error.
+
+275
+00:08:55.190 --> 00:08:56.950
+That means you are doing some error
+
+276
+00:08:56.950 --> 00:08:57.950
+four or four not found.
+
+277
+00:08:57.950 --> 00:08:58.990
+You are trying to access
+
+278
+00:08:58.990 --> 00:09:00.310
+something that is not existing.
+
+279
+00:09:00.310 --> 00:09:01.630
+And if it starts with 5,
+
+280
+00:09:01.630 --> 00:09:03.270
+it's a server error.
+
+281
+00:09:03.270 --> 00:09:04.790
+So these are the response codes
+
+282
+00:09:04.790 --> 00:09:05.510
+that we are going to see.
+
+283
+00:09:05.510 --> 00:09:07.190
+So you can see that hey, these
+
+284
+00:09:07.190 --> 00:09:09.270
+two are starting with four, right?
+
+285
+00:09:09.270 --> 00:09:10.910
+So this, this basically indicates
+
+286
+00:09:10.910 --> 00:09:13.030
+that it's a client error.
+
+287
+00:09:13.030 --> 00:09:14.910
+This 500 starts with 5.
+
+288
+00:09:14.910 --> 00:09:16.190
+This is a server error.
+
+289
+00:09:16.190 --> 00:09:17.230
+This 200.
+
+290
+00:09:17.230 --> 00:09:18.710
+These both starts with 200.
+
+291
+00:09:18.710 --> 00:09:19.550
+This means these are
+
+292
+00:09:19.550 --> 00:09:20.870
+successful responses.
+
+293
+00:09:20.870 --> 00:09:23.270
+So this is how the server sends
+
+294
+00:09:23.270 --> 00:09:25.750
+an appropriate status code, which
+
+295
+00:09:25.750 --> 00:09:27.230
+of course as a developer you have
+
+296
+00:09:27.230 --> 00:09:29.750
+to set to tell the client that
+
+297
+00:09:29.750 --> 00:09:32.150
+what kind of response this is.
+
+298
+00:09:32.150 --> 00:09:33.710
+Okay, so these are your
+
+299
+00:09:33.710 --> 00:09:35.430
+response mechanisms.
+
+300
+00:09:35.430 --> 00:09:38.669
+So client sends a request along with
+
+301
+00:09:38.669 --> 00:09:41.350
+a HTTP method and you process it.
+
+302
+00:09:41.350 --> 00:09:42.910
+And while sending the response
+
+303
+00:09:42.910 --> 00:09:45.030
+you have to set a number, a code
+
+304
+00:09:45.030 --> 00:09:46.390
+which tells the client that
+
+305
+00:09:46.390 --> 00:09:48.710
+what kind of request is that?
+
+306
+00:09:48.710 --> 00:09:49.350
+Okay.

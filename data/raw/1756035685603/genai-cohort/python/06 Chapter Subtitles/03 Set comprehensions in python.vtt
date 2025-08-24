@@ -1,0 +1,1653 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:03.000
+All right, so now that you are quite
+
+2
+00:00:03.000 --> 00:00:04.640
+comfortable with the comprehensions,
+
+3
+00:00:04.640 --> 00:00:06.960
+at least the list comprehension,
+
+4
+00:00:06.960 --> 00:00:08.800
+I will challenge you again.
+
+5
+00:00:08.800 --> 00:00:09.520
+Yes.
+
+6
+00:00:09.520 --> 00:00:10.720
+The whole part of learning
+
+7
+00:00:10.720 --> 00:00:12.640
+process is to take enough challenges
+
+8
+00:00:12.640 --> 00:00:13.960
+and help that so that
+
+9
+00:00:13.960 --> 00:00:15.680
+your brain exe start working.
+
+10
+00:00:16.640 --> 00:00:19.400
+So I'll throw up a relatively simpler
+
+11
+00:00:19.400 --> 00:00:20.760
+challenge first, and then I'll
+
+12
+00:00:20.760 --> 00:00:22.520
+give you a really complex challenge
+
+13
+00:00:22.520 --> 00:00:23.840
+and we'll ask you a question.
+
+14
+00:00:23.840 --> 00:00:25.080
+I'm pretty sure you'll get
+
+15
+00:00:25.080 --> 00:00:26.400
+it wrong at the first go.
+
+16
+00:00:26.920 --> 00:00:27.800
+Usually people does.
+
+17
+00:00:27.800 --> 00:00:28.600
+But that's okay.
+
+18
+00:00:28.600 --> 00:00:30.200
+You will learn a lot in this one.
+
+19
+00:00:30.200 --> 00:00:31.040
+So let me take you
+
+20
+00:00:31.040 --> 00:00:32.680
+on the screen directly.
+
+21
+00:00:32.680 --> 00:00:34.360
+And we're going to just work with,
+
+22
+00:00:35.200 --> 00:00:36.680
+the comprehensions first.
+
+23
+00:00:36.680 --> 00:00:38.880
+So this comprehension next is going
+
+24
+00:00:38.880 --> 00:00:40.440
+to be the set comprehension.
+
+25
+00:00:40.440 --> 00:00:47.160
+So 02 set compre py.
+
+26
+00:00:47.160 --> 00:00:48.000
+All right, good enough.
+
+27
+00:00:48.000 --> 00:00:48.920
+Fair name.
+
+28
+00:00:48.920 --> 00:00:50.240
+So how does the set
+
+29
+00:00:50.240 --> 00:00:51.280
+comprehension work?
+
+30
+00:00:51.280 --> 00:00:52.360
+And you will be surprised
+
+31
+00:00:52.360 --> 00:00:54.760
+to know the set comprehension is
+
+32
+00:00:54.760 --> 00:00:55.880
+almost exactly.
+
+33
+00:00:55.880 --> 00:00:56.960
+Not almost exactly.
+
+34
+00:00:56.960 --> 00:00:58.080
+It is exactly same.
+
+35
+00:00:58.080 --> 00:00:59.840
+It works with the same thing
+
+36
+00:00:59.840 --> 00:01:01.640
+expression for item
+
+37
+00:01:01.640 --> 00:01:04.480
+in iterable if condition.
+
+38
+00:01:04.480 --> 00:01:05.840
+So you might be wondering,
+
+39
+00:01:05.840 --> 00:01:07.600
+all right, it goes exactly same.
+
+40
+00:01:07.600 --> 00:01:09.840
+So what can go wrong with this one?
+
+41
+00:01:09.840 --> 00:01:12.080
+This thing, the first bracket
+
+42
+00:01:12.080 --> 00:01:13.840
+that makes it as a list.
+
+43
+00:01:13.840 --> 00:01:15.480
+So if you go ahead and change this
+
+44
+00:01:15.480 --> 00:01:18.160
+to just like this, it becomes a set.
+
+45
+00:01:18.160 --> 00:01:19.360
+Is it that much?
+
+46
+00:01:19.360 --> 00:01:20.800
+Yes, literally is.
+
+47
+00:01:20.800 --> 00:01:22.240
+But now we are going to focus
+
+48
+00:01:22.240 --> 00:01:24.120
+more on this one expression.
+
+49
+00:01:24.120 --> 00:01:24.970
+What does this.
+
+50
+00:01:24.970 --> 00:01:26.170
+This expression means?
+
+51
+00:01:26.170 --> 00:01:28.410
+And you will get more clarity on
+
+52
+00:01:28.410 --> 00:01:30.650
+the lists as well with this example.
+
+53
+00:01:30.650 --> 00:01:31.690
+That's interesting.
+
+54
+00:01:31.690 --> 00:01:33.050
+Let me show you this.
+
+55
+00:01:33.050 --> 00:01:34.170
+So let's go up here.
+
+56
+00:01:34.170 --> 00:01:35.930
+We'll have a simple, the most
+
+57
+00:01:35.930 --> 00:01:37.090
+basic example first.
+
+58
+00:01:37.090 --> 00:01:38.650
+So let's just say we call this as,
+
+59
+00:01:39.370 --> 00:01:42.890
+favorite, favorite choice.
+
+60
+00:01:45.290 --> 00:01:45.890
+There we go.
+
+61
+00:01:45.890 --> 00:01:46.810
+Favorite choice.
+
+62
+00:01:46.810 --> 00:01:49.370
+And this is going to be a list.
+
+63
+00:01:49.370 --> 00:01:51.710
+And again, this guy got up again.
+
+64
+00:01:52.430 --> 00:01:54.030
+So this is how we have it.
+
+65
+00:01:54.030 --> 00:01:56.030
+All right, let's just say the first,
+
+66
+00:01:57.150 --> 00:01:59.070
+we have couple of lines of this.
+
+67
+00:01:59.070 --> 00:02:00.590
+So let's just go with the easy one.
+
+68
+00:02:00.590 --> 00:02:00.910
+Sub.
+
+69
+00:02:01.470 --> 00:02:03.630
+So this is my masala chai.
+
+70
+00:02:04.350 --> 00:02:08.350
+Then we have green T.
+
+71
+00:02:09.229 --> 00:02:10.710
+And let's just assume
+
+72
+00:02:10.710 --> 00:02:11.950
+this is my orders.
+
+73
+00:02:12.990 --> 00:02:16.750
+So I said masala chai again.
+
+74
+00:02:17.770 --> 00:02:19.770
+And let's just say we have more.
+
+75
+00:02:19.770 --> 00:02:21.850
+Although lemon is also my favorite.
+
+76
+00:02:21.850 --> 00:02:22.930
+But let's just say
+
+77
+00:02:22.930 --> 00:02:24.410
+I've ordered it less.
+
+78
+00:02:24.410 --> 00:02:25.370
+Lemon chai.
+
+79
+00:02:26.170 --> 00:02:27.850
+Lemon chai doesn't sound great.
+
+80
+00:02:27.850 --> 00:02:30.490
+I actually prefer lemon T to call it.
+
+81
+00:02:30.490 --> 00:02:31.610
+Don't know, for some reason.
+
+82
+00:02:32.170 --> 00:02:33.090
+We have another one
+
+83
+00:02:33.090 --> 00:02:35.210
+which is green, T.
+
+84
+00:02:35.770 --> 00:02:41.850
+And then we have, maybe lichi, chai.
+
+85
+00:02:41.850 --> 00:02:43.970
+All right, so we can see if we have
+
+86
+00:02:43.970 --> 00:02:45.370
+this favorite chai as a list.
+
+87
+00:02:45.370 --> 00:02:46.690
+We have masala chai.
+
+88
+00:02:46.690 --> 00:02:49.750
+Oh, that's Two times we have green T
+
+89
+00:02:49.750 --> 00:02:50.710
+which is also two time.
+
+90
+00:02:50.710 --> 00:02:52.310
+I don't prefer green T but let's
+
+91
+00:02:52.310 --> 00:02:53.790
+just say if we want to find out
+
+92
+00:02:53.790 --> 00:02:55.990
+how many unique chais are there.
+
+93
+00:02:55.990 --> 00:02:57.790
+So definitely masala chai is
+
+94
+00:02:57.790 --> 00:02:59.110
+one unique green chai is
+
+95
+00:02:59.110 --> 00:03:00.870
+another one Lemon and Elijah.
+
+96
+00:03:00.870 --> 00:03:02.070
+So these are unique teas.
+
+97
+00:03:02.070 --> 00:03:04.150
+How can I find a unique ones?
+
+98
+00:03:04.150 --> 00:03:05.190
+Whenever there is an idea
+
+99
+00:03:05.190 --> 00:03:07.670
+of unique ones, you go with the set.
+
+100
+00:03:07.670 --> 00:03:08.950
+So how does the set work?
+
+101
+00:03:08.950 --> 00:03:10.630
+I'll just go ahead and say this is
+
+102
+00:03:10.630 --> 00:03:13.550
+uniquechai and pretty easy if you
+
+103
+00:03:13.550 --> 00:03:14.910
+know the comprehension that should
+
+104
+00:03:14.910 --> 00:03:17.130
+be easy and expression for item
+
+105
+00:03:17.130 --> 00:03:19.210
+in iterable if condition.
+
+106
+00:03:19.210 --> 00:03:20.850
+So let's not focus much
+
+107
+00:03:20.850 --> 00:03:21.850
+on the expression first.
+
+108
+00:03:21.850 --> 00:03:23.210
+Let's start always with
+
+109
+00:03:23.210 --> 00:03:25.370
+for item in iterable if condition.
+
+110
+00:03:25.370 --> 00:03:26.930
+So this is how the value should
+
+111
+00:03:26.930 --> 00:03:27.970
+be read or this is how
+
+112
+00:03:27.970 --> 00:03:29.690
+you should write it for item
+
+113
+00:03:29.690 --> 00:03:30.970
+in iterable if condition.
+
+114
+00:03:30.970 --> 00:03:33.090
+So we'll also do this one and most
+
+115
+00:03:33.090 --> 00:03:34.130
+of the time you'll see people
+
+116
+00:03:34.130 --> 00:03:36.090
+actually does exactly same.
+
+117
+00:03:36.090 --> 00:03:38.330
+So we'll just go ahead and say for
+
+118
+00:03:38.330 --> 00:03:41.730
+chai in favorite chai's and then
+
+119
+00:03:41.730 --> 00:03:42.890
+we write the if condition.
+
+120
+00:03:42.890 --> 00:03:44.050
+So I'll just go ahead and say
+
+121
+00:03:44.050 --> 00:03:47.710
+for chai in chai's and then the same
+
+122
+00:03:48.670 --> 00:03:51.230
+for chai in favorites
+
+123
+00:03:51.230 --> 00:03:52.470
+and automatically I don't have
+
+124
+00:03:52.470 --> 00:03:53.950
+to put any if condition here.
+
+125
+00:03:53.950 --> 00:03:56.510
+I can, I will do that in later on.
+
+126
+00:03:56.510 --> 00:03:58.270
+But if I go ahead and do this
+
+127
+00:03:58.270 --> 00:04:00.190
+for chai in favorite chais
+
+128
+00:04:00.190 --> 00:04:02.030
+automatically whatever is coming up.
+
+129
+00:04:02.030 --> 00:04:03.070
+And since we have started
+
+130
+00:04:03.070 --> 00:04:05.150
+with the curly braces, I don't
+
+131
+00:04:05.150 --> 00:04:06.590
+have to write much if condition
+
+132
+00:04:06.590 --> 00:04:08.030
+automatically the unique
+
+133
+00:04:08.030 --> 00:04:09.830
+values will come to me and I
+
+134
+00:04:09.830 --> 00:04:10.910
+just have to store this.
+
+135
+00:04:10.910 --> 00:04:13.620
+So what we are calling this so chai
+
+136
+00:04:13.620 --> 00:04:15.620
+so whatever is the final value.
+
+137
+00:04:15.620 --> 00:04:17.140
+Remember the keyword here, final
+
+138
+00:04:17.140 --> 00:04:18.980
+expression which is evaluating.
+
+139
+00:04:18.980 --> 00:04:19.980
+This is what we write
+
+140
+00:04:19.980 --> 00:04:20.980
+at the very top.
+
+141
+00:04:20.980 --> 00:04:22.220
+So automatically don't
+
+142
+00:04:22.220 --> 00:04:22.940
+have to do anything.
+
+143
+00:04:22.940 --> 00:04:24.540
+I hope you get the idea what
+
+144
+00:04:24.540 --> 00:04:26.340
+or where I'm going with this.
+
+145
+00:04:26.340 --> 00:04:27.820
+So if I go ahead and print out the
+
+146
+00:04:27.820 --> 00:04:29.780
+unique chai, I hope you got the
+
+147
+00:04:29.780 --> 00:04:31.900
+answer that if I go ahead and say
+
+148
+00:04:31.900 --> 00:04:34.620
+Python 3 let's just run 02 and
+
+149
+00:04:34.620 --> 00:04:36.380
+there we go, we got all the unique
+
+150
+00:04:36.380 --> 00:04:37.460
+values.
+
+151
+00:04:37.460 --> 00:04:39.580
+Now surely I can go ahead and
+
+152
+00:04:39.580 --> 00:04:42.750
+write this that hey, just say
+
+153
+00:04:42.750 --> 00:04:44.430
+there is an if condition and I
+
+154
+00:04:44.430 --> 00:04:46.390
+go ahead and say calculate the
+
+155
+00:04:46.390 --> 00:04:49.630
+length of same example, length
+
+156
+00:04:49.630 --> 00:04:52.670
+of the chai then what do I want
+
+157
+00:04:52.670 --> 00:04:53.110
+to do?
+
+158
+00:04:53.110 --> 00:04:57.270
+If it is greater than 8,
+
+159
+00:04:57.910 --> 00:04:59.310
+then we'll go ahead and do this.
+
+160
+00:04:59.310 --> 00:05:00.830
+Surely there's a lot of ways
+
+161
+00:05:00.830 --> 00:05:02.310
+how you can work with this.
+
+162
+00:05:02.310 --> 00:05:03.310
+You get the idea, you
+
+163
+00:05:03.310 --> 00:05:04.550
+are now getting it.
+
+164
+00:05:04.550 --> 00:05:06.150
+Probably 8 is everything
+
+165
+00:05:06.150 --> 00:05:07.270
+is greater than 8.
+
+166
+00:05:07.910 --> 00:05:10.310
+Anything less than 8
+
+167
+00:05:10.310 --> 00:05:11.670
+probably will get nothing.
+
+168
+00:05:11.670 --> 00:05:13.790
+But I would love to save this
+
+169
+00:05:13.790 --> 00:05:15.190
+and run this one more time.
+
+170
+00:05:15.190 --> 00:05:17.590
+So we got the empty set.
+
+171
+00:05:17.590 --> 00:05:18.790
+You can't see it.
+
+172
+00:05:18.790 --> 00:05:19.510
+There we go.
+
+173
+00:05:19.510 --> 00:05:21.910
+So we got the empty set in this one.
+
+174
+00:05:21.910 --> 00:05:23.710
+So again, there could be many ways
+
+175
+00:05:23.710 --> 00:05:26.030
+of doing this, but, you got
+
+176
+00:05:26.030 --> 00:05:27.190
+the idea that how this is being
+
+177
+00:05:27.190 --> 00:05:28.670
+done and how you can have
+
+178
+00:05:28.670 --> 00:05:30.790
+the unique values onto this one.
+
+179
+00:05:30.790 --> 00:05:32.390
+So I'll just remove this if part
+
+180
+00:05:32.390 --> 00:05:33.750
+because it is not required.
+
+181
+00:05:33.750 --> 00:05:34.710
+But now you understand
+
+182
+00:05:34.710 --> 00:05:35.910
+the syntax of it.
+
+183
+00:05:36.540 --> 00:05:38.220
+But the most important
+
+184
+00:05:38.220 --> 00:05:39.940
+part now, which will confuse you
+
+185
+00:05:39.940 --> 00:05:41.140
+for a moment, but you'll get
+
+186
+00:05:41.140 --> 00:05:42.620
+more clarity into this one.
+
+187
+00:05:43.260 --> 00:05:44.620
+Let me just go with this.
+
+188
+00:05:45.580 --> 00:05:46.940
+The thing that will confuse
+
+189
+00:05:46.940 --> 00:05:48.940
+you next is going to be something
+
+190
+00:05:48.940 --> 00:05:50.140
+a little bit complex.
+
+191
+00:05:50.140 --> 00:05:51.100
+So you got the idea
+
+192
+00:05:51.100 --> 00:05:52.259
+how the syntax works.
+
+193
+00:05:52.259 --> 00:05:54.540
+So expression for item in iteratable.
+
+194
+00:05:54.540 --> 00:05:55.420
+If condition.
+
+195
+00:05:55.420 --> 00:05:56.540
+If you have the condition,
+
+196
+00:05:56.540 --> 00:05:57.060
+that's great.
+
+197
+00:05:57.060 --> 00:05:58.100
+Sometimes you can avoid it.
+
+198
+00:05:58.100 --> 00:05:59.660
+We just saw an example.
+
+199
+00:05:59.660 --> 00:06:01.660
+But what goes in this expression?
+
+200
+00:06:02.260 --> 00:06:03.260
+Okay, we have seen this,
+
+201
+00:06:03.260 --> 00:06:04.140
+that whatever you write
+
+202
+00:06:04.140 --> 00:06:05.620
+it here goes up here.
+
+203
+00:06:05.620 --> 00:06:06.900
+But what if we have
+
+204
+00:06:06.900 --> 00:06:08.340
+some complex example?
+
+205
+00:06:08.340 --> 00:06:10.340
+I'll write a complex example for you.
+
+206
+00:06:11.220 --> 00:06:12.980
+So let's just say we have recipes.
+
+207
+00:06:12.980 --> 00:06:15.780
+And this recipes is a dictionary.
+
+208
+00:06:15.780 --> 00:06:17.300
+What does dictionary does?
+
+209
+00:06:17.300 --> 00:06:18.980
+It has a key value pair.
+
+210
+00:06:19.620 --> 00:06:21.620
+So we have a, masala chai.
+
+211
+00:06:22.580 --> 00:06:23.980
+And the value is going
+
+212
+00:06:23.980 --> 00:06:25.220
+to be an array.
+
+213
+00:06:25.220 --> 00:06:26.500
+Very interesting.
+
+214
+00:06:26.500 --> 00:06:28.760
+So we have ginger.
+
+215
+00:06:28.760 --> 00:06:29.880
+There we go.
+
+216
+00:06:29.880 --> 00:06:31.040
+Another masala that
+
+217
+00:06:31.040 --> 00:06:33.880
+we have is cardamom.
+
+218
+00:06:35.480 --> 00:06:36.800
+And the last one that
+
+219
+00:06:36.800 --> 00:06:38.680
+we have is clove.
+
+220
+00:06:38.680 --> 00:06:41.080
+All right, we'll have a comma,
+
+221
+00:06:41.080 --> 00:06:42.680
+and we'll duplicate it two times.
+
+222
+00:06:42.680 --> 00:06:43.400
+So this time.
+
+223
+00:06:43.400 --> 00:06:44.200
+Oh, this should be
+
+224
+00:06:44.200 --> 00:06:46.360
+masala, not masal chai.
+
+225
+00:06:46.360 --> 00:06:50.120
+This one is going to be elaichichai.
+
+226
+00:06:50.120 --> 00:06:51.440
+And for the lychee, we
+
+227
+00:06:51.440 --> 00:06:53.890
+are using cardamom.
+
+228
+00:06:55.970 --> 00:06:57.170
+And the next one.
+
+229
+00:06:57.170 --> 00:06:59.250
+Oh, this should be cardamom.
+
+230
+00:06:59.250 --> 00:07:00.770
+Again, ignore the typos.
+
+231
+00:07:01.290 --> 00:07:03.770
+This one is having milk, but we
+
+232
+00:07:03.770 --> 00:07:05.090
+don't have anything else.
+
+233
+00:07:05.090 --> 00:07:06.090
+Again, this could be.
+
+234
+00:07:06.090 --> 00:07:07.010
+This is just recipe.
+
+235
+00:07:07.010 --> 00:07:08.290
+It could be anything.
+
+236
+00:07:08.290 --> 00:07:09.770
+All right, the last one that
+
+237
+00:07:09.770 --> 00:07:11.490
+we have is going to be spicy.
+
+238
+00:07:12.610 --> 00:07:14.370
+For the spicy chai, we
+
+239
+00:07:14.370 --> 00:07:15.850
+definitely want to put ginger.
+
+240
+00:07:15.850 --> 00:07:17.290
+We don't want to put cardamom.
+
+241
+00:07:17.290 --> 00:07:19.170
+We will put black pepper.
+
+242
+00:07:20.050 --> 00:07:21.810
+That's going to be very, very spicy.
+
+243
+00:07:22.450 --> 00:07:23.970
+And clove is also good.
+
+244
+00:07:23.970 --> 00:07:25.570
+So very spicy chai.
+
+245
+00:07:25.570 --> 00:07:27.250
+All right, so we have a recipe.
+
+246
+00:07:27.250 --> 00:07:27.530
+Now.
+
+247
+00:07:27.530 --> 00:07:28.530
+We want to find
+
+248
+00:07:28.530 --> 00:07:29.970
+all the unique spices.
+
+249
+00:07:30.770 --> 00:07:32.290
+Yeah, this one is complex.
+
+250
+00:07:32.290 --> 00:07:33.650
+You get the idea.
+
+251
+00:07:33.650 --> 00:07:35.090
+All right, so ginger is the one,
+
+252
+00:07:35.090 --> 00:07:36.290
+but ginger is also here.
+
+253
+00:07:36.290 --> 00:07:37.610
+So we need to figure out a way
+
+254
+00:07:37.610 --> 00:07:39.890
+how we can find out all the unique,
+
+255
+00:07:40.700 --> 00:07:41.890
+spices into this one.
+
+256
+00:07:41.890 --> 00:07:43.370
+So first, let's go ahead and work
+
+257
+00:07:43.370 --> 00:07:45.840
+with the unique, spices.
+
+258
+00:07:46.560 --> 00:07:47.880
+So can we go ahead for
+
+259
+00:07:47.880 --> 00:07:49.520
+the uniqueness, since the keyword is
+
+260
+00:07:49.520 --> 00:07:50.960
+unique, can we use this one?
+
+261
+00:07:50.960 --> 00:07:52.320
+All right, now all we have
+
+262
+00:07:52.320 --> 00:07:54.320
+to do is write comprehension.
+
+263
+00:07:54.320 --> 00:07:55.680
+Now here's the interesting part.
+
+264
+00:07:55.680 --> 00:07:56.960
+We actually will use
+
+265
+00:07:56.960 --> 00:07:58.080
+the underscores here.
+
+266
+00:07:58.080 --> 00:07:59.320
+Many of the underscores, because
+
+267
+00:07:59.320 --> 00:08:01.040
+we are about to fill this.
+
+268
+00:08:01.040 --> 00:08:02.840
+All right, the step one
+
+269
+00:08:02.840 --> 00:08:03.640
+is loop through it.
+
+270
+00:08:03.640 --> 00:08:04.840
+So I'll just go ahead and say
+
+271
+00:08:04.840 --> 00:08:11.180
+for ingredients in recipe.
+
+272
+00:08:11.180 --> 00:08:12.180
+So if you go ahead and work
+
+273
+00:08:12.180 --> 00:08:14.220
+with this recipe, this is a key
+
+274
+00:08:14.220 --> 00:08:15.740
+value pair, and you are not
+
+275
+00:08:15.740 --> 00:08:17.020
+iterating through it right now.
+
+276
+00:08:17.020 --> 00:08:18.300
+You are just referencing it.
+
+277
+00:08:18.300 --> 00:08:20.300
+It's not directly iteratable.
+
+278
+00:08:20.300 --> 00:08:22.420
+But I know one thing that if I
+
+279
+00:08:22.420 --> 00:08:24.020
+have a dictionary, if I put up
+
+280
+00:08:24.020 --> 00:08:25.700
+a dot here, I can access all
+
+281
+00:08:25.700 --> 00:08:28.260
+the keys or the values if I go
+
+282
+00:08:28.260 --> 00:08:29.500
+ahead and run the values like
+
+283
+00:08:29.500 --> 00:08:29.900
+this.
+
+284
+00:08:29.900 --> 00:08:31.540
+Now I have all the values.
+
+285
+00:08:31.540 --> 00:08:32.980
+So first iteration will go
+
+286
+00:08:32.980 --> 00:08:34.980
+like this, the second will
+
+287
+00:08:34.980 --> 00:08:36.580
+go like this, and the third
+
+288
+00:08:36.580 --> 00:08:38.590
+one will go like this one.
+
+289
+00:08:38.590 --> 00:08:39.830
+But if I go ahead and just
+
+290
+00:08:39.830 --> 00:08:41.750
+say keys, then I'll iterate
+
+291
+00:08:41.750 --> 00:08:43.830
+over this guy first, then this
+
+292
+00:08:43.830 --> 00:08:45.950
+guy, and then this one.
+
+293
+00:08:45.950 --> 00:08:48.110
+All right, so then the step
+
+294
+00:08:48.110 --> 00:08:49.670
+one, I'm actually going through
+
+295
+00:08:49.670 --> 00:08:50.670
+with all this value.
+
+296
+00:08:50.670 --> 00:08:52.230
+Let me go ahead and get
+
+297
+00:08:52.230 --> 00:08:53.870
+more room for myself.
+
+298
+00:08:53.870 --> 00:08:55.470
+So this is the part one.
+
+299
+00:08:55.470 --> 00:08:56.070
+All right.
+
+300
+00:08:56.070 --> 00:08:59.790
+Notice here we says for item
+
+301
+00:08:59.790 --> 00:09:01.550
+in iterable, and then we have
+
+302
+00:09:01.550 --> 00:09:03.310
+always seen the if condition.
+
+303
+00:09:04.120 --> 00:09:05.680
+Now, it doesn't always need
+
+304
+00:09:05.680 --> 00:09:06.800
+to be if condition.
+
+305
+00:09:06.800 --> 00:09:07.880
+You can actually write
+
+306
+00:09:07.880 --> 00:09:09.480
+more code after this.
+
+307
+00:09:09.480 --> 00:09:10.720
+This is the interesting part,
+
+308
+00:09:10.720 --> 00:09:13.000
+but everywhere the syntax is same.
+
+309
+00:09:13.000 --> 00:09:14.520
+So once I'm inside this,
+
+310
+00:09:14.520 --> 00:09:16.160
+now I'm iterating, I'm going
+
+311
+00:09:16.160 --> 00:09:17.320
+through with this one.
+
+312
+00:09:17.320 --> 00:09:18.640
+So can I run a loop
+
+313
+00:09:18.640 --> 00:09:20.120
+on this one as well?
+
+314
+00:09:20.120 --> 00:09:21.800
+And yes, you can.
+
+315
+00:09:21.800 --> 00:09:23.200
+You can just go ahead and say
+
+316
+00:09:23.200 --> 00:09:24.920
+just a space and say four.
+
+317
+00:09:25.480 --> 00:09:26.240
+And let's call this
+
+318
+00:09:26.240 --> 00:09:27.560
+one as a spice in.
+
+319
+00:09:28.120 --> 00:09:30.280
+And I, will call this one as
+
+320
+00:09:30.280 --> 00:09:32.440
+ingredients, because remember, you
+
+321
+00:09:32.440 --> 00:09:34.440
+are targeting this as ingredients.
+
+322
+00:09:34.440 --> 00:09:36.520
+So for spice, that means for
+
+323
+00:09:36.520 --> 00:09:40.040
+each item in this is what we are
+
+324
+00:09:40.040 --> 00:09:42.280
+referencing as ingredients.
+
+325
+00:09:42.280 --> 00:09:43.320
+Got it.
+
+326
+00:09:43.320 --> 00:09:44.320
+Very interesting way
+
+327
+00:09:44.320 --> 00:09:45.800
+of writing the code.
+
+328
+00:09:45.800 --> 00:09:47.240
+But the bigger question here
+
+329
+00:09:47.240 --> 00:09:48.400
+is what should I write
+
+330
+00:09:48.400 --> 00:09:50.200
+in place of this underscore?
+
+331
+00:09:50.200 --> 00:09:51.800
+Should I write ingredients
+
+332
+00:09:51.800 --> 00:09:53.240
+or should I write spice?
+
+333
+00:09:54.200 --> 00:09:55.440
+Go ahead and vote for it.
+
+334
+00:09:55.440 --> 00:09:56.760
+I would wait for it.
+
+335
+00:09:56.760 --> 00:09:57.440
+Try this out.
+
+336
+00:09:57.440 --> 00:09:58.280
+This is very fun.
+
+337
+00:09:58.920 --> 00:09:59.960
+Now most of the people will
+
+338
+00:09:59.960 --> 00:10:01.400
+say ingredients, because
+
+339
+00:10:01.400 --> 00:10:02.400
+this is what we have seen.
+
+340
+00:10:02.400 --> 00:10:04.040
+Whatever we write here,
+
+341
+00:10:04.040 --> 00:10:05.920
+we go ahead and use it in expression
+
+342
+00:10:05.920 --> 00:10:07.160
+if we are using item.
+
+343
+00:10:07.160 --> 00:10:08.240
+So we go ahead and write
+
+344
+00:10:08.240 --> 00:10:09.840
+in the expressions here, we have
+
+345
+00:10:09.840 --> 00:10:11.920
+seen mighty, always mighty.
+
+346
+00:10:11.920 --> 00:10:12.600
+Goes up here.
+
+347
+00:10:13.400 --> 00:10:15.240
+But no, this is not correct.
+
+348
+00:10:15.240 --> 00:10:16.920
+This is not how it works.
+
+349
+00:10:16.920 --> 00:10:18.760
+Whatever the ultimate value you
+
+350
+00:10:18.760 --> 00:10:20.680
+return from this whole thing
+
+351
+00:10:20.680 --> 00:10:23.160
+is actually going in the expression.
+
+352
+00:10:23.160 --> 00:10:25.210
+So whatever the whole thing you are
+
+353
+00:10:25.210 --> 00:10:27.450
+trying to use or trying to go with
+
+354
+00:10:27.450 --> 00:10:29.610
+this, that actually ultimate goes.
+
+355
+00:10:29.610 --> 00:10:30.970
+So ingredients in this
+
+356
+00:10:30.970 --> 00:10:32.250
+case is a middleman.
+
+357
+00:10:32.250 --> 00:10:33.410
+We are just using it
+
+358
+00:10:33.410 --> 00:10:35.290
+for storing a temporary value inside
+
+359
+00:10:35.290 --> 00:10:36.930
+this, and ultimately we
+
+360
+00:10:36.930 --> 00:10:38.170
+are checking it for spice.
+
+361
+00:10:38.170 --> 00:10:39.730
+So the value that will go here
+
+362
+00:10:39.730 --> 00:10:41.450
+is going to be spice here.
+
+363
+00:10:42.010 --> 00:10:43.130
+There we go.
+
+364
+00:10:43.130 --> 00:10:44.690
+And I, know this is a lot.
+
+365
+00:10:44.690 --> 00:10:46.250
+That's why I say initially,
+
+366
+00:10:46.250 --> 00:10:47.370
+it is very tricky
+
+367
+00:10:47.370 --> 00:10:48.690
+to understand the comprehension.
+
+368
+00:10:48.690 --> 00:10:49.690
+But after watching this video,
+
+369
+00:10:49.690 --> 00:10:50.620
+you'll realize,
+
+370
+00:10:50.620 --> 00:10:52.260
+okay, this is a very extreme case.
+
+371
+00:10:52.260 --> 00:10:54.100
+And that's why I'm here to teach
+
+372
+00:10:54.100 --> 00:10:55.340
+about the extreme cases.
+
+373
+00:10:56.060 --> 00:10:57.740
+Now, if I go ahead and simply
+
+374
+00:10:57.740 --> 00:10:59.100
+say that I want to print,
+
+375
+00:11:00.030 --> 00:11:01.260
+the unique spices,
+
+376
+00:11:02.380 --> 00:11:03.860
+I hope we'll get the results.
+
+377
+00:11:03.860 --> 00:11:04.820
+So I'll just go back
+
+378
+00:11:04.820 --> 00:11:06.459
+onto this syntax.
+
+379
+00:11:06.459 --> 00:11:08.420
+All right, let's open this
+
+380
+00:11:08.420 --> 00:11:10.060
+up and try to run this.
+
+381
+00:11:10.060 --> 00:11:11.460
+And notice here we got
+
+382
+00:11:11.460 --> 00:11:12.940
+the clove, cardamom, ginger,
+
+383
+00:11:12.940 --> 00:11:14.060
+black pepper, and milk.
+
+384
+00:11:14.060 --> 00:11:15.020
+We were able to get
+
+385
+00:11:15.020 --> 00:11:16.700
+unique values out of it.
+
+386
+00:11:17.710 --> 00:11:20.630
+Very interesting aspect of dealing
+
+387
+00:11:20.630 --> 00:11:22.230
+the things, especially when we
+
+388
+00:11:22.230 --> 00:11:24.270
+have these set comprehension.
+
+389
+00:11:24.270 --> 00:11:25.790
+I'm pretty sure you have not seen
+
+390
+00:11:25.790 --> 00:11:27.830
+anybody going this much depth in
+
+391
+00:11:27.830 --> 00:11:30.090
+this, but this is a very use case.
+
+392
+00:11:30.090 --> 00:11:31.230
+It took us some time to actually
+
+393
+00:11:31.230 --> 00:11:32.230
+figure out this use case,
+
+394
+00:11:32.230 --> 00:11:33.550
+but now you have more confidence.
+
+395
+00:11:33.550 --> 00:11:35.230
+All right, I truly understand
+
+396
+00:11:35.230 --> 00:11:36.430
+what goes inside this.
+
+397
+00:11:36.430 --> 00:11:37.630
+And every single time.
+
+398
+00:11:37.630 --> 00:11:39.030
+Now I'll write this syntax
+
+399
+00:11:39.030 --> 00:11:39.830
+of comprehension.
+
+400
+00:11:39.830 --> 00:11:41.470
+I'll go and start with a loop
+
+401
+00:11:41.470 --> 00:11:42.910
+first, because this is.
+
+402
+00:11:43.500 --> 00:11:45.660
+Or this can be filled later on.
+
+403
+00:11:45.660 --> 00:11:46.860
+So I hope this was,
+
+404
+00:11:46.860 --> 00:11:48.220
+a pretty fun exercise for you.
+
+405
+00:11:48.220 --> 00:11:49.780
+Please do rate us for this
+
+406
+00:11:49.780 --> 00:11:50.900
+particular video as well.
+
+407
+00:11:50.900 --> 00:11:51.340
+That.
+
+408
+00:11:51.340 --> 00:11:52.540
+All right, you enjoyed this video.
+
+409
+00:11:52.540 --> 00:11:53.580
+You learned quite a lot.
+
+410
+00:11:53.580 --> 00:11:54.620
+Little bit uncomfortable,
+
+411
+00:11:54.620 --> 00:11:55.980
+but you learned a lot.
+
+412
+00:11:55.980 --> 00:11:57.340
+That is it for this video.
+
+413
+00:11:57.340 --> 00:11:58.940
+Let's catch up, in the next one.

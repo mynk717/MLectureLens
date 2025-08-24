@@ -1,0 +1,709 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.280
+All right, so in this particular
+
+2
+00:00:01.280 --> 00:00:03.440
+video, let's understand one more
+
+3
+00:00:03.440 --> 00:00:05.960
+very important concept because now
+
+4
+00:00:05.960 --> 00:00:07.920
+we already know about queue systems.
+
+5
+00:00:07.920 --> 00:00:09.280
+You know, even there is a small
+
+6
+00:00:09.280 --> 00:00:10.480
+problem with the queue system.
+
+7
+00:00:11.200 --> 00:00:12.680
+Let's say what happens is
+
+8
+00:00:12.680 --> 00:00:14.360
+whenever, okay, I'll just give you
+
+9
+00:00:14.360 --> 00:00:16.720
+a scenario that whenever
+
+10
+00:00:17.440 --> 00:00:20.640
+there is a payment success, okay?
+
+11
+00:00:20.640 --> 00:00:21.920
+Whenever there's a payment success,
+
+12
+00:00:21.920 --> 00:00:23.600
+you want to do couple of things.
+
+13
+00:00:23.600 --> 00:00:25.520
+Number one, you want
+
+14
+00:00:25.520 --> 00:00:28.610
+to trigger and email, okay?
+
+15
+00:00:28.610 --> 00:00:32.049
+And you want to update
+
+16
+00:00:32.049 --> 00:00:34.530
+the order to be success.
+
+17
+00:00:35.170 --> 00:00:36.370
+Let's say these are the two
+
+18
+00:00:36.370 --> 00:00:37.970
+things that you want to do.
+
+19
+00:00:37.970 --> 00:00:39.850
+Now in this particular architecture,
+
+20
+00:00:39.850 --> 00:00:41.170
+how you are going to do it?
+
+21
+00:00:41.170 --> 00:00:43.009
+Number one, the first way using
+
+22
+00:00:43.009 --> 00:00:44.130
+the simple queues, is what
+
+23
+00:00:44.130 --> 00:00:45.610
+you are going to do whenever
+
+24
+00:00:45.610 --> 00:00:47.170
+a payment gets successful.
+
+25
+00:00:47.170 --> 00:00:48.450
+First thing is that you
+
+26
+00:00:48.450 --> 00:00:49.650
+enqueue something into
+
+27
+00:00:49.650 --> 00:00:51.090
+the email queue, right?
+
+28
+00:00:51.090 --> 00:00:53.020
+So that it can be sent email send.
+
+29
+00:00:53.020 --> 00:00:53.860
+Second is that you
+
+30
+00:00:53.860 --> 00:00:55.260
+need one more queue.
+
+31
+00:00:55.260 --> 00:00:56.620
+Let's name this particular
+
+32
+00:00:56.620 --> 00:00:59.340
+queue as the order queue.
+
+33
+00:00:59.340 --> 00:01:00.820
+You are going to push one more
+
+34
+00:01:00.820 --> 00:01:02.860
+message into the order queue which
+
+35
+00:01:02.860 --> 00:01:05.500
+can be later processed by the order
+
+36
+00:01:05.500 --> 00:01:07.580
+service to update something.
+
+37
+00:01:07.580 --> 00:01:09.380
+Now see what happened here, you
+
+38
+00:01:09.380 --> 00:01:11.900
+are basically doing two different
+
+39
+00:01:11.900 --> 00:01:15.020
+tasks about one operations.
+
+40
+00:01:15.020 --> 00:01:16.220
+So whenever there's a payment
+
+41
+00:01:16.220 --> 00:01:17.260
+successful, you are
+
+42
+00:01:17.260 --> 00:01:18.810
+doing two different tasks.
+
+43
+00:01:18.810 --> 00:01:20.050
+What if these were three tasks?
+
+44
+00:01:20.050 --> 00:01:21.690
+Then you have to add one more thing.
+
+45
+00:01:21.690 --> 00:01:23.410
+Now this is a bad thing, right?
+
+46
+00:01:23.410 --> 00:01:24.650
+You are doing multiple things
+
+47
+00:01:24.650 --> 00:01:26.490
+when one event occurs.
+
+48
+00:01:26.490 --> 00:01:28.090
+So in this particular scenario,
+
+49
+00:01:28.090 --> 00:01:29.210
+we actually don't use
+
+50
+00:01:29.210 --> 00:01:30.370
+these kind of architectures.
+
+51
+00:01:30.370 --> 00:01:31.370
+We don't want this kind
+
+52
+00:01:31.370 --> 00:01:33.290
+of branching out everywhere.
+
+53
+00:01:33.290 --> 00:01:35.570
+We do something known as Pub nub.
+
+54
+00:01:35.570 --> 00:01:36.330
+Okay?
+
+55
+00:01:36.330 --> 00:01:38.370
+In pubnub, what happens is that
+
+56
+00:01:38.370 --> 00:01:40.410
+you basically put a publisher,
+
+57
+00:01:40.410 --> 00:01:43.090
+okay, let's take S and S.
+
+58
+00:01:43.090 --> 00:01:45.370
+So SNS is basically one too many.
+
+59
+00:01:45.370 --> 00:01:48.230
+So what you do, the payment service
+
+60
+00:01:48.230 --> 00:01:51.350
+can publish an event, okay?
+
+61
+00:01:51.350 --> 00:01:54.710
+An event saying payment success.
+
+62
+00:01:54.710 --> 00:01:57.110
+That's it, payment success.
+
+63
+00:01:57.110 --> 00:01:58.430
+So this is your event and you
+
+64
+00:01:58.430 --> 00:01:59.590
+are publishing this event
+
+65
+00:01:59.590 --> 00:02:01.430
+to some kind of a broker system.
+
+66
+00:02:01.990 --> 00:02:04.230
+Now this service can do is
+
+67
+00:02:04.230 --> 00:02:06.870
+it can internally send this message
+
+68
+00:02:06.870 --> 00:02:08.270
+to the order queue as well.
+
+69
+00:02:08.270 --> 00:02:10.030
+And it can internally send
+
+70
+00:02:10.030 --> 00:02:11.750
+the message automatically
+
+71
+00:02:11.750 --> 00:02:13.310
+to the email queue as well.
+
+72
+00:02:13.310 --> 00:02:14.790
+Because email queue and order queue
+
+73
+00:02:14.790 --> 00:02:16.200
+both are listening to this thing.
+
+74
+00:02:16.200 --> 00:02:17.440
+So if you see this diagram, it is
+
+75
+00:02:17.440 --> 00:02:19.240
+basically one too many, right?
+
+76
+00:02:19.240 --> 00:02:19.960
+One too many.
+
+77
+00:02:19.960 --> 00:02:20.920
+And there's a filter.
+
+78
+00:02:20.920 --> 00:02:22.440
+So what can, what you can do is you
+
+79
+00:02:22.440 --> 00:02:23.280
+can use this kind of an
+
+80
+00:02:23.280 --> 00:02:25.080
+architecture where now see, the
+
+81
+00:02:25.080 --> 00:02:27.800
+payment service is only and only
+
+82
+00:02:27.800 --> 00:02:29.600
+sending and emitting one event that
+
+83
+00:02:29.600 --> 00:02:30.680
+is payment success.
+
+84
+00:02:30.680 --> 00:02:32.480
+And if someone wants to do something
+
+85
+00:02:32.480 --> 00:02:33.640
+with that payment success, they
+
+86
+00:02:33.640 --> 00:02:35.680
+can do it right Tomorrow maybe I
+
+87
+00:02:35.680 --> 00:02:37.120
+have one more, one more service.
+
+88
+00:02:37.120 --> 00:02:38.560
+Let's say this is a WhatsApp service.
+
+89
+00:02:38.560 --> 00:02:40.040
+I also want to trigger
+
+90
+00:02:40.040 --> 00:02:41.240
+a WhatsApp service.
+
+91
+00:02:41.240 --> 00:02:42.950
+So what I can do is this WhatsApp
+
+92
+00:02:42.950 --> 00:02:43.990
+service can also listen
+
+93
+00:02:43.990 --> 00:02:45.630
+to this particular pub now.
+
+94
+00:02:45.630 --> 00:02:47.750
+So there is no change needed
+
+95
+00:02:47.750 --> 00:02:49.710
+on the payment side payments.
+
+96
+00:02:49.710 --> 00:02:51.390
+So it's basically like, you know,
+
+97
+00:02:51.390 --> 00:02:54.270
+let's say I am a payment service.
+
+98
+00:02:54.270 --> 00:02:56.830
+I can just you know, shout, hey,
+
+99
+00:02:56.830 --> 00:02:58.590
+the payment is successful.
+
+100
+00:02:58.590 --> 00:03:01.110
+And all the people in this room, if
+
+101
+00:03:01.110 --> 00:03:02.190
+they want to do something with
+
+102
+00:03:02.190 --> 00:03:03.470
+this information, they can do it.
+
+103
+00:03:03.470 --> 00:03:04.750
+It's basically like that.
+
+104
+00:03:04.750 --> 00:03:06.590
+So earlier what we were basically
+
+105
+00:03:06.590 --> 00:03:08.350
+doing with the email system was I,
+
+106
+00:03:08.350 --> 00:03:09.910
+as a payment service was going to
+
+107
+00:03:09.910 --> 00:03:11.810
+person A, that hey, this person has
+
+108
+00:03:11.810 --> 00:03:13.010
+done a payment, do you want to do
+
+109
+00:03:13.010 --> 00:03:13.290
+something?
+
+110
+00:03:13.290 --> 00:03:15.010
+I was going to person two that, hey,
+
+111
+00:03:15.010 --> 00:03:16.170
+he has done the payment service,
+
+112
+00:03:16.170 --> 00:03:17.450
+do you want to do something?
+
+113
+00:03:17.450 --> 00:03:19.290
+Rather now what I am basically
+
+114
+00:03:19.290 --> 00:03:21.090
+doing is I'm just shouting in
+
+115
+00:03:21.090 --> 00:03:23.290
+the air that payment is successful.
+
+116
+00:03:23.290 --> 00:03:24.930
+Whosoever wants to do
+
+117
+00:03:24.930 --> 00:03:26.050
+something, they can do it.
+
+118
+00:03:26.050 --> 00:03:29.210
+So this is your Pub Nub architecture.
+
+119
+00:03:29.210 --> 00:03:32.170
+And also, also, because if you
+
+120
+00:03:32.170 --> 00:03:33.650
+clearly see this, what happened
+
+121
+00:03:33.650 --> 00:03:35.370
+is you had one publisher.
+
+122
+00:03:35.370 --> 00:03:37.090
+So let's say you had
+
+123
+00:03:37.090 --> 00:03:38.130
+a publisher here.
+
+124
+00:03:38.130 --> 00:03:39.930
+This is, this is a publisher.
+
+125
+00:03:39.930 --> 00:03:42.250
+You published it to a topic.
+
+126
+00:03:42.250 --> 00:03:45.450
+SNS has a concept of topics, so sns.
+
+127
+00:03:45.450 --> 00:03:46.210
+So let's say this is
+
+128
+00:03:46.210 --> 00:03:47.610
+your pubnub, okay?
+
+129
+00:03:47.610 --> 00:03:49.050
+To a Pub Nub.
+
+130
+00:03:49.050 --> 00:03:50.490
+Now from this Pub Nub,
+
+131
+00:03:50.490 --> 00:03:51.970
+you are basically sending it
+
+132
+00:03:51.970 --> 00:03:53.290
+to multiple queues.
+
+133
+00:03:53.290 --> 00:03:54.570
+So let me just take an example
+
+134
+00:03:54.570 --> 00:03:55.250
+of a queue here.
+
+135
+00:03:55.250 --> 00:03:56.090
+So let's say this is your
+
+136
+00:03:56.090 --> 00:03:57.690
+queue system, okay?
+
+137
+00:03:57.690 --> 00:04:00.330
+So queue, then again a queue,
+
+138
+00:04:00.330 --> 00:04:01.370
+then again a queue.
+
+139
+00:04:01.370 --> 00:04:02.770
+So this is order queue, payment
+
+140
+00:04:02.770 --> 00:04:03.850
+queue, some other queue.
+
+141
+00:04:03.850 --> 00:04:05.730
+So this Pubnub sends this message
+
+142
+00:04:05.730 --> 00:04:07.720
+to 1, send this message to 2,
+
+143
+00:04:07.720 --> 00:04:10.320
+and sends this message to 3 queues.
+
+144
+00:04:10.320 --> 00:04:12.320
+This is also known as a,
+
+145
+00:04:12.320 --> 00:04:16.560
+fan out architecture.
+
+146
+00:04:16.560 --> 00:04:18.760
+Okay, so this is your fan out
+
+147
+00:04:18.760 --> 00:04:20.720
+architecture because if you notice
+
+148
+00:04:20.720 --> 00:04:23.040
+here, one message is getting
+
+149
+00:04:23.040 --> 00:04:25.600
+fanned out to multiple services
+
+150
+00:04:25.600 --> 00:04:27.280
+and to this multiple services.
+
+151
+00:04:27.280 --> 00:04:28.440
+Then you have your
+
+152
+00:04:28.440 --> 00:04:29.600
+servers listening to it.
+
+153
+00:04:29.600 --> 00:04:32.250
+So basically you have your servers.
+
+154
+00:04:32.250 --> 00:04:33.610
+So maybe you can have like
+
+155
+00:04:34.170 --> 00:04:35.890
+two servers right here, you can
+
+156
+00:04:35.890 --> 00:04:37.250
+have one server here, you can
+
+157
+00:04:37.250 --> 00:04:38.570
+have multiple servers here.
+
+158
+00:04:38.570 --> 00:04:40.770
+So these are basically dequeuing
+
+159
+00:04:40.770 --> 00:04:42.490
+your messages and processing it.
+
+160
+00:04:42.490 --> 00:04:45.130
+So this is how the reality works.
+
+161
+00:04:45.130 --> 00:04:46.570
+So whenever you place an order
+
+162
+00:04:46.570 --> 00:04:48.209
+on the Amazon, they just
+
+163
+00:04:48.209 --> 00:04:49.930
+say, hey, order received.
+
+164
+00:04:49.930 --> 00:04:51.450
+Whichever service wants to listen
+
+165
+00:04:51.450 --> 00:04:52.810
+to it, email service wants to listen
+
+166
+00:04:52.810 --> 00:04:54.250
+to it, WhatsApp service wants to
+
+167
+00:04:54.250 --> 00:04:56.170
+listen to it, some marketing or ad
+
+168
+00:04:56.170 --> 00:04:57.410
+service wants to listen to it.
+
+169
+00:04:57.410 --> 00:04:58.730
+They just keeps on listening it
+
+170
+00:04:58.730 --> 00:05:00.930
+and do their work and they go on.
+
+171
+00:05:00.930 --> 00:05:02.800
+So this is a true decoupling
+
+172
+00:05:02.800 --> 00:05:04.920
+between microservice architecture.
+
+173
+00:05:04.920 --> 00:05:07.480
+That is a fan out architecture.
+
+174
+00:05:07.480 --> 00:05:08.520
+So just look at this
+
+175
+00:05:08.520 --> 00:05:09.800
+particular complex diagram.
+
+176
+00:05:09.800 --> 00:05:11.240
+I mean, we have studied a lot
+
+177
+00:05:11.240 --> 00:05:12.680
+of things in the system design.

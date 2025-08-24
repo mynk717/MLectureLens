@@ -1,0 +1,741 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:01.520
+All right.
+
+2
+00:00:01.520 --> 00:00:03.640
+I have already introduced a lot of
+
+3
+00:00:03.640 --> 00:00:06.040
+concepts in this very first section.
+
+4
+00:00:06.040 --> 00:00:07.520
+Usually people just give a brief
+
+5
+00:00:07.520 --> 00:00:10.040
+lightweight intro, but I wanted
+
+6
+00:00:10.040 --> 00:00:11.600
+to have you the taste of the Python.
+
+7
+00:00:11.600 --> 00:00:13.040
+That's why we are organizing things
+
+8
+00:00:13.040 --> 00:00:14.560
+in the professional way.
+
+9
+00:00:14.560 --> 00:00:16.279
+I don't want to get overwhelmed with
+
+10
+00:00:16.279 --> 00:00:18.120
+it, but I still want to show you one
+
+11
+00:00:18.120 --> 00:00:19.920
+of the another document that you
+
+12
+00:00:19.920 --> 00:00:21.640
+study once you learn the Python.
+
+13
+00:00:21.640 --> 00:00:22.360
+This is something that you
+
+14
+00:00:22.360 --> 00:00:24.240
+learn after learning Python.
+
+15
+00:00:24.240 --> 00:00:26.000
+It's the style of writing code.
+
+16
+00:00:26.000 --> 00:00:27.480
+And yes, there is a proper way
+
+17
+00:00:27.480 --> 00:00:28.800
+of how you write the Python code.
+
+18
+00:00:28.800 --> 00:00:30.720
+And everybody goes through this
+
+19
+00:00:30.720 --> 00:00:32.240
+documentation or this template
+
+20
+00:00:32.240 --> 00:00:33.960
+that what are do's and don'ts
+
+21
+00:00:33.960 --> 00:00:35.600
+while writing the Python code.
+
+22
+00:00:35.600 --> 00:00:37.520
+Again, reminding you this is not
+
+23
+00:00:37.520 --> 00:00:39.760
+something that should be learned
+
+24
+00:00:39.760 --> 00:00:42.360
+or gone through by a beginner or
+
+25
+00:00:42.360 --> 00:00:43.680
+especially somebody who's just
+
+26
+00:00:43.680 --> 00:00:45.040
+probably one year or one and a
+
+27
+00:00:45.040 --> 00:00:46.200
+half year in writing the Python
+
+28
+00:00:46.200 --> 00:00:46.520
+code.
+
+29
+00:00:46.520 --> 00:00:47.640
+This is for usually people
+
+30
+00:00:47.640 --> 00:00:49.560
+that eventually are comfortable
+
+31
+00:00:49.560 --> 00:00:50.360
+with Python and want
+
+32
+00:00:50.360 --> 00:00:51.840
+to improve their code.
+
+33
+00:00:51.840 --> 00:00:53.360
+But still, I don't want to miss
+
+34
+00:00:53.360 --> 00:00:55.350
+any bit of the Python part of it.
+
+35
+00:00:55.350 --> 00:00:56.140
+So, so let me walk you
+
+36
+00:00:56.140 --> 00:00:57.020
+through with this again.
+
+37
+00:00:57.020 --> 00:00:58.460
+This is super nice,
+
+38
+00:00:58.460 --> 00:01:00.620
+but just want to have it.
+
+39
+00:01:00.620 --> 00:01:01.820
+There is something known as,
+
+40
+00:01:01.820 --> 00:01:04.060
+in the Python world known as PEP8.
+
+41
+00:01:04.060 --> 00:01:05.740
+This PEP8 is the style
+
+42
+00:01:05.740 --> 00:01:06.940
+guideline for Python code.
+
+43
+00:01:06.940 --> 00:01:08.300
+We don't know right now how to write
+
+44
+00:01:08.300 --> 00:01:09.740
+the Python code that is okay,
+
+45
+00:01:09.740 --> 00:01:12.220
+but there is a guideline by the man
+
+46
+00:01:12.220 --> 00:01:14.300
+himself who created the Python
+
+47
+00:01:14.300 --> 00:01:16.020
+and it's a very simple guideline.
+
+48
+00:01:16.020 --> 00:01:17.740
+There is not too much included in it.
+
+49
+00:01:17.740 --> 00:01:18.500
+I'll just walk you through
+
+50
+00:01:18.500 --> 00:01:19.580
+with the things.
+
+51
+00:01:19.580 --> 00:01:21.100
+Like one of the point that they
+
+52
+00:01:21.100 --> 00:01:23.380
+always say in this, so let's just
+
+53
+00:01:23.380 --> 00:01:25.100
+go ahead and say that the name of
+
+54
+00:01:25.100 --> 00:01:28.580
+this is PEP 8, call it as
+
+55
+00:01:28.580 --> 00:01:29.860
+preparation talk or something
+
+56
+00:01:29.860 --> 00:01:30.620
+like that.
+
+57
+00:01:30.620 --> 00:01:32.300
+So in the whole PEP 8 they
+
+58
+00:01:32.300 --> 00:01:34.060
+mention a lot of points and don't
+
+59
+00:01:34.060 --> 00:01:35.300
+worry, as we write the code
+
+60
+00:01:35.300 --> 00:01:36.900
+I will automatically incorporate
+
+61
+00:01:36.900 --> 00:01:38.060
+these habits into you.
+
+62
+00:01:38.580 --> 00:01:39.900
+But some of the things like always
+
+63
+00:01:39.900 --> 00:01:41.980
+use four spaces, your editor
+
+64
+00:01:41.980 --> 00:01:43.140
+does it for you automatically.
+
+65
+00:01:43.140 --> 00:01:44.420
+But this says always use
+
+66
+00:01:44.420 --> 00:01:47.500
+four space, never tabs.
+
+67
+00:01:47.500 --> 00:01:49.100
+So although tab also does four
+
+68
+00:01:49.100 --> 00:01:50.960
+space, but they actually avoids it
+
+69
+00:01:50.960 --> 00:01:51.920
+because sometimes the tabs
+
+70
+00:01:51.920 --> 00:01:53.720
+are configured for two tabs or
+
+71
+00:01:53.720 --> 00:01:55.200
+two spaces, but again they say
+
+72
+00:01:55.200 --> 00:01:57.360
+explicitly use four spaces.
+
+73
+00:01:57.360 --> 00:01:58.880
+Another things, it's just a way
+
+74
+00:01:58.880 --> 00:02:00.680
+of writing the code, use
+
+75
+00:02:00.680 --> 00:02:02.040
+better meaningful names
+
+76
+00:02:02.040 --> 00:02:03.520
+for your methods and functions
+
+77
+00:02:03.520 --> 00:02:04.640
+and classes, all of that.
+
+78
+00:02:04.640 --> 00:02:06.400
+So call it as something like chai
+
+79
+00:02:06.400 --> 00:02:09.280
+and not C1 or C2.
+
+80
+00:02:09.280 --> 00:02:10.720
+Although in the tutorial you'll see
+
+81
+00:02:10.720 --> 00:02:12.800
+me using these names like F and G.
+
+82
+00:02:12.800 --> 00:02:14.120
+They're easier to explain.
+
+83
+00:02:14.120 --> 00:02:15.920
+That's why I do it, but their
+
+84
+00:02:15.920 --> 00:02:17.600
+whole goal is use better names.
+
+85
+00:02:17.600 --> 00:02:18.880
+That is always a good idea.
+
+86
+00:02:19.660 --> 00:02:21.260
+And then they also mentioned
+
+87
+00:02:21.260 --> 00:02:22.500
+that use formatters.
+
+88
+00:02:22.500 --> 00:02:23.580
+We are not going to talk about
+
+89
+00:02:23.580 --> 00:02:25.260
+them as of now, but formatters
+
+90
+00:02:25.260 --> 00:02:28.020
+like Black, rough, flakate,
+
+91
+00:02:28.020 --> 00:02:29.420
+whatever you want to use, what
+
+92
+00:02:29.420 --> 00:02:30.940
+formatter does, it automatically
+
+93
+00:02:30.940 --> 00:02:32.540
+makes your code more beautiful,
+
+94
+00:02:32.540 --> 00:02:33.980
+more pepe way.
+
+95
+00:02:33.980 --> 00:02:35.060
+It does it automatically.
+
+96
+00:02:35.060 --> 00:02:36.180
+We don't want to go into that.
+
+97
+00:02:36.180 --> 00:02:38.140
+But this is just few of them.
+
+98
+00:02:38.140 --> 00:02:39.180
+They have a whole lot
+
+99
+00:02:39.180 --> 00:02:40.180
+of guidelines, as you can see.
+
+100
+00:02:40.180 --> 00:02:41.380
+They have a whole examples
+
+101
+00:02:41.380 --> 00:02:42.220
+what to do, what not
+
+102
+00:02:42.220 --> 00:02:43.620
+to do, how to write this.
+
+103
+00:02:43.620 --> 00:02:44.740
+Definitely not this.
+
+104
+00:02:44.740 --> 00:02:45.890
+Rather not.
+
+105
+00:02:45.890 --> 00:02:46.970
+They have a lot of things when
+
+106
+00:02:46.970 --> 00:02:48.290
+to use trailing commas.
+
+107
+00:02:48.290 --> 00:02:50.050
+They have a lot of ways of defining
+
+108
+00:02:50.050 --> 00:02:52.050
+how to write better, readable,
+
+109
+00:02:52.050 --> 00:02:53.890
+maintainable Python code.
+
+110
+00:02:53.890 --> 00:02:56.050
+We will not go into that much of it.
+
+111
+00:02:56.050 --> 00:02:57.210
+One last thing I would like
+
+112
+00:02:57.210 --> 00:02:59.650
+to show you is a Zen of Python.
+
+113
+00:02:59.650 --> 00:03:01.250
+This is known as Pythonic
+
+114
+00:03:01.250 --> 00:03:02.850
+way of writing the code.
+
+115
+00:03:02.850 --> 00:03:03.850
+So what's the Pepit?
+
+116
+00:03:03.850 --> 00:03:06.050
+Pepit is also the same, but they
+
+117
+00:03:06.050 --> 00:03:07.210
+have this nice interesting thing.
+
+118
+00:03:07.210 --> 00:03:08.010
+So I'll just walk you
+
+119
+00:03:08.010 --> 00:03:08.490
+through with that.
+
+120
+00:03:08.490 --> 00:03:09.770
+So we can actually go ahead and see
+
+121
+00:03:09.770 --> 00:03:11.510
+this in the terminal itself.
+
+122
+00:03:11.510 --> 00:03:13.230
+Open up your terminal doesn't need
+
+123
+00:03:13.230 --> 00:03:14.390
+to be virtual environment.
+
+124
+00:03:14.390 --> 00:03:15.590
+Anything is fine.
+
+125
+00:03:15.590 --> 00:03:17.390
+Just go ahead and open your Python
+
+126
+00:03:17.390 --> 00:03:19.110
+in the terminal or in the shell.
+
+127
+00:03:19.110 --> 00:03:20.550
+We'll just do it here.
+
+128
+00:03:20.550 --> 00:03:22.190
+If you're on the Mac, do Python 3.
+
+129
+00:03:22.190 --> 00:03:23.070
+If you're on the Windows,
+
+130
+00:03:23.070 --> 00:03:23.990
+just do Python.
+
+131
+00:03:23.990 --> 00:03:24.990
+So I'll just go ahead
+
+132
+00:03:24.990 --> 00:03:25.990
+and do Python 3.
+
+133
+00:03:25.990 --> 00:03:27.230
+Three arrows means I
+
+134
+00:03:27.230 --> 00:03:28.950
+am into Python way.
+
+135
+00:03:28.950 --> 00:03:29.630
+Then just go ahead
+
+136
+00:03:29.630 --> 00:03:31.030
+and say import this.
+
+137
+00:03:31.030 --> 00:03:31.950
+Yeah, that's it.
+
+138
+00:03:31.950 --> 00:03:33.910
+One line, import this.
+
+139
+00:03:33.910 --> 00:03:35.390
+As soon as you do this, this actually
+
+140
+00:03:35.390 --> 00:03:37.030
+gives you the Zen of Python.
+
+141
+00:03:37.030 --> 00:03:38.990
+It's like a poem,
+
+142
+00:03:38.990 --> 00:03:41.230
+but again it is just basics.
+
+143
+00:03:41.230 --> 00:03:42.910
+So beautiful is better than ugly.
+
+144
+00:03:42.910 --> 00:03:44.190
+Explicit list is
+
+145
+00:03:44.190 --> 00:03:45.950
+better than implicit.
+
+146
+00:03:45.950 --> 00:03:47.470
+Simple is better than complex.
+
+147
+00:03:47.470 --> 00:03:49.230
+Complex is better than complicated.
+
+148
+00:03:49.230 --> 00:03:51.070
+Flat is better than nested.
+
+149
+00:03:51.070 --> 00:03:52.950
+The whole point is write your
+
+150
+00:03:52.950 --> 00:03:54.990
+code as simple as possible.
+
+151
+00:03:55.710 --> 00:03:56.830
+That is the whole this
+
+152
+00:03:56.830 --> 00:03:58.430
+poem is saying about it.
+
+153
+00:03:58.430 --> 00:03:59.790
+Again, I don't want you to get
+
+154
+00:03:59.790 --> 00:04:01.110
+too much into depth of it.
+
+155
+00:04:01.110 --> 00:04:02.230
+This is something once you
+
+156
+00:04:02.230 --> 00:04:03.470
+are comfortable in writing
+
+157
+00:04:03.470 --> 00:04:05.360
+the Python code, that is it.
+
+158
+00:04:05.360 --> 00:04:07.520
+But still I didn't want it to
+
+159
+00:04:07.520 --> 00:04:10.080
+actually not have in this course.
+
+160
+00:04:10.750 --> 00:04:12.000
+Rather to have this in early.
+
+161
+00:04:12.000 --> 00:04:12.880
+This is the point when you
+
+162
+00:04:12.880 --> 00:04:13.720
+tell it because there is no
+
+163
+00:04:13.720 --> 00:04:14.760
+other point When I actually
+
+164
+00:04:14.760 --> 00:04:16.640
+come back and hey, use this.
+
+165
+00:04:16.640 --> 00:04:17.920
+This should be introduced as
+
+166
+00:04:17.920 --> 00:04:19.000
+early as possible so that
+
+167
+00:04:19.000 --> 00:04:20.880
+you know, okay, there's a good way
+
+168
+00:04:20.880 --> 00:04:21.560
+of writing the code
+
+169
+00:04:21.560 --> 00:04:23.040
+and there's a documentation.
+
+170
+00:04:23.040 --> 00:04:24.520
+Once I'm comfortable with the Python
+
+171
+00:04:24.520 --> 00:04:25.920
+I can go ahead and read that.
+
+172
+00:04:25.920 --> 00:04:27.600
+So keep that in note, big and bold.
+
+173
+00:04:27.600 --> 00:04:27.840
+That.
+
+174
+00:04:27.840 --> 00:04:28.480
+Yes.
+
+175
+00:04:28.480 --> 00:04:30.720
+Always write simple code.
+
+176
+00:04:30.720 --> 00:04:31.920
+The most beautiful code
+
+177
+00:04:31.920 --> 00:04:33.440
+is the simplest code.
+
+178
+00:04:33.440 --> 00:04:34.520
+It should be readable.
+
+179
+00:04:34.520 --> 00:04:35.920
+It should be like, Anybody
+
+180
+00:04:35.920 --> 00:04:37.120
+can read it, understand what's
+
+181
+00:04:37.120 --> 00:04:38.400
+going on in this code.
+
+182
+00:04:38.400 --> 00:04:40.720
+That's the best code, actually.
+
+183
+00:04:40.720 --> 00:04:42.880
+So that is it for this video.
+
+184
+00:04:42.880 --> 00:04:43.840
+And let's catch up
+
+185
+00:04:43.840 --> 00:04:45.040
+in another such video.

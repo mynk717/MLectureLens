@@ -1,0 +1,1049 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:01.520
+So I hope that your
+
+2
+00:00:01.520 --> 00:00:03.400
+installation was good and you had
+
+3
+00:00:03.400 --> 00:00:04.840
+a fun time installing
+
+4
+00:00:04.840 --> 00:00:06.720
+and playing around with Node js.
+
+5
+00:00:06.720 --> 00:00:08.600
+In this particular video, let's go
+
+6
+00:00:08.600 --> 00:00:10.000
+with some actual coding.
+
+7
+00:00:10.000 --> 00:00:12.120
+And don't worry, all the code
+
+8
+00:00:12.120 --> 00:00:13.480
+files that are going to be used
+
+9
+00:00:13.480 --> 00:00:14.720
+throughout this course, you will
+
+10
+00:00:14.720 --> 00:00:15.919
+get a GitHub link to that.
+
+11
+00:00:15.919 --> 00:00:17.200
+You can check the description also
+
+12
+00:00:17.200 --> 00:00:18.720
+of this particular video.
+
+13
+00:00:18.720 --> 00:00:19.880
+So don't worry, you
+
+14
+00:00:19.880 --> 00:00:20.720
+will get everything.
+
+15
+00:00:20.720 --> 00:00:22.480
+Okay, so in this particular video,
+
+16
+00:00:22.480 --> 00:00:24.320
+let's jump onto some coding
+
+17
+00:00:24.320 --> 00:00:26.820
+and see how we can use Node to,
+
+18
+00:00:26.820 --> 00:00:28.820
+you know, basically run any code,
+
+19
+00:00:28.820 --> 00:00:31.140
+any JavaScript outside the browser.
+
+20
+00:00:31.140 --> 00:00:32.580
+Now what I will recommend you is
+
+21
+00:00:32.580 --> 00:00:35.220
+to get a IDE so you can
+
+22
+00:00:35.220 --> 00:00:37.700
+choose any ID that you like.
+
+23
+00:00:37.700 --> 00:00:39.380
+In my case, I'm going to go
+
+24
+00:00:39.380 --> 00:00:41.060
+with Visual Studio code because
+
+25
+00:00:41.060 --> 00:00:42.179
+that's my favorite ID
+
+26
+00:00:42.179 --> 00:00:44.060
+and most probably yours as well.
+
+27
+00:00:44.060 --> 00:00:46.100
+Okay, so I already have this Visual
+
+28
+00:00:46.100 --> 00:00:47.980
+Studio code installed on my machine,
+
+29
+00:00:47.980 --> 00:00:49.300
+so you can also download it.
+
+30
+00:00:49.300 --> 00:00:51.100
+It is free, it is open source
+
+31
+00:00:51.100 --> 00:00:52.900
+and it is made by Microsoft.
+
+32
+00:00:53.560 --> 00:00:54.680
+So what we have to do is first
+
+33
+00:00:54.680 --> 00:00:56.920
+of all I'm going to create an empty
+
+34
+00:00:56.920 --> 00:00:58.200
+folder for today's project.
+
+35
+00:00:58.760 --> 00:01:00.320
+So what I have done here is you can
+
+36
+00:01:00.320 --> 00:01:02.200
+see that I have an empty project
+
+37
+00:01:02.200 --> 00:01:04.200
+empty folder of Node js, right?
+
+38
+00:01:04.200 --> 00:01:06.120
+So here let's create a new folder
+
+39
+00:01:06.120 --> 00:01:08.520
+and let's call it as hello World.
+
+40
+00:01:08.520 --> 00:01:08.920
+Okay?
+
+41
+00:01:08.920 --> 00:01:09.640
+So you have to create
+
+42
+00:01:09.640 --> 00:01:11.160
+an empty directory.
+
+43
+00:01:11.160 --> 00:01:12.560
+So now what I can do is I can
+
+44
+00:01:12.560 --> 00:01:13.880
+basically open this particular
+
+45
+00:01:13.880 --> 00:01:15.720
+folder in my terminal, right?
+
+46
+00:01:15.720 --> 00:01:18.000
+So I can just say CD and I can go
+
+47
+00:01:18.000 --> 00:01:19.800
+into the coding folder there I have
+
+48
+00:01:19.800 --> 00:01:21.640
+a Node js folder that I just made
+
+49
+00:01:21.640 --> 00:01:23.000
+and there I have a hello World.
+
+50
+00:01:23.550 --> 00:01:25.630
+Now I can just do a code dot
+
+51
+00:01:25.630 --> 00:01:26.830
+to open this particular
+
+52
+00:01:26.830 --> 00:01:28.710
+folder in my VS code.
+
+53
+00:01:28.710 --> 00:01:30.110
+So you can see that here is my VS
+
+54
+00:01:30.110 --> 00:01:32.510
+code and I have this folder open
+
+55
+00:01:32.510 --> 00:01:34.750
+now, right now my VS code is empty.
+
+56
+00:01:34.750 --> 00:01:35.870
+You can see there is no file.
+
+57
+00:01:35.870 --> 00:01:36.910
+There is nothing.
+
+58
+00:01:36.910 --> 00:01:39.710
+So let's start by creating a file
+
+59
+00:01:39.710 --> 00:01:40.870
+so you can name your file.
+
+60
+00:01:40.870 --> 00:01:42.310
+Anything and extension
+
+61
+00:01:42.310 --> 00:01:43.390
+should be JavaScript.
+
+62
+00:01:43.390 --> 00:01:44.350
+So what we are doing is we
+
+63
+00:01:44.350 --> 00:01:46.510
+are creating a new js file.
+
+64
+00:01:46.510 --> 00:01:48.840
+Feel free to choose any name,
+
+65
+00:01:48.840 --> 00:01:51.480
+but the extension should be js.
+
+66
+00:01:51.480 --> 00:01:53.120
+Now here let's write
+
+67
+00:01:53.120 --> 00:01:54.920
+a simple JavaScript code.
+
+68
+00:01:54.920 --> 00:01:56.440
+So hello from.
+
+69
+00:01:57.000 --> 00:01:59.560
+And I can just script js file.
+
+70
+00:01:59.560 --> 00:02:00.920
+So you can see that this is a very
+
+71
+00:02:00.920 --> 00:02:03.000
+simple console log statement.
+
+72
+00:02:03.560 --> 00:02:05.800
+Now in order to run this particular
+
+73
+00:02:05.800 --> 00:02:07.040
+file, in order to run this
+
+74
+00:02:07.040 --> 00:02:09.479
+particular code, what we can do is
+
+75
+00:02:09.479 --> 00:02:11.440
+from my terminal I can say
+
+76
+00:02:11.440 --> 00:02:13.920
+node and give the file name.
+
+77
+00:02:13.920 --> 00:02:16.450
+So file name was script script js.
+
+78
+00:02:16.450 --> 00:02:18.410
+As soon as I click enter, you
+
+79
+00:02:18.410 --> 00:02:19.890
+can see that I was able
+
+80
+00:02:19.890 --> 00:02:22.370
+to execute my script js file.
+
+81
+00:02:22.370 --> 00:02:24.490
+You can even say node and just
+
+82
+00:02:24.490 --> 00:02:26.250
+the script.js is not
+
+83
+00:02:26.250 --> 00:02:27.610
+necessary because of course
+
+84
+00:02:27.610 --> 00:02:28.730
+you are working with node.
+
+85
+00:02:28.730 --> 00:02:30.490
+So it assumes that you always want
+
+86
+00:02:30.490 --> 00:02:32.130
+to run a JavaScript file.
+
+87
+00:02:32.130 --> 00:02:34.050
+So it's optional to give
+
+88
+00:02:34.050 --> 00:02:35.610
+js at the end while you are
+
+89
+00:02:35.610 --> 00:02:36.930
+running it from the cli.
+
+90
+00:02:36.930 --> 00:02:38.770
+But you can see that using this node
+
+91
+00:02:38.770 --> 00:02:40.450
+script, I was able to run this
+
+92
+00:02:40.450 --> 00:02:42.780
+circle script file right now here
+
+93
+00:02:42.780 --> 00:02:45.100
+you can have all things like any
+
+94
+00:02:45.100 --> 00:02:46.940
+valid JavaScript code is going to
+
+95
+00:02:46.940 --> 00:02:47.300
+execute.
+
+96
+00:02:47.300 --> 00:02:48.460
+For example, you can have const
+
+97
+00:02:49.020 --> 00:02:50.940
+a equals to 1, you can have a const
+
+98
+00:02:50.940 --> 00:02:52.900
+b equals to 2 and then you can have
+
+99
+00:02:52.900 --> 00:02:55.660
+a const sum which is like a plus b.
+
+100
+00:02:55.660 --> 00:02:57.660
+And then you can just say console dot
+
+101
+00:02:57.660 --> 00:03:01.260
+log that the sum I can say sum is.
+
+102
+00:03:01.260 --> 00:03:03.260
+And then just console log the sum.
+
+103
+00:03:03.260 --> 00:03:04.420
+Now you have to save it.
+
+104
+00:03:04.420 --> 00:03:05.820
+And if I rerun it, you can
+
+105
+00:03:05.820 --> 00:03:07.260
+see that I am getting sum S3.
+
+106
+00:03:07.990 --> 00:03:09.590
+So as you have seen that we
+
+107
+00:03:09.590 --> 00:03:12.350
+can run any valid JavaScript
+
+108
+00:03:12.350 --> 00:03:13.750
+code using this node CLI.
+
+109
+00:03:13.750 --> 00:03:14.390
+Okay?
+
+110
+00:03:14.390 --> 00:03:15.870
+And one very interesting thing is
+
+111
+00:03:15.870 --> 00:03:17.350
+that when you just say node, you
+
+112
+00:03:17.350 --> 00:03:19.110
+can just say hyphen hyphen help.
+
+113
+00:03:19.110 --> 00:03:21.190
+So this is going to give you a help
+
+114
+00:03:21.190 --> 00:03:23.429
+that what all things are possible.
+
+115
+00:03:23.429 --> 00:03:24.430
+So you can see that here
+
+116
+00:03:24.430 --> 00:03:26.070
+is a full documentation.
+
+117
+00:03:26.070 --> 00:03:27.270
+So let me just do it again
+
+118
+00:03:27.270 --> 00:03:29.110
+and let's go back to the top.
+
+119
+00:03:29.110 --> 00:03:30.070
+So you can see that
+
+120
+00:03:30.070 --> 00:03:31.350
+you can just say node.
+
+121
+00:03:31.350 --> 00:03:31.790
+Okay?
+
+122
+00:03:31.790 --> 00:03:34.060
+Then you can supply some options.
+
+123
+00:03:34.060 --> 00:03:35.540
+These options are these all
+
+124
+00:03:35.540 --> 00:03:37.100
+the options which are available.
+
+125
+00:03:37.100 --> 00:03:38.100
+And then you can just
+
+126
+00:03:38.100 --> 00:03:38.900
+give a file name.
+
+127
+00:03:38.900 --> 00:03:40.780
+For example, script js can be given,
+
+128
+00:03:40.780 --> 00:03:42.380
+any file name can be given here.
+
+129
+00:03:42.380 --> 00:03:44.460
+And then you can give the arguments.
+
+130
+00:03:44.460 --> 00:03:45.780
+These arguments basically
+
+131
+00:03:45.780 --> 00:03:47.340
+are like CLI arguments.
+
+132
+00:03:47.340 --> 00:03:49.180
+So for example, you can say node
+
+133
+00:03:49.180 --> 00:03:50.580
+script js and you can
+
+134
+00:03:50.580 --> 00:03:52.940
+pass a equals 1 because 2.
+
+135
+00:03:52.940 --> 00:03:53.940
+So these are basically your
+
+136
+00:03:53.940 --> 00:03:54.940
+command line arguments.
+
+137
+00:03:54.940 --> 00:03:55.740
+So don't worry.
+
+138
+00:03:56.380 --> 00:03:58.020
+As we proceed further, I'll show you
+
+139
+00:03:58.020 --> 00:03:59.060
+that what are these command line
+
+140
+00:03:59.060 --> 00:04:01.100
+arguments and how you can build your
+
+141
+00:04:01.100 --> 00:04:03.060
+own CLI tool And you can even do
+
+142
+00:04:03.060 --> 00:04:04.820
+like node inspect, you can give some
+
+143
+00:04:04.820 --> 00:04:06.560
+options, then you can give the file
+
+144
+00:04:06.560 --> 00:04:08.000
+name, then you can give the port and
+
+145
+00:04:08.000 --> 00:04:08.840
+all that.
+
+146
+00:04:08.840 --> 00:04:10.320
+So you can see that we have
+
+147
+00:04:10.320 --> 00:04:11.560
+a lot of options
+
+148
+00:04:11.560 --> 00:04:13.040
+in which we have already seen.
+
+149
+00:04:13.040 --> 00:04:14.160
+One that was the hyphen
+
+150
+00:04:14.160 --> 00:04:15.080
+hyphen version.
+
+151
+00:04:15.080 --> 00:04:16.720
+So if you scroll down to V,
+
+152
+00:04:16.720 --> 00:04:18.600
+these are alphabetically sorted.
+
+153
+00:04:18.600 --> 00:04:20.200
+So if I just keep on scrolling.
+
+154
+00:04:21.089 --> 00:04:21.319
+Yeah.
+
+155
+00:04:21.319 --> 00:04:22.160
+So you can see that we have
+
+156
+00:04:22.160 --> 00:04:23.080
+already seen this, right?
+
+157
+00:04:23.080 --> 00:04:24.880
+We can say hyphen V or hyphen
+
+158
+00:04:24.880 --> 00:04:26.920
+hyphen version, It's a capital V
+
+159
+00:04:26.920 --> 00:04:28.920
+that prints the node js version.
+
+160
+00:04:28.920 --> 00:04:30.200
+So that means I can say node.
+
+161
+00:04:30.200 --> 00:04:32.870
+Okay, and at the end, yeah, so I
+
+162
+00:04:32.870 --> 00:04:35.510
+can just say node hyphen capital V.
+
+163
+00:04:35.510 --> 00:04:37.910
+Okay, sorry, node hyphen V.
+
+164
+00:04:37.910 --> 00:04:39.070
+Or I can say node
+
+165
+00:04:39.070 --> 00:04:40.190
+hyphen, hyphen version.
+
+166
+00:04:40.190 --> 00:04:41.550
+Okay, hyphen, hyphen version
+
+167
+00:04:41.550 --> 00:04:42.950
+to get the same output.
+
+168
+00:04:42.950 --> 00:04:43.710
+Similarly.
+
+169
+00:04:43.710 --> 00:04:45.710
+Similarly, let's again do a hyphen,
+
+170
+00:04:45.710 --> 00:04:47.270
+node hyphen, hyphen help.
+
+171
+00:04:47.270 --> 00:04:48.350
+And you can see we have
+
+172
+00:04:48.350 --> 00:04:49.550
+node V8 coverage.
+
+173
+00:04:49.550 --> 00:04:51.110
+We have this UV thread pull size.
+
+174
+00:04:51.110 --> 00:04:51.710
+This is very important.
+
+175
+00:04:51.710 --> 00:04:52.870
+We will cover this.
+
+176
+00:04:52.870 --> 00:04:54.070
+So this is how basically
+
+177
+00:04:54.070 --> 00:04:56.630
+you can see all the available
+
+178
+00:04:56.630 --> 00:04:58.070
+commands in NodeJS.
+
+179
+00:04:58.070 --> 00:04:58.950
+So you have this Var.
+
+180
+00:04:58.950 --> 00:05:00.750
+So basically this runs in a Var mode.
+
+181
+00:05:00.750 --> 00:05:01.990
+Now let me tell you what is this.
+
+182
+00:05:01.990 --> 00:05:04.010
+Okay, so let's say if I'm
+
+183
+00:05:04.010 --> 00:05:04.970
+changing something, let's say
+
+184
+00:05:04.970 --> 00:05:06.930
+if I updated this to V1.
+
+185
+00:05:06.930 --> 00:05:08.210
+Every time I have to run this,
+
+186
+00:05:08.210 --> 00:05:09.850
+I have to say node and I have
+
+187
+00:05:09.850 --> 00:05:11.970
+to say dot script js.
+
+188
+00:05:11.970 --> 00:05:13.650
+Now if I change something to let's
+
+189
+00:05:13.650 --> 00:05:15.410
+say V2, I again have to do this.
+
+190
+00:05:15.410 --> 00:05:16.570
+But what you can do, you can just
+
+191
+00:05:16.570 --> 00:05:18.210
+say node, hyphen, hyphen Var.
+
+192
+00:05:18.210 --> 00:05:19.770
+So this will basically keep
+
+193
+00:05:19.770 --> 00:05:20.850
+on watching the file.
+
+194
+00:05:20.850 --> 00:05:22.850
+So sorry, I forgot to give the name.
+
+195
+00:05:22.850 --> 00:05:24.010
+So node, hyphen, hyphen,
+
+196
+00:05:24.010 --> 00:05:26.130
+Var and script and enter.
+
+197
+00:05:26.130 --> 00:05:27.530
+So now what it is doing
+
+198
+00:05:27.530 --> 00:05:28.840
+is it is watching.
+
+199
+00:05:28.840 --> 00:05:30.360
+It is not exiting out.
+
+200
+00:05:30.360 --> 00:05:32.160
+Anytime I change something
+
+201
+00:05:32.160 --> 00:05:33.200
+and save, you can see it
+
+202
+00:05:33.200 --> 00:05:34.920
+automatically reruns, okay?
+
+203
+00:05:34.920 --> 00:05:36.120
+If I change something to let's
+
+204
+00:05:36.120 --> 00:05:37.240
+say V9, you can see it
+
+205
+00:05:37.240 --> 00:05:39.400
+automatically reruns, right?
+
+206
+00:05:39.400 --> 00:05:41.480
+So I am currently in a Var mode.
+
+207
+00:05:41.480 --> 00:05:42.880
+To exit out of it, I
+
+208
+00:05:42.880 --> 00:05:44.440
+can just say Control C.
+
+209
+00:05:44.440 --> 00:05:46.440
+So to exit this particular loop
+
+210
+00:05:46.440 --> 00:05:47.920
+I can just say control plus C.
+
+211
+00:05:47.920 --> 00:05:49.120
+Whether you are on Mac or
+
+212
+00:05:49.120 --> 00:05:50.200
+Windows doesn't matter.
+
+213
+00:05:50.200 --> 00:05:51.560
+It's always the control
+
+214
+00:05:51.560 --> 00:05:52.680
+C to exit out.
+
+215
+00:05:52.680 --> 00:05:54.360
+Okay, so you can see all
+
+216
+00:05:54.360 --> 00:05:56.470
+the available commands are available
+
+217
+00:05:56.470 --> 00:05:58.470
+to us in the help mode.
+
+218
+00:05:58.470 --> 00:06:00.870
+So there is no need to remember them.
+
+219
+00:06:00.870 --> 00:06:03.550
+As you go further, as you proceed,
+
+220
+00:06:03.550 --> 00:06:04.750
+you will see these things.
+
+221
+00:06:04.750 --> 00:06:06.350
+Okay, so you have a lot of
+
+222
+00:06:06.350 --> 00:06:07.590
+commands, you have the description.
+
+223
+00:06:07.590 --> 00:06:08.470
+Feel free to read it.
+
+224
+00:06:08.470 --> 00:06:10.950
+There is no need to read all of them.
+
+225
+00:06:10.950 --> 00:06:12.510
+So as we will need them, we
+
+226
+00:06:12.510 --> 00:06:13.950
+will keep on reading them, we
+
+227
+00:06:13.950 --> 00:06:15.390
+will jump into the documentation
+
+228
+00:06:15.390 --> 00:06:16.950
+and we will implement it.
+
+229
+00:06:16.950 --> 00:06:19.310
+So this was your Node cli, similar
+
+230
+00:06:19.310 --> 00:06:20.830
+to this, similar to your Node
+
+231
+00:06:20.830 --> 00:06:22.810
+cli, you have this npm, right?
+
+232
+00:06:22.810 --> 00:06:24.410
+So if you say npm hyphen hyphen
+
+233
+00:06:24.410 --> 00:06:26.490
+version, you remember that npm
+
+234
+00:06:26.490 --> 00:06:27.770
+Unofficial Full Form Node
+
+235
+00:06:27.770 --> 00:06:30.570
+Package Manager also comes along
+
+236
+00:06:30.570 --> 00:06:32.250
+when you install Node js.
+
+237
+00:06:32.250 --> 00:06:35.450
+Now let's do npm help, right?
+
+238
+00:06:35.450 --> 00:06:36.970
+To see what all things are available.
+
+239
+00:06:36.970 --> 00:06:38.970
+So you can see we can use npm
+
+240
+00:06:38.970 --> 00:06:40.410
+install to install something.
+
+241
+00:06:40.410 --> 00:06:42.050
+npm install some package thing.
+
+242
+00:06:42.050 --> 00:06:44.210
+npm test npm run npm
+
+243
+00:06:44.210 --> 00:06:45.810
+hyphen L is there, right?
+
+244
+00:06:45.810 --> 00:06:47.050
+npm help is there.
+
+245
+00:06:47.050 --> 00:06:48.850
+Then you have all the commands like
+
+246
+00:06:48.850 --> 00:06:51.470
+access, add, user, audit, bugs.
+
+247
+00:06:51.470 --> 00:06:52.590
+So you have a lot of commands
+
+248
+00:06:52.590 --> 00:06:53.990
+available in npm as well.
+
+249
+00:06:53.990 --> 00:06:54.590
+Right.
+
+250
+00:06:54.590 --> 00:06:56.390
+So we are going to use this npm
+
+251
+00:06:56.390 --> 00:06:58.990
+to majorly use install this
+
+252
+00:06:58.990 --> 00:07:00.270
+command and this command.
+
+253
+00:07:00.270 --> 00:07:01.350
+So we will install a lot
+
+254
+00:07:01.350 --> 00:07:03.110
+of dependencies when we are going
+
+255
+00:07:03.110 --> 00:07:04.670
+to build our project.
+
+256
+00:07:04.670 --> 00:07:06.150
+Yeah, this was basically for this
+
+257
+00:07:06.150 --> 00:07:07.670
+particular video in which I
+
+258
+00:07:07.670 --> 00:07:09.150
+wanted to demonstrate that how
+
+259
+00:07:09.150 --> 00:07:11.910
+you can use this CLI to run
+
+260
+00:07:11.910 --> 00:07:14.710
+JavaScript files and to get the
+
+261
+00:07:14.710 --> 00:07:16.270
+help and how you can explore
+
+262
+00:07:16.270 --> 00:07:17.310
+things on your own.

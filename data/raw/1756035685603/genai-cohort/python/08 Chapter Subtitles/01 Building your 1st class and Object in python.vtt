@@ -1,0 +1,1241 @@
+WEBVTT
+
+1
+00:00:01.200 --> 00:00:02.520
+All right, welcome
+
+2
+00:00:02.520 --> 00:00:04.960
+to the Python course on Udemy.
+
+3
+00:00:04.960 --> 00:00:06.080
+Hope you are enjoying this
+
+4
+00:00:06.080 --> 00:00:08.880
+and welcome to a fresh new section.
+
+5
+00:00:08.880 --> 00:00:10.760
+Every new section is like a spark
+
+6
+00:00:10.760 --> 00:00:12.520
+of new energy and we are always
+
+7
+00:00:12.520 --> 00:00:14.800
+excited to dive into something new.
+
+8
+00:00:14.800 --> 00:00:16.119
+The next new topic that we
+
+9
+00:00:16.119 --> 00:00:17.840
+are going through will be.
+
+10
+00:00:17.840 --> 00:00:19.960
+Where we will go through is going
+
+11
+00:00:19.960 --> 00:00:22.960
+to be Object Oriented programming.
+
+12
+00:00:22.960 --> 00:00:24.800
+Now this object oriented programming,
+
+13
+00:00:24.800 --> 00:00:26.800
+or in short known as OOP is,
+
+14
+00:00:26.800 --> 00:00:28.320
+is also termed as oops.
+
+15
+00:00:29.600 --> 00:00:31.400
+There's no exact shortcut
+
+16
+00:00:31.400 --> 00:00:32.759
+or a long cut of this one.
+
+17
+00:00:32.759 --> 00:00:34.240
+It's sometimes called as
+
+18
+00:00:34.240 --> 00:00:36.600
+object Oriented Programming systems.
+
+19
+00:00:36.600 --> 00:00:38.880
+That's why the name OOPS here.
+
+20
+00:00:38.880 --> 00:00:40.600
+But again the concepts are
+
+21
+00:00:40.600 --> 00:00:42.000
+pretty simple and easy.
+
+22
+00:00:42.000 --> 00:00:43.240
+Now one thing you always have
+
+23
+00:00:43.240 --> 00:00:45.040
+to remember that this object
+
+24
+00:00:45.040 --> 00:00:46.720
+oriented programming is
+
+25
+00:00:46.720 --> 00:00:48.400
+a paradigm of programming.
+
+26
+00:00:48.400 --> 00:00:50.160
+What do I mean by paradigm?
+
+27
+00:00:50.160 --> 00:00:52.280
+Paradigm simply stands for it's
+
+28
+00:00:52.280 --> 00:00:53.920
+a way of writing the code.
+
+29
+00:00:54.650 --> 00:00:57.050
+Now this way of writing the code
+
+30
+00:00:57.050 --> 00:00:59.770
+got evolved during the C era
+
+31
+00:00:59.770 --> 00:01:00.850
+and after that a lot
+
+32
+00:01:00.850 --> 00:01:02.650
+of programming languages adopted it.
+
+33
+00:01:02.650 --> 00:01:06.730
+Java, JavaScript, Kotlin, Swift
+
+34
+00:01:06.730 --> 00:01:08.730
+and a whole bunch of others as well.
+
+35
+00:01:08.730 --> 00:01:10.009
+Now this is nothing new.
+
+36
+00:01:10.009 --> 00:01:11.650
+A whole lot of applications are
+
+37
+00:01:11.650 --> 00:01:13.010
+being written with this kind
+
+38
+00:01:13.010 --> 00:01:14.810
+of a style of writing programming.
+
+39
+00:01:14.810 --> 00:01:16.090
+But there are lots of other
+
+40
+00:01:16.090 --> 00:01:17.610
+ways of writing programming
+
+41
+00:01:17.610 --> 00:01:18.970
+syntaxes, and programming
+
+42
+00:01:18.970 --> 00:01:20.490
+softwares as in general.
+
+43
+00:01:21.160 --> 00:01:21.760
+One of them is
+
+44
+00:01:21.760 --> 00:01:22.720
+functional programming.
+
+45
+00:01:22.720 --> 00:01:24.240
+And these days functional programming
+
+46
+00:01:24.240 --> 00:01:26.440
+is much more preferred compared to
+
+47
+00:01:26.440 --> 00:01:28.280
+the classic object oriented.
+
+48
+00:01:28.280 --> 00:01:30.040
+And in majority of the software
+
+49
+00:01:30.040 --> 00:01:31.280
+that you'll see in the production
+
+50
+00:01:31.280 --> 00:01:33.000
+there is always a mix of little
+
+51
+00:01:33.000 --> 00:01:34.760
+bit functional, little bit
+
+52
+00:01:34.760 --> 00:01:36.360
+of object oriented programming.
+
+53
+00:01:36.360 --> 00:01:38.120
+There is no right, there is no wrong.
+
+54
+00:01:38.120 --> 00:01:39.840
+But yes, through the object oriented
+
+55
+00:01:39.840 --> 00:01:42.160
+programming we learn a little bit
+
+56
+00:01:42.160 --> 00:01:44.400
+about new data structures and we
+
+57
+00:01:44.400 --> 00:01:46.120
+learn how to engage with them.
+
+58
+00:01:46.120 --> 00:01:47.970
+And as well as we also learn about
+
+59
+00:01:47.970 --> 00:01:50.170
+the, some of the new terminologies
+
+60
+00:01:50.170 --> 00:01:51.650
+which are pretty common, things
+
+61
+00:01:51.650 --> 00:01:53.650
+like polymorphism abstraction,
+
+62
+00:01:53.650 --> 00:01:55.130
+although they are very in general
+
+63
+00:01:55.130 --> 00:01:57.130
+English terms and they mean exactly
+
+64
+00:01:57.130 --> 00:01:58.650
+same as what they mean in general
+
+65
+00:01:58.650 --> 00:02:00.210
+as they mean in the programming
+
+66
+00:02:00.210 --> 00:02:01.530
+paradigm as well.
+
+67
+00:02:01.530 --> 00:02:03.090
+So throughout this section we
+
+68
+00:02:03.090 --> 00:02:04.690
+will engage with one activity.
+
+69
+00:02:04.690 --> 00:02:06.050
+We'll keep the videos short
+
+70
+00:02:06.050 --> 00:02:07.170
+so that we can just focus
+
+71
+00:02:07.170 --> 00:02:09.289
+on each one topic at a time.
+
+72
+00:02:09.289 --> 00:02:10.570
+And that's it, that's
+
+73
+00:02:10.570 --> 00:02:11.490
+all the plan is.
+
+74
+00:02:11.490 --> 00:02:12.730
+Let me first walk you through
+
+75
+00:02:12.730 --> 00:02:14.780
+what this whole concept is.
+
+76
+00:02:14.780 --> 00:02:15.540
+Then we are going to write
+
+77
+00:02:15.540 --> 00:02:17.260
+our very first object oriented
+
+78
+00:02:17.260 --> 00:02:19.340
+programming code, file.
+
+79
+00:02:19.340 --> 00:02:21.020
+I think that's going to be fun.
+
+80
+00:02:21.020 --> 00:02:22.700
+Let's go ahead and get started.
+
+81
+00:02:22.700 --> 00:02:23.980
+So with this, let me share
+
+82
+00:02:23.980 --> 00:02:25.100
+the screen with you.
+
+83
+00:02:25.100 --> 00:02:26.940
+We have the screen that we saw
+
+84
+00:02:26.940 --> 00:02:28.780
+in the last demo up here.
+
+85
+00:02:29.420 --> 00:02:30.780
+So what do I mean by
+
+86
+00:02:30.780 --> 00:02:32.580
+this object oriented programming?
+
+87
+00:02:32.580 --> 00:02:34.700
+I'll write them in short as oop
+
+88
+00:02:34.700 --> 00:02:36.260
+you know the idea, object
+
+89
+00:02:36.260 --> 00:02:37.900
+oriented programming.
+
+90
+00:02:37.900 --> 00:02:38.860
+What does this object
+
+91
+00:02:38.860 --> 00:02:40.330
+oriented programming means?
+
+92
+00:02:40.330 --> 00:02:41.770
+You will hear this exact same
+
+93
+00:02:41.770 --> 00:02:42.930
+example, whether somebody
+
+94
+00:02:42.930 --> 00:02:44.570
+is teaching Java, JavaScript,
+
+95
+00:02:44.570 --> 00:02:45.770
+whatever they're teaching.
+
+96
+00:02:45.770 --> 00:02:47.490
+The whole idea is, let's just say
+
+97
+00:02:47.490 --> 00:02:50.250
+if I have designed this blue box,
+
+98
+00:02:50.250 --> 00:02:51.730
+this blue box is going
+
+99
+00:02:51.730 --> 00:02:54.890
+to be my first blueprint, first
+
+100
+00:02:55.450 --> 00:02:57.210
+sample that I'm creating.
+
+101
+00:02:57.210 --> 00:02:59.850
+And based on this now a lot of
+
+102
+00:03:00.410 --> 00:03:02.490
+duplicates can be created out of it.
+
+103
+00:03:02.490 --> 00:03:03.050
+Literally.
+
+104
+00:03:03.050 --> 00:03:04.210
+This software allows me
+
+105
+00:03:04.210 --> 00:03:06.470
+to actually demonstrate this nicely.
+
+106
+00:03:06.470 --> 00:03:07.310
+So notice here, this
+
+107
+00:03:07.310 --> 00:03:08.470
+is a copy of this.
+
+108
+00:03:08.470 --> 00:03:10.590
+Now this copy could be a shorter
+
+109
+00:03:10.590 --> 00:03:12.470
+one, not exactly that big.
+
+110
+00:03:12.470 --> 00:03:13.590
+That's okay, it's
+
+111
+00:03:13.590 --> 00:03:15.430
+an individual copy of this.
+
+112
+00:03:15.430 --> 00:03:16.350
+There could be another
+
+113
+00:03:16.350 --> 00:03:17.630
+copy created from it.
+
+114
+00:03:17.630 --> 00:03:20.230
+And this one will be a little bit
+
+115
+00:03:20.230 --> 00:03:22.190
+like this, different shape, but it's
+
+116
+00:03:22.190 --> 00:03:23.910
+actually a copy of this one.
+
+117
+00:03:23.910 --> 00:03:25.870
+It derived from here, then we changed
+
+118
+00:03:25.870 --> 00:03:27.510
+its shape, change its property.
+
+119
+00:03:27.510 --> 00:03:29.510
+And that's okay, that's totally fine.
+
+120
+00:03:29.510 --> 00:03:31.470
+This one is also a copy of this.
+
+121
+00:03:31.470 --> 00:03:32.430
+But this time let's go
+
+122
+00:03:32.430 --> 00:03:34.330
+ahead and change the this
+
+123
+00:03:34.330 --> 00:03:35.690
+from blue to purple.
+
+124
+00:03:35.690 --> 00:03:37.530
+These all are actually
+
+125
+00:03:37.530 --> 00:03:38.810
+connected to this one.
+
+126
+00:03:39.850 --> 00:03:41.770
+So what do we call each one of them?
+
+127
+00:03:42.890 --> 00:03:44.250
+So this one is actually
+
+128
+00:03:44.250 --> 00:03:45.530
+known as class.
+
+129
+00:03:46.330 --> 00:03:48.330
+So yes, this is known as class.
+
+130
+00:03:48.330 --> 00:03:49.650
+And all of that you see
+
+131
+00:03:49.650 --> 00:03:51.930
+here are actually objects.
+
+132
+00:03:52.730 --> 00:03:53.450
+So there we go.
+
+133
+00:03:53.450 --> 00:03:55.450
+I'll just expand this a little,
+
+134
+00:03:55.450 --> 00:03:56.970
+we'll shrink it a little again
+
+135
+00:03:58.090 --> 00:04:00.980
+and I'll just select this
+
+136
+00:04:00.980 --> 00:04:03.540
+and we'll reduce the font to small.
+
+137
+00:04:03.540 --> 00:04:04.340
+There we go.
+
+138
+00:04:04.340 --> 00:04:06.300
+Now it makes sense, but you got
+
+139
+00:04:06.300 --> 00:04:07.780
+the point, you got the idea.
+
+140
+00:04:07.780 --> 00:04:09.220
+I'll just go ahead and write this.
+
+141
+00:04:09.220 --> 00:04:10.740
+This one is also an object.
+
+142
+00:04:10.740 --> 00:04:12.380
+Now each of the object is
+
+143
+00:04:12.380 --> 00:04:13.460
+individual in itself.
+
+144
+00:04:13.460 --> 00:04:14.300
+Whatever the changes
+
+145
+00:04:14.300 --> 00:04:15.620
+you make, you can make.
+
+146
+00:04:15.620 --> 00:04:18.019
+But these changes doesn't
+
+147
+00:04:18.019 --> 00:04:19.700
+really translate or
+
+148
+00:04:19.700 --> 00:04:21.620
+pass through the main class itself.
+
+149
+00:04:22.260 --> 00:04:23.460
+So what we're going to do
+
+150
+00:04:23.460 --> 00:04:24.860
+in this very first video, we'll
+
+151
+00:04:24.860 --> 00:04:26.580
+see that how we can make this
+
+152
+00:04:26.580 --> 00:04:28.560
+blueprint, this whole class,
+
+153
+00:04:28.560 --> 00:04:29.920
+and that's it, that is all.
+
+154
+00:04:29.920 --> 00:04:31.600
+And we're going to see that how
+
+155
+00:04:31.600 --> 00:04:33.320
+Python behaves and how Python works,
+
+156
+00:04:33.320 --> 00:04:34.920
+some behind the scene details, we
+
+157
+00:04:34.920 --> 00:04:36.160
+are going to see them as well.
+
+158
+00:04:36.850 --> 00:04:38.320
+Let's start our new folder.
+
+159
+00:04:39.600 --> 00:04:41.320
+I really, it's tough to believe
+
+160
+00:04:41.320 --> 00:04:42.880
+that we are on the 10th number.
+
+161
+00:04:42.880 --> 00:04:44.480
+We just started the course and we
+
+162
+00:04:44.480 --> 00:04:46.160
+are so far into this one.
+
+163
+00:04:46.160 --> 00:04:47.760
+So let's call this one as OOP
+
+164
+00:04:48.880 --> 00:04:50.880
+and let's create a new file
+
+165
+00:04:50.880 --> 00:04:55.410
+and call this one as 01 and this
+
+166
+00:04:55.410 --> 00:04:58.250
+will be a simple class py.
+
+167
+00:04:58.970 --> 00:05:00.930
+Now the way how class works is first
+
+168
+00:05:00.930 --> 00:05:02.810
+of all you put up a syntax class
+
+169
+00:05:02.810 --> 00:05:04.610
+that's a reserved keyword, just
+
+170
+00:05:04.610 --> 00:05:06.970
+like for if just like that.
+
+171
+00:05:06.970 --> 00:05:08.010
+And after that we
+
+172
+00:05:08.010 --> 00:05:09.450
+simply name our class.
+
+173
+00:05:09.450 --> 00:05:11.129
+The name of the class usually
+
+174
+00:05:11.129 --> 00:05:12.650
+and should always be starting
+
+175
+00:05:12.650 --> 00:05:14.530
+with the capital letter, and then
+
+176
+00:05:14.530 --> 00:05:15.530
+name it whatever you like.
+
+177
+00:05:15.530 --> 00:05:16.970
+In my case, of course,
+
+178
+00:05:16.970 --> 00:05:18.170
+I'll go with the Chai.
+
+179
+00:05:18.170 --> 00:05:19.570
+There are no parentheses,
+
+180
+00:05:19.570 --> 00:05:20.210
+nothing like that.
+
+181
+00:05:20.210 --> 00:05:20.850
+You simply put
+
+182
+00:05:20.850 --> 00:05:22.550
+up a colon and that's it.
+
+183
+00:05:22.550 --> 00:05:24.150
+I'll not do anything inside this.
+
+184
+00:05:24.150 --> 00:05:25.030
+I'll just say pass.
+
+185
+00:05:25.830 --> 00:05:27.350
+So although this class does
+
+186
+00:05:27.350 --> 00:05:28.790
+nothing, but this is the
+
+187
+00:05:28.790 --> 00:05:30.790
+simplest, most basic class that
+
+188
+00:05:30.790 --> 00:05:32.550
+we have designed, I want to know
+
+189
+00:05:32.550 --> 00:05:33.910
+more detail about this, so I'll
+
+190
+00:05:33.910 --> 00:05:35.430
+just go ahead and print some of
+
+191
+00:05:35.430 --> 00:05:36.230
+the information.
+
+192
+00:05:36.230 --> 00:05:37.790
+First of all, I want to,
+
+193
+00:05:37.790 --> 00:05:38.870
+check the type.
+
+194
+00:05:38.870 --> 00:05:41.030
+What's the type of this one here?
+
+195
+00:05:41.030 --> 00:05:42.910
+And, later on we're going
+
+196
+00:05:42.910 --> 00:05:43.950
+to see how we can actually
+
+197
+00:05:43.950 --> 00:05:45.350
+create objects out of it.
+
+198
+00:05:45.350 --> 00:05:46.790
+So for this, let's open up
+
+199
+00:05:46.790 --> 00:05:49.640
+an integrator terminal and there we
+
+200
+00:05:49.640 --> 00:05:53.280
+go, let's run Python and this one.
+
+201
+00:05:53.280 --> 00:05:55.680
+So notice here it says class type.
+
+202
+00:05:56.320 --> 00:05:57.640
+Now, although it says class
+
+203
+00:05:57.640 --> 00:05:59.120
+type, so what we see here
+
+204
+00:05:59.120 --> 00:06:00.800
+is this one class type.
+
+205
+00:06:00.800 --> 00:06:03.040
+But always remember, everything
+
+206
+00:06:03.040 --> 00:06:05.200
+in Python is an object.
+
+207
+00:06:05.200 --> 00:06:08.000
+This is truly an object language.
+
+208
+00:06:08.000 --> 00:06:09.320
+So although it says that, hey,
+
+209
+00:06:09.320 --> 00:06:11.280
+I am a class, but in reality
+
+210
+00:06:11.280 --> 00:06:13.360
+this class is also an object.
+
+211
+00:06:14.230 --> 00:06:15.510
+Yes, this is asked in interview
+
+212
+00:06:15.510 --> 00:06:17.070
+quite a lot of time, but always
+
+213
+00:06:17.070 --> 00:06:18.710
+remember that this is the case.
+
+214
+00:06:18.710 --> 00:06:20.390
+You were not able to see that.
+
+215
+00:06:20.390 --> 00:06:22.150
+So this is object, and everything
+
+216
+00:06:22.150 --> 00:06:24.430
+here is, an object, although
+
+217
+00:06:24.430 --> 00:06:25.830
+it says class, but internally
+
+218
+00:06:25.830 --> 00:06:27.510
+it is an object itself.
+
+219
+00:06:28.150 --> 00:06:29.390
+Now, how can we go ahead
+
+220
+00:06:29.390 --> 00:06:30.670
+and derive this object, this
+
+221
+00:06:30.670 --> 00:06:32.390
+object, or a pink object?
+
+222
+00:06:32.390 --> 00:06:33.950
+So from the class I can go
+
+223
+00:06:33.950 --> 00:06:35.230
+ahead and say, let's just say
+
+224
+00:06:35.230 --> 00:06:38.790
+I have a ginger T, and this
+
+225
+00:06:38.790 --> 00:06:41.110
+T will be getting the variable value
+
+226
+00:06:41.700 --> 00:06:42.500
+from the chai.
+
+227
+00:06:42.500 --> 00:06:44.020
+There we go, that's it.
+
+228
+00:06:44.020 --> 00:06:46.260
+Now, this is an object of chai class,
+
+229
+00:06:46.260 --> 00:06:47.580
+just exactly what we have seen.
+
+230
+00:06:47.580 --> 00:06:48.500
+This is a class,
+
+231
+00:06:48.500 --> 00:06:49.780
+and this is an object.
+
+232
+00:06:49.780 --> 00:06:51.100
+So we have created this object.
+
+233
+00:06:51.100 --> 00:06:53.060
+Now, okay, I want to see
+
+234
+00:06:53.060 --> 00:06:54.340
+more detail of this one.
+
+235
+00:06:54.340 --> 00:06:55.700
+So I'll just go ahead and say
+
+236
+00:06:55.700 --> 00:06:57.780
+print, and I want to run type,
+
+237
+00:06:57.780 --> 00:06:58.820
+and I want to see what
+
+238
+00:06:58.820 --> 00:07:02.980
+happens with this, ginger T.
+
+239
+00:07:02.980 --> 00:07:05.260
+All right, and we'll also
+
+240
+00:07:05.260 --> 00:07:06.780
+see one more thing which is
+
+241
+00:07:06.780 --> 00:07:07.700
+also very interesting.
+
+242
+00:07:08.590 --> 00:07:10.590
+So let's just say if I go ahead
+
+243
+00:07:10.590 --> 00:07:13.510
+and do a check is chai, I
+
+244
+00:07:13.510 --> 00:07:14.830
+can check whether this
+
+245
+00:07:14.830 --> 00:07:16.950
+whole thing is an object of class.
+
+246
+00:07:16.950 --> 00:07:17.470
+Chai.
+
+247
+00:07:17.470 --> 00:07:18.990
+I can just go ahead and check this.
+
+248
+00:07:18.990 --> 00:07:21.390
+I can check for other as well, like
+
+249
+00:07:21.390 --> 00:07:23.710
+Chai time, which doesn't exist,
+
+250
+00:07:24.380 --> 00:07:26.110
+but I can still make another class,
+
+251
+00:07:26.110 --> 00:07:28.550
+let's just say class, and we'll
+
+252
+00:07:28.550 --> 00:07:30.590
+call this one as Chai time.
+
+253
+00:07:30.590 --> 00:07:32.030
+Again, feel free to Create as
+
+254
+00:07:32.030 --> 00:07:33.640
+many classes as you wish.
+
+255
+00:07:33.640 --> 00:07:35.160
+We'll just get with that.
+
+256
+00:07:35.160 --> 00:07:36.560
+So we'll see whether this ginger
+
+257
+00:07:36.560 --> 00:07:39.640
+T is a type of chai or chai time.
+
+258
+00:07:39.640 --> 00:07:40.680
+This will help us to understand
+
+259
+00:07:40.680 --> 00:07:42.360
+more about the classes.
+
+260
+00:07:42.360 --> 00:07:43.720
+If I go ahead and run this
+
+261
+00:07:43.720 --> 00:07:44.960
+again, notice here, first
+
+262
+00:07:44.960 --> 00:07:46.960
+of all it says yes, the class
+
+263
+00:07:46.960 --> 00:07:50.360
+in itself is of type class.
+
+264
+00:07:50.360 --> 00:07:52.520
+So notice here the type is of class.
+
+265
+00:07:53.160 --> 00:07:54.920
+And then you can see this class.
+
+266
+00:07:55.460 --> 00:07:58.040
+This one here, the type of ginger T.
+
+267
+00:07:58.700 --> 00:08:00.230
+This is the line number seven.
+
+268
+00:08:00.230 --> 00:08:02.390
+So first, this one is going up here.
+
+269
+00:08:02.390 --> 00:08:03.950
+Now the second in the line number 10,
+
+270
+00:08:03.950 --> 00:08:05.710
+we are asking what is this ginger T?
+
+271
+00:08:05.710 --> 00:08:06.990
+So it's saying, hey, ginger T
+
+272
+00:08:06.990 --> 00:08:09.230
+actually is a class, but not just
+
+273
+00:08:09.230 --> 00:08:12.150
+any class, it actually is an object
+
+274
+00:08:12.870 --> 00:08:16.150
+of the type class chai.
+
+275
+00:08:16.150 --> 00:08:16.870
+There we go.
+
+276
+00:08:17.510 --> 00:08:18.470
+So this one is little
+
+277
+00:08:18.470 --> 00:08:19.070
+hard to understand.
+
+278
+00:08:19.070 --> 00:08:20.510
+But all it's saying is hey,
+
+279
+00:08:20.510 --> 00:08:22.230
+I am not a standalone thing.
+
+280
+00:08:22.230 --> 00:08:23.990
+I am an object which was
+
+281
+00:08:23.990 --> 00:08:26.320
+built using the class chai.
+
+282
+00:08:26.320 --> 00:08:27.440
+That's all it's saying.
+
+283
+00:08:27.440 --> 00:08:28.560
+After that we checked whether
+
+284
+00:08:28.560 --> 00:08:29.840
+this ginger type belongs
+
+285
+00:08:29.840 --> 00:08:32.000
+ginger chai, Ginger T belongs
+
+286
+00:08:32.000 --> 00:08:33.440
+to chai or chai time.
+
+287
+00:08:33.440 --> 00:08:34.440
+So it says true.
+
+288
+00:08:34.440 --> 00:08:35.600
+This one is true because
+
+289
+00:08:35.600 --> 00:08:37.400
+hey, it actually belongs to chai.
+
+290
+00:08:37.400 --> 00:08:38.600
+But it says false.
+
+291
+00:08:38.600 --> 00:08:39.840
+So that's what it's saying
+
+292
+00:08:39.840 --> 00:08:41.240
+that hey, I don't belong
+
+293
+00:08:41.240 --> 00:08:42.359
+to the class chai time.
+
+294
+00:08:42.359 --> 00:08:44.400
+I actually belong to a class chai.
+
+295
+00:08:44.400 --> 00:08:44.960
+That is it.
+
+296
+00:08:44.960 --> 00:08:46.480
+That's the most basic.
+
+297
+00:08:46.480 --> 00:08:48.080
+Just to give you an idea,
+
+298
+00:08:48.080 --> 00:08:49.720
+this is how you define the classes.
+
+299
+00:08:49.720 --> 00:08:50.960
+So line number one,
+
+300
+00:08:50.960 --> 00:08:52.160
+this is literally one line.
+
+301
+00:08:52.160 --> 00:08:53.580
+This is how you create classes.
+
+302
+00:08:53.580 --> 00:08:53.890
+And.
+
+303
+00:08:53.890 --> 00:08:55.010
+And line number nine, this
+
+304
+00:08:55.010 --> 00:08:56.530
+is how you create objects.
+
+305
+00:08:56.530 --> 00:08:57.530
+That is it told you
+
+306
+00:08:57.530 --> 00:08:58.450
+it's really simple.
+
+307
+00:08:58.450 --> 00:08:59.850
+And especially when you are with me,
+
+308
+00:08:59.850 --> 00:09:02.050
+it is always going to remain simple.
+
+309
+00:09:02.050 --> 00:09:02.970
+Let's go ahead and catch
+
+310
+00:09:02.970 --> 00:09:03.890
+up in next video.

@@ -1,0 +1,1461 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:02.400
+Okay, so in this particular video,
+
+2
+00:00:02.400 --> 00:00:04.720
+let's quickly jump on
+
+3
+00:00:04.720 --> 00:00:06.600
+to the npm first and then we
+
+4
+00:00:06.600 --> 00:00:07.840
+will revisit this topic.
+
+5
+00:00:07.840 --> 00:00:09.520
+So, yeah, so in between we have
+
+6
+00:00:09.520 --> 00:00:11.240
+to jump onto the npm topic.
+
+7
+00:00:11.240 --> 00:00:12.400
+Okay, that is very important.
+
+8
+00:00:12.400 --> 00:00:13.480
+And then we will come
+
+9
+00:00:13.480 --> 00:00:14.360
+back to this thing.
+
+10
+00:00:14.360 --> 00:00:15.920
+Okay, so what was npm?
+
+11
+00:00:15.920 --> 00:00:17.920
+npm was basically the Node
+
+12
+00:00:17.920 --> 00:00:19.080
+Package Manager, right?
+
+13
+00:00:19.080 --> 00:00:21.680
+Node Package Manager.
+
+14
+00:00:21.680 --> 00:00:23.760
+Now if, now, interestingly, if you
+
+15
+00:00:23.760 --> 00:00:26.000
+will Google the full form for npm,
+
+16
+00:00:26.000 --> 00:00:27.350
+then this is not the official one.
+
+17
+00:00:27.350 --> 00:00:28.070
+Actually, there is no
+
+18
+00:00:28.070 --> 00:00:29.790
+official full form for npm.
+
+19
+00:00:29.790 --> 00:00:31.630
+So this is what everyone suggests
+
+20
+00:00:31.630 --> 00:00:33.070
+that that is Node Package Manager,
+
+21
+00:00:33.070 --> 00:00:34.190
+because that makes sense.
+
+22
+00:00:34.190 --> 00:00:35.510
+It is responsible for
+
+23
+00:00:35.510 --> 00:00:36.470
+managing the packages.
+
+24
+00:00:36.470 --> 00:00:39.150
+Okay, so let me show you that.
+
+25
+00:00:39.150 --> 00:00:41.950
+Let's say I want to install
+
+26
+00:00:42.590 --> 00:00:44.230
+the typings, okay?
+
+27
+00:00:44.230 --> 00:00:45.350
+So what are, these typings?
+
+28
+00:00:45.350 --> 00:00:47.190
+Basically, right now you can see
+
+29
+00:00:47.190 --> 00:00:49.390
+that when I do FS dot, I am
+
+30
+00:00:49.390 --> 00:00:51.030
+not getting any typings, right?
+
+31
+00:00:51.030 --> 00:00:53.230
+The VS code is not aware that what
+
+32
+00:00:53.230 --> 00:00:57.100
+this fss to make VS code aware, we
+
+33
+00:00:57.100 --> 00:00:59.500
+have to install a package, okay?
+
+34
+00:00:59.500 --> 00:01:01.300
+We have to install a package that is
+
+35
+00:01:01.300 --> 00:01:04.420
+at the rate types/ node.
+
+36
+00:01:04.420 --> 00:01:07.060
+So this is a package name, right?
+
+37
+00:01:07.060 --> 00:01:09.020
+This is a, external package.
+
+38
+00:01:09.020 --> 00:01:10.740
+This is maintained by Microsoft.
+
+39
+00:01:10.740 --> 00:01:12.860
+And this is an external package
+
+40
+00:01:12.860 --> 00:01:14.420
+that we have to install.
+
+41
+00:01:14.420 --> 00:01:16.900
+So how can I install this package
+
+42
+00:01:16.900 --> 00:01:18.820
+into my, this particular project?
+
+43
+00:01:19.550 --> 00:01:21.390
+Now, for that, for that,
+
+44
+00:01:21.390 --> 00:01:23.710
+first of all, I have to make
+
+45
+00:01:23.710 --> 00:01:26.150
+this project as a package.
+
+46
+00:01:26.150 --> 00:01:27.470
+This is not a package, right?
+
+47
+00:01:27.470 --> 00:01:28.310
+Right now I'm just
+
+48
+00:01:28.310 --> 00:01:29.270
+having a single file.
+
+49
+00:01:29.270 --> 00:01:30.150
+I'm just running it.
+
+50
+00:01:30.150 --> 00:01:30.910
+It's fine.
+
+51
+00:01:30.910 --> 00:01:32.510
+But this is not a package.
+
+52
+00:01:32.510 --> 00:01:35.309
+So for that, what you have to do is
+
+53
+00:01:35.309 --> 00:01:37.430
+on the root of your folder, on
+
+54
+00:01:37.430 --> 00:01:39.470
+the root of your project folder root
+
+55
+00:01:39.470 --> 00:01:41.230
+basically means this is the root.
+
+56
+00:01:41.230 --> 00:01:43.670
+On the top level, you have to create
+
+57
+00:01:43.670 --> 00:01:46.290
+a file that is package JSON.
+
+58
+00:01:46.290 --> 00:01:46.690
+Okay?
+
+59
+00:01:46.690 --> 00:01:48.290
+So this is basically the rule
+
+60
+00:01:48.290 --> 00:01:49.250
+that what you have to do is
+
+61
+00:01:49.250 --> 00:01:50.370
+you have to create a file
+
+62
+00:01:50.370 --> 00:01:52.210
+whose name is package.JSON.
+
+63
+00:01:52.210 --> 00:01:52.770
+exactly.
+
+64
+00:01:52.770 --> 00:01:56.690
+This, this package.JSON is kind
+
+65
+00:01:56.690 --> 00:01:58.450
+of like a configuration
+
+66
+00:01:58.450 --> 00:02:01.650
+file for your project, okay?
+
+67
+00:02:01.650 --> 00:02:03.730
+It's like a configuration file.
+
+68
+00:02:03.730 --> 00:02:05.730
+Now what this configuration can
+
+69
+00:02:05.730 --> 00:02:07.330
+contain, this configuration can
+
+70
+00:02:07.330 --> 00:02:09.009
+contain the name of your project.
+
+71
+00:02:09.009 --> 00:02:10.490
+This can contain the version
+
+72
+00:02:10.490 --> 00:02:11.410
+of your project.
+
+73
+00:02:11.410 --> 00:02:13.330
+This can contain all the scripts
+
+74
+00:02:13.330 --> 00:02:14.580
+that your project supports,
+
+75
+00:02:14.580 --> 00:02:16.820
+and it can support it.
+
+76
+00:02:16.820 --> 00:02:18.100
+It also holds something
+
+77
+00:02:18.100 --> 00:02:19.580
+known as dependencies.
+
+78
+00:02:20.140 --> 00:02:22.060
+Dependencies basically means
+
+79
+00:02:22.060 --> 00:02:24.260
+that what external packages
+
+80
+00:02:24.260 --> 00:02:25.740
+to load in order for this
+
+81
+00:02:25.740 --> 00:02:27.180
+particular project to run.
+
+82
+00:02:27.180 --> 00:02:29.820
+So that means that your project
+
+83
+00:02:29.820 --> 00:02:32.510
+is dependent on which, which,
+
+84
+00:02:32.510 --> 00:02:34.620
+you know, libraries or modules,
+
+85
+00:02:34.620 --> 00:02:35.820
+that is your dependencies.
+
+86
+00:02:36.380 --> 00:02:38.540
+Now, usually we don't create this
+
+87
+00:02:38.540 --> 00:02:40.420
+package or JSON on our own.
+
+88
+00:02:40.420 --> 00:02:42.300
+So for that we have a command that
+
+89
+00:02:42.300 --> 00:02:44.940
+is npm init So when you run this
+
+90
+00:02:44.940 --> 00:02:46.980
+command, this will automatically
+
+91
+00:02:46.980 --> 00:02:49.220
+create a package JSON file for you.
+
+92
+00:02:49.220 --> 00:02:51.260
+So let me do an enter so you can see
+
+93
+00:02:51.260 --> 00:02:52.820
+that it is asking me few questions.
+
+94
+00:02:52.820 --> 00:02:54.020
+For example, what is the name
+
+95
+00:02:54.020 --> 00:02:55.220
+of your package?
+
+96
+00:02:55.220 --> 00:02:56.140
+So it is by default
+
+97
+00:02:56.140 --> 00:02:57.460
+taking the 01 modules.
+
+98
+00:02:57.460 --> 00:02:59.860
+So you can just say modules enter.
+
+99
+00:02:59.860 --> 00:03:01.380
+What is the version of your
+
+100
+00:03:01.380 --> 00:03:02.660
+project of your package?
+
+101
+00:03:02.660 --> 00:03:03.620
+Let's go with one.
+
+102
+00:03:04.220 --> 00:03:05.660
+Do you want to add some description?
+
+103
+00:03:05.660 --> 00:03:06.500
+It's optional.
+
+104
+00:03:06.500 --> 00:03:08.060
+I mean if you want to do you can.
+
+105
+00:03:08.060 --> 00:03:10.170
+I'll skip what is your entry
+
+106
+00:03:10.170 --> 00:03:11.610
+point, that is index js.
+
+107
+00:03:11.610 --> 00:03:12.610
+What's your test command?
+
+108
+00:03:12.610 --> 00:03:13.730
+Let's just go ahead,
+
+109
+00:03:13.730 --> 00:03:14.730
+go ahead, go ahead.
+
+110
+00:03:14.730 --> 00:03:16.490
+Author everything okay, fine.
+
+111
+00:03:16.490 --> 00:03:18.170
+Now did you notice that I
+
+112
+00:03:18.170 --> 00:03:20.130
+got a package JSON file?
+
+113
+00:03:20.130 --> 00:03:21.250
+This CLI.
+
+114
+00:03:21.250 --> 00:03:23.650
+This command of npm init
+
+115
+00:03:23.650 --> 00:03:26.570
+created a package.JSON file for me.
+
+116
+00:03:26.570 --> 00:03:29.250
+Right now this contains the name.
+
+117
+00:03:29.250 --> 00:03:30.530
+Feel free to change it.
+
+118
+00:03:30.530 --> 00:03:32.370
+So this is the name of my project.
+
+119
+00:03:32.370 --> 00:03:33.690
+This is the version, I
+
+120
+00:03:33.690 --> 00:03:34.810
+can update the version.
+
+121
+00:03:34.810 --> 00:03:35.690
+Let's say I want to release
+
+122
+00:03:35.690 --> 00:03:37.480
+version 2, version 3 so
+
+123
+00:03:37.480 --> 00:03:38.440
+I can do that from here.
+
+124
+00:03:38.440 --> 00:03:39.760
+Then you have main that
+
+125
+00:03:39.760 --> 00:03:40.960
+this is your entry point.
+
+126
+00:03:40.960 --> 00:03:42.360
+Then you have all the scripts
+
+127
+00:03:42.360 --> 00:03:43.960
+that your project can support.
+
+128
+00:03:44.520 --> 00:03:47.000
+And right now there is no dependency.
+
+129
+00:03:47.000 --> 00:03:49.160
+Can you see any dependencies?
+
+130
+00:03:49.160 --> 00:03:50.920
+No, there is no dependency.
+
+131
+00:03:50.920 --> 00:03:52.760
+So let's add a dependency.
+
+132
+00:03:52.760 --> 00:03:54.640
+So keep in mind this
+
+133
+00:03:54.640 --> 00:03:56.920
+dependencies always keeps track
+
+134
+00:03:56.920 --> 00:04:00.000
+of third party deps.
+
+135
+00:04:00.000 --> 00:04:02.600
+Okay, Third party dependencies.
+
+136
+00:04:02.600 --> 00:04:06.560
+So right now my project is not having
+
+137
+00:04:06.560 --> 00:04:08.560
+any third party dependency.
+
+138
+00:04:08.560 --> 00:04:10.720
+So let's install npm.
+
+139
+00:04:10.720 --> 00:04:12.040
+Install a third party
+
+140
+00:04:12.040 --> 00:04:13.640
+dependency, that is this.
+
+141
+00:04:13.640 --> 00:04:15.400
+Okay, so you have to basically
+
+142
+00:04:15.400 --> 00:04:17.079
+type npm install
+
+143
+00:04:17.079 --> 00:04:20.480
+at the rate types slash node.
+
+144
+00:04:20.480 --> 00:04:22.000
+So let me just do an enter.
+
+145
+00:04:22.000 --> 00:04:23.240
+So what this is going to do is
+
+146
+00:04:23.240 --> 00:04:24.880
+this is going to download this.
+
+147
+00:04:24.880 --> 00:04:26.240
+Now see what happened?
+
+148
+00:04:26.240 --> 00:04:27.000
+Do you see that?
+
+149
+00:04:27.000 --> 00:04:29.760
+Automatically I got a, dependencies.
+
+150
+00:04:29.760 --> 00:04:33.740
+And right now my project is dependent
+
+151
+00:04:33.740 --> 00:04:35.940
+on this particular dependency.
+
+152
+00:04:35.940 --> 00:04:37.660
+And this is the version, this is
+
+153
+00:04:37.660 --> 00:04:38.980
+basically the latest version.
+
+154
+00:04:39.540 --> 00:04:41.620
+And now I have this dependency.
+
+155
+00:04:42.180 --> 00:04:44.940
+And interestingly, a new folder
+
+156
+00:04:44.940 --> 00:04:47.380
+is created of node modules.
+
+157
+00:04:47.380 --> 00:04:50.620
+As soon as you did npm install, a new
+
+158
+00:04:50.620 --> 00:04:53.460
+folder appeared that is nodemodules.
+
+159
+00:04:53.460 --> 00:04:54.820
+Now what is this folder?
+
+160
+00:04:54.820 --> 00:04:56.020
+Now this is a folder
+
+161
+00:04:56.020 --> 00:04:57.380
+which you never touch.
+
+162
+00:04:57.980 --> 00:05:01.980
+Whenever you install a third party
+
+163
+00:05:01.980 --> 00:05:04.460
+dependency or a package or whatever
+
+164
+00:05:04.460 --> 00:05:06.740
+you want to call the source code
+
+165
+00:05:06.740 --> 00:05:09.060
+of this third party dependency is
+
+166
+00:05:09.060 --> 00:05:11.260
+actually kept in the node modules.
+
+167
+00:05:11.260 --> 00:05:13.340
+Okay, so when you say, let's
+
+168
+00:05:13.340 --> 00:05:15.740
+say npm install package
+
+169
+00:05:15.740 --> 00:05:17.420
+name, whatever package you want
+
+170
+00:05:17.420 --> 00:05:19.980
+to install this command.
+
+171
+00:05:19.980 --> 00:05:21.660
+Okay, so let's say this is npm.
+
+172
+00:05:21.660 --> 00:05:23.620
+You can even do npm I so let's say
+
+173
+00:05:23.620 --> 00:05:27.450
+npm install this command, fetches
+
+174
+00:05:27.450 --> 00:05:29.450
+this package from the Internet.
+
+175
+00:05:29.450 --> 00:05:29.890
+Okay?
+
+176
+00:05:29.890 --> 00:05:31.010
+So I'll show you from where it
+
+177
+00:05:31.010 --> 00:05:32.810
+fetches, okay, from the Internet.
+
+178
+00:05:32.810 --> 00:05:35.010
+And from the Internet it gets
+
+179
+00:05:35.010 --> 00:05:36.490
+the source code and keeps
+
+180
+00:05:36.490 --> 00:05:38.330
+it inside the node modules.
+
+181
+00:05:38.330 --> 00:05:39.610
+So right now you can see we have
+
+182
+00:05:39.610 --> 00:05:41.370
+at the rate type slash node.
+
+183
+00:05:41.370 --> 00:05:42.690
+So in the node modules you have
+
+184
+00:05:42.690 --> 00:05:45.450
+at the rate types in which, in which
+
+185
+00:05:45.450 --> 00:05:46.930
+you have, you will have node.
+
+186
+00:05:46.930 --> 00:05:48.730
+Okay, so it can be a file.
+
+187
+00:05:48.730 --> 00:05:53.620
+So if I just go on, where is that?
+
+188
+00:05:54.180 --> 00:05:55.140
+Yeah, so it's basically
+
+189
+00:05:55.140 --> 00:05:56.380
+at the type slash node only.
+
+190
+00:05:56.380 --> 00:05:57.020
+You can see we only
+
+191
+00:05:57.020 --> 00:05:58.180
+have one folder node.
+
+192
+00:05:58.180 --> 00:05:59.820
+And this is all the code
+
+193
+00:05:59.820 --> 00:06:00.780
+that is being fetched.
+
+194
+00:06:00.780 --> 00:06:01.460
+Okay?
+
+195
+00:06:01.460 --> 00:06:02.820
+So this is the source code
+
+196
+00:06:02.820 --> 00:06:04.180
+of this particular dependency.
+
+197
+00:06:04.740 --> 00:06:06.860
+Now what will happen is, now what
+
+198
+00:06:06.860 --> 00:06:08.060
+you will notice is that when I
+
+199
+00:06:08.060 --> 00:06:10.540
+do fs.you are actually getting
+
+200
+00:06:10.540 --> 00:06:12.740
+all the suggestions because now
+
+201
+00:06:12.740 --> 00:06:14.460
+what is happening is your VS
+
+202
+00:06:14.460 --> 00:06:16.780
+code is aware of all the
+
+203
+00:06:16.780 --> 00:06:18.580
+dependencies and everything that
+
+204
+00:06:18.580 --> 00:06:19.180
+is available.
+
+205
+00:06:19.180 --> 00:06:19.740
+How?
+
+206
+00:06:19.740 --> 00:06:20.860
+Because this particular
+
+207
+00:06:20.860 --> 00:06:21.740
+thing is here.
+
+208
+00:06:21.740 --> 00:06:22.380
+Got it.
+
+209
+00:06:22.380 --> 00:06:24.060
+So this is the thing that is giving
+
+210
+00:06:24.060 --> 00:06:27.540
+all the information to the VS code
+
+211
+00:06:27.540 --> 00:06:29.540
+that what all options, what all
+
+212
+00:06:29.540 --> 00:06:31.300
+functions, what all interfaces are
+
+213
+00:06:31.300 --> 00:06:33.180
+available on this FS module.
+
+214
+00:06:33.180 --> 00:06:33.740
+Got it?
+
+215
+00:06:34.300 --> 00:06:36.620
+Now what if I delete
+
+216
+00:06:36.620 --> 00:06:38.100
+this folder by mistake?
+
+217
+00:06:38.100 --> 00:06:38.940
+Actually, yeah, you can
+
+218
+00:06:38.940 --> 00:06:39.900
+delete this folder right?
+
+219
+00:06:40.540 --> 00:06:40.900
+Right.
+
+220
+00:06:40.900 --> 00:06:42.020
+Now what happened?
+
+221
+00:06:42.020 --> 00:06:43.510
+That folder got deleted It.
+
+222
+00:06:43.510 --> 00:06:44.510
+Interestingly what I can do is
+
+223
+00:06:44.510 --> 00:06:46.070
+I can just say npm install,
+
+224
+00:06:46.070 --> 00:06:47.710
+what this npm install will do.
+
+225
+00:06:47.710 --> 00:06:49.510
+This will read your package or JSON
+
+226
+00:06:49.510 --> 00:06:51.510
+file and it will see, oh, this is
+
+227
+00:06:51.510 --> 00:06:53.310
+a package that you are using and you
+
+228
+00:06:53.310 --> 00:06:54.590
+don't have this node modules.
+
+229
+00:06:54.590 --> 00:06:55.870
+So just do an enter and it
+
+230
+00:06:55.870 --> 00:06:56.950
+will bring back it.
+
+231
+00:06:56.950 --> 00:06:58.670
+So you don't really have
+
+232
+00:06:58.670 --> 00:07:00.150
+to worry about node modules.
+
+233
+00:07:00.790 --> 00:07:01.990
+One more thing.
+
+234
+00:07:01.990 --> 00:07:03.510
+If you are built, if you are working
+
+235
+00:07:03.510 --> 00:07:05.990
+on a project and your project has,
+
+236
+00:07:05.990 --> 00:07:08.390
+let's say 30 dependencies, okay?
+
+237
+00:07:08.390 --> 00:07:10.310
+Now you know that all these 30
+
+238
+00:07:10.310 --> 00:07:11.790
+dependencies will be a part
+
+239
+00:07:11.790 --> 00:07:13.550
+of your package JSON, right?
+
+240
+00:07:13.550 --> 00:07:14.630
+This package or JSON
+
+241
+00:07:14.630 --> 00:07:15.390
+will keep a track.
+
+242
+00:07:15.950 --> 00:07:17.630
+If you share this project
+
+243
+00:07:17.630 --> 00:07:20.270
+with your friend, there is no need
+
+244
+00:07:20.270 --> 00:07:21.790
+to share the node modules.
+
+245
+00:07:21.790 --> 00:07:23.150
+So you can just
+
+246
+00:07:23.150 --> 00:07:24.510
+remove the node module.
+
+247
+00:07:24.510 --> 00:07:25.870
+So even if you are working with
+
+248
+00:07:25.870 --> 00:07:28.110
+git or GitHub, you can ignore
+
+249
+00:07:28.110 --> 00:07:30.030
+the node modules to be shadcn.
+
+250
+00:07:30.030 --> 00:07:30.510
+Okay?
+
+251
+00:07:30.510 --> 00:07:32.510
+So node modules you never ever
+
+252
+00:07:32.510 --> 00:07:33.990
+push on the GitHub because you
+
+253
+00:07:33.990 --> 00:07:35.550
+know these are very bulky.
+
+254
+00:07:35.550 --> 00:07:37.030
+Your friend will just take
+
+255
+00:07:37.030 --> 00:07:38.550
+the source code and he will run
+
+256
+00:07:38.550 --> 00:07:40.590
+the command that is npm install.
+
+257
+00:07:40.590 --> 00:07:42.750
+His npm install will automatically
+
+258
+00:07:42.750 --> 00:07:44.780
+read the package JSON,
+
+259
+00:07:44.780 --> 00:07:45.700
+fetch all the packages
+
+260
+00:07:45.700 --> 00:07:47.580
+from the Internet and create
+
+261
+00:07:47.580 --> 00:07:49.740
+a node modules folder for him.
+
+262
+00:07:49.740 --> 00:07:51.100
+So whenever you want to share your
+
+263
+00:07:51.100 --> 00:07:52.740
+project, no need to share this
+
+264
+00:07:52.740 --> 00:07:54.420
+node modules folder because this
+
+265
+00:07:54.420 --> 00:07:56.180
+is automatically generated so
+
+266
+00:07:56.180 --> 00:07:57.620
+anyone who has an Internet access
+
+267
+00:07:57.620 --> 00:07:59.660
+can fetch back this node modules
+
+268
+00:07:59.660 --> 00:08:02.100
+and sharing this will not cause
+
+269
+00:08:02.100 --> 00:08:02.780
+any issue.
+
+270
+00:08:02.780 --> 00:08:05.020
+But it's very heavy in size.
+
+271
+00:08:05.020 --> 00:08:07.100
+Okay, so now you understand
+
+272
+00:08:07.100 --> 00:08:07.940
+that what is happening.
+
+273
+00:08:07.940 --> 00:08:10.020
+So package JSON is a manifest or
+
+274
+00:08:10.020 --> 00:08:11.340
+a configuration file for you.
+
+275
+00:08:11.340 --> 00:08:12.260
+It keeps tracks
+
+276
+00:08:12.260 --> 00:08:13.370
+of the dependencies and.
+
+277
+00:08:13.370 --> 00:08:15.450
+And when you do npm install,
+
+278
+00:08:15.450 --> 00:08:17.170
+it basically reads your
+
+279
+00:08:17.170 --> 00:08:19.530
+dependencies list and tries
+
+280
+00:08:19.530 --> 00:08:20.890
+to install everything back.
+
+281
+00:08:20.890 --> 00:08:21.770
+Okay?
+
+282
+00:08:21.770 --> 00:08:23.690
+And there are even some shortcuts.
+
+283
+00:08:23.690 --> 00:08:24.850
+So you can just say like
+
+284
+00:08:24.850 --> 00:08:26.650
+for example, npm I.
+
+285
+00:08:26.650 --> 00:08:27.690
+So that also works.
+
+286
+00:08:27.690 --> 00:08:29.530
+No need to write npm install.
+
+287
+00:08:29.530 --> 00:08:31.810
+You can even do npm I at the rate
+
+288
+00:08:31.810 --> 00:08:33.929
+types slash, node and enter.
+
+289
+00:08:33.929 --> 00:08:35.210
+So this also works.
+
+290
+00:08:35.210 --> 00:08:37.530
+It is now becoming very fast because
+
+291
+00:08:37.530 --> 00:08:39.530
+I already already have the code.
+
+292
+00:08:39.530 --> 00:08:41.049
+So it is not basically installing it.
+
+293
+00:08:41.049 --> 00:08:43.490
+Okay, now there is one more file that
+
+294
+00:08:43.490 --> 00:08:45.370
+is this package hyphen lock JSON.
+
+295
+00:08:45.930 --> 00:08:48.050
+This is also a file which is
+
+296
+00:08:48.050 --> 00:08:49.370
+automatically generated.
+
+297
+00:08:49.370 --> 00:08:51.050
+Okay, now what this file
+
+298
+00:08:51.050 --> 00:08:53.610
+maintains you never touch this file,
+
+299
+00:08:53.610 --> 00:08:55.649
+this package log file.
+
+300
+00:08:55.649 --> 00:08:57.210
+Okay, so you have this package
+
+301
+00:08:57.210 --> 00:08:59.610
+hyphen lock JSON file.
+
+302
+00:08:59.610 --> 00:09:02.410
+This lock file maintains
+
+303
+00:09:02.410 --> 00:09:04.490
+dependencies of dependencies.
+
+304
+00:09:04.490 --> 00:09:05.840
+Let's say you are working
+
+305
+00:09:05.840 --> 00:09:07.320
+on a project A.
+
+306
+00:09:07.320 --> 00:09:08.920
+Your project A
+
+307
+00:09:08.920 --> 00:09:11.080
+is dependent on project B.
+
+308
+00:09:11.080 --> 00:09:13.480
+This project B is internally
+
+309
+00:09:13.480 --> 00:09:15.720
+using project C
+
+310
+00:09:15.720 --> 00:09:18.600
+and it uses project D to work.
+
+311
+00:09:18.600 --> 00:09:20.760
+So when you install project B,
+
+312
+00:09:20.760 --> 00:09:23.160
+this automatically also installs
+
+313
+00:09:23.160 --> 00:09:25.240
+project B, project C and D, right?
+
+314
+00:09:25.240 --> 00:09:27.720
+Because in order to use B,
+
+315
+00:09:27.720 --> 00:09:29.800
+C and D should also be there.
+
+316
+00:09:29.800 --> 00:09:31.640
+So all this track, right?
+
+317
+00:09:31.640 --> 00:09:33.440
+That which project is dependent
+
+318
+00:09:33.440 --> 00:09:34.920
+on which project and internally
+
+319
+00:09:34.920 --> 00:09:36.680
+dependent on which project that
+
+320
+00:09:36.680 --> 00:09:39.160
+all information npm internally
+
+321
+00:09:39.160 --> 00:09:40.680
+stores in this particular file
+
+322
+00:09:40.680 --> 00:09:42.240
+that is Package hyphen lock
+
+323
+00:09:42.240 --> 00:09:42.920
+JSON.
+
+324
+00:09:42.920 --> 00:09:44.760
+Okay, so you can see that,
+
+325
+00:09:44.760 --> 00:09:46.000
+you know, this particular thing
+
+326
+00:09:46.000 --> 00:09:47.080
+depends upon this thing.
+
+327
+00:09:47.080 --> 00:09:48.200
+Do you see that?
+
+328
+00:09:48.200 --> 00:09:50.200
+Like if you see there is something
+
+329
+00:09:50.200 --> 00:09:52.039
+known as unit decade types.
+
+330
+00:09:52.039 --> 00:09:53.960
+Did you installed this thing?
+
+331
+00:09:53.960 --> 00:09:55.720
+No, how this came?
+
+332
+00:09:55.720 --> 00:09:58.320
+Because this package that I wanted
+
+333
+00:09:58.320 --> 00:10:00.200
+to install further
+
+334
+00:10:00.200 --> 00:10:01.920
+depends on this particular thing.
+
+335
+00:10:01.920 --> 00:10:02.240
+So.
+
+336
+00:10:02.240 --> 00:10:03.160
+So that is the reason that
+
+337
+00:10:03.160 --> 00:10:04.120
+this is also installed.
+
+338
+00:10:04.120 --> 00:10:05.720
+So where it is kept track
+
+339
+00:10:05.720 --> 00:10:07.840
+in package hyphen lock JSON.
+
+340
+00:10:07.840 --> 00:10:09.520
+So I have just said, Hey, I just want
+
+341
+00:10:09.520 --> 00:10:11.560
+this package lock has fetched the
+
+342
+00:10:11.560 --> 00:10:13.800
+dependencies of this thing and there
+
+343
+00:10:13.800 --> 00:10:15.880
+is a chance that this package that
+
+344
+00:10:15.880 --> 00:10:17.960
+is this package further depends on
+
+345
+00:10:17.960 --> 00:10:19.640
+something which is not here in the
+
+346
+00:10:19.640 --> 00:10:19.800
+case.
+
+347
+00:10:19.800 --> 00:10:21.440
+But yeah, that is also possible.
+
+348
+00:10:21.440 --> 00:10:22.440
+So that is what package
+
+349
+00:10:22.440 --> 00:10:23.600
+hyphen log maintains.
+
+350
+00:10:23.600 --> 00:10:25.240
+And even if you delete this package
+
+351
+00:10:25.240 --> 00:10:26.720
+hyphen log, that's fine, you
+
+352
+00:10:26.720 --> 00:10:28.680
+can just do an npm install and that
+
+353
+00:10:28.680 --> 00:10:30.170
+will also be regenerated.
+
+354
+00:10:30.170 --> 00:10:32.050
+Okay, so you have to just
+
+355
+00:10:32.050 --> 00:10:33.810
+maintain this package JSON file.
+
+356
+00:10:33.810 --> 00:10:35.650
+If you lose this package JSON file?
+
+357
+00:10:35.650 --> 00:10:35.890
+Yeah.
+
+358
+00:10:35.890 --> 00:10:37.770
+Then that's a problem because
+
+359
+00:10:37.770 --> 00:10:39.290
+then you have to again create
+
+360
+00:10:39.290 --> 00:10:40.370
+this file and you have to list
+
+361
+00:10:40.370 --> 00:10:41.690
+down all the dependencies.
+
+362
+00:10:41.690 --> 00:10:43.170
+So this package JSON file
+
+363
+00:10:43.170 --> 00:10:44.410
+and your source code is something
+
+364
+00:10:44.410 --> 00:10:45.370
+that is very important.
+
+365
+00:10:45.370 --> 00:10:47.130
+Rest all things are regeneratable.

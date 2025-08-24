@@ -1,0 +1,1745 @@
+WEBVTT
+
+1
+00:00:01.200 --> 00:00:03.260
+All right, I hope the videos are
+
+2
+00:00:03.260 --> 00:00:04.920
+packing up you with a lot
+
+3
+00:00:04.920 --> 00:00:06.480
+of knowledge and that's
+
+4
+00:00:06.480 --> 00:00:07.760
+why you probably would consider
+
+5
+00:00:08.740 --> 00:00:10.640
+to rate us as well.
+
+6
+00:00:10.640 --> 00:00:11.920
+Hopefully you have done that.
+
+7
+00:00:11.920 --> 00:00:13.840
+Anyways, let's go ahead and now
+
+8
+00:00:13.840 --> 00:00:16.160
+talk about types of function.
+
+9
+00:00:16.160 --> 00:00:18.560
+This is really an interesting topic.
+
+10
+00:00:18.560 --> 00:00:20.240
+So as we see that the functions
+
+11
+00:00:20.240 --> 00:00:22.720
+are really the core of building
+
+12
+00:00:22.720 --> 00:00:24.800
+large scale projects in the Python,
+
+13
+00:00:24.800 --> 00:00:26.120
+but there are actually variety
+
+14
+00:00:26.120 --> 00:00:27.660
+of types of function.
+
+15
+00:00:27.660 --> 00:00:28.940
+Now again, this is not really
+
+16
+00:00:28.940 --> 00:00:30.540
+specific that there is actually
+
+17
+00:00:30.540 --> 00:00:32.540
+a type, but people love to have
+
+18
+00:00:32.540 --> 00:00:34.220
+a differentiation between them.
+
+19
+00:00:34.220 --> 00:00:36.620
+For example, we have pure
+
+20
+00:00:36.620 --> 00:00:38.380
+VS impure function.
+
+21
+00:00:38.380 --> 00:00:39.660
+I'll show you what they are.
+
+22
+00:00:40.360 --> 00:00:42.740
+We also have another types as well.
+
+23
+00:00:42.740 --> 00:00:43.699
+I'll just go ahead
+
+24
+00:00:43.699 --> 00:00:45.020
+and add this one here.
+
+25
+00:00:46.140 --> 00:00:47.820
+Some things are known as
+
+26
+00:00:47.820 --> 00:00:49.420
+recursive functions.
+
+27
+00:00:49.420 --> 00:00:51.180
+Yes, there's actually a name for it,
+
+28
+00:00:51.980 --> 00:00:54.040
+recursive function functions.
+
+29
+00:00:55.160 --> 00:00:56.560
+Some functions don't even
+
+30
+00:00:56.560 --> 00:00:57.960
+have names as well.
+
+31
+00:00:57.960 --> 00:00:59.360
+Yeah, how does that work if
+
+32
+00:00:59.360 --> 00:01:00.680
+function doesn't have a name?
+
+33
+00:01:00.680 --> 00:01:02.400
+Yes, there is a way of how
+
+34
+00:01:02.400 --> 00:01:03.640
+to deal with them as well.
+
+35
+00:01:04.170 --> 00:01:05.680
+So these are known as anonymous
+
+36
+00:01:05.680 --> 00:01:06.480
+function, but in the world
+
+37
+00:01:06.480 --> 00:01:08.520
+of Python they are famously known as
+
+38
+00:01:08.520 --> 00:01:12.520
+lambdas, lambdas or also known as
+
+39
+00:01:12.520 --> 00:01:17.480
+anonymous function Anonymous.
+
+40
+00:01:17.480 --> 00:01:18.760
+Hope I wrote that Correct,
+
+41
+00:01:18.760 --> 00:01:20.200
+Anonymous functions.
+
+42
+00:01:20.720 --> 00:01:21.720
+But again whatever you call
+
+43
+00:01:21.720 --> 00:01:23.000
+them, they are just functions
+
+44
+00:01:23.000 --> 00:01:24.600
+and they are just type of it.
+
+45
+00:01:24.600 --> 00:01:26.000
+Don't worry too much about that.
+
+46
+00:01:26.640 --> 00:01:27.880
+So let's go ahead and talk
+
+47
+00:01:27.880 --> 00:01:29.520
+about them that how the function
+
+48
+00:01:29.520 --> 00:01:30.360
+can actually behave.
+
+49
+00:01:30.360 --> 00:01:31.480
+First of all, let's start
+
+50
+00:01:31.480 --> 00:01:32.520
+with the basic one which is
+
+51
+00:01:32.520 --> 00:01:33.960
+pure VS impure function.
+
+52
+00:01:33.960 --> 00:01:35.800
+What they are, let's go ahead
+
+53
+00:01:35.800 --> 00:01:37.160
+and close this, we'll have
+
+54
+00:01:37.160 --> 00:01:38.200
+another one, we're not
+
+55
+00:01:38.200 --> 00:01:39.280
+running out of the files.
+
+56
+00:01:40.160 --> 00:01:42.320
+So this one is types of function,
+
+57
+00:01:43.680 --> 00:01:50.320
+types of functions py.
+
+58
+00:01:50.320 --> 00:01:51.640
+All right, first of all
+
+59
+00:01:51.640 --> 00:01:52.840
+let's talk about the pure
+
+60
+00:01:52.840 --> 00:01:54.040
+functions in pure function.
+
+61
+00:01:54.040 --> 00:01:55.680
+So let's just say you define
+
+62
+00:01:55.680 --> 00:01:58.240
+that this is pure chai.
+
+63
+00:01:58.240 --> 00:02:00.240
+Hope you'll remember that always.
+
+64
+00:02:00.240 --> 00:02:02.839
+We simply go ahead and say cups and
+
+65
+00:02:02.839 --> 00:02:06.600
+we simply I'll just close my AI
+
+66
+00:02:06.600 --> 00:02:09.479
+editor, it's bothering and I go
+
+67
+00:02:09.479 --> 00:02:11.000
+ahead and simply say I want to
+
+68
+00:02:11.000 --> 00:02:12.480
+return whatever the cups value
+
+69
+00:02:12.480 --> 00:02:14.040
+pass me up, I go ahead and
+
+70
+00:02:14.040 --> 00:02:15.450
+multiply it by 10.
+
+71
+00:02:15.450 --> 00:02:16.010
+All right.
+
+72
+00:02:16.010 --> 00:02:18.010
+This is known as pure function.
+
+73
+00:02:18.010 --> 00:02:19.690
+It doesn't alter any
+
+74
+00:02:19.690 --> 00:02:21.610
+ingredient globally.
+
+75
+00:02:21.610 --> 00:02:22.850
+The moment you touch anything
+
+76
+00:02:22.850 --> 00:02:24.130
+globally for example, it
+
+77
+00:02:24.130 --> 00:02:25.330
+doesn't need to be at the very top
+
+78
+00:02:25.330 --> 00:02:26.130
+of the file as well.
+
+79
+00:02:26.130 --> 00:02:27.810
+Globally can be any variable which
+
+80
+00:02:27.810 --> 00:02:29.330
+is available in the global scope.
+
+81
+00:02:29.330 --> 00:02:30.980
+So I go ahead and say totalchai,
+
+82
+00:02:32.010 --> 00:02:33.970
+and you can see if the total chai
+
+83
+00:02:33.970 --> 00:02:35.290
+value is, let's just say zero.
+
+84
+00:02:35.290 --> 00:02:38.330
+Our top function still doesn't change
+
+85
+00:02:38.330 --> 00:02:40.570
+or any way manipulate this one.
+
+86
+00:02:40.570 --> 00:02:43.890
+But if I go ahead and say, impure
+
+87
+00:02:44.610 --> 00:02:45.930
+chai, hope this will help you
+
+88
+00:02:45.930 --> 00:02:47.250
+to remember this always.
+
+89
+00:02:47.250 --> 00:02:49.090
+This one also asks for the cup,
+
+90
+00:02:50.130 --> 00:02:53.490
+but apart from the cups, this one
+
+91
+00:02:54.210 --> 00:02:55.730
+somehow manipulates this one.
+
+92
+00:02:55.730 --> 00:02:56.970
+I hope the knowledge is still
+
+93
+00:02:56.970 --> 00:02:58.210
+with you that we can actually
+
+94
+00:02:58.210 --> 00:02:59.890
+use global as a variable.
+
+95
+00:02:59.890 --> 00:03:01.610
+And then I can go ahead and say I
+
+96
+00:03:01.610 --> 00:03:03.130
+have the access now, I want to
+
+97
+00:03:03.130 --> 00:03:04.890
+access the total chai and
+
+98
+00:03:04.890 --> 00:03:07.610
+whatever the total chai that we
+
+99
+00:03:07.610 --> 00:03:08.570
+have is, simply go ahead and
+
+100
+00:03:08.570 --> 00:03:09.850
+plus equals cups or somehow
+
+101
+00:03:09.850 --> 00:03:10.610
+manipulate that.
+
+102
+00:03:11.210 --> 00:03:12.610
+This is known as impure function.
+
+103
+00:03:12.610 --> 00:03:13.850
+And what's the most important
+
+104
+00:03:13.850 --> 00:03:15.290
+part about this is
+
+105
+00:03:15.290 --> 00:03:17.210
+that this is not recommended.
+
+106
+00:03:17.210 --> 00:03:20.090
+Yeah, I have discussed the reason
+
+107
+00:03:20.090 --> 00:03:21.290
+in the past as well.
+
+108
+00:03:22.010 --> 00:03:24.170
+Recommended.
+
+109
+00:03:25.050 --> 00:03:26.250
+All right, so this is
+
+110
+00:03:26.250 --> 00:03:27.410
+not a recommended way.
+
+111
+00:03:27.410 --> 00:03:28.530
+Again, make sure you always
+
+112
+00:03:28.530 --> 00:03:29.730
+remember you never want
+
+113
+00:03:29.730 --> 00:03:30.530
+to touch these things.
+
+114
+00:03:30.530 --> 00:03:32.970
+This can actually eventually lead
+
+115
+00:03:32.970 --> 00:03:35.170
+to some of these implications
+
+116
+00:03:35.170 --> 00:03:36.670
+which we don't see right now.
+
+117
+00:03:36.670 --> 00:03:38.030
+So remember, pure functions just
+
+118
+00:03:38.030 --> 00:03:39.790
+work with their in itself.
+
+119
+00:03:39.790 --> 00:03:41.110
+Impure functions are
+
+120
+00:03:41.110 --> 00:03:42.230
+usually not recommended.
+
+121
+00:03:42.230 --> 00:03:43.630
+They are supposed to be avoided.
+
+122
+00:03:43.630 --> 00:03:46.230
+But if you're writing them, you
+
+123
+00:03:46.230 --> 00:03:47.790
+know that this is not recommended
+
+124
+00:03:47.790 --> 00:03:49.550
+and this is an impure function.
+
+125
+00:03:49.550 --> 00:03:51.190
+The next one that we have, we have
+
+126
+00:03:51.190 --> 00:03:52.670
+talked about this pure and impure.
+
+127
+00:03:52.670 --> 00:03:54.390
+Next one we talk about, want to talk
+
+128
+00:03:54.390 --> 00:03:56.190
+about is recursive function.
+
+129
+00:03:56.190 --> 00:03:57.790
+You might have seen this topic
+
+130
+00:03:57.790 --> 00:03:59.030
+quite often in your data
+
+131
+00:03:59.030 --> 00:04:00.910
+structures and algorithm class.
+
+132
+00:04:00.910 --> 00:04:01.990
+This means the function
+
+133
+00:04:01.990 --> 00:04:03.370
+is going to call itself.
+
+134
+00:04:03.370 --> 00:04:04.450
+Yeah, but it's not going
+
+135
+00:04:04.450 --> 00:04:05.570
+to call like endlessly.
+
+136
+00:04:05.570 --> 00:04:07.370
+There's always a trip,
+
+137
+00:04:07.370 --> 00:04:08.810
+condition which ends it.
+
+138
+00:04:08.810 --> 00:04:10.290
+For example, if I go ahead
+
+139
+00:04:10.290 --> 00:04:12.890
+and say I have a poor chai,
+
+140
+00:04:12.890 --> 00:04:15.090
+I'm pouring the chai and I'll just
+
+141
+00:04:15.090 --> 00:04:17.050
+pass on a variable n here.
+
+142
+00:04:17.050 --> 00:04:19.930
+And we simply go ahead and say if n
+
+143
+00:04:19.930 --> 00:04:21.370
+is equals to zero,
+
+144
+00:04:22.089 --> 00:04:24.250
+then we go ahead and say return.
+
+145
+00:04:24.810 --> 00:04:27.050
+This means we just end the function.
+
+146
+00:04:27.050 --> 00:04:28.920
+We simply go ahead and say, all
+
+147
+00:04:28.920 --> 00:04:32.190
+right, cups poured,
+
+148
+00:04:32.190 --> 00:04:33.310
+something like that.
+
+149
+00:04:33.310 --> 00:04:34.910
+And in all the other cases
+
+150
+00:04:34.910 --> 00:04:36.430
+we simply go ahead and return,
+
+151
+00:04:38.670 --> 00:04:40.310
+the same calling of the function
+
+152
+00:04:40.310 --> 00:04:41.710
+poorchai, but we this time
+
+153
+00:04:41.710 --> 00:04:43.230
+call it with n minus 1.
+
+154
+00:04:43.870 --> 00:04:45.680
+So this is a little tricky.
+
+155
+00:04:45.680 --> 00:04:47.190
+But I'll show you by taking you
+
+156
+00:04:47.190 --> 00:04:49.030
+on the board itself that what does
+
+157
+00:04:49.030 --> 00:04:50.190
+this function actually does.
+
+158
+00:04:51.230 --> 00:04:52.670
+So you're going to notice that
+
+159
+00:04:52.670 --> 00:04:53.790
+if we have this function,
+
+160
+00:04:53.790 --> 00:04:54.990
+this is a very interesting case
+
+161
+00:04:54.990 --> 00:04:56.670
+study of a function itself.
+
+162
+00:04:56.670 --> 00:04:57.950
+If you have this function, let's
+
+163
+00:04:57.950 --> 00:04:59.390
+just say the first value we go
+
+164
+00:04:59.390 --> 00:05:02.350
+ahead and say this value is, oops.
+
+165
+00:05:02.990 --> 00:05:03.910
+The value that we
+
+166
+00:05:03.910 --> 00:05:05.070
+are giving is three.
+
+167
+00:05:05.790 --> 00:05:06.510
+All right?
+
+168
+00:05:06.510 --> 00:05:07.910
+So the value three goes
+
+169
+00:05:07.910 --> 00:05:09.870
+inside this function up here
+
+170
+00:05:09.870 --> 00:05:11.310
+and especially up here.
+
+171
+00:05:11.310 --> 00:05:13.070
+Come on There we go.
+
+172
+00:05:13.870 --> 00:05:14.750
+It goes up here.
+
+173
+00:05:14.750 --> 00:05:16.110
+The value is not zero.
+
+174
+00:05:16.110 --> 00:05:17.190
+So it's going to go ahead
+
+175
+00:05:17.190 --> 00:05:18.670
+and call the function again
+
+176
+00:05:19.310 --> 00:05:21.070
+with the value of n minus 1.
+
+177
+00:05:21.070 --> 00:05:22.990
+So 3 automatically becomes 2.
+
+178
+00:05:23.980 --> 00:05:25.700
+It again goes ahead and call this.
+
+179
+00:05:25.700 --> 00:05:26.700
+But this function will be
+
+180
+00:05:26.700 --> 00:05:27.980
+called with the value 2.
+
+181
+00:05:27.980 --> 00:05:30.060
+Again, it is not 0.
+
+182
+00:05:30.060 --> 00:05:32.220
+So then it again calls the function
+
+183
+00:05:32.220 --> 00:05:33.740
+with the value of one.
+
+184
+00:05:33.740 --> 00:05:35.020
+You guessed it right.
+
+185
+00:05:35.020 --> 00:05:36.860
+So we get the value of one.
+
+186
+00:05:36.860 --> 00:05:37.980
+Now again the function
+
+187
+00:05:37.980 --> 00:05:39.660
+goes inside this one.
+
+188
+00:05:39.660 --> 00:05:41.380
+It goes up here again.
+
+189
+00:05:41.380 --> 00:05:42.660
+Since it's not zero, it will
+
+190
+00:05:42.660 --> 00:05:43.700
+be called one more time.
+
+191
+00:05:43.700 --> 00:05:45.620
+And finally, when the value actually
+
+192
+00:05:45.620 --> 00:05:48.580
+becomes 0, then this 0 will go
+
+193
+00:05:48.580 --> 00:05:50.610
+up here and this will say, okay,
+
+194
+00:05:50.610 --> 00:05:52.250
+this time the n is equals to zero.
+
+195
+00:05:52.250 --> 00:05:53.170
+So it will simply say
+
+196
+00:05:53.170 --> 00:05:54.770
+return all cubs board.
+
+197
+00:05:54.770 --> 00:05:55.890
+So notice here how many
+
+198
+00:05:55.890 --> 00:05:57.130
+times actually we are calling
+
+199
+00:05:57.130 --> 00:05:58.290
+the function itself.
+
+200
+00:05:58.290 --> 00:05:59.570
+And believe it or not,
+
+201
+00:05:59.570 --> 00:06:00.770
+this is actually a technique
+
+202
+00:06:00.770 --> 00:06:01.490
+used quite a lot.
+
+203
+00:06:01.490 --> 00:06:02.690
+So I'll just go ahead and print
+
+204
+00:06:02.690 --> 00:06:04.730
+this one here and I will say
+
+205
+00:06:04.730 --> 00:06:06.770
+go ahead and pour the chai.
+
+206
+00:06:06.770 --> 00:06:08.130
+Let's use the same example.
+
+207
+00:06:08.130 --> 00:06:08.730
+But three.
+
+208
+00:06:08.730 --> 00:06:09.650
+Three is good enough.
+
+209
+00:06:10.370 --> 00:06:12.290
+I'll just go ahead and run this.
+
+210
+00:06:12.290 --> 00:06:16.140
+And notice here, we are
+
+211
+00:06:16.140 --> 00:06:17.260
+just returning it.
+
+212
+00:06:18.420 --> 00:06:20.140
+Notice here remaining is 20.
+
+213
+00:06:20.700 --> 00:06:22.060
+Again, we should be
+
+214
+00:06:22.700 --> 00:06:24.300
+pouring the chai printing.
+
+215
+00:06:24.300 --> 00:06:25.980
+We're just returning the things
+
+216
+00:06:25.980 --> 00:06:26.900
+we are not printing.
+
+217
+00:06:26.900 --> 00:06:28.220
+So all cups are poured.
+
+218
+00:06:29.180 --> 00:06:30.540
+Why we don't get it?
+
+219
+00:06:30.540 --> 00:06:31.980
+Let's run this one more time.
+
+220
+00:06:32.550 --> 00:06:33.900
+Why we are not getting this value?
+
+221
+00:06:34.620 --> 00:06:35.100
+My bad.
+
+222
+00:06:35.100 --> 00:06:36.460
+I'm running the wrong file.
+
+223
+00:06:36.460 --> 00:06:37.260
+That's the reason.
+
+224
+00:06:38.010 --> 00:06:38.860
+Silly me.
+
+225
+00:06:38.860 --> 00:06:40.020
+11 run this.
+
+226
+00:06:40.020 --> 00:06:40.940
+And there we go.
+
+227
+00:06:40.940 --> 00:06:43.180
+It says all cups poured.
+
+228
+00:06:43.180 --> 00:06:44.860
+So although we get the result.
+
+229
+00:06:46.440 --> 00:06:47.640
+But if we go ahead and print
+
+230
+00:06:47.640 --> 00:06:49.640
+the value of N just before
+
+231
+00:06:49.640 --> 00:06:51.160
+checking off anything, I
+
+232
+00:06:51.160 --> 00:06:52.440
+think that would be useful.
+
+233
+00:06:52.440 --> 00:06:54.360
+So let's just say we print just the N
+
+234
+00:06:55.720 --> 00:06:57.520
+and let's just run this.
+
+235
+00:06:57.520 --> 00:06:58.160
+And there we go.
+
+236
+00:06:58.160 --> 00:06:59.240
+We get this three,
+
+237
+00:06:59.240 --> 00:07:02.280
+then two, then one, then finally
+
+238
+00:07:02.280 --> 00:07:03.560
+one, then finally zero.
+
+239
+00:07:03.560 --> 00:07:04.320
+And then finally it
+
+240
+00:07:04.320 --> 00:07:05.240
+says all cap board.
+
+241
+00:07:05.800 --> 00:07:08.160
+This, recursion is a very,
+
+242
+00:07:08.160 --> 00:07:10.120
+very classic technique of doing
+
+243
+00:07:10.120 --> 00:07:11.930
+a lot of complex tasks.
+
+244
+00:07:11.930 --> 00:07:13.210
+But yeah, it works.
+
+245
+00:07:13.210 --> 00:07:14.130
+Now, last but not
+
+246
+00:07:14.130 --> 00:07:15.810
+the least is the lambdas.
+
+247
+00:07:15.810 --> 00:07:17.050
+They are very fun.
+
+248
+00:07:17.050 --> 00:07:18.290
+Little bit tricky for a lot
+
+249
+00:07:18.290 --> 00:07:19.250
+of people to go through with
+
+250
+00:07:19.250 --> 00:07:21.530
+it, but hey, this is okay.
+
+251
+00:07:21.530 --> 00:07:22.490
+You'll be there.
+
+252
+00:07:23.290 --> 00:07:25.690
+For example, let's go up here.
+
+253
+00:07:26.570 --> 00:07:27.610
+And there we go.
+
+254
+00:07:28.250 --> 00:07:31.090
+Let's say we have, chai types.
+
+255
+00:07:31.090 --> 00:07:32.730
+We have a lot of types of chai.
+
+256
+00:07:32.730 --> 00:07:34.730
+Let's just say the first one being,
+
+257
+00:07:34.730 --> 00:07:35.850
+we have a list of them.
+
+258
+00:07:36.410 --> 00:07:38.490
+The first one being a light chai.
+
+259
+00:07:38.490 --> 00:07:40.290
+Then we have a, karak chai.
+
+260
+00:07:40.290 --> 00:07:41.530
+That means a very strong One.
+
+261
+00:07:44.240 --> 00:07:46.960
+Then we have a famous ginger T.
+
+262
+00:07:47.920 --> 00:07:51.280
+Then we go have and probably have
+
+263
+00:07:52.640 --> 00:07:53.920
+again reputation.
+
+264
+00:07:53.920 --> 00:07:54.720
+Oh goodness.
+
+265
+00:07:54.720 --> 00:07:56.240
+We have seen reputation.
+
+266
+00:07:56.240 --> 00:07:57.959
+So notice here, this is one here,
+
+267
+00:07:57.959 --> 00:07:59.360
+this is one here, this is one here.
+
+268
+00:07:59.360 --> 00:08:00.800
+But this is exactly same.
+
+269
+00:08:01.360 --> 00:08:04.200
+So maybe you want to filter out all
+
+270
+00:08:04.200 --> 00:08:07.690
+the cups that are not Kadak chai.
+
+271
+00:08:07.690 --> 00:08:08.650
+Or you can use any other
+
+272
+00:08:08.650 --> 00:08:09.970
+variable if this is too
+
+273
+00:08:09.970 --> 00:08:11.530
+difficult for you to say.
+
+274
+00:08:11.530 --> 00:08:12.530
+So I can just go ahead
+
+275
+00:08:12.530 --> 00:08:14.770
+and say I will have a variable
+
+276
+00:08:14.770 --> 00:08:17.930
+known as strong, chai.
+
+277
+00:08:17.930 --> 00:08:19.810
+All right, so in this I want
+
+278
+00:08:19.810 --> 00:08:21.290
+to filter out this thing.
+
+279
+00:08:21.290 --> 00:08:22.410
+So here's the interesting part.
+
+280
+00:08:22.410 --> 00:08:23.530
+How can I do this?
+
+281
+00:08:23.530 --> 00:08:24.650
+I can go ahead and call
+
+282
+00:08:24.650 --> 00:08:25.690
+this one as a list.
+
+283
+00:08:25.690 --> 00:08:27.610
+I'll prepare a fresh list again
+
+284
+00:08:27.610 --> 00:08:28.890
+and as soon as I go ahead
+
+285
+00:08:28.890 --> 00:08:31.090
+and use this list, this is a built
+
+286
+00:08:31.090 --> 00:08:32.809
+in immutable sequence.
+
+287
+00:08:32.809 --> 00:08:35.139
+I, I can use a filter here.
+
+288
+00:08:35.139 --> 00:08:36.818
+Notice here it's a filter.
+
+289
+00:08:36.818 --> 00:08:38.179
+It returns an iterator.
+
+290
+00:08:38.179 --> 00:08:39.339
+That means, yeah, it's going
+
+291
+00:08:39.339 --> 00:08:42.899
+to return you again, a list.
+
+292
+00:08:42.899 --> 00:08:44.859
+And the way how you use it is
+
+293
+00:08:44.859 --> 00:08:46.979
+you pass on a function to it.
+
+294
+00:08:46.979 --> 00:08:48.259
+And most of the time you
+
+295
+00:08:48.259 --> 00:08:49.378
+are not going to see people
+
+296
+00:08:49.378 --> 00:08:50.419
+passing you functions.
+
+297
+00:08:50.419 --> 00:08:51.819
+They actually usually pass
+
+298
+00:08:51.819 --> 00:08:53.619
+on a lambda here.
+
+299
+00:08:53.619 --> 00:08:55.619
+And again notice here there's no
+
+300
+00:08:55.619 --> 00:08:57.019
+argument that hey, can I
+
+301
+00:08:57.019 --> 00:08:58.659
+always just only pass lambdas?
+
+302
+00:08:58.659 --> 00:08:59.779
+No, you can pass on functions
+
+303
+00:08:59.779 --> 00:09:01.200
+as well, no problem there.
+
+304
+00:09:01.200 --> 00:09:02.480
+But if I go ahead and use
+
+305
+00:09:02.480 --> 00:09:04.400
+filter, this is the syntax,
+
+306
+00:09:04.400 --> 00:09:05.480
+I go ahead and provide
+
+307
+00:09:05.480 --> 00:09:06.640
+the filter just like this.
+
+308
+00:09:07.200 --> 00:09:09.080
+The first argument is your lambda.
+
+309
+00:09:09.080 --> 00:09:10.680
+And the second argument that you have
+
+310
+00:09:10.680 --> 00:09:12.360
+to provide is where should iterate.
+
+311
+00:09:12.360 --> 00:09:13.120
+So you should iterate
+
+312
+00:09:13.120 --> 00:09:14.040
+over chai types.
+
+313
+00:09:14.040 --> 00:09:15.920
+All right, this is all good.
+
+314
+00:09:15.920 --> 00:09:16.959
+Hopefully that is this
+
+315
+00:09:16.959 --> 00:09:18.320
+is second argument.
+
+316
+00:09:18.320 --> 00:09:19.320
+The first argument is
+
+317
+00:09:19.320 --> 00:09:20.120
+the function name.
+
+318
+00:09:20.120 --> 00:09:21.000
+So the function name
+
+319
+00:09:21.000 --> 00:09:21.720
+could be anything.
+
+320
+00:09:21.720 --> 00:09:22.640
+So for example, if we
+
+321
+00:09:22.640 --> 00:09:23.240
+have function name.
+
+322
+00:09:23.240 --> 00:09:24.480
+Yeah, we have poorchai.
+
+323
+00:09:24.480 --> 00:09:25.240
+You can go ahead
+
+324
+00:09:25.240 --> 00:09:26.440
+and literally say poor chai.
+
+325
+00:09:26.440 --> 00:09:27.750
+This will be all happy.
+
+326
+00:09:27.750 --> 00:09:29.910
+But this is not what most people do.
+
+327
+00:09:29.910 --> 00:09:31.710
+Most people try to write this
+
+328
+00:09:31.710 --> 00:09:33.110
+function just for once because
+
+329
+00:09:33.110 --> 00:09:34.630
+they don't want to use it again.
+
+330
+00:09:34.630 --> 00:09:35.750
+It's a very simple one.
+
+331
+00:09:35.750 --> 00:09:36.910
+For example, I can just use
+
+332
+00:09:36.910 --> 00:09:38.950
+a lambda instead of the def.
+
+333
+00:09:38.950 --> 00:09:40.150
+We use lambda because these
+
+334
+00:09:40.150 --> 00:09:41.270
+functions don't have a name.
+
+335
+00:09:41.830 --> 00:09:43.510
+Now what happens in this one
+
+336
+00:09:43.510 --> 00:09:45.510
+is I go ahead and say chai.
+
+337
+00:09:46.230 --> 00:09:48.030
+And the reason I'm calling this
+
+338
+00:09:48.030 --> 00:09:49.390
+Chai because this is my
+
+339
+00:09:49.390 --> 00:09:51.590
+iteratable and I have to name each
+
+340
+00:09:51.590 --> 00:09:52.910
+of this variable something.
+
+341
+00:09:52.910 --> 00:09:53.950
+It could be chai, it
+
+342
+00:09:53.950 --> 00:09:54.790
+could be anything else.
+
+343
+00:09:55.330 --> 00:09:57.010
+Then you go ahead and put up a colon.
+
+344
+00:09:57.010 --> 00:09:57.770
+That means I want
+
+345
+00:09:57.770 --> 00:09:58.770
+to do something now.
+
+346
+00:09:58.770 --> 00:10:00.610
+And I will say chai
+
+347
+00:10:00.610 --> 00:10:02.450
+is equals, equals.
+
+348
+00:10:03.170 --> 00:10:05.250
+I'll just look for kadak
+
+349
+00:10:05.250 --> 00:10:06.770
+and you can look for anything else.
+
+350
+00:10:06.770 --> 00:10:08.450
+I'll just make this all in one line.
+
+351
+00:10:08.450 --> 00:10:10.050
+It's easier to see this way.
+
+352
+00:10:10.050 --> 00:10:10.810
+This is a little bit
+
+353
+00:10:10.810 --> 00:10:12.370
+of a syntax involved.
+
+354
+00:10:12.370 --> 00:10:13.090
+Syntax.
+
+355
+00:10:13.090 --> 00:10:14.130
+Now what you're going to see
+
+356
+00:10:14.130 --> 00:10:15.170
+what's the expected result.
+
+357
+00:10:15.970 --> 00:10:18.050
+Now the result simply says I want to
+
+358
+00:10:18.050 --> 00:10:20.620
+filter out and only the value gets
+
+359
+00:10:20.620 --> 00:10:22.460
+out of this filter which are true.
+
+360
+00:10:23.020 --> 00:10:24.940
+So first we simply say I want
+
+361
+00:10:24.940 --> 00:10:25.940
+to go through this loop.
+
+362
+00:10:25.940 --> 00:10:27.140
+All right, you go through
+
+363
+00:10:27.140 --> 00:10:28.140
+this entire loop.
+
+364
+00:10:28.780 --> 00:10:30.260
+I am saying that each of
+
+365
+00:10:30.260 --> 00:10:32.020
+the variable, whatever these values
+
+366
+00:10:32.020 --> 00:10:33.500
+are, I'm going to call them as chai.
+
+367
+00:10:33.500 --> 00:10:34.580
+You can call them Superman.
+
+368
+00:10:34.580 --> 00:10:36.540
+Nobody is bothering on that part.
+
+369
+00:10:37.100 --> 00:10:38.860
+But only return me the result
+
+370
+00:10:38.860 --> 00:10:40.380
+when this condition is met.
+
+371
+00:10:40.380 --> 00:10:41.740
+So when the chai name is equals
+
+372
+00:10:41.740 --> 00:10:43.420
+to Kadak, only return me
+
+373
+00:10:43.420 --> 00:10:45.420
+that and store that as a list.
+
+374
+00:10:46.230 --> 00:10:47.030
+So what's going to be
+
+375
+00:10:47.030 --> 00:10:48.230
+in the strong chai?
+
+376
+00:10:48.230 --> 00:10:49.830
+Two times this one because
+
+377
+00:10:49.830 --> 00:10:51.030
+this matches up two times.
+
+378
+00:10:51.030 --> 00:10:52.910
+So that is the result we have got.
+
+379
+00:10:52.910 --> 00:10:53.710
+I'll show you one more
+
+380
+00:10:53.710 --> 00:10:55.110
+interesting result as well
+
+381
+00:10:55.110 --> 00:10:56.550
+which is commonly used.
+
+382
+00:10:56.550 --> 00:10:57.870
+So if I go ahead and print out
+
+383
+00:10:57.870 --> 00:10:59.350
+the strong chai, this is
+
+384
+00:10:59.350 --> 00:11:00.510
+something that I should know what
+
+385
+00:11:00.510 --> 00:11:01.630
+I will get as a result.
+
+386
+00:11:01.630 --> 00:11:02.470
+Value.
+
+387
+00:11:02.470 --> 00:11:03.870
+Notice here we get two
+
+388
+00:11:03.870 --> 00:11:05.910
+times of the Karak chi.
+
+389
+00:11:05.910 --> 00:11:06.830
+Hope that's clear.
+
+390
+00:11:06.830 --> 00:11:09.070
+Now what you're also going to notice
+
+391
+00:11:09.070 --> 00:11:10.710
+sometimes people say I want a result
+
+392
+00:11:10.710 --> 00:11:13.220
+which is not equals to Karakchai.
+
+393
+00:11:13.220 --> 00:11:15.140
+So what do you think what is going
+
+394
+00:11:15.140 --> 00:11:16.900
+to happen when I just say this?
+
+395
+00:11:16.900 --> 00:11:19.740
+That means hey, this is not Karakcha.
+
+396
+00:11:19.740 --> 00:11:21.780
+I will return that this is true.
+
+397
+00:11:21.780 --> 00:11:22.900
+Is this Karakchai?
+
+398
+00:11:22.900 --> 00:11:25.700
+Oh, this is not equals to.
+
+399
+00:11:25.700 --> 00:11:27.260
+So only true part will get that.
+
+400
+00:11:27.260 --> 00:11:28.340
+Is it not Kadak?
+
+401
+00:11:28.340 --> 00:11:29.300
+No, it is Karak.
+
+402
+00:11:29.300 --> 00:11:30.420
+It is true.
+
+403
+00:11:30.420 --> 00:11:31.980
+So I hope you get that we
+
+404
+00:11:31.980 --> 00:11:32.980
+have reversed the logic.
+
+405
+00:11:32.980 --> 00:11:34.140
+If I'll explain it more I'll
+
+406
+00:11:34.140 --> 00:11:35.380
+probably confuse you more.
+
+407
+00:11:35.380 --> 00:11:36.620
+So notice here we get
+
+408
+00:11:36.620 --> 00:11:37.860
+something like this.
+
+409
+00:11:37.860 --> 00:11:39.620
+So whenever we want to make a fresh
+
+410
+00:11:39.620 --> 00:11:41.100
+list where I want to delete some
+
+411
+00:11:41.100 --> 00:11:43.180
+objects or something, whatever the
+
+412
+00:11:43.180 --> 00:11:45.120
+ID you have passed me on in a todo,
+
+413
+00:11:45.120 --> 00:11:47.120
+I usually use this logic that hey,
+
+414
+00:11:47.120 --> 00:11:49.200
+just make a fresh list and which
+
+415
+00:11:49.200 --> 00:11:50.920
+don't use the ID which user has
+
+416
+00:11:50.920 --> 00:11:51.440
+given me.
+
+417
+00:11:51.440 --> 00:11:53.320
+So we just avoid the ones which we
+
+418
+00:11:53.320 --> 00:11:55.520
+match exactly and we get the idea.
+
+419
+00:11:55.520 --> 00:11:57.920
+So this is really really fun that
+
+420
+00:11:57.920 --> 00:12:00.240
+we have and that we can do again.
+
+421
+00:12:00.240 --> 00:12:01.400
+Try to practice this.
+
+422
+00:12:01.400 --> 00:12:02.800
+This is a very new syntax.
+
+423
+00:12:03.760 --> 00:12:05.040
+Because this function doesn't have
+
+424
+00:12:05.040 --> 00:12:06.880
+a name, it's just use and throw.
+
+425
+00:12:06.880 --> 00:12:08.200
+We use it once and then
+
+426
+00:12:08.200 --> 00:12:09.600
+we just forget about it.
+
+427
+00:12:10.160 --> 00:12:11.320
+Little bit of a new syntax.
+
+428
+00:12:11.320 --> 00:12:12.280
+But try it one more
+
+429
+00:12:12.280 --> 00:12:13.640
+time, get some examples.
+
+430
+00:12:13.640 --> 00:12:14.800
+Try to practice it a little
+
+431
+00:12:14.800 --> 00:12:16.480
+bit and you will get it.
+
+432
+00:12:16.480 --> 00:12:17.800
+So this is all about your Lambdas,
+
+433
+00:12:17.800 --> 00:12:19.840
+also known as Anonymous function.
+
+434
+00:12:19.840 --> 00:12:20.920
+Pretty fun, isn't it?
+
+435
+00:12:20.920 --> 00:12:22.240
+Let's catch up in the next video.
+
+436
+00:12:22.240 --> 00:12:23.520
+And don't forget to rate.

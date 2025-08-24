@@ -1,0 +1,1177 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:02.880
+Next up, we want to go further
+
+2
+00:00:02.880 --> 00:00:04.120
+in depth and learn how
+
+3
+00:00:04.120 --> 00:00:05.560
+we can handle these errors.
+
+4
+00:00:05.560 --> 00:00:06.640
+That would be pretty awesome,
+
+5
+00:00:06.640 --> 00:00:08.960
+pretty fantastic, if you ask me.
+
+6
+00:00:08.960 --> 00:00:10.640
+Let's go ahead, move on and learn
+
+7
+00:00:10.640 --> 00:00:12.480
+the whole syntax of how we can
+
+8
+00:00:12.480 --> 00:00:13.960
+actually work with these errors
+
+9
+00:00:13.960 --> 00:00:15.680
+and gracefully handle them so
+
+10
+00:00:15.680 --> 00:00:17.200
+that the program doesn't crash.
+
+11
+00:00:17.200 --> 00:00:19.040
+Let me take you onto the screen.
+
+12
+00:00:19.040 --> 00:00:20.440
+And here we are on the screen
+
+13
+00:00:20.440 --> 00:00:21.680
+and let's start with this.
+
+14
+00:00:23.040 --> 00:00:23.880
+So the first thing that
+
+15
+00:00:23.880 --> 00:00:25.360
+we're going to do here is,
+
+16
+00:00:26.410 --> 00:00:27.450
+just create a new file.
+
+17
+00:00:27.450 --> 00:00:29.210
+That's always a good idea.
+
+18
+00:00:29.210 --> 00:00:31.290
+Let's go ahead and call this one as
+
+19
+00:00:31.290 --> 00:00:32.570
+02.
+
+20
+00:00:32.570 --> 00:00:37.130
+That will be try accept py.
+
+21
+00:00:37.930 --> 00:00:38.930
+All right, so what do we want
+
+22
+00:00:38.930 --> 00:00:40.330
+to do here this time?
+
+23
+00:00:40.330 --> 00:00:41.570
+Let's take a different example.
+
+24
+00:00:41.570 --> 00:00:42.610
+Again, this can be done
+
+25
+00:00:42.610 --> 00:00:44.250
+for the previous example as well,
+
+26
+00:00:44.250 --> 00:00:46.210
+but let's just say we have a chimenu
+
+27
+00:00:46.210 --> 00:00:48.290
+and this is an object or
+
+28
+00:00:48.290 --> 00:00:49.530
+a dictionary in this case.
+
+29
+00:00:49.530 --> 00:00:53.620
+And we have a simple masala, which is
+
+30
+00:00:53.620 --> 00:00:55.620
+probably costing us as 30 rupees.
+
+31
+00:00:56.180 --> 00:00:58.020
+And we have one more, which is
+
+32
+00:00:59.060 --> 00:01:02.100
+ginger, if I can write that, ginger,
+
+33
+00:01:02.100 --> 00:01:03.700
+and that's a little bit expensive,
+
+34
+00:01:03.700 --> 00:01:05.860
+so I'll just call it as 40 rupees.
+
+35
+00:01:05.860 --> 00:01:08.180
+And as you know, if I try to accept
+
+36
+00:01:08.180 --> 00:01:09.980
+something known as chimenu
+
+37
+00:01:09.980 --> 00:01:11.700
+with a key of, let's just say
+
+38
+00:01:12.580 --> 00:01:15.380
+eli chi, which is again a spice,
+
+39
+00:01:15.380 --> 00:01:17.100
+it will obviously give me an error.
+
+40
+00:01:17.100 --> 00:01:18.180
+Let's see the error first.
+
+41
+00:01:18.180 --> 00:01:20.580
+So if I just go and open this up,
+
+42
+00:01:21.270 --> 00:01:25.430
+I will say Python
+
+43
+00:01:26.070 --> 00:01:28.750
+Python 302 and we get that.
+
+44
+00:01:28.750 --> 00:01:30.110
+So again, this is a key error.
+
+45
+00:01:30.110 --> 00:01:31.150
+We just saw that the key
+
+46
+00:01:31.150 --> 00:01:32.390
+error also exists here.
+
+47
+00:01:32.390 --> 00:01:33.590
+So this is the key error.
+
+48
+00:01:33.590 --> 00:01:34.910
+The same way we can handle
+
+49
+00:01:34.910 --> 00:01:36.390
+others error as well.
+
+50
+00:01:36.390 --> 00:01:37.430
+Now here's the interesting
+
+51
+00:01:37.430 --> 00:01:38.430
+syntax if you don't want
+
+52
+00:01:38.430 --> 00:01:39.910
+your program to crash.
+
+53
+00:01:39.910 --> 00:01:41.350
+Because if I go ahead and print
+
+54
+00:01:41.350 --> 00:01:42.070
+up here something
+
+55
+00:01:43.110 --> 00:01:46.070
+and then I say hello, check code.
+
+56
+00:01:47.520 --> 00:01:47.640
+What?
+
+57
+00:01:47.640 --> 00:01:49.360
+You will notice that
+
+58
+00:01:49.360 --> 00:01:52.280
+if the key doesn't, we are not able
+
+59
+00:01:52.280 --> 00:01:53.560
+to find the key, then this
+
+60
+00:01:53.560 --> 00:01:54.880
+whole program just crashes.
+
+61
+00:01:54.880 --> 00:01:55.160
+Nothing.
+
+62
+00:01:55.160 --> 00:01:55.640
+Execute.
+
+63
+00:01:55.640 --> 00:01:57.760
+This part of code never executed.
+
+64
+00:01:57.760 --> 00:01:59.160
+But what if we know that
+
+65
+00:01:59.160 --> 00:02:00.520
+this is a sensitive operation,
+
+66
+00:02:00.520 --> 00:02:01.440
+maybe a database
+
+67
+00:02:01.440 --> 00:02:02.720
+call, maybe a web request?
+
+68
+00:02:02.720 --> 00:02:04.000
+Maybe we're trying to open
+
+69
+00:02:04.000 --> 00:02:05.760
+a file which might not exist.
+
+70
+00:02:05.760 --> 00:02:06.960
+So in that case you can just
+
+71
+00:02:06.960 --> 00:02:08.280
+cut this out and open
+
+72
+00:02:08.280 --> 00:02:10.320
+up a simple try block and just
+
+73
+00:02:10.320 --> 00:02:11.960
+paste it inside a try block.
+
+74
+00:02:11.960 --> 00:02:13.330
+The this simply says I'm trying
+
+75
+00:02:13.330 --> 00:02:15.370
+to do something which is sensitive,
+
+76
+00:02:15.370 --> 00:02:17.410
+which can cause a potential error.
+
+77
+00:02:17.410 --> 00:02:18.370
+So I'm just wrapping this
+
+78
+00:02:18.370 --> 00:02:20.130
+up into a safe bubble
+
+79
+00:02:20.130 --> 00:02:22.050
+and you can just try that.
+
+80
+00:02:22.050 --> 00:02:23.730
+And after that you can just look
+
+81
+00:02:23.730 --> 00:02:25.730
+for accept keyword in which
+
+82
+00:02:25.730 --> 00:02:27.370
+you can define the errors.
+
+83
+00:02:27.370 --> 00:02:28.370
+And by the way, you can
+
+84
+00:02:28.370 --> 00:02:29.210
+just name down your error
+
+85
+00:02:29.210 --> 00:02:30.530
+just like as E as well.
+
+86
+00:02:30.530 --> 00:02:31.930
+But since we know that what kind
+
+87
+00:02:31.930 --> 00:02:33.250
+of error can happen in this
+
+88
+00:02:33.250 --> 00:02:34.650
+case, we can just go ahead and say
+
+89
+00:02:34.650 --> 00:02:36.210
+I'm looking for a key error.
+
+90
+00:02:36.210 --> 00:02:37.890
+And if the key error happens,
+
+91
+00:02:37.890 --> 00:02:39.050
+we are going to just go ahead
+
+92
+00:02:39.050 --> 00:02:42.110
+and print a simple message that says
+
+93
+00:02:42.750 --> 00:02:46.910
+the key that you are trying
+
+94
+00:02:46.910 --> 00:02:52.910
+to access does not exist.
+
+95
+00:02:55.550 --> 00:02:57.310
+All right, so pretty nice one.
+
+96
+00:02:57.310 --> 00:02:59.070
+And let's go ahead and try
+
+97
+00:02:59.070 --> 00:02:59.950
+to work with this.
+
+98
+00:02:59.950 --> 00:03:01.230
+We know we have actually
+
+99
+00:03:01.230 --> 00:03:02.870
+invoked this error very carefully,
+
+100
+00:03:02.870 --> 00:03:04.350
+but you will get to see.
+
+101
+00:03:04.350 --> 00:03:05.750
+So notice here, this time we are
+
+102
+00:03:05.750 --> 00:03:07.030
+able to just get a,
+
+103
+00:03:07.030 --> 00:03:08.950
+custom error message and we are able
+
+104
+00:03:08.950 --> 00:03:10.390
+to see hello Chai code as well.
+
+105
+00:03:10.390 --> 00:03:11.610
+This is, is really one
+
+106
+00:03:11.610 --> 00:03:13.570
+of the nicest way of having this.
+
+107
+00:03:13.570 --> 00:03:15.050
+And we can actually go ahead
+
+108
+00:03:15.050 --> 00:03:16.450
+and work with more of this.
+
+109
+00:03:16.450 --> 00:03:17.730
+Let's create another
+
+110
+00:03:17.730 --> 00:03:20.050
+program and have it up there.
+
+111
+00:03:20.050 --> 00:03:20.810
+So let's go ahead
+
+112
+00:03:20.810 --> 00:03:21.890
+and create a new one.
+
+113
+00:03:22.850 --> 00:03:24.610
+We'll call this one as 03
+
+114
+00:03:24.610 --> 00:03:25.930
+and we're going to call this
+
+115
+00:03:25.930 --> 00:03:29.970
+one as complex Try py.
+
+116
+00:03:29.970 --> 00:03:31.290
+This time, instead of just
+
+117
+00:03:31.290 --> 00:03:32.770
+creating a simple accessing of
+
+118
+00:03:32.770 --> 00:03:33.930
+the value, we're going to go ahead
+
+119
+00:03:33.930 --> 00:03:35.850
+and create a method altogether,
+
+120
+00:03:35.850 --> 00:03:38.030
+which will be serve chai.
+
+121
+00:03:38.030 --> 00:03:38.910
+And obviously this
+
+122
+00:03:38.910 --> 00:03:40.670
+will take a, flavor.
+
+123
+00:03:41.710 --> 00:03:43.310
+And now let's see what happens.
+
+124
+00:03:43.310 --> 00:03:44.070
+The whole block.
+
+125
+00:03:44.070 --> 00:03:45.630
+We are going to wrap it up in the try
+
+126
+00:03:45.630 --> 00:03:48.030
+catch and I want to show you
+
+127
+00:03:48.030 --> 00:03:49.510
+more interesting stuff with that.
+
+128
+00:03:49.510 --> 00:03:51.350
+So first of all, in this we are going
+
+129
+00:03:51.350 --> 00:03:52.990
+to go ahead and take a simple print
+
+130
+00:03:52.990 --> 00:03:55.510
+statement that will be formatted and
+
+131
+00:03:55.510 --> 00:03:58.950
+we'll say preparing whatever the
+
+132
+00:03:58.950 --> 00:04:02.270
+flavor you have given me of chai
+
+133
+00:04:02.270 --> 00:04:03.940
+with a trip triple dot because it's
+
+134
+00:04:03.940 --> 00:04:05.660
+a, brewing process, it's taking its
+
+135
+00:04:05.660 --> 00:04:06.460
+time.
+
+136
+00:04:06.460 --> 00:04:09.660
+And if we go ahead and check if the
+
+137
+00:04:09.660 --> 00:04:11.420
+flavor value that you have given me
+
+138
+00:04:11.420 --> 00:04:15.300
+actually matches to unknown that you
+
+139
+00:04:15.300 --> 00:04:17.860
+haven't defined me, in that case, we
+
+140
+00:04:17.860 --> 00:04:19.660
+can actually raise our custom error.
+
+141
+00:04:19.660 --> 00:04:20.540
+It's not always about
+
+142
+00:04:20.540 --> 00:04:21.339
+printing the statement.
+
+143
+00:04:21.339 --> 00:04:22.300
+Sometimes you want to throw
+
+144
+00:04:22.300 --> 00:04:23.420
+the error, but you want to,
+
+145
+00:04:24.050 --> 00:04:25.660
+willingly throw that error.
+
+146
+00:04:25.660 --> 00:04:26.740
+So I'll throw an error
+
+147
+00:04:26.740 --> 00:04:27.700
+known as value error.
+
+148
+00:04:27.700 --> 00:04:28.300
+By the way, you can
+
+149
+00:04:28.300 --> 00:04:29.260
+throw up any error.
+
+150
+00:04:29.260 --> 00:04:30.770
+It's totally up to you.
+
+151
+00:04:30.770 --> 00:04:32.170
+And I will simply say value
+
+152
+00:04:32.170 --> 00:04:35.730
+error that says we don't
+
+153
+00:04:35.730 --> 00:04:38.770
+know that flavor because I'm
+
+154
+00:04:38.770 --> 00:04:39.970
+not aware of that flavor.
+
+155
+00:04:39.970 --> 00:04:41.170
+Simply just like that.
+
+156
+00:04:41.170 --> 00:04:41.810
+All right?
+
+157
+00:04:41.810 --> 00:04:44.450
+And what we can do is we can still
+
+158
+00:04:44.450 --> 00:04:46.610
+handle the exception just like this.
+
+159
+00:04:46.610 --> 00:04:48.370
+And we're going to say value error.
+
+160
+00:04:48.370 --> 00:04:49.690
+And let's cast this.
+
+161
+00:04:49.690 --> 00:04:50.570
+We don't want to call it
+
+162
+00:04:50.570 --> 00:04:51.450
+value error all the time.
+
+163
+00:04:51.450 --> 00:04:52.770
+We'll just call this One as E.
+
+164
+00:04:52.770 --> 00:04:54.370
+So that's a shorthand for it.
+
+165
+00:04:54.370 --> 00:04:56.450
+Now we can call our value error as E.
+
+166
+00:04:57.010 --> 00:04:58.050
+And in here we are going
+
+167
+00:04:58.050 --> 00:04:59.730
+to go ahead and see simple print.
+
+168
+00:04:59.730 --> 00:05:00.890
+We're going to take an example.
+
+169
+00:05:00.890 --> 00:05:02.330
+Don't worry, I know this is a lot
+
+170
+00:05:02.330 --> 00:05:04.970
+of code and here we are going to go
+
+171
+00:05:04.970 --> 00:05:06.610
+ahead and just print the E value.
+
+172
+00:05:06.610 --> 00:05:07.770
+All right, so far we have
+
+173
+00:05:07.770 --> 00:05:09.090
+seen this, try catch.
+
+174
+00:05:09.090 --> 00:05:10.770
+But there is also one more thing,
+
+175
+00:05:11.370 --> 00:05:14.370
+that hey, if this whole thing is if
+
+176
+00:05:14.370 --> 00:05:16.010
+the flavor is unknown, but what if
+
+177
+00:05:16.010 --> 00:05:18.370
+the case everything all goes good.
+
+178
+00:05:18.370 --> 00:05:19.930
+In that case we can simply run
+
+179
+00:05:19.930 --> 00:05:21.410
+the else statement also
+
+180
+00:05:21.410 --> 00:05:23.410
+and I can just print the value here
+
+181
+00:05:24.190 --> 00:05:25.790
+formatted printing that says
+
+182
+00:05:26.750 --> 00:05:31.230
+whatever the flavor chai is served.
+
+183
+00:05:31.230 --> 00:05:32.830
+In this case, and here's
+
+184
+00:05:32.830 --> 00:05:33.750
+the interesting part which
+
+185
+00:05:33.750 --> 00:05:34.830
+you will see quite a lot.
+
+186
+00:05:34.830 --> 00:05:35.910
+There is also a block
+
+187
+00:05:35.910 --> 00:05:36.990
+known as finally.
+
+188
+00:05:36.990 --> 00:05:38.750
+No matter try catch, try
+
+189
+00:05:38.750 --> 00:05:41.310
+1 runs or the accept runs
+
+190
+00:05:41.310 --> 00:05:42.750
+finally will always run.
+
+191
+00:05:42.750 --> 00:05:44.510
+This is usually useful when you
+
+192
+00:05:44.510 --> 00:05:45.710
+are trying to close the file.
+
+193
+00:05:45.710 --> 00:05:46.750
+Once everything has happened,
+
+194
+00:05:46.750 --> 00:05:48.030
+crashed or whatever, you want
+
+195
+00:05:48.030 --> 00:05:49.600
+to just clean the memory or, or
+
+196
+00:05:49.600 --> 00:05:50.600
+maybe you have a database
+
+197
+00:05:50.600 --> 00:05:51.560
+connection, you want to just
+
+198
+00:05:51.560 --> 00:05:52.840
+finally close it out, whatever
+
+199
+00:05:52.840 --> 00:05:53.760
+has happened.
+
+200
+00:05:53.760 --> 00:05:55.000
+So in that case you can just
+
+201
+00:05:55.000 --> 00:05:56.040
+go ahead and use finally.
+
+202
+00:05:56.040 --> 00:05:57.840
+It always works, it always prints.
+
+203
+00:05:58.500 --> 00:06:00.240
+In our case what makes sense is
+
+204
+00:06:02.000 --> 00:06:05.160
+come on, next customer please.
+
+205
+00:06:05.160 --> 00:06:06.720
+So whatever the order we are getting,
+
+206
+00:06:06.720 --> 00:06:08.400
+we actually want to have it.
+
+207
+00:06:08.400 --> 00:06:09.480
+Let's go ahead and try
+
+208
+00:06:09.480 --> 00:06:11.640
+to actually use this method now.
+
+209
+00:06:11.640 --> 00:06:12.480
+So we know that we have
+
+210
+00:06:12.480 --> 00:06:14.600
+a serve chai method and we
+
+211
+00:06:14.600 --> 00:06:16.760
+can ask for a masala chai.
+
+212
+00:06:16.760 --> 00:06:17.920
+And similarly we can also
+
+213
+00:06:17.920 --> 00:06:18.760
+go ahead and pass
+
+214
+00:06:18.760 --> 00:06:20.400
+on literal value of unknown.
+
+215
+00:06:20.980 --> 00:06:21.860
+There we go.
+
+216
+00:06:21.860 --> 00:06:23.540
+Let's see what happens in this case.
+
+217
+00:06:24.660 --> 00:06:27.940
+Let's run this and we'll say Python
+
+218
+00:06:27.940 --> 00:06:31.020
+03 and notice here, so we are
+
+219
+00:06:31.020 --> 00:06:32.820
+seeing preparing masala chai.
+
+220
+00:06:32.820 --> 00:06:34.300
+All right, that we have asked for it.
+
+221
+00:06:34.300 --> 00:06:35.380
+So this is line number three
+
+222
+00:06:35.380 --> 00:06:36.980
+that is getting executed.
+
+223
+00:06:36.980 --> 00:06:37.900
+After that it says
+
+224
+00:06:37.900 --> 00:06:39.300
+masala chai is served.
+
+225
+00:06:39.300 --> 00:06:40.620
+All right, so we are not going
+
+226
+00:06:40.620 --> 00:06:42.500
+in this block of code.
+
+227
+00:06:42.500 --> 00:06:43.980
+And also definitely we are
+
+228
+00:06:43.980 --> 00:06:45.540
+not getting any value errors
+
+229
+00:06:45.540 --> 00:06:46.690
+or anything like that.
+
+230
+00:06:46.690 --> 00:06:47.690
+We simply went up into
+
+231
+00:06:47.690 --> 00:06:49.170
+the else part which is saying
+
+232
+00:06:49.170 --> 00:06:50.930
+masala chai is served.
+
+233
+00:06:50.930 --> 00:06:52.530
+And notice here finally always
+
+234
+00:06:53.120 --> 00:06:54.050
+execute which says
+
+235
+00:06:54.050 --> 00:06:55.050
+next customer please.
+
+236
+00:06:55.050 --> 00:06:56.770
+So here we see the next customer
+
+237
+00:06:56.770 --> 00:06:58.210
+please is being printed.
+
+238
+00:06:58.210 --> 00:06:59.650
+Now next time when the function
+
+239
+00:06:59.650 --> 00:07:01.330
+runs with the value of unknown
+
+240
+00:07:01.330 --> 00:07:03.170
+this time we go up here again.
+
+241
+00:07:03.170 --> 00:07:04.650
+So it says preparing
+
+242
+00:07:04.650 --> 00:07:05.690
+the unknown chai.
+
+243
+00:07:05.690 --> 00:07:06.850
+So we are executing
+
+244
+00:07:06.850 --> 00:07:08.290
+the line number three.
+
+245
+00:07:08.290 --> 00:07:09.410
+Then we simply see that
+
+246
+00:07:09.410 --> 00:07:10.610
+hey, this flavor unknown.
+
+247
+00:07:10.610 --> 00:07:11.730
+I don't know what that is.
+
+248
+00:07:11.730 --> 00:07:13.490
+So the error that we are giving now
+
+249
+00:07:13.490 --> 00:07:15.410
+is Raise the value error, which
+
+250
+00:07:15.410 --> 00:07:17.440
+says, we don't know that flavor.
+
+251
+00:07:17.440 --> 00:07:18.360
+And this is what we get.
+
+252
+00:07:18.360 --> 00:07:19.960
+Notice here, program didn't crash.
+
+253
+00:07:19.960 --> 00:07:21.280
+We gracefully handled it.
+
+254
+00:07:21.280 --> 00:07:22.320
+So the error is
+
+255
+00:07:22.320 --> 00:07:23.720
+we don't know that flavor.
+
+256
+00:07:23.720 --> 00:07:26.320
+All right, but notice here,
+
+257
+00:07:26.320 --> 00:07:28.560
+what happens is this whole thing
+
+258
+00:07:28.560 --> 00:07:29.960
+and everything, nothing gets
+
+259
+00:07:29.960 --> 00:07:31.440
+printed, nothing gets executed.
+
+260
+00:07:31.440 --> 00:07:33.760
+So we are handling the errors nicely.
+
+261
+00:07:34.320 --> 00:07:36.320
+But this part also doesn't execute
+
+262
+00:07:36.320 --> 00:07:38.760
+because, hey, it doesn't execute.
+
+263
+00:07:38.760 --> 00:07:39.960
+In that case, we have gone into
+
+264
+00:07:39.960 --> 00:07:41.480
+the either you go into the if block
+
+265
+00:07:41.480 --> 00:07:43.150
+or you go into the else block.
+
+266
+00:07:43.150 --> 00:07:45.630
+But always remember this if block
+
+267
+00:07:45.630 --> 00:07:47.870
+and this else block are not related.
+
+268
+00:07:47.870 --> 00:07:49.870
+They are not on the same indentation.
+
+269
+00:07:49.870 --> 00:07:51.990
+This else block is a part of this.
+
+270
+00:07:51.990 --> 00:07:52.910
+Try catch.
+
+271
+00:07:52.910 --> 00:07:54.590
+Yes, common syntax.
+
+272
+00:07:54.590 --> 00:07:55.870
+And notice here, no matter
+
+273
+00:07:55.870 --> 00:07:57.150
+what happens, the finally
+
+274
+00:07:57.150 --> 00:07:58.550
+always gets printed out.
+
+275
+00:07:58.550 --> 00:07:59.950
+So this is what we
+
+276
+00:07:59.950 --> 00:08:00.910
+really want to have.
+
+277
+00:08:00.910 --> 00:08:02.430
+We have the error, but we have
+
+278
+00:08:02.430 --> 00:08:04.110
+gracefully handled that error.
+
+279
+00:08:04.110 --> 00:08:05.390
+Now, you can actually handle
+
+280
+00:08:05.390 --> 00:08:06.750
+multiple errors, and that's
+
+281
+00:08:06.750 --> 00:08:07.710
+exactly what we're going
+
+282
+00:08:07.710 --> 00:08:08.830
+to see in the next video.
+
+283
+00:08:08.830 --> 00:08:10.190
+But I hope this code
+
+284
+00:08:10.750 --> 00:08:12.430
+will take a little time to observe
+
+285
+00:08:12.430 --> 00:08:13.550
+and to understand it.
+
+286
+00:08:14.300 --> 00:08:15.580
+But take a time, take your
+
+287
+00:08:15.580 --> 00:08:16.780
+moment and try to understand.
+
+288
+00:08:16.780 --> 00:08:18.660
+This is hardly 11 lines of code,
+
+289
+00:08:18.660 --> 00:08:20.740
+but this is a very common piece of
+
+290
+00:08:20.740 --> 00:08:22.140
+code that you're going to see quite
+
+291
+00:08:22.140 --> 00:08:24.140
+a lot in your development journey.
+
+292
+00:08:24.140 --> 00:08:25.340
+That is it for this video.
+
+293
+00:08:25.340 --> 00:08:26.340
+Let's go ahead and catch
+
+294
+00:08:26.340 --> 00:08:27.420
+up in the next one.

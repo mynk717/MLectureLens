@@ -1,0 +1,709 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:03.040
+Another day, another challenge.
+
+2
+00:00:03.040 --> 00:00:04.480
+I love these challenge approach.
+
+3
+00:00:04.480 --> 00:00:06.000
+It teaches us so much.
+
+4
+00:00:06.880 --> 00:00:08.200
+So let's start with this
+
+5
+00:00:08.200 --> 00:00:09.480
+reading the fresh new
+
+6
+00:00:09.480 --> 00:00:11.280
+challenge in front of us.
+
+7
+00:00:11.280 --> 00:00:12.880
+Let's just say the challenge says
+
+8
+00:00:13.520 --> 00:00:14.040
+not just.
+
+9
+00:00:14.040 --> 00:00:15.440
+Let's just say it is saying that
+
+10
+00:00:16.160 --> 00:00:18.160
+you want to simulate a tea heating.
+
+11
+00:00:18.160 --> 00:00:19.920
+It starts with 40 degree
+
+12
+00:00:19.920 --> 00:00:21.880
+Celsius, of course, and boils
+
+13
+00:00:21.880 --> 00:00:23.440
+at 100 degrees Celsius.
+
+14
+00:00:23.440 --> 00:00:25.280
+Your task is pretty simple.
+
+15
+00:00:25.280 --> 00:00:26.760
+Use a while loop.
+
+16
+00:00:26.760 --> 00:00:28.280
+And this is a new kind of a loop.
+
+17
+00:00:28.280 --> 00:00:29.120
+We haven't seen that
+
+18
+00:00:29.120 --> 00:00:30.480
+in the past so far.
+
+19
+00:00:31.200 --> 00:00:32.640
+Increase the temperature by 15
+
+20
+00:00:32.640 --> 00:00:35.200
+until it reaches or exceeds 100.
+
+21
+00:00:36.160 --> 00:00:38.640
+Print each temperature step.
+
+22
+00:00:38.640 --> 00:00:39.280
+All right.
+
+23
+00:00:39.280 --> 00:00:40.600
+And after that also we'll
+
+24
+00:00:40.600 --> 00:00:41.360
+print some message.
+
+25
+00:00:41.360 --> 00:00:42.120
+So let's go ahead
+
+26
+00:00:42.120 --> 00:00:43.880
+and try out the loops.
+
+27
+00:00:43.880 --> 00:00:44.960
+So this is going to be
+
+28
+00:00:45.600 --> 00:00:48.240
+my, I guess sixth one.
+
+29
+00:00:48.240 --> 00:00:50.600
+So let's create a new file and call
+
+30
+00:00:50.600 --> 00:00:53.560
+this one as 06/ underscore and let's
+
+31
+00:00:53.560 --> 00:00:56.560
+call this one as tea temperature.
+
+32
+00:00:59.160 --> 00:00:59.960
+There we go.
+
+33
+00:00:59.960 --> 00:01:01.920
+So the step one is it asks us
+
+34
+00:01:01.920 --> 00:01:03.480
+to create a variable that is
+
+35
+00:01:04.680 --> 00:01:06.480
+temperature or you can
+
+36
+00:01:06.480 --> 00:01:07.480
+just call it as temp
+
+37
+00:01:07.480 --> 00:01:09.400
+for short and starts with 40.
+
+38
+00:01:09.400 --> 00:01:10.800
+We don't have to put a sign like
+
+39
+00:01:10.800 --> 00:01:11.880
+degrees Celsius or something.
+
+40
+00:01:11.880 --> 00:01:13.080
+For us it's just 40.
+
+41
+00:01:13.640 --> 00:01:15.280
+Now we have to use while loop
+
+42
+00:01:15.280 --> 00:01:16.680
+and we have to take care that it
+
+43
+00:01:16.680 --> 00:01:18.120
+needs to run till the hundred.
+
+44
+00:01:19.320 --> 00:01:21.240
+So the for loop is also pretty good.
+
+45
+00:01:21.240 --> 00:01:22.880
+But for loop is majorly used
+
+46
+00:01:22.880 --> 00:01:24.720
+for iterating over a list or when we
+
+47
+00:01:24.720 --> 00:01:25.880
+know there is something which
+
+48
+00:01:25.880 --> 00:01:27.240
+has auto ending or something.
+
+49
+00:01:27.850 --> 00:01:29.210
+Here we have to check and keep
+
+50
+00:01:29.210 --> 00:01:30.890
+on checking for a certain condition.
+
+51
+00:01:30.890 --> 00:01:32.170
+So just like we have if statement,
+
+52
+00:01:32.170 --> 00:01:33.690
+we also have a while statement
+
+53
+00:01:33.690 --> 00:01:35.450
+also known as while loop.
+
+54
+00:01:35.450 --> 00:01:36.250
+This is going to keep
+
+55
+00:01:36.250 --> 00:01:37.690
+on doing the stuff until
+
+56
+00:01:38.490 --> 00:01:40.410
+the condition becomes false.
+
+57
+00:01:40.410 --> 00:01:41.690
+So for example, the condition
+
+58
+00:01:41.690 --> 00:01:42.890
+which we are checking for is
+
+59
+00:01:42.890 --> 00:01:45.210
+temperature less than 100.
+
+60
+00:01:45.210 --> 00:01:46.970
+You can also check for equals
+
+61
+00:01:46.970 --> 00:01:48.410
+to 100 as well, just like this.
+
+62
+00:01:48.410 --> 00:01:49.650
+Less than equal to 100.
+
+63
+00:01:49.650 --> 00:01:50.450
+But we'll just check
+
+64
+00:01:50.450 --> 00:01:51.610
+for less than 100.
+
+65
+00:01:51.610 --> 00:01:52.970
+The moment it becomes 100.
+
+66
+00:01:52.970 --> 00:01:54.730
+That means it's done, it's boiled.
+
+67
+00:01:55.460 --> 00:01:57.380
+Now first of all it says that I want
+
+68
+00:01:57.380 --> 00:02:00.340
+to print increase the temperature by
+
+69
+00:02:00.340 --> 00:02:03.020
+15 until it reached or exceed 100.
+
+70
+00:02:03.020 --> 00:02:04.060
+And then we want to print
+
+71
+00:02:04.060 --> 00:02:05.860
+the temperature in each step.
+
+72
+00:02:05.860 --> 00:02:07.580
+So I would prefer to print my
+
+73
+00:02:07.580 --> 00:02:10.020
+temperature first, otherwise
+
+74
+00:02:10.020 --> 00:02:12.220
+if the value is all gone, it's
+
+75
+00:02:12.220 --> 00:02:12.860
+not going to be available.
+
+76
+00:02:12.860 --> 00:02:14.020
+Or anyways you can print
+
+77
+00:02:14.020 --> 00:02:14.980
+it afterwards as well.
+
+78
+00:02:14.980 --> 00:02:16.180
+No problem there.
+
+79
+00:02:16.180 --> 00:02:17.460
+We'll just go ahead and say
+
+80
+00:02:17.460 --> 00:02:19.860
+current temperature
+
+81
+00:02:20.590 --> 00:02:21.750
+and then we'll just print
+
+82
+00:02:21.750 --> 00:02:23.870
+the temperature just like that.
+
+83
+00:02:23.870 --> 00:02:25.350
+It also says that you need
+
+84
+00:02:25.350 --> 00:02:27.710
+to add the temperature by 15
+
+85
+00:02:28.350 --> 00:02:29.630
+until it decreases 100.
+
+86
+00:02:29.630 --> 00:02:31.590
+So every single time we obviously
+
+87
+00:02:31.590 --> 00:02:32.590
+have the access to this
+
+88
+00:02:32.590 --> 00:02:34.390
+temperature, we are going to go
+
+89
+00:02:34.390 --> 00:02:35.670
+ahead and say that whatever the
+
+90
+00:02:35.670 --> 00:02:39.590
+value of temperature is, we are
+
+91
+00:02:39.590 --> 00:02:41.710
+going to add 15 to this.
+
+92
+00:02:41.710 --> 00:02:43.670
+Now this is a very common syntax
+
+93
+00:02:43.670 --> 00:02:46.910
+and so many times you add 15 or one
+
+94
+00:02:46.910 --> 00:02:48.480
+or whatever the value to itself.
+
+95
+00:02:48.480 --> 00:02:49.990
+And it is such a common statement,
+
+96
+00:02:49.990 --> 00:02:51.350
+by the way, I just press control
+
+97
+00:02:51.350 --> 00:02:53.270
+slash to quickly comment a line.
+
+98
+00:02:53.270 --> 00:02:54.710
+This is such a common statement
+
+99
+00:02:54.710 --> 00:02:55.670
+that you will see that
+
+100
+00:02:55.670 --> 00:02:58.230
+temperature plus equals 15.
+
+101
+00:02:58.950 --> 00:03:00.310
+The line number 5 and line
+
+102
+00:03:00.310 --> 00:03:01.830
+number 6 are exactly same.
+
+103
+00:03:02.550 --> 00:03:05.070
+This also adds 15 to the existing
+
+104
+00:03:05.070 --> 00:03:06.470
+value of temperature.
+
+105
+00:03:06.470 --> 00:03:07.950
+This is a shorthand notation
+
+106
+00:03:07.950 --> 00:03:08.870
+of what we wrote about.
+
+107
+00:03:08.870 --> 00:03:09.870
+So whatever feels good
+
+108
+00:03:09.870 --> 00:03:11.270
+to you, you can use that.
+
+109
+00:03:11.270 --> 00:03:12.470
+Most of the time you'll see
+
+110
+00:03:12.470 --> 00:03:13.750
+people using the short one.
+
+111
+00:03:13.750 --> 00:03:15.230
+So plus equals means whatever
+
+112
+00:03:15.230 --> 00:03:16.430
+the existing values is, we
+
+113
+00:03:16.430 --> 00:03:17.990
+want to Increase it by 15.
+
+114
+00:03:18.680 --> 00:03:19.360
+Python is full
+
+115
+00:03:19.360 --> 00:03:20.520
+of these kinds of things.
+
+116
+00:03:21.240 --> 00:03:23.040
+Now we'll go outside of it, make
+
+117
+00:03:23.040 --> 00:03:24.080
+sure you keep an eye on the
+
+118
+00:03:24.080 --> 00:03:25.520
+indentation and we'll just print
+
+119
+00:03:25.520 --> 00:03:29.000
+up a message which says that T is
+
+120
+00:03:29.000 --> 00:03:34.680
+ready to boil, or T is ready to
+
+121
+00:03:34.680 --> 00:03:35.040
+be served.
+
+122
+00:03:35.040 --> 00:03:36.000
+So water is all ready.
+
+123
+00:03:36.000 --> 00:03:37.360
+So T, you can boil the T.
+
+124
+00:03:37.360 --> 00:03:39.280
+Now we'll save this and see
+
+125
+00:03:39.280 --> 00:03:40.400
+the result and I'll show you
+
+126
+00:03:40.400 --> 00:03:41.480
+different ways of how this
+
+127
+00:03:41.480 --> 00:03:42.720
+result can be manipulated.
+
+128
+00:03:42.720 --> 00:03:44.120
+Pretty simple, no big deal there.
+
+129
+00:03:45.020 --> 00:03:45.780
+So we'll just go ahead
+
+130
+00:03:45.780 --> 00:03:46.820
+and say Python 3.
+
+131
+00:03:46.820 --> 00:03:48.460
+This time it's 06.
+
+132
+00:03:49.100 --> 00:03:50.140
+And there we go.
+
+133
+00:03:50.140 --> 00:03:52.020
+So we can see current temperature
+
+134
+00:03:52.020 --> 00:03:53.940
+is 40, then we have 55, then
+
+135
+00:03:53.940 --> 00:03:55.540
+we have 70, then we have 85
+
+136
+00:03:55.540 --> 00:03:57.140
+and then it gets ready because it's
+
+137
+00:03:57.140 --> 00:04:00.139
+increasing by in itself 15.
+
+138
+00:04:00.139 --> 00:04:01.700
+The only change that you're going
+
+139
+00:04:01.700 --> 00:04:03.420
+to see if I take this line number
+
+140
+00:04:03.420 --> 00:04:04.900
+four and move it to the very end,
+
+141
+00:04:04.900 --> 00:04:07.420
+or probably we print the message
+
+142
+00:04:07.420 --> 00:04:08.540
+after increasing the value.
+
+143
+00:04:08.540 --> 00:04:09.940
+So a shortcut is just hold down
+
+144
+00:04:09.940 --> 00:04:11.450
+the option key or alt key
+
+145
+00:04:11.450 --> 00:04:13.290
+and move this line at the bottom.
+
+146
+00:04:13.290 --> 00:04:15.050
+Let's try to see what happens when
+
+147
+00:04:15.050 --> 00:04:16.649
+we run the program like this.
+
+148
+00:04:16.649 --> 00:04:18.410
+So notice here, this time it says
+
+149
+00:04:18.410 --> 00:04:20.170
+current temperature is 55.
+
+150
+00:04:20.170 --> 00:04:21.970
+So it comes up here, it increases
+
+151
+00:04:21.970 --> 00:04:24.410
+the temperature, so 40, added 15,
+
+152
+00:04:24.410 --> 00:04:27.410
+it becomes 55, then 70, then 85,
+
+153
+00:04:27.410 --> 00:04:29.850
+and then finally when we are here,
+
+154
+00:04:29.850 --> 00:04:32.290
+after 85, it actually increases it
+
+155
+00:04:32.290 --> 00:04:33.130
+to 100.
+
+156
+00:04:33.130 --> 00:04:35.090
+Once it is 100, that means 100
+
+157
+00:04:35.090 --> 00:04:37.440
+is not equals to 100, it is
+
+158
+00:04:37.440 --> 00:04:39.160
+it not less than 100, it is
+
+159
+00:04:39.160 --> 00:04:40.960
+actually equal to the 100.
+
+160
+00:04:40.960 --> 00:04:42.200
+So we simply get out of it
+
+161
+00:04:42.200 --> 00:04:43.680
+and we simply print this.
+
+162
+00:04:43.680 --> 00:04:44.760
+So again, depends on what
+
+163
+00:04:44.760 --> 00:04:45.720
+you really want to do.
+
+164
+00:04:45.720 --> 00:04:48.000
+I like to keep this at the very top
+
+165
+00:04:48.000 --> 00:04:49.200
+just like this.
+
+166
+00:04:49.200 --> 00:04:50.320
+Make sure you understand that
+
+167
+00:04:50.320 --> 00:04:51.480
+the how you write the code,
+
+168
+00:04:51.480 --> 00:04:53.560
+it's actually going to execute
+
+169
+00:04:53.560 --> 00:04:54.960
+in the same order as well.
+
+170
+00:04:55.680 --> 00:04:56.440
+So that is it.
+
+171
+00:04:56.440 --> 00:04:57.960
+Now you understand the while loop
+
+172
+00:04:57.960 --> 00:04:59.520
+as well as the importance of it,
+
+173
+00:04:59.520 --> 00:05:00.840
+as well as a use case for it.
+
+174
+00:05:00.840 --> 00:05:01.920
+You have done a practical
+
+175
+00:05:01.920 --> 00:05:03.200
+example for it.
+
+176
+00:05:03.200 --> 00:05:04.400
+That is it for this video.
+
+177
+00:05:04.400 --> 00:05:06.080
+Let's catch up in the next one.

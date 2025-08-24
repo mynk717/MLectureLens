@@ -1,0 +1,1493 @@
+WEBVTT
+
+1
+00:00:00.720 --> 00:00:02.280
+All right, so we'll continue
+
+2
+00:00:02.280 --> 00:00:04.280
+the lecture right, from here
+
+3
+00:00:04.280 --> 00:00:05.920
+because this is a continuation
+
+4
+00:00:05.920 --> 00:00:08.640
+of our talk on, list itself.
+
+5
+00:00:08.640 --> 00:00:10.480
+Now again, there's not too much
+
+6
+00:00:10.480 --> 00:00:12.320
+to discuss about it here, but still
+
+7
+00:00:12.320 --> 00:00:13.480
+want to give you a little bit
+
+8
+00:00:13.480 --> 00:00:15.600
+base of operator overloading.
+
+9
+00:00:15.600 --> 00:00:17.560
+So what is this operator overloading?
+
+10
+00:00:17.560 --> 00:00:18.560
+There are a lot of operators
+
+11
+00:00:18.560 --> 00:00:19.880
+in the world of programming.
+
+12
+00:00:19.880 --> 00:00:21.840
+Like plus is an operator which adds
+
+13
+00:00:21.840 --> 00:00:23.240
+two things, which is on their left
+
+14
+00:00:23.240 --> 00:00:25.520
+and right like this and whatever
+
+15
+00:00:25.520 --> 00:00:27.500
+is here and it just adds it.
+
+16
+00:00:27.500 --> 00:00:29.820
+This is designed to add numbers.
+
+17
+00:00:29.820 --> 00:00:31.820
+But whenever this operator, whether
+
+18
+00:00:31.820 --> 00:00:33.900
+it's a plus minus, whatever it is,
+
+19
+00:00:33.900 --> 00:00:34.860
+it's being used
+
+20
+00:00:34.860 --> 00:00:37.220
+for doing more than one task that is
+
+21
+00:00:37.220 --> 00:00:38.820
+called as operator overloading.
+
+22
+00:00:38.820 --> 00:00:40.260
+Let me show you a base
+
+23
+00:00:40.260 --> 00:00:41.020
+example and you will
+
+24
+00:00:41.020 --> 00:00:42.379
+understand it much better.
+
+25
+00:00:42.379 --> 00:00:43.340
+So let's just say I
+
+26
+00:00:43.340 --> 00:00:45.340
+have a base liquid.
+
+27
+00:00:46.220 --> 00:00:47.980
+And this base liquid is,
+
+28
+00:00:48.750 --> 00:00:50.540
+let's just say we want to have water
+
+29
+00:00:51.420 --> 00:00:54.060
+and another base liquid of milk.
+
+30
+00:00:55.240 --> 00:00:56.520
+Okay, no problem.
+
+31
+00:00:56.520 --> 00:00:57.280
+Then we have some
+
+32
+00:00:57.280 --> 00:00:58.400
+extra liquids as well.
+
+33
+00:00:58.400 --> 00:00:59.680
+Or probably better one
+
+34
+00:00:59.680 --> 00:01:01.240
+would be extra flavor.
+
+35
+00:01:02.680 --> 00:01:05.160
+Flavor looks good.
+
+36
+00:01:05.160 --> 00:01:07.320
+Extra flavor.
+
+37
+00:01:07.320 --> 00:01:08.120
+There we go.
+
+38
+00:01:08.120 --> 00:01:09.840
+Now we have extra flavor of liquid.
+
+39
+00:01:09.840 --> 00:01:11.200
+And in that again, my
+
+40
+00:01:11.200 --> 00:01:12.840
+favorite, which is ginger.
+
+41
+00:01:12.840 --> 00:01:14.680
+Now we want to combine all of them.
+
+42
+00:01:14.680 --> 00:01:20.040
+We want to make a full liquid mix.
+
+43
+00:01:20.980 --> 00:01:21.940
+How can we do that?
+
+44
+00:01:21.940 --> 00:01:23.780
+Surely I showed you the append.
+
+45
+00:01:23.780 --> 00:01:26.140
+Or we actually saw that we can
+
+46
+00:01:26.140 --> 00:01:28.260
+actually, combine all of this.
+
+47
+00:01:28.260 --> 00:01:30.860
+Remember this ingredient append.
+
+48
+00:01:30.860 --> 00:01:32.620
+We can actually use this or we
+
+49
+00:01:32.620 --> 00:01:33.780
+can actually go ahead and use
+
+50
+00:01:33.780 --> 00:01:34.980
+the method that, hey, I just
+
+51
+00:01:34.980 --> 00:01:36.340
+want to add all of them.
+
+52
+00:01:36.340 --> 00:01:39.260
+And a lot of methods can be done
+
+53
+00:01:39.260 --> 00:01:41.460
+just like we saw this extend here.
+
+54
+00:01:41.460 --> 00:01:43.660
+But there is another way, another
+
+55
+00:01:43.660 --> 00:01:45.180
+shortcut that I can simply go
+
+56
+00:01:45.180 --> 00:01:46.610
+ahead and say, hey, base liquid.
+
+57
+00:01:46.610 --> 00:01:47.390
+And I just want
+
+58
+00:01:47.390 --> 00:01:49.430
+to add an extra, flavor.
+
+59
+00:01:49.430 --> 00:01:51.310
+Now again, this plus was not
+
+60
+00:01:51.310 --> 00:01:52.470
+supposed to do these things,
+
+61
+00:01:52.470 --> 00:01:54.630
+but it is able to do this thing.
+
+62
+00:01:54.630 --> 00:01:56.790
+This is your operator overloading.
+
+63
+00:01:56.790 --> 00:01:58.390
+Yeah, very surprised.
+
+64
+00:01:58.390 --> 00:01:59.670
+But this is all it is.
+
+65
+00:01:59.670 --> 00:02:01.510
+What would be the result of it?
+
+66
+00:02:01.510 --> 00:02:03.750
+No, no surprises here.
+
+67
+00:02:03.750 --> 00:02:06.230
+Exactly what you have guessed for it.
+
+68
+00:02:06.230 --> 00:02:07.230
+So we'll just go ahead
+
+69
+00:02:07.230 --> 00:02:10.789
+and say liquid mix.
+
+70
+00:02:11.350 --> 00:02:12.990
+And then we are going to say that,
+
+71
+00:02:12.990 --> 00:02:15.550
+hey, just give me a full liquid mix.
+
+72
+00:02:15.550 --> 00:02:16.350
+That's it.
+
+73
+00:02:16.350 --> 00:02:16.990
+That is it.
+
+74
+00:02:16.990 --> 00:02:18.030
+No big deal.
+
+75
+00:02:18.030 --> 00:02:19.630
+No surprises, nothing.
+
+76
+00:02:19.630 --> 00:02:21.270
+So we can see the liquid milk mixes,
+
+77
+00:02:21.870 --> 00:02:23.310
+water, milk and ginger.
+
+78
+00:02:23.310 --> 00:02:24.870
+So it just works exactly
+
+79
+00:02:24.870 --> 00:02:25.950
+like concatenations.
+
+80
+00:02:26.590 --> 00:02:28.190
+All right, so this is nice
+
+81
+00:02:28.190 --> 00:02:28.990
+and operative.
+
+82
+00:02:28.990 --> 00:02:30.590
+Overloading exists
+
+83
+00:02:30.590 --> 00:02:31.990
+a little bit more as well.
+
+84
+00:02:31.990 --> 00:02:33.590
+Not just by combining this in
+
+85
+00:02:33.590 --> 00:02:35.750
+the array especially they, work like
+
+86
+00:02:35.750 --> 00:02:36.950
+for example, let's just say you want
+
+87
+00:02:36.950 --> 00:02:40.630
+to have a strong brew and this T
+
+88
+00:02:40.630 --> 00:02:41.870
+is going to be pretty strong.
+
+89
+00:02:42.430 --> 00:02:43.350
+So let's just say I have
+
+90
+00:02:43.350 --> 00:02:45.150
+one ingredient for having a strong
+
+91
+00:02:45.150 --> 00:02:46.350
+T which is black.
+
+92
+00:02:47.490 --> 00:02:48.170
+Black T.
+
+93
+00:02:48.170 --> 00:02:50.010
+So I'll just say now you can use
+
+94
+00:02:50.010 --> 00:02:51.570
+operator overloading here as well.
+
+95
+00:02:51.570 --> 00:02:53.410
+Like I want to multiply it by three.
+
+96
+00:02:53.410 --> 00:02:55.410
+So what is the result?
+
+97
+00:02:55.410 --> 00:02:57.170
+You might be wondering for that.
+
+98
+00:02:57.170 --> 00:02:58.730
+And this might surprise you
+
+99
+00:02:58.730 --> 00:02:59.690
+a little bit, but again this
+
+100
+00:02:59.690 --> 00:03:01.090
+is investigation study.
+
+101
+00:03:01.090 --> 00:03:02.330
+So just guess what
+
+102
+00:03:02.330 --> 00:03:03.730
+could have happened.
+
+103
+00:03:03.730 --> 00:03:08.090
+So I'll just say strong brew and we
+
+104
+00:03:08.090 --> 00:03:11.410
+will use strong brew variable here.
+
+105
+00:03:11.410 --> 00:03:13.070
+Just guess, take a guess.
+
+106
+00:03:13.070 --> 00:03:15.350
+Will this black T will be three times
+
+107
+00:03:15.350 --> 00:03:17.310
+or will three be added
+
+108
+00:03:17.310 --> 00:03:19.110
+just here what will happen?
+
+109
+00:03:19.110 --> 00:03:20.830
+And again, in case you were able
+
+110
+00:03:20.830 --> 00:03:22.790
+to guess it right or probably not,
+
+111
+00:03:22.790 --> 00:03:24.870
+we get three shots of the black T.
+
+112
+00:03:24.870 --> 00:03:27.030
+That's what multiply by three.
+
+113
+00:03:27.030 --> 00:03:28.870
+And what would have happened if there
+
+114
+00:03:28.870 --> 00:03:30.310
+would be another element in it?
+
+115
+00:03:30.310 --> 00:03:31.270
+That's very surprising.
+
+116
+00:03:31.270 --> 00:03:32.030
+Let's just say we have
+
+117
+00:03:32.030 --> 00:03:33.670
+a water in this one.
+
+118
+00:03:33.670 --> 00:03:35.750
+Now what happens does this three
+
+119
+00:03:35.750 --> 00:03:37.510
+gets multiplied only by this
+
+120
+00:03:37.510 --> 00:03:40.110
+or by this or by both of them?
+
+121
+00:03:40.110 --> 00:03:41.590
+Yeah, that's where the operative
+
+122
+00:03:41.590 --> 00:03:42.750
+overloading and their
+
+123
+00:03:42.750 --> 00:03:43.630
+knowledge, is important.
+
+124
+00:03:43.630 --> 00:03:45.870
+So notice here, black T and water,
+
+125
+00:03:45.870 --> 00:03:47.510
+then again black T and water,
+
+126
+00:03:47.510 --> 00:03:49.630
+and then again black T and water.
+
+127
+00:03:49.630 --> 00:03:50.630
+So technically you can say
+
+128
+00:03:50.630 --> 00:03:51.750
+yes, it gets multiplied
+
+129
+00:03:51.750 --> 00:03:52.870
+by each of the element.
+
+130
+00:03:52.870 --> 00:03:53.990
+That's absolutely correct.
+
+131
+00:03:53.990 --> 00:03:55.230
+But notice here it was able
+
+132
+00:03:55.230 --> 00:03:56.630
+to maintain the order as well.
+
+133
+00:03:56.630 --> 00:03:58.830
+This whole thing one,
+
+134
+00:03:58.830 --> 00:04:01.030
+this whole thing as twice and this
+
+135
+00:04:01.030 --> 00:04:02.110
+whole thing as thrice.
+
+136
+00:04:02.110 --> 00:04:03.030
+Yeah, that's very
+
+137
+00:04:03.030 --> 00:04:04.110
+interesting part of it.
+
+138
+00:04:04.110 --> 00:04:05.550
+So, so I hope you get this now
+
+139
+00:04:05.550 --> 00:04:06.790
+that how this actually goes
+
+140
+00:04:06.790 --> 00:04:08.350
+and how this actually works.
+
+141
+00:04:09.070 --> 00:04:10.270
+Now there are a lot of things
+
+142
+00:04:10.270 --> 00:04:11.670
+which you can actually go ahead
+
+143
+00:04:11.670 --> 00:04:13.630
+and bring more components onto it.
+
+144
+00:04:13.630 --> 00:04:15.550
+Like for example, I usually never
+
+145
+00:04:15.550 --> 00:04:17.390
+like to import anything in between.
+
+146
+00:04:17.390 --> 00:04:18.550
+I prefer all of my
+
+147
+00:04:18.550 --> 00:04:19.630
+imports at the top.
+
+148
+00:04:19.630 --> 00:04:20.829
+But there are things that
+
+149
+00:04:20.829 --> 00:04:21.870
+you can import as well.
+
+150
+00:04:21.870 --> 00:04:22.870
+So for example, there is
+
+151
+00:04:22.870 --> 00:04:24.510
+something known as operator.
+
+152
+00:04:24.510 --> 00:04:27.150
+And from this whole module we'll
+
+153
+00:04:27.150 --> 00:04:28.830
+discuss about them later on as well,
+
+154
+00:04:29.390 --> 00:04:31.670
+you can actually get item getter.
+
+155
+00:04:31.670 --> 00:04:33.030
+Now notice here it says return
+
+156
+00:04:33.030 --> 00:04:35.550
+a callable object that fetches
+
+157
+00:04:35.550 --> 00:04:37.470
+the given item from its operand.
+
+158
+00:04:37.470 --> 00:04:37.870
+Hi.
+
+159
+00:04:37.870 --> 00:04:38.950
+This is gibberish.
+
+160
+00:04:38.950 --> 00:04:40.870
+This is 100% gibberish.
+
+161
+00:04:41.550 --> 00:04:42.190
+I don't think so.
+
+162
+00:04:42.190 --> 00:04:43.470
+Anybody can understand this,
+
+163
+00:04:43.470 --> 00:04:44.550
+what's going on in here.
+
+164
+00:04:45.250 --> 00:04:46.310
+But if you wish I can show
+
+165
+00:04:46.310 --> 00:04:47.310
+you some examples as well.
+
+166
+00:04:47.310 --> 00:04:49.390
+But again the point is that not
+
+167
+00:04:49.390 --> 00:04:51.030
+just list is powerful, you can
+
+168
+00:04:51.030 --> 00:04:52.950
+actually bring more operations.
+
+169
+00:04:52.950 --> 00:04:54.310
+Just like we have seen the operator
+
+170
+00:04:54.310 --> 00:04:55.350
+overloading, we can bring
+
+171
+00:04:55.350 --> 00:04:57.440
+more things and we can perform more
+
+172
+00:04:57.440 --> 00:04:59.040
+operations on the list.
+
+173
+00:04:59.040 --> 00:05:01.120
+You will see this item getter much
+
+174
+00:05:01.120 --> 00:05:02.680
+quite in the lot of source codes.
+
+175
+00:05:02.680 --> 00:05:03.760
+And you can Sort them,
+
+176
+00:05:04.630 --> 00:05:05.800
+based on variety of steps.
+
+177
+00:05:05.800 --> 00:05:07.440
+But my goal is not to just
+
+178
+00:05:08.160 --> 00:05:09.680
+scare you away for this.
+
+179
+00:05:09.680 --> 00:05:10.800
+The last topic that we're
+
+180
+00:05:10.800 --> 00:05:11.880
+going to study about this
+
+181
+00:05:11.880 --> 00:05:14.400
+is an interesting concept.
+
+182
+00:05:14.400 --> 00:05:16.080
+Let's just say I want
+
+183
+00:05:16.080 --> 00:05:17.520
+to have one string.
+
+184
+00:05:17.520 --> 00:05:19.840
+My string is cinnamon.
+
+185
+00:05:19.840 --> 00:05:21.120
+This is my string and I want
+
+186
+00:05:21.120 --> 00:05:22.320
+to convert this into a list.
+
+187
+00:05:22.320 --> 00:05:23.320
+How do I do this?
+
+188
+00:05:23.320 --> 00:05:24.910
+Because this is a list.
+
+189
+00:05:25.870 --> 00:05:27.190
+So you might be wondering,
+
+190
+00:05:27.190 --> 00:05:28.590
+can I go ahead and do this?
+
+191
+00:05:28.590 --> 00:05:30.590
+For example, if I have a variable
+
+192
+00:05:30.590 --> 00:05:34.710
+raw spice data and can I go
+
+193
+00:05:34.710 --> 00:05:36.030
+ahead and use it like this?
+
+194
+00:05:37.390 --> 00:05:39.190
+Yes, surely you can actually
+
+195
+00:05:39.190 --> 00:05:40.590
+go ahead and do this.
+
+196
+00:05:40.590 --> 00:05:41.670
+But then you have one
+
+197
+00:05:41.670 --> 00:05:42.670
+element in the list.
+
+198
+00:05:42.670 --> 00:05:45.870
+I want a list of just this string.
+
+199
+00:05:45.870 --> 00:05:46.950
+That's an interesting
+
+200
+00:05:46.950 --> 00:05:47.870
+concept in itself.
+
+201
+00:05:48.760 --> 00:05:50.110
+How you can do that is
+
+202
+00:05:50.110 --> 00:05:51.550
+a really different way.
+
+203
+00:05:52.150 --> 00:05:53.430
+You have something inbuilt
+
+204
+00:05:53.430 --> 00:05:54.750
+known as byte array.
+
+205
+00:05:54.750 --> 00:05:55.590
+I'll show you more
+
+206
+00:05:55.590 --> 00:05:56.630
+about the byte array.
+
+207
+00:05:56.630 --> 00:05:58.230
+But you will use it very rarely.
+
+208
+00:05:58.230 --> 00:05:59.230
+But still it exists.
+
+209
+00:05:59.230 --> 00:06:00.390
+I wanted to show you.
+
+210
+00:06:00.390 --> 00:06:01.950
+And this is a method, so you
+
+211
+00:06:01.950 --> 00:06:03.510
+don't use square brackets,
+
+212
+00:06:03.510 --> 00:06:05.230
+you use actually parenthesis,
+
+213
+00:06:05.230 --> 00:06:06.590
+because parenthesis is
+
+214
+00:06:06.590 --> 00:06:07.630
+used for tuple as well.
+
+215
+00:06:07.630 --> 00:06:10.070
+But it is also used for methods.
+
+216
+00:06:10.070 --> 00:06:11.830
+And inside this you say B
+
+217
+00:06:11.830 --> 00:06:13.110
+for byte array.
+
+218
+00:06:13.110 --> 00:06:14.670
+And then you use the quotes
+
+219
+00:06:14.670 --> 00:06:15.390
+and inside this
+
+220
+00:06:15.390 --> 00:06:16.470
+you use the cinnamon.
+
+221
+00:06:16.470 --> 00:06:18.070
+So I'll just go ahead and paste this.
+
+222
+00:06:19.050 --> 00:06:19.930
+Now this is.
+
+223
+00:06:20.810 --> 00:06:22.290
+Each element will be treated
+
+224
+00:06:22.290 --> 00:06:23.290
+as almost like array.
+
+225
+00:06:23.290 --> 00:06:24.210
+But what's the output?
+
+226
+00:06:24.210 --> 00:06:25.690
+Yeah, pretty sure you are
+
+227
+00:06:26.410 --> 00:06:27.530
+interested in that.
+
+228
+00:06:28.970 --> 00:06:32.890
+So I'll just say raw data or bytes.
+
+229
+00:06:32.890 --> 00:06:34.490
+Yeah, byte would be good.
+
+230
+00:06:34.490 --> 00:06:35.050
+Bytes.
+
+231
+00:06:35.050 --> 00:06:36.490
+And let's just say we have
+
+232
+00:06:37.290 --> 00:06:38.570
+raw spice data.
+
+233
+00:06:38.570 --> 00:06:40.170
+What is the output of this?
+
+234
+00:06:40.170 --> 00:06:41.770
+Pretty interesting actually.
+
+235
+00:06:41.770 --> 00:06:42.650
+You will see that
+
+236
+00:06:42.650 --> 00:06:43.850
+still gives you bytes.
+
+237
+00:06:43.850 --> 00:06:44.810
+And then it says
+
+238
+00:06:44.810 --> 00:06:46.680
+byte array B cinnamon.
+
+239
+00:06:46.680 --> 00:06:48.800
+So yeah, it's not an ordinary thing
+
+240
+00:06:48.800 --> 00:06:50.360
+to actually work with that.
+
+241
+00:06:50.360 --> 00:06:51.880
+You have to modify this,
+
+242
+00:06:51.880 --> 00:06:53.000
+you have to replace this.
+
+243
+00:06:53.000 --> 00:06:54.480
+There's a lot of thing that goes on,
+
+244
+00:06:54.480 --> 00:06:55.400
+into this one.
+
+245
+00:06:55.400 --> 00:06:57.320
+And printing is not that easy.
+
+246
+00:06:57.320 --> 00:06:58.000
+You will use it
+
+247
+00:06:58.000 --> 00:06:59.480
+rarely, but it exists.
+
+248
+00:06:59.480 --> 00:07:01.600
+Now the advantage of this is you
+
+249
+00:07:01.600 --> 00:07:02.880
+can actually perform all these
+
+250
+00:07:02.880 --> 00:07:04.000
+replace and all these things.
+
+251
+00:07:04.000 --> 00:07:05.560
+For example, just to show you a
+
+252
+00:07:05.560 --> 00:07:07.160
+brief example, let's just say
+
+253
+00:07:07.160 --> 00:07:08.640
+we have a raw spice data in
+
+254
+00:07:08.640 --> 00:07:10.080
+this you have again lot of
+
+255
+00:07:10.080 --> 00:07:11.120
+methods like append,
+
+256
+00:07:11.120 --> 00:07:12.480
+capitalize, center, just like
+
+257
+00:07:12.480 --> 00:07:13.800
+you have in the list.
+
+258
+00:07:13.800 --> 00:07:14.680
+Let's just say I want to have
+
+259
+00:07:14.680 --> 00:07:17.080
+a replace method that I want to use.
+
+260
+00:07:17.080 --> 00:07:18.320
+So replace also has
+
+261
+00:07:18.320 --> 00:07:19.360
+a way how it works.
+
+262
+00:07:19.360 --> 00:07:20.480
+So I'll just say I want
+
+263
+00:07:20.480 --> 00:07:22.370
+to replace cina.
+
+264
+00:07:23.400 --> 00:07:24.600
+Instead of cinnamon, we
+
+265
+00:07:24.600 --> 00:07:25.640
+want to have cardamom.
+
+266
+00:07:25.640 --> 00:07:27.640
+So I'll just go ahead and say B
+
+267
+00:07:27.640 --> 00:07:29.639
+and I'll say Cardamom.
+
+268
+00:07:29.639 --> 00:07:30.600
+And that's it.
+
+269
+00:07:30.600 --> 00:07:32.040
+Now if I print this again,
+
+270
+00:07:32.600 --> 00:07:35.240
+I'm manipulating the bytes array.
+
+271
+00:07:35.240 --> 00:07:38.120
+And again, did we print it up so.
+
+272
+00:07:38.120 --> 00:07:38.760
+Nope.
+
+273
+00:07:39.650 --> 00:07:42.130
+And again, the reason is simple.
+
+274
+00:07:42.130 --> 00:07:43.170
+You expected something
+
+275
+00:07:43.170 --> 00:07:44.250
+different, but the result is
+
+276
+00:07:44.250 --> 00:07:44.850
+going to be different.
+
+277
+00:07:44.850 --> 00:07:46.570
+So what happens in the bytes array?
+
+278
+00:07:46.570 --> 00:07:47.810
+I'll show you the documentation
+
+279
+00:07:47.810 --> 00:07:48.810
+and then we'll fix it
+
+280
+00:07:48.810 --> 00:07:50.010
+to the expected result.
+
+281
+00:07:50.010 --> 00:07:51.130
+Right now we are expecting that
+
+282
+00:07:51.130 --> 00:07:53.010
+when we print this raw spice data,
+
+283
+00:07:53.010 --> 00:07:54.610
+it should have cardamom
+
+284
+00:07:54.610 --> 00:07:55.690
+instead of the cinnamon.
+
+285
+00:07:55.690 --> 00:07:56.890
+But we are getting cinnamon.
+
+286
+00:07:56.890 --> 00:07:58.530
+That is okay, we will fix that.
+
+287
+00:07:58.530 --> 00:08:00.530
+But for this, let's read a little bit
+
+288
+00:08:00.530 --> 00:08:01.850
+of documentation so that
+
+289
+00:08:01.850 --> 00:08:02.850
+we can actually fix this.
+
+290
+00:08:02.850 --> 00:08:04.490
+This is what investigation study is.
+
+291
+00:08:04.490 --> 00:08:05.010
+I love that.
+
+292
+00:08:05.580 --> 00:08:07.340
+So if I come back, I have opened
+
+293
+00:08:07.340 --> 00:08:08.180
+up the documentation.
+
+294
+00:08:08.180 --> 00:08:09.820
+This is my bytes array.
+
+295
+00:08:09.820 --> 00:08:11.140
+One thing that you need
+
+296
+00:08:11.140 --> 00:08:12.860
+to understand that it returns
+
+297
+00:08:12.860 --> 00:08:14.620
+a new array of bytes.
+
+298
+00:08:14.620 --> 00:08:15.660
+Okay, that's good.
+
+299
+00:08:15.660 --> 00:08:17.300
+And the byte array type is
+
+300
+00:08:17.300 --> 00:08:19.180
+a mutable sequence of integer.
+
+301
+00:08:19.180 --> 00:08:19.620
+Okay.
+
+302
+00:08:19.620 --> 00:08:20.860
+So I can change it
+
+303
+00:08:20.860 --> 00:08:22.660
+in the range of 0 to 256.
+
+304
+00:08:22.660 --> 00:08:24.300
+So it's a very small range.
+
+305
+00:08:24.300 --> 00:08:26.620
+It's usually used only for characters
+
+306
+00:08:26.620 --> 00:08:28.340
+like this, the string that we have.
+
+307
+00:08:28.340 --> 00:08:30.540
+So it breaks it down into characters.
+
+308
+00:08:30.540 --> 00:08:32.340
+It has the most usual method
+
+309
+00:08:32.340 --> 00:08:33.500
+of mutable sequence.
+
+310
+00:08:33.500 --> 00:08:35.179
+So yeah, sequence means list.
+
+311
+00:08:35.179 --> 00:08:36.780
+Yeah, they actually interchangeably
+
+312
+00:08:36.780 --> 00:08:38.360
+use, use this quite a lot.
+
+313
+00:08:38.360 --> 00:08:39.679
+Now if it is a string, you
+
+314
+00:08:39.679 --> 00:08:41.280
+must also give the encoding.
+
+315
+00:08:41.280 --> 00:08:42.760
+We haven't given that
+
+316
+00:08:42.760 --> 00:08:44.720
+it's optional, but you should give
+
+317
+00:08:44.720 --> 00:08:46.440
+them encoding like it is a UTF
+
+318
+00:08:46.440 --> 00:08:48.920
+8, UTF 16, whatever that is.
+
+319
+00:08:48.920 --> 00:08:50.240
+And a lot of things are
+
+320
+00:08:50.240 --> 00:08:51.640
+also mentioned up here.
+
+321
+00:08:51.640 --> 00:08:53.840
+Now what is the wrong that we are
+
+322
+00:08:53.840 --> 00:08:55.600
+doing here now whenever you actually
+
+323
+00:08:55.600 --> 00:08:58.120
+provide or run a method on this,
+
+324
+00:08:58.120 --> 00:08:59.560
+bytes array, it actually
+
+325
+00:08:59.560 --> 00:09:02.980
+returns you a new array or bytes.
+
+326
+00:09:02.980 --> 00:09:04.020
+Bytes array.
+
+327
+00:09:04.020 --> 00:09:05.340
+What we are doing is we have
+
+328
+00:09:05.340 --> 00:09:06.300
+performed an operation.
+
+329
+00:09:06.300 --> 00:09:07.900
+It has given us return back
+
+330
+00:09:07.900 --> 00:09:09.220
+a value, but we are printing
+
+331
+00:09:09.220 --> 00:09:10.180
+the original one still.
+
+332
+00:09:10.820 --> 00:09:12.820
+So one of the fix or a quick fix
+
+333
+00:09:12.820 --> 00:09:14.420
+that we can do is we can simply
+
+334
+00:09:14.420 --> 00:09:17.700
+say, hey, raw spice data,
+
+335
+00:09:18.659 --> 00:09:21.060
+small data would be the value.
+
+336
+00:09:21.060 --> 00:09:22.540
+Now that whatever the value
+
+337
+00:09:22.540 --> 00:09:24.540
+you actually return me after
+
+338
+00:09:24.540 --> 00:09:25.940
+performing this operation, this
+
+339
+00:09:25.940 --> 00:09:27.620
+will go back onto this one.
+
+340
+00:09:27.620 --> 00:09:29.100
+And now probably we will
+
+341
+00:09:29.100 --> 00:09:30.350
+have a different result.
+
+342
+00:09:30.350 --> 00:09:31.310
+Probably again, because it's
+
+343
+00:09:31.310 --> 00:09:32.590
+an investigation study.
+
+344
+00:09:32.590 --> 00:09:34.710
+If I run this again now I see that
+
+345
+00:09:34.710 --> 00:09:36.630
+I do have bytes array as cardamom.
+
+346
+00:09:36.630 --> 00:09:38.910
+Okay, it's working as we expected.
+
+347
+00:09:38.910 --> 00:09:41.710
+But now you also have learned what
+
+348
+00:09:41.710 --> 00:09:43.990
+and when it is not working, what
+
+349
+00:09:43.990 --> 00:09:45.710
+to expect and how does it work.
+
+350
+00:09:45.710 --> 00:09:47.310
+Again, I love this investigation
+
+351
+00:09:47.310 --> 00:09:48.230
+study because you actually
+
+352
+00:09:48.230 --> 00:09:49.430
+don't get the answer directly,
+
+353
+00:09:49.430 --> 00:09:51.110
+but you actually investigate
+
+354
+00:09:51.110 --> 00:09:52.590
+and then reach onto a point
+
+355
+00:09:52.590 --> 00:09:53.870
+where it is actually working.
+
+356
+00:09:53.870 --> 00:09:55.800
+This is my favorite part of it.
+
+357
+00:09:55.800 --> 00:09:57.320
+All right, so, quite a lot.
+
+358
+00:09:57.320 --> 00:09:58.600
+But we have now finished
+
+359
+00:09:58.600 --> 00:10:00.680
+the list entirety as a topic.
+
+360
+00:10:00.680 --> 00:10:01.920
+Hope you have enjoyed it.
+
+361
+00:10:01.920 --> 00:10:02.920
+And this is it.
+
+362
+00:10:02.920 --> 00:10:04.280
+But surely there are lots
+
+363
+00:10:04.280 --> 00:10:05.480
+of more methods I can create
+
+364
+00:10:05.480 --> 00:10:06.720
+probably five more videos on.
+
+365
+00:10:06.720 --> 00:10:08.920
+Just use cases of the list methods.
+
+366
+00:10:08.920 --> 00:10:10.960
+Like we have seen a lot, like we
+
+367
+00:10:10.960 --> 00:10:12.920
+have seen these methods, up here
+
+368
+00:10:12.920 --> 00:10:14.640
+at the top, like reverse and sort.
+
+369
+00:10:14.640 --> 00:10:16.600
+And I can dance with the examples,
+
+370
+00:10:16.600 --> 00:10:18.280
+but I don't want to do that.
+
+371
+00:10:18.280 --> 00:10:19.640
+So that is it for this video.
+
+372
+00:10:19.640 --> 00:10:21.080
+And I hope you have enjoyed
+
+373
+00:10:21.080 --> 00:10:23.480
+the journey of lists in Python.

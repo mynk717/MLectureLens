@@ -1,0 +1,1217 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.680
+Next up, we're going to take sets.
+
+2
+00:00:02.680 --> 00:00:06.080
+And sets are super easy in Python.
+
+3
+00:00:06.080 --> 00:00:07.840
+No need to overcomplicate them.
+
+4
+00:00:07.840 --> 00:00:09.160
+I have seen a lot of people
+
+5
+00:00:09.160 --> 00:00:10.240
+who complicate them.
+
+6
+00:00:10.240 --> 00:00:11.400
+These are known as set or
+
+7
+00:00:11.400 --> 00:00:12.360
+sets, whatever you want
+
+8
+00:00:12.360 --> 00:00:13.840
+to call them, no big deal.
+
+9
+00:00:14.560 --> 00:00:16.600
+Now the way how set works is first
+
+10
+00:00:16.600 --> 00:00:17.680
+you go through with the diagram.
+
+11
+00:00:17.680 --> 00:00:18.760
+So in case you have studied
+
+12
+00:00:18.760 --> 00:00:21.360
+them in, your engineering
+
+13
+00:00:21.360 --> 00:00:22.720
+or maths, that's okay.
+
+14
+00:00:22.720 --> 00:00:23.760
+If you haven't, let me give
+
+15
+00:00:23.760 --> 00:00:25.000
+you a small tour of that.
+
+16
+00:00:25.000 --> 00:00:26.280
+No worries, I'll be your
+
+17
+00:00:26.280 --> 00:00:27.360
+math teacher for a while.
+
+18
+00:00:28.120 --> 00:00:29.440
+So the word and the concept
+
+19
+00:00:29.440 --> 00:00:31.720
+of the set is mathematical.
+
+20
+00:00:31.720 --> 00:00:33.800
+And the way how it works is you have
+
+21
+00:00:33.800 --> 00:00:35.480
+some of the data just like here.
+
+22
+00:00:35.480 --> 00:00:37.640
+And we'll get this data into orange.
+
+23
+00:00:37.640 --> 00:00:38.600
+That's nice.
+
+24
+00:00:38.600 --> 00:00:41.040
+And we have another data which is
+
+25
+00:00:41.040 --> 00:00:42.840
+in another color, maybe yellow.
+
+26
+00:00:43.640 --> 00:00:45.440
+So the way how set works is when
+
+27
+00:00:45.440 --> 00:00:46.880
+you actually overlap these
+
+28
+00:00:46.880 --> 00:00:48.440
+two things, what you are getting
+
+29
+00:00:48.440 --> 00:00:50.040
+and how you are getting.
+
+30
+00:00:50.040 --> 00:00:51.680
+So we can see this whole thing is
+
+31
+00:00:51.680 --> 00:00:53.160
+divided into multiple portion.
+
+32
+00:00:53.160 --> 00:00:54.480
+But the interesting portion
+
+33
+00:00:54.480 --> 00:00:55.880
+is just right here.
+
+34
+00:00:57.170 --> 00:00:58.690
+This is where the interesting portion
+
+35
+00:00:58.690 --> 00:00:58.930
+is.
+
+36
+00:00:58.930 --> 00:00:59.770
+I'll just go ahead
+
+37
+00:00:59.770 --> 00:01:01.010
+and make it transparent.
+
+38
+00:01:01.810 --> 00:01:04.050
+So what we see that if this is
+
+39
+00:01:04.050 --> 00:01:07.890
+called as set A, this one is set
+
+40
+00:01:07.890 --> 00:01:10.850
+B means any amount of data.
+
+41
+00:01:10.850 --> 00:01:12.130
+So we can see this
+
+42
+00:01:12.130 --> 00:01:13.730
+here is a whole of A.
+
+43
+00:01:14.690 --> 00:01:16.890
+This thing is whole of B here.
+
+44
+00:01:16.890 --> 00:01:18.690
+But when we make an intersection,
+
+45
+00:01:18.690 --> 00:01:19.930
+this is point where we
+
+46
+00:01:19.930 --> 00:01:22.010
+actually mix, some portion
+
+47
+00:01:22.010 --> 00:01:23.990
+of A and some portion of B.
+
+48
+00:01:23.990 --> 00:01:25.030
+And yes, this is it.
+
+49
+00:01:25.030 --> 00:01:26.830
+So whatever is the common part here,
+
+50
+00:01:26.830 --> 00:01:28.870
+this is known as intersection.
+
+51
+00:01:28.870 --> 00:01:30.390
+Yeah, pretty unique
+
+52
+00:01:30.390 --> 00:01:33.750
+name, Intersection.
+
+53
+00:01:33.750 --> 00:01:35.430
+So this whole thing in between
+
+54
+00:01:35.430 --> 00:01:36.870
+is known as intersection.
+
+55
+00:01:36.870 --> 00:01:37.910
+Pretty easy.
+
+56
+00:01:37.910 --> 00:01:39.070
+When you want to combine
+
+57
+00:01:39.070 --> 00:01:40.189
+everything, that means you want
+
+58
+00:01:40.189 --> 00:01:41.990
+to have everything with you.
+
+59
+00:01:41.990 --> 00:01:43.870
+This whole thing, this whole
+
+60
+00:01:43.870 --> 00:01:45.270
+thing is known as union.
+
+61
+00:01:46.150 --> 00:01:47.270
+That means I want to have
+
+62
+00:01:47.270 --> 00:01:48.710
+everything which is in the A,
+
+63
+00:01:48.710 --> 00:01:50.510
+everything in the B, everything.
+
+64
+00:01:50.510 --> 00:01:51.320
+I doesn't really care.
+
+65
+00:01:51.320 --> 00:01:52.640
+But the only thing that I care
+
+66
+00:01:52.640 --> 00:01:54.320
+about, if there is something common
+
+67
+00:01:54.320 --> 00:01:55.720
+in both of them, don't repeat
+
+68
+00:01:55.720 --> 00:01:57.600
+it again, don't write it again.
+
+69
+00:01:57.600 --> 00:02:00.400
+Set is known as for their uniqueness.
+
+70
+00:02:00.400 --> 00:02:01.800
+So set is designed in such
+
+71
+00:02:01.800 --> 00:02:02.560
+a way that, hey,
+
+72
+00:02:02.560 --> 00:02:04.080
+everything should be unique.
+
+73
+00:02:04.080 --> 00:02:06.160
+So whenever you study about the set,
+
+74
+00:02:06.160 --> 00:02:07.720
+make sure one thing is there
+
+75
+00:02:07.720 --> 00:02:09.560
+in your mind, which is
+
+76
+00:02:09.560 --> 00:02:12.000
+everything is going to be unique.
+
+77
+00:02:12.000 --> 00:02:12.640
+Unique.
+
+78
+00:02:14.960 --> 00:02:16.560
+So set simply means
+
+79
+00:02:16.560 --> 00:02:17.600
+things are unique.
+
+80
+00:02:18.110 --> 00:02:19.990
+And again, union means I want
+
+81
+00:02:19.990 --> 00:02:21.230
+to have everything
+
+82
+00:02:21.230 --> 00:02:24.430
+of this, this is known as union.
+
+83
+00:02:24.430 --> 00:02:26.270
+But if you want to have just
+
+84
+00:02:26.270 --> 00:02:28.270
+portion of it, this portion of it.
+
+85
+00:02:28.270 --> 00:02:29.870
+Again, if there is anything common
+
+86
+00:02:29.870 --> 00:02:31.310
+between both of them in this part
+
+87
+00:02:31.310 --> 00:02:33.470
+as well, I will not take them.
+
+88
+00:02:33.470 --> 00:02:35.590
+But if anything is present
+
+89
+00:02:35.590 --> 00:02:37.030
+in the A, but Not in the B.
+
+90
+00:02:37.030 --> 00:02:37.750
+I will not take that
+
+91
+00:02:37.750 --> 00:02:38.590
+in the intersection.
+
+92
+00:02:38.590 --> 00:02:39.790
+So that is the most common.
+
+93
+00:02:40.410 --> 00:02:41.670
+We have some of the others as well.
+
+94
+00:02:41.670 --> 00:02:43.190
+Like you want to have difference.
+
+95
+00:02:43.190 --> 00:02:45.020
+That means, hey, give me the A.
+
+96
+00:02:45.020 --> 00:02:46.140
+But if anything is there
+
+97
+00:02:46.140 --> 00:02:48.140
+in the B also, don't give me that.
+
+98
+00:02:48.140 --> 00:02:49.380
+I think the better would be
+
+99
+00:02:49.380 --> 00:02:50.340
+to take an example.
+
+100
+00:02:50.340 --> 00:02:51.140
+Now that you understand
+
+101
+00:02:51.140 --> 00:02:52.300
+the theory, part of it.
+
+102
+00:02:52.300 --> 00:02:54.380
+Example would be super, super easy.
+
+103
+00:02:55.100 --> 00:02:57.340
+Moving on to the chapter number nine.
+
+104
+00:02:57.340 --> 00:02:59.740
+We are into chapter nine.
+
+105
+00:03:00.299 --> 00:03:02.100
+Py now.
+
+106
+00:03:02.100 --> 00:03:03.260
+What can we do?
+
+107
+00:03:03.260 --> 00:03:04.700
+So let's just say we have,
+
+108
+00:03:06.860 --> 00:03:09.820
+essential spices.
+
+109
+00:03:11.170 --> 00:03:12.450
+And the way how we write
+
+110
+00:03:12.450 --> 00:03:13.370
+the set is like this.
+
+111
+00:03:13.370 --> 00:03:14.330
+There are other ways as
+
+112
+00:03:14.330 --> 00:03:15.170
+well, but this is the most
+
+113
+00:03:15.170 --> 00:03:16.850
+easy way to write the set.
+
+114
+00:03:16.850 --> 00:03:19.650
+So we have, cardamom,
+
+115
+00:03:20.370 --> 00:03:23.010
+and we have ginger.
+
+116
+00:03:24.450 --> 00:03:25.930
+And another set that we
+
+117
+00:03:25.930 --> 00:03:27.730
+have is maybe cinnamon.
+
+118
+00:03:29.810 --> 00:03:31.490
+All right, we have another one.
+
+119
+00:03:31.490 --> 00:03:32.810
+This time we'll not call them
+
+120
+00:03:32.810 --> 00:03:34.290
+as essential spice,
+
+121
+00:03:34.290 --> 00:03:36.130
+but rather we'll call them as
+
+122
+00:03:36.130 --> 00:03:40.380
+optional spice, optional spice.
+
+123
+00:03:40.380 --> 00:03:41.500
+And we have to change them.
+
+124
+00:03:41.500 --> 00:03:43.300
+So instead of cardamom, let's have
+
+125
+00:03:43.300 --> 00:03:47.180
+cloves, and we'll keep the ginger.
+
+126
+00:03:47.180 --> 00:03:47.820
+But we're going
+
+127
+00:03:47.820 --> 00:03:48.900
+to change the cinnamon.
+
+128
+00:03:48.900 --> 00:03:50.380
+So ginger is the common part.
+
+129
+00:03:50.380 --> 00:03:51.900
+Again, the order doesn't matter.
+
+130
+00:03:51.900 --> 00:03:53.419
+It can be at any position.
+
+131
+00:03:53.419 --> 00:03:54.420
+That really doesn't matter.
+
+132
+00:03:54.420 --> 00:03:56.460
+So we'll have the black pepper.
+
+133
+00:03:57.100 --> 00:03:57.820
+All right.
+
+134
+00:03:57.820 --> 00:03:58.300
+Yes.
+
+135
+00:03:58.300 --> 00:03:59.620
+Being from India, I
+
+136
+00:03:59.620 --> 00:04:00.620
+know a lot of spices.
+
+137
+00:04:01.580 --> 00:04:02.660
+Now, let's just say I want
+
+138
+00:04:02.660 --> 00:04:04.700
+to have an all spices box.
+
+139
+00:04:04.700 --> 00:04:06.580
+And in the all spices box, I want
+
+140
+00:04:06.580 --> 00:04:08.150
+to have all of them, but there's no
+
+141
+00:04:08.150 --> 00:04:10.190
+point of having duplicate of them.
+
+142
+00:04:10.190 --> 00:04:11.950
+So for this, I can have a union.
+
+143
+00:04:11.950 --> 00:04:14.670
+And union combines unique spices.
+
+144
+00:04:14.670 --> 00:04:16.149
+So for this, all I have to do
+
+145
+00:04:16.149 --> 00:04:18.190
+is take the essential spices,
+
+146
+00:04:18.190 --> 00:04:19.750
+use this sign, which is just
+
+147
+00:04:19.750 --> 00:04:20.990
+below your backspace key.
+
+148
+00:04:20.990 --> 00:04:22.190
+This is a pipe operator,
+
+149
+00:04:22.190 --> 00:04:23.629
+also known as union.
+
+150
+00:04:23.629 --> 00:04:24.590
+And then I can go ahead
+
+151
+00:04:24.590 --> 00:04:25.830
+and have the optional spices.
+
+152
+00:04:25.830 --> 00:04:27.150
+And you get the idea the all
+
+153
+00:04:27.150 --> 00:04:28.910
+spices is just like that.
+
+154
+00:04:28.910 --> 00:04:30.030
+Should we print it out?
+
+155
+00:04:30.030 --> 00:04:30.910
+Probably yes.
+
+156
+00:04:33.400 --> 00:04:34.200
+All spices.
+
+157
+00:04:35.560 --> 00:04:37.720
+And we'll have all spices.
+
+158
+00:04:38.280 --> 00:04:40.640
+Open this up and let's
+
+159
+00:04:40.640 --> 00:04:43.000
+run the chapter nine.
+
+160
+00:04:43.000 --> 00:04:43.680
+And there we go.
+
+161
+00:04:43.680 --> 00:04:45.680
+We have the ginger, clove, cardamom,
+
+162
+00:04:45.680 --> 00:04:46.840
+black pepper, and cinnamon.
+
+163
+00:04:46.840 --> 00:04:48.760
+But there is no presence
+
+164
+00:04:48.760 --> 00:04:51.160
+of the ginger twice.
+
+165
+00:04:51.160 --> 00:04:52.040
+That's the whole goal.
+
+166
+00:04:52.040 --> 00:04:53.080
+That's the union.
+
+167
+00:04:53.080 --> 00:04:54.480
+You get all of them, but you
+
+168
+00:04:54.480 --> 00:04:55.800
+don't get the reputation.
+
+169
+00:04:55.800 --> 00:04:57.280
+It's a very unique property of this
+
+170
+00:04:57.280 --> 00:04:59.240
+and used actually quite a lot.
+
+171
+00:04:59.770 --> 00:05:01.450
+We can actually go ahead and find,
+
+172
+00:05:02.810 --> 00:05:04.530
+what are the common one of them.
+
+173
+00:05:04.530 --> 00:05:05.450
+So we can just go ahead
+
+174
+00:05:05.450 --> 00:05:06.770
+and write like this.
+
+175
+00:05:06.770 --> 00:05:09.690
+So I want to find the common spices.
+
+176
+00:05:09.690 --> 00:05:10.530
+What are the common
+
+177
+00:05:10.530 --> 00:05:11.770
+between both of them?
+
+178
+00:05:11.770 --> 00:05:13.770
+For This, I have to say
+
+179
+00:05:13.770 --> 00:05:14.970
+essential spice.
+
+180
+00:05:14.970 --> 00:05:15.930
+And we want to have
+
+181
+00:05:15.930 --> 00:05:17.090
+an intersection of it.
+
+182
+00:05:17.090 --> 00:05:18.290
+Remember, the intersection
+
+183
+00:05:18.290 --> 00:05:20.090
+is this portion.
+
+184
+00:05:20.090 --> 00:05:21.490
+So we want to have an intersection.
+
+185
+00:05:21.490 --> 00:05:22.810
+And this is how you write.
+
+186
+00:05:22.810 --> 00:05:24.570
+No, I wish it would be in
+
+187
+00:05:24.570 --> 00:05:25.730
+for intersection, but it
+
+188
+00:05:25.730 --> 00:05:27.050
+is actually ampersand.
+
+189
+00:05:27.050 --> 00:05:27.380
+So.
+
+190
+00:05:27.380 --> 00:05:28.900
+So we have the optional spices.
+
+191
+00:05:28.900 --> 00:05:30.180
+And the interesting part
+
+192
+00:05:30.180 --> 00:05:31.860
+is, what do we get in here?
+
+193
+00:05:32.660 --> 00:05:34.140
+So first of all, this is going
+
+194
+00:05:34.140 --> 00:05:35.460
+to be common spices.
+
+195
+00:05:35.460 --> 00:05:37.420
+And then instead of the all spices,
+
+196
+00:05:37.420 --> 00:05:39.220
+we'll have the common spices.
+
+197
+00:05:39.780 --> 00:05:40.580
+Let's run this.
+
+198
+00:05:40.580 --> 00:05:41.860
+This would be fun to see.
+
+199
+00:05:42.500 --> 00:05:43.860
+So in the common spices, we
+
+200
+00:05:43.860 --> 00:05:45.100
+can see the only ingredient
+
+201
+00:05:45.100 --> 00:05:46.540
+which is common is ginger.
+
+202
+00:05:46.540 --> 00:05:47.820
+Between both of them, if there
+
+203
+00:05:47.820 --> 00:05:49.380
+would be no common ingredient,
+
+204
+00:05:49.380 --> 00:05:50.820
+we would get nothing.
+
+205
+00:05:50.820 --> 00:05:51.860
+That's it.
+
+206
+00:05:51.860 --> 00:05:53.060
+One last thing that's remaining
+
+207
+00:05:53.060 --> 00:05:54.900
+up here is the differences.
+
+208
+00:05:54.900 --> 00:05:56.380
+So let's try to leave that.
+
+209
+00:05:56.380 --> 00:05:58.060
+Let's also learn about that.
+
+210
+00:05:58.060 --> 00:05:59.100
+We are going to call this one
+
+211
+00:05:59.100 --> 00:06:03.020
+as only in, not like that.
+
+212
+00:06:03.020 --> 00:06:06.380
+Only in essential.
+
+213
+00:06:06.380 --> 00:06:07.660
+So how do we do that?
+
+214
+00:06:07.660 --> 00:06:09.020
+I want to find the spices
+
+215
+00:06:09.020 --> 00:06:10.700
+which are only in the essential,
+
+216
+00:06:10.700 --> 00:06:11.820
+not in the optional.
+
+217
+00:06:12.540 --> 00:06:13.739
+So easy part.
+
+218
+00:06:13.739 --> 00:06:16.540
+I can take the essential spices
+
+219
+00:06:16.540 --> 00:06:18.780
+and I can remove all the optional.
+
+220
+00:06:19.340 --> 00:06:20.380
+There we go.
+
+221
+00:06:20.380 --> 00:06:21.900
+And then we can just go
+
+222
+00:06:21.900 --> 00:06:24.150
+ahead and print it.
+
+223
+00:06:24.710 --> 00:06:26.750
+So instead of common spices, we'll
+
+224
+00:06:26.750 --> 00:06:28.230
+just go for only in essential.
+
+225
+00:06:30.710 --> 00:06:32.790
+And we will say only
+
+226
+00:06:32.790 --> 00:06:36.230
+in essential spices.
+
+227
+00:06:36.870 --> 00:06:37.990
+Pretty easy.
+
+228
+00:06:37.990 --> 00:06:39.910
+I hope this demo gives you
+
+229
+00:06:39.910 --> 00:06:41.270
+an idea about how it works.
+
+230
+00:06:41.270 --> 00:06:42.500
+Only in essentials,
+
+231
+00:06:42.500 --> 00:06:44.390
+are cinnamon and cardamom, because
+
+232
+00:06:44.390 --> 00:06:45.630
+ginger is common for both
+
+233
+00:06:45.630 --> 00:06:47.510
+of them, so it's being removed.
+
+234
+00:06:47.510 --> 00:06:48.070
+Pretty fun.
+
+235
+00:06:48.070 --> 00:06:49.210
+Pretty easy.
+
+236
+00:06:49.210 --> 00:06:50.810
+There is also a final thing
+
+237
+00:06:50.810 --> 00:06:53.170
+in the world of set, which is
+
+238
+00:06:53.170 --> 00:06:56.410
+known as again, membership test.
+
+239
+00:06:57.290 --> 00:06:58.610
+And yes, membership test
+
+240
+00:06:58.610 --> 00:06:59.690
+remains exactly same.
+
+241
+00:06:59.690 --> 00:07:00.810
+Whenever you want to check whether
+
+242
+00:07:00.810 --> 00:07:02.890
+this member exists in a particular
+
+243
+00:07:02.890 --> 00:07:05.050
+set or not, you ask questions
+
+244
+00:07:05.050 --> 00:07:06.570
+and you can simply ask them.
+
+245
+00:07:06.570 --> 00:07:07.690
+For example, I can just
+
+246
+00:07:07.690 --> 00:07:08.890
+have a simple print statement
+
+247
+00:07:09.690 --> 00:07:11.050
+and formatted string.
+
+248
+00:07:11.050 --> 00:07:12.570
+I will say is.
+
+249
+00:07:13.690 --> 00:07:15.830
+Then again clove.
+
+250
+00:07:15.830 --> 00:07:16.990
+Again, I have to be
+
+251
+00:07:16.990 --> 00:07:18.150
+case sensitive here.
+
+252
+00:07:18.710 --> 00:07:19.510
+Clove.
+
+253
+00:07:19.510 --> 00:07:21.190
+Or did I wrote it as cloves?
+
+254
+00:07:21.190 --> 00:07:22.950
+Yeah, I wrote it as cloves.
+
+255
+00:07:22.950 --> 00:07:31.590
+Is cloves in essential spices?
+
+256
+00:07:31.590 --> 00:07:34.670
+And then simply use the curly braces
+
+257
+00:07:34.670 --> 00:07:36.350
+and ask, what do you want to check?
+
+258
+00:07:36.350 --> 00:07:37.990
+I want to check for cloves.
+
+259
+00:07:38.550 --> 00:07:40.070
+Where do you want to check in?
+
+260
+00:07:40.070 --> 00:07:41.710
+And whatever the variable
+
+261
+00:07:41.710 --> 00:07:43.350
+that is essential spices.
+
+262
+00:07:44.070 --> 00:07:44.790
+That's it.
+
+263
+00:07:44.790 --> 00:07:47.430
+You put this up and there we go.
+
+264
+00:07:47.430 --> 00:07:49.350
+We run this and it says,
+
+265
+00:07:49.350 --> 00:07:51.670
+is clove in essential spices False
+
+266
+00:07:51.670 --> 00:07:53.670
+because it doesn't exist.
+
+267
+00:07:54.710 --> 00:07:56.070
+Probably I wrote it wrong.
+
+268
+00:07:57.510 --> 00:07:58.150
+Cloves.
+
+269
+00:07:58.150 --> 00:07:59.270
+We'll copy this.
+
+270
+00:07:59.270 --> 00:08:00.550
+Oh, it's actually not
+
+271
+00:08:00.550 --> 00:08:01.430
+in essential spices.
+
+272
+00:08:01.430 --> 00:08:03.270
+It is in optional spices.
+
+273
+00:08:03.270 --> 00:08:05.350
+So that's why I thought
+
+274
+00:08:05.350 --> 00:08:06.830
+little different so is
+
+275
+00:08:06.830 --> 00:08:08.070
+it an optional spices?
+
+276
+00:08:08.860 --> 00:08:09.420
+Let's just see.
+
+277
+00:08:11.660 --> 00:08:12.780
+Optional spices.
+
+278
+00:08:13.580 --> 00:08:14.700
+Okay let's see.
+
+279
+00:08:15.570 --> 00:08:18.860
+Yes true this is available in this.
+
+280
+00:08:18.860 --> 00:08:20.700
+Now there is one more thing known
+
+281
+00:08:20.700 --> 00:08:22.140
+available in this
+
+282
+00:08:22.140 --> 00:08:23.380
+so far you can actually do all
+
+283
+00:08:23.380 --> 00:08:24.700
+the manipulation and everything
+
+284
+00:08:24.700 --> 00:08:27.500
+in the set set by default is known
+
+285
+00:08:27.500 --> 00:08:29.180
+for uniqueness only.
+
+286
+00:08:29.180 --> 00:08:30.540
+We don't worry about too much
+
+287
+00:08:30.540 --> 00:08:32.179
+but if you want to freeze any
+
+288
+00:08:32.179 --> 00:08:34.620
+of the set there is
+
+289
+00:08:34.620 --> 00:08:37.020
+a concept known as frozen set.
+
+290
+00:08:37.020 --> 00:08:38.500
+It is available it has built
+
+291
+00:08:38.500 --> 00:08:40.260
+an immutable unordered collection
+
+292
+00:08:40.260 --> 00:08:41.100
+of unique elements.
+
+293
+00:08:41.980 --> 00:08:43.539
+It is also being used sometimes
+
+294
+00:08:43.539 --> 00:08:44.220
+but again no need
+
+295
+00:08:44.220 --> 00:08:45.380
+to worry too much about this.
+
+296
+00:08:45.380 --> 00:08:47.660
+Just remember there is a set there
+
+297
+00:08:47.660 --> 00:08:49.300
+is a frozen set both of them are
+
+298
+00:08:49.300 --> 00:08:50.820
+available the working wise they are
+
+299
+00:08:50.820 --> 00:08:52.460
+exactly same no problem there.
+
+300
+00:08:53.340 --> 00:08:54.620
+That's it and pretty
+
+301
+00:08:54.620 --> 00:08:55.820
+much it about the sets.
+
+302
+00:08:55.820 --> 00:08:57.180
+Hope you have enjoyed it and let's
+
+303
+00:08:57.180 --> 00:08:58.700
+catch up in the next video.
+
+304
+00:08:58.700 --> 00:09:00.140
+Hope you have reviewed us.

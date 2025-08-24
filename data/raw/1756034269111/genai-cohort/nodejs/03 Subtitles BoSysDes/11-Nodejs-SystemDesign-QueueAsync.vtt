@@ -1,0 +1,681 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:01.360
+All right, so in this
+
+2
+00:00:01.360 --> 00:00:02.720
+particular video, let's understand
+
+3
+00:00:02.720 --> 00:00:04.160
+the asynchronous method
+
+4
+00:00:04.160 --> 00:00:05.080
+of talking between
+
+5
+00:00:05.080 --> 00:00:06.640
+the services, the communication
+
+6
+00:00:06.640 --> 00:00:07.440
+between the services.
+
+7
+00:00:08.000 --> 00:00:10.080
+So the most common thing, so let me
+
+8
+00:00:10.080 --> 00:00:11.360
+just delete this particular stuff.
+
+9
+00:00:11.360 --> 00:00:13.200
+Okay, so the most common thing that
+
+10
+00:00:13.200 --> 00:00:15.480
+we use to establish a communication
+
+11
+00:00:15.480 --> 00:00:16.480
+between the order service
+
+12
+00:00:16.480 --> 00:00:18.720
+is known as a queue system.
+
+13
+00:00:18.720 --> 00:00:20.280
+Okay, so what is a queue?
+
+14
+00:00:20.280 --> 00:00:22.160
+So if we talk about a queue, okay,
+
+15
+00:00:22.160 --> 00:00:23.680
+so that's that this a queue.
+
+16
+00:00:23.680 --> 00:00:26.320
+And let me just make it, solid.
+
+17
+00:00:27.070 --> 00:00:29.590
+A queue works on a FIFO principle.
+
+18
+00:00:29.590 --> 00:00:33.590
+FIFO is first in and first out.
+
+19
+00:00:33.590 --> 00:00:35.070
+Okay, first in, first out.
+
+20
+00:00:35.070 --> 00:00:36.630
+That means what you can do is you
+
+21
+00:00:36.630 --> 00:00:38.470
+can keep on enqueuing something
+
+22
+00:00:38.470 --> 00:00:40.190
+here that is in cube, that is
+
+23
+00:00:40.190 --> 00:00:41.790
+pushing something into the cube.
+
+24
+00:00:41.790 --> 00:00:43.510
+So let's say that this is a data that
+
+25
+00:00:43.510 --> 00:00:44.670
+you want to put it in the queue.
+
+26
+00:00:44.670 --> 00:00:45.710
+So let's say this is your data
+
+27
+00:00:45.710 --> 00:00:47.070
+one, data two, data three,
+
+28
+00:00:47.070 --> 00:00:48.510
+data four and data five.
+
+29
+00:00:48.510 --> 00:00:50.390
+And then from the other end you can
+
+30
+00:00:50.390 --> 00:00:52.710
+keep on dequeuing the stuff, okay?
+
+31
+00:00:52.710 --> 00:00:53.310
+DQ.
+
+32
+00:00:53.310 --> 00:00:54.990
+So DQ happens in the sequence
+
+33
+00:00:54.990 --> 00:00:57.070
+like 1, 2, 3, 4, 1, 2, 3, 4.
+
+34
+00:00:57.070 --> 00:00:58.750
+So this is your queue.
+
+35
+00:00:58.750 --> 00:01:01.550
+So what we can do in an microservice
+
+36
+00:01:01.550 --> 00:01:02.870
+asynchronous architecture
+
+37
+00:01:02.870 --> 00:01:04.510
+is we can introduce a queue.
+
+38
+00:01:04.510 --> 00:01:05.670
+So let's say what I'm going
+
+39
+00:01:05.670 --> 00:01:06.550
+to do is I'm going
+
+40
+00:01:06.550 --> 00:01:07.710
+to introduce a queue system.
+
+41
+00:01:07.710 --> 00:01:09.390
+So let's search for sqs.
+
+42
+00:01:09.390 --> 00:01:11.870
+This is a queue system by aws.
+
+43
+00:01:11.870 --> 00:01:13.670
+Okay, so these are just terms.
+
+44
+00:01:13.670 --> 00:01:16.070
+That's okay whenever you place
+
+45
+00:01:16.070 --> 00:01:18.070
+an order, okay, let's name this
+
+46
+00:01:18.070 --> 00:01:20.950
+queue as, you know, order queue.
+
+47
+00:01:20.950 --> 00:01:22.270
+Let's say this is an order
+
+48
+00:01:22.270 --> 00:01:23.310
+queue, okay?
+
+49
+00:01:23.310 --> 00:01:24.230
+Or maybe I'll just name
+
+50
+00:01:24.230 --> 00:01:25.550
+it as email queue.
+
+51
+00:01:25.550 --> 00:01:28.140
+Okay, Email queue.
+
+52
+00:01:28.140 --> 00:01:30.020
+So what you can do is basically you
+
+53
+00:01:30.020 --> 00:01:31.820
+can push something into the queue.
+
+54
+00:01:31.820 --> 00:01:32.540
+Okay?
+
+55
+00:01:32.540 --> 00:01:33.700
+Now when you push something
+
+56
+00:01:33.700 --> 00:01:35.340
+into the queue, pushing something
+
+57
+00:01:35.340 --> 00:01:36.660
+into the queue is instant.
+
+58
+00:01:36.660 --> 00:01:38.180
+You need not to wait for it.
+
+59
+00:01:38.180 --> 00:01:39.460
+Just push into the queue
+
+60
+00:01:39.460 --> 00:01:40.140
+and forget it.
+
+61
+00:01:40.140 --> 00:01:40.460
+Okay?
+
+62
+00:01:40.460 --> 00:01:41.340
+Just push into the queue
+
+63
+00:01:41.340 --> 00:01:42.460
+and forget it.
+
+64
+00:01:42.460 --> 00:01:44.100
+So you are basically just pushing
+
+65
+00:01:44.100 --> 00:01:46.100
+messages into the queue and you
+
+66
+00:01:46.100 --> 00:01:48.380
+don't have to worry if someone is on
+
+67
+00:01:48.380 --> 00:01:50.700
+the other side of the queue or not.
+
+68
+00:01:50.700 --> 00:01:52.100
+So you are basically enqueuing
+
+69
+00:01:52.100 --> 00:01:53.420
+the message into the queue, but
+
+70
+00:01:53.420 --> 00:01:54.940
+need not to worry that if there
+
+71
+00:01:54.940 --> 00:01:56.380
+is someone de queuing these
+
+72
+00:01:56.380 --> 00:01:58.530
+messages or not now what will
+
+73
+00:01:58.530 --> 00:02:00.610
+happen is this is known as in
+
+74
+00:02:00.610 --> 00:02:01.170
+queue, right?
+
+75
+00:02:01.170 --> 00:02:02.250
+So what you are doing here
+
+76
+00:02:02.250 --> 00:02:03.490
+is basically in queuing
+
+77
+00:02:03.490 --> 00:02:04.850
+the messages, okay?
+
+78
+00:02:04.850 --> 00:02:06.930
+Now this email service,
+
+79
+00:02:06.930 --> 00:02:09.650
+on their own pace can keep on
+
+80
+00:02:09.650 --> 00:02:11.370
+dequeuing these messages, okay?
+
+81
+00:02:11.370 --> 00:02:12.610
+So let me just change the color.
+
+82
+00:02:12.610 --> 00:02:13.730
+Let's say this one.
+
+83
+00:02:13.730 --> 00:02:16.970
+So they are basically DQ DQing
+
+84
+00:02:16.970 --> 00:02:18.850
+the message one by one and sending
+
+85
+00:02:18.850 --> 00:02:21.490
+the email and then processing it.
+
+86
+00:02:21.490 --> 00:02:23.090
+Now the benefit of this particular
+
+87
+00:02:23.090 --> 00:02:26.510
+architecture is that let's say
+
+88
+00:02:26.510 --> 00:02:29.150
+the email service is only capable
+
+89
+00:02:29.150 --> 00:02:32.030
+of sending five messages
+
+90
+00:02:32.030 --> 00:02:34.750
+per, let's say per second.
+
+91
+00:02:34.750 --> 00:02:36.150
+Okay, it can only send
+
+92
+00:02:36.150 --> 00:02:37.790
+five messages per second.
+
+93
+00:02:37.790 --> 00:02:40.310
+But the orders are actually placed
+
+94
+00:02:40.310 --> 00:02:41.710
+in a very vast majority.
+
+95
+00:02:41.710 --> 00:02:42.950
+You know, the people are placing
+
+96
+00:02:42.950 --> 00:02:45.390
+like hundreds of orders per second.
+
+97
+00:02:45.390 --> 00:02:46.630
+So what you can basically do is
+
+98
+00:02:46.630 --> 00:02:48.190
+you can just throw these messages
+
+99
+00:02:48.190 --> 00:02:49.230
+into the queue, just keep
+
+100
+00:02:49.230 --> 00:02:50.150
+on throwing, throwing, throwing,
+
+101
+00:02:50.150 --> 00:02:51.970
+throwing, throwing, and then.
+
+102
+00:02:51.970 --> 00:02:53.290
+But on the email service you
+
+103
+00:02:53.290 --> 00:02:54.730
+can actually pull the message
+
+104
+00:02:54.730 --> 00:02:56.770
+in a controlled manner.
+
+105
+00:02:56.770 --> 00:02:57.130
+Got.
+
+106
+00:02:57.130 --> 00:02:58.970
+Now that is the reason that when
+
+107
+00:02:58.970 --> 00:03:00.650
+you place an order, sometimes
+
+108
+00:03:00.650 --> 00:03:02.450
+you receive an email later.
+
+109
+00:03:02.450 --> 00:03:04.170
+Because what happens is if there are
+
+110
+00:03:04.170 --> 00:03:06.290
+hundred orders, so there are hundred
+
+111
+00:03:06.290 --> 00:03:08.130
+messages in the queue, that's
+
+112
+00:03:08.130 --> 00:03:09.890
+okay, they are lying in the queue.
+
+113
+00:03:09.890 --> 00:03:11.970
+But you can still, you, know,
+
+114
+00:03:11.970 --> 00:03:13.770
+dequeue the messages at the rate
+
+115
+00:03:13.770 --> 00:03:15.170
+of five messages per second.
+
+116
+00:03:15.170 --> 00:03:16.730
+So you pull five, now you are left
+
+117
+00:03:16.730 --> 00:03:18.450
+with 95, you pull another
+
+118
+00:03:18.450 --> 00:03:20.210
+five, now you are left with 90.
+
+119
+00:03:20.210 --> 00:03:21.580
+So what happens is this,
+
+120
+00:03:21.580 --> 00:03:23.940
+this also acts as a bottleneck
+
+121
+00:03:23.940 --> 00:03:24.980
+in the system so that
+
+122
+00:03:24.980 --> 00:03:26.540
+the email service is not down.
+
+123
+00:03:26.540 --> 00:03:28.060
+And email service can work
+
+124
+00:03:28.060 --> 00:03:29.500
+on its own pace.
+
+125
+00:03:29.500 --> 00:03:30.660
+Similarly, you can even
+
+126
+00:03:30.660 --> 00:03:31.340
+have more queues.
+
+127
+00:03:31.340 --> 00:03:32.180
+For example, there is
+
+128
+00:03:32.180 --> 00:03:33.500
+a payment queue, right?
+
+129
+00:03:33.500 --> 00:03:36.140
+So let's have a payment queue.
+
+130
+00:03:36.140 --> 00:03:38.020
+So whenever you want, whenever
+
+131
+00:03:38.020 --> 00:03:39.700
+the payment queue wants to, you
+
+132
+00:03:39.700 --> 00:03:40.860
+know, whenever the order wants
+
+133
+00:03:40.860 --> 00:03:42.500
+to request a payment, you can just
+
+134
+00:03:42.500 --> 00:03:43.820
+put it into the payment queue.
+
+135
+00:03:43.820 --> 00:03:44.900
+The payment queue can
+
+136
+00:03:44.900 --> 00:03:45.820
+poll the messages.
+
+137
+00:03:45.820 --> 00:03:47.100
+Basically dequeue the messages
+
+138
+00:03:47.100 --> 00:03:48.400
+at their own pace.
+
+139
+00:03:48.400 --> 00:03:49.480
+So whenever you talk about
+
+140
+00:03:49.480 --> 00:03:51.680
+a microservice architecture,
+
+141
+00:03:51.680 --> 00:03:53.040
+internal communication
+
+142
+00:03:53.040 --> 00:03:55.480
+of the microservices usually happens
+
+143
+00:03:55.480 --> 00:03:57.160
+through a queue system because
+
+144
+00:03:57.160 --> 00:03:58.880
+number one, it is more scalable.
+
+145
+00:03:58.880 --> 00:04:00.920
+It helps you to decouple.
+
+146
+00:04:00.920 --> 00:04:02.520
+Because what happens is, let's say
+
+147
+00:04:02.520 --> 00:04:03.840
+the email service is down, let's
+
+148
+00:04:03.840 --> 00:04:05.120
+make the email service as down.
+
+149
+00:04:05.120 --> 00:04:06.560
+So I'll just make it as red.
+
+150
+00:04:06.560 --> 00:04:08.840
+So what happens is still you can
+
+151
+00:04:08.840 --> 00:04:10.480
+put the message into the queue.
+
+152
+00:04:10.480 --> 00:04:12.240
+You don't have to worry if the email
+
+153
+00:04:12.240 --> 00:04:13.680
+service is up and running and it
+
+154
+00:04:13.680 --> 00:04:15.060
+is pulling for the messages.
+
+155
+00:04:15.060 --> 00:04:16.420
+So what will happen is the messages
+
+156
+00:04:16.420 --> 00:04:18.380
+will get, you know, the queue will
+
+157
+00:04:18.380 --> 00:04:19.540
+be getting filled, there will be
+
+158
+00:04:19.540 --> 00:04:20.899
+more messages into the queue.
+
+159
+00:04:20.899 --> 00:04:23.180
+But whenever, whenever the
+
+160
+00:04:23.180 --> 00:04:25.100
+developer comes back and he fixes
+
+161
+00:04:25.100 --> 00:04:26.340
+the email service and email
+
+162
+00:04:26.340 --> 00:04:27.860
+service is back up and running,
+
+163
+00:04:27.860 --> 00:04:29.220
+then you can again start pulling
+
+164
+00:04:29.220 --> 00:04:30.900
+the messages so you are not losing
+
+165
+00:04:30.900 --> 00:04:32.540
+onto the messages and it is more
+
+166
+00:04:32.540 --> 00:04:33.940
+decoupled approach.
+
+167
+00:04:33.940 --> 00:04:36.340
+So queues are commonly used between,
+
+168
+00:04:36.340 --> 00:04:38.500
+as a communication protocol,
+
+169
+00:04:38.500 --> 00:04:39.740
+between microservices.
+
+170
+00:04:39.740 --> 00:04:41.860
+In a microservice architecture.

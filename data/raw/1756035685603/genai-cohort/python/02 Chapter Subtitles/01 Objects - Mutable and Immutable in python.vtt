@@ -1,0 +1,2597 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:03.160
+Hi and welcome to the chapter
+
+2
+00:00:03.160 --> 00:00:05.080
+two or section two, whatever
+
+3
+00:00:05.080 --> 00:00:06.640
+you like to call this one.
+
+4
+00:00:06.640 --> 00:00:08.160
+Now in this section we would go
+
+5
+00:00:08.160 --> 00:00:09.760
+with the data types.
+
+6
+00:00:09.760 --> 00:00:11.200
+Now whenever you learn any
+
+7
+00:00:11.200 --> 00:00:12.720
+programming language there are just
+
+8
+00:00:12.720 --> 00:00:14.040
+two types of thing you have to
+
+9
+00:00:14.040 --> 00:00:16.800
+learn formally, the first one being
+
+10
+00:00:16.800 --> 00:00:18.560
+what is the type of data.
+
+11
+00:00:18.560 --> 00:00:20.680
+For example, are those data numbers
+
+12
+00:00:20.680 --> 00:00:22.400
+or are those data like names?
+
+13
+00:00:22.400 --> 00:00:24.080
+We call them as strings
+
+14
+00:00:24.080 --> 00:00:25.760
+in programming terms.
+
+15
+00:00:25.760 --> 00:00:26.920
+Now numbers could also be
+
+16
+00:00:26.920 --> 00:00:28.000
+of variety of types.
+
+17
+00:00:28.000 --> 00:00:29.560
+It could be regular number, it
+
+18
+00:00:29.560 --> 00:00:30.840
+could be with the decimal number,
+
+19
+00:00:30.840 --> 00:00:33.260
+it could be imaginary numbers.
+
+20
+00:00:33.260 --> 00:00:34.460
+In case you are not familiar
+
+21
+00:00:34.460 --> 00:00:36.940
+with the math, we do have IOTA
+
+22
+00:00:36.940 --> 00:00:38.540
+numbers which are maths heavy
+
+23
+00:00:38.540 --> 00:00:40.100
+number which have a real part
+
+24
+00:00:40.100 --> 00:00:41.580
+as well as imaginary part.
+
+25
+00:00:41.580 --> 00:00:43.100
+We have a lot of mathematics that
+
+26
+00:00:43.100 --> 00:00:44.540
+can be done in the Python world.
+
+27
+00:00:45.100 --> 00:00:46.740
+So the first part of learning
+
+28
+00:00:46.740 --> 00:00:47.940
+programming language is
+
+29
+00:00:47.940 --> 00:00:49.780
+to understand the types of the data
+
+30
+00:00:49.780 --> 00:00:51.900
+as we call them as data types.
+
+31
+00:00:51.900 --> 00:00:53.540
+The next part is how do
+
+32
+00:00:53.540 --> 00:00:54.820
+we manipulate that data?
+
+33
+00:00:54.820 --> 00:00:56.020
+For example I want to add
+
+34
+00:00:56.020 --> 00:00:58.180
+the numbers, multiply the numbers
+
+35
+00:00:58.180 --> 00:00:59.780
+or probably change the name
+
+36
+00:00:59.780 --> 00:01:01.300
+to uppercase or lowercase or
+
+37
+00:01:01.300 --> 00:01:02.780
+validate, that's a valid email
+
+38
+00:01:02.780 --> 00:01:04.180
+or not in the format.
+
+39
+00:01:04.180 --> 00:01:05.900
+There are a lot of things that we do.
+
+40
+00:01:05.900 --> 00:01:07.540
+This is exactly what we're going
+
+41
+00:01:07.540 --> 00:01:08.940
+to learn in this section,
+
+42
+00:01:08.940 --> 00:01:10.900
+the data types part and we
+
+43
+00:01:10.900 --> 00:01:12.260
+will understand some of the behind
+
+44
+00:01:12.260 --> 00:01:13.220
+the scene of the Python
+
+45
+00:01:13.220 --> 00:01:14.340
+that how it stores the data.
+
+46
+00:01:14.340 --> 00:01:16.380
+There's a great concept in Python
+
+47
+00:01:16.380 --> 00:01:19.100
+known as mutability immutability.
+
+48
+00:01:19.100 --> 00:01:20.740
+We'll have a discussion on this one.
+
+49
+00:01:20.740 --> 00:01:22.540
+It's a very fantastic concept.
+
+50
+00:01:22.540 --> 00:01:23.620
+Once you actually see it
+
+51
+00:01:23.620 --> 00:01:25.100
+from my perspective you will
+
+52
+00:01:25.100 --> 00:01:26.340
+absolutely love it and you
+
+53
+00:01:26.340 --> 00:01:27.580
+will never forget about it.
+
+54
+00:01:27.580 --> 00:01:28.900
+So this is all that we will
+
+55
+00:01:28.900 --> 00:01:30.300
+be doing in this section
+
+56
+00:01:30.830 --> 00:01:32.070
+and with this let me go ahead
+
+57
+00:01:32.070 --> 00:01:33.470
+and take you onto the screen.
+
+58
+00:01:33.470 --> 00:01:36.030
+Let's start with the section one.
+
+59
+00:01:36.030 --> 00:01:37.390
+We'll go on our board,
+
+60
+00:01:37.970 --> 00:01:39.710
+by the board I mean the black
+
+61
+00:01:39.710 --> 00:01:41.230
+board that we have been using.
+
+62
+00:01:41.230 --> 00:01:42.750
+So let's go up here and we
+
+63
+00:01:42.750 --> 00:01:44.030
+will be working and learning
+
+64
+00:01:44.030 --> 00:01:45.230
+through this one.
+
+65
+00:01:45.230 --> 00:01:47.550
+So this one we want to go with
+
+66
+00:01:47.550 --> 00:01:49.770
+two things first and then we'll
+
+67
+00:01:49.770 --> 00:01:51.310
+study about anything else.
+
+68
+00:01:51.310 --> 00:01:54.510
+And these are our objects.
+
+69
+00:01:54.510 --> 00:01:55.630
+Now what are objects?
+
+70
+00:01:55.630 --> 00:01:57.310
+We will have a discussion on this
+
+71
+00:01:57.310 --> 00:01:58.620
+and as well as we are going
+
+72
+00:01:58.620 --> 00:02:00.340
+to talk about mutability.
+
+73
+00:02:01.620 --> 00:02:03.380
+So this is our objective for this
+
+74
+00:02:03.380 --> 00:02:05.460
+entire whole section as well.
+
+75
+00:02:05.460 --> 00:02:07.940
+But we'll pick the topics one by one.
+
+76
+00:02:07.940 --> 00:02:09.900
+So let me just get your entire focus
+
+77
+00:02:09.900 --> 00:02:11.820
+on the screen itself so that we can
+
+78
+00:02:11.820 --> 00:02:14.260
+go ahead and just talk about that.
+
+79
+00:02:14.260 --> 00:02:15.460
+First of all let's talk
+
+80
+00:02:15.460 --> 00:02:16.980
+about what is object.
+
+81
+00:02:17.620 --> 00:02:19.940
+Now in Python there is a concept that
+
+82
+00:02:19.940 --> 00:02:21.420
+you're going to see that Is called
+
+83
+00:02:21.420 --> 00:02:25.800
+as everything is object in Python.
+
+84
+00:02:25.800 --> 00:02:27.640
+And this is very true.
+
+85
+00:02:27.640 --> 00:02:29.160
+What do you mean by object?
+
+86
+00:02:29.880 --> 00:02:30.960
+Literally anything that
+
+87
+00:02:30.960 --> 00:02:32.200
+you see is an object.
+
+88
+00:02:32.200 --> 00:02:33.920
+And the one thing that you have to
+
+89
+00:02:33.920 --> 00:02:35.680
+remember always about the object,
+
+90
+00:02:35.680 --> 00:02:37.480
+that if we are terming anything
+
+91
+00:02:37.480 --> 00:02:39.040
+as an object, so let's go ahead
+
+92
+00:02:39.040 --> 00:02:41.480
+and write that it needs to have
+
+93
+00:02:41.480 --> 00:02:43.760
+few of the properties mentioned
+
+94
+00:02:43.760 --> 00:02:43.960
+up.
+
+95
+00:02:43.960 --> 00:02:45.880
+For example, this is the object.
+
+96
+00:02:45.880 --> 00:02:47.480
+So every single object
+
+97
+00:02:47.480 --> 00:02:49.400
+will have a unique id.
+
+98
+00:02:50.040 --> 00:02:52.120
+And we call this one as identity.
+
+99
+00:02:53.480 --> 00:02:55.000
+And this is like
+
+100
+00:02:55.000 --> 00:02:57.000
+a tea has a unique blend.
+
+101
+00:02:57.000 --> 00:02:59.360
+And again, this is a bit
+
+102
+00:02:59.360 --> 00:03:00.480
+of a vague example, but you
+
+103
+00:03:00.480 --> 00:03:01.640
+will get this in a minute.
+
+104
+00:03:01.640 --> 00:03:03.720
+So we have this identity, Every
+
+105
+00:03:03.720 --> 00:03:05.720
+object have this unique identity.
+
+106
+00:03:05.720 --> 00:03:06.880
+And I will walk you through how
+
+107
+00:03:06.880 --> 00:03:09.120
+to find out that every object will
+
+108
+00:03:09.120 --> 00:03:11.120
+also have a unique type as well.
+
+109
+00:03:11.120 --> 00:03:12.760
+What do you mean by unique type?
+
+110
+00:03:12.760 --> 00:03:14.400
+The type simply means just like
+
+111
+00:03:14.400 --> 00:03:16.240
+in the T, we have the black T, we
+
+112
+00:03:16.240 --> 00:03:17.800
+have green T, we have herbal T.
+
+113
+00:03:17.800 --> 00:03:19.040
+So every object will have
+
+114
+00:03:19.040 --> 00:03:20.360
+its own type as well.
+
+115
+00:03:20.970 --> 00:03:22.850
+And further, each of the object
+
+116
+00:03:22.850 --> 00:03:24.410
+will have some of the value.
+
+117
+00:03:24.410 --> 00:03:26.490
+For example, like 2,
+
+118
+00:03:26.490 --> 00:03:29.050
+maybe hitesh, maybe chai code.
+
+119
+00:03:29.050 --> 00:03:30.570
+Each object will have the value
+
+120
+00:03:30.570 --> 00:03:31.490
+and we will see them,
+
+121
+00:03:31.490 --> 00:03:33.050
+don't you worry on that part.
+
+122
+00:03:33.050 --> 00:03:34.170
+So we're going to see that we
+
+123
+00:03:34.170 --> 00:03:36.329
+do have this object with us.
+
+124
+00:03:36.329 --> 00:03:38.170
+And once we have this object,
+
+125
+00:03:38.170 --> 00:03:39.770
+we are going to see that.
+
+126
+00:03:39.770 --> 00:03:40.890
+All right, so we have this
+
+127
+00:03:40.890 --> 00:03:42.570
+identity types and everything
+
+128
+00:03:42.570 --> 00:03:43.930
+they are associated with that.
+
+129
+00:03:43.930 --> 00:03:45.010
+Let's put them in the nice
+
+130
+00:03:45.010 --> 00:03:46.730
+diagram so that we actually enjoy
+
+131
+00:03:47.340 --> 00:03:48.500
+learning part of it as well.
+
+132
+00:03:48.500 --> 00:03:50.540
+And let me go ahead and grab this.
+
+133
+00:03:50.540 --> 00:03:51.620
+So whenever object comes
+
+134
+00:03:51.620 --> 00:03:53.060
+to your mind, make sure object will
+
+135
+00:03:53.060 --> 00:03:54.460
+have an identity, make sure
+
+136
+00:03:54.460 --> 00:03:55.980
+the object will have a type
+
+137
+00:03:55.980 --> 00:03:57.740
+and make sure the object actually
+
+138
+00:03:57.740 --> 00:03:59.180
+represents all the values.
+
+139
+00:03:59.180 --> 00:04:00.460
+The value could be empty,
+
+140
+00:04:00.460 --> 00:04:01.940
+that is also a part of this.
+
+141
+00:04:01.940 --> 00:04:03.139
+But we'll actually go
+
+142
+00:04:03.139 --> 00:04:04.700
+ahead and visualize this.
+
+143
+00:04:04.700 --> 00:04:06.060
+Now there's another
+
+144
+00:04:06.060 --> 00:04:07.700
+minor concept that we are going
+
+145
+00:04:07.700 --> 00:04:09.180
+to go through about this is
+
+146
+00:04:09.980 --> 00:04:13.430
+mutable, and image mutable.
+
+147
+00:04:14.790 --> 00:04:15.470
+This is really
+
+148
+00:04:15.470 --> 00:04:16.709
+an interesting concept.
+
+149
+00:04:17.910 --> 00:04:19.430
+Mutable simply means,
+
+150
+00:04:21.190 --> 00:04:22.950
+that is changeable.
+
+151
+00:04:23.670 --> 00:04:25.270
+And this is the concept where
+
+152
+00:04:25.270 --> 00:04:26.510
+a lot of people get it
+
+153
+00:04:26.510 --> 00:04:28.270
+absolutely wrong about
+
+154
+00:04:28.270 --> 00:04:30.550
+the mutability and immutability.
+
+155
+00:04:30.550 --> 00:04:33.270
+So the word mutable means that this
+
+156
+00:04:33.270 --> 00:04:35.310
+thing can be changed and then there
+
+157
+00:04:35.310 --> 00:04:40.200
+is immutable that is not changeable.
+
+158
+00:04:40.200 --> 00:04:42.120
+So always keep that in mind.
+
+159
+00:04:42.120 --> 00:04:43.640
+This is the easiest example.
+
+160
+00:04:43.640 --> 00:04:45.720
+So immutable means no, I cannot
+
+161
+00:04:45.720 --> 00:04:47.000
+go ahead and change this.
+
+162
+00:04:47.000 --> 00:04:48.360
+We will see an example.
+
+163
+00:04:48.360 --> 00:04:51.400
+And this actually ID helps us.
+
+164
+00:04:51.400 --> 00:04:53.000
+This identity helps us
+
+165
+00:04:53.000 --> 00:04:55.000
+to figure out whether it's actually
+
+166
+00:04:55.000 --> 00:04:57.400
+changeable or it's not changeable.
+
+167
+00:04:58.040 --> 00:04:59.960
+Never ever go through with the value.
+
+168
+00:04:59.960 --> 00:05:02.200
+If you go ahead and have this,
+
+169
+00:05:02.200 --> 00:05:03.600
+confirmation about whether it's
+
+170
+00:05:03.600 --> 00:05:05.260
+mutable or immutable with the value,
+
+171
+00:05:05.260 --> 00:05:06.850
+then that is the wrong way.
+
+172
+00:05:06.850 --> 00:05:08.450
+Never do it like this.
+
+173
+00:05:08.450 --> 00:05:09.890
+So this is where I would love
+
+174
+00:05:09.890 --> 00:05:12.130
+to write as no,
+
+175
+00:05:12.130 --> 00:05:13.650
+never check it with the value.
+
+176
+00:05:13.650 --> 00:05:15.090
+This is not a good idea.
+
+177
+00:05:15.090 --> 00:05:16.690
+Never check it with a value.
+
+178
+00:05:16.690 --> 00:05:17.450
+Same goes for here.
+
+179
+00:05:17.450 --> 00:05:18.290
+If you're checking whether
+
+180
+00:05:18.290 --> 00:05:19.410
+it's changeable or not
+
+181
+00:05:19.410 --> 00:05:20.610
+changeable with the value.
+
+182
+00:05:20.610 --> 00:05:23.090
+Nope, that's always a bad idea.
+
+183
+00:05:23.090 --> 00:05:24.170
+If you want to check it
+
+184
+00:05:24.170 --> 00:05:25.570
+with the identity.
+
+185
+00:05:25.570 --> 00:05:27.210
+Yes, that is how we do it.
+
+186
+00:05:27.210 --> 00:05:29.010
+If the identity is same, that means
+
+187
+00:05:29.010 --> 00:05:30.610
+hey, value didn't got changed.
+
+188
+00:05:30.610 --> 00:05:32.210
+If the identity is different,
+
+189
+00:05:32.210 --> 00:05:33.490
+hey, value got changed.
+
+190
+00:05:33.490 --> 00:05:35.720
+So this yes part is all up here.
+
+191
+00:05:35.720 --> 00:05:36.800
+Let me go ahead and put some
+
+192
+00:05:36.800 --> 00:05:38.760
+diagrams or some boxes around it
+
+193
+00:05:38.760 --> 00:05:39.760
+to make it look nice.
+
+194
+00:05:39.760 --> 00:05:40.440
+There we go.
+
+195
+00:05:41.480 --> 00:05:43.120
+All right, makes sense.
+
+196
+00:05:43.120 --> 00:05:44.200
+Looks good.
+
+197
+00:05:44.200 --> 00:05:45.920
+Okay, time for some practical
+
+198
+00:05:45.920 --> 00:05:46.840
+to understand this.
+
+199
+00:05:46.840 --> 00:05:48.120
+Just to summarize this again.
+
+200
+00:05:48.120 --> 00:05:50.440
+Each object has some identity,
+
+201
+00:05:50.440 --> 00:05:52.200
+some type and some value.
+
+202
+00:05:52.200 --> 00:05:53.640
+And objects can also be
+
+203
+00:05:53.640 --> 00:05:54.840
+mutable or immutable.
+
+204
+00:05:54.840 --> 00:05:56.600
+Mutable means this is changeable.
+
+205
+00:05:56.600 --> 00:05:57.840
+Immutable means this
+
+206
+00:05:57.840 --> 00:05:59.480
+is not changeable.
+
+207
+00:05:59.480 --> 00:06:01.800
+And we always validate that through
+
+208
+00:06:01.800 --> 00:06:04.360
+the identity, not through the value.
+
+209
+00:06:04.360 --> 00:06:05.760
+A lot of beginners who get started
+
+210
+00:06:05.760 --> 00:06:06.760
+in the world of Python
+
+211
+00:06:06.760 --> 00:06:08.280
+always look for it with the value,
+
+212
+00:06:08.280 --> 00:06:09.800
+which is a wrong indicator.
+
+213
+00:06:10.310 --> 00:06:10.960
+Please make sure you
+
+214
+00:06:10.960 --> 00:06:11.680
+don't do the mistake.
+
+215
+00:06:11.680 --> 00:06:13.080
+You will not do that mistake
+
+216
+00:06:13.080 --> 00:06:14.600
+because I am here with you.
+
+217
+00:06:14.600 --> 00:06:15.520
+Let's go ahead and create
+
+218
+00:06:15.520 --> 00:06:16.160
+a new folder.
+
+219
+00:06:16.160 --> 00:06:18.920
+Let's call this1 as 02 underscore.
+
+220
+00:06:18.920 --> 00:06:20.200
+This is data types.
+
+221
+00:06:20.840 --> 00:06:21.360
+All right.
+
+222
+00:06:21.360 --> 00:06:22.720
+We will also open this up
+
+223
+00:06:22.720 --> 00:06:24.240
+in the integrated terminal so
+
+224
+00:06:24.240 --> 00:06:25.440
+that we can actually work
+
+225
+00:06:25.440 --> 00:06:27.080
+on it easily and nicely.
+
+226
+00:06:27.640 --> 00:06:29.200
+I will go ahead and create a new
+
+227
+00:06:29.200 --> 00:06:30.640
+file and we're going to call this
+
+228
+00:06:30.640 --> 00:06:33.810
+one as chapter one dot P Y.
+
+229
+00:06:35.650 --> 00:06:37.730
+We can use chapter underscore one.
+
+230
+00:06:37.730 --> 00:06:39.890
+That will be good dot P Y.
+
+231
+00:06:40.770 --> 00:06:42.450
+Now how do we go with that?
+
+232
+00:06:42.450 --> 00:06:43.770
+First of all, we can name
+
+233
+00:06:43.770 --> 00:06:45.010
+anything as variable.
+
+234
+00:06:45.010 --> 00:06:46.490
+So let's just say, for example, you
+
+235
+00:06:46.490 --> 00:06:48.170
+want to get a sugar amount, how much
+
+236
+00:06:48.170 --> 00:06:50.450
+sugar you want to have in the cup.
+
+237
+00:06:50.450 --> 00:06:52.170
+Maybe you want to have two cups
+
+238
+00:06:52.170 --> 00:06:54.210
+or two spoons of the sugar.
+
+239
+00:06:54.210 --> 00:06:56.010
+I really don't judge you based
+
+240
+00:06:56.010 --> 00:06:57.610
+on if you want to have 2 tablespoon
+
+241
+00:06:57.610 --> 00:06:58.850
+or teaspoon, whatever you like.
+
+242
+00:06:59.730 --> 00:07:00.970
+Now first of all, let's see how we
+
+243
+00:07:00.970 --> 00:07:02.250
+can actually print this value.
+
+244
+00:07:02.250 --> 00:07:02.970
+This is something which
+
+245
+00:07:02.970 --> 00:07:03.930
+is stored in memory.
+
+246
+00:07:03.930 --> 00:07:05.210
+And I will depict you
+
+247
+00:07:05.210 --> 00:07:06.450
+with the diagram as well.
+
+248
+00:07:06.450 --> 00:07:08.050
+We use a keyword F.
+
+249
+00:07:08.050 --> 00:07:09.530
+Then we can use double quotes
+
+250
+00:07:09.530 --> 00:07:10.290
+to put up the string.
+
+251
+00:07:10.290 --> 00:07:12.210
+And then we can use something like
+
+252
+00:07:12.210 --> 00:07:15.810
+initial sugarsugar
+
+253
+00:07:16.610 --> 00:07:18.330
+and then put up a column, then use
+
+254
+00:07:18.330 --> 00:07:19.610
+the curly braces and yes,
+
+255
+00:07:19.610 --> 00:07:21.410
+they come always in the pair.
+
+256
+00:07:21.410 --> 00:07:22.890
+Now here I can actually go ahead
+
+257
+00:07:22.890 --> 00:07:24.890
+and inject the variable to actually
+
+258
+00:07:24.890 --> 00:07:26.050
+go ahead and print this out.
+
+259
+00:07:26.050 --> 00:07:26.530
+This is it.
+
+260
+00:07:26.530 --> 00:07:27.810
+We have written our first program
+
+261
+00:07:28.400 --> 00:07:29.680
+where we have a variable and we
+
+262
+00:07:29.680 --> 00:07:30.520
+are trying to print that
+
+263
+00:07:30.520 --> 00:07:32.720
+variable along with a, string.
+
+264
+00:07:32.720 --> 00:07:34.200
+First let's see the output of it.
+
+265
+00:07:34.200 --> 00:07:35.400
+Then we'll actually draw some
+
+266
+00:07:35.400 --> 00:07:37.040
+diagrams to understand this.
+
+267
+00:07:37.040 --> 00:07:38.880
+So all to run for this or
+
+268
+00:07:38.880 --> 00:07:40.160
+to make sure that this runs, I have
+
+269
+00:07:40.160 --> 00:07:42.240
+to say Python 3, please run a file
+
+270
+00:07:42.240 --> 00:07:44.000
+known as chapter1py.
+
+271
+00:07:44.000 --> 00:07:44.680
+Make sure the path
+
+272
+00:07:44.680 --> 00:07:45.360
+is correct for you.
+
+273
+00:07:45.360 --> 00:07:46.640
+I have opened the integrated
+
+274
+00:07:46.640 --> 00:07:48.080
+terminal just right here.
+
+275
+00:07:48.080 --> 00:07:50.000
+So it says initial sugar 2.
+
+276
+00:07:50.000 --> 00:07:52.600
+If I change this from 2 to 12 again.
+
+277
+00:07:52.600 --> 00:07:54.770
+Now the program actually says 12.
+
+278
+00:07:54.770 --> 00:07:56.490
+So let's see what is happening here
+
+279
+00:07:56.490 --> 00:07:58.130
+with the help of diagram.
+
+280
+00:07:58.130 --> 00:08:00.130
+So this is your computer memory
+
+281
+00:08:00.850 --> 00:08:02.570
+and in this memory you say
+
+282
+00:08:02.570 --> 00:08:04.330
+that, hey, I want to store
+
+283
+00:08:04.330 --> 00:08:06.890
+this value 2 or 12, 2 would be
+
+284
+00:08:06.890 --> 00:08:08.850
+good 2 inside my memory.
+
+285
+00:08:08.850 --> 00:08:10.569
+So you said, okay, so the memory
+
+286
+00:08:10.569 --> 00:08:12.450
+is going to create a number two
+
+287
+00:08:12.450 --> 00:08:13.690
+for you just like this.
+
+288
+00:08:13.690 --> 00:08:14.650
+I'll make this a little
+
+289
+00:08:14.650 --> 00:08:15.810
+bit bigger one.
+
+290
+00:08:15.810 --> 00:08:17.490
+And now how do you actually
+
+291
+00:08:17.490 --> 00:08:18.530
+call this memory?
+
+292
+00:08:18.530 --> 00:08:19.770
+So to call this memory you
+
+293
+00:08:19.770 --> 00:08:21.490
+actually created a variable
+
+294
+00:08:21.490 --> 00:08:24.150
+known as sugar amount.
+
+295
+00:08:25.510 --> 00:08:28.960
+And then you actually said that, hey,
+
+296
+00:08:28.960 --> 00:08:31.670
+in order to point to this memory
+
+297
+00:08:31.670 --> 00:08:33.190
+I will just go ahead and use this.
+
+298
+00:08:33.190 --> 00:08:34.830
+And through this I will go ahead
+
+299
+00:08:34.830 --> 00:08:37.110
+and point out this part here.
+
+300
+00:08:37.110 --> 00:08:38.308
+Again, super simple.
+
+301
+00:08:38.308 --> 00:08:40.470
+You have this one here, pretty nice.
+
+302
+00:08:40.470 --> 00:08:42.549
+I'll just go ahead and remove this,
+
+303
+00:08:42.549 --> 00:08:45.190
+draw it again, let's use the arrow.
+
+304
+00:08:45.190 --> 00:08:45.910
+There we go.
+
+305
+00:08:46.790 --> 00:08:49.520
+So this is what exactly happened.
+
+306
+00:08:49.520 --> 00:08:51.240
+Now, interestingly, what I want
+
+307
+00:08:51.240 --> 00:08:52.680
+to show you about the mutable
+
+308
+00:08:52.680 --> 00:08:54.200
+and immutable part, which most
+
+309
+00:08:54.200 --> 00:08:56.240
+people goes absolutely wrong.
+
+310
+00:08:56.240 --> 00:08:57.800
+When I go ahead and say sugar
+
+311
+00:08:57.800 --> 00:08:59.720
+amount is going to equal to,
+
+312
+00:08:59.720 --> 00:09:01.840
+let's just say 12 this time.
+
+313
+00:09:01.840 --> 00:09:03.000
+And I actually go ahead
+
+314
+00:09:03.000 --> 00:09:04.560
+and use the same thing again.
+
+315
+00:09:05.280 --> 00:09:06.480
+Let's go up here.
+
+316
+00:09:06.480 --> 00:09:07.800
+So we are printing sugar.
+
+317
+00:09:07.800 --> 00:09:09.120
+So what do you think
+
+318
+00:09:09.120 --> 00:09:10.480
+should have happened here?
+
+319
+00:09:10.480 --> 00:09:12.000
+The sugar amount was 2
+
+320
+00:09:12.000 --> 00:09:13.320
+and sugar amount is 12.
+
+321
+00:09:13.320 --> 00:09:15.430
+And now if I try to print it and
+
+322
+00:09:15.430 --> 00:09:17.830
+we'll call this one as second,
+
+323
+00:09:19.990 --> 00:09:21.870
+easier to find it out which one
+
+324
+00:09:21.870 --> 00:09:24.070
+is what if I go ahead and run
+
+325
+00:09:24.070 --> 00:09:25.630
+this, we can say initial sugar
+
+326
+00:09:25.630 --> 00:09:27.870
+is 2 and second initial sugar is
+
+327
+00:09:27.870 --> 00:09:28.550
+12.
+
+328
+00:09:28.550 --> 00:09:30.470
+Now here's the interesting part.
+
+329
+00:09:30.470 --> 00:09:31.830
+Now this thing is
+
+330
+00:09:32.630 --> 00:09:33.830
+here what we have done.
+
+331
+00:09:33.830 --> 00:09:35.030
+The numbers
+
+332
+00:09:35.030 --> 00:09:37.190
+are considered as immutable.
+
+333
+00:09:37.190 --> 00:09:38.630
+They do not change.
+
+334
+00:09:38.630 --> 00:09:40.030
+But again, the point is, hey,
+
+335
+00:09:40.030 --> 00:09:41.830
+Hitesh, this just changed here.
+
+336
+00:09:41.830 --> 00:09:42.550
+We initially were
+
+337
+00:09:42.550 --> 00:09:43.510
+having the value of 2.
+
+338
+00:09:43.510 --> 00:09:44.790
+Now we have a value of 12.
+
+339
+00:09:44.790 --> 00:09:46.150
+So it definitely changed.
+
+340
+00:09:46.150 --> 00:09:46.990
+How can you say that?
+
+341
+00:09:46.990 --> 00:09:48.070
+This is immutable.
+
+342
+00:09:48.070 --> 00:09:49.590
+This cannot be changed.
+
+343
+00:09:49.590 --> 00:09:51.270
+This is where a lot of people
+
+344
+00:09:51.270 --> 00:09:52.710
+make it absolutely wrong
+
+345
+00:09:52.710 --> 00:09:55.470
+in the Python, as I mentioned, you
+
+346
+00:09:55.470 --> 00:09:56.510
+never check it with the value.
+
+347
+00:09:56.510 --> 00:09:58.230
+The value definitely of the sugar
+
+348
+00:09:58.230 --> 00:09:59.350
+amount is getting changed.
+
+349
+00:09:59.350 --> 00:10:01.430
+But behind the scene, this number
+
+350
+00:10:01.430 --> 00:10:03.150
+itself is actually immutable.
+
+351
+00:10:03.150 --> 00:10:04.390
+This never changed.
+
+352
+00:10:04.390 --> 00:10:06.270
+What Python did behind the scene for
+
+353
+00:10:06.270 --> 00:10:09.750
+you is it took this number and it
+
+354
+00:10:09.750 --> 00:10:11.070
+actually created a new number.
+
+355
+00:10:11.070 --> 00:10:12.630
+This time it says, hey, you want 12?
+
+356
+00:10:12.630 --> 00:10:14.070
+Okay, we'll give you 12.
+
+357
+00:10:14.070 --> 00:10:15.550
+So a new number was created
+
+358
+00:10:15.550 --> 00:10:17.470
+for you, and this time instead
+
+359
+00:10:17.470 --> 00:10:19.110
+of pointing to the two, you
+
+360
+00:10:19.110 --> 00:10:21.430
+are pointing actually to 12.
+
+361
+00:10:21.430 --> 00:10:23.230
+Yeah, this is a little bit
+
+362
+00:10:23.230 --> 00:10:24.870
+of an interesting aspect of
+
+363
+00:10:24.870 --> 00:10:26.470
+how Python actually works.
+
+364
+00:10:26.470 --> 00:10:28.190
+So instead this time we simply
+
+365
+00:10:28.190 --> 00:10:29.750
+go ahead and say that, hey, we
+
+366
+00:10:29.750 --> 00:10:32.310
+are pointing to 12, not two.
+
+367
+00:10:32.310 --> 00:10:33.910
+This two is still here.
+
+368
+00:10:33.910 --> 00:10:34.950
+This is immutable,
+
+369
+00:10:34.950 --> 00:10:36.340
+you cannot change it.
+
+370
+00:10:36.340 --> 00:10:37.100
+What you're changing
+
+371
+00:10:37.100 --> 00:10:38.340
+now is reference.
+
+372
+00:10:38.340 --> 00:10:40.660
+Always remember what we are changing.
+
+373
+00:10:40.660 --> 00:10:41.940
+What seems to be changing
+
+374
+00:10:41.940 --> 00:10:43.700
+in the world of mutable
+
+375
+00:10:43.700 --> 00:10:44.740
+is the reference.
+
+376
+00:10:46.740 --> 00:10:48.340
+So you are changing the reference.
+
+377
+00:10:48.340 --> 00:10:50.820
+You are not changing the actual
+
+378
+00:10:50.820 --> 00:10:51.540
+value itself.
+
+379
+00:10:51.540 --> 00:10:52.299
+I'll show you that.
+
+380
+00:10:52.299 --> 00:10:52.980
+Yes, some of these
+
+381
+00:10:52.980 --> 00:10:54.340
+values do get changed.
+
+382
+00:10:55.120 --> 00:10:55.860
+You might be asking,
+
+383
+00:10:55.860 --> 00:10:56.980
+what's the proof of it?
+
+384
+00:10:56.980 --> 00:10:58.100
+Yeah, that's a good question.
+
+385
+00:10:58.100 --> 00:10:59.220
+As I mentioned, always check
+
+386
+00:10:59.220 --> 00:11:01.140
+for identity, never for the value.
+
+387
+00:11:01.140 --> 00:11:03.000
+Yeah, our value got changed.
+
+388
+00:11:03.000 --> 00:11:04.240
+But I asked you, hey, not
+
+389
+00:11:04.240 --> 00:11:05.240
+to track with the values.
+
+390
+00:11:05.240 --> 00:11:06.600
+There's a big no here.
+
+391
+00:11:06.600 --> 00:11:08.600
+Now, what I want to do is change
+
+392
+00:11:08.600 --> 00:11:10.240
+or track based on identity.
+
+393
+00:11:10.240 --> 00:11:11.240
+So how can we find
+
+394
+00:11:11.240 --> 00:11:12.680
+the identity of it?
+
+395
+00:11:12.680 --> 00:11:14.360
+It's actually super easy.
+
+396
+00:11:14.360 --> 00:11:15.760
+All we got to do is print.
+
+397
+00:11:15.760 --> 00:11:17.680
+And for any of the ID you want
+
+398
+00:11:17.680 --> 00:11:18.560
+to check, let's
+
+399
+00:11:18.560 --> 00:11:19.960
+just say we will use F strings.
+
+400
+00:11:19.960 --> 00:11:21.520
+Again, these are formatted strings.
+
+401
+00:11:21.520 --> 00:11:24.280
+So I will just say ID of
+
+402
+00:11:24.280 --> 00:11:26.440
+2 and then I want to print an ID.
+
+403
+00:11:27.080 --> 00:11:28.480
+So I'll just go ahead and say
+
+404
+00:11:28.480 --> 00:11:29.840
+that, hey, use curly braces.
+
+405
+00:11:29.840 --> 00:11:31.360
+Inside the curly braces you have
+
+406
+00:11:31.360 --> 00:11:34.190
+a keyword ID to find ID of anything.
+
+407
+00:11:34.190 --> 00:11:35.630
+I want to find an ID of 2,
+
+408
+00:11:35.630 --> 00:11:37.790
+and similarly I want to
+
+409
+00:11:37.790 --> 00:11:40.190
+find the ID of, 12 also.
+
+410
+00:11:40.190 --> 00:11:41.230
+So let's just say 12.
+
+411
+00:11:41.790 --> 00:11:42.830
+And what you're going to notice,
+
+412
+00:11:42.830 --> 00:11:44.710
+the ID of 2 is always same
+
+413
+00:11:44.710 --> 00:11:46.150
+in your program, but what's
+
+414
+00:11:46.150 --> 00:11:47.670
+being changed is this ID of 12.
+
+415
+00:11:47.670 --> 00:11:49.070
+Let's go ahead and run this program
+
+416
+00:11:49.070 --> 00:11:50.670
+to understand it better.
+
+417
+00:11:50.670 --> 00:11:52.190
+So you will notice you get a unique
+
+418
+00:11:52.190 --> 00:11:54.190
+ID here, and you get a unique ID
+
+419
+00:11:54.190 --> 00:11:56.190
+of this one is actually 12.
+
+420
+00:11:56.190 --> 00:11:58.470
+We just missed one here.
+
+421
+00:11:58.470 --> 00:11:58.830
+12.
+
+422
+00:11:59.510 --> 00:12:00.230
+Let's run this again.
+
+423
+00:12:00.870 --> 00:12:02.550
+And what we see is this one
+
+424
+00:12:02.550 --> 00:12:04.070
+is different for your program,
+
+425
+00:12:04.070 --> 00:12:05.750
+and this one is totally
+
+426
+00:12:05.750 --> 00:12:07.030
+different in your program.
+
+427
+00:12:07.030 --> 00:12:08.590
+This is 680 at the end,
+
+428
+00:12:08.590 --> 00:12:10.470
+this is 3, 60 at the end.
+
+429
+00:12:10.470 --> 00:12:12.310
+And this is the most important part
+
+430
+00:12:12.310 --> 00:12:13.070
+because you have
+
+431
+00:12:13.070 --> 00:12:14.110
+created a new reference.
+
+432
+00:12:14.110 --> 00:12:15.629
+It's just the variable which is
+
+433
+00:12:15.629 --> 00:12:17.110
+behind the scene pointing
+
+434
+00:12:17.110 --> 00:12:19.430
+to a different memory location.
+
+435
+00:12:19.430 --> 00:12:20.790
+And that's the magic.
+
+436
+00:12:20.790 --> 00:12:21.790
+That's the part which a lot
+
+437
+00:12:21.790 --> 00:12:22.590
+of people don't understand
+
+438
+00:12:22.590 --> 00:12:24.230
+about mutable and immutable.
+
+439
+00:12:24.230 --> 00:12:25.350
+So summarizing this,
+
+440
+00:12:25.960 --> 00:12:28.040
+mutable means that's changeable.
+
+441
+00:12:28.040 --> 00:12:29.280
+Immutable means this
+
+442
+00:12:29.280 --> 00:12:30.280
+cannot be changed.
+
+443
+00:12:30.280 --> 00:12:32.280
+Never reference them by the value.
+
+444
+00:12:32.280 --> 00:12:33.760
+Always check the mutability
+
+445
+00:12:33.760 --> 00:12:34.600
+and immutability
+
+446
+00:12:34.600 --> 00:12:36.520
+via the identity itself.
+
+447
+00:12:36.520 --> 00:12:37.320
+A pretty interesting
+
+448
+00:12:37.320 --> 00:12:38.840
+concept, isn't it?
+
+449
+00:12:38.840 --> 00:12:40.120
+So that's really nice.
+
+450
+00:12:40.120 --> 00:12:41.759
+You might be wondering, hey, can
+
+451
+00:12:41.759 --> 00:12:43.320
+we get some of the examples,
+
+452
+00:12:44.280 --> 00:12:46.040
+of the things which are mutable
+
+453
+00:12:46.040 --> 00:12:47.480
+that really do get changed?
+
+454
+00:12:47.480 --> 00:12:49.000
+Yes, of course, why not?
+
+455
+00:12:49.000 --> 00:12:51.000
+You ask for it, I will deliver it.
+
+456
+00:12:51.640 --> 00:12:53.070
+Let's just call this one as,
+
+457
+00:12:53.070 --> 00:12:58.480
+chapter two PY and let's write
+
+458
+00:12:58.480 --> 00:13:00.120
+some of the code which is
+
+459
+00:13:00.120 --> 00:13:01.800
+mutable, which is changeable.
+
+460
+00:13:01.800 --> 00:13:03.360
+So I'll just go ahead and say I want
+
+461
+00:13:03.360 --> 00:13:05.600
+to have a spice mix and which is
+
+462
+00:13:05.600 --> 00:13:07.000
+going to be represented by set.
+
+463
+00:13:07.560 --> 00:13:10.000
+Set is also a data type
+
+464
+00:13:10.000 --> 00:13:11.440
+which represents a collection
+
+465
+00:13:11.440 --> 00:13:12.000
+of the things.
+
+466
+00:13:12.000 --> 00:13:13.280
+So so far we have been doing
+
+467
+00:13:13.280 --> 00:13:15.240
+and checking just the numbers.
+
+468
+00:13:15.240 --> 00:13:16.770
+Numbers are individual, but,
+
+469
+00:13:16.770 --> 00:13:17.450
+but let's just say you want
+
+470
+00:13:17.450 --> 00:13:18.890
+to collect a whole lot of numbers
+
+471
+00:13:18.890 --> 00:13:19.850
+or whole lot of other
+
+472
+00:13:19.850 --> 00:13:20.970
+things, maybe collection
+
+473
+00:13:20.970 --> 00:13:23.170
+of strings, collection of names.
+
+474
+00:13:23.170 --> 00:13:24.610
+So for that set is used,
+
+475
+00:13:24.610 --> 00:13:25.610
+we will learn a lot
+
+476
+00:13:25.610 --> 00:13:27.410
+of these different types.
+
+477
+00:13:27.410 --> 00:13:28.290
+So let's just say I want
+
+478
+00:13:28.290 --> 00:13:29.610
+to print and I will go ahead
+
+479
+00:13:29.610 --> 00:13:32.850
+and say, initial spice mix.
+
+480
+00:13:32.850 --> 00:13:33.650
+What does it mean?
+
+481
+00:13:33.650 --> 00:13:35.410
+So I'll just go ahead and say initial
+
+482
+00:13:37.490 --> 00:13:41.730
+spice mix id, just like that.
+
+483
+00:13:42.380 --> 00:13:43.260
+And we're going to go ahead
+
+484
+00:13:43.260 --> 00:13:44.580
+and say use curly braces.
+
+485
+00:13:44.580 --> 00:13:45.980
+Then we'll use again the ID
+
+486
+00:13:45.980 --> 00:13:47.220
+and we're going to go ahead and say
+
+487
+00:13:47.220 --> 00:13:48.580
+give me the ID of spice mix
+
+488
+00:13:48.580 --> 00:13:49.860
+so that I can see whether it's
+
+489
+00:13:49.860 --> 00:13:51.020
+changing or not changing.
+
+490
+00:13:51.020 --> 00:13:52.380
+This is mutable, this
+
+491
+00:13:52.380 --> 00:13:53.500
+is supposed to change.
+
+492
+00:13:54.060 --> 00:13:55.700
+So now if I go ahead and say, hey,
+
+493
+00:13:55.700 --> 00:13:58.220
+spice mix, I want to add tolu.
+
+494
+00:13:58.220 --> 00:14:00.140
+Python is all about if you can
+
+495
+00:14:00.140 --> 00:14:01.820
+read English, you can read this.
+
+496
+00:14:01.820 --> 00:14:03.340
+So let's just say my favorite one,
+
+497
+00:14:03.340 --> 00:14:05.580
+I want to add ginger for it.
+
+498
+00:14:05.580 --> 00:14:07.180
+So we have added ginger
+
+499
+00:14:07.180 --> 00:14:08.990
+and we're going to use one more
+
+500
+00:14:08.990 --> 00:14:11.070
+probably cardamom.
+
+501
+00:14:11.070 --> 00:14:12.030
+Cardamom.
+
+502
+00:14:12.830 --> 00:14:13.350
+There we go.
+
+503
+00:14:13.350 --> 00:14:14.550
+So we have added two values
+
+504
+00:14:14.550 --> 00:14:16.070
+in it and now we would look
+
+505
+00:14:16.070 --> 00:14:17.550
+to see that whether the ID
+
+506
+00:14:17.550 --> 00:14:18.990
+has been changed or not.
+
+507
+00:14:18.990 --> 00:14:20.070
+So I'll just use this one
+
+508
+00:14:20.070 --> 00:14:21.030
+and I'll just Move it.
+
+509
+00:14:21.030 --> 00:14:21.750
+And by the way, I love
+
+510
+00:14:21.750 --> 00:14:23.230
+keyboard shortcuts.
+
+511
+00:14:23.230 --> 00:14:25.350
+I have spent a good amount of time in
+
+512
+00:14:25.350 --> 00:14:27.310
+VS code, so I know the shortcuts of.
+
+513
+00:14:27.870 --> 00:14:29.630
+If you want to know about this one,
+
+514
+00:14:29.630 --> 00:14:30.830
+let me just show you because I'm
+
+515
+00:14:30.830 --> 00:14:32.110
+pretty sure you'll be asking if
+
+516
+00:14:32.110 --> 00:14:33.430
+you want to duplicate any line,
+
+517
+00:14:33.430 --> 00:14:34.830
+you can just press shift and
+
+518
+00:14:34.830 --> 00:14:38.060
+option key on or the alt key on
+
+519
+00:14:38.060 --> 00:14:39.260
+your keyboard and it actually
+
+520
+00:14:39.260 --> 00:14:40.580
+duplicates that.
+
+521
+00:14:40.580 --> 00:14:42.860
+And that's how I duplicate that.
+
+522
+00:14:42.860 --> 00:14:44.820
+And if you want to have it duplicate
+
+523
+00:14:44.820 --> 00:14:46.220
+and then want to move any line,
+
+524
+00:14:46.220 --> 00:14:47.820
+just press the alt key or the option
+
+525
+00:14:47.820 --> 00:14:49.220
+key and then it moves up here.
+
+526
+00:14:49.220 --> 00:14:50.740
+So that's how I actually run
+
+527
+00:14:50.740 --> 00:14:52.060
+fast in the VS code.
+
+528
+00:14:52.060 --> 00:14:54.180
+Again, super fun to have it.
+
+529
+00:14:54.180 --> 00:14:56.260
+So let's just say initial Spice Mix
+
+530
+00:14:56.260 --> 00:14:57.380
+and then we are going to go ahead
+
+531
+00:14:57.380 --> 00:15:00.660
+and say after Spice Mix, let's see
+
+532
+00:15:00.660 --> 00:15:02.260
+whether the ID gets changed or not.
+
+533
+00:15:03.670 --> 00:15:03.870
+This.
+
+534
+00:15:03.870 --> 00:15:04.590
+So we're going to go
+
+535
+00:15:04.590 --> 00:15:06.150
+ahead and say Python 3.
+
+536
+00:15:06.710 --> 00:15:07.910
+Please go ahead and run
+
+537
+00:15:07.910 --> 00:15:09.110
+chapter two this time.
+
+538
+00:15:09.110 --> 00:15:10.070
+And there we go.
+
+539
+00:15:10.070 --> 00:15:11.510
+So we can see this ID.
+
+540
+00:15:11.510 --> 00:15:13.430
+Actually we can see this.
+
+541
+00:15:13.430 --> 00:15:14.790
+This is 944.
+
+542
+00:15:14.790 --> 00:15:16.390
+This is 944.
+
+543
+00:15:16.390 --> 00:15:17.110
+So there we go.
+
+544
+00:15:17.110 --> 00:15:18.150
+We can see this.
+
+545
+00:15:18.150 --> 00:15:19.750
+This is mutable.
+
+546
+00:15:19.750 --> 00:15:20.790
+This is changing.
+
+547
+00:15:20.790 --> 00:15:23.030
+So if I print out what is inside
+
+548
+00:15:23.030 --> 00:15:25.310
+the spice mix, before that.
+
+549
+00:15:25.310 --> 00:15:26.150
+Yes, definitely we
+
+550
+00:15:26.150 --> 00:15:27.430
+have added something.
+
+551
+00:15:27.430 --> 00:15:30.140
+But again this always is.
+
+552
+00:15:30.140 --> 00:15:31.500
+This is mutable part.
+
+553
+00:15:32.140 --> 00:15:33.580
+All right, I hope you got this.
+
+554
+00:15:34.300 --> 00:15:35.940
+And yes, I do understand this
+
+555
+00:15:35.940 --> 00:15:37.500
+confusion here that hey, this
+
+556
+00:15:37.500 --> 00:15:39.420
+value didn't change up here.
+
+557
+00:15:39.420 --> 00:15:40.580
+So how you're calling this
+
+558
+00:15:40.580 --> 00:15:41.780
+as mutable, immutable
+
+559
+00:15:41.780 --> 00:15:42.580
+and all of these things.
+
+560
+00:15:42.580 --> 00:15:43.660
+Let me get you back onto
+
+561
+00:15:43.660 --> 00:15:44.820
+the board because I know this
+
+562
+00:15:44.820 --> 00:15:46.700
+requires more explanation.
+
+563
+00:15:46.700 --> 00:15:48.380
+So we get this set here.
+
+564
+00:15:48.380 --> 00:15:49.780
+So this is how the set looks like.
+
+565
+00:15:49.780 --> 00:15:52.020
+Let's also print the set as well.
+
+566
+00:15:52.020 --> 00:15:52.860
+That how does the set
+
+567
+00:15:52.860 --> 00:15:53.740
+actually looks like.
+
+568
+00:15:54.470 --> 00:15:56.310
+So we're going to go ahead and say,
+
+569
+00:15:56.310 --> 00:15:57.750
+instead of putting up the id,
+
+570
+00:15:58.710 --> 00:16:01.470
+we'll just go ahead and just
+
+571
+00:16:01.470 --> 00:16:02.950
+print the spice mix so that, you
+
+572
+00:16:02.950 --> 00:16:04.790
+know, how does it look like?
+
+573
+00:16:04.790 --> 00:16:05.990
+And after printing this,
+
+574
+00:16:05.990 --> 00:16:07.270
+we will also print this.
+
+575
+00:16:07.270 --> 00:16:10.710
+All right, so this is
+
+576
+00:16:10.710 --> 00:16:12.870
+the initial ID that we have.
+
+577
+00:16:12.870 --> 00:16:14.350
+Initially the set was empty
+
+578
+00:16:14.350 --> 00:16:15.830
+and then we actually were able
+
+579
+00:16:15.830 --> 00:16:17.830
+to add values into this
+
+580
+00:16:17.830 --> 00:16:20.790
+and still we get the exact same id.
+
+581
+00:16:21.490 --> 00:16:22.490
+So the whole concept.
+
+582
+00:16:22.490 --> 00:16:23.770
+Let me just write this here.
+
+583
+00:16:23.770 --> 00:16:25.370
+So the whole concept of mutable
+
+584
+00:16:25.370 --> 00:16:27.690
+and immutable is what value can
+
+585
+00:16:27.690 --> 00:16:29.850
+I change and what values I cannot
+
+586
+00:16:29.850 --> 00:16:32.130
+change in the memory itself.
+
+587
+00:16:32.130 --> 00:16:35.370
+So when I said the numbers are
+
+588
+00:16:35.370 --> 00:16:37.770
+immutable, this simply means
+
+589
+00:16:37.770 --> 00:16:39.850
+that I cannot change this number's
+
+590
+00:16:39.850 --> 00:16:41.010
+existence in the memory.
+
+591
+00:16:41.010 --> 00:16:42.290
+This will always remain like
+
+592
+00:16:42.290 --> 00:16:43.650
+That I can change the reference
+
+593
+00:16:43.650 --> 00:16:45.410
+where I'm pointing, but nothing
+
+594
+00:16:45.410 --> 00:16:46.450
+can actually be changed.
+
+595
+00:16:46.450 --> 00:16:48.870
+This is known as immutable.
+
+596
+00:16:48.870 --> 00:16:50.070
+I cannot change it.
+
+597
+00:16:50.070 --> 00:16:52.470
+But when I went into the spice mix,
+
+598
+00:16:54.070 --> 00:16:56.430
+I was able to constantly
+
+599
+00:16:56.430 --> 00:16:57.990
+add more spices into this.
+
+600
+00:16:57.990 --> 00:16:58.550
+Notice here.
+
+601
+00:16:58.550 --> 00:16:59.950
+First we added ginger,
+
+602
+00:16:59.950 --> 00:17:01.350
+then we add cardamom.
+
+603
+00:17:01.350 --> 00:17:03.270
+So I am just always pointing this
+
+604
+00:17:03.270 --> 00:17:05.750
+so the same object can be changed.
+
+605
+00:17:05.750 --> 00:17:07.589
+I can just go up, come up here
+
+606
+00:17:07.589 --> 00:17:09.030
+and can say, hey, instead of
+
+607
+00:17:09.030 --> 00:17:11.150
+cardamom, I'll probably add a lemon.
+
+608
+00:17:11.150 --> 00:17:12.750
+And that is totally fine.
+
+609
+00:17:12.750 --> 00:17:13.990
+I can mutate it.
+
+610
+00:17:13.990 --> 00:17:15.460
+It is mutable.
+
+611
+00:17:15.460 --> 00:17:16.740
+So if I run this again,
+
+612
+00:17:16.740 --> 00:17:18.579
+yes, I'm able to mutate this thing.
+
+613
+00:17:18.579 --> 00:17:20.339
+I'm able to change this thing still.
+
+614
+00:17:20.339 --> 00:17:22.099
+The ID remains exactly same.
+
+615
+00:17:22.099 --> 00:17:23.700
+And that's the whole concept
+
+616
+00:17:23.700 --> 00:17:25.619
+behind mutable and immutable.
+
+617
+00:17:25.619 --> 00:17:26.900
+You change it or you don't
+
+618
+00:17:26.900 --> 00:17:28.820
+change it in the memory.
+
+619
+00:17:28.820 --> 00:17:30.340
+And again, this is the whole point.
+
+620
+00:17:30.900 --> 00:17:32.740
+So I hope now it makes it
+
+621
+00:17:32.740 --> 00:17:34.740
+absolutely clear that numbers,
+
+622
+00:17:34.740 --> 00:17:35.980
+they are immutable.
+
+623
+00:17:35.980 --> 00:17:37.220
+We cannot change them.
+
+624
+00:17:37.220 --> 00:17:38.620
+The reference can be changed,
+
+625
+00:17:38.620 --> 00:17:40.260
+but they always remain same.
+
+626
+00:17:40.260 --> 00:17:41.740
+While on the other hand, the things
+
+627
+00:17:41.740 --> 00:17:43.890
+like set, they are mutable,
+
+628
+00:17:43.890 --> 00:17:45.330
+they can be changed in the memory.
+
+629
+00:17:45.330 --> 00:17:46.130
+You can always point
+
+630
+00:17:46.130 --> 00:17:47.250
+to the same thing.
+
+631
+00:17:47.250 --> 00:17:48.530
+You actually always points
+
+632
+00:17:48.530 --> 00:17:49.650
+to the same thing.
+
+633
+00:17:49.650 --> 00:17:51.450
+So I hope this gets you now the clear
+
+634
+00:17:51.450 --> 00:17:52.570
+about the confusion
+
+635
+00:17:52.570 --> 00:17:54.810
+of mutable, immutable, what it's
+
+636
+00:17:54.810 --> 00:17:55.810
+like, because this is the core
+
+637
+00:17:55.810 --> 00:17:57.970
+foundation in the whole object.
+
+638
+00:17:57.970 --> 00:17:58.930
+Rest of the things
+
+639
+00:17:58.930 --> 00:18:00.770
+are super easy to work on with.
+
+640
+00:18:00.770 --> 00:18:02.330
+I hope these diagrams helps you
+
+641
+00:18:02.330 --> 00:18:04.530
+to actually clear, up the confusion.
+
+642
+00:18:04.530 --> 00:18:06.290
+And if you enjoyed this lecture,
+
+643
+00:18:06.290 --> 00:18:07.850
+please don't forget to rate us.
+
+644
+00:18:07.850 --> 00:18:08.770
+We really need that.
+
+645
+00:18:08.770 --> 00:18:10.050
+We really work hard for this.
+
+646
+00:18:10.050 --> 00:18:12.000
+And even your smallest rating
+
+647
+00:18:12.000 --> 00:18:13.840
+can help us in boosting our
+
+648
+00:18:13.840 --> 00:18:15.590
+emotions and morale.
+
+649
+00:18:15.590 --> 00:18:16.800
+Let's catch up in the next video.

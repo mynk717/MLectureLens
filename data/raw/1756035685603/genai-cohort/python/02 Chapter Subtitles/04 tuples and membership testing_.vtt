@@ -1,0 +1,1257 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:01.760
+Hey there everyone.
+
+2
+00:00:01.760 --> 00:00:03.480
+Hitesh here and welcome
+
+3
+00:00:03.480 --> 00:00:04.840
+to the core Python training
+
+4
+00:00:04.840 --> 00:00:06.080
+that we are going through.
+
+5
+00:00:06.080 --> 00:00:07.540
+In case you haven't yet,
+
+6
+00:00:07.540 --> 00:00:08.480
+posted a review.
+
+7
+00:00:08.480 --> 00:00:09.240
+Please do that.
+
+8
+00:00:09.240 --> 00:00:10.560
+We really need that.
+
+9
+00:00:10.560 --> 00:00:12.680
+A lot of people, sometimes try
+
+10
+00:00:12.680 --> 00:00:15.000
+to push us down and your kind words
+
+11
+00:00:15.000 --> 00:00:16.520
+in the, in the review section
+
+12
+00:00:16.520 --> 00:00:17.840
+really help us in motivating
+
+13
+00:00:17.840 --> 00:00:19.920
+and putting more content as well.
+
+14
+00:00:19.920 --> 00:00:21.600
+Anyways, let's go ahead and get
+
+15
+00:00:21.600 --> 00:00:23.160
+started with the next topic
+
+16
+00:00:23.160 --> 00:00:25.280
+in the Python, which is tuples.
+
+17
+00:00:25.280 --> 00:00:26.680
+Now there are a lot of ways, how
+
+18
+00:00:26.680 --> 00:00:28.120
+you say it out, some call it
+
+19
+00:00:28.120 --> 00:00:29.840
+as tuples, which is also good.
+
+20
+00:00:29.840 --> 00:00:31.370
+Some, some say as tuples,
+
+21
+00:00:31.370 --> 00:00:32.330
+which is also good.
+
+22
+00:00:32.330 --> 00:00:33.810
+And I still haven't made my
+
+23
+00:00:33.810 --> 00:00:35.050
+mind what to call them.
+
+24
+00:00:35.050 --> 00:00:36.530
+I usually sometimes call them
+
+25
+00:00:36.530 --> 00:00:38.250
+as tuples, but again,
+
+26
+00:00:38.250 --> 00:00:39.610
+don't judge me based on that.
+
+27
+00:00:39.610 --> 00:00:40.610
+We will just study
+
+28
+00:00:40.610 --> 00:00:41.930
+and learn about them.
+
+29
+00:00:41.930 --> 00:00:43.650
+It is actually a really fun topic.
+
+30
+00:00:43.650 --> 00:00:44.210
+You're going to
+
+31
+00:00:44.210 --> 00:00:45.250
+absolutely enjoy this.
+
+32
+00:00:45.250 --> 00:00:46.810
+And these are used quite a lot.
+
+33
+00:00:46.810 --> 00:00:48.490
+Let me take you on the screen itself
+
+34
+00:00:48.490 --> 00:00:49.650
+and this, is where we
+
+35
+00:00:49.650 --> 00:00:50.490
+are going to go with that.
+
+36
+00:00:50.490 --> 00:00:51.730
+So for this let's go ahead
+
+37
+00:00:51.730 --> 00:00:53.730
+and create a new file in itself.
+
+38
+00:00:53.730 --> 00:00:55.450
+This is going to be chapter,
+
+39
+00:00:56.870 --> 00:00:57.750
+seven, I guess.
+
+40
+00:00:57.750 --> 00:00:59.750
+Yep, pretty accurate there.
+
+41
+00:00:59.750 --> 00:01:01.350
+All right, so let me bring your
+
+42
+00:01:01.350 --> 00:01:03.190
+focus entirely on the screen itself.
+
+43
+00:01:03.190 --> 00:01:04.110
+Hope that's great.
+
+44
+00:01:04.110 --> 00:01:05.830
+Now let's go ahead and study
+
+45
+00:01:05.830 --> 00:01:06.870
+about the tuples.
+
+46
+00:01:06.870 --> 00:01:07.990
+What are tuples?
+
+47
+00:01:08.710 --> 00:01:09.990
+So just like we have been going
+
+48
+00:01:09.990 --> 00:01:11.350
+through with a lot of data types,
+
+49
+00:01:11.350 --> 00:01:12.550
+like string was one of them,
+
+50
+00:01:12.550 --> 00:01:14.070
+so now we have another one
+
+51
+00:01:14.070 --> 00:01:17.830
+of the data type which is tuples.
+
+52
+00:01:18.470 --> 00:01:19.990
+Tuples.
+
+53
+00:01:19.990 --> 00:01:20.670
+There we go.
+
+54
+00:01:20.670 --> 00:01:21.670
+That's how we say it.
+
+55
+00:01:22.210 --> 00:01:26.570
+Now tuples comes with this kind
+
+56
+00:01:26.570 --> 00:01:28.690
+of a thing, known as parenthesis.
+
+57
+00:01:28.690 --> 00:01:30.610
+And yes, in the world of programming,
+
+58
+00:01:30.610 --> 00:01:32.410
+brackets have their own importance.
+
+59
+00:01:32.410 --> 00:01:34.210
+This is known as parenthesis.
+
+60
+00:01:34.210 --> 00:01:35.450
+We do have another one which
+
+61
+00:01:35.450 --> 00:01:36.850
+we call them as brackets.
+
+62
+00:01:36.850 --> 00:01:38.650
+Yes, these square ones.
+
+63
+00:01:38.650 --> 00:01:39.730
+And we have another one
+
+64
+00:01:39.730 --> 00:01:41.370
+which is known as curly braces
+
+65
+00:01:41.370 --> 00:01:42.530
+or braces in general.
+
+66
+00:01:42.530 --> 00:01:44.010
+So yes, they have their own names,
+
+67
+00:01:44.010 --> 00:01:46.930
+parentheses, brackets and braces.
+
+68
+00:01:47.900 --> 00:01:48.740
+Anyways, we are not here
+
+69
+00:01:48.740 --> 00:01:49.820
+to talk about that.
+
+70
+00:01:49.820 --> 00:01:51.020
+This is tuple.
+
+71
+00:01:51.020 --> 00:01:52.300
+So anytime somebody says
+
+72
+00:01:52.300 --> 00:01:53.300
+tuple, that means we have
+
+73
+00:01:53.300 --> 00:01:54.540
+to use these parentheses.
+
+74
+00:01:54.540 --> 00:01:56.100
+And they have really strange way
+
+75
+00:01:56.100 --> 00:01:57.410
+of working with them.
+
+76
+00:01:57.410 --> 00:01:58.620
+They're very interesting.
+
+77
+00:01:58.620 --> 00:02:00.060
+They are immutable.
+
+78
+00:02:00.060 --> 00:02:00.770
+Yep.
+
+79
+00:02:00.770 --> 00:02:02.260
+They cannot be changed.
+
+80
+00:02:02.260 --> 00:02:03.020
+That's the only thing you
+
+81
+00:02:03.020 --> 00:02:04.220
+need to know about it.
+
+82
+00:02:04.220 --> 00:02:05.700
+All right, so let's just say we
+
+83
+00:02:05.700 --> 00:02:07.740
+are going to call this one as
+
+84
+00:02:07.740 --> 00:02:11.820
+masala spices, Quite spicy.
+
+85
+00:02:11.820 --> 00:02:12.820
+And whenever you want
+
+86
+00:02:12.820 --> 00:02:14.260
+to define tuples, just go ahead
+
+87
+00:02:14.260 --> 00:02:16.220
+and use parenthesis and I'll shut
+
+88
+00:02:16.220 --> 00:02:18.180
+up my AI agent so that we
+
+89
+00:02:18.180 --> 00:02:19.180
+can Talk about the code.
+
+90
+00:02:19.180 --> 00:02:20.040
+Not that.
+
+91
+00:02:20.040 --> 00:02:20.880
+Let's just say we want
+
+92
+00:02:20.880 --> 00:02:21.960
+to have some spices.
+
+93
+00:02:21.960 --> 00:02:24.080
+So, cardamom is going
+
+94
+00:02:24.080 --> 00:02:24.920
+to be one of them.
+
+95
+00:02:24.920 --> 00:02:25.920
+Then probably some
+
+96
+00:02:25.920 --> 00:02:27.560
+of the spices, name even you don't
+
+97
+00:02:27.560 --> 00:02:28.920
+know that is also fine.
+
+98
+00:02:28.920 --> 00:02:30.880
+We will use clove and we
+
+99
+00:02:30.880 --> 00:02:33.160
+will use, cinnamon.
+
+100
+00:02:33.960 --> 00:02:35.120
+So these are my fixed
+
+101
+00:02:35.120 --> 00:02:36.320
+ingredients, immutable.
+
+102
+00:02:36.320 --> 00:02:38.440
+They cannot be changed ever.
+
+103
+00:02:38.440 --> 00:02:39.520
+Now, sometimes you want
+
+104
+00:02:39.520 --> 00:02:41.800
+to unpack them, so
+
+105
+00:02:41.800 --> 00:02:43.040
+this is how you create them.
+
+106
+00:02:43.040 --> 00:02:44.280
+But sometimes there is an object
+
+107
+00:02:44.280 --> 00:02:46.250
+which is already being created
+
+108
+00:02:46.250 --> 00:02:46.810
+and now you want
+
+109
+00:02:46.810 --> 00:02:48.370
+to extract values out of it.
+
+110
+00:02:48.370 --> 00:02:49.970
+So, for example, all of my
+
+111
+00:02:49.970 --> 00:02:51.490
+values are in masala spices.
+
+112
+00:02:51.490 --> 00:02:52.930
+Now I want to add them
+
+113
+00:02:52.930 --> 00:02:53.850
+into variables.
+
+114
+00:02:53.850 --> 00:02:56.170
+Spice one, spice two, spice three.
+
+115
+00:02:56.170 --> 00:02:57.370
+How do we do that?
+
+116
+00:02:57.370 --> 00:02:58.410
+That's actually very
+
+117
+00:02:58.410 --> 00:03:00.050
+interesting and an easy syntax.
+
+118
+00:03:00.050 --> 00:03:01.770
+You can just use tuples again.
+
+119
+00:03:01.770 --> 00:03:03.170
+And this time I'm going to call this
+
+120
+00:03:03.170 --> 00:03:05.690
+one as spice one, and then spice
+
+121
+00:03:05.690 --> 00:03:07.850
+two and then spice three.
+
+122
+00:03:07.850 --> 00:03:09.290
+The only thing I have to be careful
+
+123
+00:03:09.290 --> 00:03:11.730
+is that I should know that what kind
+
+124
+00:03:11.730 --> 00:03:13.330
+of and what amount of values are
+
+125
+00:03:13.330 --> 00:03:14.650
+coming in, I should know the number.
+
+126
+00:03:14.650 --> 00:03:14.970
+So.
+
+127
+00:03:14.970 --> 00:03:16.370
+So that I can allocate a variable
+
+128
+00:03:16.370 --> 00:03:17.450
+for each one of them.
+
+129
+00:03:17.450 --> 00:03:18.890
+And then all I have to do is
+
+130
+00:03:18.890 --> 00:03:20.490
+simply say print and let's
+
+131
+00:03:20.490 --> 00:03:21.610
+just say go for like this.
+
+132
+00:03:23.450 --> 00:03:24.570
+And we are going to call this
+
+133
+00:03:24.570 --> 00:03:28.570
+one as main masala spices.
+
+134
+00:03:28.570 --> 00:03:30.410
+And then I can just use variables.
+
+135
+00:03:31.050 --> 00:03:32.050
+So I can just call this
+
+136
+00:03:32.050 --> 00:03:33.450
+one as spice one.
+
+137
+00:03:33.450 --> 00:03:35.130
+And then separated by comma,
+
+138
+00:03:35.130 --> 00:03:36.730
+we will have spice two.
+
+139
+00:03:36.730 --> 00:03:38.890
+Of course, separated by comma,
+
+140
+00:03:38.890 --> 00:03:40.410
+we will have the spice three.
+
+141
+00:03:41.850 --> 00:03:42.570
+And that's it.
+
+142
+00:03:42.570 --> 00:03:44.850
+Now we can run this file, clean
+
+143
+00:03:44.850 --> 00:03:46.970
+this up, and I can call my Python
+
+144
+00:03:46.970 --> 00:03:48.970
+interpreter that, hey, Python 3,
+
+145
+00:03:48.970 --> 00:03:50.930
+I want to run a file, chapter 7.
+
+146
+00:03:50.930 --> 00:03:52.210
+And there we go, we got all
+
+147
+00:03:52.210 --> 00:03:54.570
+the values being extracted, or
+
+148
+00:03:54.570 --> 00:03:56.570
+as we call them, as we call them, as
+
+149
+00:03:56.570 --> 00:03:58.970
+unpacking in the world of this.
+
+150
+00:03:58.970 --> 00:04:00.970
+Now, this is Tuple actually
+
+151
+00:04:00.970 --> 00:04:02.210
+gives you a lot of superpower
+
+152
+00:04:02.210 --> 00:04:03.890
+in the Python, especially superpower
+
+153
+00:04:03.890 --> 00:04:05.050
+like this, for example.
+
+154
+00:04:05.050 --> 00:04:06.090
+Let's just say we have
+
+155
+00:04:06.090 --> 00:04:07.250
+some special ratios.
+
+156
+00:04:07.250 --> 00:04:08.250
+We are making a good T.
+
+157
+00:04:08.250 --> 00:04:10.010
+So we have ginger ratio.
+
+158
+00:04:10.900 --> 00:04:15.060
+Ratio, as well as we have, cardamom.
+
+159
+00:04:15.620 --> 00:04:16.459
+Cardamom.
+
+160
+00:04:16.459 --> 00:04:17.700
+Yep, that's correct.
+
+161
+00:04:17.700 --> 00:04:18.779
+Cardamom ratio.
+
+162
+00:04:18.779 --> 00:04:19.980
+And we are calling this
+
+163
+00:04:19.980 --> 00:04:21.660
+ratio as two is to one.
+
+164
+00:04:21.660 --> 00:04:23.260
+So this is my ratio and I
+
+165
+00:04:23.260 --> 00:04:25.220
+call this as two is to one.
+
+166
+00:04:25.220 --> 00:04:26.259
+So yes, you can actually
+
+167
+00:04:26.259 --> 00:04:27.660
+directly have the variables.
+
+168
+00:04:27.660 --> 00:04:28.900
+So these are two variables.
+
+169
+00:04:28.900 --> 00:04:31.180
+And separated by comma, I am able
+
+170
+00:04:31.180 --> 00:04:32.340
+to allocate these variables.
+
+171
+00:04:32.340 --> 00:04:33.580
+So two will automatically go
+
+172
+00:04:33.580 --> 00:04:34.780
+to ginger, one will
+
+173
+00:04:34.780 --> 00:04:36.720
+automatically go to cardamom.
+
+174
+00:04:36.720 --> 00:04:38.000
+And I'm able to do this
+
+175
+00:04:38.000 --> 00:04:39.520
+because behind the scene,
+
+176
+00:04:39.520 --> 00:04:41.160
+this Tuple is responsible
+
+177
+00:04:41.160 --> 00:04:42.960
+for this, yes, I do agree.
+
+178
+00:04:42.960 --> 00:04:45.120
+We are not writing it in this format.
+
+179
+00:04:45.120 --> 00:04:46.480
+We are writing it directly.
+
+180
+00:04:46.480 --> 00:04:47.960
+But behind the scene, Python
+
+181
+00:04:47.960 --> 00:04:49.520
+gives me this ability is all
+
+182
+00:04:49.520 --> 00:04:51.000
+in all because of the tuples.
+
+183
+00:04:51.000 --> 00:04:51.840
+So just remember that.
+
+184
+00:04:51.840 --> 00:04:53.240
+And yes, we can actually
+
+185
+00:04:53.240 --> 00:04:54.240
+go ahead and use that.
+
+186
+00:04:55.310 --> 00:04:55.880
+There is another
+
+187
+00:04:55.880 --> 00:04:56.960
+interesting part of it.
+
+188
+00:04:56.960 --> 00:04:57.840
+First, let me go ahead
+
+189
+00:04:57.840 --> 00:05:00.240
+and print, a string here.
+
+190
+00:05:00.960 --> 00:05:01.680
+There we go.
+
+191
+00:05:02.330 --> 00:05:03.410
+And we're going to call this one
+
+192
+00:05:03.410 --> 00:05:08.610
+as ratio is for the G for ginger.
+
+193
+00:05:08.610 --> 00:05:09.290
+I hope you understand.
+
+194
+00:05:09.290 --> 00:05:11.770
+I'll write this in short, ginger.
+
+195
+00:05:12.570 --> 00:05:14.410
+And we're going to use G is
+
+196
+00:05:14.410 --> 00:05:18.490
+in this ratio, and C for cardamom
+
+197
+00:05:18.490 --> 00:05:19.290
+is going to be
+
+198
+00:05:19.290 --> 00:05:20.690
+in the ratio of cardamom ratio.
+
+199
+00:05:20.690 --> 00:05:22.170
+So we can see that we have all these
+
+200
+00:05:22.170 --> 00:05:24.490
+ratios being nicely available to us.
+
+201
+00:05:24.490 --> 00:05:25.570
+I can print this out.
+
+202
+00:05:25.570 --> 00:05:26.250
+No worries.
+
+203
+00:05:26.250 --> 00:05:26.850
+I will do that.
+
+204
+00:05:26.850 --> 00:05:29.220
+But what's really interesting now is
+
+205
+00:05:29.220 --> 00:05:31.140
+that I can actually flip the ratio.
+
+206
+00:05:31.140 --> 00:05:32.380
+I can just go ahead and call
+
+207
+00:05:32.380 --> 00:05:33.500
+this hey, ginger ratio
+
+208
+00:05:33.500 --> 00:05:35.380
+and the cardamom ratio.
+
+209
+00:05:35.380 --> 00:05:36.700
+The value of them can
+
+210
+00:05:36.700 --> 00:05:37.700
+be switched as well.
+
+211
+00:05:37.700 --> 00:05:38.620
+So first of all, I'll just
+
+212
+00:05:38.620 --> 00:05:40.900
+say cardamom ratio as well as
+
+213
+00:05:40.900 --> 00:05:42.060
+now the ginger ratio.
+
+214
+00:05:42.060 --> 00:05:44.260
+So the values, Python is really smart
+
+215
+00:05:44.260 --> 00:05:45.500
+that will automatically put
+
+216
+00:05:45.500 --> 00:05:48.020
+the cardamom ratio's value into,
+
+217
+00:05:49.030 --> 00:05:51.060
+ginger, and the ginger ratio
+
+218
+00:05:51.700 --> 00:05:53.960
+will go into the cardamom ratio.
+
+219
+00:05:53.960 --> 00:05:55.200
+This is one unique behavior
+
+220
+00:05:55.200 --> 00:05:56.680
+of Python that you can swap
+
+221
+00:05:56.680 --> 00:05:58.520
+the variables just like that.
+
+222
+00:05:58.520 --> 00:05:59.640
+Pretty interesting.
+
+223
+00:05:59.640 --> 00:06:02.320
+And now if I check the ratio
+
+224
+00:06:02.320 --> 00:06:04.320
+after this, obviously the ratio
+
+225
+00:06:04.320 --> 00:06:06.280
+will be flipped, but I'll still
+
+226
+00:06:06.280 --> 00:06:07.520
+run the program and we'll
+
+227
+00:06:07.520 --> 00:06:08.840
+show you what's happening.
+
+228
+00:06:08.840 --> 00:06:10.480
+So we can see, previously the ginger
+
+229
+00:06:10.480 --> 00:06:12.720
+ratio was two is to one, ginger
+
+230
+00:06:12.720 --> 00:06:14.640
+to cardamom, and now we have ginger
+
+231
+00:06:14.640 --> 00:06:16.520
+to cardamom ratio as 1 is to 2.
+
+232
+00:06:16.520 --> 00:06:17.960
+Pretty interesting, isn't it?
+
+233
+00:06:18.670 --> 00:06:20.560
+This is one of the really neat trick
+
+234
+00:06:20.560 --> 00:06:21.920
+that is being used quite a lot.
+
+235
+00:06:21.920 --> 00:06:22.920
+You will see this a lot.
+
+236
+00:06:22.920 --> 00:06:24.770
+That variable swiping doesn't
+
+237
+00:06:24.770 --> 00:06:25.730
+need a third variable.
+
+238
+00:06:25.730 --> 00:06:27.370
+We can just do it like that.
+
+239
+00:06:27.370 --> 00:06:27.850
+Told you.
+
+240
+00:06:27.850 --> 00:06:29.250
+Python is a language which
+
+241
+00:06:29.250 --> 00:06:30.890
+makes life lot easier.
+
+242
+00:06:31.530 --> 00:06:33.130
+Now, one more thing that I would
+
+243
+00:06:33.130 --> 00:06:35.890
+love to show you is membership.
+
+244
+00:06:35.890 --> 00:06:37.370
+Yes, you can test the membership
+
+245
+00:06:37.370 --> 00:06:38.810
+just like you test the membership,
+
+246
+00:06:39.500 --> 00:06:40.330
+in a club.
+
+247
+00:06:41.340 --> 00:06:43.210
+Just like this, we can actually do
+
+248
+00:06:43.210 --> 00:06:48.130
+print and I can say is, we have to
+
+249
+00:06:48.130 --> 00:06:50.130
+make it exactly same in the tuple.
+
+250
+00:06:50.130 --> 00:06:52.840
+So I'm calling this a, ginger ratio.
+
+251
+00:06:52.840 --> 00:06:54.560
+I have to call it exactly
+
+252
+00:06:54.560 --> 00:06:55.560
+like ginger ratio.
+
+253
+00:06:55.560 --> 00:06:57.640
+So here it's not really good.
+
+254
+00:06:57.640 --> 00:06:58.960
+This is a better tuple.
+
+255
+00:06:58.960 --> 00:07:00.040
+So let's go ahead and check this.
+
+256
+00:07:00.040 --> 00:07:01.280
+So we would love to first check
+
+257
+00:07:01.280 --> 00:07:04.760
+whether ginger is in masala spices.
+
+258
+00:07:04.760 --> 00:07:05.880
+So let's go ahead and do that.
+
+259
+00:07:05.880 --> 00:07:09.000
+So we'll say that is ginger.
+
+260
+00:07:09.880 --> 00:07:13.240
+Ginger is ginger in.
+
+261
+00:07:15.080 --> 00:07:18.370
+Come on, masala spices.
+
+262
+00:07:18.370 --> 00:07:23.090
+And then I can just use my variable
+
+263
+00:07:23.090 --> 00:07:24.850
+and then I have to mention
+
+264
+00:07:24.850 --> 00:07:26.290
+exactly what I'm asking for.
+
+265
+00:07:26.290 --> 00:07:27.610
+And this needs to be all
+
+266
+00:07:27.610 --> 00:07:28.930
+case sensitive and stuff.
+
+267
+00:07:28.930 --> 00:07:30.770
+So I'll go ahead and say ginger just
+
+268
+00:07:30.770 --> 00:07:34.090
+like this in and then name of this.
+
+269
+00:07:34.090 --> 00:07:36.770
+So masala spices again,
+
+270
+00:07:36.770 --> 00:07:39.010
+let me just expand this.
+
+271
+00:07:39.010 --> 00:07:40.490
+So remember, this is
+
+272
+00:07:40.490 --> 00:07:42.090
+the variable I'm testing for.
+
+273
+00:07:42.090 --> 00:07:43.410
+It's not a variable on
+
+274
+00:07:43.410 --> 00:07:44.690
+to say it can be a variable.
+
+275
+00:07:44.690 --> 00:07:46.410
+But this is my string that I'm
+
+276
+00:07:46.410 --> 00:07:47.490
+checking whether it is available
+
+277
+00:07:47.490 --> 00:07:49.230
+in masala spices or not.
+
+278
+00:07:49.230 --> 00:07:50.350
+So I'll just open up this
+
+279
+00:07:50.350 --> 00:07:51.750
+and show you what's going on.
+
+280
+00:07:51.750 --> 00:07:53.270
+And that's the beauty about it
+
+281
+00:07:53.270 --> 00:07:54.430
+when I don't show up myself
+
+282
+00:07:54.430 --> 00:07:55.430
+on the screen that you can
+
+283
+00:07:55.430 --> 00:07:57.230
+see and totally focus on this.
+
+284
+00:07:57.230 --> 00:07:58.990
+So, right now it's false, obviously,
+
+285
+00:07:58.990 --> 00:08:00.670
+because it doesn't exist.
+
+286
+00:08:00.670 --> 00:08:01.670
+Now let's just say if I
+
+287
+00:08:01.670 --> 00:08:03.070
+check for cinnamon, is
+
+288
+00:08:03.070 --> 00:08:04.069
+cinnamon available here?
+
+289
+00:08:04.069 --> 00:08:05.390
+So let's just check for cinnamon.
+
+290
+00:08:05.390 --> 00:08:06.190
+We'll ask the question
+
+291
+00:08:06.190 --> 00:08:07.390
+for cinnamon as well.
+
+292
+00:08:07.390 --> 00:08:08.750
+And if I run the program
+
+293
+00:08:08.750 --> 00:08:10.830
+again, this is true.
+
+294
+00:08:10.830 --> 00:08:12.110
+Now what happens if I go
+
+295
+00:08:12.110 --> 00:08:13.350
+ahead and check for a cinnamon
+
+296
+00:08:13.350 --> 00:08:14.350
+with a capital C?
+
+297
+00:08:15.040 --> 00:08:17.160
+If I try this, it is false.
+
+298
+00:08:17.160 --> 00:08:18.800
+So just wanted to show you
+
+299
+00:08:18.800 --> 00:08:20.600
+that yes, this is investigative
+
+300
+00:08:20.600 --> 00:08:22.080
+study, that it is case sensitive.
+
+301
+00:08:22.080 --> 00:08:23.360
+You need to ask that what
+
+302
+00:08:23.360 --> 00:08:24.240
+you are looking for
+
+303
+00:08:24.240 --> 00:08:26.160
+in the tuple as availability.
+
+304
+00:08:26.800 --> 00:08:28.480
+This is known as a membership
+
+305
+00:08:28.480 --> 00:08:29.920
+testing or membership test,
+
+306
+00:08:29.920 --> 00:08:31.520
+whatever you want to call it.
+
+307
+00:08:31.520 --> 00:08:33.400
+This whole thing is dependent
+
+308
+00:08:33.400 --> 00:08:35.200
+on this keyword which is in.
+
+309
+00:08:35.200 --> 00:08:37.159
+In works with the tuple.
+
+310
+00:08:37.159 --> 00:08:38.559
+And that is it.
+
+311
+00:08:38.559 --> 00:08:40.360
+That is all that I wanted
+
+312
+00:08:40.360 --> 00:08:41.520
+to teach you about the tuple.
+
+313
+00:08:41.520 --> 00:08:42.640
+Eventually you will learn more
+
+314
+00:08:42.640 --> 00:08:44.240
+about it as you will use it.

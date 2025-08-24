@@ -1,0 +1,1149 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:02.600
+Hey there everyone, and welcome
+
+2
+00:00:02.600 --> 00:00:04.120
+to a fresh new section
+
+3
+00:00:04.120 --> 00:00:05.840
+on the udemy's Python course.
+
+4
+00:00:06.640 --> 00:00:08.900
+Now, from this moment onwards,
+
+5
+00:00:08.900 --> 00:00:10.320
+we are into a position where
+
+6
+00:00:10.320 --> 00:00:11.800
+so far we have studied about
+
+7
+00:00:11.800 --> 00:00:13.280
+what are the data types
+
+8
+00:00:13.280 --> 00:00:15.360
+in the Python programming language.
+
+9
+00:00:15.360 --> 00:00:16.800
+This means I truly understand
+
+10
+00:00:16.800 --> 00:00:18.440
+that data can be of variety
+
+11
+00:00:18.440 --> 00:00:19.880
+of types, it can be numbers,
+
+12
+00:00:19.880 --> 00:00:21.440
+it can be string, date, time
+
+13
+00:00:21.440 --> 00:00:23.280
+and probably others as well.
+
+14
+00:00:23.280 --> 00:00:25.480
+But this is enough of knowledge to
+
+15
+00:00:25.480 --> 00:00:28.000
+start moving forward in the Python.
+
+16
+00:00:28.000 --> 00:00:29.640
+From this point onwards we are going
+
+17
+00:00:29.640 --> 00:00:31.080
+to study about how we can
+
+18
+00:00:31.080 --> 00:00:32.880
+process this data and in fact
+
+19
+00:00:32.880 --> 00:00:34.880
+rest of the whole course is all
+
+20
+00:00:34.880 --> 00:00:36.560
+about processing the data.
+
+21
+00:00:36.560 --> 00:00:38.600
+In programming world there is a whole
+
+22
+00:00:38.600 --> 00:00:40.360
+lot of logics that you can apply to
+
+23
+00:00:40.360 --> 00:00:42.120
+your data and there are a lot of
+
+24
+00:00:42.120 --> 00:00:44.440
+again, another keywords and style of
+
+25
+00:00:44.440 --> 00:00:45.800
+processing the data that you have to
+
+26
+00:00:45.800 --> 00:00:47.240
+go through with Python programming
+
+27
+00:00:47.240 --> 00:00:48.840
+language, in fact any programming
+
+28
+00:00:48.840 --> 00:00:49.280
+language.
+
+29
+00:00:49.920 --> 00:00:51.440
+So from here onwards let's
+
+30
+00:00:51.440 --> 00:00:52.520
+learn and study about
+
+31
+00:00:52.520 --> 00:00:54.080
+how we process the data.
+
+32
+00:00:54.620 --> 00:00:56.140
+And the way we are going to do is
+
+33
+00:00:56.140 --> 00:00:57.860
+going to be very creative, something
+
+34
+00:00:57.860 --> 00:00:59.920
+that you haven't seen anywhere,
+
+35
+00:00:59.920 --> 00:01:01.660
+so far in any Python course.
+
+36
+00:01:01.660 --> 00:01:03.260
+We are directly jumping into
+
+37
+00:01:03.260 --> 00:01:05.900
+the mini projects and mini stories.
+
+38
+00:01:05.900 --> 00:01:07.180
+And yes, these stories
+
+39
+00:01:07.180 --> 00:01:08.140
+are pretty fun.
+
+40
+00:01:08.140 --> 00:01:09.740
+They will help you to understand
+
+41
+00:01:09.740 --> 00:01:11.100
+why we are doing the things,
+
+42
+00:01:11.100 --> 00:01:12.340
+because doing the things is
+
+43
+00:01:12.340 --> 00:01:14.620
+easy, why we are doing, why this
+
+44
+00:01:14.620 --> 00:01:16.540
+particular set of tools were
+
+45
+00:01:16.540 --> 00:01:18.020
+being chosen to do the
+
+46
+00:01:18.020 --> 00:01:18.900
+particular activity.
+
+47
+00:01:18.900 --> 00:01:20.460
+This is what we need right now.
+
+48
+00:01:20.460 --> 00:01:21.220
+So, so let me walk
+
+49
+00:01:21.220 --> 00:01:21.940
+you through in this.
+
+50
+00:01:21.940 --> 00:01:23.340
+You will absolutely love this.
+
+51
+00:01:23.340 --> 00:01:24.180
+So we're going to start
+
+52
+00:01:24.180 --> 00:01:25.900
+with the conditionals first.
+
+53
+00:01:25.900 --> 00:01:27.100
+We are going to study a little bit
+
+54
+00:01:27.100 --> 00:01:29.300
+about what is conditionals, why this
+
+55
+00:01:29.300 --> 00:01:30.980
+is conditional, and then we are
+
+56
+00:01:30.980 --> 00:01:32.500
+going to work on this mini project.
+
+57
+00:01:32.500 --> 00:01:34.020
+We will have many such mini
+
+58
+00:01:34.020 --> 00:01:35.700
+projects throughout this entire
+
+59
+00:01:35.700 --> 00:01:36.939
+chapter and you're going
+
+60
+00:01:36.939 --> 00:01:38.220
+to absolutely love this.
+
+61
+00:01:38.220 --> 00:01:39.300
+So just to give you a brief
+
+62
+00:01:39.300 --> 00:01:40.260
+idea, we're going to go
+
+63
+00:01:40.260 --> 00:01:41.580
+ahead and work on with this.
+
+64
+00:01:41.580 --> 00:01:42.780
+So let's just say I have
+
+65
+00:01:42.780 --> 00:01:45.100
+this small, rectangle.
+
+66
+00:01:45.100 --> 00:01:46.500
+I'll just go ahead and rotate
+
+67
+00:01:46.500 --> 00:01:47.860
+this like this because
+
+68
+00:01:47.860 --> 00:01:49.300
+this is how usually diagrams
+
+69
+00:01:49.300 --> 00:01:50.700
+are drawn in this one.
+
+70
+00:01:50.700 --> 00:01:51.940
+So, so let's just say what we
+
+71
+00:01:51.940 --> 00:01:53.860
+do is we check for some certain
+
+72
+00:01:53.860 --> 00:01:56.980
+things, maybe a pretty basic
+
+73
+00:01:56.980 --> 00:01:59.820
+that whether you have, some T
+
+74
+00:01:59.820 --> 00:02:01.260
+leaves at your home or not.
+
+75
+00:02:02.780 --> 00:02:04.740
+So we go like this, that we simply
+
+76
+00:02:04.740 --> 00:02:07.100
+have T leaves at our home or not.
+
+77
+00:02:07.100 --> 00:02:09.180
+Now based on this, you take decision,
+
+78
+00:02:09.180 --> 00:02:10.699
+for example, if you have
+
+79
+00:02:11.260 --> 00:02:12.780
+T leaves at your home.
+
+80
+00:02:12.780 --> 00:02:14.340
+So this is the route that I'm going
+
+81
+00:02:14.340 --> 00:02:15.540
+to go ahead and call this.
+
+82
+00:02:15.540 --> 00:02:17.740
+This is as, simply yes route.
+
+83
+00:02:18.440 --> 00:02:19.560
+So let me just write this.
+
+84
+00:02:19.560 --> 00:02:20.840
+This is a yes route.
+
+85
+00:02:22.120 --> 00:02:23.080
+You have the tea.
+
+86
+00:02:23.080 --> 00:02:24.400
+If you have the tea I
+
+87
+00:02:24.400 --> 00:02:25.960
+would say do nothing.
+
+88
+00:02:25.960 --> 00:02:27.640
+You don't need to buy the teas
+
+89
+00:02:27.640 --> 00:02:29.080
+or T leaves, so you
+
+90
+00:02:29.080 --> 00:02:30.440
+don't have to do anything.
+
+91
+00:02:30.440 --> 00:02:31.520
+But there could be another
+
+92
+00:02:31.520 --> 00:02:33.200
+route here as well, which could
+
+93
+00:02:33.200 --> 00:02:34.239
+be something like this.
+
+94
+00:02:34.239 --> 00:02:36.320
+So if I go ahead and say you have
+
+95
+00:02:36.320 --> 00:02:38.760
+another route which is a no route,
+
+96
+00:02:40.840 --> 00:02:43.160
+I don't have T at my home.
+
+97
+00:02:43.160 --> 00:02:45.550
+So the place logical answer is
+
+98
+00:02:45.550 --> 00:02:48.910
+go ahead and buy some T or T leaves.
+
+99
+00:02:48.910 --> 00:02:50.190
+This is the whole point
+
+100
+00:02:50.190 --> 00:02:51.190
+of conditionals.
+
+101
+00:02:51.190 --> 00:02:52.910
+You have certain condition.
+
+102
+00:02:52.910 --> 00:02:55.470
+This condition eventually evaluates
+
+103
+00:02:55.470 --> 00:02:57.110
+to a yes or no condition.
+
+104
+00:02:57.110 --> 00:02:59.550
+And based on this we either take
+
+105
+00:02:59.550 --> 00:03:01.150
+some action or we don't take
+
+106
+00:03:01.150 --> 00:03:02.470
+some action or sometimes we
+
+107
+00:03:02.470 --> 00:03:04.350
+take different set of actions.
+
+108
+00:03:04.350 --> 00:03:06.150
+This instead of do nothing
+
+109
+00:03:06.150 --> 00:03:07.670
+could also be that, hey, I
+
+110
+00:03:07.670 --> 00:03:08.670
+don't want to do nothing.
+
+111
+00:03:08.670 --> 00:03:11.310
+I probably want to say make some T.
+
+112
+00:03:12.860 --> 00:03:14.180
+So again these decisions are
+
+113
+00:03:14.180 --> 00:03:15.780
+heavily based on whether the T
+
+114
+00:03:15.780 --> 00:03:17.700
+leaves at your home, the answer
+
+115
+00:03:17.700 --> 00:03:19.740
+of this is yes or no.
+
+116
+00:03:19.740 --> 00:03:21.020
+So you have to work on this.
+
+117
+00:03:21.020 --> 00:03:22.540
+So we're going to simply say either
+
+118
+00:03:22.540 --> 00:03:24.620
+buy some T if you don't have them.
+
+119
+00:03:24.620 --> 00:03:25.980
+If you have them, probably
+
+120
+00:03:25.980 --> 00:03:27.380
+do nothing or make some T
+
+121
+00:03:27.380 --> 00:03:28.700
+or maybe check for sugar.
+
+122
+00:03:28.700 --> 00:03:30.300
+There could be lot of things.
+
+123
+00:03:30.300 --> 00:03:31.500
+So based on these kinds
+
+124
+00:03:31.500 --> 00:03:32.820
+of action, now we're going to study
+
+125
+00:03:32.820 --> 00:03:35.660
+about our simple conditionals.
+
+126
+00:03:35.660 --> 00:03:36.820
+So we have first set
+
+127
+00:03:36.820 --> 00:03:37.820
+of challenge and we're going
+
+128
+00:03:37.820 --> 00:03:38.980
+to take down this challenge.
+
+129
+00:03:38.980 --> 00:03:39.620
+We are going to build
+
+130
+00:03:39.620 --> 00:03:41.100
+a program that actually address
+
+131
+00:03:41.100 --> 00:03:42.220
+this real world problem.
+
+132
+00:03:42.820 --> 00:03:44.660
+So this is the problem that we have.
+
+133
+00:03:44.660 --> 00:03:46.300
+You're creating a notification
+
+134
+00:03:46.300 --> 00:03:47.940
+system for a smart kettle.
+
+135
+00:03:47.940 --> 00:03:48.260
+All.
+
+136
+00:03:48.260 --> 00:03:48.660
+Right.
+
+137
+00:03:48.660 --> 00:03:49.780
+That's a pretty good job.
+
+138
+00:03:50.420 --> 00:03:53.100
+It should remind the user only when
+
+139
+00:03:53.100 --> 00:03:54.900
+the kettle has finished boiling.
+
+140
+00:03:54.900 --> 00:03:55.460
+Task.
+
+141
+00:03:55.460 --> 00:03:56.100
+Okay.
+
+142
+00:03:57.140 --> 00:03:58.460
+A variable kettle
+
+143
+00:03:58.460 --> 00:03:59.860
+boiled equals to true.
+
+144
+00:03:59.860 --> 00:04:01.780
+If boiled, show kettle done.
+
+145
+00:04:02.500 --> 00:04:04.180
+Time to make chai.
+
+146
+00:04:04.180 --> 00:04:05.820
+So this is what we have to do now.
+
+147
+00:04:05.820 --> 00:04:07.060
+At first it might look really
+
+148
+00:04:07.060 --> 00:04:08.920
+overwhelming that okay, this is
+
+149
+00:04:08.920 --> 00:04:10.560
+lot but in real world you will
+
+150
+00:04:10.560 --> 00:04:11.920
+get these kinds of questions and
+
+151
+00:04:11.920 --> 00:04:13.640
+these kinds of problems and you
+
+152
+00:04:13.640 --> 00:04:15.560
+have to convert the problems into
+
+153
+00:04:15.560 --> 00:04:16.120
+a solution.
+
+154
+00:04:16.120 --> 00:04:17.200
+And that solution needs
+
+155
+00:04:17.200 --> 00:04:18.600
+to be delivered via software.
+
+156
+00:04:18.600 --> 00:04:19.760
+That's what we do.
+
+157
+00:04:19.760 --> 00:04:21.160
+So let's go ahead and build
+
+158
+00:04:21.160 --> 00:04:22.720
+this how this can be done.
+
+159
+00:04:22.720 --> 00:04:24.479
+And we're going to go into
+
+160
+00:04:24.479 --> 00:04:27.040
+a new file now, new folder rather.
+
+161
+00:04:27.040 --> 00:04:28.040
+We'll call this one as
+
+162
+00:04:28.040 --> 00:04:30.880
+03 and conditionals.
+
+163
+00:04:32.320 --> 00:04:33.560
+It's very hard to speak
+
+164
+00:04:33.560 --> 00:04:34.880
+and type at the same time.
+
+165
+00:04:35.560 --> 00:04:37.080
+Let's create a new file and we're
+
+166
+00:04:37.080 --> 00:04:38.760
+going to call this one as Project
+
+167
+00:04:38.760 --> 00:04:49.080
+1SO or Ministory1PY so all of this
+
+168
+00:04:49.080 --> 00:04:50.280
+project are going to be mini
+
+169
+00:04:50.280 --> 00:04:51.399
+stories and we are going to work
+
+170
+00:04:51.399 --> 00:04:52.120
+with that.
+
+171
+00:04:52.120 --> 00:04:54.400
+I'll turn off my AI Companion so that
+
+172
+00:04:54.400 --> 00:04:55.720
+we just write everything manually.
+
+173
+00:04:55.720 --> 00:04:56.960
+And this is a good practice when
+
+174
+00:04:56.960 --> 00:04:57.960
+you're learning programming
+
+175
+00:04:57.960 --> 00:04:59.480
+in the early days, you shouldn't
+
+176
+00:04:59.480 --> 00:05:01.000
+be using AI because it will
+
+177
+00:05:01.000 --> 00:05:02.160
+stop your learning process.
+
+178
+00:05:02.160 --> 00:05:03.680
+It hinders a lot of.
+
+179
+00:05:03.680 --> 00:05:05.200
+So let's just see how we can do that.
+
+180
+00:05:05.200 --> 00:05:06.520
+The process is pretty simple.
+
+181
+00:05:06.520 --> 00:05:08.080
+The says that hey, you are
+
+182
+00:05:08.080 --> 00:05:09.120
+creating a notification
+
+183
+00:05:09.120 --> 00:05:10.560
+system for smart kettle.
+
+184
+00:05:10.560 --> 00:05:11.520
+Got it.
+
+185
+00:05:11.520 --> 00:05:13.320
+It should remind the user only when
+
+186
+00:05:13.320 --> 00:05:14.880
+the kettle has finished boiling.
+
+187
+00:05:14.880 --> 00:05:16.600
+The task which we have in front
+
+188
+00:05:16.600 --> 00:05:19.280
+of us is there should be a variable
+
+189
+00:05:19.280 --> 00:05:20.680
+kettle boiled which should be.
+
+190
+00:05:20.680 --> 00:05:22.200
+Which can be true or false.
+
+191
+00:05:22.200 --> 00:05:23.160
+So let's just say how we
+
+192
+00:05:23.160 --> 00:05:24.240
+declare the variable.
+
+193
+00:05:24.240 --> 00:05:26.720
+We simply say kettle boiled
+
+194
+00:05:27.600 --> 00:05:29.160
+and usually or sometimes.
+
+195
+00:05:29.160 --> 00:05:31.160
+You'll see these as is kettle boiled.
+
+196
+00:05:31.160 --> 00:05:32.600
+That is also a good variable name.
+
+197
+00:05:32.600 --> 00:05:33.600
+Make sure you always have
+
+198
+00:05:33.600 --> 00:05:34.480
+good variable name.
+
+199
+00:05:35.720 --> 00:05:37.480
+101 of writing Python.
+
+200
+00:05:37.480 --> 00:05:39.240
+Let's just say this is true.
+
+201
+00:05:39.240 --> 00:05:40.680
+So now I need to learn how
+
+202
+00:05:40.680 --> 00:05:42.120
+can I evaluate the condition.
+
+203
+00:05:42.120 --> 00:05:43.240
+So I can use a special
+
+204
+00:05:43.240 --> 00:05:44.120
+keyword known as.
+
+205
+00:05:44.120 --> 00:05:46.240
+If this is a keyword, you cannot
+
+206
+00:05:46.240 --> 00:05:47.240
+use it for variable name.
+
+207
+00:05:47.240 --> 00:05:48.600
+This is a special thing.
+
+208
+00:05:48.600 --> 00:05:49.760
+And then you simply put
+
+209
+00:05:49.760 --> 00:05:50.920
+up a conditional here.
+
+210
+00:05:50.920 --> 00:05:52.840
+This needs to be a Boolean data type.
+
+211
+00:05:52.840 --> 00:05:54.120
+Remember, boolean data type
+
+212
+00:05:54.120 --> 00:05:55.960
+can only be true and false.
+
+213
+00:05:55.960 --> 00:05:57.200
+So this needs to evaluate
+
+214
+00:05:57.200 --> 00:05:58.400
+as true and false this
+
+215
+00:05:58.400 --> 00:05:59.560
+particular keyword here.
+
+216
+00:05:59.560 --> 00:06:01.440
+Then you put up a colon and hit enter
+
+217
+00:06:01.440 --> 00:06:02.270
+and automatically
+
+218
+00:06:02.270 --> 00:06:03.590
+the indentation comes to you.
+
+219
+00:06:03.590 --> 00:06:06.030
+Python is very, very lean or very
+
+220
+00:06:06.030 --> 00:06:07.670
+interested in the indentation part.
+
+221
+00:06:07.670 --> 00:06:09.550
+Slight wrong Indentation can
+
+222
+00:06:09.550 --> 00:06:11.230
+give you lot of bad answers
+
+223
+00:06:11.230 --> 00:06:13.030
+and a lot of errors as well.
+
+224
+00:06:13.030 --> 00:06:14.390
+Then we simply go ahead and use
+
+225
+00:06:14.390 --> 00:06:15.550
+print statement and simply
+
+226
+00:06:15.550 --> 00:06:16.870
+say, hey, we want to have this.
+
+227
+00:06:17.590 --> 00:06:19.250
+I'll just go ahead and say,
+
+228
+00:06:19.250 --> 00:06:22.070
+kettle done with an exclamation
+
+229
+00:06:22.070 --> 00:06:26.470
+and time to make some chai.
+
+230
+00:06:27.520 --> 00:06:29.480
+That's what was instructed to us.
+
+231
+00:06:29.480 --> 00:06:30.360
+It says kettle done.
+
+232
+00:06:30.360 --> 00:06:32.320
+Time to make chai, not some chai.
+
+233
+00:06:33.360 --> 00:06:35.120
+We have to follow the instructions
+
+234
+00:06:35.120 --> 00:06:36.320
+and that is it.
+
+235
+00:06:36.320 --> 00:06:37.400
+That is all the program.
+
+236
+00:06:37.400 --> 00:06:38.000
+It is.
+
+237
+00:06:38.000 --> 00:06:39.600
+Now this program will work only
+
+238
+00:06:39.600 --> 00:06:40.840
+when the kettle is boiling.
+
+239
+00:06:40.840 --> 00:06:41.760
+So let's go ahead and see
+
+240
+00:06:41.760 --> 00:06:42.840
+that how it actually works.
+
+241
+00:06:42.840 --> 00:06:44.120
+I'll go ahead and open up my
+
+242
+00:06:44.120 --> 00:06:45.240
+integrated terminal within
+
+243
+00:06:45.240 --> 00:06:46.760
+this folder so that I can
+
+244
+00:06:46.760 --> 00:06:48.400
+directly run my program
+
+245
+00:06:48.400 --> 00:06:50.040
+and I'll just go ahead and close all
+
+246
+00:06:50.040 --> 00:06:51.200
+of these previous ones.
+
+247
+00:06:52.160 --> 00:06:53.120
+Time to do it again.
+
+248
+00:06:54.140 --> 00:06:54.940
+All right, looks good.
+
+249
+00:06:54.940 --> 00:06:57.020
+Now all I have to do is simply say
+
+250
+00:06:57.020 --> 00:06:58.500
+Python 3 because I'm on a Mac.
+
+251
+00:06:58.500 --> 00:06:59.700
+If you're on Windows, just say
+
+252
+00:06:59.700 --> 00:07:00.660
+Python and we're going
+
+253
+00:07:00.660 --> 00:07:02.260
+to run this program, the one program
+
+254
+00:07:02.260 --> 00:07:04.380
+that we have, Ministory1Py
+
+255
+00:07:04.380 --> 00:07:05.540
+and it says kettle done.
+
+256
+00:07:05.540 --> 00:07:06.780
+Time to make chai.
+
+257
+00:07:06.780 --> 00:07:08.340
+And if the kettle boiling is
+
+258
+00:07:08.340 --> 00:07:09.459
+not done, let's just say that
+
+259
+00:07:09.459 --> 00:07:11.020
+is having a false value.
+
+260
+00:07:11.020 --> 00:07:13.100
+What does this means?
+
+261
+00:07:13.100 --> 00:07:15.260
+This simply says hey do nothing.
+
+262
+00:07:15.260 --> 00:07:16.260
+That's simply just
+
+263
+00:07:16.260 --> 00:07:17.820
+the example we studied.
+
+264
+00:07:17.820 --> 00:07:19.100
+Now what you need to understand
+
+265
+00:07:19.100 --> 00:07:20.940
+here that this whole thing needs
+
+266
+00:07:20.940 --> 00:07:22.460
+to evaluate either true and
+
+267
+00:07:22.460 --> 00:07:25.120
+false and just after the is if
+
+268
+00:07:25.120 --> 00:07:26.480
+this needs to be a condition
+
+269
+00:07:26.480 --> 00:07:28.680
+which finally evaluates to true
+
+270
+00:07:28.680 --> 00:07:30.000
+or false, we will have more such
+
+271
+00:07:30.000 --> 00:07:31.720
+examples and you will absolutely
+
+272
+00:07:31.720 --> 00:07:32.480
+enjoy it.
+
+273
+00:07:32.480 --> 00:07:33.800
+So don't worry about that part.
+
+274
+00:07:33.800 --> 00:07:35.280
+Hope you have enjoyed this.
+
+275
+00:07:35.280 --> 00:07:36.360
+Exactly like this we
+
+276
+00:07:36.360 --> 00:07:37.000
+will move forward.
+
+277
+00:07:37.000 --> 00:07:38.720
+We will have one small story.
+
+278
+00:07:38.720 --> 00:07:39.960
+We will try to write some
+
+279
+00:07:39.960 --> 00:07:40.760
+code for the story.
+
+280
+00:07:40.760 --> 00:07:41.960
+This will make your habit
+
+281
+00:07:41.960 --> 00:07:43.440
+of writing better program in
+
+282
+00:07:43.440 --> 00:07:45.280
+the Python and will get you in habit
+
+283
+00:07:45.280 --> 00:07:47.120
+of solving a problem by making
+
+284
+00:07:47.120 --> 00:07:48.560
+software small software.
+
+285
+00:07:48.560 --> 00:07:49.920
+But it's a software.
+
+286
+00:07:49.920 --> 00:07:51.020
+Let's go ahead and catch
+
+287
+00:07:51.020 --> 00:07:51.920
+up in the next video.

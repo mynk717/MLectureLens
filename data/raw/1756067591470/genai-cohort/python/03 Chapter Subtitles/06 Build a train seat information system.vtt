@@ -1,0 +1,1001 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:01.840
+Hey there everyone.
+
+2
+00:00:01.840 --> 00:00:04.080
+And welcome to another problem.
+
+3
+00:00:04.080 --> 00:00:05.480
+Now this next problem that we
+
+4
+00:00:05.480 --> 00:00:07.200
+have in front of us is a very
+
+5
+00:00:07.200 --> 00:00:08.240
+interesting problem
+
+6
+00:00:08.240 --> 00:00:10.240
+and actually a real world problem.
+
+7
+00:00:10.240 --> 00:00:11.320
+This is something that you will
+
+8
+00:00:11.320 --> 00:00:12.400
+be building in your application.
+
+9
+00:00:12.400 --> 00:00:13.480
+Maybe you'll build something
+
+10
+00:00:13.480 --> 00:00:15.080
+for an aeroplane system or
+
+11
+00:00:15.080 --> 00:00:16.000
+for a train system.
+
+12
+00:00:16.560 --> 00:00:18.080
+This is exactly how you build
+
+13
+00:00:18.080 --> 00:00:19.280
+them in the real world.
+
+14
+00:00:19.280 --> 00:00:20.080
+Also, we'll write
+
+15
+00:00:20.080 --> 00:00:21.520
+the exact same code.
+
+16
+00:00:21.520 --> 00:00:22.720
+Let's read the problem statement,
+
+17
+00:00:22.720 --> 00:00:24.000
+which is my favorite part.
+
+18
+00:00:24.560 --> 00:00:26.480
+You're building a ticket info
+
+19
+00:00:26.480 --> 00:00:28.120
+system for a railway app
+
+20
+00:00:28.120 --> 00:00:29.520
+or a railway application.
+
+21
+00:00:29.520 --> 00:00:31.390
+In short, based on the seat
+
+22
+00:00:31.390 --> 00:00:33.310
+type, show its features.
+
+23
+00:00:33.310 --> 00:00:33.870
+All right.
+
+24
+00:00:33.870 --> 00:00:35.430
+I don't have the idea how to show
+
+25
+00:00:35.430 --> 00:00:36.790
+the features or what features are
+
+26
+00:00:36.790 --> 00:00:38.270
+available, but we'll try our best.
+
+27
+00:00:38.830 --> 00:00:40.750
+The first task is take the input,
+
+28
+00:00:40.750 --> 00:00:43.150
+sleeper, ac, general or luxury.
+
+29
+00:00:43.150 --> 00:00:44.430
+So we have four categories
+
+30
+00:00:44.430 --> 00:00:45.830
+of them and you might be
+
+31
+00:00:45.830 --> 00:00:47.110
+wondering, all right, I have
+
+32
+00:00:47.110 --> 00:00:48.830
+to write a lot of if and else.
+
+33
+00:00:48.830 --> 00:00:51.390
+If the user input is sleeper
+
+34
+00:00:51.390 --> 00:00:53.590
+else if user input is ac, else
+
+35
+00:00:53.590 --> 00:00:55.150
+if the user input is general
+
+36
+00:00:55.150 --> 00:00:56.910
+else if you get the idea.
+
+37
+00:00:57.590 --> 00:00:58.630
+And then we have to match
+
+38
+00:00:58.630 --> 00:00:59.750
+using the match case.
+
+39
+00:00:59.750 --> 00:01:00.830
+So I'll show you another
+
+40
+00:01:00.830 --> 00:01:01.670
+interesting way.
+
+41
+00:01:01.670 --> 00:01:03.590
+Then once you have too many cases
+
+42
+00:01:03.590 --> 00:01:05.590
+to check, you can actually skip
+
+43
+00:01:05.590 --> 00:01:08.710
+the if else loop and the drilling
+
+44
+00:01:08.710 --> 00:01:10.190
+of the whole if else if, else
+
+45
+00:01:10.190 --> 00:01:11.910
+if, else or else if, else if.
+
+46
+00:01:11.910 --> 00:01:13.830
+And then we'll show the unknown.
+
+47
+00:01:13.830 --> 00:01:15.630
+If somebody gives us message
+
+48
+00:01:15.630 --> 00:01:17.350
+which is not matching into
+
+49
+00:01:17.350 --> 00:01:18.710
+these four categories, we'll just
+
+50
+00:01:18.710 --> 00:01:20.150
+show invalid seed type.
+
+51
+00:01:20.150 --> 00:01:21.030
+This is a very interesting
+
+52
+00:01:21.030 --> 00:01:23.350
+problem and a very interesting
+
+53
+00:01:23.350 --> 00:01:24.870
+set of code that we go ahead
+
+54
+00:01:24.870 --> 00:01:26.430
+and write for this one.
+
+55
+00:01:26.430 --> 00:01:27.790
+So we'll just go ahead and get
+
+56
+00:01:27.790 --> 00:01:29.150
+into the conditional and we
+
+57
+00:01:29.150 --> 00:01:30.430
+are going to go ahead and say
+
+58
+00:01:30.430 --> 00:01:34.030
+this one is train seat py.
+
+59
+00:01:35.550 --> 00:01:38.030
+So the step one, the obvious step is
+
+60
+00:01:38.030 --> 00:01:39.470
+to take input from the user.
+
+61
+00:01:39.470 --> 00:01:40.790
+So in this one we'll just go
+
+62
+00:01:40.790 --> 00:01:42.190
+ahead and say input
+
+63
+00:01:42.190 --> 00:01:44.190
+and we'll ask the user enter
+
+64
+00:01:44.750 --> 00:01:47.630
+the seat type or enter seat type.
+
+65
+00:01:47.630 --> 00:01:48.950
+And we'll give the user a message
+
+66
+00:01:48.950 --> 00:01:49.950
+that what kind of seats?
+
+67
+00:01:49.950 --> 00:01:50.880
+You can choose.
+
+68
+00:01:50.880 --> 00:01:52.550
+You can, you can choose from slipper
+
+69
+00:01:53.190 --> 00:01:57.190
+sleeper and you can choose from ac.
+
+70
+00:01:57.190 --> 00:01:59.270
+Obviously air conditioned.
+
+71
+00:01:59.270 --> 00:02:00.870
+You can choose from general
+
+72
+00:02:00.870 --> 00:02:02.390
+if you are in a hurry
+
+73
+00:02:02.390 --> 00:02:05.590
+and we will choose luxury.
+
+74
+00:02:06.390 --> 00:02:07.550
+So these are all the options
+
+75
+00:02:07.550 --> 00:02:09.190
+that user can choose from.
+
+76
+00:02:09.190 --> 00:02:11.190
+And just like always, we'll do
+
+77
+00:02:11.190 --> 00:02:12.390
+the lower so that we don't have
+
+78
+00:02:12.390 --> 00:02:13.830
+to match for so many conditions.
+
+79
+00:02:13.830 --> 00:02:14.950
+We can just reliably check
+
+80
+00:02:14.950 --> 00:02:16.390
+for a couple of conditions only.
+
+81
+00:02:17.050 --> 00:02:18.570
+Now let's store this into a variable.
+
+82
+00:02:18.570 --> 00:02:20.410
+Let's call this one as seat type.
+
+83
+00:02:20.410 --> 00:02:21.130
+There we go.
+
+84
+00:02:22.010 --> 00:02:23.610
+Now once we are done with this,
+
+85
+00:02:23.610 --> 00:02:25.490
+then we can use Instead of else.
+
+86
+00:02:25.490 --> 00:02:26.890
+If we can use a really
+
+87
+00:02:26.890 --> 00:02:28.290
+smart and interesting way
+
+88
+00:02:28.290 --> 00:02:29.410
+of writing the code that is
+
+89
+00:02:29.410 --> 00:02:30.890
+known as match syntax.
+
+90
+00:02:31.450 --> 00:02:33.490
+So what is the variable that you want
+
+91
+00:02:33.490 --> 00:02:35.050
+to match for variety of condition?
+
+92
+00:02:35.050 --> 00:02:37.370
+I want to match for a seat type
+
+93
+00:02:37.370 --> 00:02:38.210
+and it should be
+
+94
+00:02:38.210 --> 00:02:40.170
+a seat type, not tie.
+
+95
+00:02:40.170 --> 00:02:41.210
+Seat type.
+
+96
+00:02:42.820 --> 00:02:44.660
+There we go, seat type.
+
+97
+00:02:44.660 --> 00:02:45.420
+Now then put up
+
+98
+00:02:45.420 --> 00:02:46.740
+a colon and hit enter.
+
+99
+00:02:46.740 --> 00:02:48.140
+Now once you're done with this you
+
+100
+00:02:48.140 --> 00:02:49.820
+can write a keyword case and you
+
+101
+00:02:49.820 --> 00:02:51.700
+can match for a variety of case.
+
+102
+00:02:51.700 --> 00:02:54.060
+Now this case could be integer, could
+
+103
+00:02:54.060 --> 00:02:56.900
+be a float, it could be a string.
+
+104
+00:02:56.900 --> 00:02:58.500
+Lot of things you can match for.
+
+105
+00:02:58.500 --> 00:02:59.820
+And the first case that we
+
+106
+00:02:59.820 --> 00:03:02.100
+are matching for is sleeper.
+
+107
+00:03:02.100 --> 00:03:03.820
+If user has selected sleeper
+
+108
+00:03:03.820 --> 00:03:04.980
+then we want to provide
+
+109
+00:03:04.980 --> 00:03:06.500
+a message based on sleeper.
+
+110
+00:03:06.500 --> 00:03:08.270
+So for example, what are
+
+111
+00:03:08.270 --> 00:03:10.350
+the specialty of a sleeper?
+
+112
+00:03:10.350 --> 00:03:12.310
+I have no idea what user
+
+113
+00:03:12.310 --> 00:03:13.190
+wants to put up here.
+
+114
+00:03:13.190 --> 00:03:14.830
+But we'll just go ahead and say
+
+115
+00:03:14.830 --> 00:03:16.910
+in the sleeper you don't have ac.
+
+116
+00:03:16.910 --> 00:03:17.710
+So no ac.
+
+117
+00:03:18.670 --> 00:03:19.870
+But beds are available.
+
+118
+00:03:19.870 --> 00:03:23.550
+So we'll just say beds available.
+
+119
+00:03:24.350 --> 00:03:26.430
+So this is the features of it.
+
+120
+00:03:26.430 --> 00:03:27.870
+Now not only this, it also
+
+121
+00:03:27.870 --> 00:03:29.470
+can match for another case.
+
+122
+00:03:29.470 --> 00:03:30.870
+So write as many case
+
+123
+00:03:30.870 --> 00:03:32.270
+as you wish to have.
+
+124
+00:03:32.270 --> 00:03:33.390
+Let's just say another case
+
+125
+00:03:33.390 --> 00:03:35.260
+we want to match for is ac.
+
+126
+00:03:35.260 --> 00:03:36.340
+Now behind the scene, what's
+
+127
+00:03:36.340 --> 00:03:39.020
+happening in this is this seat type.
+
+128
+00:03:39.020 --> 00:03:40.060
+Whatever the variable is
+
+129
+00:03:40.060 --> 00:03:40.980
+behind the scene, we are
+
+130
+00:03:40.980 --> 00:03:41.780
+doing something like this.
+
+131
+00:03:41.780 --> 00:03:44.380
+Seat type is equal, equal to sleeper.
+
+132
+00:03:45.900 --> 00:03:47.380
+So behind the scene it is matching
+
+133
+00:03:47.380 --> 00:03:48.900
+for all of this AC just like this.
+
+134
+00:03:48.900 --> 00:03:50.420
+But we don't write this syntax
+
+135
+00:03:50.420 --> 00:03:51.379
+when we actually go
+
+136
+00:03:51.379 --> 00:03:52.580
+for the case we simply go ahead
+
+137
+00:03:52.580 --> 00:03:54.460
+and say if the case is ac.
+
+138
+00:03:54.460 --> 00:03:55.620
+So in that case we simply
+
+139
+00:03:55.620 --> 00:03:58.140
+go ahead and print ac.
+
+140
+00:03:58.140 --> 00:04:00.060
+What do we want to write in the ac?
+
+141
+00:04:00.060 --> 00:04:02.710
+So AC is going to be air
+
+142
+00:04:03.830 --> 00:04:05.830
+conditioned hopefully.
+
+143
+00:04:05.830 --> 00:04:08.950
+And we'll say comfy, right?
+
+144
+00:04:10.630 --> 00:04:11.270
+Comfy.
+
+145
+00:04:11.270 --> 00:04:11.670
+Right.
+
+146
+00:04:12.790 --> 00:04:13.990
+And we have couple of other
+
+147
+00:04:13.990 --> 00:04:15.430
+cases that we have to match it.
+
+148
+00:04:16.630 --> 00:04:18.390
+I'll just go ahead and say case.
+
+149
+00:04:18.390 --> 00:04:19.750
+What else you want to go for?
+
+150
+00:04:20.470 --> 00:04:22.630
+Maybe we want to go for next is
+
+151
+00:04:23.510 --> 00:04:28.760
+general and we want to print
+
+152
+00:04:28.760 --> 00:04:30.160
+a message for the general.
+
+153
+00:04:30.160 --> 00:04:31.040
+There we go.
+
+154
+00:04:31.040 --> 00:04:34.480
+And we will say general, these
+
+155
+00:04:34.480 --> 00:04:36.640
+are usually the cheapest option.
+
+156
+00:04:39.200 --> 00:04:40.560
+Cheapest option.
+
+157
+00:04:41.440 --> 00:04:45.440
+And we'll say no reservation.
+
+158
+00:04:45.440 --> 00:04:47.360
+Hopefully I wrote that correct.
+
+159
+00:04:47.360 --> 00:04:49.200
+And then we simply can have
+
+160
+00:04:49.200 --> 00:04:51.920
+for another case which is luxury.
+
+161
+00:04:54.090 --> 00:04:55.090
+And probably they give
+
+162
+00:04:55.090 --> 00:04:56.250
+meal in the luxury.
+
+163
+00:04:56.250 --> 00:04:57.410
+So I'll just go ahead and put
+
+164
+00:04:57.410 --> 00:04:58.570
+up a print statement
+
+165
+00:04:58.570 --> 00:05:00.490
+and we are going to call this one as
+
+166
+00:05:01.210 --> 00:05:04.490
+luxury just like this.
+
+167
+00:05:04.490 --> 00:05:08.330
+And we'll say premium seats
+
+168
+00:05:08.330 --> 00:05:09.450
+with meals.
+
+169
+00:05:10.330 --> 00:05:11.810
+And what about the case when
+
+170
+00:05:11.810 --> 00:05:13.130
+it doesn't match anything?
+
+171
+00:05:13.130 --> 00:05:14.490
+So in that case what we can
+
+172
+00:05:14.490 --> 00:05:15.490
+go ahead and simply put
+
+173
+00:05:15.490 --> 00:05:17.450
+up a statement case and then you
+
+174
+00:05:17.450 --> 00:05:18.970
+can just put an underscore.
+
+175
+00:05:18.970 --> 00:05:20.250
+Yes, this looks little
+
+176
+00:05:20.250 --> 00:05:21.050
+weird, but this is how
+
+177
+00:05:21.050 --> 00:05:22.470
+it works, underscore.
+
+178
+00:05:22.470 --> 00:05:23.590
+And then you can simply say
+
+179
+00:05:23.590 --> 00:05:25.590
+a print message that simply says
+
+180
+00:05:26.230 --> 00:05:27.590
+invalid seed type.
+
+181
+00:05:30.070 --> 00:05:31.350
+There we go.
+
+182
+00:05:31.350 --> 00:05:33.270
+So notice here it's a very strange
+
+183
+00:05:33.270 --> 00:05:34.750
+kind of a, mechanism if you're
+
+184
+00:05:34.750 --> 00:05:35.790
+seeing this for the first time.
+
+185
+00:05:35.790 --> 00:05:37.310
+But this actually looks much
+
+186
+00:05:37.310 --> 00:05:38.470
+more readable as compared
+
+187
+00:05:38.470 --> 00:05:40.470
+to constant if and else.
+
+188
+00:05:40.470 --> 00:05:41.430
+And yes, you can use
+
+189
+00:05:41.430 --> 00:05:43.030
+anywhere, wherever you like.
+
+190
+00:05:43.030 --> 00:05:44.550
+Let's go ahead and try to run
+
+191
+00:05:44.550 --> 00:05:45.950
+this program and first let's
+
+192
+00:05:45.950 --> 00:05:47.150
+check what happens when we give
+
+193
+00:05:47.150 --> 00:05:48.690
+any type of seat and see
+
+194
+00:05:48.690 --> 00:05:50.120
+if, if we're doing anything wrong.
+
+195
+00:05:51.320 --> 00:05:52.840
+Let's go ahead and clean this
+
+196
+00:05:52.840 --> 00:05:55.320
+up and we'll say Python 3 and this
+
+197
+00:05:55.320 --> 00:05:57.480
+time we'll run for the train seats,
+
+198
+00:05:57.480 --> 00:05:58.800
+enter the seat type.
+
+199
+00:05:58.800 --> 00:05:59.960
+I would say something
+
+200
+00:06:01.160 --> 00:06:02.800
+and it says invalid seat type.
+
+201
+00:06:02.800 --> 00:06:04.320
+All right, so at least our
+
+202
+00:06:04.320 --> 00:06:05.800
+last case is getting matched.
+
+203
+00:06:05.800 --> 00:06:07.240
+Let's run it one more time.
+
+204
+00:06:07.240 --> 00:06:08.520
+This time I want to say I want
+
+205
+00:06:08.520 --> 00:06:11.320
+to match for ac and it says ac
+
+206
+00:06:11.320 --> 00:06:13.000
+air conditioned, comfy ride.
+
+207
+00:06:13.000 --> 00:06:14.760
+And the best part about this program
+
+208
+00:06:14.760 --> 00:06:16.480
+is now I can just write it like
+
+209
+00:06:16.480 --> 00:06:21.960
+this, this general, general.
+
+210
+00:06:23.400 --> 00:06:24.120
+There we go.
+
+211
+00:06:24.120 --> 00:06:26.000
+And still it will match because
+
+212
+00:06:26.000 --> 00:06:27.360
+we have actually taken care
+
+213
+00:06:27.360 --> 00:06:29.320
+of it by putting up a lower here.
+
+214
+00:06:29.320 --> 00:06:31.360
+So this is a great way of how we
+
+215
+00:06:31.360 --> 00:06:32.599
+can actually work with that.
+
+216
+00:06:32.599 --> 00:06:35.080
+And trust me, these are the only
+
+217
+00:06:35.080 --> 00:06:36.760
+cases you want to walk through.
+
+218
+00:06:36.760 --> 00:06:37.960
+So in the entirety
+
+219
+00:06:37.960 --> 00:06:39.440
+of the program that we have written,
+
+220
+00:06:39.440 --> 00:06:40.600
+these are only the cases.
+
+221
+00:06:40.600 --> 00:06:42.320
+I've given these exercise for you
+
+222
+00:06:42.320 --> 00:06:43.280
+in case you want to try them
+
+223
+00:06:43.280 --> 00:06:44.440
+again in the same program.
+
+224
+00:06:45.330 --> 00:06:46.250
+But again just giving you
+
+225
+00:06:46.250 --> 00:06:47.490
+a walkthrough, these are the only
+
+226
+00:06:47.490 --> 00:06:48.530
+problems that we have.
+
+227
+00:06:48.530 --> 00:06:49.690
+So if we go ahead and build
+
+228
+00:06:49.690 --> 00:06:51.610
+the mini store, this is simple.
+
+229
+00:06:51.610 --> 00:06:53.700
+If and else if you want to break
+
+230
+00:06:53.700 --> 00:06:54.650
+for more suggestion.
+
+231
+00:06:54.650 --> 00:06:55.930
+This is classic if and else.
+
+232
+00:06:55.930 --> 00:06:57.250
+If you want to go for more
+
+233
+00:06:57.250 --> 00:06:58.250
+nesting of it.
+
+234
+00:06:58.250 --> 00:06:59.890
+Yes, we saw that as well.
+
+235
+00:06:59.890 --> 00:07:01.330
+We also saw that we can
+
+236
+00:07:01.330 --> 00:07:02.490
+use ternary operator.
+
+237
+00:07:02.490 --> 00:07:03.690
+We have also seen that we
+
+238
+00:07:03.690 --> 00:07:04.930
+can actually go ahead and do
+
+239
+00:07:04.930 --> 00:07:06.210
+a lot of if and else.
+
+240
+00:07:06.210 --> 00:07:08.650
+And another alternative of lot of if
+
+241
+00:07:08.650 --> 00:07:11.250
+and else is this match and case.
+
+242
+00:07:11.250 --> 00:07:13.370
+So I hope you have had an interesting
+
+243
+00:07:13.370 --> 00:07:15.650
+time in building this train
+
+244
+00:07:15.650 --> 00:07:17.450
+seat classification information
+
+245
+00:07:17.450 --> 00:07:19.850
+program and enjoyed this as well.
+
+246
+00:07:19.850 --> 00:07:21.130
+That is it for this video
+
+247
+00:07:21.130 --> 00:07:22.130
+and you know the drill.
+
+248
+00:07:22.130 --> 00:07:23.810
+I always ask for the reviews.
+
+249
+00:07:23.810 --> 00:07:25.640
+That's it for this video and catch
+
+250
+00:07:25.640 --> 00:07:26.570
+up in the next one.

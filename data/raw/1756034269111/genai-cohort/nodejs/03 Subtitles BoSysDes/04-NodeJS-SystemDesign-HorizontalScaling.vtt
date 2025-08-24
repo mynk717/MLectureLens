@@ -1,0 +1,845 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:03.120
+All right, so now let me talk about
+
+2
+00:00:03.120 --> 00:00:04.680
+another scaling strategy that
+
+3
+00:00:04.680 --> 00:00:06.320
+is known as horizontal scaling.
+
+4
+00:00:06.320 --> 00:00:07.880
+Okay, so in the last video we have
+
+5
+00:00:07.880 --> 00:00:09.680
+already seen the vertical scaling.
+
+6
+00:00:09.680 --> 00:00:11.720
+So now this system, you know, what
+
+7
+00:00:11.720 --> 00:00:13.000
+are the pros and what are the cons?
+
+8
+00:00:13.000 --> 00:00:14.640
+Let's redesign the system.
+
+9
+00:00:14.640 --> 00:00:15.440
+This time.
+
+10
+00:00:15.440 --> 00:00:16.760
+What I'm going to do is we are
+
+11
+00:00:16.760 --> 00:00:17.880
+going to have a lot of users.
+
+12
+00:00:17.880 --> 00:00:18.560
+Of course, right?
+
+13
+00:00:18.560 --> 00:00:20.000
+We have a lot of users.
+
+14
+00:00:20.800 --> 00:00:23.560
+Instead of having one server, let
+
+15
+00:00:23.560 --> 00:00:24.720
+me just have first one server.
+
+16
+00:00:24.720 --> 00:00:26.320
+Let's say this is my one server.
+
+17
+00:00:26.320 --> 00:00:28.560
+And this server has a bare minimum
+
+18
+00:00:28.560 --> 00:00:30.730
+configuration that is CPU
+
+19
+00:00:30.730 --> 00:00:33.090
+and you have a 4GB of RAM, right?
+
+20
+00:00:33.090 --> 00:00:35.130
+So 2 CPU, 4GB of RAM.
+
+21
+00:00:35.130 --> 00:00:36.370
+This machine is capable
+
+22
+00:00:36.370 --> 00:00:38.730
+of handling maybe 70 to 80 people.
+
+23
+00:00:38.730 --> 00:00:41.130
+Now what happens as my load is
+
+24
+00:00:41.130 --> 00:00:43.010
+increasing, what I'm going to do is
+
+25
+00:00:43.010 --> 00:00:46.170
+I am going to add one more server.
+
+26
+00:00:46.170 --> 00:00:48.170
+I am not upgrading the server,
+
+27
+00:00:48.170 --> 00:00:50.010
+I am not touching the server.
+
+28
+00:00:50.010 --> 00:00:52.490
+I added one more replica,
+
+29
+00:00:52.490 --> 00:00:54.490
+one more copy of the server.
+
+30
+00:00:54.490 --> 00:00:56.530
+As my load increases, I am going
+
+31
+00:00:56.530 --> 00:00:58.150
+to add one more server.
+
+32
+00:00:58.150 --> 00:00:59.430
+But here is a problem.
+
+33
+00:00:59.430 --> 00:01:00.150
+Okay?
+
+34
+00:01:00.150 --> 00:01:01.310
+You can see that I have
+
+35
+00:01:01.310 --> 00:01:02.710
+added more servers.
+
+36
+00:01:02.710 --> 00:01:05.630
+But the problem here is how users
+
+37
+00:01:05.630 --> 00:01:07.590
+will know to which server to go.
+
+38
+00:01:07.590 --> 00:01:09.670
+Because technically, let's say this
+
+39
+00:01:09.670 --> 00:01:11.110
+server, has an IP of this thing.
+
+40
+00:01:11.110 --> 00:01:11.470
+Okay?
+
+41
+00:01:11.470 --> 00:01:12.950
+This is the original ip.
+
+42
+00:01:12.950 --> 00:01:14.590
+Now you are spinning up one
+
+43
+00:01:14.590 --> 00:01:15.790
+more new machine, the IP
+
+44
+00:01:15.790 --> 00:01:16.510
+address will be different.
+
+45
+00:01:16.510 --> 00:01:17.790
+You are spinning up one more machine,
+
+46
+00:01:17.790 --> 00:01:20.710
+the IP address will be different if
+
+47
+00:01:20.710 --> 00:01:22.310
+on your DNS because you
+
+48
+00:01:22.310 --> 00:01:24.350
+can only have one IP per domain.
+
+49
+00:01:24.350 --> 00:01:27.870
+If piyushgurk.dev okay.dev
+
+50
+00:01:27.870 --> 00:01:29.984
+is actually pointing to 2.
+
+51
+00:01:29.984 --> 00:01:30.598
+3.
+
+52
+00:01:30.598 --> 00:01:31.630
+4.5.
+
+53
+00:01:31.630 --> 00:01:34.030
+All the users are anyway redirected
+
+54
+00:01:34.030 --> 00:01:35.350
+to this machine only, right?
+
+55
+00:01:35.350 --> 00:01:36.310
+No one is going to this
+
+56
+00:01:36.310 --> 00:01:37.790
+and no one is going to this.
+
+57
+00:01:37.790 --> 00:01:40.190
+So the problem is that either you
+
+58
+00:01:40.190 --> 00:01:41.670
+have to create multiple domains,
+
+59
+00:01:41.670 --> 00:01:43.150
+you have to create something like
+
+60
+00:01:43.150 --> 00:01:46.830
+fuse kirk.hyhen1.dev then you
+
+61
+00:01:46.830 --> 00:01:47.870
+have to create, then you have to
+
+62
+00:01:47.870 --> 00:01:49.350
+buy one more domain that is like
+
+63
+00:01:49.350 --> 00:01:51.190
+two and then you have to buy one
+
+64
+00:01:51.190 --> 00:01:52.230
+more domain that is something
+
+65
+00:01:52.230 --> 00:01:53.030
+like this.
+
+66
+00:01:53.030 --> 00:01:54.630
+And then you have to basically
+
+67
+00:01:54.630 --> 00:01:56.230
+point them to respective servers.
+
+68
+00:01:56.230 --> 00:01:57.750
+And you have to ask the users
+
+69
+00:01:57.750 --> 00:01:59.750
+that please choose any randomly.
+
+70
+00:01:59.750 --> 00:02:01.070
+If that server is not working,
+
+71
+00:02:01.070 --> 00:02:02.430
+you can choose any other of them.
+
+72
+00:02:02.430 --> 00:02:03.390
+Either one of them is
+
+73
+00:02:03.390 --> 00:02:04.310
+for sure working.
+
+74
+00:02:04.310 --> 00:02:05.470
+That's not the right thing, right?
+
+75
+00:02:05.470 --> 00:02:07.590
+Because eventually everyone will
+
+76
+00:02:07.590 --> 00:02:09.070
+first try to go to first server.
+
+77
+00:02:09.070 --> 00:02:10.389
+If it is not working, go to here.
+
+78
+00:02:10.389 --> 00:02:11.910
+So there is going to be a chaos.
+
+79
+00:02:11.910 --> 00:02:13.710
+The problem here is that you
+
+80
+00:02:13.710 --> 00:02:15.430
+are not able to balance the load
+
+81
+00:02:15.430 --> 00:02:17.050
+between them and that's where
+
+82
+00:02:17.050 --> 00:02:18.450
+your load balancer comes in.
+
+83
+00:02:18.450 --> 00:02:20.170
+So whenever you do this kind
+
+84
+00:02:20.170 --> 00:02:21.450
+of Scaling, where you add
+
+85
+00:02:21.450 --> 00:02:23.610
+more servers, you add more replicas
+
+86
+00:02:23.610 --> 00:02:24.850
+of the same server.
+
+87
+00:02:24.850 --> 00:02:26.090
+You need something known
+
+88
+00:02:26.090 --> 00:02:27.490
+as a load balancer.
+
+89
+00:02:28.050 --> 00:02:30.290
+Okay, this load balancer,
+
+90
+00:02:30.290 --> 00:02:32.609
+is again a machine which
+
+91
+00:02:32.609 --> 00:02:34.210
+has its own IP address.
+
+92
+00:02:34.210 --> 00:02:36.530
+Okay, so let's say, the IP address
+
+93
+00:02:36.530 --> 00:02:37.570
+of this particular machine
+
+94
+00:02:37.570 --> 00:02:39.410
+is, you know, maybe nine.
+
+95
+00:02:39.410 --> 00:02:40.370
+Let's take nine.
+
+96
+00:02:40.370 --> 00:02:41.690
+So what you are going to do is on
+
+97
+00:02:41.690 --> 00:02:43.530
+your DNS, you are going to redirect
+
+98
+00:02:43.530 --> 00:02:45.670
+the users on your load balancer.
+
+99
+00:02:45.670 --> 00:02:47.430
+So there is no direct request.
+
+100
+00:02:47.430 --> 00:02:49.230
+You can just drop all these,
+
+101
+00:02:49.230 --> 00:02:50.550
+you know, direct requests.
+
+102
+00:02:50.550 --> 00:02:52.110
+So direct requests are
+
+103
+00:02:52.110 --> 00:02:53.670
+not allowed anymore.
+
+104
+00:02:53.670 --> 00:02:55.750
+What users need to basically do is
+
+105
+00:02:55.750 --> 00:02:57.430
+users will interact with what
+
+106
+00:02:57.430 --> 00:02:59.230
+users are going to make all the
+
+107
+00:02:59.230 --> 00:03:01.350
+requests to the load balancer,
+
+108
+00:03:01.350 --> 00:03:04.070
+and your load balancer internally
+
+109
+00:03:04.070 --> 00:03:05.990
+will balance the load between the
+
+110
+00:03:05.990 --> 00:03:06.630
+servers.
+
+111
+00:03:06.630 --> 00:03:08.270
+So first request to first server,
+
+112
+00:03:08.270 --> 00:03:09.470
+second request to second server,
+
+113
+00:03:09.470 --> 00:03:10.790
+third request to third server,
+
+114
+00:03:10.790 --> 00:03:12.430
+fourth request to the first server.
+
+115
+00:03:12.430 --> 00:03:13.510
+5, 6, 7, 8.
+
+116
+00:03:13.510 --> 00:03:15.890
+And this is known as round
+
+117
+00:03:15.890 --> 00:03:18.050
+robin load balancing.
+
+118
+00:03:18.850 --> 00:03:20.810
+Okay, so in round, round robin
+
+119
+00:03:20.810 --> 00:03:22.050
+load balancing, what happens?
+
+120
+00:03:22.050 --> 00:03:23.210
+First user goes to first
+
+121
+00:03:23.210 --> 00:03:24.130
+server, second user goes
+
+122
+00:03:24.130 --> 00:03:25.490
+to second, third, fourth, fifth,
+
+123
+00:03:25.490 --> 00:03:26.970
+sixth, seventh, eighth, ninth,
+
+124
+00:03:26.970 --> 00:03:27.970
+tenth, eleventh, twelve.
+
+125
+00:03:27.970 --> 00:03:29.810
+Round robin load balancing.
+
+126
+00:03:29.810 --> 00:03:31.730
+So this solves the problem
+
+127
+00:03:31.730 --> 00:03:33.250
+that now what happens is number
+
+128
+00:03:33.250 --> 00:03:34.970
+one, you are scaling number one,
+
+129
+00:03:34.970 --> 00:03:36.010
+you are scaling number two.
+
+130
+00:03:36.010 --> 00:03:37.730
+There is no single point of failure.
+
+131
+00:03:37.730 --> 00:03:39.210
+If this machine has some
+
+132
+00:03:39.210 --> 00:03:40.330
+technical issue, let's say
+
+133
+00:03:40.330 --> 00:03:41.170
+this machine is down.
+
+134
+00:03:41.790 --> 00:03:43.390
+Now you still have two machines.
+
+135
+00:03:43.390 --> 00:03:44.990
+If this machine is also down
+
+136
+00:03:44.990 --> 00:03:46.670
+for some reasons, right, you
+
+137
+00:03:46.670 --> 00:03:48.270
+still have one machine running.
+
+138
+00:03:48.270 --> 00:03:49.790
+So what you can do is you can
+
+139
+00:03:49.790 --> 00:03:50.990
+actually keep on spinning more
+
+140
+00:03:50.990 --> 00:03:53.630
+machines as your traffic grows.
+
+141
+00:03:53.630 --> 00:03:56.030
+So you know here that, you know,
+
+142
+00:03:56.030 --> 00:03:58.910
+one machine, okay, one machine
+
+143
+00:03:59.790 --> 00:04:02.110
+is capable of handling around
+
+144
+00:04:02.110 --> 00:04:04.030
+approximately 60 users,
+
+145
+00:04:04.030 --> 00:04:05.470
+let's say 60 to 70 users.
+
+146
+00:04:05.470 --> 00:04:07.960
+So when you have more than 60 loads,
+
+147
+00:04:07.960 --> 00:04:09.280
+keep another machine ready.
+
+148
+00:04:09.280 --> 00:04:10.640
+When you have 120 users,
+
+149
+00:04:10.640 --> 00:04:11.800
+keep third machine ready.
+
+150
+00:04:11.800 --> 00:04:13.080
+So this is how you scale.
+
+151
+00:04:13.080 --> 00:04:15.400
+And this strategy is known as
+
+152
+00:04:16.200 --> 00:04:19.480
+horizontal scaling.
+
+153
+00:04:19.480 --> 00:04:20.440
+Scaling.
+
+154
+00:04:20.440 --> 00:04:21.920
+So what is horizontal scaling?
+
+155
+00:04:21.920 --> 00:04:22.880
+Horizontal scaling
+
+156
+00:04:22.880 --> 00:04:25.560
+by definition means adding more
+
+157
+00:04:26.280 --> 00:04:29.760
+replica of the server is
+
+158
+00:04:29.760 --> 00:04:31.200
+known as horizontal scaling.
+
+159
+00:04:31.200 --> 00:04:32.880
+Okay, so in horizontal scaling
+
+160
+00:04:32.880 --> 00:04:34.760
+you add more replicas and to,
+
+161
+00:04:34.760 --> 00:04:36.000
+to actually balance the load
+
+162
+00:04:36.000 --> 00:04:37.400
+between multiple servers, because
+
+163
+00:04:37.400 --> 00:04:39.080
+now you have multiple replicas,
+
+164
+00:04:39.080 --> 00:04:40.640
+you need a load balancer.
+
+165
+00:04:40.640 --> 00:04:42.920
+Okay, so vertical scaling, adding
+
+166
+00:04:42.920 --> 00:04:44.160
+more power and resources
+
+167
+00:04:44.160 --> 00:04:45.840
+to a single server, horizontal
+
+168
+00:04:45.840 --> 00:04:47.400
+scaling, adding more servers.
+
+169
+00:04:47.400 --> 00:04:49.400
+And you know, most cloud providers
+
+170
+00:04:49.400 --> 00:04:51.320
+like aws, they give you something
+
+171
+00:04:51.320 --> 00:04:53.560
+known as auto scaling policy.
+
+172
+00:04:53.560 --> 00:04:54.840
+Okay, Auto scaling groups
+
+173
+00:04:54.840 --> 00:04:56.040
+and auto scaling policy.
+
+174
+00:04:56.040 --> 00:04:57.960
+So this is known as auto scaling,
+
+175
+00:04:57.960 --> 00:04:59.600
+asg, auto scaling group.
+
+176
+00:04:59.600 --> 00:05:01.440
+So what happens is you can define
+
+177
+00:05:01.440 --> 00:05:04.130
+a policy saying, okay, that if
+
+178
+00:05:04.690 --> 00:05:10.130
+my average CPU goes, okay, goes
+
+179
+00:05:10.130 --> 00:05:13.410
+above, let's say you know, 70%
+
+180
+00:05:14.290 --> 00:05:18.610
+keep another machine ready.
+
+181
+00:05:18.610 --> 00:05:21.090
+So this is known as scaling out.
+
+182
+00:05:21.090 --> 00:05:22.610
+Okay, scaling out policy,
+
+183
+00:05:22.610 --> 00:05:25.090
+which means that if the how many
+
+184
+00:05:25.090 --> 00:05:26.610
+machines are running, I don't care
+
+185
+00:05:26.610 --> 00:05:28.130
+when the average CPU utilization
+
+186
+00:05:28.130 --> 00:05:29.850
+is more than 70%, please keep
+
+187
+00:05:29.850 --> 00:05:31.310
+the another machine ready.
+
+188
+00:05:31.310 --> 00:05:34.750
+And similarly, if it goes okay,
+
+189
+00:05:34.750 --> 00:05:40.430
+if it goes below 70%, okay, 70%
+
+190
+00:05:40.430 --> 00:05:42.350
+for let's say more than one hour,
+
+191
+00:05:43.150 --> 00:05:44.310
+just kill all the machines
+
+192
+00:05:44.310 --> 00:05:45.310
+and keep one machine.
+
+193
+00:05:45.310 --> 00:05:49.550
+Okay, kill all extra machines.
+
+194
+00:05:49.550 --> 00:05:50.830
+So what happens when you
+
+195
+00:05:50.830 --> 00:05:52.030
+have a spike traffic?
+
+196
+00:05:52.030 --> 00:05:54.310
+You add more servers when this,
+
+197
+00:05:54.310 --> 00:05:55.630
+when the traffic is gone
+
+198
+00:05:55.630 --> 00:05:57.070
+on your typical day, you delete
+
+199
+00:05:57.070 --> 00:05:58.030
+all the machines and just keep
+
+200
+00:05:58.030 --> 00:05:59.190
+one or two machines ready.
+
+201
+00:05:59.190 --> 00:06:00.830
+So this is how you do auto scaling.
+
+202
+00:06:00.830 --> 00:06:02.070
+So this is a nice balance
+
+203
+00:06:02.070 --> 00:06:03.550
+between resources.
+
+204
+00:06:03.550 --> 00:06:05.150
+When you need them, you add them.
+
+205
+00:06:05.150 --> 00:06:05.990
+When you don't need them,
+
+206
+00:06:05.990 --> 00:06:07.150
+you just destroy them.
+
+207
+00:06:07.150 --> 00:06:08.310
+So this is known as
+
+208
+00:06:08.310 --> 00:06:09.710
+horizontal scaling.
+
+209
+00:06:09.710 --> 00:06:11.510
+So now you know two scaling methods
+
+210
+00:06:11.510 --> 00:06:13.030
+of a server, that is vertical
+
+211
+00:06:13.030 --> 00:06:14.830
+scaling and horizontal scaling.

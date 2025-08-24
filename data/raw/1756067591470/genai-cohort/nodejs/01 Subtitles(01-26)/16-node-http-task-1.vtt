@@ -1,0 +1,1633 @@
+WEBVTT
+
+1
+00:00:00.320 --> 00:00:01.920
+So hello guys, in this
+
+2
+00:00:01.920 --> 00:00:03.920
+particular video, let's create
+
+3
+00:00:03.920 --> 00:00:05.440
+a very simple project.
+
+4
+00:00:05.440 --> 00:00:06.560
+So here I have created
+
+5
+00:00:06.560 --> 00:00:08.360
+a task MD file.
+
+6
+00:00:08.360 --> 00:00:09.760
+You will get these files.
+
+7
+00:00:09.760 --> 00:00:11.560
+So we have couple of tasks here.
+
+8
+00:00:11.560 --> 00:00:12.600
+You can read the task
+
+9
+00:00:12.600 --> 00:00:13.680
+that what we have to do.
+
+10
+00:00:13.680 --> 00:00:15.640
+And let's try to implement
+
+11
+00:00:15.640 --> 00:00:17.600
+all of these tasks and try
+
+12
+00:00:17.600 --> 00:00:18.880
+to code a server.
+
+13
+00:00:18.880 --> 00:00:21.440
+Okay, so again, boilerplate code.
+
+14
+00:00:21.440 --> 00:00:23.320
+So let's have an index js file
+
+15
+00:00:23.320 --> 00:00:26.320
+and let's have npm any typhoon y
+
+16
+00:00:27.010 --> 00:00:27.730
+so that we have, we have
+
+17
+00:00:27.730 --> 00:00:29.810
+the package or JSON file, right?
+
+18
+00:00:29.810 --> 00:00:31.330
+So inside the package JSON.
+
+19
+00:00:31.330 --> 00:00:33.330
+So what I'll do is I'll just say npm
+
+20
+00:00:33.330 --> 00:00:36.610
+install at the rate types/ node.
+
+21
+00:00:36.610 --> 00:00:37.930
+So let's wait for it.
+
+22
+00:00:37.930 --> 00:00:39.210
+And also let's configure
+
+23
+00:00:39.210 --> 00:00:41.410
+the start script to say
+
+24
+00:00:41.410 --> 00:00:43.330
+node hyphen hyphen Var.
+
+25
+00:00:43.330 --> 00:00:45.170
+And that is index js.
+
+26
+00:00:45.170 --> 00:00:45.890
+Cool stuff.
+
+27
+00:00:45.890 --> 00:00:48.770
+Right now inside my index js.
+
+28
+00:00:48.770 --> 00:00:50.130
+So what, what is my task?
+
+29
+00:00:50.130 --> 00:00:51.330
+Right, let's go on to task.
+
+30
+00:00:51.330 --> 00:00:52.450
+So my task is very simple.
+
+31
+00:00:53.020 --> 00:00:54.500
+So we have these four routes
+
+32
+00:00:54.500 --> 00:00:55.380
+that we have to make.
+
+33
+00:00:55.380 --> 00:00:57.100
+Routes or path is same thing.
+
+34
+00:00:57.100 --> 00:00:58.500
+So if there is a get request
+
+35
+00:00:58.500 --> 00:00:59.780
+on slash, we have to send
+
+36
+00:00:59.780 --> 00:01:00.940
+a simple hello message.
+
+37
+00:01:00.940 --> 00:01:02.100
+If there is a get request
+
+38
+00:01:02.100 --> 00:01:03.180
+on slash, contact us.
+
+39
+00:01:03.180 --> 00:01:04.220
+We have to do this.
+
+40
+00:01:04.220 --> 00:01:05.540
+If there's a post request
+
+41
+00:01:05.540 --> 00:01:06.940
+on slash tweet we have to do this.
+
+42
+00:01:06.940 --> 00:01:08.100
+If there's a get request
+
+43
+00:01:08.100 --> 00:01:09.420
+on this thing, we have to do this.
+
+44
+00:01:09.420 --> 00:01:11.340
+And also we need to store all
+
+45
+00:01:11.340 --> 00:01:12.420
+the incoming requests with
+
+46
+00:01:12.420 --> 00:01:14.940
+the timestamps to a log TXT file.
+
+47
+00:01:14.940 --> 00:01:16.060
+Wow, amazing.
+
+48
+00:01:16.940 --> 00:01:20.700
+So const HTTP equals request require
+
+49
+00:01:20.700 --> 00:01:22.500
+and let's have the node
+
+50
+00:01:22.500 --> 00:01:25.180
+HTTP module, you know, imported.
+
+51
+00:01:25.180 --> 00:01:27.020
+Then you can create a server using
+
+52
+00:01:27.020 --> 00:01:28.980
+this HTTP create server function
+
+53
+00:01:28.980 --> 00:01:30.540
+which takes a callback function.
+
+54
+00:01:30.540 --> 00:01:32.060
+So you have access to request,
+
+55
+00:01:32.060 --> 00:01:33.740
+you have response, and that's it.
+
+56
+00:01:34.380 --> 00:01:35.380
+Finally, server.
+
+57
+00:01:35.380 --> 00:01:36.940
+Hey server, can you please listen
+
+58
+00:01:36.940 --> 00:01:38.860
+on port number 8,000?
+
+59
+00:01:38.860 --> 00:01:40.900
+And once you do that, once you are
+
+60
+00:01:40.900 --> 00:01:42.580
+successfully able to bind yourself
+
+61
+00:01:42.580 --> 00:01:44.420
+to that port, give me a console
+
+62
+00:01:44.420 --> 00:01:46.680
+log message saying that that HTTP
+
+63
+00:01:46.680 --> 00:01:51.080
+server, is running on port 8000.
+
+64
+00:01:51.720 --> 00:01:53.160
+Cool stuff, right?
+
+65
+00:01:53.160 --> 00:01:55.560
+So let's just do an npm start.
+
+66
+00:01:55.560 --> 00:01:56.400
+So you can see that my
+
+67
+00:01:56.400 --> 00:01:57.240
+server is running.
+
+68
+00:01:57.800 --> 00:01:59.480
+So first things first, right?
+
+69
+00:02:00.360 --> 00:02:02.360
+So if you go on to the tasks,
+
+70
+00:02:02.360 --> 00:02:03.640
+okay, so first is that you
+
+71
+00:02:03.640 --> 00:02:04.640
+have to make a get route.
+
+72
+00:02:04.640 --> 00:02:05.960
+Send a simple hello message
+
+73
+00:02:05.960 --> 00:02:06.600
+from the server.
+
+74
+00:02:06.600 --> 00:02:08.600
+Okay, so what I can do is I can
+
+75
+00:02:08.600 --> 00:02:10.880
+say, hey, const the method, okay?
+
+76
+00:02:10.880 --> 00:02:12.040
+So I can just say request
+
+77
+00:02:12.040 --> 00:02:13.000
+method, okay?
+
+78
+00:02:13.530 --> 00:02:14.930
+And you can have the path,
+
+79
+00:02:14.930 --> 00:02:16.890
+okay, that is request path.
+
+80
+00:02:16.890 --> 00:02:19.250
+So I'm just getting request, URL.
+
+81
+00:02:19.250 --> 00:02:19.850
+Sorry.
+
+82
+00:02:19.850 --> 00:02:21.210
+So these are the two variables.
+
+83
+00:02:21.210 --> 00:02:22.730
+So let's have A switch case
+
+84
+00:02:22.730 --> 00:02:23.850
+on the path.
+
+85
+00:02:24.570 --> 00:02:25.090
+Okay.
+
+86
+00:02:25.090 --> 00:02:27.570
+And on the path, let's have
+
+87
+00:02:27.570 --> 00:02:28.890
+the first one that is case.
+
+88
+00:02:28.890 --> 00:02:29.289
+Okay.
+
+89
+00:02:29.289 --> 00:02:30.490
+Case slash.
+
+90
+00:02:30.490 --> 00:02:31.850
+In this particular scenario,
+
+91
+00:02:31.850 --> 00:02:32.970
+what do we have to do?
+
+92
+00:02:32.970 --> 00:02:34.530
+So we have to send a simple
+
+93
+00:02:34.530 --> 00:02:35.770
+hello message from the server.
+
+94
+00:02:36.330 --> 00:02:37.210
+Pretty simple, right?
+
+95
+00:02:37.210 --> 00:02:38.010
+So you can just say
+
+96
+00:02:38.010 --> 00:02:39.210
+response dot, write head.
+
+97
+00:02:39.210 --> 00:02:39.690
+Okay?
+
+98
+00:02:39.690 --> 00:02:42.310
+Write head head that is 200
+
+99
+00:02:42.310 --> 00:02:43.870
+dot and you can just
+
+100
+00:02:43.870 --> 00:02:45.910
+end it saying hello.
+
+101
+00:02:45.910 --> 00:02:46.310
+Okay.
+
+102
+00:02:46.310 --> 00:02:47.990
+You can just send it saying hello
+
+103
+00:02:48.550 --> 00:02:50.870
+from the server.
+
+104
+00:02:50.870 --> 00:02:51.750
+Okay.
+
+105
+00:02:51.750 --> 00:02:53.390
+And even you can add an emoji
+
+106
+00:02:53.390 --> 00:02:54.550
+of saying, you know, hello
+
+107
+00:02:54.550 --> 00:02:55.670
+or something like that.
+
+108
+00:02:55.670 --> 00:02:58.150
+So yeah, emojis are cool, right?
+
+109
+00:02:58.150 --> 00:02:59.550
+So let's have an emoji.
+
+110
+00:02:59.550 --> 00:03:01.830
+So my first task is done.
+
+111
+00:03:01.830 --> 00:03:02.790
+Okay.
+
+112
+00:03:02.790 --> 00:03:04.230
+And it's always good
+
+113
+00:03:04.230 --> 00:03:05.550
+to verify along with.
+
+114
+00:03:05.550 --> 00:03:07.230
+So what I can do is I can just have
+
+115
+00:03:07.230 --> 00:03:09.680
+my Thunder client here and let's try
+
+116
+00:03:09.680 --> 00:03:12.240
+to make a get request on slash.
+
+117
+00:03:12.240 --> 00:03:13.880
+Is my server working as expected?
+
+118
+00:03:13.880 --> 00:03:14.360
+Yes.
+
+119
+00:03:14.360 --> 00:03:16.440
+So if even if I do multiple times.
+
+120
+00:03:16.440 --> 00:03:17.680
+Yeah, my, my server is
+
+121
+00:03:17.680 --> 00:03:18.840
+working as expected, right?
+
+122
+00:03:18.840 --> 00:03:20.200
+Hello from the server.
+
+123
+00:03:20.200 --> 00:03:21.880
+So guys, we have successfully
+
+124
+00:03:21.880 --> 00:03:23.880
+done our task one, right?
+
+125
+00:03:23.880 --> 00:03:25.000
+So this was your task
+
+126
+00:03:25.000 --> 00:03:26.440
+one which is now done.
+
+127
+00:03:26.440 --> 00:03:27.680
+So what I will do is I'll
+
+128
+00:03:27.680 --> 00:03:29.400
+just, I'll just strike it off.
+
+129
+00:03:29.400 --> 00:03:30.160
+So you can just strike
+
+130
+00:03:30.160 --> 00:03:31.320
+it off like this, okay.
+
+131
+00:03:31.320 --> 00:03:32.040
+Or even.
+
+132
+00:03:32.040 --> 00:03:32.720
+That's fine.
+
+133
+00:03:32.720 --> 00:03:33.720
+Let, let it be here.
+
+134
+00:03:35.170 --> 00:03:36.250
+Now what is my second task?
+
+135
+00:03:36.250 --> 00:03:37.250
+Second task is that you have to
+
+136
+00:03:37.250 --> 00:03:40.610
+make a get thing on slash contact us
+
+137
+00:03:40.610 --> 00:03:42.770
+that sends your email
+
+138
+00:03:42.770 --> 00:03:44.770
+and contact number to the user.
+
+139
+00:03:44.770 --> 00:03:46.290
+Now guys, tell me one thing.
+
+140
+00:03:46.290 --> 00:03:48.650
+Actually if you see if I even make
+
+141
+00:03:48.650 --> 00:03:50.089
+a post request on this, I am
+
+142
+00:03:50.089 --> 00:03:51.490
+still getting hello from server.
+
+143
+00:03:51.490 --> 00:03:52.930
+Do you think that is a good thing?
+
+144
+00:03:53.570 --> 00:03:55.450
+Because the document has mentioned
+
+145
+00:03:55.450 --> 00:03:57.210
+that if it is a get request only
+
+146
+00:03:57.210 --> 00:03:58.690
+then you have to send the request.
+
+147
+00:03:58.690 --> 00:04:00.530
+But even on post it is working.
+
+148
+00:04:01.360 --> 00:04:03.520
+So that means our server has a bug.
+
+149
+00:04:03.520 --> 00:04:05.120
+So this is a bug, right?
+
+150
+00:04:05.120 --> 00:04:06.600
+So that means what I have to do is
+
+151
+00:04:06.600 --> 00:04:08.800
+I have to first make a switch case
+
+152
+00:04:08.800 --> 00:04:11.040
+on the method, okay?
+
+153
+00:04:11.040 --> 00:04:14.120
+That if it is the get request then
+
+154
+00:04:14.120 --> 00:04:16.000
+I have to handle it differently.
+
+155
+00:04:16.000 --> 00:04:17.880
+And if it is a let's say post
+
+156
+00:04:17.880 --> 00:04:19.120
+request and I have to handle
+
+157
+00:04:19.120 --> 00:04:20.640
+them differently and so on.
+
+158
+00:04:20.640 --> 00:04:21.279
+Right?
+
+159
+00:04:21.279 --> 00:04:24.080
+So right now I just have to get, get
+
+160
+00:04:24.640 --> 00:04:26.790
+I can just you know handle the gate
+
+161
+00:04:26.790 --> 00:04:28.230
+and this switch should be here.
+
+162
+00:04:28.870 --> 00:04:30.070
+So that means now what you're
+
+163
+00:04:30.070 --> 00:04:31.110
+doing is if it's a get
+
+164
+00:04:31.110 --> 00:04:33.390
+request and the path is this only
+
+165
+00:04:33.390 --> 00:04:34.390
+then this should work.
+
+166
+00:04:34.950 --> 00:04:36.510
+Now see on the post you
+
+167
+00:04:36.510 --> 00:04:37.430
+are not getting anything.
+
+168
+00:04:37.990 --> 00:04:39.430
+You are not getting anything
+
+169
+00:04:39.430 --> 00:04:41.110
+because the server is
+
+170
+00:04:41.110 --> 00:04:42.070
+not able to do anything.
+
+171
+00:04:42.070 --> 00:04:43.910
+So that means if.
+
+172
+00:04:43.910 --> 00:04:44.910
+Okay, so let me just
+
+173
+00:04:44.910 --> 00:04:46.470
+do a return here.
+
+174
+00:04:46.470 --> 00:04:48.510
+So that means if you somehow reach
+
+175
+00:04:48.510 --> 00:04:49.910
+to this line in this
+
+176
+00:04:49.910 --> 00:04:51.430
+particular scenario, you are lost.
+
+177
+00:04:51.430 --> 00:04:53.360
+So response dot
+
+178
+00:04:53.360 --> 00:04:55.760
+write head saying 404.
+
+179
+00:04:55.760 --> 00:04:56.240
+Okay?
+
+180
+00:04:56.240 --> 00:04:58.160
+And you can just say dot n
+
+181
+00:04:58.160 --> 00:05:01.280
+saying, you are lost man.
+
+182
+00:05:01.280 --> 00:05:02.800
+Okay, you are lost.
+
+183
+00:05:02.800 --> 00:05:03.440
+Now see.
+
+184
+00:05:04.000 --> 00:05:05.640
+So now if I send the request,
+
+185
+00:05:05.640 --> 00:05:06.640
+you are lost because
+
+186
+00:05:06.640 --> 00:05:08.040
+post request is not there.
+
+187
+00:05:08.040 --> 00:05:09.600
+But if I make a get request, I
+
+188
+00:05:09.600 --> 00:05:11.840
+should get now it is good, right?
+
+189
+00:05:11.840 --> 00:05:13.640
+So you have a switch case first
+
+190
+00:05:13.640 --> 00:05:14.760
+of all on the method, then
+
+191
+00:05:14.760 --> 00:05:16.480
+you are making this path.
+
+192
+00:05:16.480 --> 00:05:18.370
+Second is contact us.
+
+193
+00:05:18.370 --> 00:05:18.930
+Right?
+
+194
+00:05:18.930 --> 00:05:20.130
+So pretty simple, right?
+
+195
+00:05:20.130 --> 00:05:21.970
+You inside the get only we need
+
+196
+00:05:21.970 --> 00:05:24.370
+a case for slash contact us.
+
+197
+00:05:24.370 --> 00:05:25.730
+And in this particular
+
+198
+00:05:25.730 --> 00:05:27.690
+scenario we will just send our
+
+199
+00:05:27.690 --> 00:05:28.690
+email and phone number.
+
+200
+00:05:28.690 --> 00:05:30.290
+So let's say that,
+
+201
+00:05:30.290 --> 00:05:31.730
+sure, you can contact me.
+
+202
+00:05:31.730 --> 00:05:35.570
+So my email is you know, Piyush
+
+203
+00:05:36.530 --> 00:05:41.810
+garg.dev@gmail.com and phone.
+
+204
+00:05:41.810 --> 00:05:42.650
+Okay, phone.
+
+205
+00:05:42.650 --> 00:05:45.385
+You can just send like +
+
+206
+00:05:45.385 --> 00:05:47.630
+919-999-9999 something like this.
+
+207
+00:05:48.350 --> 00:05:49.510
+So that means if I make
+
+208
+00:05:49.510 --> 00:05:51.950
+a now get request onto slash
+
+209
+00:05:51.950 --> 00:05:55.230
+contact us and send.
+
+210
+00:05:55.230 --> 00:05:57.390
+So yeah, I'm getting the data fine.
+
+211
+00:05:57.390 --> 00:05:58.950
+But if I do a post request
+
+212
+00:05:58.950 --> 00:05:59.990
+on this, yeah, it should
+
+213
+00:05:59.990 --> 00:06:01.070
+say, you are lost, man.
+
+214
+00:06:01.070 --> 00:06:01.550
+Nice.
+
+215
+00:06:01.550 --> 00:06:02.190
+Nice.
+
+216
+00:06:02.190 --> 00:06:03.230
+Right, Makes sense.
+
+217
+00:06:04.110 --> 00:06:06.150
+Then if you make a post request
+
+218
+00:06:06.150 --> 00:06:09.030
+to slash tweet, it's kind of, you
+
+219
+00:06:09.030 --> 00:06:10.350
+know, that I want to do something.
+
+220
+00:06:11.060 --> 00:06:12.220
+It's basically like, you know,
+
+221
+00:06:12.220 --> 00:06:13.500
+user is trying to create a tweet.
+
+222
+00:06:13.500 --> 00:06:14.420
+We don't have a DB right
+
+223
+00:06:14.420 --> 00:06:15.580
+now, but okay, let's try
+
+224
+00:06:15.580 --> 00:06:16.500
+to mimic this thing.
+
+225
+00:06:16.500 --> 00:06:18.980
+Okay, so that means now
+
+226
+00:06:18.980 --> 00:06:20.420
+I need a new case.
+
+227
+00:06:20.420 --> 00:06:22.140
+So let's have a break to this one.
+
+228
+00:06:22.140 --> 00:06:24.500
+So I have a new case of post.
+
+229
+00:06:24.500 --> 00:06:25.620
+So all the post request
+
+230
+00:06:25.620 --> 00:06:26.740
+should be handled here.
+
+231
+00:06:26.740 --> 00:06:28.220
+So now again you have to switch
+
+232
+00:06:28.220 --> 00:06:30.420
+on the path and the path that we
+
+233
+00:06:30.420 --> 00:06:32.420
+are talking about is slash tweet.
+
+234
+00:06:32.420 --> 00:06:34.420
+So if there's a post request on tweet
+
+235
+00:06:34.420 --> 00:06:35.780
+in this particular scenario,
+
+236
+00:06:35.780 --> 00:06:37.340
+you can do a fake DB operation.
+
+237
+00:06:37.340 --> 00:06:38.780
+So let you can just assume that
+
+238
+00:06:38.780 --> 00:06:40.060
+we have a lot of code to do
+
+239
+00:06:40.060 --> 00:06:41.810
+that DB operation and stuff.
+
+240
+00:06:41.810 --> 00:06:43.050
+But right now what I want
+
+241
+00:06:43.050 --> 00:06:43.730
+to do is, I want.
+
+242
+00:06:43.730 --> 00:06:46.370
+I'll just say 2,01 because
+
+243
+00:06:46.370 --> 00:06:48.770
+when you do a post on something
+
+244
+00:06:48.770 --> 00:06:50.850
+and that thing is created something
+
+245
+00:06:50.850 --> 00:06:53.490
+like the user post a request
+
+246
+00:06:53.490 --> 00:06:55.330
+on slash tweet, which
+
+247
+00:06:55.330 --> 00:06:57.250
+internally created some resource.
+
+248
+00:06:57.250 --> 00:06:59.450
+So 201 is the correct status quo.
+
+249
+00:06:59.450 --> 00:07:02.050
+And you can say like your
+
+250
+00:07:02.050 --> 00:07:05.490
+tweet, your tweet was created
+
+251
+00:07:06.050 --> 00:07:06.770
+something like this.
+
+252
+00:07:06.770 --> 00:07:08.290
+Okay, so we are just mimicking it.
+
+253
+00:07:08.960 --> 00:07:10.240
+So that means if I now make
+
+254
+00:07:10.240 --> 00:07:12.000
+a request, okay, so if I now make
+
+255
+00:07:12.000 --> 00:07:13.360
+a request to slash tweet,
+
+256
+00:07:13.360 --> 00:07:15.440
+get Request will give me a 404.
+
+257
+00:07:15.440 --> 00:07:16.560
+But this time post
+
+258
+00:07:16.560 --> 00:07:17.520
+request is going to work.
+
+259
+00:07:17.520 --> 00:07:19.040
+That is to go one created.
+
+260
+00:07:19.040 --> 00:07:19.520
+Nice.
+
+261
+00:07:19.520 --> 00:07:21.280
+See, get request is not working.
+
+262
+00:07:21.920 --> 00:07:23.760
+Now even it is saying that, hey,
+
+263
+00:07:23.760 --> 00:07:25.240
+you have to make a get request also
+
+264
+00:07:25.240 --> 00:07:26.640
+for slash tweet, which basically
+
+265
+00:07:26.640 --> 00:07:28.560
+sends all the tweet from the db.
+
+266
+00:07:28.560 --> 00:07:31.040
+Okay, so back to the script.
+
+267
+00:07:31.040 --> 00:07:33.120
+Okay, so back to the script file.
+
+268
+00:07:33.120 --> 00:07:34.560
+So inside this get
+
+269
+00:07:35.270 --> 00:07:36.470
+we have the switch.
+
+270
+00:07:36.470 --> 00:07:38.270
+So here what I can do is I can just
+
+271
+00:07:38.270 --> 00:07:40.230
+copy this particular thing,
+
+272
+00:07:40.230 --> 00:07:42.750
+paste it again here, and this time
+
+273
+00:07:42.750 --> 00:07:44.150
+we can name it to slash tweet.
+
+274
+00:07:44.150 --> 00:07:46.470
+So that means now what I am doing is.
+
+275
+00:07:46.470 --> 00:07:48.030
+Okay, so now what we are doing is we
+
+276
+00:07:48.030 --> 00:07:49.470
+are creating a slash tweet also.
+
+277
+00:07:49.470 --> 00:07:50.750
+See, now we have two parts.
+
+278
+00:07:50.750 --> 00:07:51.470
+Slash tweet.
+
+279
+00:07:51.470 --> 00:07:52.270
+Slash tweet.
+
+280
+00:07:52.270 --> 00:07:53.630
+The only difference is this is for
+
+281
+00:07:53.630 --> 00:07:55.590
+the post and this is for the get.
+
+282
+00:07:55.590 --> 00:07:57.030
+So here we can just say 200,
+
+283
+00:07:57.580 --> 00:07:59.430
+and I can just send hey, tweet one
+
+284
+00:07:59.430 --> 00:08:00.430
+tweet to something like this.
+
+285
+00:08:00.430 --> 00:08:02.470
+So tweet one and new line.
+
+286
+00:08:02.470 --> 00:08:03.990
+So in future we will actually
+
+287
+00:08:03.990 --> 00:08:04.990
+get it from the database.
+
+288
+00:08:04.990 --> 00:08:06.950
+But right now we don't have a db,
+
+289
+00:08:06.950 --> 00:08:07.790
+so I can just send
+
+290
+00:08:07.790 --> 00:08:09.110
+all the tweets like this.
+
+291
+00:08:09.110 --> 00:08:11.070
+So making a get request
+
+292
+00:08:11.070 --> 00:08:12.510
+on slash tweet, you are getting
+
+293
+00:08:12.510 --> 00:08:13.750
+the tweet one, tweet two.
+
+294
+00:08:13.750 --> 00:08:15.310
+But if you are make a post request
+
+295
+00:08:15.310 --> 00:08:16.110
+on this right, then
+
+296
+00:08:16.110 --> 00:08:17.750
+you are creating a new one.
+
+297
+00:08:17.750 --> 00:08:18.310
+Nice.
+
+298
+00:08:18.310 --> 00:08:19.910
+Right, so you can see our
+
+299
+00:08:19.910 --> 00:08:20.950
+server is going very good.
+
+300
+00:08:20.950 --> 00:08:23.150
+Right now there is a final
+
+301
+00:08:23.150 --> 00:08:24.430
+challenge remaining that you need
+
+302
+00:08:24.430 --> 00:08:26.350
+to log all the incoming requests
+
+303
+00:08:26.350 --> 00:08:27.630
+with the timestamp and log it
+
+304
+00:08:27.630 --> 00:08:28.930
+into the log.txt file.
+
+305
+00:08:29.560 --> 00:08:30.560
+So that means you have
+
+306
+00:08:30.560 --> 00:08:31.640
+to create a lock.
+
+307
+00:08:31.640 --> 00:08:33.000
+So let's say that my log looks
+
+308
+00:08:33.000 --> 00:08:33.760
+something like this, that
+
+309
+00:08:33.760 --> 00:08:35.320
+there was an incoming request.
+
+310
+00:08:35.320 --> 00:08:36.600
+So let's have the date first.
+
+311
+00:08:36.600 --> 00:08:38.679
+Okay, so I can just say,
+
+312
+00:08:38.679 --> 00:08:40.840
+I'll just have the date dot.
+
+313
+00:08:41.890 --> 00:08:42.520
+You can have.
+
+314
+00:08:42.520 --> 00:08:44.280
+Now you can just say dot to string.
+
+315
+00:08:44.280 --> 00:08:45.320
+Let's just say date.
+
+316
+00:08:45.320 --> 00:08:46.920
+Now then what you have
+
+317
+00:08:46.920 --> 00:08:48.720
+to do is like you will just say,
+
+318
+00:08:48.720 --> 00:08:50.160
+hey, on which kind
+
+319
+00:08:50.160 --> 00:08:51.680
+of method the request was coming?
+
+320
+00:08:51.680 --> 00:08:52.240
+Let's say.
+
+321
+00:08:52.240 --> 00:08:53.400
+So it was coming on this
+
+322
+00:08:53.400 --> 00:08:54.200
+particular method.
+
+323
+00:08:54.930 --> 00:08:57.170
+And what was the path.
+
+324
+00:08:57.170 --> 00:08:57.570
+Great.
+
+325
+00:08:57.570 --> 00:08:58.970
+What was the path that user
+
+326
+00:08:58.970 --> 00:08:59.730
+was trying to access?
+
+327
+00:09:00.370 --> 00:09:01.410
+So let's say this is how
+
+328
+00:09:01.410 --> 00:09:02.530
+you constructed a log.
+
+329
+00:09:02.530 --> 00:09:04.010
+So every time there is a request,
+
+330
+00:09:04.010 --> 00:09:05.570
+you have to create this log Txt
+
+331
+00:09:05.570 --> 00:09:07.010
+file, you have to append it.
+
+332
+00:09:07.010 --> 00:09:08.570
+So to work with files, do
+
+333
+00:09:08.570 --> 00:09:09.570
+you remember that FS
+
+334
+00:09:09.570 --> 00:09:10.850
+module that we covered?
+
+335
+00:09:10.850 --> 00:09:13.330
+So you can just import that node fs
+
+336
+00:09:13.330 --> 00:09:17.530
+module and I can just say fs.append
+
+337
+00:09:17.530 --> 00:09:19.170
+to a file in a Synchronous way.
+
+338
+00:09:19.170 --> 00:09:20.770
+That's fine because every request
+
+339
+00:09:20.770 --> 00:09:22.330
+that will come user has
+
+340
+00:09:22.330 --> 00:09:23.860
+to first make an entry, right?
+
+341
+00:09:23.860 --> 00:09:24.900
+So we are just appending
+
+342
+00:09:24.900 --> 00:09:27.540
+to a file that is log Txt,
+
+343
+00:09:27.540 --> 00:09:30.100
+what is the data that is this log.
+
+344
+00:09:31.140 --> 00:09:34.180
+And I want to write it as a UTF8.
+
+345
+00:09:34.180 --> 00:09:34.620
+Okay?
+
+346
+00:09:34.620 --> 00:09:37.380
+That is UTF8 format.
+
+347
+00:09:37.380 --> 00:09:39.260
+Now what will happen is anytime
+
+348
+00:09:39.260 --> 00:09:40.700
+you get a request, let's make
+
+349
+00:09:40.700 --> 00:09:42.500
+a post request to slash tweet.
+
+350
+00:09:42.500 --> 00:09:44.660
+Okay, A log is created.
+
+351
+00:09:44.660 --> 00:09:46.180
+A log is created.
+
+352
+00:09:46.180 --> 00:09:46.580
+Now.
+
+353
+00:09:47.520 --> 00:09:48.860
+Why this dollar is coming here?
+
+354
+00:09:48.860 --> 00:09:49.820
+Just one second.
+
+355
+00:09:49.820 --> 00:09:51.020
+This dollar should not be here.
+
+356
+00:09:51.020 --> 00:09:52.340
+And also please guys, don't
+
+357
+00:09:52.340 --> 00:09:53.420
+forget to add a new line.
+
+358
+00:09:53.420 --> 00:09:56.540
+Okay, so first Got it.
+
+359
+00:09:56.540 --> 00:09:58.700
+Then let's make a get
+
+360
+00:09:58.700 --> 00:10:00.020
+request to slash tweet.
+
+361
+00:10:00.020 --> 00:10:00.860
+Okay, working.
+
+362
+00:10:00.860 --> 00:10:02.020
+Let's make a get request
+
+363
+00:10:02.020 --> 00:10:03.300
+to this thing and let's try
+
+364
+00:10:03.300 --> 00:10:05.340
+to make a request to contact us.
+
+365
+00:10:05.900 --> 00:10:06.660
+Which is also good.
+
+366
+00:10:06.660 --> 00:10:07.580
+And let's try to make a post
+
+367
+00:10:07.580 --> 00:10:08.460
+request on this thing.
+
+368
+00:10:08.460 --> 00:10:09.580
+Oh, you are lost.
+
+369
+00:10:09.580 --> 00:10:11.500
+Now if I check my log txt, you
+
+370
+00:10:11.500 --> 00:10:13.180
+are having all the logs that
+
+371
+00:10:13.180 --> 00:10:14.860
+at what time what kind
+
+372
+00:10:14.860 --> 00:10:16.560
+of requests one were coming, right?
+
+373
+00:10:16.560 --> 00:10:18.360
+So this is like your server logs.
+
+374
+00:10:18.360 --> 00:10:19.600
+So if you're monitoring your
+
+375
+00:10:19.600 --> 00:10:21.600
+server you can actually see that
+
+376
+00:10:22.180 --> 00:10:23.520
+when the requests were coming.
+
+377
+00:10:23.520 --> 00:10:25.120
+And if someone is trying to hack
+
+378
+00:10:25.120 --> 00:10:26.200
+into something, someone is
+
+379
+00:10:26.200 --> 00:10:27.440
+trying something different.
+
+380
+00:10:27.440 --> 00:10:28.360
+So yeah, you have all
+
+381
+00:10:28.360 --> 00:10:29.840
+the information, right.
+
+382
+00:10:29.840 --> 00:10:31.280
+So this is pretty cool.
+
+383
+00:10:31.280 --> 00:10:32.560
+So this is how you can actually
+
+384
+00:10:32.560 --> 00:10:34.280
+create a logger and logs
+
+385
+00:10:34.280 --> 00:10:35.600
+all the incoming requests.
+
+386
+00:10:35.600 --> 00:10:37.080
+So when you go into the production
+
+387
+00:10:37.080 --> 00:10:38.600
+you have this distributed
+
+388
+00:10:38.600 --> 00:10:39.840
+logging system.
+
+389
+00:10:39.840 --> 00:10:41.560
+So all the incoming requests are,
+
+390
+00:10:41.560 --> 00:10:43.040
+are logged so that they
+
+391
+00:10:43.040 --> 00:10:44.600
+are kept for the future reference
+
+392
+00:10:44.600 --> 00:10:45.760
+if something goes bad.
+
+393
+00:10:45.760 --> 00:10:47.240
+Let's say your server is down
+
+394
+00:10:47.240 --> 00:10:48.840
+so you have some data that
+
+395
+00:10:48.840 --> 00:10:50.280
+why the server crashed.
+
+396
+00:10:50.280 --> 00:10:51.680
+Oh, there was a this kind
+
+397
+00:10:51.680 --> 00:10:53.360
+of request which could be there.
+
+398
+00:10:53.360 --> 00:10:53.800
+Right.
+
+399
+00:10:53.800 --> 00:10:56.040
+So this helps in debugging the stuff.
+
+400
+00:10:56.040 --> 00:10:58.480
+Okay, so this is how we have
+
+401
+00:10:58.480 --> 00:11:00.600
+created a very simple server
+
+402
+00:11:00.600 --> 00:11:02.040
+which now supports.
+
+403
+00:11:02.040 --> 00:11:02.920
+Okay, let me just show you
+
+404
+00:11:02.920 --> 00:11:05.120
+the full code which supports
+
+405
+00:11:05.120 --> 00:11:06.680
+two methods, get and post.
+
+406
+00:11:06.680 --> 00:11:08.120
+And you have couple of routes
+
+407
+00:11:08.120 --> 00:11:08.840
+and get and you have
+
+408
+00:11:08.840 --> 00:11:09.960
+a couple of routes in post.

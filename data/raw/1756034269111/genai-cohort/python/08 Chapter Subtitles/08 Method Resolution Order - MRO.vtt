@@ -1,0 +1,1065 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.960
+So we have talked decently about
+
+2
+00:00:02.960 --> 00:00:04.520
+inheritance and now we want
+
+3
+00:00:04.520 --> 00:00:06.640
+to talk about multiple inheritance.
+
+4
+00:00:06.640 --> 00:00:07.960
+Now to be honest, there is
+
+5
+00:00:07.960 --> 00:00:09.320
+nothing too much to talk about
+
+6
+00:00:09.320 --> 00:00:10.480
+for multiple inheritance.
+
+7
+00:00:10.480 --> 00:00:12.720
+You can have comma separated as many
+
+8
+00:00:12.720 --> 00:00:14.960
+classes as you want to have in that.
+
+9
+00:00:14.960 --> 00:00:16.279
+Usually we don't prefer
+
+10
+00:00:16.279 --> 00:00:17.520
+to have too many classes.
+
+11
+00:00:17.520 --> 00:00:19.440
+2 are more than enough for us.
+
+12
+00:00:19.440 --> 00:00:21.240
+But even having two of these
+
+13
+00:00:21.240 --> 00:00:23.680
+classes as inherited classes it
+
+14
+00:00:23.680 --> 00:00:25.280
+sometimes can create problems.
+
+15
+00:00:25.280 --> 00:00:26.120
+I will walk you through
+
+16
+00:00:26.120 --> 00:00:27.040
+with an example.
+
+17
+00:00:27.040 --> 00:00:28.380
+But, but the topic that we
+
+18
+00:00:28.380 --> 00:00:29.420
+want to discuss in this
+
+19
+00:00:29.420 --> 00:00:30.580
+is pretty interesting.
+
+20
+00:00:30.580 --> 00:00:31.740
+If you look at this, this is
+
+21
+00:00:31.740 --> 00:00:34.420
+known as Method Resolution order.
+
+22
+00:00:34.420 --> 00:00:35.300
+What does this mean?
+
+23
+00:00:35.300 --> 00:00:37.300
+This is a very fancy one
+
+24
+00:00:37.300 --> 00:00:38.620
+and yes it looks fancy.
+
+25
+00:00:38.620 --> 00:00:39.540
+It is fancy.
+
+26
+00:00:39.540 --> 00:00:41.220
+If you look at the documentation,
+
+27
+00:00:41.860 --> 00:00:43.660
+this is what it says at the very top
+
+28
+00:00:43.660 --> 00:00:44.740
+of the documentation.
+
+29
+00:00:44.740 --> 00:00:46.300
+And don't worry, this is not actually
+
+30
+00:00:46.300 --> 00:00:47.860
+I'm not showing you Python 2
+
+31
+00:00:48.490 --> 00:00:50.100
+X version documentation.
+
+32
+00:00:51.300 --> 00:00:52.820
+It was introduced in Python
+
+33
+00:00:52.820 --> 00:00:54.780
+2.3 but it is still used
+
+34
+00:00:54.780 --> 00:00:56.020
+including in the Python 3.
+
+35
+00:00:56.020 --> 00:00:57.020
+So don't you worry, I'm not
+
+36
+00:00:57.020 --> 00:00:58.180
+showing you anything outdated.
+
+37
+00:00:58.810 --> 00:00:59.890
+The most important part is
+
+38
+00:00:59.890 --> 00:01:00.890
+in the abstract.
+
+39
+00:01:00.890 --> 00:01:02.250
+The document is intended
+
+40
+00:01:02.250 --> 00:01:03.930
+for Python programmers who want to
+
+41
+00:01:03.930 --> 00:01:06.330
+understand the C3 method resolution
+
+42
+00:01:06.330 --> 00:01:08.530
+order used in Python 2.3.
+
+43
+00:01:08.530 --> 00:01:09.610
+Although it is not
+
+44
+00:01:09.610 --> 00:01:10.970
+intended for newbies.
+
+45
+00:01:11.850 --> 00:01:13.050
+Yes, that's the case, it's
+
+46
+00:01:13.050 --> 00:01:14.810
+not intended for newbies.
+
+47
+00:01:14.810 --> 00:01:17.430
+It's quite pedagogical
+
+48
+00:01:17.430 --> 00:01:18.890
+with many worked out examples.
+
+49
+00:01:18.890 --> 00:01:19.850
+So don't you worry.
+
+50
+00:01:19.850 --> 00:01:22.070
+Although this topic doesn't seem like
+
+51
+00:01:22.070 --> 00:01:23.250
+beginner friendly and especially
+
+52
+00:01:23.250 --> 00:01:24.880
+when you look at the diagram like
+
+53
+00:01:24.880 --> 00:01:26.720
+what is all going on with this one?
+
+54
+00:01:26.720 --> 00:01:28.480
+You will get it absolutely when
+
+55
+00:01:28.480 --> 00:01:29.560
+we start writing the code.
+
+56
+00:01:29.560 --> 00:01:30.520
+But let me walk you through
+
+57
+00:01:30.520 --> 00:01:32.280
+with the examples that what it means
+
+58
+00:01:32.280 --> 00:01:34.120
+by and what's the whole thing
+
+59
+00:01:34.120 --> 00:01:35.360
+about what's the whole fuzz?
+
+60
+00:01:35.920 --> 00:01:38.640
+Let's just say this is our class.
+
+61
+00:01:38.640 --> 00:01:40.280
+And if I go ahead and say this
+
+62
+00:01:40.280 --> 00:01:42.720
+is our class A and we define
+
+63
+00:01:42.720 --> 00:01:44.240
+another class just like this,
+
+64
+00:01:44.240 --> 00:01:45.360
+this is a different class.
+
+65
+00:01:45.360 --> 00:01:47.160
+We are calling them A and B to make
+
+66
+00:01:47.160 --> 00:01:48.800
+sure that we easily understand this.
+
+67
+00:01:49.360 --> 00:01:50.720
+Now let's just say we have
+
+68
+00:01:50.720 --> 00:01:52.320
+another class which is.
+
+69
+00:01:52.880 --> 00:01:55.120
+And also this class, this B is
+
+70
+00:01:55.120 --> 00:01:56.960
+actually inheriting this one.
+
+71
+00:01:56.960 --> 00:01:58.560
+All right, let's make it a little bit
+
+72
+00:01:59.090 --> 00:02:00.400
+more of a complex.
+
+73
+00:02:00.400 --> 00:02:03.760
+This is the class C that we have
+
+74
+00:02:03.760 --> 00:02:05.160
+and let's just say C also
+
+75
+00:02:05.160 --> 00:02:07.120
+inherit from the class A.
+
+76
+00:02:07.680 --> 00:02:09.320
+And now finally you define
+
+77
+00:02:09.320 --> 00:02:12.000
+a simple class which is D.
+
+78
+00:02:13.200 --> 00:02:15.400
+And what this D does, it actually
+
+79
+00:02:15.400 --> 00:02:18.710
+inherits from the class B and as
+
+80
+00:02:18.710 --> 00:02:21.310
+well as inherits from the class C.
+
+81
+00:02:21.310 --> 00:02:22.990
+And all of them have just one
+
+82
+00:02:22.990 --> 00:02:24.830
+single method to work on with.
+
+83
+00:02:24.830 --> 00:02:26.990
+Now if you call that method in the D.
+
+84
+00:02:27.550 --> 00:02:28.830
+Is it going to be called
+
+85
+00:02:28.830 --> 00:02:32.990
+from C or from B or from A?
+
+86
+00:02:32.990 --> 00:02:34.150
+I know this is a little bit
+
+87
+00:02:34.150 --> 00:02:35.870
+confusing and that's the reason
+
+88
+00:02:35.870 --> 00:02:37.390
+I want to actually go through
+
+89
+00:02:37.390 --> 00:02:38.830
+with the code first.
+
+90
+00:02:38.830 --> 00:02:40.070
+Code will actually make
+
+91
+00:02:40.070 --> 00:02:41.310
+life much, much easier.
+
+92
+00:02:41.310 --> 00:02:47.340
+In this case we'll go with 08_mro py.
+
+93
+00:02:47.900 --> 00:02:49.180
+Yes, this topic is known
+
+94
+00:02:49.180 --> 00:02:50.670
+with the name of MRO.
+
+95
+00:02:50.670 --> 00:02:52.140
+Although the full name is
+
+96
+00:02:52.140 --> 00:02:53.660
+really really complex.
+
+97
+00:02:53.660 --> 00:02:55.100
+But nobody calls it with the full
+
+98
+00:02:55.100 --> 00:02:56.580
+name of Method Resolution Order.
+
+99
+00:02:56.580 --> 00:02:57.540
+You will always hear
+
+100
+00:02:57.540 --> 00:02:59.100
+the MRO Word here.
+
+101
+00:02:59.100 --> 00:03:00.340
+Let's just define what
+
+102
+00:03:00.340 --> 00:03:01.579
+we have written there.
+
+103
+00:03:01.579 --> 00:03:03.420
+So let's just say we have a class A
+
+104
+00:03:03.420 --> 00:03:05.340
+and class A doesn't do much.
+
+105
+00:03:05.340 --> 00:03:07.060
+It has oops, shouldn't
+
+106
+00:03:07.060 --> 00:03:09.260
+write that class A.
+
+107
+00:03:09.260 --> 00:03:10.980
+And what the class A does, it
+
+108
+00:03:10.980 --> 00:03:12.820
+has simple a label that is it
+
+109
+00:03:12.820 --> 00:03:14.020
+to make the life easier.
+
+110
+00:03:14.020 --> 00:03:15.620
+And I will mark it as A so
+
+111
+00:03:15.620 --> 00:03:16.580
+that we figure out that.
+
+112
+00:03:16.580 --> 00:03:17.340
+Okay, this is coming
+
+113
+00:03:17.340 --> 00:03:18.700
+up from the class A.
+
+114
+00:03:18.700 --> 00:03:19.820
+I'll call this one as
+
+115
+00:03:19.820 --> 00:03:21.580
+simply base class.
+
+116
+00:03:22.380 --> 00:03:24.940
+And what extra we have, we
+
+117
+00:03:24.940 --> 00:03:28.140
+have class B which also
+
+118
+00:03:28.140 --> 00:03:29.740
+has the same thing label.
+
+119
+00:03:29.740 --> 00:03:31.980
+Nothing else, no init nothing.
+
+120
+00:03:31.980 --> 00:03:33.340
+This time we'll mark it as
+
+121
+00:03:33.340 --> 00:03:34.700
+B and we're going to call
+
+122
+00:03:34.700 --> 00:03:39.340
+this one as Masala Blend.
+
+123
+00:03:39.340 --> 00:03:41.380
+Not only that, we actually go
+
+124
+00:03:41.380 --> 00:03:42.740
+ahead and say this one is going
+
+125
+00:03:42.740 --> 00:03:45.010
+to inherit from the class A.
+
+126
+00:03:45.010 --> 00:03:46.610
+This is exactly what we did.
+
+127
+00:03:46.610 --> 00:03:47.850
+And the question I'm going
+
+128
+00:03:47.850 --> 00:03:49.130
+to ask you is going to be
+
+129
+00:03:49.130 --> 00:03:50.170
+little bit interesting.
+
+130
+00:03:50.170 --> 00:03:51.890
+So pay a small attention.
+
+131
+00:03:51.890 --> 00:03:53.650
+This one also gets inherited
+
+132
+00:03:53.650 --> 00:03:54.850
+from the class A.
+
+133
+00:03:54.850 --> 00:03:55.970
+All right, we are getting
+
+134
+00:03:55.970 --> 00:03:56.770
+interesting there.
+
+135
+00:03:57.410 --> 00:03:58.210
+Label.
+
+136
+00:03:58.210 --> 00:04:00.529
+And this one is actually class C.
+
+137
+00:04:00.529 --> 00:04:01.570
+And we are going to call
+
+138
+00:04:01.570 --> 00:04:05.570
+this one as Herbal Blend.
+
+139
+00:04:07.330 --> 00:04:09.490
+And here comes the question
+
+140
+00:04:09.490 --> 00:04:10.930
+after one more class, actually
+
+141
+00:04:11.760 --> 00:04:14.760
+we have class D which actually goes
+
+142
+00:04:14.760 --> 00:04:17.040
+ahead and inherits B and C.
+
+143
+00:04:17.040 --> 00:04:18.399
+Yes, this one is inheriting
+
+144
+00:04:18.399 --> 00:04:20.040
+from two classes and this
+
+145
+00:04:20.040 --> 00:04:21.760
+one has same thing label.
+
+146
+00:04:22.720 --> 00:04:24.920
+And the label goes like this which
+
+147
+00:04:24.920 --> 00:04:26.960
+says or it doesn't have anything.
+
+148
+00:04:26.960 --> 00:04:27.920
+Let's just say, let's
+
+149
+00:04:27.920 --> 00:04:29.040
+make it even more fun.
+
+150
+00:04:29.040 --> 00:04:30.240
+It doesn't have anything.
+
+151
+00:04:31.040 --> 00:04:34.920
+Now if I go ahead and say that I am
+
+152
+00:04:34.920 --> 00:04:37.440
+creating a cup and that cups come
+
+153
+00:04:37.440 --> 00:04:39.650
+from the class D which doesn't
+
+154
+00:04:39.650 --> 00:04:41.930
+have anything and if I try with
+
+155
+00:04:41.930 --> 00:04:43.890
+the printing of the value that
+
+156
+00:04:43.890 --> 00:04:46.650
+says cup dot and definitely cup
+
+157
+00:04:46.650 --> 00:04:47.450
+has the label.
+
+158
+00:04:47.450 --> 00:04:48.930
+We know this very for sure.
+
+159
+00:04:49.490 --> 00:04:50.850
+But can you discuss what
+
+160
+00:04:50.850 --> 00:04:52.090
+will be the output of this?
+
+161
+00:04:52.090 --> 00:04:53.410
+I'll zoom out a little bit so
+
+162
+00:04:53.410 --> 00:04:54.850
+that you can see all at once.
+
+163
+00:04:54.850 --> 00:04:55.770
+I'll zoom back again,
+
+164
+00:04:55.770 --> 00:04:57.010
+don't you worry.
+
+165
+00:04:57.010 --> 00:04:58.850
+This is very interesting and we
+
+166
+00:04:58.850 --> 00:05:00.170
+need to understand what is
+
+167
+00:05:00.170 --> 00:05:02.210
+happening how Is it happening?
+
+168
+00:05:02.210 --> 00:05:04.290
+A has a label which has a,
+
+169
+00:05:04.970 --> 00:05:08.060
+base class B which inherits from A.
+
+170
+00:05:08.060 --> 00:05:09.740
+And notice this, this is also N
+
+171
+00:05:09.740 --> 00:05:10.820
+by the way, if you're thinking this
+
+172
+00:05:10.820 --> 00:05:12.540
+is too aggressive to going on.
+
+173
+00:05:12.540 --> 00:05:14.100
+No, in the large frameworks
+
+174
+00:05:14.100 --> 00:05:15.860
+and large libraries of Python this
+
+175
+00:05:15.860 --> 00:05:16.900
+is a very common thing which
+
+176
+00:05:16.900 --> 00:05:18.140
+happens all the way along.
+
+177
+00:05:18.780 --> 00:05:21.420
+And the class C also inherits from A.
+
+178
+00:05:21.420 --> 00:05:23.860
+And this says a, label is
+
+179
+00:05:23.860 --> 00:05:25.980
+being overwritten and the class
+
+180
+00:05:25.980 --> 00:05:27.980
+D doesn't have any label.
+
+181
+00:05:27.980 --> 00:05:29.460
+So this one thing is sure that
+
+182
+00:05:29.460 --> 00:05:31.020
+the D doesn't have any labels.
+
+183
+00:05:31.020 --> 00:05:33.520
+So it has to look either in the C
+
+184
+00:05:33.520 --> 00:05:36.120
+or in the B or since B and C both
+
+185
+00:05:36.120 --> 00:05:38.800
+are actually taking this and have
+
+186
+00:05:38.800 --> 00:05:41.160
+this label up in the superclass as
+
+187
+00:05:41.160 --> 00:05:43.040
+well or the parent class as label.
+
+188
+00:05:43.040 --> 00:05:44.720
+Which one is going to print?
+
+189
+00:05:44.720 --> 00:05:46.640
+This is very difficult to determine.
+
+190
+00:05:46.640 --> 00:05:47.760
+I'll tell you a trick as
+
+191
+00:05:47.760 --> 00:05:48.920
+well to actually go ahead
+
+192
+00:05:48.920 --> 00:05:49.760
+and work with this.
+
+193
+00:05:49.760 --> 00:05:51.120
+First let's run the code.
+
+194
+00:05:51.840 --> 00:05:54.200
+So not like that, definitely.
+
+195
+00:05:54.200 --> 00:05:55.920
+I want to open the terminal right
+
+196
+00:05:55.920 --> 00:05:58.520
+up here and we're going to go
+
+197
+00:05:58.520 --> 00:06:01.120
+ahead and say Python 3 and MRO.
+
+198
+00:06:02.800 --> 00:06:04.800
+No, it's 08 MRO.
+
+199
+00:06:04.800 --> 00:06:07.080
+We get the B which is Masala Blend.
+
+200
+00:06:07.080 --> 00:06:08.640
+And in case this is still
+
+201
+00:06:08.640 --> 00:06:10.440
+confusing to you, whichever the
+
+202
+00:06:10.440 --> 00:06:11.760
+class first, if there is any
+
+203
+00:06:11.760 --> 00:06:13.080
+common such method which are
+
+204
+00:06:13.080 --> 00:06:14.120
+being called up, it is being
+
+205
+00:06:14.120 --> 00:06:15.400
+called from the very first class
+
+206
+00:06:15.400 --> 00:06:16.480
+that you are inheriting.
+
+207
+00:06:16.480 --> 00:06:18.560
+If you swipe this up from C
+
+208
+00:06:18.560 --> 00:06:20.840
+to B, now obviously the method
+
+209
+00:06:20.840 --> 00:06:22.080
+will be called from the C.
+
+210
+00:06:22.740 --> 00:06:24.760
+This is a neat trick which everybody
+
+211
+00:06:24.760 --> 00:06:26.400
+knows in the Python ecosystem,
+
+212
+00:06:26.400 --> 00:06:27.520
+those who have been working around.
+
+213
+00:06:28.030 --> 00:06:29.270
+But there is also one more
+
+214
+00:06:29.270 --> 00:06:30.630
+interesting method that you
+
+215
+00:06:30.630 --> 00:06:32.270
+can go ahead and print out.
+
+216
+00:06:32.990 --> 00:06:34.150
+You can actually go ahead
+
+217
+00:06:34.150 --> 00:06:35.630
+and say something like this.
+
+218
+00:06:36.190 --> 00:06:38.310
+So if this cup is there, I can
+
+219
+00:06:38.310 --> 00:06:40.190
+actually go ahead and say cup or
+
+220
+00:06:40.190 --> 00:06:41.950
+I can use the entire class,
+
+221
+00:06:42.670 --> 00:06:44.670
+let's just say I can go for the D.
+
+222
+00:06:44.670 --> 00:06:46.030
+And if you go ahead and look at
+
+223
+00:06:46.030 --> 00:06:49.390
+closely dot, underscore, underscore
+
+224
+00:06:49.390 --> 00:06:51.790
+MRO exists here as well.
+
+225
+00:06:51.790 --> 00:06:54.400
+Yes, this is a dunder that
+
+226
+00:06:54.400 --> 00:06:55.320
+we can go ahead and use.
+
+227
+00:06:55.320 --> 00:06:56.760
+And what's interesting about this
+
+228
+00:06:56.760 --> 00:06:58.800
+dunder is if I run this, notice
+
+229
+00:06:58.800 --> 00:07:00.760
+it, it says okay, I am a class D
+
+230
+00:07:01.320 --> 00:07:03.880
+which further goes ahead and inherit
+
+231
+00:07:03.880 --> 00:07:05.320
+from the class C first.
+
+232
+00:07:05.320 --> 00:07:06.840
+Then I go ahead and inherit
+
+233
+00:07:06.840 --> 00:07:08.280
+from the class B.
+
+234
+00:07:08.280 --> 00:07:10.040
+And then further this class
+
+235
+00:07:10.680 --> 00:07:12.960
+C that I'm inheriting, this since
+
+236
+00:07:12.960 --> 00:07:15.240
+is inheriting from the class A.
+
+237
+00:07:15.240 --> 00:07:16.560
+So this is what is mentioned,
+
+238
+00:07:16.560 --> 00:07:18.440
+that I inherit from the class A.
+
+239
+00:07:18.440 --> 00:07:20.080
+And then further this B actually
+
+240
+00:07:20.080 --> 00:07:23.590
+inherits, B inherits A as well.
+
+241
+00:07:23.590 --> 00:07:24.670
+So you'll notice that, hey,
+
+242
+00:07:24.670 --> 00:07:26.070
+further I have objects so
+
+243
+00:07:26.070 --> 00:07:27.950
+this is not being used much.
+
+244
+00:07:27.950 --> 00:07:29.070
+The only trick that you need
+
+245
+00:07:29.070 --> 00:07:30.310
+to remember always is
+
+246
+00:07:30.310 --> 00:07:31.430
+that how the order
+
+247
+00:07:31.430 --> 00:07:33.430
+of inheritance matters a lot.
+
+248
+00:07:33.430 --> 00:07:34.990
+And that is it.
+
+249
+00:07:34.990 --> 00:07:36.870
+That's your mro.
+
+250
+00:07:36.870 --> 00:07:38.510
+Usually this is a bit
+
+251
+00:07:38.510 --> 00:07:39.830
+of an advanced topic.
+
+252
+00:07:39.830 --> 00:07:41.390
+Usually nobody covers it up and
+
+253
+00:07:41.390 --> 00:07:42.670
+nobody understand the importance
+
+254
+00:07:42.670 --> 00:07:44.670
+of it until unless you mess up
+
+255
+00:07:44.670 --> 00:07:45.950
+with the framework manipulation
+
+256
+00:07:45.950 --> 00:07:47.430
+like you are changing some
+
+257
+00:07:47.430 --> 00:07:50.110
+internals of FAST API or maybe
+
+258
+00:07:50.110 --> 00:07:51.230
+some SQL alchemy.
+
+259
+00:07:51.230 --> 00:07:52.590
+Then you realize, all right,
+
+260
+00:07:52.590 --> 00:07:54.010
+this is important part of it.
+
+261
+00:07:54.010 --> 00:07:55.330
+But again, we are here to get
+
+262
+00:07:55.330 --> 00:07:56.770
+our foundations really strong
+
+263
+00:07:56.770 --> 00:07:57.810
+in the Python and that's
+
+264
+00:07:57.810 --> 00:07:59.170
+why we covered this topic.
+
+265
+00:07:59.170 --> 00:08:00.330
+That is it for this video.
+
+266
+00:08:00.330 --> 00:08:01.810
+Let's catch up in the next one.

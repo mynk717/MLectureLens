@@ -1,0 +1,773 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.960
+Hey there everyone, and welcome
+
+2
+00:00:02.960 --> 00:00:04.440
+to the fresh new section
+
+3
+00:00:04.440 --> 00:00:07.120
+of handling exceptions in Python.
+
+4
+00:00:07.120 --> 00:00:08.320
+Now if we compare this
+
+5
+00:00:08.320 --> 00:00:10.360
+to the real world, when you are
+
+6
+00:00:10.360 --> 00:00:12.160
+operating your chai shop,
+
+7
+00:00:12.160 --> 00:00:13.840
+a lot of things can go wrong.
+
+8
+00:00:13.840 --> 00:00:16.000
+Maybe you have spilled something,
+
+9
+00:00:16.560 --> 00:00:18.640
+maybe some ingredient is missing,
+
+10
+00:00:18.640 --> 00:00:20.240
+or maybe there's something wrong
+
+11
+00:00:20.240 --> 00:00:22.160
+in the brewing process at all.
+
+12
+00:00:22.160 --> 00:00:23.120
+There are a lot of things
+
+13
+00:00:23.120 --> 00:00:24.760
+that can go wrong in a real
+
+14
+00:00:24.760 --> 00:00:27.040
+world brewing shop of a T.
+
+15
+00:00:27.680 --> 00:00:28.920
+Similarly, a lot of things can
+
+16
+00:00:28.920 --> 00:00:31.560
+go wrong in the T, shop as well as
+
+17
+00:00:31.560 --> 00:00:33.200
+in the code part as well.
+
+18
+00:00:33.200 --> 00:00:34.680
+That's exactly what we want to fix.
+
+19
+00:00:34.680 --> 00:00:35.720
+In this entire section.
+
+20
+00:00:35.720 --> 00:00:37.760
+We want to discuss and talk about
+
+21
+00:00:37.760 --> 00:00:40.480
+how things can go wrong when we are
+
+22
+00:00:40.480 --> 00:00:41.720
+writing some code and how
+
+23
+00:00:41.720 --> 00:00:43.600
+we can gracefully handle that.
+
+24
+00:00:43.600 --> 00:00:45.080
+That handling part is the most
+
+25
+00:00:45.080 --> 00:00:46.880
+important things will go wrong,
+
+26
+00:00:46.880 --> 00:00:48.200
+there is no question about that.
+
+27
+00:00:48.200 --> 00:00:49.400
+But the way how you handle
+
+28
+00:00:49.400 --> 00:00:50.800
+it as best as possible,
+
+29
+00:00:50.800 --> 00:00:52.000
+that's always a good idea.
+
+30
+00:00:52.000 --> 00:00:53.120
+So let me take you on the screen
+
+31
+00:00:53.120 --> 00:00:54.200
+and we're going to write some
+
+32
+00:00:54.200 --> 00:00:56.410
+code and let's discuss about this
+
+33
+00:00:56.410 --> 00:00:58.810
+exception handling in Python.
+
+34
+00:01:00.010 --> 00:01:01.250
+All right, so let me take you
+
+35
+00:01:01.250 --> 00:01:03.050
+onto the screen and where we
+
+36
+00:01:03.050 --> 00:01:04.050
+are going to discuss all
+
+37
+00:01:04.050 --> 00:01:05.610
+of the things that are happening up.
+
+38
+00:01:06.170 --> 00:01:07.810
+So welcome to the first section
+
+39
+00:01:07.810 --> 00:01:09.610
+of exceptional handling.
+
+40
+00:01:09.610 --> 00:01:11.690
+And just to remember this, I'll
+
+41
+00:01:11.690 --> 00:01:12.970
+give you a few analogies so
+
+42
+00:01:12.970 --> 00:01:13.970
+that you can always remember.
+
+43
+00:01:13.970 --> 00:01:15.410
+All right, so what is this kind
+
+44
+00:01:15.410 --> 00:01:16.570
+of exception handling?
+
+45
+00:01:17.290 --> 00:01:19.410
+When you're a part of a big chai
+
+46
+00:01:19.410 --> 00:01:20.690
+journey, you want to sell a lot of
+
+47
+00:01:20.690 --> 00:01:23.670
+chais, a lot of things can go wrong.
+
+48
+00:01:23.670 --> 00:01:25.080
+Some example could be, let's
+
+49
+00:01:25.080 --> 00:01:26.680
+just say we have a milk spill.
+
+50
+00:01:28.200 --> 00:01:31.720
+Spill, Yeah, a Milk got spill.
+
+51
+00:01:31.720 --> 00:01:34.120
+Or maybe a simple missing
+
+52
+00:01:34.120 --> 00:01:37.640
+ingredient, or maybe something
+
+53
+00:01:37.640 --> 00:01:39.640
+is wrong in the brew steps.
+
+54
+00:01:39.640 --> 00:01:40.760
+So these are the common one
+
+55
+00:01:40.760 --> 00:01:41.560
+that we can figure out.
+
+56
+00:01:41.560 --> 00:01:42.720
+But there could be a lot more
+
+57
+00:01:42.720 --> 00:01:44.600
+which can absolutely go wrong.
+
+58
+00:01:44.600 --> 00:01:46.110
+So all of these things,
+
+59
+00:01:46.110 --> 00:01:48.520
+nobody likes them, but they actually
+
+60
+00:01:48.520 --> 00:01:49.920
+happen and we need
+
+61
+00:01:49.920 --> 00:01:51.400
+to learn how we can handle them.
+
+62
+00:01:51.400 --> 00:01:53.320
+So handling all of these incidents,
+
+63
+00:01:54.030 --> 00:01:54.880
+being aware that these
+
+64
+00:01:54.880 --> 00:01:55.840
+are the common mistakes
+
+65
+00:01:55.840 --> 00:01:57.400
+that happens in my chai shop.
+
+66
+00:01:57.400 --> 00:01:58.920
+I just want to handle them
+
+67
+00:01:58.920 --> 00:02:00.120
+so that they don't actually
+
+68
+00:02:00.120 --> 00:02:01.800
+crash my entire shop.
+
+69
+00:02:01.800 --> 00:02:03.440
+I just gracefully handle them.
+
+70
+00:02:03.440 --> 00:02:05.000
+Same thing happens when there
+
+71
+00:02:05.000 --> 00:02:06.240
+is a problem in your code.
+
+72
+00:02:06.240 --> 00:02:07.640
+You don't just crash the entire
+
+73
+00:02:07.640 --> 00:02:08.800
+program, you just handle
+
+74
+00:02:08.800 --> 00:02:10.199
+them gracefully so that the rest
+
+75
+00:02:10.199 --> 00:02:11.160
+of the program
+
+76
+00:02:11.160 --> 00:02:13.160
+can actually work pretty easily.
+
+77
+00:02:13.160 --> 00:02:14.680
+I'll show you some example of that.
+
+78
+00:02:14.680 --> 00:02:16.040
+Like what could go wrong?
+
+79
+00:02:16.680 --> 00:02:18.240
+Usually we write our code very
+
+80
+00:02:18.240 --> 00:02:20.600
+carefully, but no things do happen.
+
+81
+00:02:20.600 --> 00:02:21.920
+And let me show you,
+
+82
+00:02:21.920 --> 00:02:24.000
+by creating a new section, we are
+
+83
+00:02:24.000 --> 00:02:26.200
+on to the 11th section.
+
+84
+00:02:26.200 --> 00:02:27.560
+And let's call this one as
+
+85
+00:02:27.560 --> 00:02:31.440
+exceptions and let's call
+
+86
+00:02:31.440 --> 00:02:36.120
+this one as 01 Basic Py.
+
+87
+00:02:37.160 --> 00:02:39.040
+We will open up our file right
+
+88
+00:02:39.040 --> 00:02:41.040
+here, open an integrated terminal so
+
+89
+00:02:41.040 --> 00:02:42.360
+that we can directly run this.
+
+90
+00:02:43.790 --> 00:02:44.110
+All right?
+
+91
+00:02:44.110 --> 00:02:45.870
+And we'll close our
+
+92
+00:02:45.870 --> 00:02:47.070
+AI feature as well.
+
+93
+00:02:47.070 --> 00:02:48.990
+All right, so what can go wrong?
+
+94
+00:02:48.990 --> 00:02:50.230
+And you might be thinking, hey,
+
+95
+00:02:50.230 --> 00:02:51.910
+I just need an example for it.
+
+96
+00:02:51.910 --> 00:02:53.790
+All right, here is your example.
+
+97
+00:02:53.790 --> 00:02:55.270
+Somebody is placing orders.
+
+98
+00:02:55.270 --> 00:02:56.870
+So here is an array of the orders.
+
+99
+00:02:56.870 --> 00:02:58.789
+The first chai that we have is going
+
+100
+00:02:58.789 --> 00:03:01.030
+to be masala and the second
+
+101
+00:03:01.030 --> 00:03:02.910
+chai that we have is ginger.
+
+102
+00:03:02.910 --> 00:03:04.910
+How conveniently we have said it as
+
+103
+00:03:05.950 --> 00:03:08.420
+second chai, second ginger.
+
+104
+00:03:08.420 --> 00:03:09.660
+But when you go ahead and try
+
+105
+00:03:09.660 --> 00:03:11.460
+to simply have the print statement
+
+106
+00:03:11.460 --> 00:03:14.340
+on orders and you try
+
+107
+00:03:14.340 --> 00:03:16.100
+to access the second value,
+
+108
+00:03:16.100 --> 00:03:17.780
+There we go, the very first error.
+
+109
+00:03:17.780 --> 00:03:19.220
+We have already made it,
+
+110
+00:03:19.220 --> 00:03:20.540
+let's go ahead and run this.
+
+111
+00:03:20.540 --> 00:03:22.220
+So I'll just go ahead and say Python
+
+112
+00:03:22.220 --> 00:03:23.580
+3 and this is going to run this.
+
+113
+00:03:23.580 --> 00:03:25.140
+And we can see that this is
+
+114
+00:03:25.700 --> 00:03:27.500
+list index out of range.
+
+115
+00:03:27.500 --> 00:03:28.580
+And this is a well known
+
+116
+00:03:28.580 --> 00:03:30.020
+error which is index error.
+
+117
+00:03:30.020 --> 00:03:31.460
+So we found that.
+
+118
+00:03:31.460 --> 00:03:32.460
+Can we handle that?
+
+119
+00:03:32.460 --> 00:03:34.020
+Gratefully, yes we can.
+
+120
+00:03:34.020 --> 00:03:35.260
+But there are some errors
+
+121
+00:03:35.260 --> 00:03:36.260
+which are just like this.
+
+122
+00:03:36.260 --> 00:03:37.910
+We can see index error.
+
+123
+00:03:37.910 --> 00:03:39.550
+We have other kinds of errors
+
+124
+00:03:39.550 --> 00:03:40.790
+as well available to us.
+
+125
+00:03:40.790 --> 00:03:42.350
+So index error is just one
+
+126
+00:03:42.350 --> 00:03:45.750
+of them, which usually happens
+
+127
+00:03:45.750 --> 00:03:47.510
+when the index doesn't exist.
+
+128
+00:03:47.510 --> 00:03:48.390
+But again there are
+
+129
+00:03:48.390 --> 00:03:50.070
+different ways how it works.
+
+130
+00:03:50.070 --> 00:03:51.110
+So there is another one
+
+131
+00:03:51.110 --> 00:03:53.590
+which is known as key error.
+
+132
+00:03:53.590 --> 00:03:54.710
+What is this key error?
+
+133
+00:03:54.710 --> 00:03:56.030
+When a key is missing
+
+134
+00:03:56.030 --> 00:03:56.910
+in the dictionary.
+
+135
+00:03:56.910 --> 00:03:58.390
+So this is another kind of error.
+
+136
+00:03:58.390 --> 00:03:59.790
+Now nobody remembers all of them.
+
+137
+00:03:59.790 --> 00:04:00.350
+I just happen
+
+138
+00:04:00.350 --> 00:04:01.590
+to remember a few of them.
+
+139
+00:04:02.200 --> 00:04:03.910
+Very famous, everybody knows this.
+
+140
+00:04:03.910 --> 00:04:07.640
+This is zero division
+
+141
+00:04:07.640 --> 00:04:09.120
+error in the programming.
+
+142
+00:04:09.120 --> 00:04:10.760
+We don't have a concept of infinity
+
+143
+00:04:10.760 --> 00:04:11.840
+in the mathematical world.
+
+144
+00:04:11.840 --> 00:04:12.920
+When we divided by zero,
+
+145
+00:04:12.920 --> 00:04:14.360
+it tends to infinity.
+
+146
+00:04:14.360 --> 00:04:15.760
+Doesn't really mean infinity
+
+147
+00:04:15.760 --> 00:04:17.160
+tends to infinity.
+
+148
+00:04:17.160 --> 00:04:18.079
+The same goes here.
+
+149
+00:04:18.079 --> 00:04:19.160
+In the programming world we
+
+150
+00:04:19.160 --> 00:04:20.240
+cannot actually do that.
+
+151
+00:04:20.240 --> 00:04:21.160
+We just simply throw
+
+152
+00:04:21.160 --> 00:04:22.360
+an error which is division.
+
+153
+00:04:23.320 --> 00:04:25.120
+Then there is also error, which
+
+154
+00:04:25.120 --> 00:04:26.280
+you'll see these days quite
+
+155
+00:04:26.280 --> 00:04:27.360
+a lot, which is type error.
+
+156
+00:04:27.360 --> 00:04:28.280
+This happens when there
+
+157
+00:04:28.280 --> 00:04:29.880
+are incompatible type
+
+158
+00:04:29.880 --> 00:04:31.200
+String mixed with integer.
+
+159
+00:04:31.200 --> 00:04:32.520
+Integer mixed with string.
+
+160
+00:04:32.520 --> 00:04:33.960
+So type error also happens.
+
+161
+00:04:34.490 --> 00:04:35.770
+And then we have this
+
+162
+00:04:35.770 --> 00:04:37.850
+something known as name error.
+
+163
+00:04:37.850 --> 00:04:39.610
+Yes, this is something comes
+
+164
+00:04:39.610 --> 00:04:41.050
+up when the variable is not even
+
+165
+00:04:41.050 --> 00:04:42.650
+defined and you are trying to use,
+
+166
+00:04:43.720 --> 00:04:45.450
+Does anybody remember all of them?
+
+167
+00:04:45.450 --> 00:04:47.210
+No, nobody remembers all of them.
+
+168
+00:04:47.210 --> 00:04:48.170
+Just happen to remember.
+
+169
+00:04:48.170 --> 00:04:49.610
+You will also get to remember
+
+170
+00:04:49.610 --> 00:04:51.930
+a few of them, but not all of them.
+
+171
+00:04:51.930 --> 00:04:53.290
+Even if you don't remember any one
+
+172
+00:04:53.290 --> 00:04:54.410
+of them, that's totally fine.
+
+173
+00:04:54.410 --> 00:04:55.410
+Eventually just by looking
+
+174
+00:04:55.410 --> 00:04:56.850
+at the error, you'll figure out all
+
+175
+00:04:56.850 --> 00:04:58.490
+right, this is what the error says.
+
+176
+00:04:58.490 --> 00:05:00.770
+And in the special line last two
+
+177
+00:05:00.770 --> 00:05:02.770
+versions of Python, whatever the
+
+178
+00:05:02.770 --> 00:05:04.490
+three after dot, that means that
+
+179
+00:05:04.490 --> 00:05:06.490
+version, they have actually worked
+
+180
+00:05:06.490 --> 00:05:08.530
+quite a lot in the errors, as well
+
+181
+00:05:08.530 --> 00:05:10.530
+as how this error can be helpful for
+
+182
+00:05:10.530 --> 00:05:11.130
+a developer.
+
+183
+00:05:11.130 --> 00:05:12.850
+So they have done pretty interesting
+
+184
+00:05:12.850 --> 00:05:15.050
+and tremendous job onto this one.
+
+185
+00:05:15.050 --> 00:05:16.690
+So I hope you got a brief idea
+
+186
+00:05:16.690 --> 00:05:18.050
+of how it works and how it
+
+187
+00:05:18.050 --> 00:05:19.570
+looks like in the next video.
+
+188
+00:05:19.570 --> 00:05:21.130
+We will further nail it down
+
+189
+00:05:21.130 --> 00:05:22.890
+and try to go in depth about
+
+190
+00:05:22.890 --> 00:05:24.890
+how we can actually handle these
+
+191
+00:05:24.890 --> 00:05:26.370
+exceptions or errors.
+
+192
+00:05:26.370 --> 00:05:27.440
+Let's go ahead and catch
+
+193
+00:05:27.440 --> 00:05:28.250
+up in the next video.

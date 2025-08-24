@@ -1,0 +1,1469 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:02.280
+Welcome to the Python
+
+2
+00:00:02.280 --> 00:00:03.480
+course and welcome to this
+
+3
+00:00:03.480 --> 00:00:05.280
+fresh new section.
+
+4
+00:00:05.280 --> 00:00:06.560
+So in the last section we talk
+
+5
+00:00:06.560 --> 00:00:08.760
+about comprehensions and I'm
+
+6
+00:00:08.760 --> 00:00:10.000
+pretty sure you are now impressed
+
+7
+00:00:10.000 --> 00:00:11.600
+that all right, I get it.
+
+8
+00:00:11.600 --> 00:00:13.280
+A lot of things I understand
+
+9
+00:00:13.280 --> 00:00:14.760
+and eventually as you will write
+
+10
+00:00:14.760 --> 00:00:16.158
+more production level code, you will
+
+11
+00:00:16.158 --> 00:00:18.160
+understand them much better.
+
+12
+00:00:18.160 --> 00:00:20.000
+No need of too much practicing it.
+
+13
+00:00:20.000 --> 00:00:21.080
+The theory, knowledge that you
+
+14
+00:00:21.080 --> 00:00:22.120
+have, the code we have written
+
+15
+00:00:22.120 --> 00:00:23.520
+together, that's enough.
+
+16
+00:00:23.520 --> 00:00:25.200
+Now let's move into generators.
+
+17
+00:00:25.810 --> 00:00:27.130
+Now generators is also
+
+18
+00:00:27.130 --> 00:00:28.650
+a very interesting concept.
+
+19
+00:00:28.650 --> 00:00:29.730
+It's not as difficult
+
+20
+00:00:29.730 --> 00:00:30.570
+as comprehension.
+
+21
+00:00:30.570 --> 00:00:31.970
+It's relatively easy.
+
+22
+00:00:31.970 --> 00:00:33.210
+You just have to train your
+
+23
+00:00:33.210 --> 00:00:34.530
+brain that what's the difference
+
+24
+00:00:34.530 --> 00:00:35.970
+between a regular function
+
+25
+00:00:35.970 --> 00:00:37.650
+as well as a generator.
+
+26
+00:00:37.650 --> 00:00:39.050
+Now whenever there's a generator,
+
+27
+00:00:39.050 --> 00:00:40.410
+always remember one thing which
+
+28
+00:00:40.410 --> 00:00:42.610
+is we are generating things
+
+29
+00:00:42.610 --> 00:00:44.050
+in the function or in the loop.
+
+30
+00:00:44.050 --> 00:00:45.690
+We just get the result immediately.
+
+31
+00:00:45.690 --> 00:00:46.890
+So everything is loaded up
+
+32
+00:00:46.890 --> 00:00:48.570
+in the memory, in the loops
+
+33
+00:00:48.570 --> 00:00:49.890
+or other functions.
+
+34
+00:00:49.890 --> 00:00:51.650
+But when you design generators
+
+35
+00:00:52.570 --> 00:00:54.010
+you get one value at a time.
+
+36
+00:00:54.010 --> 00:00:55.770
+So it's very memory optimized,
+
+37
+00:00:55.770 --> 00:00:58.090
+it doesn't do all the thing at once.
+
+38
+00:00:58.090 --> 00:00:59.530
+It's actually very optimized
+
+39
+00:00:59.530 --> 00:01:00.810
+in certain cases.
+
+40
+00:01:00.810 --> 00:01:02.250
+But this doesn't mean we are going
+
+41
+00:01:02.250 --> 00:01:03.450
+to replace the whole functions
+
+42
+00:01:03.450 --> 00:01:04.569
+with the generators.
+
+43
+00:01:04.569 --> 00:01:05.930
+They do have their need and
+
+44
+00:01:05.930 --> 00:01:06.770
+sometimes they are super
+
+45
+00:01:06.770 --> 00:01:08.329
+helpful, super useful and
+
+46
+00:01:08.329 --> 00:01:09.170
+especially if you're working
+
+47
+00:01:09.170 --> 00:01:10.530
+with fast API or anything like
+
+48
+00:01:10.530 --> 00:01:12.130
+that, it's helpful, it's
+
+49
+00:01:12.130 --> 00:01:13.370
+useful, but not always.
+
+50
+00:01:13.370 --> 00:01:15.650
+So always keep in mind there is a way
+
+51
+00:01:15.650 --> 00:01:16.890
+of how things are being done
+
+52
+00:01:16.890 --> 00:01:19.150
+or there is a use case factor
+
+53
+00:01:19.150 --> 00:01:20.910
+always associated with that.
+
+54
+00:01:20.910 --> 00:01:22.070
+So with this, let me take you
+
+55
+00:01:22.070 --> 00:01:23.670
+up on the screen and we're going
+
+56
+00:01:23.670 --> 00:01:25.070
+to go ahead and talk about
+
+57
+00:01:25.070 --> 00:01:27.670
+the generators one by one.
+
+58
+00:01:27.670 --> 00:01:29.270
+So let's go ahead and expand this.
+
+59
+00:01:29.270 --> 00:01:30.990
+There we go, nice and easy.
+
+60
+00:01:30.990 --> 00:01:32.590
+And we are here with the new
+
+61
+00:01:32.590 --> 00:01:34.430
+topic, let's name this up.
+
+62
+00:01:35.310 --> 00:01:37.470
+So generator or generators?
+
+63
+00:01:37.470 --> 00:01:38.870
+These are pretty fun and
+
+64
+00:01:38.870 --> 00:01:40.390
+interesting topic and couple of
+
+65
+00:01:40.390 --> 00:01:41.430
+things you always have to
+
+66
+00:01:41.430 --> 00:01:43.270
+remember whenever we are talking
+
+67
+00:01:43.270 --> 00:01:44.830
+about the generators, a couple of
+
+68
+00:01:44.830 --> 00:01:45.990
+things you are going to see as
+
+69
+00:01:45.990 --> 00:01:47.790
+special terms but one of the most
+
+70
+00:01:47.790 --> 00:01:50.040
+common term that we see all
+
+71
+00:01:50.040 --> 00:01:51.800
+around the places is yield.
+
+72
+00:01:51.800 --> 00:01:53.400
+This is a keyword just like we have
+
+73
+00:01:53.400 --> 00:01:55.600
+for keyword but generators
+
+74
+00:01:55.600 --> 00:01:57.760
+are always, always going to come
+
+75
+00:01:57.760 --> 00:01:59.880
+up with the yield as a keyword.
+
+76
+00:01:59.880 --> 00:02:01.240
+Now the most important part
+
+77
+00:02:01.240 --> 00:02:02.640
+that you should always remember
+
+78
+00:02:02.640 --> 00:02:04.400
+about generators is first
+
+79
+00:02:04.400 --> 00:02:08.710
+of all you save memory.
+
+80
+00:02:09.320 --> 00:02:11.600
+So that's the part one, another part
+
+81
+00:02:11.600 --> 00:02:16.550
+is some times you don't want
+
+82
+00:02:16.550 --> 00:02:22.630
+the results results as immediately.
+
+83
+00:02:22.630 --> 00:02:24.070
+Hope I wrote that correct.
+
+84
+00:02:24.070 --> 00:02:24.670
+So you don't want
+
+85
+00:02:24.670 --> 00:02:25.630
+the result immediately.
+
+86
+00:02:25.630 --> 00:02:27.990
+And the most important part is lazy.
+
+87
+00:02:28.550 --> 00:02:29.510
+Evaluation.
+
+88
+00:02:30.710 --> 00:02:32.150
+Evaluation.
+
+89
+00:02:32.790 --> 00:02:33.510
+There we go.
+
+90
+00:02:33.510 --> 00:02:34.670
+Hope I wrote that correct.
+
+91
+00:02:34.670 --> 00:02:36.030
+But if I did a typo,
+
+92
+00:02:36.030 --> 00:02:37.350
+please excuse me on that.
+
+93
+00:02:37.350 --> 00:02:38.790
+These are the three most
+
+94
+00:02:38.790 --> 00:02:40.630
+important keyword points of,
+
+95
+00:02:41.140 --> 00:02:43.050
+generators, but not the only one.
+
+96
+00:02:43.050 --> 00:02:44.170
+There are other use cases as
+
+97
+00:02:44.170 --> 00:02:45.930
+well, but these are more than enough
+
+98
+00:02:45.930 --> 00:02:46.610
+for us to understand
+
+99
+00:02:46.610 --> 00:02:48.730
+and remember that how it works.
+
+100
+00:02:48.730 --> 00:02:50.610
+So I think the better way of doing
+
+101
+00:02:50.610 --> 00:02:53.850
+this is to simply go ahead and write
+
+102
+00:02:53.850 --> 00:02:55.930
+some code that is always I love.
+
+103
+00:02:55.930 --> 00:02:57.770
+So let me take you on this and we'll
+
+104
+00:02:57.770 --> 00:02:58.770
+just close all these things.
+
+105
+00:02:58.770 --> 00:02:59.770
+We don't need this.
+
+106
+00:02:59.770 --> 00:03:02.490
+We are now into 08.
+
+107
+00:03:02.490 --> 00:03:03.450
+That's pretty fun.
+
+108
+00:03:04.090 --> 00:03:05.290
+Nope, not here.
+
+109
+00:03:06.250 --> 00:03:07.860
+And there we go.
+
+110
+00:03:07.860 --> 00:03:09.060
+So this one is 08
+
+111
+00:03:09.060 --> 00:03:11.060
+underscore generators.
+
+112
+00:03:12.340 --> 00:03:14.300
+And we'll start with the basics.
+
+113
+00:03:14.300 --> 00:03:17.540
+So we'll call this1 as 01basics.
+
+114
+00:03:17.540 --> 00:03:18.300
+I don't know what else
+
+115
+00:03:18.300 --> 00:03:19.430
+to call this one.
+
+116
+00:03:19.430 --> 00:03:20.460
+Shouldn't be basics.
+
+117
+00:03:20.460 --> 00:03:21.700
+Where is our extension?
+
+118
+00:03:22.340 --> 00:03:24.420
+Forgot that py.
+
+119
+00:03:25.300 --> 00:03:27.020
+All right, so the way how you
+
+120
+00:03:27.020 --> 00:03:28.740
+define the generators, they look
+
+121
+00:03:28.740 --> 00:03:30.500
+exactly same as functions.
+
+122
+00:03:30.500 --> 00:03:33.260
+So if I go ahead and use, if I go
+
+123
+00:03:33.260 --> 00:03:34.890
+ahead, oh, I, I can expand this.
+
+124
+00:03:34.890 --> 00:03:36.370
+If I go ahead and say, hey,
+
+125
+00:03:36.370 --> 00:03:37.450
+this is my definition.
+
+126
+00:03:37.450 --> 00:03:40.170
+I call this one as serve chai.
+
+127
+00:03:40.170 --> 00:03:41.530
+And there we go.
+
+128
+00:03:41.530 --> 00:03:42.410
+Just like that.
+
+129
+00:03:42.410 --> 00:03:44.570
+Yeah, this is your generator.
+
+130
+00:03:44.570 --> 00:03:45.930
+So what do you mean by having
+
+131
+00:03:45.930 --> 00:03:47.700
+a generator just like that?
+
+132
+00:03:47.700 --> 00:03:48.890
+The only difference that comes
+
+133
+00:03:48.890 --> 00:03:50.009
+up is how you provide
+
+134
+00:03:50.009 --> 00:03:51.330
+a value in the function.
+
+135
+00:03:51.330 --> 00:03:52.410
+We simply go ahead and say
+
+136
+00:03:52.410 --> 00:03:54.250
+return the value that it does.
+
+137
+00:03:54.250 --> 00:03:56.450
+But in the world of generators,
+
+138
+00:03:56.450 --> 00:03:57.210
+you actually use
+
+139
+00:03:57.210 --> 00:03:58.810
+the keyword which is yield.
+
+140
+00:03:58.810 --> 00:04:00.970
+So it yields one value at a time.
+
+141
+00:04:01.480 --> 00:04:02.560
+So for example, I go ahead
+
+142
+00:04:02.560 --> 00:04:04.320
+and say this is my cup one.
+
+143
+00:04:04.320 --> 00:04:08.040
+And the cup one says masala chai.
+
+144
+00:04:08.040 --> 00:04:10.280
+Similarly, we have this one again.
+
+145
+00:04:10.280 --> 00:04:12.280
+So let's just say this is cup two.
+
+146
+00:04:12.280 --> 00:04:15.240
+This time we are saying ginger chai.
+
+147
+00:04:15.240 --> 00:04:16.040
+Another one.
+
+148
+00:04:16.040 --> 00:04:16.760
+What else?
+
+149
+00:04:19.959 --> 00:04:22.200
+Eli Chichai forgotten I.
+
+150
+00:04:22.920 --> 00:04:24.280
+And this is my cup three.
+
+151
+00:04:24.280 --> 00:04:25.080
+And there could be more.
+
+152
+00:04:26.120 --> 00:04:28.040
+So what do you think how this
+
+153
+00:04:28.040 --> 00:04:30.120
+function will, go ahead and work?
+
+154
+00:04:30.120 --> 00:04:31.480
+So if I go ahead and say, let's
+
+155
+00:04:31.480 --> 00:04:32.920
+just say I'm having a stall.
+
+156
+00:04:32.920 --> 00:04:34.160
+And in this stall I
+
+157
+00:04:34.160 --> 00:04:34.650
+call this servechai.
+
+158
+00:04:35.200 --> 00:04:37.080
+And this method executes, if it would
+
+159
+00:04:37.080 --> 00:04:38.400
+be a regular function, we would be
+
+160
+00:04:38.400 --> 00:04:40.000
+looking for a keyword return that
+
+161
+00:04:40.000 --> 00:04:41.720
+this return will give me the value.
+
+162
+00:04:41.720 --> 00:04:43.440
+But here I'm confused whether
+
+163
+00:04:43.440 --> 00:04:44.567
+it will be Cup 1, Cup
+
+164
+00:04:44.567 --> 00:04:46.040
+2, Cup 3, or all of them.
+
+165
+00:04:46.040 --> 00:04:47.800
+It could be all of them as well.
+
+166
+00:04:47.800 --> 00:04:49.080
+So for this, let's go ahead
+
+167
+00:04:49.080 --> 00:04:50.960
+and print this and you will see some
+
+168
+00:04:50.960 --> 00:04:53.290
+strange result for cup in.
+
+169
+00:04:53.290 --> 00:04:54.010
+And let's just go
+
+170
+00:04:54.010 --> 00:04:55.050
+ahead and say stall.
+
+171
+00:04:55.050 --> 00:04:56.810
+And here's the interesting part
+
+172
+00:04:56.810 --> 00:04:58.690
+and where people also get confused.
+
+173
+00:04:58.690 --> 00:05:00.410
+If I go ahead and work like this,
+
+174
+00:05:00.970 --> 00:05:02.850
+you might be expecting, okay, I'm
+
+175
+00:05:02.850 --> 00:05:04.250
+getting all the values, probably
+
+176
+00:05:04.250 --> 00:05:06.210
+this stall gets all the values
+
+177
+00:05:06.210 --> 00:05:08.010
+and then I'm looping through it.
+
+178
+00:05:08.010 --> 00:05:09.610
+Don't worry, we'll get that.
+
+179
+00:05:09.610 --> 00:05:10.890
+Investigative study is one
+
+180
+00:05:10.890 --> 00:05:12.570
+of the best study where you actually
+
+181
+00:05:12.570 --> 00:05:14.330
+take a moment to think about what
+
+182
+00:05:14.330 --> 00:05:15.650
+will happen, what is about to
+
+183
+00:05:15.650 --> 00:05:17.130
+happen, and then you work with that.
+
+184
+00:05:17.690 --> 00:05:20.180
+So let's just say Python 3.
+
+185
+00:05:20.180 --> 00:05:21.780
+We have one file and we can see,
+
+186
+00:05:21.780 --> 00:05:23.540
+all right, there is no difference.
+
+187
+00:05:23.540 --> 00:05:24.860
+I'm getting all the value
+
+188
+00:05:24.860 --> 00:05:26.700
+in the result, but what's happening
+
+189
+00:05:26.700 --> 00:05:28.660
+is in the memory itself,
+
+190
+00:05:28.660 --> 00:05:30.220
+behind the scene, how it happens.
+
+191
+00:05:30.220 --> 00:05:31.860
+So if I go ahead and take a copy of
+
+192
+00:05:31.860 --> 00:05:33.780
+this, let's go ahead and paste this.
+
+193
+00:05:33.780 --> 00:05:36.260
+So this is my function that I have,
+
+194
+00:05:36.260 --> 00:05:38.740
+and this function is actually,
+
+195
+00:05:39.820 --> 00:05:43.220
+getting called by technically
+
+196
+00:05:43.220 --> 00:05:44.500
+this whole piece of code.
+
+197
+00:05:44.500 --> 00:05:45.940
+So let's go ahead and get this
+
+198
+00:05:45.940 --> 00:05:47.550
+whole piece of code as well.
+
+199
+00:05:47.550 --> 00:05:48.430
+There we go.
+
+200
+00:05:48.430 --> 00:05:50.110
+So what happens in this
+
+201
+00:05:50.110 --> 00:05:51.550
+as soon as you come up here?
+
+202
+00:05:51.550 --> 00:05:54.350
+This stall is actually just keeping
+
+203
+00:05:54.350 --> 00:05:56.510
+a reference of this whole thing.
+
+204
+00:05:56.510 --> 00:05:57.390
+It's not actually
+
+205
+00:05:57.390 --> 00:05:59.070
+using it immediately.
+
+206
+00:05:59.070 --> 00:06:00.910
+The moment you actually run this
+
+207
+00:06:00.910 --> 00:06:01.910
+loop, then it
+
+208
+00:06:01.910 --> 00:06:03.150
+actually goes ahead and use.
+
+209
+00:06:03.150 --> 00:06:04.310
+So for the first iteration
+
+210
+00:06:04.310 --> 00:06:05.110
+of the loop, it's going
+
+211
+00:06:05.110 --> 00:06:06.510
+to refer to this value.
+
+212
+00:06:06.510 --> 00:06:08.030
+For the second iteration it's going
+
+213
+00:06:08.030 --> 00:06:09.070
+to refer to this value.
+
+214
+00:06:09.070 --> 00:06:10.550
+And for the third iteration, this
+
+215
+00:06:10.550 --> 00:06:12.270
+is going to refer to this value.
+
+216
+00:06:12.270 --> 00:06:14.150
+The only difference is in the memory.
+
+217
+00:06:14.150 --> 00:06:16.150
+So yield actually pauses the function
+
+218
+00:06:16.150 --> 00:06:17.710
+and resume the function on the next
+
+219
+00:06:17.710 --> 00:06:20.170
+call, but exactly from that point
+
+220
+00:06:20.170 --> 00:06:21.930
+where it has stopped in the past.
+
+221
+00:06:21.930 --> 00:06:23.450
+And what's the difference between,
+
+222
+00:06:24.010 --> 00:06:25.250
+having a normal
+
+223
+00:06:25.250 --> 00:06:26.570
+function and regular function?
+
+224
+00:06:26.570 --> 00:06:27.170
+Pretty good.
+
+225
+00:06:27.170 --> 00:06:28.130
+And can I show you
+
+226
+00:06:28.130 --> 00:06:29.370
+the difference between them?
+
+227
+00:06:29.370 --> 00:06:30.050
+Because right now
+
+228
+00:06:30.050 --> 00:06:30.890
+it's not very clear.
+
+229
+00:06:30.890 --> 00:06:32.010
+It looks all the same.
+
+230
+00:06:32.010 --> 00:06:33.370
+All right, I get this.
+
+231
+00:06:33.370 --> 00:06:34.370
+Let's create a normal
+
+232
+00:06:34.370 --> 00:06:35.050
+function for this.
+
+233
+00:06:35.050 --> 00:06:37.170
+First, let's just say
+
+234
+00:06:37.170 --> 00:06:40.090
+we have get chai list.
+
+235
+00:06:41.050 --> 00:06:42.810
+And this is my chai list.
+
+236
+00:06:42.810 --> 00:06:43.530
+There we go.
+
+237
+00:06:43.530 --> 00:06:45.290
+And I simply go ahead and say
+
+238
+00:06:45.290 --> 00:06:47.330
+this is return and it returns
+
+239
+00:06:47.330 --> 00:06:48.890
+you an array which has.
+
+240
+00:06:48.890 --> 00:06:50.570
+Let's just call this one as cup one
+
+241
+00:06:51.530 --> 00:06:53.530
+and this will be cup two.
+
+242
+00:06:53.530 --> 00:06:54.090
+Oops.
+
+243
+00:06:55.050 --> 00:06:57.050
+And there we go, we have cup three.
+
+244
+00:06:58.010 --> 00:06:58.930
+All right, no problem.
+
+245
+00:06:58.930 --> 00:07:00.650
+This is our regular function.
+
+246
+00:07:00.650 --> 00:07:02.410
+A similar function could be
+
+247
+00:07:02.410 --> 00:07:03.930
+generator function as well.
+
+248
+00:07:03.930 --> 00:07:04.890
+I'll write a comment.
+
+249
+00:07:04.890 --> 00:07:08.730
+This one is generator function
+
+250
+00:07:08.730 --> 00:07:13.310
+and I simply say def get chai.
+
+251
+00:07:13.310 --> 00:07:14.630
+But this is actually gen
+
+252
+00:07:14.630 --> 00:07:15.910
+generator function.
+
+253
+00:07:16.790 --> 00:07:18.470
+And instead of just returning
+
+254
+00:07:18.470 --> 00:07:19.710
+it like this, what we
+
+255
+00:07:19.710 --> 00:07:21.430
+do is we yield the values.
+
+256
+00:07:23.830 --> 00:07:24.470
+Yield.
+
+257
+00:07:24.470 --> 00:07:25.550
+And this time we are
+
+258
+00:07:25.550 --> 00:07:27.590
+yielding cup one.
+
+259
+00:07:27.590 --> 00:07:29.270
+Then we go ahead and duplicate this.
+
+260
+00:07:29.270 --> 00:07:31.350
+Yield two and yield three.
+
+261
+00:07:31.350 --> 00:07:31.950
+There we go.
+
+262
+00:07:31.950 --> 00:07:32.630
+Nice and easy.
+
+263
+00:07:32.630 --> 00:07:34.430
+So the difference is one just uses
+
+264
+00:07:34.430 --> 00:07:36.550
+the word return, one uses this.
+
+265
+00:07:36.550 --> 00:07:38.480
+So how we're going to use this,
+
+266
+00:07:38.480 --> 00:07:39.320
+Let me show you that how
+
+267
+00:07:39.320 --> 00:07:40.720
+it's actually being done.
+
+268
+00:07:40.720 --> 00:07:42.320
+So if I go ahead and simply
+
+269
+00:07:42.320 --> 00:07:44.880
+say that hey, I want to get
+
+270
+00:07:44.880 --> 00:07:47.040
+chai and this chai will be
+
+271
+00:07:47.040 --> 00:07:51.040
+coming up, from get chai gen.
+
+272
+00:07:52.000 --> 00:07:53.600
+Did we call it as get?
+
+273
+00:07:53.600 --> 00:07:55.440
+We should be calling it as gen,
+
+274
+00:07:55.440 --> 00:07:59.200
+not get get chai gen.
+
+275
+00:07:59.200 --> 00:08:00.080
+And there we go.
+
+276
+00:08:00.640 --> 00:08:01.720
+First of all, let's print
+
+277
+00:08:01.720 --> 00:08:03.240
+the value as it is so that we can
+
+278
+00:08:03.240 --> 00:08:04.760
+actually verify what's actually
+
+279
+00:08:04.760 --> 00:08:05.920
+getting printed here.
+
+280
+00:08:06.580 --> 00:08:07.620
+Can we comment this?
+
+281
+00:08:08.290 --> 00:08:09.340
+Yes, we can comment this.
+
+282
+00:08:09.340 --> 00:08:10.420
+We don't need it now.
+
+283
+00:08:11.220 --> 00:08:13.060
+All right, let's see the value
+
+284
+00:08:13.060 --> 00:08:14.980
+and let's see the result.
+
+285
+00:08:14.980 --> 00:08:16.300
+It says what you're getting is
+
+286
+00:08:16.300 --> 00:08:18.060
+a generator object and you
+
+287
+00:08:18.060 --> 00:08:19.420
+are just holding a reference.
+
+288
+00:08:19.420 --> 00:08:22.019
+As I told you, this is just actually
+
+289
+00:08:22.019 --> 00:08:23.460
+pointing to this whole method.
+
+290
+00:08:23.460 --> 00:08:24.660
+So this is just a reference
+
+291
+00:08:24.660 --> 00:08:25.460
+that we are holding.
+
+292
+00:08:26.190 --> 00:08:27.300
+Nothing more, nothing less.
+
+293
+00:08:28.020 --> 00:08:28.980
+Now what if I want
+
+294
+00:08:28.980 --> 00:08:30.060
+to print the values?
+
+295
+00:08:30.060 --> 00:08:31.340
+If you want to go ahead and print
+
+296
+00:08:31.340 --> 00:08:32.620
+the values, then you have to
+
+297
+00:08:32.620 --> 00:08:34.980
+actually use a method known as Next.
+
+298
+00:08:35.830 --> 00:08:37.630
+You simply go ahead and say, hey, I
+
+299
+00:08:37.630 --> 00:08:39.510
+have the reference, but next I want
+
+300
+00:08:39.510 --> 00:08:42.270
+to run this function once and want
+
+301
+00:08:42.270 --> 00:08:43.909
+to see what's the value of it.
+
+302
+00:08:43.909 --> 00:08:45.830
+So for this we have to explicitly
+
+303
+00:08:45.830 --> 00:08:48.310
+pass it inside this next method.
+
+304
+00:08:48.310 --> 00:08:49.870
+And you will be surprised to know
+
+305
+00:08:49.870 --> 00:08:51.269
+that this function will now run
+
+306
+00:08:51.269 --> 00:08:53.070
+and whatever the first value you are
+
+307
+00:08:53.070 --> 00:08:54.870
+yielding, you will get that value.
+
+308
+00:08:54.870 --> 00:08:55.950
+So if I run this again,
+
+309
+00:08:55.950 --> 00:08:57.590
+notice it says cup one.
+
+310
+00:08:57.590 --> 00:08:58.990
+Now as soon as the cup one
+
+311
+00:08:58.990 --> 00:09:00.310
+comes, this is where you are
+
+312
+00:09:00.310 --> 00:09:02.600
+right now at this cup one and.
+
+313
+00:09:02.600 --> 00:09:04.040
+And your method is now
+
+314
+00:09:04.040 --> 00:09:05.240
+on the pause state.
+
+315
+00:09:05.240 --> 00:09:06.680
+It has not exited.
+
+316
+00:09:06.680 --> 00:09:08.440
+It's still in the memory.
+
+317
+00:09:08.440 --> 00:09:10.520
+It's not executing or calculating
+
+318
+00:09:10.520 --> 00:09:11.600
+all the things at once.
+
+319
+00:09:11.600 --> 00:09:13.720
+It just has executed once.
+
+320
+00:09:13.720 --> 00:09:15.800
+First yield value is with you.
+
+321
+00:09:15.800 --> 00:09:18.280
+But now the function is paused
+
+322
+00:09:19.080 --> 00:09:20.640
+whenever you actually call the next
+
+323
+00:09:20.640 --> 00:09:23.080
+next time it actually keeps track
+
+324
+00:09:23.080 --> 00:09:24.600
+everything in the memory.
+
+325
+00:09:24.600 --> 00:09:26.520
+And the next time it will just go
+
+326
+00:09:26.520 --> 00:09:28.360
+ahead and give you the second result
+
+327
+00:09:28.360 --> 00:09:29.400
+which you are yielding.
+
+328
+00:09:30.010 --> 00:09:31.490
+So for this, if I go ahead and print
+
+329
+00:09:31.490 --> 00:09:33.250
+this again, notice this time
+
+330
+00:09:33.250 --> 00:09:34.810
+the cup won for the first result.
+
+331
+00:09:34.810 --> 00:09:36.130
+But if I print this, notice
+
+332
+00:09:36.130 --> 00:09:37.210
+the function resumes
+
+333
+00:09:37.210 --> 00:09:39.050
+exactly where you left it.
+
+334
+00:09:39.050 --> 00:09:40.730
+If you go ahead and print it again,
+
+335
+00:09:41.290 --> 00:09:44.410
+this is how we get the cup three.
+
+336
+00:09:44.410 --> 00:09:45.609
+But what if I go ahead
+
+337
+00:09:45.609 --> 00:09:47.130
+and print it again?
+
+338
+00:09:47.130 --> 00:09:48.010
+That's interesting.
+
+339
+00:09:48.010 --> 00:09:50.650
+Notice here it says stop iteration.
+
+340
+00:09:50.650 --> 00:09:52.330
+You cannot keep on passing
+
+341
+00:09:52.330 --> 00:09:53.530
+me the next because
+
+342
+00:09:53.530 --> 00:09:55.170
+I'm done yielding the values.
+
+343
+00:09:55.170 --> 00:09:56.730
+I can only yield three values.
+
+344
+00:09:56.730 --> 00:09:57.450
+So you can run this
+
+345
+00:09:57.450 --> 00:09:58.660
+function only three times.
+
+346
+00:09:58.660 --> 00:10:00.650
+And maybe that's an explicit maybe
+
+347
+00:10:00.650 --> 00:10:01.890
+this is exactly what you want,
+
+348
+00:10:01.890 --> 00:10:03.530
+but you have to keep in mind that
+
+349
+00:10:03.530 --> 00:10:05.210
+what's important and what's not.
+
+350
+00:10:05.210 --> 00:10:06.570
+I'll just comment this one because
+
+351
+00:10:06.570 --> 00:10:08.410
+this is going to produce this error.
+
+352
+00:10:08.410 --> 00:10:10.970
+So we'll just say gives error
+
+353
+00:10:10.970 --> 00:10:12.330
+so that you get the notes
+
+354
+00:10:12.330 --> 00:10:13.610
+and everything for you.
+
+355
+00:10:13.610 --> 00:10:15.690
+So I hope this portion of where
+
+356
+00:10:15.690 --> 00:10:17.130
+we studied about the generator,
+
+357
+00:10:17.770 --> 00:10:18.930
+we found them interesting.
+
+358
+00:10:18.930 --> 00:10:20.690
+They're very interesting and as
+
+359
+00:10:20.690 --> 00:10:21.530
+you will write more
+
+360
+00:10:21.530 --> 00:10:22.730
+of the use cases, especially
+
+361
+00:10:22.730 --> 00:10:24.370
+connecting with the database closing
+
+362
+00:10:24.370 --> 00:10:25.920
+the database connections.
+
+363
+00:10:25.920 --> 00:10:27.000
+This generator is actually
+
+364
+00:10:27.000 --> 00:10:28.320
+super useful and you'll see them
+
+365
+00:10:28.320 --> 00:10:30.160
+quite a lot in the fastapi
+
+366
+00:10:30.160 --> 00:10:31.440
+that is it for this video.
+
+367
+00:10:31.440 --> 00:10:33.040
+Let's catch up in the next one.

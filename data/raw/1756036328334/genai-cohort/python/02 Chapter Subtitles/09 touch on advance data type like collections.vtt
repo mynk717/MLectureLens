@@ -1,0 +1,1013 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:01.680
+Hey there.
+
+2
+00:00:01.680 --> 00:00:02.760
+Welcome to the video
+
+3
+00:00:02.760 --> 00:00:05.120
+on advanced data type.
+
+4
+00:00:05.120 --> 00:00:06.720
+To be honest, I don't want to
+
+5
+00:00:06.720 --> 00:00:08.280
+make this video yet because this
+
+6
+00:00:08.280 --> 00:00:10.120
+is too early for you just
+
+7
+00:00:10.120 --> 00:00:12.000
+getting started with Python now,
+
+8
+00:00:12.000 --> 00:00:13.800
+these advanced data type do
+
+9
+00:00:13.800 --> 00:00:15.160
+exist, but they don't exist in
+
+10
+00:00:15.160 --> 00:00:16.000
+Python itself.
+
+11
+00:00:16.000 --> 00:00:17.560
+You have to bring in code that
+
+12
+00:00:17.560 --> 00:00:18.720
+is written by somebody else.
+
+13
+00:00:18.720 --> 00:00:20.640
+That means we want to bring in some
+
+14
+00:00:20.640 --> 00:00:22.880
+third party modules into our code.
+
+15
+00:00:23.440 --> 00:00:25.280
+The module is just a fancy name.
+
+16
+00:00:25.280 --> 00:00:26.360
+You are bringing somebody
+
+17
+00:00:26.360 --> 00:00:28.140
+else's code in our computer
+
+18
+00:00:28.140 --> 00:00:29.580
+or in our program rather.
+
+19
+00:00:29.580 --> 00:00:31.380
+And you shouldn't be watching
+
+20
+00:00:31.380 --> 00:00:32.940
+this video to be honest.
+
+21
+00:00:32.940 --> 00:00:34.500
+But still, I don't want to keep
+
+22
+00:00:34.500 --> 00:00:35.700
+this knowledge just with me, I
+
+23
+00:00:35.700 --> 00:00:37.180
+want to share it with you as well
+
+24
+00:00:37.180 --> 00:00:39.500
+so that maybe later on, probably
+
+25
+00:00:39.500 --> 00:00:40.860
+after having six month into the
+
+26
+00:00:40.860 --> 00:00:42.180
+Python experience, you want to
+
+27
+00:00:42.180 --> 00:00:44.179
+have a taste of it, you at least
+
+28
+00:00:44.179 --> 00:00:45.540
+get the idea of what I'm talking
+
+29
+00:00:45.540 --> 00:00:45.820
+about.
+
+30
+00:00:45.820 --> 00:00:47.900
+So I will be just showing you briefly
+
+31
+00:00:47.900 --> 00:00:50.150
+of some of the code and then
+
+32
+00:00:50.150 --> 00:00:51.460
+we will not discuss them too much.
+
+33
+00:00:51.460 --> 00:00:52.860
+But still you will have an idea
+
+34
+00:00:52.860 --> 00:00:53.920
+that okay, this, these things
+
+35
+00:00:53.920 --> 00:00:55.120
+do exist and I probably
+
+36
+00:00:55.120 --> 00:00:57.040
+can work on them on someday.
+
+37
+00:00:57.040 --> 00:00:58.160
+That's the whole goal, that's
+
+38
+00:00:58.160 --> 00:00:59.440
+the whole idea about them.
+
+39
+00:00:59.440 --> 00:01:00.880
+So first of all let me just
+
+40
+00:01:00.880 --> 00:01:02.040
+get this, that what are
+
+41
+00:01:02.040 --> 00:01:03.720
+the advanced data types that are
+
+42
+00:01:03.720 --> 00:01:05.920
+available for us in this?
+
+43
+00:01:05.920 --> 00:01:06.960
+So there are a lot of them.
+
+44
+00:01:06.960 --> 00:01:08.480
+First of all is date time.
+
+45
+00:01:08.480 --> 00:01:10.200
+Yes, it includes date and time
+
+46
+00:01:10.200 --> 00:01:11.200
+both at the same time.
+
+47
+00:01:11.200 --> 00:01:12.280
+But there is a separate one
+
+48
+00:01:12.280 --> 00:01:13.760
+known as just for time.
+
+49
+00:01:13.760 --> 00:01:15.160
+There's also a data type known
+
+50
+00:01:15.160 --> 00:01:17.680
+as calendar and this is
+
+51
+00:01:17.680 --> 00:01:19.960
+little bit strange calendar.
+
+52
+00:01:19.960 --> 00:01:21.120
+Hope I wrote it correct.
+
+53
+00:01:21.120 --> 00:01:23.190
+But, but yes these data type do exist
+
+54
+00:01:23.190 --> 00:01:25.870
+and they don't are not default,
+
+55
+00:01:25.870 --> 00:01:27.110
+they are not being used that much.
+
+56
+00:01:27.110 --> 00:01:29.030
+But you can actually manipulate
+
+57
+00:01:29.030 --> 00:01:30.790
+date, you can manipulate date time,
+
+58
+00:01:30.790 --> 00:01:31.990
+you can manipulate time and you
+
+59
+00:01:31.990 --> 00:01:33.830
+can manipulate calendar as well.
+
+60
+00:01:33.830 --> 00:01:35.790
+There's also a package which
+
+61
+00:01:35.790 --> 00:01:36.950
+actually can works with
+
+62
+00:01:37.750 --> 00:01:40.310
+something known as time delta.
+
+63
+00:01:40.310 --> 00:01:41.670
+What is this time delta?
+
+64
+00:01:41.670 --> 00:01:43.030
+Maybe you want to discuss some
+
+65
+00:01:43.030 --> 00:01:44.470
+duration duration between
+
+66
+00:01:44.470 --> 00:01:46.710
+when order was fetched and the order
+
+67
+00:01:46.710 --> 00:01:48.320
+was delivered to the user.
+
+68
+00:01:48.320 --> 00:01:49.720
+Or maybe just how much time it
+
+69
+00:01:49.720 --> 00:01:51.280
+took for your program to run.
+
+70
+00:01:51.280 --> 00:01:52.400
+There are a lot of deltas.
+
+71
+00:01:52.400 --> 00:01:54.200
+Deltas simply means difference
+
+72
+00:01:54.200 --> 00:01:55.520
+between the two things.
+
+73
+00:01:55.520 --> 00:01:57.280
+So yes, you can work with time deltas
+
+74
+00:01:57.280 --> 00:01:58.600
+as well and there are some
+
+75
+00:01:58.600 --> 00:02:00.160
+of the utilities that you bring in.
+
+76
+00:02:00.160 --> 00:02:01.240
+For example there is one
+
+77
+00:02:01.240 --> 00:02:02.480
+utility known as arrow.
+
+78
+00:02:02.480 --> 00:02:05.120
+Yes we import this so import arrow.
+
+79
+00:02:05.120 --> 00:02:06.200
+There is another one which
+
+80
+00:02:06.200 --> 00:02:08.000
+is known as date util.
+
+81
+00:02:08.789 --> 00:02:09.560
+We can actually work
+
+82
+00:02:09.560 --> 00:02:11.360
+with them and go with this.
+
+83
+00:02:11.360 --> 00:02:13.280
+I will just show you briefly
+
+84
+00:02:13.280 --> 00:02:14.760
+a little bit idea of how
+
+85
+00:02:14.760 --> 00:02:17.480
+the arrow or the date util works.
+
+86
+00:02:17.480 --> 00:02:18.960
+I think we should separate
+
+87
+00:02:18.960 --> 00:02:20.040
+this out, otherwise
+
+88
+00:02:21.160 --> 00:02:22.840
+it can be a point of confusion.
+
+89
+00:02:22.840 --> 00:02:24.480
+So arrow is one separate one
+
+90
+00:02:24.480 --> 00:02:26.520
+and another one is date util.
+
+91
+00:02:26.520 --> 00:02:28.000
+So make sure you remember
+
+92
+00:02:28.000 --> 00:02:30.000
+these are not the core python.
+
+93
+00:02:30.000 --> 00:02:31.560
+It's kind of a core Python now,
+
+94
+00:02:31.560 --> 00:02:33.400
+but you have to import them and
+
+95
+00:02:33.400 --> 00:02:34.640
+whatever the code we have written
+
+96
+00:02:34.640 --> 00:02:36.080
+so far, we don't have any import
+
+97
+00:02:36.080 --> 00:02:37.160
+statement because we don't have
+
+98
+00:02:37.160 --> 00:02:38.280
+the knowledge of how the import
+
+99
+00:02:38.280 --> 00:02:38.840
+works.
+
+100
+00:02:38.840 --> 00:02:39.720
+So I'll just go ahead
+
+101
+00:02:39.720 --> 00:02:41.080
+and briefly show you.
+
+102
+00:02:41.640 --> 00:02:43.040
+It was not supposed to be a part
+
+103
+00:02:43.040 --> 00:02:46.060
+of the chapters, but still, just to
+
+104
+00:02:46.060 --> 00:02:47.700
+make sure that you understand that,
+
+105
+00:02:47.700 --> 00:02:49.620
+yeah, a lot of things can be done.
+
+106
+00:02:49.620 --> 00:02:51.420
+So the step one is go ahead and
+
+107
+00:02:51.420 --> 00:02:54.460
+import arrow Arrow and once you've
+
+108
+00:02:54.460 --> 00:02:55.860
+imported the arrow, now you can
+
+109
+00:02:55.860 --> 00:02:57.460
+actually do a lot of things and
+
+110
+00:02:57.460 --> 00:02:59.140
+please don't suggest me the things
+
+111
+00:02:59.140 --> 00:03:00.420
+because most of the time you don't
+
+112
+00:03:00.420 --> 00:03:01.460
+do a good job.
+
+113
+00:03:01.460 --> 00:03:03.100
+So arrow, as soon as you put
+
+114
+00:03:03.100 --> 00:03:04.340
+this, you have a lot of things.
+
+115
+00:03:05.300 --> 00:03:07.220
+I hope the suggestion will be there.
+
+116
+00:03:07.220 --> 00:03:08.980
+But there is one thing that you
+
+117
+00:03:08.980 --> 00:03:11.300
+can use UTC now it gives you a UTC
+
+118
+00:03:11.300 --> 00:03:13.600
+time and you can store that and can
+
+119
+00:03:13.600 --> 00:03:14.760
+work with a lot of things.
+
+120
+00:03:14.760 --> 00:03:16.400
+Maybe you want to store that like,
+
+121
+00:03:17.280 --> 00:03:21.520
+brewing, brewing, underscore time.
+
+122
+00:03:21.520 --> 00:03:22.640
+That is your time.
+
+123
+00:03:22.640 --> 00:03:23.920
+And maybe you want to convert
+
+124
+00:03:23.920 --> 00:03:25.360
+this time later on so you
+
+125
+00:03:25.360 --> 00:03:26.880
+have the option of that.
+
+126
+00:03:26.880 --> 00:03:29.119
+Hey, I have this brewing time
+
+127
+00:03:29.119 --> 00:03:30.920
+and now I want to convert it into
+
+128
+00:03:30.920 --> 00:03:32.320
+some another time zone, so you
+
+129
+00:03:32.320 --> 00:03:33.760
+can just mention it like this.
+
+130
+00:03:33.760 --> 00:03:35.600
+And maybe I want to convert it into
+
+131
+00:03:36.480 --> 00:03:39.800
+Europe, slash, maybe roam.
+
+132
+00:03:40.600 --> 00:03:41.720
+If you know any other time
+
+133
+00:03:41.720 --> 00:03:43.200
+zone, go ahead and fill that.
+
+134
+00:03:43.200 --> 00:03:44.360
+So it just converts
+
+135
+00:03:44.360 --> 00:03:45.320
+it into time zone.
+
+136
+00:03:45.880 --> 00:03:47.760
+Not only that, we have a lot
+
+137
+00:03:47.760 --> 00:03:49.200
+more things available to us
+
+138
+00:03:49.200 --> 00:03:50.720
+in the world of data type.
+
+139
+00:03:50.720 --> 00:03:52.080
+This is just one time is very
+
+140
+00:03:52.080 --> 00:03:53.800
+common and most easy one.
+
+141
+00:03:53.800 --> 00:03:55.160
+But there is something known as
+
+142
+00:03:55.160 --> 00:03:56.440
+whole thing available to us.
+
+143
+00:03:56.440 --> 00:03:57.720
+This is mostly advanced data
+
+144
+00:03:57.720 --> 00:03:59.960
+type known as collections.
+
+145
+00:03:59.960 --> 00:04:01.360
+Yeah, collection is a big
+
+146
+00:04:01.360 --> 00:04:02.280
+thing in the python.
+
+147
+00:04:02.280 --> 00:04:04.040
+If I'll just show you directly.
+
+148
+00:04:05.010 --> 00:04:06.250
+I don't think so, I can actually show
+
+149
+00:04:06.250 --> 00:04:08.610
+you here, I have to search it again.
+
+150
+00:04:08.610 --> 00:04:10.210
+Collections, Python.
+
+151
+00:04:10.210 --> 00:04:11.570
+If I just search for it.
+
+152
+00:04:11.570 --> 00:04:12.170
+There we go.
+
+153
+00:04:12.170 --> 00:04:13.570
+Official documentation.
+
+154
+00:04:13.570 --> 00:04:14.850
+So we have these things available.
+
+155
+00:04:14.850 --> 00:04:16.329
+We have named Tuple.
+
+156
+00:04:16.329 --> 00:04:17.730
+We don't have it, but we
+
+157
+00:04:17.730 --> 00:04:19.089
+can actually bring it up.
+
+158
+00:04:19.089 --> 00:04:21.010
+We have named Tuple, we have deck.
+
+159
+00:04:21.010 --> 00:04:23.650
+Yes, this is called as DEC, not DQ.
+
+160
+00:04:23.650 --> 00:04:25.570
+I'm 100% sure about it.
+
+161
+00:04:25.570 --> 00:04:27.410
+We have chainmap, we have counter, we
+
+162
+00:04:27.410 --> 00:04:28.770
+have ordered dictionary, we have
+
+163
+00:04:28.770 --> 00:04:30.940
+default dictionary, user dictionary.
+
+164
+00:04:30.940 --> 00:04:32.340
+There's a lot of them and you
+
+165
+00:04:32.340 --> 00:04:33.380
+can use any one of them.
+
+166
+00:04:33.380 --> 00:04:35.220
+But there is a way how you
+
+167
+00:04:35.220 --> 00:04:36.740
+actually use Them right now we
+
+168
+00:04:36.740 --> 00:04:38.100
+don't have the capacity to use
+
+169
+00:04:38.100 --> 00:04:39.900
+it but still I'll show you.
+
+170
+00:04:39.900 --> 00:04:41.580
+Usually I keep all of my imports
+
+171
+00:04:41.580 --> 00:04:42.940
+above but for this just
+
+172
+00:04:42.940 --> 00:04:44.700
+example I'll make an exception.
+
+173
+00:04:44.700 --> 00:04:46.220
+So from collections you can
+
+174
+00:04:46.220 --> 00:04:47.980
+actually import whatever you like.
+
+175
+00:04:47.980 --> 00:04:49.480
+Probably you like.
+
+176
+00:04:49.480 --> 00:04:50.340
+Maybe you want to bring
+
+177
+00:04:50.340 --> 00:04:51.540
+the named tuple and want
+
+178
+00:04:51.540 --> 00:04:52.700
+to see how that works.
+
+179
+00:04:52.700 --> 00:04:53.820
+Now this will just give
+
+180
+00:04:53.820 --> 00:04:54.940
+you additional data type.
+
+181
+00:04:54.940 --> 00:04:56.460
+You have to bring it at the very
+
+182
+00:04:56.460 --> 00:04:58.410
+top, otherwise you cannot use it.
+
+183
+00:04:58.410 --> 00:04:59.770
+We can use strings, we can use
+
+184
+00:04:59.770 --> 00:05:01.610
+dictionary, no import was required
+
+185
+00:05:01.610 --> 00:05:03.610
+but for this it is required.
+
+186
+00:05:03.610 --> 00:05:05.490
+So for example maybe you
+
+187
+00:05:05.490 --> 00:05:07.530
+are bringing chai profiles.
+
+188
+00:05:08.250 --> 00:05:09.690
+Should I use it like this?
+
+189
+00:05:09.690 --> 00:05:12.890
+Chai profile it is good Chai
+
+190
+00:05:12.890 --> 00:05:17.050
+profile and what we are going to
+
+191
+00:05:17.050 --> 00:05:19.170
+do is in the chai profile we'll
+
+192
+00:05:19.170 --> 00:05:21.810
+use the named tuple and then we
+
+193
+00:05:21.810 --> 00:05:23.290
+can actually use this named tuple
+
+194
+00:05:23.290 --> 00:05:24.170
+just like this.
+
+195
+00:05:24.820 --> 00:05:26.700
+So what difference does it make?
+
+196
+00:05:26.700 --> 00:05:28.140
+Now since my tuple is going
+
+197
+00:05:28.140 --> 00:05:29.900
+to be referred by a name, I can
+
+198
+00:05:29.900 --> 00:05:32.660
+provide a name like Chai profile.
+
+199
+00:05:32.660 --> 00:05:34.500
+This will be the name of my tuple,
+
+200
+00:05:34.500 --> 00:05:37.660
+not the variable and I think we
+
+201
+00:05:37.660 --> 00:05:38.620
+should keep it just like that.
+
+202
+00:05:38.620 --> 00:05:40.660
+And then I can have my tuple
+
+203
+00:05:40.660 --> 00:05:41.740
+and the way how
+
+204
+00:05:41.740 --> 00:05:43.220
+you do it is iteratable.
+
+205
+00:05:43.220 --> 00:05:44.900
+That means an array or
+
+206
+00:05:44.900 --> 00:05:46.260
+a list just like this.
+
+207
+00:05:46.260 --> 00:05:49.900
+So we'll have a flavor, what else?
+
+208
+00:05:49.900 --> 00:05:54.350
+We can have aroma, what else?
+
+209
+00:05:54.350 --> 00:05:55.950
+Color maybe all the things
+
+210
+00:05:55.950 --> 00:05:57.390
+and this is how you do it.
+
+211
+00:05:57.390 --> 00:05:58.190
+Now you just print
+
+212
+00:05:58.190 --> 00:05:59.390
+the profile of this.
+
+213
+00:05:59.390 --> 00:06:00.710
+So a lot of things can be done.
+
+214
+00:06:00.710 --> 00:06:03.470
+But yes again each of them are built
+
+215
+00:06:03.470 --> 00:06:05.070
+on top of your default things.
+
+216
+00:06:05.070 --> 00:06:06.470
+Like this is a string we have studied
+
+217
+00:06:06.470 --> 00:06:07.630
+about them, this is a list,
+
+218
+00:06:07.630 --> 00:06:08.990
+they are built on top of that.
+
+219
+00:06:08.990 --> 00:06:10.710
+What nametuple does is it
+
+220
+00:06:10.710 --> 00:06:12.110
+brings it up all together.
+
+221
+00:06:12.110 --> 00:06:13.150
+That's all it does.
+
+222
+00:06:13.150 --> 00:06:14.750
+Now usage and everything is
+
+223
+00:06:14.750 --> 00:06:16.270
+very use case sensitive.
+
+224
+00:06:16.270 --> 00:06:17.550
+You have a special case
+
+225
+00:06:17.550 --> 00:06:18.590
+where you want to use them.
+
+226
+00:06:19.240 --> 00:06:20.320
+Forcing them right now
+
+227
+00:06:20.320 --> 00:06:22.120
+to learn is not a good idea.
+
+228
+00:06:22.120 --> 00:06:23.480
+So that is why I say this is
+
+229
+00:06:23.480 --> 00:06:25.400
+just a bonus extra lecture.
+
+230
+00:06:25.400 --> 00:06:26.920
+We have more data types
+
+231
+00:06:26.920 --> 00:06:28.800
+in available in Python and surely
+
+232
+00:06:28.800 --> 00:06:30.280
+there is no end of it.
+
+233
+00:06:30.280 --> 00:06:31.800
+But right now is not the good time.
+
+234
+00:06:31.800 --> 00:06:32.960
+We will surely cover them
+
+235
+00:06:32.960 --> 00:06:35.080
+up and later on we'll discuss them.
+
+236
+00:06:35.080 --> 00:06:36.560
+And if I forget, don't forget
+
+237
+00:06:36.560 --> 00:06:38.320
+to tweet me about it that hey, we
+
+238
+00:06:38.320 --> 00:06:39.560
+discussed something about it.
+
+239
+00:06:39.560 --> 00:06:40.760
+I would love to enhance
+
+240
+00:06:40.760 --> 00:06:42.160
+this course as one stop solution
+
+241
+00:06:42.160 --> 00:06:42.920
+to learn Python.
+
+242
+00:06:42.920 --> 00:06:44.710
+So don't hesitate to tweet this out.
+
+243
+00:06:44.710 --> 00:06:46.470
+But again right now this is more than
+
+244
+00:06:46.470 --> 00:06:47.910
+enough data type knowledge for you.
+
+245
+00:06:47.910 --> 00:06:49.310
+Now we need to learn how we can
+
+246
+00:06:49.310 --> 00:06:51.310
+manipulate the data data storage.
+
+247
+00:06:51.310 --> 00:06:53.430
+We are all clear now what kind of
+
+248
+00:06:53.430 --> 00:06:54.950
+processing we can do with the data.
+
+249
+00:06:54.950 --> 00:06:55.870
+That is our goal.
+
+250
+00:06:55.870 --> 00:06:57.470
+Now, let's go ahead, move
+
+251
+00:06:57.470 --> 00:06:58.990
+on to the next video and talk
+
+252
+00:06:58.990 --> 00:07:00.070
+about that in there.
+
+253
+00:07:00.070 --> 00:07:01.990
+And again, don't forget to review us.

@@ -1,0 +1,2413 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:02.200
+Okay, so great work guys.
+
+2
+00:00:02.200 --> 00:00:04.160
+That we know now know Express.
+
+3
+00:00:04.160 --> 00:00:05.800
+We have covered a lot
+
+4
+00:00:05.800 --> 00:00:06.840
+of things in Node js.
+
+5
+00:00:06.840 --> 00:00:07.680
+We know how to install
+
+6
+00:00:07.680 --> 00:00:08.800
+external dependencies.
+
+7
+00:00:08.800 --> 00:00:09.600
+We know how to use
+
+8
+00:00:09.600 --> 00:00:10.960
+external dependencies.
+
+9
+00:00:10.960 --> 00:00:12.640
+We know that how we can use
+
+10
+00:00:12.640 --> 00:00:16.040
+a so called npm, so called node js.
+
+11
+00:00:16.040 --> 00:00:17.840
+We know how to use HTTP module
+
+12
+00:00:17.840 --> 00:00:19.120
+and how to build servers.
+
+13
+00:00:19.760 --> 00:00:22.560
+Now I would like to take
+
+14
+00:00:23.280 --> 00:00:25.680
+a moment and explain you
+
+15
+00:00:26.270 --> 00:00:27.550
+something very interesting going
+
+16
+00:00:27.550 --> 00:00:29.550
+on in this file, okay?
+
+17
+00:00:29.550 --> 00:00:31.230
+In this particular file
+
+18
+00:00:31.230 --> 00:00:33.390
+that is our package or JSON file.
+
+19
+00:00:33.390 --> 00:00:35.030
+Do you see that we have this version
+
+20
+00:00:35.030 --> 00:00:37.390
+thing here that is like 1.0.0.
+
+21
+00:00:37.390 --> 00:00:39.150
+And do you see this dependencies
+
+22
+00:00:39.150 --> 00:00:40.030
+here that we have three
+
+23
+00:00:40.030 --> 00:00:43.630
+dependencies right now, 1, 2 and 3.
+
+24
+00:00:43.630 --> 00:00:45.630
+And there is this weird
+
+25
+00:00:45.630 --> 00:00:46.670
+looking numbers.
+
+26
+00:00:46.670 --> 00:00:48.910
+These, these numbers are here right
+
+27
+00:00:48.910 --> 00:00:50.110
+in this particular video.
+
+28
+00:00:50.110 --> 00:00:50.990
+Let's understand
+
+29
+00:00:50.990 --> 00:00:52.350
+what these numbers mean.
+
+30
+00:00:52.350 --> 00:00:53.470
+Like what is this symbol
+
+31
+00:00:53.470 --> 00:00:54.790
+here, why it is five, why
+
+32
+00:00:54.790 --> 00:00:55.950
+it is three digits only.
+
+33
+00:00:56.510 --> 00:00:57.430
+So let's understand that
+
+34
+00:00:57.430 --> 00:00:58.790
+how versioning happens
+
+35
+00:00:58.790 --> 00:01:00.190
+in case of node js.
+
+36
+00:01:00.190 --> 00:01:03.390
+Okay, so node js, or I should say npm
+
+37
+00:01:03.390 --> 00:01:06.790
+follows something known as semantic
+
+38
+00:01:06.790 --> 00:01:09.310
+versioning or also known as Sembur.
+
+39
+00:01:09.310 --> 00:01:11.390
+Okay, Semantic versioning.
+
+40
+00:01:11.390 --> 00:01:12.870
+So there are some rules of
+
+41
+00:01:12.870 --> 00:01:14.990
+semantic versioning that how you
+
+42
+00:01:14.990 --> 00:01:17.310
+give these versions, like why my
+
+43
+00:01:17.310 --> 00:01:19.550
+version is 1.0.0, why this
+
+44
+00:01:19.550 --> 00:01:21.914
+express is versioned as 4.2,
+
+45
+00:01:21.914 --> 00:01:24.160
+1.1, what does this 4 mean, what
+
+46
+00:01:24.160 --> 00:01:25.800
+does this T2.1 mean and what
+
+47
+00:01:25.800 --> 00:01:26.680
+this one means?
+
+48
+00:01:26.680 --> 00:01:28.120
+That is what we have to understand.
+
+49
+00:01:28.120 --> 00:01:29.240
+Okay?
+
+50
+00:01:29.240 --> 00:01:30.840
+Now semantic versioning
+
+51
+00:01:30.840 --> 00:01:32.320
+has three parts, okay?
+
+52
+00:01:32.320 --> 00:01:33.440
+So let's say you have some number
+
+53
+00:01:33.440 --> 00:01:35.240
+here, then you have a point.
+
+54
+00:01:35.240 --> 00:01:35.880
+Okay?
+
+55
+00:01:35.880 --> 00:01:37.160
+So just once again, I don't
+
+56
+00:01:37.160 --> 00:01:38.200
+want you to add a point.
+
+57
+00:01:38.200 --> 00:01:39.560
+Then there is some point.
+
+58
+00:01:39.560 --> 00:01:42.120
+Then let's say you again have some X,
+
+59
+00:01:42.120 --> 00:01:43.560
+then you have some point
+
+60
+00:01:43.560 --> 00:01:45.160
+and then you again have a number.
+
+61
+00:01:45.160 --> 00:01:46.680
+So semantic versioning is
+
+62
+00:01:46.680 --> 00:01:48.280
+built using three numbers.
+
+63
+00:01:48.280 --> 00:01:49.750
+First number, second, second number,
+
+64
+00:01:49.750 --> 00:01:51.950
+third number, also known as bits.
+
+65
+00:01:51.950 --> 00:01:52.790
+Okay, so these are
+
+66
+00:01:52.790 --> 00:01:54.350
+also known as bits.
+
+67
+00:01:54.350 --> 00:01:57.710
+The first bit always and always
+
+68
+00:01:58.350 --> 00:01:59.950
+tells you that this is the,
+
+69
+00:01:59.950 --> 00:02:01.670
+this is the major version.
+
+70
+00:02:01.670 --> 00:02:02.110
+Okay?
+
+71
+00:02:02.110 --> 00:02:03.110
+So this refers to as
+
+72
+00:02:03.110 --> 00:02:04.670
+the major version.
+
+73
+00:02:04.670 --> 00:02:07.710
+So this is your major version, okay?
+
+74
+00:02:07.710 --> 00:02:09.669
+And second one is known
+
+75
+00:02:09.669 --> 00:02:11.710
+as the minor version.
+
+76
+00:02:11.710 --> 00:02:13.190
+So this second bit is
+
+77
+00:02:13.190 --> 00:02:15.080
+represented minor.
+
+78
+00:02:15.080 --> 00:02:16.360
+And this is known as
+
+79
+00:02:16.360 --> 00:02:18.040
+the patch version.
+
+80
+00:02:18.040 --> 00:02:19.560
+So these are the three things that
+
+81
+00:02:19.560 --> 00:02:21.400
+these bits are representing.
+
+82
+00:02:21.400 --> 00:02:23.200
+So if I copy this line that is
+
+83
+00:02:23.200 --> 00:02:25.720
+your express js this particular
+
+84
+00:02:25.720 --> 00:02:27.320
+thing as of now, just forget
+
+85
+00:02:27.320 --> 00:02:28.320
+this, this carrot symbol.
+
+86
+00:02:28.320 --> 00:02:29.640
+So this says that, hey,
+
+87
+00:02:29.640 --> 00:02:31.080
+for in case of express
+
+88
+00:02:31.080 --> 00:02:32.920
+at the recording of this video,
+
+89
+00:02:32.920 --> 00:02:36.360
+the major version is four, right?
+
+90
+00:02:36.360 --> 00:02:39.560
+The minor version that we have is 21.
+
+91
+00:02:39.560 --> 00:02:41.360
+And the patch version right
+
+92
+00:02:41.360 --> 00:02:42.930
+now that we have is function.
+
+93
+00:02:42.930 --> 00:02:44.930
+So this is what this particular
+
+94
+00:02:44.930 --> 00:02:46.210
+thing interprets you.
+
+95
+00:02:46.210 --> 00:02:47.970
+Okay, so this part is understood that
+
+96
+00:02:47.970 --> 00:02:49.410
+how this versioning is done
+
+97
+00:02:49.410 --> 00:02:52.050
+and not only node, even languages,
+
+98
+00:02:52.050 --> 00:02:53.970
+like Rust, okay, so they have cargo.
+
+99
+00:02:53.970 --> 00:02:55.210
+They also use some word.
+
+100
+00:02:55.210 --> 00:02:56.370
+So this is a very common thing
+
+101
+00:02:56.370 --> 00:02:58.610
+to follow in case of versioning.
+
+102
+00:02:58.610 --> 00:03:00.130
+Now let me explain you that
+
+103
+00:03:00.130 --> 00:03:01.930
+how these bits are actually.
+
+104
+00:03:01.930 --> 00:03:02.930
+What, what is the meaning
+
+105
+00:03:02.930 --> 00:03:03.610
+of these bits?
+
+106
+00:03:03.610 --> 00:03:04.410
+Like what is this patch?
+
+107
+00:03:04.410 --> 00:03:05.130
+What is this miner?
+
+108
+00:03:05.130 --> 00:03:05.890
+What is this major.
+
+109
+00:03:05.890 --> 00:03:08.410
+Okay guys, let's say you are
+
+110
+00:03:08.410 --> 00:03:09.410
+building an application.
+
+111
+00:03:09.410 --> 00:03:11.570
+You are building some tool, okay?
+
+112
+00:03:11.570 --> 00:03:12.730
+Some tool for developers.
+
+113
+00:03:13.370 --> 00:03:15.290
+Now what you have done is this
+
+114
+00:03:15.290 --> 00:03:17.130
+tool you have built and you have
+
+115
+00:03:17.130 --> 00:03:18.610
+published it to the developers.
+
+116
+00:03:18.610 --> 00:03:21.570
+And today around 100k devs
+
+117
+00:03:21.570 --> 00:03:22.650
+are using your product.
+
+118
+00:03:22.650 --> 00:03:24.250
+Are using your product.
+
+119
+00:03:24.250 --> 00:03:24.650
+Right?
+
+120
+00:03:24.650 --> 00:03:25.450
+Right.
+
+121
+00:03:25.450 --> 00:03:27.210
+Do you think that if you make
+
+122
+00:03:27.210 --> 00:03:28.730
+some change in your code,
+
+123
+00:03:29.450 --> 00:03:31.690
+these hundred devs which are like
+
+124
+00:03:31.690 --> 00:03:33.290
+working with your code,
+
+125
+00:03:33.290 --> 00:03:35.130
+they can have some crashes?
+
+126
+00:03:35.130 --> 00:03:36.600
+It might be right.
+
+127
+00:03:36.600 --> 00:03:37.920
+Let's say I have, I have written
+
+128
+00:03:37.920 --> 00:03:39.880
+this express application, right?
+
+129
+00:03:39.880 --> 00:03:41.640
+And today express application
+
+130
+00:03:41.640 --> 00:03:42.720
+says, hey, what you have to do is
+
+131
+00:03:42.720 --> 00:03:44.120
+you have to say app, dot get
+
+132
+00:03:44.120 --> 00:03:45.480
+and like this and like this.
+
+133
+00:03:45.480 --> 00:03:46.680
+So this will work.
+
+134
+00:03:46.680 --> 00:03:49.320
+What if tomorrow some update comes
+
+135
+00:03:49.320 --> 00:03:51.080
+and this get function is removed?
+
+136
+00:03:51.080 --> 00:03:52.520
+The get function is removed
+
+137
+00:03:52.520 --> 00:03:53.240
+from the application.
+
+138
+00:03:53.240 --> 00:03:54.120
+So what will happen?
+
+139
+00:03:54.120 --> 00:03:55.920
+My application will crash if I try
+
+140
+00:03:55.920 --> 00:03:57.560
+to update my application, There
+
+141
+00:03:57.560 --> 00:03:58.960
+is no get application, right?
+
+142
+00:03:58.960 --> 00:04:00.040
+There is no get function in
+
+143
+00:04:00.040 --> 00:04:01.640
+the express in the future version.
+
+144
+00:04:01.640 --> 00:04:02.920
+So, so my, this particular
+
+145
+00:04:02.920 --> 00:04:04.080
+blog, this particular block,
+
+146
+00:04:04.080 --> 00:04:05.120
+everything will start to crash.
+
+147
+00:04:05.120 --> 00:04:06.720
+My server will start to crash,
+
+148
+00:04:06.720 --> 00:04:08.080
+which is not a good thing, right?
+
+149
+00:04:08.080 --> 00:04:09.600
+Because this is a breaking thing.
+
+150
+00:04:10.240 --> 00:04:12.600
+So how this versioning helps
+
+151
+00:04:12.600 --> 00:04:13.920
+this particular conflicting.
+
+152
+00:04:13.920 --> 00:04:16.560
+Okay, so there are three scenarios.
+
+153
+00:04:16.560 --> 00:04:17.920
+Okay, there are three scenarios.
+
+154
+00:04:17.920 --> 00:04:20.519
+First, let's say the update
+
+155
+00:04:20.519 --> 00:04:21.519
+was very simple.
+
+156
+00:04:21.519 --> 00:04:23.880
+Let's say some minor bug fix.
+
+157
+00:04:23.880 --> 00:04:25.200
+Okay, There was some minor,
+
+158
+00:04:26.240 --> 00:04:27.200
+minor, bug fix.
+
+159
+00:04:27.200 --> 00:04:28.280
+Okay, Very, very simple
+
+160
+00:04:28.280 --> 00:04:29.080
+bug fix was there.
+
+161
+00:04:29.080 --> 00:04:31.290
+So some bug fix is there, but which
+
+162
+00:04:31.290 --> 00:04:32.490
+is not important.
+
+163
+00:04:32.490 --> 00:04:34.410
+Okay, which is kind of not important.
+
+164
+00:04:34.410 --> 00:04:36.490
+So it's kind of an optional thing.
+
+165
+00:04:36.490 --> 00:04:37.650
+So that, hey, there was
+
+166
+00:04:37.650 --> 00:04:38.770
+a small bug, which we have
+
+167
+00:04:38.770 --> 00:04:39.810
+fixed, but it's optional.
+
+168
+00:04:39.810 --> 00:04:41.370
+I mean it's good if you update.
+
+169
+00:04:41.370 --> 00:04:42.970
+It's fine if you don't even update.
+
+170
+00:04:42.970 --> 00:04:43.970
+But yeah, there was a simple
+
+171
+00:04:43.970 --> 00:04:45.290
+fix that I have done.
+
+172
+00:04:45.290 --> 00:04:46.290
+When you do this kind
+
+173
+00:04:46.290 --> 00:04:48.130
+of a change, which is a very simple,
+
+174
+00:04:48.130 --> 00:04:49.770
+minor, optional change,
+
+175
+00:04:49.770 --> 00:04:52.250
+in that case you should always
+
+176
+00:04:52.250 --> 00:04:54.170
+increment your patch version.
+
+177
+00:04:54.890 --> 00:04:58.910
+So if right now you are on 4.21.1,
+
+178
+00:04:58.910 --> 00:05:00.750
+let's say if Express js
+
+179
+00:05:00.750 --> 00:05:02.590
+application is adding some optional,
+
+180
+00:05:02.590 --> 00:05:04.750
+okay, some optional update,
+
+181
+00:05:04.750 --> 00:05:06.670
+in that case, what should do?
+
+182
+00:05:06.670 --> 00:05:08.190
+It should update this one
+
+183
+00:05:08.190 --> 00:05:10.670
+to two okay, so that means
+
+184
+00:05:10.670 --> 00:05:13.390
+guys, you are safe to add.
+
+185
+00:05:13.390 --> 00:05:14.990
+You are safe to update this.
+
+186
+00:05:14.990 --> 00:05:15.470
+Okay.
+
+187
+00:05:15.470 --> 00:05:17.030
+There is no new feature when
+
+188
+00:05:17.030 --> 00:05:18.910
+this bit is updating, right?
+
+189
+00:05:18.910 --> 00:05:21.030
+When this particular bit is
+
+190
+00:05:21.030 --> 00:05:22.550
+getting updated, it tells the
+
+191
+00:05:22.550 --> 00:05:24.430
+developer that it's a minor fix,
+
+192
+00:05:24.430 --> 00:05:25.390
+there might be some kind of
+
+193
+00:05:25.390 --> 00:05:27.430
+small update, but there is no
+
+194
+00:05:27.430 --> 00:05:29.150
+new feature, there is nothing
+
+195
+00:05:29.150 --> 00:05:30.190
+going to break.
+
+196
+00:05:30.190 --> 00:05:31.750
+So the things that are working
+
+197
+00:05:31.750 --> 00:05:34.430
+on 4.2, 1.1 will continue
+
+198
+00:05:34.430 --> 00:05:35.230
+to work on this.
+
+199
+00:05:35.230 --> 00:05:36.670
+Will continue to work on this, will
+
+200
+00:05:36.670 --> 00:05:37.950
+also continue to work on this.
+
+201
+00:05:37.950 --> 00:05:39.950
+There is nothing breaking there.
+
+202
+00:05:39.950 --> 00:05:41.630
+Your code will never get break.
+
+203
+00:05:41.630 --> 00:05:43.070
+But yeah, there is something.
+
+204
+00:05:43.070 --> 00:05:44.510
+So this is where you basically
+
+205
+00:05:44.510 --> 00:05:46.270
+update your patch version.
+
+206
+00:05:46.270 --> 00:05:46.950
+So you get it.
+
+207
+00:05:46.950 --> 00:05:47.830
+What is a patch version?
+
+208
+00:05:47.830 --> 00:05:48.750
+So let me just give you
+
+209
+00:05:48.750 --> 00:05:50.200
+definition as well.
+
+210
+00:05:50.200 --> 00:05:50.920
+So patch.
+
+211
+00:05:50.920 --> 00:05:52.530
+Okay, so the official definition
+
+212
+00:05:53.080 --> 00:05:54.040
+for the patch version.
+
+213
+00:05:54.040 --> 00:05:55.240
+Oh, it's too big.
+
+214
+00:05:55.240 --> 00:05:56.680
+Let me just expand.
+
+215
+00:05:56.680 --> 00:05:57.920
+Not expand it like this.
+
+216
+00:05:57.920 --> 00:05:58.880
+I won't expand it like this.
+
+217
+00:05:58.880 --> 00:05:59.560
+Yeah.
+
+218
+00:05:59.560 --> 00:06:01.160
+So what does the patch says
+
+219
+00:06:01.160 --> 00:06:02.920
+incremented for the backward
+
+220
+00:06:02.920 --> 00:06:04.200
+compatible bug fixes?
+
+221
+00:06:04.200 --> 00:06:05.680
+So backward compatible is
+
+222
+00:06:05.680 --> 00:06:07.400
+the important word here, that
+
+223
+00:06:07.400 --> 00:06:08.920
+everything is backward compatible.
+
+224
+00:06:08.920 --> 00:06:10.200
+Nothing is going to break
+
+225
+00:06:10.200 --> 00:06:11.640
+these updates address issue
+
+226
+00:06:11.640 --> 00:06:13.200
+without adding new functionality
+
+227
+00:06:13.200 --> 00:06:14.200
+or breaking anything.
+
+228
+00:06:14.200 --> 00:06:15.880
+So that means if the patch
+
+229
+00:06:15.880 --> 00:06:17.220
+version is increasing,
+
+230
+00:06:17.220 --> 00:06:19.020
+there is no new functionality, there
+
+231
+00:06:19.020 --> 00:06:20.100
+is no breaking change.
+
+232
+00:06:20.100 --> 00:06:21.300
+Some bug fixes are there.
+
+233
+00:06:21.300 --> 00:06:24.420
+For instance 1, 2.3 to 1.2.4
+
+234
+00:06:24.420 --> 00:06:25.900
+signals a bug fix that doesn't
+
+235
+00:06:25.900 --> 00:06:27.380
+affect the compatibility.
+
+236
+00:06:27.380 --> 00:06:28.860
+So this is what is meant
+
+237
+00:06:28.860 --> 00:06:30.660
+by your patch version.
+
+238
+00:06:30.660 --> 00:06:32.980
+Patch is the right most bit.
+
+239
+00:06:32.980 --> 00:06:34.580
+That means this bit.
+
+240
+00:06:34.580 --> 00:06:35.460
+Okay, this one.
+
+241
+00:06:36.100 --> 00:06:37.220
+So you are now done
+
+242
+00:06:37.220 --> 00:06:38.140
+with the patch one.
+
+243
+00:06:38.140 --> 00:06:39.820
+Now let's see what is the minor one.
+
+244
+00:06:39.820 --> 00:06:41.060
+Okay, minor.
+
+245
+00:06:41.060 --> 00:06:42.820
+So in case of minor, what happens?
+
+246
+00:06:42.820 --> 00:06:44.300
+It basically means that there
+
+247
+00:06:44.300 --> 00:06:45.620
+is a new, new functionality.
+
+248
+00:06:45.620 --> 00:06:48.000
+Okay, so so you have added, so
+
+249
+00:06:48.000 --> 00:06:51.680
+I should say added a new feature.
+
+250
+00:06:51.680 --> 00:06:54.960
+Okay, but, but back.
+
+251
+00:06:54.960 --> 00:06:56.040
+But the old features
+
+252
+00:06:56.040 --> 00:06:56.920
+will continue to work.
+
+253
+00:06:56.920 --> 00:06:59.120
+Okay, but old will also work.
+
+254
+00:06:59.120 --> 00:07:00.640
+So old will also work.
+
+255
+00:07:00.640 --> 00:07:01.700
+So that means It's
+
+256
+00:07:01.700 --> 00:07:02.800
+a not breaking key.
+
+257
+00:07:02.800 --> 00:07:04.240
+So it will not break anything.
+
+258
+00:07:04.240 --> 00:07:05.880
+So first thing is that there
+
+259
+00:07:05.880 --> 00:07:07.280
+is a new feature, okay?
+
+260
+00:07:07.280 --> 00:07:08.320
+There is a new feature
+
+261
+00:07:09.120 --> 00:07:11.280
+and nothing will break.
+
+262
+00:07:11.280 --> 00:07:12.280
+Nothing will break.
+
+263
+00:07:12.280 --> 00:07:14.240
+That means nothing is removed, right?
+
+264
+00:07:14.240 --> 00:07:15.560
+So this is where if you have
+
+265
+00:07:15.560 --> 00:07:16.920
+an update of this kind, this
+
+266
+00:07:16.920 --> 00:07:18.420
+is where you update your, you
+
+267
+00:07:18.420 --> 00:07:20.500
+update your minor version.
+
+268
+00:07:20.500 --> 00:07:20.940
+Okay?
+
+269
+00:07:20.940 --> 00:07:22.260
+So if the minor version
+
+270
+00:07:22.260 --> 00:07:23.180
+is getting updated.
+
+271
+00:07:23.180 --> 00:07:25.140
+So as a developer I know there is
+
+272
+00:07:25.140 --> 00:07:26.460
+some new functionality which I
+
+273
+00:07:26.460 --> 00:07:28.100
+can see in the documentation, but my
+
+274
+00:07:28.100 --> 00:07:29.740
+code will continue to work.
+
+275
+00:07:29.740 --> 00:07:31.100
+So that means in this particular
+
+276
+00:07:31.100 --> 00:07:32.420
+scenario the last bit,
+
+277
+00:07:32.420 --> 00:07:33.740
+let's say one, so it can be like
+
+278
+00:07:33.740 --> 00:07:37.020
+21, 22, 23, 24, 25, 26, 27.
+
+279
+00:07:37.020 --> 00:07:38.500
+So let's say if right now this
+
+280
+00:07:38.500 --> 00:07:39.620
+is the version, so what?
+
+281
+00:07:39.620 --> 00:07:40.740
+And let's say this was
+
+282
+00:07:40.740 --> 00:07:41.900
+incrementing like this.
+
+283
+00:07:41.900 --> 00:07:43.060
+Now what team will do, they
+
+284
+00:07:43.060 --> 00:07:43.940
+added a new functionality.
+
+285
+00:07:43.940 --> 00:07:45.380
+They will set it to 22 and they
+
+286
+00:07:45.380 --> 00:07:46.300
+will move it back to 0.
+
+287
+00:07:47.090 --> 00:07:49.890
+That means now you are on 4.22.0.
+
+288
+00:07:49.890 --> 00:07:51.970
+Then if there is a bug fix
+
+289
+00:07:51.970 --> 00:07:53.210
+in version 22, they will
+
+290
+00:07:53.210 --> 00:07:54.450
+continue to update this.
+
+291
+00:07:54.450 --> 00:07:55.450
+Then what they will do is,
+
+292
+00:07:55.450 --> 00:07:56.610
+oh, there is a new functionality
+
+293
+00:07:56.610 --> 00:07:57.330
+that we have to add.
+
+294
+00:07:57.330 --> 00:07:58.530
+So they will there 23
+
+295
+00:07:58.530 --> 00:07:59.970
+and move it back to zero.
+
+296
+00:07:59.970 --> 00:08:02.040
+Now any bug fixes in this,
+
+297
+00:08:02.040 --> 00:08:03.090
+will be done like this.
+
+298
+00:08:03.090 --> 00:08:04.250
+Oh, there is a new feature.
+
+299
+00:08:04.250 --> 00:08:05.090
+Let's make it 24.
+
+300
+00:08:05.090 --> 00:08:06.570
+And then we will continue to do a bug
+
+301
+00:08:06.570 --> 00:08:08.130
+fix in this particular version.
+
+302
+00:08:08.130 --> 00:08:10.130
+So this is the minor version
+
+303
+00:08:10.130 --> 00:08:11.610
+and this updates when there
+
+304
+00:08:11.610 --> 00:08:13.220
+is a new functionality.
+
+305
+00:08:13.220 --> 00:08:14.540
+Okay, so let me give you
+
+306
+00:08:14.540 --> 00:08:15.700
+the definition for this as
+
+307
+00:08:15.700 --> 00:08:16.900
+well so that you can read
+
+308
+00:08:16.900 --> 00:08:18.180
+and understand it better.
+
+309
+00:08:18.740 --> 00:08:21.260
+So minor version incremented when
+
+310
+00:08:21.260 --> 00:08:23.180
+functionality is added, right?
+
+311
+00:08:23.180 --> 00:08:24.660
+The functionality is added.
+
+312
+00:08:24.660 --> 00:08:27.140
+So here this is the important
+
+313
+00:08:27.140 --> 00:08:30.260
+line and is backward compatible.
+
+314
+00:08:30.260 --> 00:08:31.580
+And even the functionality
+
+315
+00:08:31.580 --> 00:08:32.659
+is added, the previous
+
+316
+00:08:32.659 --> 00:08:34.740
+functionality will never break.
+
+317
+00:08:34.740 --> 00:08:35.980
+This means the existing code
+
+318
+00:08:35.980 --> 00:08:37.780
+should continue to work, but new
+
+319
+00:08:37.780 --> 00:08:39.030
+features are available.
+
+320
+00:08:39.030 --> 00:08:41.710
+For example, 1.2.0 to 1.3.0
+
+321
+00:08:41.710 --> 00:08:42.990
+suggests that there is a new
+
+322
+00:08:42.990 --> 00:08:44.350
+feature are introduced without
+
+323
+00:08:44.350 --> 00:08:45.990
+breaking the compatibility.
+
+324
+00:08:45.990 --> 00:08:47.350
+So that means, yeah, you are, you are
+
+325
+00:08:47.350 --> 00:08:49.030
+okay to update this one also, right?
+
+326
+00:08:49.030 --> 00:08:50.110
+But just in case you need
+
+327
+00:08:50.110 --> 00:08:51.510
+that feature, it will also
+
+328
+00:08:51.510 --> 00:08:52.750
+increase the packet size.
+
+329
+00:08:52.750 --> 00:08:55.030
+So yeah, you have to, you have to
+
+330
+00:08:55.030 --> 00:08:56.710
+keep that in mind because of course
+
+331
+00:08:56.710 --> 00:08:58.550
+new features are coming in now.
+
+332
+00:08:58.550 --> 00:08:59.710
+Let's see the major one.
+
+333
+00:08:59.710 --> 00:09:00.870
+Okay, major.
+
+334
+00:09:00.870 --> 00:09:02.590
+Major is the breaking change.
+
+335
+00:09:02.590 --> 00:09:04.150
+That means, you know, we
+
+336
+00:09:04.150 --> 00:09:05.390
+have revamped everything.
+
+337
+00:09:05.390 --> 00:09:06.830
+We have rewritten everything, we
+
+338
+00:09:06.830 --> 00:09:07.990
+have removed a lot of things,
+
+339
+00:09:07.990 --> 00:09:09.350
+we have added a lot of things.
+
+340
+00:09:09.350 --> 00:09:11.810
+We have changed the WHO architecture.
+
+341
+00:09:11.810 --> 00:09:13.170
+So this is a breaking change.
+
+342
+00:09:13.170 --> 00:09:14.850
+Okay, that is where you
+
+343
+00:09:14.850 --> 00:09:16.770
+update your major version.
+
+344
+00:09:16.770 --> 00:09:19.050
+So major version you cannot update
+
+345
+00:09:19.050 --> 00:09:20.250
+in your code just like that.
+
+346
+00:09:20.250 --> 00:09:21.290
+If you have to update your
+
+347
+00:09:21.290 --> 00:09:22.810
+major version, you have
+
+348
+00:09:22.810 --> 00:09:24.690
+to do a lot of code changes.
+
+349
+00:09:24.690 --> 00:09:26.530
+Your code will start to break.
+
+350
+00:09:26.530 --> 00:09:28.170
+So you have to do a lot
+
+351
+00:09:28.170 --> 00:09:29.050
+of coding changes.
+
+352
+00:09:29.050 --> 00:09:29.930
+And it is not easier
+
+353
+00:09:29.930 --> 00:09:31.890
+to update a, existing code base
+
+354
+00:09:31.890 --> 00:09:32.770
+to a major change.
+
+355
+00:09:32.770 --> 00:09:34.850
+Okay, so major change is basically
+
+356
+00:09:34.850 --> 00:09:37.170
+like, hey, There is a 5.0.0,
+
+357
+00:09:37.170 --> 00:09:38.210
+there is a 5 point, there
+
+358
+00:09:38.210 --> 00:09:40.930
+is a 6.0.0, there is A 7.0.0.
+
+359
+00:09:40.930 --> 00:09:42.450
+So this is a major change.
+
+360
+00:09:42.450 --> 00:09:44.050
+The, the leftmost bit.
+
+361
+00:09:44.050 --> 00:09:45.450
+Okay, so let me give
+
+362
+00:09:45.450 --> 00:09:46.850
+you the definition
+
+363
+00:09:46.850 --> 00:09:48.290
+for the major as well.
+
+364
+00:09:48.290 --> 00:09:49.170
+So what does this
+
+365
+00:09:49.170 --> 00:09:50.250
+major bit look like?
+
+366
+00:09:50.250 --> 00:09:52.530
+Okay, so major says incremented
+
+367
+00:09:52.530 --> 00:09:55.010
+when there are incompatible
+
+368
+00:09:55.010 --> 00:09:56.610
+API changes, okay?
+
+369
+00:09:56.610 --> 00:09:58.130
+That means you are removing
+
+370
+00:09:58.130 --> 00:09:59.210
+some functionality, you are
+
+371
+00:09:59.210 --> 00:10:00.530
+adding some functionality.
+
+372
+00:10:00.530 --> 00:10:01.410
+That is where you
+
+373
+00:10:01.410 --> 00:10:02.610
+say breaking change.
+
+374
+00:10:02.610 --> 00:10:04.250
+So these changes may break existing
+
+375
+00:10:04.250 --> 00:10:05.650
+functionality or require
+
+376
+00:10:05.650 --> 00:10:07.480
+modifications in the dependent code.
+
+377
+00:10:07.480 --> 00:10:10.280
+For example, 1.0.0 to 2.0.0
+
+378
+00:10:10.280 --> 00:10:11.360
+indicates that there is
+
+379
+00:10:11.360 --> 00:10:12.960
+a significant change that may
+
+380
+00:10:12.960 --> 00:10:15.320
+require users to update the code.
+
+381
+00:10:15.320 --> 00:10:16.640
+So yeah, this, this is
+
+382
+00:10:16.640 --> 00:10:17.480
+the breaking change.
+
+383
+00:10:18.200 --> 00:10:19.240
+So this is how
+
+384
+00:10:19.240 --> 00:10:20.520
+the versioning is happening.
+
+385
+00:10:20.520 --> 00:10:21.040
+Now you understand
+
+386
+00:10:21.040 --> 00:10:22.160
+the semantic versioning.
+
+387
+00:10:22.160 --> 00:10:23.080
+December.
+
+388
+00:10:23.080 --> 00:10:24.520
+Now piyush, this is fine.
+
+389
+00:10:24.520 --> 00:10:25.800
+What is this carrot symbol
+
+390
+00:10:25.800 --> 00:10:26.480
+going on here, right?
+
+391
+00:10:26.480 --> 00:10:27.680
+What is this carrot symbol?
+
+392
+00:10:27.680 --> 00:10:29.240
+What is the symbol going on here?
+
+393
+00:10:29.240 --> 00:10:30.920
+Now these are very simple actually.
+
+394
+00:10:30.920 --> 00:10:32.240
+So there are multiple ways
+
+395
+00:10:32.240 --> 00:10:33.270
+to write this thing.
+
+396
+00:10:33.270 --> 00:10:34.950
+Okay, Number one, if I just
+
+397
+00:10:34.950 --> 00:10:36.590
+write it like this, this
+
+398
+00:10:36.590 --> 00:10:38.910
+tells the express that whenever I do
+
+399
+00:10:38.910 --> 00:10:41.310
+npm install, whenever I do npm
+
+400
+00:10:41.310 --> 00:10:43.550
+install, always and always
+
+401
+00:10:43.550 --> 00:10:46.510
+install express at this version.
+
+402
+00:10:46.510 --> 00:10:46.990
+Correct?
+
+403
+00:10:46.990 --> 00:10:48.510
+This is what this is telling.
+
+404
+00:10:48.510 --> 00:10:50.430
+But guys, let's say, you know,
+
+405
+00:10:50.430 --> 00:10:53.110
+I just want that every time
+
+406
+00:10:53.110 --> 00:10:55.670
+there is a bug fix, you, you know
+
+407
+00:10:55.670 --> 00:10:57.150
+what is a bug fix, right?
+
+408
+00:10:57.150 --> 00:10:58.910
+Every time there is a minor
+
+409
+00:10:58.910 --> 00:11:00.150
+change, there is a patch
+
+410
+00:11:00.150 --> 00:11:01.790
+change, there's a bug fix.
+
+411
+00:11:01.790 --> 00:11:03.710
+I don't want to keep a track because
+
+412
+00:11:03.710 --> 00:11:05.070
+in reality you will have like
+
+413
+00:11:05.070 --> 00:11:06.590
+thousands, not thousands, actually,
+
+414
+00:11:06.590 --> 00:11:08.230
+I should say 50 dependencies.
+
+415
+00:11:08.230 --> 00:11:08.710
+Let's say you have
+
+416
+00:11:08.710 --> 00:11:10.350
+total 50 dependencies.
+
+417
+00:11:10.350 --> 00:11:11.870
+Of course you don't want to keep
+
+418
+00:11:11.870 --> 00:11:13.430
+a track going on their website that
+
+419
+00:11:13.430 --> 00:11:14.430
+they have fixed something on.
+
+420
+00:11:14.430 --> 00:11:16.430
+Like you want that at least?
+
+421
+00:11:16.430 --> 00:11:18.230
+I want that this last bit,
+
+422
+00:11:18.230 --> 00:11:19.950
+which is the patch one should
+
+423
+00:11:19.950 --> 00:11:22.350
+automatically update, right?
+
+424
+00:11:22.350 --> 00:11:23.310
+You want that, right?
+
+425
+00:11:23.870 --> 00:11:25.710
+So for this, what you can do is
+
+426
+00:11:25.710 --> 00:11:28.190
+you can just add a tilde symbol.
+
+427
+00:11:28.190 --> 00:11:29.790
+So when you add this symbol,
+
+428
+00:11:29.790 --> 00:11:31.670
+tilde, this basically says that,
+
+429
+00:11:31.670 --> 00:11:33.470
+hey, even if you're specifying 1,
+
+430
+00:11:33.470 --> 00:11:35.350
+if in future the version 2 is
+
+431
+00:11:35.350 --> 00:11:36.630
+available, I will install 2.
+
+432
+00:11:36.630 --> 00:11:38.070
+If in future the version 3 is
+
+433
+00:11:38.070 --> 00:11:39.470
+available, I will install that.
+
+434
+00:11:39.470 --> 00:11:41.190
+So that means if you copy this
+
+435
+00:11:41.190 --> 00:11:43.150
+line and I just paste it here.
+
+436
+00:11:43.150 --> 00:11:45.630
+So this tilde basically says that
+
+437
+00:11:45.630 --> 00:11:48.350
+till in case of, Till it says from,
+
+438
+00:11:48.350 --> 00:11:52.670
+okay, version 4.21.1 all the way.
+
+439
+00:11:52.670 --> 00:11:56.130
+All the way to like 4.21x.
+
+440
+00:11:56.130 --> 00:11:57.410
+That means x can be anything.
+
+441
+00:11:57.970 --> 00:11:59.490
+It will basically update it.
+
+442
+00:11:59.490 --> 00:12:01.650
+Okay, so till they will
+
+443
+00:12:01.650 --> 00:12:03.530
+freeze these two bits.
+
+444
+00:12:03.530 --> 00:12:05.010
+So these two bits are frozen
+
+445
+00:12:05.010 --> 00:12:06.290
+in case of tilde, the last
+
+446
+00:12:06.290 --> 00:12:07.450
+bit will keep on updating.
+
+447
+00:12:07.450 --> 00:12:08.650
+If there is any update
+
+448
+00:12:08.650 --> 00:12:09.490
+from the author,
+
+449
+00:12:10.370 --> 00:12:12.010
+then you do a carrot symbol.
+
+450
+00:12:12.010 --> 00:12:12.840
+That is this.
+
+451
+00:12:12.840 --> 00:12:14.370
+Sorry, where is the caret symbol?
+
+452
+00:12:14.370 --> 00:12:15.330
+It's on the six.
+
+453
+00:12:15.330 --> 00:12:17.010
+When you do this carrot symbol,
+
+454
+00:12:17.010 --> 00:12:19.170
+the caret symbol means that
+
+455
+00:12:19.170 --> 00:12:21.170
+do not update the major version.
+
+456
+00:12:21.170 --> 00:12:23.040
+Never ever update the Major version.
+
+457
+00:12:23.040 --> 00:12:24.600
+Feel free to tweak these two bits.
+
+458
+00:12:24.600 --> 00:12:26.080
+Okay, so when you say this one,
+
+459
+00:12:26.080 --> 00:12:27.440
+let me just copy this version.
+
+460
+00:12:27.440 --> 00:12:29.040
+This is the carrot symbol.
+
+461
+00:12:29.040 --> 00:12:30.960
+Carrot symbol basically says
+
+462
+00:12:30.960 --> 00:12:36.000
+that from 4.21.1 all the way
+
+463
+00:12:36.000 --> 00:12:39.120
+to less than 5.5.0.0.
+
+464
+00:12:39.120 --> 00:12:41.680
+Okay, so this 5 is not included.
+
+465
+00:12:41.680 --> 00:12:43.040
+So you have to include this.
+
+466
+00:12:43.040 --> 00:12:44.880
+So that means all the versions.
+
+467
+00:12:44.880 --> 00:12:46.120
+So this bit is also there.
+
+468
+00:12:46.120 --> 00:12:47.360
+This bit is also there.
+
+469
+00:12:47.360 --> 00:12:49.400
+Only the four will be static.
+
+470
+00:12:49.400 --> 00:12:50.080
+That means only
+
+471
+00:12:50.080 --> 00:12:51.600
+the first bit is frozen.
+
+472
+00:12:51.600 --> 00:12:54.120
+So this anything that is less than.
+
+473
+00:12:54.120 --> 00:12:55.320
+Okay, less than five point.
+
+474
+00:12:55.320 --> 00:12:56.200
+This is not included.
+
+475
+00:12:56.200 --> 00:12:57.000
+I'll make it red.
+
+476
+00:12:57.760 --> 00:12:58.360
+So you can.
+
+477
+00:12:58.360 --> 00:12:59.880
+Sorry, not the whole thing.
+
+478
+00:12:59.880 --> 00:13:00.640
+So this particular
+
+479
+00:13:00.640 --> 00:13:01.920
+part is red in color.
+
+480
+00:13:01.920 --> 00:13:03.720
+So 5 will not be updated.
+
+481
+00:13:03.720 --> 00:13:05.849
+All the features like 4.2.1,
+
+482
+00:13:05.849 --> 00:13:08.638
+4.21 4.25 to 4.30,
+
+483
+00:13:08.638 --> 00:13:10.440
+4 point something, something.
+
+484
+00:13:10.440 --> 00:13:12.960
+All the Minor and patch versions
+
+485
+00:13:12.960 --> 00:13:15.080
+of 4 will be updated, but major
+
+486
+00:13:15.080 --> 00:13:16.820
+version will never be changed.
+
+487
+00:13:16.820 --> 00:13:17.820
+Okay, Major version
+
+488
+00:13:17.820 --> 00:13:18.900
+will always remain 4.
+
+489
+00:13:18.900 --> 00:13:20.540
+Because updating the major version
+
+490
+00:13:20.540 --> 00:13:21.980
+automatically is a very risky thing.
+
+491
+00:13:21.980 --> 00:13:22.780
+Because it will.
+
+492
+00:13:22.780 --> 00:13:23.820
+It will break that.
+
+493
+00:13:23.820 --> 00:13:24.900
+Is that what it means?
+
+494
+00:13:24.900 --> 00:13:25.540
+Right?
+
+495
+00:13:25.540 --> 00:13:26.820
+So this is how your
+
+496
+00:13:26.820 --> 00:13:27.780
+carrot symbol says.
+
+497
+00:13:27.780 --> 00:13:29.220
+So this carrot symbol says, hey, keep
+
+498
+00:13:29.220 --> 00:13:30.500
+on updating these two bits.
+
+499
+00:13:30.500 --> 00:13:31.860
+Do not touch the four.
+
+500
+00:13:31.860 --> 00:13:32.940
+This says, hey, keep
+
+501
+00:13:32.940 --> 00:13:34.260
+on updating these two fields.
+
+502
+00:13:34.260 --> 00:13:35.100
+Do not touch 22.
+
+503
+00:13:35.100 --> 00:13:36.300
+This carrot means, hey, keep
+
+504
+00:13:36.300 --> 00:13:37.100
+on updating these 2,
+
+505
+00:13:37.100 --> 00:13:38.260
+but do not touch it.
+
+506
+00:13:38.260 --> 00:13:39.220
+And do you know from
+
+507
+00:13:39.220 --> 00:13:40.260
+where it fetches it?
+
+508
+00:13:40.260 --> 00:13:42.180
+Whenever you do, like npm install,
+
+509
+00:13:42.180 --> 00:13:43.140
+the package name,
+
+510
+00:13:43.650 --> 00:13:45.090
+it basically goes to a website that
+
+511
+00:13:45.090 --> 00:13:47.050
+is npmjs.com official website.
+
+512
+00:13:47.050 --> 00:13:48.890
+Okay, so this is where all
+
+513
+00:13:48.890 --> 00:13:50.290
+the packages are hosted.
+
+514
+00:13:50.850 --> 00:13:53.090
+So if I go on to Express, right?
+
+515
+00:13:53.090 --> 00:13:54.250
+So this is the documentation
+
+516
+00:13:54.250 --> 00:13:56.290
+for Express, like on the npm.
+
+517
+00:13:56.290 --> 00:13:57.210
+So you can install it
+
+518
+00:13:57.210 --> 00:13:58.530
+using npm install Express.
+
+519
+00:13:58.530 --> 00:14:00.290
+So when you do npm install Express,
+
+520
+00:14:00.290 --> 00:14:01.810
+this is where the code lives.
+
+521
+00:14:01.810 --> 00:14:02.410
+Can you see?
+
+522
+00:14:02.410 --> 00:14:04.290
+This is where the Express code lives.
+
+523
+00:14:04.290 --> 00:14:06.530
+This is from where the actual code
+
+524
+00:14:06.530 --> 00:14:07.890
+is pulled from the Internet.
+
+525
+00:14:07.890 --> 00:14:09.010
+And you can see that there
+
+526
+00:14:09.010 --> 00:14:10.680
+are 31 dependencies
+
+527
+00:14:10.680 --> 00:14:13.320
+that this express requires these 31
+
+528
+00:14:13.320 --> 00:14:14.680
+packages to be installed.
+
+529
+00:14:14.680 --> 00:14:16.520
+And these are dev dependencies.
+
+530
+00:14:16.520 --> 00:14:17.920
+And how many people are
+
+531
+00:14:17.920 --> 00:14:19.400
+dependent upon express
+
+532
+00:14:19.400 --> 00:14:21.480
+that are, 8, 6, 7, 4, 1.
+
+533
+00:14:21.480 --> 00:14:23.560
+So express internally
+
+534
+00:14:23.560 --> 00:14:25.240
+requires these dependencies.
+
+535
+00:14:25.240 --> 00:14:27.160
+And these all packages are
+
+536
+00:14:27.160 --> 00:14:28.360
+dependent upon Express.
+
+537
+00:14:28.360 --> 00:14:29.720
+I mean, that's a huge number.
+
+538
+00:14:29.720 --> 00:14:30.800
+And these are all the versions.
+
+539
+00:14:30.800 --> 00:14:32.760
+So you can see that 4.2.1
+
+540
+00:14:32.760 --> 00:14:34.160
+is the latest version.
+
+541
+00:14:34.160 --> 00:14:36.570
+So that is why we have 4.2.1.
+
+542
+00:14:36.570 --> 00:14:37.530
+And then there is a next
+
+543
+00:14:37.530 --> 00:14:39.410
+version that is 5.0.1.
+
+544
+00:14:39.410 --> 00:14:40.650
+Now why this is 5?
+
+545
+00:14:40.650 --> 00:14:41.690
+Why this is 5?
+
+546
+00:14:41.690 --> 00:14:42.610
+Because there might be
+
+547
+00:14:42.610 --> 00:14:43.770
+some breaking changes.
+
+548
+00:14:43.770 --> 00:14:44.890
+So you can see that this is how
+
+549
+00:14:44.890 --> 00:14:46.650
+the version history is going, right?
+
+550
+00:14:46.650 --> 00:14:47.930
+There is a lot of things
+
+551
+00:14:47.930 --> 00:14:49.290
+going on 10 years ago.
+
+552
+00:14:49.290 --> 00:14:50.170
+And do you know when
+
+553
+00:14:50.170 --> 00:14:51.370
+does this started?
+
+554
+00:14:51.370 --> 00:14:54.290
+The 5, the 5 Alpha and even if
+
+555
+00:14:54.290 --> 00:14:56.690
+I go down 5 Alpha and, and,
+
+556
+00:14:56.690 --> 00:14:59.130
+and here is also 5 it started
+
+557
+00:14:59.130 --> 00:15:00.450
+developing eight years ago.
+
+558
+00:15:00.450 --> 00:15:02.850
+I mean 9 is also there.
+
+559
+00:15:02.850 --> 00:15:04.330
+Yeah, it started developing
+
+560
+00:15:04.330 --> 00:15:04.930
+nine years ago.
+
+561
+00:15:04.930 --> 00:15:06.090
+So which is finally, I
+
+562
+00:15:06.090 --> 00:15:07.410
+think it will be out there.
+
+563
+00:15:07.410 --> 00:15:08.810
+So how to update to 5?
+
+564
+00:15:08.810 --> 00:15:10.650
+If you go to Express and you click
+
+565
+00:15:10.650 --> 00:15:11.690
+here, you can see they are saying
+
+566
+00:15:11.690 --> 00:15:13.050
+hey, express 5 documentation is
+
+567
+00:15:13.050 --> 00:15:14.610
+available and if I click on the
+
+568
+00:15:14.610 --> 00:15:16.330
+API documentation, so there is
+
+569
+00:15:16.330 --> 00:15:19.450
+something known as guide moving to
+
+570
+00:15:19.450 --> 00:15:20.690
+Express 5.
+
+571
+00:15:20.690 --> 00:15:21.890
+So this means this will
+
+572
+00:15:21.890 --> 00:15:23.050
+guide you that what all
+
+573
+00:15:23.050 --> 00:15:24.010
+things we have removed.
+
+574
+00:15:24.010 --> 00:15:26.330
+So app.delete app.param app.
+
+575
+00:15:26.330 --> 00:15:28.770
+Request param request JSON JSON p
+
+576
+00:15:29.360 --> 00:15:31.200
+these all things are removed
+
+577
+00:15:31.200 --> 00:15:33.240
+and these all things are changed.
+
+578
+00:15:33.240 --> 00:15:35.920
+For example app Router has changed,
+
+579
+00:15:35.920 --> 00:15:37.760
+request body has changed.
+
+580
+00:15:37.760 --> 00:15:38.680
+So these are few things
+
+581
+00:15:38.680 --> 00:15:39.440
+that have changed.
+
+582
+00:15:39.440 --> 00:15:40.880
+So you have to follow this guide
+
+583
+00:15:40.880 --> 00:15:42.040
+and you know you have to update
+
+584
+00:15:42.040 --> 00:15:44.320
+your existing code just in case.
+
+585
+00:15:44.320 --> 00:15:46.040
+Just in case you are doing it.
+
+586
+00:15:46.040 --> 00:15:48.360
+Okay, so yeah, so you have
+
+587
+00:15:48.360 --> 00:15:49.040
+to read all this.
+
+588
+00:15:49.040 --> 00:15:50.360
+That what all things are going
+
+589
+00:15:50.360 --> 00:15:52.480
+to break in Express TS5.
+
+590
+00:15:52.480 --> 00:15:53.600
+So but we are not going
+
+591
+00:15:53.600 --> 00:15:54.960
+to use any feature that is going
+
+592
+00:15:54.960 --> 00:15:56.240
+to break in Express 4 or 5.
+
+593
+00:15:56.240 --> 00:15:57.150
+So yeah, that's fine.
+
+594
+00:15:57.150 --> 00:15:58.110
+Okay, so you can read this
+
+595
+00:15:58.110 --> 00:15:59.470
+guide and that's how this
+
+596
+00:15:59.470 --> 00:16:00.990
+versioning basically works.
+
+597
+00:16:00.990 --> 00:16:03.190
+So feel free to revisit this video.
+
+598
+00:16:03.190 --> 00:16:04.550
+Feel free to have a screenshot.
+
+599
+00:16:04.550 --> 00:16:06.030
+Okay so guys, what you can do is
+
+600
+00:16:06.030 --> 00:16:06.910
+you can have a screenshot
+
+601
+00:16:06.910 --> 00:16:08.590
+of this thing and keep on reading it
+
+602
+00:16:08.590 --> 00:16:10.590
+so that you know what how SEMWER
+
+603
+00:16:10.590 --> 00:16:12.510
+or semantic versioning works.

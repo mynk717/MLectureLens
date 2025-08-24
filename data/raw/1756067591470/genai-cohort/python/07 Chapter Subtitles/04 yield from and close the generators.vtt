@@ -1,0 +1,1249 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:01.760
+Moving on.
+
+2
+00:00:01.760 --> 00:00:03.200
+Hope you are having fun in this
+
+3
+00:00:03.200 --> 00:00:04.720
+Python course and hope you have
+
+4
+00:00:05.440 --> 00:00:07.160
+rated us with your kind words.
+
+5
+00:00:07.160 --> 00:00:08.080
+We really need that.
+
+6
+00:00:08.640 --> 00:00:12.080
+So in this portion of the Python
+
+7
+00:00:12.080 --> 00:00:14.400
+course we're going to work on that
+
+8
+00:00:14.400 --> 00:00:16.160
+we can actually yield some value.
+
+9
+00:00:16.160 --> 00:00:17.320
+In case you remember from
+
+10
+00:00:17.320 --> 00:00:18.640
+the last video we are
+
+11
+00:00:18.640 --> 00:00:20.080
+talking about the generators.
+
+12
+00:00:20.080 --> 00:00:21.720
+We have seen quite a lot, quite
+
+13
+00:00:21.720 --> 00:00:23.280
+a hidden details about them.
+
+14
+00:00:23.280 --> 00:00:25.040
+But now we want to see two more
+
+15
+00:00:25.040 --> 00:00:26.200
+things and that is it, that
+
+16
+00:00:26.200 --> 00:00:27.520
+is all about the generators.
+
+17
+00:00:28.160 --> 00:00:29.160
+The one thing which is common
+
+18
+00:00:29.160 --> 00:00:30.400
+that sometimes generator
+
+19
+00:00:30.400 --> 00:00:32.240
+doesn't generate the value or
+
+20
+00:00:32.240 --> 00:00:33.760
+yield the value on its own.
+
+21
+00:00:33.760 --> 00:00:35.080
+It sometimes borrows the value
+
+22
+00:00:35.080 --> 00:00:36.640
+from somewhere else.
+
+23
+00:00:36.640 --> 00:00:37.760
+That is totally possible.
+
+24
+00:00:37.760 --> 00:00:39.800
+We're going to see a right example
+
+25
+00:00:39.800 --> 00:00:41.960
+for that as well as sometimes maybe
+
+26
+00:00:41.960 --> 00:00:43.520
+you don't want to generate rest
+
+27
+00:00:43.520 --> 00:00:46.480
+of the values from a generator,
+
+28
+00:00:46.480 --> 00:00:48.640
+or maybe it's an infinite generator.
+
+29
+00:00:48.640 --> 00:00:49.560
+We don't want to keep it
+
+30
+00:00:49.560 --> 00:00:50.640
+in the memory forever.
+
+31
+00:00:50.640 --> 00:00:52.160
+We want to close it down so
+
+32
+00:00:52.160 --> 00:00:54.080
+that it's removed from the memory
+
+33
+00:00:54.080 --> 00:00:55.910
+and we get the job done.
+
+34
+00:00:55.910 --> 00:00:56.910
+This is a common scenario
+
+35
+00:00:56.910 --> 00:00:57.670
+in the database.
+
+36
+00:00:57.670 --> 00:00:58.870
+Whenever a function calls
+
+37
+00:00:58.870 --> 00:01:00.750
+you yield a connection string
+
+38
+00:01:00.750 --> 00:01:01.470
+from the database.
+
+39
+00:01:01.470 --> 00:01:02.470
+And once it's all done you
+
+40
+00:01:02.470 --> 00:01:04.470
+finally try to close this up.
+
+41
+00:01:04.470 --> 00:01:05.870
+Although the logic is bit
+
+42
+00:01:05.870 --> 00:01:07.230
+different there in the database
+
+43
+00:01:07.230 --> 00:01:09.270
+but you will see somehow similar
+
+44
+00:01:09.270 --> 00:01:10.950
+kind of example appear.
+
+45
+00:01:10.950 --> 00:01:12.350
+Let me take you up on the screen
+
+46
+00:01:12.350 --> 00:01:13.710
+and the next thing that we want
+
+47
+00:01:13.710 --> 00:01:15.190
+to do in this yield is just like
+
+48
+00:01:15.190 --> 00:01:17.030
+we have worked on the send data,
+
+49
+00:01:17.030 --> 00:01:20.630
+now we want to work on yield from
+
+50
+00:01:20.630 --> 00:01:22.470
+and we are also going to work on
+
+51
+00:01:22.470 --> 00:01:22.950
+close.
+
+52
+00:01:22.950 --> 00:01:24.350
+So how do we do these things?
+
+53
+00:01:24.350 --> 00:01:25.510
+How do we yield from
+
+54
+00:01:25.510 --> 00:01:26.790
+and how do we close this?
+
+55
+00:01:27.440 --> 00:01:28.960
+It's actually super easy if you
+
+56
+00:01:28.960 --> 00:01:30.160
+just go ahead and look at this.
+
+57
+00:01:30.160 --> 00:01:31.440
+So let's create a sample
+
+58
+00:01:31.440 --> 00:01:32.880
+example for this.
+
+59
+00:01:32.880 --> 00:01:34.800
+I'll close everything we worked
+
+60
+00:01:34.800 --> 00:01:37.120
+quite a lot and let's create
+
+61
+00:01:37.120 --> 00:01:38.680
+a new file and we'll write both
+
+62
+00:01:38.680 --> 00:01:40.240
+the example in the same file.
+
+63
+00:01:40.240 --> 00:01:42.640
+Let's call this1 as 04 close.
+
+64
+00:01:45.840 --> 00:01:49.120
+Jenny Raytor There we go.
+
+65
+00:01:49.120 --> 00:01:49.680
+Py.
+
+66
+00:01:50.400 --> 00:01:52.000
+Okay, so what we're going to do,
+
+67
+00:01:52.000 --> 00:01:53.760
+first of all I'll shut up my AI.
+
+68
+00:01:53.760 --> 00:01:56.000
+Otherwise I, I hardly use it.
+
+69
+00:01:56.000 --> 00:01:57.400
+I always keep it shut up.
+
+70
+00:01:57.400 --> 00:01:58.160
+But I don't know why.
+
+71
+00:01:58.160 --> 00:01:59.480
+I do have this extension
+
+72
+00:01:59.480 --> 00:02:00.480
+enabled in this.
+
+73
+00:02:00.480 --> 00:02:02.480
+I'll probably get rid of this.
+
+74
+00:02:02.480 --> 00:02:03.800
+So let's just say we simply go
+
+75
+00:02:03.800 --> 00:02:05.920
+ahead and define a local chai.
+
+76
+00:02:05.920 --> 00:02:08.360
+Yes, the chai is the theme
+
+77
+00:02:08.360 --> 00:02:09.360
+of this entire course.
+
+78
+00:02:09.360 --> 00:02:09.919
+We're not going
+
+79
+00:02:09.919 --> 00:02:11.200
+to leave it anytime back.
+
+80
+00:02:11.200 --> 00:02:12.800
+It's fun actually.
+
+81
+00:02:12.800 --> 00:02:14.040
+A lot of people love chai.
+
+82
+00:02:14.040 --> 00:02:15.560
+Or you can replace it with coffee as
+
+83
+00:02:15.560 --> 00:02:17.360
+well in case you Are that big fan.
+
+84
+00:02:17.360 --> 00:02:19.600
+And once we are done with this, we
+
+85
+00:02:19.600 --> 00:02:21.200
+are going to go ahead and say yield.
+
+86
+00:02:21.880 --> 00:02:23.400
+The first time you call this one, it
+
+87
+00:02:23.400 --> 00:02:25.800
+says I'll give you a masala chai.
+
+88
+00:02:25.800 --> 00:02:27.040
+The next time you go ahead
+
+89
+00:02:27.040 --> 00:02:28.520
+and call this one, this is going
+
+90
+00:02:28.520 --> 00:02:30.920
+to give you ginger chai.
+
+91
+00:02:31.480 --> 00:02:33.400
+All right, good enough, Fair enough.
+
+92
+00:02:33.960 --> 00:02:35.880
+We have another one which is
+
+93
+00:02:35.880 --> 00:02:38.760
+imported chai.
+
+94
+00:02:39.400 --> 00:02:40.600
+There we go.
+
+95
+00:02:40.600 --> 00:02:43.080
+And this one also does yield.
+
+96
+00:02:43.080 --> 00:02:44.280
+So we're going to yield
+
+97
+00:02:46.520 --> 00:02:48.120
+and first time we're going to
+
+98
+00:02:48.630 --> 00:02:49.750
+have an imported chai.
+
+99
+00:02:49.750 --> 00:02:51.190
+So I think Macha is one
+
+100
+00:02:51.190 --> 00:02:52.910
+of the imported one, very famous
+
+101
+00:02:52.910 --> 00:02:54.550
+as well the Japanese one.
+
+102
+00:02:54.550 --> 00:02:56.390
+And Oolong is actually
+
+103
+00:02:56.390 --> 00:02:57.190
+not from India.
+
+104
+00:02:57.910 --> 00:02:59.350
+So oolong chai is popular
+
+105
+00:02:59.350 --> 00:03:00.750
+in again Southeast Asia,
+
+106
+00:03:00.750 --> 00:03:02.470
+but not exactly in India.
+
+107
+00:03:02.470 --> 00:03:05.270
+You got some chai knowledge as well.
+
+108
+00:03:05.270 --> 00:03:07.270
+So we are going to define a simple
+
+109
+00:03:07.270 --> 00:03:11.510
+full menu in this full menu.
+
+110
+00:03:12.790 --> 00:03:14.590
+And the way how full menu works
+
+111
+00:03:14.590 --> 00:03:16.790
+is we are going to get the data
+
+112
+00:03:16.790 --> 00:03:18.670
+little from the local chai, little
+
+113
+00:03:18.670 --> 00:03:19.710
+from the imported one.
+
+114
+00:03:19.710 --> 00:03:21.170
+So how we do that,
+
+115
+00:03:21.170 --> 00:03:22.450
+pretty easy actually.
+
+116
+00:03:22.450 --> 00:03:24.290
+We can use yield, but not only
+
+117
+00:03:24.290 --> 00:03:25.650
+just yield, we can actually use
+
+118
+00:03:25.650 --> 00:03:27.490
+another syntax which is from.
+
+119
+00:03:27.490 --> 00:03:28.810
+It's almost similar to when
+
+120
+00:03:28.810 --> 00:03:29.530
+you actually write
+
+121
+00:03:29.530 --> 00:03:30.970
+at the top from this file.
+
+122
+00:03:30.970 --> 00:03:32.730
+I want to import this function.
+
+123
+00:03:32.730 --> 00:03:34.450
+It's almost exactly same.
+
+124
+00:03:34.450 --> 00:03:36.530
+All you got to do is have this local
+
+125
+00:03:36.530 --> 00:03:38.010
+chai and make sure this is
+
+126
+00:03:38.010 --> 00:03:39.930
+a classic mistake execute that you
+
+127
+00:03:39.930 --> 00:03:41.650
+want to call the function here.
+
+128
+00:03:41.650 --> 00:03:43.530
+Similarly in this line we want
+
+129
+00:03:43.530 --> 00:03:44.770
+to go ahead this time we want
+
+130
+00:03:44.770 --> 00:03:46.450
+to have the imported chai.
+
+131
+00:03:46.450 --> 00:03:47.970
+So make sure you execute that
+
+132
+00:03:48.580 --> 00:03:49.300
+and that is it.
+
+133
+00:03:49.300 --> 00:03:50.580
+That is all you have.
+
+134
+00:03:50.580 --> 00:03:52.420
+In order to see that how this
+
+135
+00:03:52.420 --> 00:03:53.980
+function actually works, we can just
+
+136
+00:03:53.980 --> 00:03:56.980
+go ahead and say for chai in full
+
+137
+00:03:56.980 --> 00:03:59.340
+menu, just like this and we're going
+
+138
+00:03:59.340 --> 00:04:00.620
+to yield one at a time.
+
+139
+00:04:00.620 --> 00:04:01.860
+We're not going to use next
+
+140
+00:04:01.860 --> 00:04:03.740
+next, next you know the syntax
+
+141
+00:04:03.740 --> 00:04:05.140
+of it if it is required.
+
+142
+00:04:05.140 --> 00:04:06.460
+But in this case I'll just
+
+143
+00:04:06.460 --> 00:04:07.540
+go ahead and say let's
+
+144
+00:04:07.540 --> 00:04:09.380
+print the chai value here.
+
+145
+00:04:09.380 --> 00:04:10.180
+Pretty easy.
+
+146
+00:04:10.180 --> 00:04:12.420
+Not that bad, not that bad.
+
+147
+00:04:12.420 --> 00:04:13.620
+I'll just go ahead and say,
+
+148
+00:04:13.620 --> 00:04:15.700
+hey python, let's run the 04
+
+149
+00:04:15.700 --> 00:04:16.700
+and there we go, we see
+
+150
+00:04:16.700 --> 00:04:18.260
+masala chai, ginger chai.
+
+151
+00:04:19.110 --> 00:04:19.990
+So after that we got
+
+152
+00:04:19.990 --> 00:04:21.430
+matcha and Oolong.
+
+153
+00:04:21.430 --> 00:04:24.190
+So pretty good, pretty fun
+
+154
+00:04:24.190 --> 00:04:25.430
+that we have imported that.
+
+155
+00:04:25.430 --> 00:04:27.990
+And once you see yield, it actually
+
+156
+00:04:27.990 --> 00:04:30.150
+goes ahead and does all the job.
+
+157
+00:04:30.150 --> 00:04:32.110
+Now let's go ahead and see if we
+
+158
+00:04:32.110 --> 00:04:33.830
+can run through how we can actually
+
+159
+00:04:33.830 --> 00:04:35.990
+close halfway through the things.
+
+160
+00:04:35.990 --> 00:04:37.270
+Yes, that's totally possible.
+
+161
+00:04:37.270 --> 00:04:38.950
+I'll show you an example.
+
+162
+00:04:38.950 --> 00:04:41.190
+Let's just say we have a chai stall
+
+163
+00:04:41.990 --> 00:04:44.670
+and this one is pretty interesting
+
+164
+00:04:44.670 --> 00:04:45.430
+one because we are going
+
+165
+00:04:45.430 --> 00:04:47.030
+to use another syntax which is Try
+
+166
+00:04:47.030 --> 00:04:48.870
+Catch, also known as Try Accept.
+
+167
+00:04:49.720 --> 00:04:51.440
+In the world of Python we call it
+
+168
+00:04:51.440 --> 00:04:53.720
+as Try and accept, but in most
+
+169
+00:04:53.720 --> 00:04:54.960
+of the world other programming
+
+170
+00:04:54.960 --> 00:04:57.400
+language it's called as Try Catch.
+
+171
+00:04:57.400 --> 00:04:59.000
+So don't get confused with that.
+
+172
+00:04:59.000 --> 00:05:01.040
+Whenever I say Try Catch or anybody
+
+173
+00:05:01.040 --> 00:05:02.520
+else says Try catch that means
+
+174
+00:05:02.520 --> 00:05:05.000
+implement the try except syntax.
+
+175
+00:05:05.000 --> 00:05:06.480
+It's a valid syntax, available
+
+176
+00:05:06.480 --> 00:05:08.680
+In Java, JavaScript,
+
+177
+00:05:08.680 --> 00:05:10.440
+Swift, almost every language.
+
+178
+00:05:11.240 --> 00:05:12.600
+So we'll just go ahead and say
+
+179
+00:05:12.600 --> 00:05:14.280
+we want to try something.
+
+180
+00:05:14.280 --> 00:05:15.720
+I'll write a pass for a second
+
+181
+00:05:17.410 --> 00:05:18.970
+and then we actually go ahead
+
+182
+00:05:18.970 --> 00:05:20.130
+and fill it up with accept.
+
+183
+00:05:20.770 --> 00:05:22.210
+I will go ahead and accept,
+
+184
+00:05:22.930 --> 00:05:25.730
+just like this and we'll say pass.
+
+185
+00:05:25.730 --> 00:05:27.410
+So this is a basic syntax.
+
+186
+00:05:27.410 --> 00:05:28.930
+As of now we'll study more about
+
+187
+00:05:28.930 --> 00:05:30.610
+this, although we don't need to.
+
+188
+00:05:30.610 --> 00:05:32.530
+This is it all about the syntax.
+
+189
+00:05:32.530 --> 00:05:33.570
+If there is an error
+
+190
+00:05:33.570 --> 00:05:34.850
+in the try block, you try
+
+191
+00:05:34.850 --> 00:05:36.370
+to execute some piece of code.
+
+192
+00:05:36.370 --> 00:05:37.570
+If there is a problem,
+
+193
+00:05:37.570 --> 00:05:39.410
+it is handled in the accept pass
+
+194
+00:05:39.410 --> 00:05:41.660
+or the exception stage.
+
+195
+00:05:41.660 --> 00:05:44.060
+But anyways I'll go ahead and say
+
+196
+00:05:44.060 --> 00:05:45.660
+while true, so we are generating
+
+197
+00:05:45.660 --> 00:05:47.260
+a constant one, we'll keep
+
+198
+00:05:47.260 --> 00:05:49.420
+an order and this order is actually
+
+199
+00:05:49.420 --> 00:05:50.860
+coming up from the yield.
+
+200
+00:05:51.580 --> 00:05:54.740
+And we will also pass on a message
+
+201
+00:05:54.740 --> 00:05:58.700
+which says waiting for chai order.
+
+202
+00:05:58.700 --> 00:06:00.100
+Another interesting syntax.
+
+203
+00:06:00.100 --> 00:06:00.860
+Yes, I know.
+
+204
+00:06:01.420 --> 00:06:03.340
+And then once we are done here,
+
+205
+00:06:03.340 --> 00:06:04.860
+we are getting the order,
+
+206
+00:06:04.860 --> 00:06:06.580
+we will just go ahead and print
+
+207
+00:06:06.580 --> 00:06:08.620
+this, a simple message which says
+
+208
+00:06:09.460 --> 00:06:14.420
+stall closed, no more chai.
+
+209
+00:06:14.420 --> 00:06:15.420
+So in case something goes
+
+210
+00:06:15.420 --> 00:06:16.900
+wrong, we go like that.
+
+211
+00:06:16.900 --> 00:06:18.220
+Now where is the closing
+
+212
+00:06:18.220 --> 00:06:19.700
+syntax in all of this?
+
+213
+00:06:19.700 --> 00:06:20.580
+Don't worry, have
+
+214
+00:06:20.580 --> 00:06:22.020
+patience, I'll show you.
+
+215
+00:06:22.020 --> 00:06:23.340
+First of all, let's just say we bring
+
+216
+00:06:23.340 --> 00:06:25.179
+up a stall and that stall comes
+
+217
+00:06:25.179 --> 00:06:27.620
+from the chai stall, just like that.
+
+218
+00:06:27.620 --> 00:06:29.340
+In order to just go ahead
+
+219
+00:06:29.340 --> 00:06:30.700
+and start this, we are going
+
+220
+00:06:30.700 --> 00:06:32.100
+to go ahead and print this.
+
+221
+00:06:32.100 --> 00:06:33.460
+I'll say it like this.
+
+222
+00:06:34.180 --> 00:06:36.540
+I will use the next syntax and in
+
+223
+00:06:36.540 --> 00:06:37.900
+the next syntax I'll just go
+
+224
+00:06:37.900 --> 00:06:40.670
+ahead and pass on this stall.
+
+225
+00:06:40.670 --> 00:06:41.390
+All right.
+
+226
+00:06:41.390 --> 00:06:42.030
+Pretty easy.
+
+227
+00:06:42.030 --> 00:06:42.270
+Pretty.
+
+228
+00:06:42.270 --> 00:06:44.310
+Okay, now let's see what
+
+229
+00:06:44.310 --> 00:06:46.030
+happens if I go ahead and run
+
+230
+00:06:46.030 --> 00:06:47.070
+this much of the code.
+
+231
+00:06:47.070 --> 00:06:47.710
+This is fun.
+
+232
+00:06:47.710 --> 00:06:49.910
+Actually if I run this notice here,
+
+233
+00:06:49.910 --> 00:06:52.110
+it says waiting for chai order.
+
+234
+00:06:52.110 --> 00:06:53.350
+There is no more order.
+
+235
+00:06:53.350 --> 00:06:54.470
+We simply say stall
+
+236
+00:06:54.470 --> 00:06:56.110
+close, no more chai.
+
+237
+00:06:56.110 --> 00:06:58.150
+Okay, but that's okay, that's
+
+238
+00:06:58.150 --> 00:07:00.310
+exactly what we wanted to go with
+
+239
+00:07:00.310 --> 00:07:01.550
+that because we didn't pass on
+
+240
+00:07:01.550 --> 00:07:04.230
+any value, we didn't send anything,
+
+241
+00:07:04.230 --> 00:07:05.550
+remember the send syntax.
+
+242
+00:07:06.080 --> 00:07:07.920
+But interestingly you can actually
+
+243
+00:07:07.920 --> 00:07:09.840
+go ahead and gracefully close it
+
+244
+00:07:09.840 --> 00:07:12.240
+just by using a close Run this.
+
+245
+00:07:12.240 --> 00:07:13.360
+That is it.
+
+246
+00:07:13.360 --> 00:07:15.560
+Now what happens when I run this one?
+
+247
+00:07:15.560 --> 00:07:16.320
+That's interesting.
+
+248
+00:07:16.320 --> 00:07:17.120
+Notice here.
+
+249
+00:07:17.120 --> 00:07:18.320
+Exactly Same.
+
+250
+00:07:18.320 --> 00:07:20.080
+And this is probably the reason
+
+251
+00:07:20.080 --> 00:07:20.920
+why a lot of people
+
+252
+00:07:20.920 --> 00:07:22.200
+don't actually close it.
+
+253
+00:07:22.200 --> 00:07:23.400
+They just wait that hey, it
+
+254
+00:07:23.400 --> 00:07:24.640
+will probably automatic close,
+
+255
+00:07:24.640 --> 00:07:26.400
+which is not a good idea.
+
+256
+00:07:26.400 --> 00:07:28.080
+You should always be responsible
+
+257
+00:07:28.080 --> 00:07:29.600
+for closing your generators.
+
+258
+00:07:29.600 --> 00:07:30.760
+And this is how it goes.
+
+259
+00:07:30.760 --> 00:07:32.880
+This is known as it triggers
+
+260
+00:07:32.880 --> 00:07:34.800
+a generator exit method which
+
+261
+00:07:34.800 --> 00:07:36.240
+actually is responsible for this.
+
+262
+00:07:36.240 --> 00:07:38.240
+So this not only just close this,
+
+263
+00:07:38.240 --> 00:07:40.160
+this is actually a cleanup.
+
+264
+00:07:40.160 --> 00:07:41.400
+You're cleaning up your memory
+
+265
+00:07:41.400 --> 00:07:42.800
+and this should be done.
+
+266
+00:07:42.800 --> 00:07:43.360
+This is important.
+
+267
+00:07:44.160 --> 00:07:44.440
+So.
+
+268
+00:07:44.440 --> 00:07:44.840
+All right.
+
+269
+00:07:44.840 --> 00:07:46.280
+Hope you got this thing.
+
+270
+00:07:46.280 --> 00:07:47.840
+Let me just give you a quick summary
+
+271
+00:07:47.840 --> 00:07:49.280
+because hey, we have studied a lot.
+
+272
+00:07:49.840 --> 00:07:50.920
+So the first thing that we
+
+273
+00:07:50.920 --> 00:07:53.920
+have studied is yield syntax.
+
+274
+00:07:53.920 --> 00:07:55.280
+This is a very, very
+
+275
+00:07:55.280 --> 00:07:56.240
+interesting syntax.
+
+276
+00:07:56.240 --> 00:07:58.990
+What it does it pause and resume
+
+277
+00:07:58.990 --> 00:08:00.710
+an execution of a function.
+
+278
+00:08:00.710 --> 00:08:01.910
+This is the main guy who
+
+279
+00:08:01.910 --> 00:08:03.150
+is responsible for
+
+280
+00:08:03.150 --> 00:08:05.070
+converting into generators.
+
+281
+00:08:05.070 --> 00:08:07.230
+We then studied about the next syntax
+
+282
+00:08:07.230 --> 00:08:08.830
+which is manually getting the next
+
+283
+00:08:08.830 --> 00:08:10.510
+value, whichever the generator
+
+284
+00:08:10.510 --> 00:08:11.950
+is going to yield at me.
+
+285
+00:08:11.950 --> 00:08:13.869
+Then we also went up and studied
+
+286
+00:08:13.869 --> 00:08:15.550
+the send syntax which actually
+
+287
+00:08:15.550 --> 00:08:18.190
+sends data, into the generator.
+
+288
+00:08:18.190 --> 00:08:20.270
+We also went up and studied
+
+289
+00:08:20.270 --> 00:08:23.470
+the syntax of yield from.
+
+290
+00:08:24.010 --> 00:08:25.770
+And that's simply just getting
+
+291
+00:08:25.770 --> 00:08:27.130
+from another generator
+
+292
+00:08:27.130 --> 00:08:28.970
+or delegate the sub generator
+
+293
+00:08:28.970 --> 00:08:30.250
+or iteratable any task.
+
+294
+00:08:30.250 --> 00:08:30.930
+It's not just always
+
+295
+00:08:30.930 --> 00:08:31.690
+getting the value.
+
+296
+00:08:31.690 --> 00:08:33.330
+Sometimes you want to delegate some
+
+297
+00:08:33.330 --> 00:08:34.730
+tasks that hey, you'll do that task.
+
+298
+00:08:34.730 --> 00:08:35.650
+So we can actually go
+
+299
+00:08:35.650 --> 00:08:36.809
+ahead and do that.
+
+300
+00:08:36.809 --> 00:08:38.250
+And last but not the least
+
+301
+00:08:38.250 --> 00:08:39.090
+one that is close.
+
+302
+00:08:39.090 --> 00:08:40.570
+This is usually the cleanup.
+
+303
+00:08:40.570 --> 00:08:42.010
+This gracefully stops
+
+304
+00:08:42.010 --> 00:08:43.730
+the generator again, it stops
+
+305
+00:08:43.730 --> 00:08:44.970
+automatically as well.
+
+306
+00:08:44.970 --> 00:08:45.890
+But we really want
+
+307
+00:08:45.890 --> 00:08:47.570
+to gracefully stop the generator so
+
+308
+00:08:47.570 --> 00:08:48.690
+there are no memory leaks.
+
+309
+00:08:48.690 --> 00:08:50.010
+Your program performs well.
+
+310
+00:08:50.010 --> 00:08:52.610
+No memory crashes, tons of advantage.
+
+311
+00:08:52.610 --> 00:08:53.610
+Let's go ahead and catch
+
+312
+00:08:53.610 --> 00:08:54.530
+up in the next video.

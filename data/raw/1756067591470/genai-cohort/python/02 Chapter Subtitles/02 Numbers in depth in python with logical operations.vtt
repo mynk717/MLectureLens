@@ -1,0 +1,3593 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.760
+Hey there and welcome
+
+2
+00:00:02.760 --> 00:00:04.160
+to another video.
+
+3
+00:00:04.160 --> 00:00:06.040
+So in this video we're going to go
+
+4
+00:00:06.040 --> 00:00:07.920
+through with another search topic.
+
+5
+00:00:07.920 --> 00:00:09.840
+Let's go ahead and draw the.
+
+6
+00:00:10.880 --> 00:00:11.960
+These are the blackboards
+
+7
+00:00:11.960 --> 00:00:12.920
+which I absolutely love.
+
+8
+00:00:12.920 --> 00:00:14.480
+They are super easy to teach.
+
+9
+00:00:14.480 --> 00:00:15.280
+So we're going to go
+
+10
+00:00:15.280 --> 00:00:16.720
+ahead and discuss about
+
+11
+00:00:16.720 --> 00:00:17.840
+numbers in this one.
+
+12
+00:00:17.840 --> 00:00:20.120
+Numbers are pretty interesting and we
+
+13
+00:00:20.120 --> 00:00:22.440
+do have limited type of numbers in
+
+14
+00:00:22.440 --> 00:00:24.800
+every programming concept in itself.
+
+15
+00:00:25.360 --> 00:00:26.960
+So the first number that we're going
+
+16
+00:00:26.960 --> 00:00:29.270
+to talk about are numbers, numbers
+
+17
+00:00:29.270 --> 00:00:31.110
+in general, but we do have a special
+
+18
+00:00:31.110 --> 00:00:33.430
+name that how we represent them.
+
+19
+00:00:33.430 --> 00:00:35.270
+They're called as integers.
+
+20
+00:00:35.270 --> 00:00:37.790
+And throughout the entire programming
+
+21
+00:00:37.790 --> 00:00:38.710
+course you're going to realize
+
+22
+00:00:38.710 --> 00:00:40.150
+that programmers actually love
+
+23
+00:00:40.150 --> 00:00:41.790
+to call things with a fancy names.
+
+24
+00:00:41.790 --> 00:00:44.149
+Integer is among one of them.
+
+25
+00:00:44.149 --> 00:00:45.470
+Now apart from integer, we
+
+26
+00:00:45.470 --> 00:00:47.710
+also will love to see about
+
+27
+00:00:47.710 --> 00:00:49.030
+another type of numbers that
+
+28
+00:00:49.030 --> 00:00:50.550
+we use known as Booleans.
+
+29
+00:00:50.550 --> 00:00:52.550
+These are true false value and they
+
+30
+00:00:52.550 --> 00:00:54.630
+are used quite a lot in figuring it
+
+31
+00:00:54.630 --> 00:00:56.110
+out, what to do, what not to do.
+
+32
+00:00:56.110 --> 00:00:56.910
+They just have two
+
+33
+00:00:56.910 --> 00:00:58.270
+values, true and false.
+
+34
+00:00:58.270 --> 00:00:59.070
+We'll actually see
+
+35
+00:00:59.070 --> 00:01:00.930
+the practical aspect of it.
+
+36
+00:01:00.930 --> 00:01:02.490
+Apart from this we also have
+
+37
+00:01:02.490 --> 00:01:04.450
+another one which is a real number.
+
+38
+00:01:04.450 --> 00:01:05.970
+So you might be wondering, hey, every
+
+39
+00:01:05.970 --> 00:01:08.140
+number is real, which one is fake?
+
+40
+00:01:08.140 --> 00:01:09.930
+By real number they actually want
+
+41
+00:01:09.930 --> 00:01:12.210
+to represent about the precision.
+
+42
+00:01:12.210 --> 00:01:13.770
+So these are floating point
+
+43
+00:01:13.770 --> 00:01:15.490
+numbers, also known as sometimes
+
+44
+00:01:15.490 --> 00:01:17.010
+and they simply represent
+
+45
+00:01:17.010 --> 00:01:18.770
+everything which is decimal.
+
+46
+00:01:18.770 --> 00:01:20.290
+So where the decimal is important
+
+47
+00:01:20.290 --> 00:01:22.770
+like stock price or rupees
+
+48
+00:01:22.770 --> 00:01:24.130
+or maybe temperature, where
+
+49
+00:01:24.130 --> 00:01:25.730
+the decimal is of super importance,
+
+50
+00:01:25.730 --> 00:01:27.250
+that's called as real number.
+
+51
+00:01:27.250 --> 00:01:28.890
+Yeah, programming people
+
+52
+00:01:28.890 --> 00:01:30.400
+love to deal with that.
+
+53
+00:01:30.400 --> 00:01:31.760
+Then since Python is very
+
+54
+00:01:31.760 --> 00:01:34.400
+friendly with scientists,
+
+55
+00:01:34.400 --> 00:01:36.160
+mathematicians, they also
+
+56
+00:01:36.160 --> 00:01:38.680
+support the concept of complex
+
+57
+00:01:38.680 --> 00:01:40.040
+numbers in which one part is
+
+58
+00:01:40.040 --> 00:01:41.360
+real, the another part is
+
+59
+00:01:42.800 --> 00:01:44.880
+fictitious the iota values.
+
+60
+00:01:44.880 --> 00:01:46.880
+We won't be going too much into
+
+61
+00:01:46.880 --> 00:01:48.840
+depth of it but still just want
+
+62
+00:01:48.840 --> 00:01:50.680
+to mention that complex number
+
+63
+00:01:50.680 --> 00:01:52.360
+do exist and they look something
+
+64
+00:01:52.360 --> 00:01:56.560
+like this like 2 plus 3J.
+
+65
+00:01:56.560 --> 00:01:58.160
+It's not really J, it's
+
+66
+00:01:58.670 --> 00:01:59.790
+iotas and all of that.
+
+67
+00:01:59.790 --> 00:02:01.070
+I don't want you to go in too much
+
+68
+00:02:01.070 --> 00:02:03.230
+depth of it but yes they do actually
+
+69
+00:02:03.230 --> 00:02:06.950
+exist in Python, only restricted
+
+70
+00:02:06.950 --> 00:02:08.669
+for very very rare use case.
+
+71
+00:02:08.669 --> 00:02:10.830
+We won't be probably going with that.
+
+72
+00:02:10.830 --> 00:02:13.550
+So we have integer, we have Boolean,
+
+73
+00:02:13.550 --> 00:02:14.950
+we have these real numbers
+
+74
+00:02:14.950 --> 00:02:16.070
+or floating point number
+
+75
+00:02:16.070 --> 00:02:17.670
+and we do have complex numbers.
+
+76
+00:02:17.670 --> 00:02:19.110
+So these are types of numbers
+
+77
+00:02:19.110 --> 00:02:20.870
+that we have and yes they do
+
+78
+00:02:20.870 --> 00:02:22.430
+each one of them have their own
+
+79
+00:02:22.430 --> 00:02:23.910
+fancy names so we actually
+
+80
+00:02:23.910 --> 00:02:25.310
+represent them just like this.
+
+81
+00:02:25.870 --> 00:02:27.230
+Super easy to have the diagrams
+
+82
+00:02:27.230 --> 00:02:28.270
+for each one of them
+
+83
+00:02:28.270 --> 00:02:29.830
+but where they shine actually
+
+84
+00:02:29.830 --> 00:02:31.550
+really is the code part.
+
+85
+00:02:31.550 --> 00:02:32.630
+So I will walk you through
+
+86
+00:02:32.630 --> 00:02:33.390
+with the code of it.
+
+87
+00:02:33.390 --> 00:02:34.630
+And yes, we'll be writing a lot
+
+88
+00:02:34.630 --> 00:02:36.750
+of it, but, it will be super easy.
+
+89
+00:02:36.750 --> 00:02:38.070
+So let's go ahead and close all
+
+90
+00:02:38.070 --> 00:02:40.550
+of this and let's go ahead
+
+91
+00:02:40.550 --> 00:02:41.950
+and move on to chapter three.
+
+92
+00:02:44.190 --> 00:02:47.870
+Chapter three py.
+
+93
+00:02:47.870 --> 00:02:49.230
+Let's write a lot of code
+
+94
+00:02:49.230 --> 00:02:50.590
+to understand what it means
+
+95
+00:02:50.590 --> 00:02:51.590
+by each one of them.
+
+96
+00:02:51.590 --> 00:02:53.630
+First of all, we are going to press
+
+97
+00:02:53.630 --> 00:02:56.030
+control slash or command slash.
+
+98
+00:02:56.030 --> 00:02:57.470
+This gives you a pound
+
+99
+00:02:57.470 --> 00:02:58.270
+sign automatically.
+
+100
+00:02:58.270 --> 00:02:58.950
+This means we can
+
+101
+00:02:58.950 --> 00:02:59.870
+actually comment things.
+
+102
+00:02:59.870 --> 00:03:01.110
+This will not be executed.
+
+103
+00:03:01.110 --> 00:03:02.430
+So these are comments, everybody
+
+104
+00:03:02.430 --> 00:03:04.750
+use them for notes, for mentioning
+
+105
+00:03:04.750 --> 00:03:05.990
+what you're doing in the code, or
+
+106
+00:03:05.990 --> 00:03:08.070
+to strategize write algorithms.
+
+107
+00:03:08.070 --> 00:03:08.830
+A lot of things.
+
+108
+00:03:08.830 --> 00:03:10.550
+It's like your rough part of
+
+109
+00:03:10.550 --> 00:03:12.430
+the code where it doesn't execute.
+
+110
+00:03:12.430 --> 00:03:14.030
+It's just a rough section that
+
+111
+00:03:14.030 --> 00:03:15.790
+you can write whatever you like.
+
+112
+00:03:15.790 --> 00:03:17.230
+So let's go ahead and start.
+
+113
+00:03:17.950 --> 00:03:19.030
+So let's just say I want
+
+114
+00:03:19.030 --> 00:03:20.510
+to create a variable also known
+
+115
+00:03:20.510 --> 00:03:21.670
+as reference in the memory.
+
+116
+00:03:21.670 --> 00:03:24.530
+So this is my, black table grams.
+
+117
+00:03:24.530 --> 00:03:25.570
+So how many grams
+
+118
+00:03:25.570 --> 00:03:27.170
+of the black T you want to have?
+
+119
+00:03:27.170 --> 00:03:28.530
+Let's just say I want to have a 14.
+
+120
+00:03:28.530 --> 00:03:29.890
+That means 14 grams.
+
+121
+00:03:29.890 --> 00:03:31.130
+And then we're going to go ahead
+
+122
+00:03:31.130 --> 00:03:33.650
+and say I want to have, ginger.
+
+123
+00:03:33.650 --> 00:03:34.690
+If I can write that.
+
+124
+00:03:35.250 --> 00:03:36.730
+Ginger grams.
+
+125
+00:03:36.730 --> 00:03:38.850
+How much ginger T you want?
+
+126
+00:03:38.850 --> 00:03:40.210
+Maybe you want three grams.
+
+127
+00:03:40.210 --> 00:03:40.930
+I know.
+
+128
+00:03:40.930 --> 00:03:42.850
+And now you want to add all of this.
+
+129
+00:03:42.850 --> 00:03:43.810
+This is super easy.
+
+130
+00:03:43.810 --> 00:03:44.890
+You can just go ahead and say
+
+131
+00:03:44.890 --> 00:03:45.930
+I want to grab total
+
+132
+00:03:45.930 --> 00:03:47.450
+grams, which is super easy.
+
+133
+00:03:47.450 --> 00:03:48.450
+Now that you have a reference
+
+134
+00:03:48.450 --> 00:03:50.100
+in the memory, you can just say
+
+135
+00:03:50.100 --> 00:03:51.940
+black teak in the grams and go
+
+136
+00:03:51.940 --> 00:03:53.660
+ahead and add ginger grams.
+
+137
+00:03:53.660 --> 00:03:54.540
+And that's it.
+
+138
+00:03:54.540 --> 00:03:56.540
+Now you have the total gram.
+
+139
+00:03:56.540 --> 00:03:57.180
+Super easy.
+
+140
+00:03:57.180 --> 00:03:58.620
+I can just go ahead and say print
+
+141
+00:03:58.620 --> 00:04:00.620
+a simple string in which we say
+
+142
+00:04:01.820 --> 00:04:07.340
+total grams of base tea is,
+
+143
+00:04:07.900 --> 00:04:09.660
+and then use this curly braces.
+
+144
+00:04:09.660 --> 00:04:10.500
+And then you can
+
+145
+00:04:10.500 --> 00:04:11.580
+inject variable here.
+
+146
+00:04:11.580 --> 00:04:12.940
+So we'll just go ahead and say
+
+147
+00:04:13.740 --> 00:04:15.180
+total grams and that's it.
+
+148
+00:04:15.700 --> 00:04:16.740
+So this is the basics
+
+149
+00:04:16.740 --> 00:04:18.740
+of how it actually works.
+
+150
+00:04:18.740 --> 00:04:19.579
+And maybe you want
+
+151
+00:04:19.579 --> 00:04:20.579
+to do more calculation.
+
+152
+00:04:20.579 --> 00:04:22.060
+For example, you want to go ahead
+
+153
+00:04:22.060 --> 00:04:25.220
+and calculate remaining, T.
+
+154
+00:04:25.220 --> 00:04:27.460
+So that can be easily calculated by
+
+155
+00:04:27.460 --> 00:04:31.619
+saying that, hey, black T in grams.
+
+156
+00:04:32.340 --> 00:04:33.900
+And we're going to subtract
+
+157
+00:04:33.900 --> 00:04:36.580
+it with, ginger grams.
+
+158
+00:04:37.140 --> 00:04:37.820
+And that's it.
+
+159
+00:04:37.820 --> 00:04:38.700
+We have got this one.
+
+160
+00:04:38.700 --> 00:04:40.020
+So we can actually use the same
+
+161
+00:04:40.020 --> 00:04:41.910
+line to represent that.
+
+162
+00:04:41.910 --> 00:04:43.190
+And we're going to say total
+
+163
+00:04:43.750 --> 00:04:50.950
+grams of remaining tea is.
+
+164
+00:04:50.950 --> 00:04:52.590
+Now don't go too much in.
+
+165
+00:04:52.590 --> 00:04:53.950
+What does it make sense or not?
+
+166
+00:04:53.950 --> 00:04:55.590
+That doesn't really matter here.
+
+167
+00:04:55.590 --> 00:04:57.110
+This is all what we have.
+
+168
+00:04:57.110 --> 00:04:57.950
+So just like this,
+
+169
+00:04:57.950 --> 00:04:59.030
+we can do addition.
+
+170
+00:04:59.030 --> 00:05:01.190
+Similarly you can do multiplication,
+
+171
+00:05:01.190 --> 00:05:01.950
+whatever you wish.
+
+172
+00:05:01.950 --> 00:05:02.750
+You can actually go
+
+173
+00:05:02.750 --> 00:05:04.040
+ahead and do that.
+
+174
+00:05:04.040 --> 00:05:04.950
+By the way, the sign
+
+175
+00:05:04.950 --> 00:05:06.870
+of multiplication is this asterisk
+
+176
+00:05:06.870 --> 00:05:08.310
+and you can multiply the things
+
+177
+00:05:08.310 --> 00:05:09.030
+however you like.
+
+178
+00:05:09.030 --> 00:05:10.290
+Whatever you like.
+
+179
+00:05:10.290 --> 00:05:11.130
+Super easy to work on
+
+180
+00:05:11.130 --> 00:05:12.330
+with nothing complex.
+
+181
+00:05:12.330 --> 00:05:13.690
+Python is one of the easiest
+
+182
+00:05:13.690 --> 00:05:15.490
+language now where it
+
+183
+00:05:15.490 --> 00:05:17.090
+actually shines a little bit.
+
+184
+00:05:17.090 --> 00:05:19.290
+And by the way, if you are big fan
+
+185
+00:05:19.290 --> 00:05:20.890
+of running everything, yes, we
+
+186
+00:05:20.890 --> 00:05:22.850
+can do that part, no worries.
+
+187
+00:05:22.850 --> 00:05:24.330
+We can simply go ahead and say
+
+188
+00:05:24.330 --> 00:05:25.810
+run the chapter three
+
+189
+00:05:25.810 --> 00:05:28.450
+and oops, forgot the extension.
+
+190
+00:05:29.490 --> 00:05:30.010
+There we go.
+
+191
+00:05:30.010 --> 00:05:31.970
+We have 17, we have 11.
+
+192
+00:05:31.970 --> 00:05:32.690
+No big deal.
+
+193
+00:05:32.690 --> 00:05:36.330
+14 plus 3, 17 minus that.
+
+194
+00:05:36.330 --> 00:05:37.010
+You get the idea.
+
+195
+00:05:37.010 --> 00:05:38.330
+It's super easy.
+
+196
+00:05:38.330 --> 00:05:39.410
+Now where Python actually
+
+197
+00:05:39.410 --> 00:05:41.210
+shines is the true division.
+
+198
+00:05:41.210 --> 00:05:42.650
+The division is actually a little
+
+199
+00:05:42.650 --> 00:05:44.730
+bit complex in the world of Python.
+
+200
+00:05:44.730 --> 00:05:46.210
+For example, if I just go ahead
+
+201
+00:05:46.210 --> 00:05:48.490
+and say we have milk liters,
+
+202
+00:05:49.050 --> 00:05:50.530
+let's just say we have 7 liters
+
+203
+00:05:50.530 --> 00:05:53.050
+of milk and we are servings.
+
+204
+00:05:53.770 --> 00:05:55.450
+Serving is 4 liter.
+
+205
+00:05:55.450 --> 00:05:56.650
+I don't know how we are serving,
+
+206
+00:05:56.650 --> 00:05:58.250
+but we are somehow doing a, serving
+
+207
+00:05:58.250 --> 00:06:00.250
+of four liters of milk.
+
+208
+00:06:00.250 --> 00:06:04.010
+So I will go ahead and say milk per
+
+209
+00:06:04.010 --> 00:06:07.050
+serving and I want to find out that
+
+210
+00:06:07.050 --> 00:06:08.770
+in order to find out that the
+
+211
+00:06:08.770 --> 00:06:11.290
+obvious answer is, you go ahead and
+
+212
+00:06:11.290 --> 00:06:12.450
+take the milk liter, you go ahead
+
+213
+00:06:12.450 --> 00:06:14.170
+and divide it by the servings and
+
+214
+00:06:14.170 --> 00:06:14.890
+you get this.
+
+215
+00:06:14.890 --> 00:06:16.090
+So super easy.
+
+216
+00:06:16.090 --> 00:06:17.730
+And I'll just go ahead and say
+
+217
+00:06:17.730 --> 00:06:21.450
+print again with a formatted string
+
+218
+00:06:21.450 --> 00:06:24.010
+and we're going to say milk per
+
+219
+00:06:24.010 --> 00:06:27.050
+serving is use the curly braces
+
+220
+00:06:27.050 --> 00:06:29.730
+and we'll say milk per serving.
+
+221
+00:06:29.730 --> 00:06:30.290
+That's it.
+
+222
+00:06:30.290 --> 00:06:31.290
+This is interesting.
+
+223
+00:06:31.290 --> 00:06:32.370
+We want to see the output
+
+224
+00:06:32.370 --> 00:06:33.690
+of it because this one will
+
+225
+00:06:33.690 --> 00:06:35.330
+be little bit interesting.
+
+226
+00:06:35.330 --> 00:06:36.770
+So we see that the milk
+
+227
+00:06:36.770 --> 00:06:39.810
+serving is 1.75 exactly
+
+228
+00:06:39.810 --> 00:06:41.330
+the way we want it to be.
+
+229
+00:06:41.890 --> 00:06:43.970
+But sometimes you want
+
+230
+00:06:43.970 --> 00:06:45.330
+not to be that exact.
+
+231
+00:06:45.330 --> 00:06:46.930
+So I'll give you another example.
+
+232
+00:06:47.490 --> 00:06:53.090
+Let's just say we have, total teabag.
+
+233
+00:06:53.090 --> 00:06:54.210
+And again, make sure you also
+
+234
+00:06:54.210 --> 00:06:56.170
+develop this habit of writing a lot
+
+235
+00:06:56.170 --> 00:06:57.370
+of things in the programming.
+
+236
+00:06:57.370 --> 00:06:58.490
+A lot of people just want to copy,
+
+237
+00:06:58.490 --> 00:07:00.210
+paste, no, write it on the keyboard.
+
+238
+00:07:00.210 --> 00:07:01.810
+It will develop a good habit.
+
+239
+00:07:01.810 --> 00:07:03.490
+Let's just say you have total teabag
+
+240
+00:07:03.490 --> 00:07:06.690
+and the pots that you have are four.
+
+241
+00:07:06.690 --> 00:07:08.210
+Again exactly same.
+
+242
+00:07:08.210 --> 00:07:09.810
+But we want to now calculate
+
+243
+00:07:09.810 --> 00:07:11.370
+that how much bags per pot.
+
+244
+00:07:11.370 --> 00:07:13.730
+So we'll just say bags per
+
+245
+00:07:13.730 --> 00:07:17.250
+pots or pot will be total
+
+246
+00:07:17.250 --> 00:07:19.010
+teabags that we have.
+
+247
+00:07:19.010 --> 00:07:20.370
+And this time we want to use two
+
+248
+00:07:20.370 --> 00:07:21.850
+slashes and you will see the meaning
+
+249
+00:07:21.850 --> 00:07:22.890
+of it in just a second.
+
+250
+00:07:22.890 --> 00:07:24.650
+As I mentioned, this is investigative
+
+251
+00:07:24.650 --> 00:07:26.660
+study and we will see what happens
+
+252
+00:07:26.660 --> 00:07:27.940
+when we go ahead and do this.
+
+253
+00:07:29.300 --> 00:07:30.580
+Let's Just say we format
+
+254
+00:07:30.580 --> 00:07:32.260
+this and we're going to say whole
+
+255
+00:07:32.260 --> 00:07:36.500
+tea bags per pot.
+
+256
+00:07:36.500 --> 00:07:39.260
+Pot is going to be like this
+
+257
+00:07:39.260 --> 00:07:42.180
+and we'll say bags per pot.
+
+258
+00:07:42.180 --> 00:07:43.580
+Now, you will notice a bit
+
+259
+00:07:43.580 --> 00:07:45.940
+of a strange that this time we get
+
+260
+00:07:45.940 --> 00:07:48.020
+just 1, not the 1.75.
+
+261
+00:07:48.020 --> 00:07:49.540
+All the numbers are same.
+
+262
+00:07:49.540 --> 00:07:50.900
+So the whole point of having two
+
+263
+00:07:50.900 --> 00:07:52.830
+slashes is I really don't care
+
+264
+00:07:52.830 --> 00:07:54.710
+about what comes after the decimal.
+
+265
+00:07:54.710 --> 00:07:55.550
+I'm not worried.
+
+266
+00:07:55.550 --> 00:07:56.590
+And there are a lot of cases where
+
+267
+00:07:56.590 --> 00:07:58.230
+you're not worried about it.
+
+268
+00:07:58.230 --> 00:07:59.590
+And that's totally okay.
+
+269
+00:08:00.310 --> 00:08:01.630
+And this is how it is
+
+270
+00:08:01.630 --> 00:08:02.270
+supposed to work.
+
+271
+00:08:02.270 --> 00:08:04.110
+Not every time you should be caring
+
+272
+00:08:04.110 --> 00:08:06.550
+about after decimal in the point
+
+273
+00:08:06.550 --> 00:08:08.670
+of money, in the point of stocks.
+
+274
+00:08:08.670 --> 00:08:10.310
+Yes, I do care, but there are also
+
+275
+00:08:10.310 --> 00:08:11.830
+times when I don't care about it.
+
+276
+00:08:12.470 --> 00:08:13.310
+And there's another
+
+277
+00:08:13.310 --> 00:08:14.470
+thing which we have.
+
+278
+00:08:14.470 --> 00:08:15.230
+Let's just say we have
+
+279
+00:08:15.230 --> 00:08:19.200
+a total, cardamom.
+
+280
+00:08:20.960 --> 00:08:24.760
+Cardamom pods are 10 with us.
+
+281
+00:08:24.760 --> 00:08:25.840
+Okay.
+
+282
+00:08:25.840 --> 00:08:28.000
+And we, want to have pods
+
+283
+00:08:29.040 --> 00:08:33.039
+per cup is three.
+
+284
+00:08:33.039 --> 00:08:35.120
+Okay, now you want to find out
+
+285
+00:08:35.120 --> 00:08:36.720
+what are the leftover pods.
+
+286
+00:08:36.720 --> 00:08:38.440
+So how you'll do this?
+
+287
+00:08:38.440 --> 00:08:40.400
+So we'll just go ahead and say
+
+288
+00:08:40.400 --> 00:08:42.640
+that leftover pods.
+
+289
+00:08:43.379 --> 00:08:44.499
+How do we calculate that?
+
+290
+00:08:44.499 --> 00:08:45.219
+That's interesting.
+
+291
+00:08:45.219 --> 00:08:45.979
+I want to calculate
+
+292
+00:08:45.979 --> 00:08:47.619
+the leftover ones.
+
+293
+00:08:47.619 --> 00:08:49.190
+And it's, super easy.
+
+294
+00:08:49.190 --> 00:08:51.139
+We can just divide this.
+
+295
+00:08:51.139 --> 00:08:53.699
+So after dividing whatever
+
+296
+00:08:53.699 --> 00:08:55.579
+is the remainder, that is
+
+297
+00:08:55.579 --> 00:08:56.579
+where we are worried about.
+
+298
+00:08:56.579 --> 00:08:57.299
+We want to have
+
+299
+00:08:57.299 --> 00:08:58.659
+the remainder, the leftover.
+
+300
+00:08:59.219 --> 00:09:00.979
+So this is interesting example.
+
+301
+00:09:00.979 --> 00:09:02.219
+Let's just go see how
+
+302
+00:09:02.219 --> 00:09:03.219
+we can calculate that.
+
+303
+00:09:03.219 --> 00:09:05.859
+So we have a total cardamom pods.
+
+304
+00:09:05.859 --> 00:09:08.339
+And if I go ahead and divide it
+
+305
+00:09:08.339 --> 00:09:10.970
+by the pods per cup, I hope
+
+306
+00:09:10.970 --> 00:09:12.490
+you can see the problem here.
+
+307
+00:09:12.490 --> 00:09:13.450
+There is a problem.
+
+308
+00:09:14.010 --> 00:09:15.490
+This is not an accurate code.
+
+309
+00:09:15.490 --> 00:09:16.090
+This will not give
+
+310
+00:09:16.090 --> 00:09:17.450
+you the exact result.
+
+311
+00:09:17.450 --> 00:09:19.450
+I want to say the leftover
+
+312
+00:09:20.170 --> 00:09:23.570
+pods or cardamom pod.
+
+313
+00:09:23.570 --> 00:09:25.130
+For the cardamom, I'll just write C.
+
+314
+00:09:25.130 --> 00:09:26.970
+Leftover cardamom pods
+
+315
+00:09:26.970 --> 00:09:29.450
+are leftover pods.
+
+316
+00:09:29.450 --> 00:09:30.690
+Can you detect what's
+
+317
+00:09:30.690 --> 00:09:32.570
+the problem in this code is?
+
+318
+00:09:32.570 --> 00:09:33.930
+It's a logical error.
+
+319
+00:09:34.740 --> 00:09:37.540
+So the Leftover pods are 3.3333.
+
+320
+00:09:37.540 --> 00:09:38.900
+Is this accurate?
+
+321
+00:09:38.900 --> 00:09:39.860
+Probably not.
+
+322
+00:09:40.500 --> 00:09:42.660
+Because if we are putting up
+
+323
+00:09:42.660 --> 00:09:45.220
+three pods per cup and we have
+
+324
+00:09:45.220 --> 00:09:48.700
+total pods of 10, so technically
+
+325
+00:09:48.700 --> 00:09:49.940
+it should be just one.
+
+326
+00:09:49.940 --> 00:09:51.620
+But when we divide it,
+
+327
+00:09:51.620 --> 00:09:53.100
+it just shows that, hey, now
+
+328
+00:09:53.100 --> 00:09:55.180
+the three division, is three.
+
+329
+00:09:55.180 --> 00:09:56.100
+That is, we get.
+
+330
+00:09:56.100 --> 00:09:58.020
+So each cup gets three pods.
+
+331
+00:09:58.020 --> 00:09:59.860
+So three, three and three.
+
+332
+00:09:59.860 --> 00:10:01.060
+That we already know.
+
+333
+00:10:01.850 --> 00:10:02.730
+But this is not accurate.
+
+334
+00:10:02.730 --> 00:10:04.090
+We want to see the leftover.
+
+335
+00:10:04.090 --> 00:10:05.490
+So for the leftover, in the world
+
+336
+00:10:05.490 --> 00:10:06.450
+of Python, we use something
+
+337
+00:10:06.450 --> 00:10:08.570
+known as modulo operator or known
+
+338
+00:10:08.570 --> 00:10:10.570
+as percentage, which gives you
+
+339
+00:10:10.570 --> 00:10:12.650
+the remainder of the division.
+
+340
+00:10:12.650 --> 00:10:14.370
+So notice here the leftover part is
+
+341
+00:10:14.370 --> 00:10:16.810
+one, which is exactly what we want.
+
+342
+00:10:17.370 --> 00:10:19.130
+So pretty good and pretty nice.
+
+343
+00:10:19.130 --> 00:10:20.500
+Now one last thing.
+
+344
+00:10:20.500 --> 00:10:22.290
+Not last, but still, before we
+
+345
+00:10:22.290 --> 00:10:24.010
+go back onto the blackboard,
+
+346
+00:10:24.010 --> 00:10:25.690
+I will show you that how it
+
+347
+00:10:25.690 --> 00:10:27.130
+actually works with the scaling.
+
+348
+00:10:27.130 --> 00:10:28.170
+So let's just say we want
+
+349
+00:10:28.170 --> 00:10:29.930
+to have an exponential power.
+
+350
+00:10:30.790 --> 00:10:32.790
+Just say we have a base
+
+351
+00:10:32.790 --> 00:10:36.070
+flavor strength.
+
+352
+00:10:38.550 --> 00:10:39.670
+There we go.
+
+353
+00:10:39.670 --> 00:10:41.750
+Base flavor strength is 2.
+
+354
+00:10:41.750 --> 00:10:44.630
+And what we want to do is we want to
+
+355
+00:10:44.630 --> 00:10:48.710
+have a scale factor, scale factor.
+
+356
+00:10:48.710 --> 00:10:50.430
+And I want to scale, have
+
+357
+00:10:50.430 --> 00:10:51.590
+a scale factor of three.
+
+358
+00:10:52.230 --> 00:10:54.350
+So now the powerful flavor,
+
+359
+00:10:54.350 --> 00:10:55.790
+how much is it going to scale?
+
+360
+00:10:55.790 --> 00:10:56.830
+I know this is a very weird
+
+361
+00:10:56.830 --> 00:10:57.940
+example, but, but I couldn't
+
+362
+00:10:57.940 --> 00:10:58.820
+come up anything better.
+
+363
+00:10:59.780 --> 00:11:00.660
+So let's just say we
+
+364
+00:11:00.660 --> 00:11:01.820
+have a powerful flavor.
+
+365
+00:11:01.820 --> 00:11:02.860
+And how do we calculate
+
+366
+00:11:02.860 --> 00:11:03.780
+the powerful flavor?
+
+367
+00:11:03.780 --> 00:11:05.780
+The whole point of this example is
+
+368
+00:11:05.780 --> 00:11:07.020
+to have the base flavor
+
+369
+00:11:07.020 --> 00:11:08.820
+strength and use two asterisks.
+
+370
+00:11:08.820 --> 00:11:11.060
+This means I want exponential.
+
+371
+00:11:11.060 --> 00:11:13.700
+So this will be scale, factor.
+
+372
+00:11:13.700 --> 00:11:15.220
+This means that we will have two
+
+373
+00:11:15.220 --> 00:11:16.260
+to the power of three.
+
+374
+00:11:16.260 --> 00:11:17.620
+That means two multiplied
+
+375
+00:11:17.620 --> 00:11:19.420
+by two multiplied by two, two
+
+376
+00:11:19.420 --> 00:11:21.140
+is multiplied three times.
+
+377
+00:11:21.140 --> 00:11:22.340
+That's the whole point.
+
+378
+00:11:22.340 --> 00:11:24.310
+Yeah, and we'll just go ahead
+
+379
+00:11:24.310 --> 00:11:25.950
+and duplicate this, move it up here
+
+380
+00:11:26.750 --> 00:11:29.550
+and we will just change this one to
+
+381
+00:11:30.590 --> 00:11:36.230
+scaled flavor strength is going
+
+382
+00:11:36.230 --> 00:11:39.630
+to be this one powerful flavor.
+
+383
+00:11:40.350 --> 00:11:41.710
+Very weird example,
+
+384
+00:11:41.710 --> 00:11:42.990
+doesn't make much of the sense.
+
+385
+00:11:42.990 --> 00:11:45.590
+But you get the point if we get this.
+
+386
+00:11:45.590 --> 00:11:47.350
+So it's super easy to work on with.
+
+387
+00:11:47.350 --> 00:11:48.310
+What it does is actually
+
+388
+00:11:48.310 --> 00:11:49.030
+it's the power.
+
+389
+00:11:49.030 --> 00:11:50.590
+So we simply say two
+
+390
+00:11:50.590 --> 00:11:52.070
+multiplied by two multiplied
+
+391
+00:11:52.070 --> 00:11:54.070
+by three multiplied by two.
+
+392
+00:11:54.070 --> 00:11:55.630
+I mean if this would be
+
+393
+00:11:55.630 --> 00:11:56.670
+scale would be four.
+
+394
+00:11:56.670 --> 00:11:58.030
+So we would add just one more time.
+
+395
+00:11:58.030 --> 00:11:59.430
+So whatever the number is, this is
+
+396
+00:11:59.430 --> 00:12:01.390
+being multiplied this many times.
+
+397
+00:12:01.390 --> 00:12:02.110
+That's the power.
+
+398
+00:12:02.830 --> 00:12:04.910
+Now one last thing that I
+
+399
+00:12:04.910 --> 00:12:05.950
+would love to show you.
+
+400
+00:12:05.950 --> 00:12:07.750
+This is rarely used, but I
+
+401
+00:12:07.750 --> 00:12:09.390
+would still love to show you.
+
+402
+00:12:09.390 --> 00:12:10.910
+So let's just say you have a value
+
+403
+00:12:10.910 --> 00:12:12.550
+where you want to see and want
+
+404
+00:12:12.550 --> 00:12:17.880
+to have total tea leaves harvested.
+
+405
+00:12:17.880 --> 00:12:18.920
+This is a big number
+
+406
+00:12:18.920 --> 00:12:20.120
+that you want to have.
+
+407
+00:12:20.120 --> 00:12:21.920
+What Python does, it allows you
+
+408
+00:12:21.920 --> 00:12:23.240
+to actually separate the number.
+
+409
+00:12:23.240 --> 00:12:23.960
+Let's just say you want
+
+410
+00:12:23.960 --> 00:12:25.480
+to write billion of the leaves.
+
+411
+00:12:25.480 --> 00:12:26.640
+So you can actually go ahead
+
+412
+00:12:26.640 --> 00:12:28.200
+and write billion just like this.
+
+413
+00:12:28.200 --> 00:12:29.440
+So I can have a 30 here
+
+414
+00:12:29.440 --> 00:12:30.920
+and I can have a 30 here.
+
+415
+00:12:30.920 --> 00:12:33.000
+This improves the readability,
+
+416
+00:12:33.000 --> 00:12:33.920
+doesn't really bother.
+
+417
+00:12:33.920 --> 00:12:34.880
+It's still being treated
+
+418
+00:12:34.880 --> 00:12:35.920
+as without underscore.
+
+419
+00:12:35.920 --> 00:12:36.720
+This is a unique thing
+
+420
+00:12:36.720 --> 00:12:38.040
+about the Python.
+
+421
+00:12:38.040 --> 00:12:39.320
+Just to improve the readability.
+
+422
+00:12:39.320 --> 00:12:40.720
+I hope this gives you an idea
+
+423
+00:12:40.720 --> 00:12:43.000
+how much important is readability
+
+424
+00:12:43.000 --> 00:12:44.120
+in the world of Python.
+
+425
+00:12:44.790 --> 00:12:46.630
+And yes, it's printable, in case
+
+426
+00:12:46.630 --> 00:12:48.070
+you want to know about that.
+
+427
+00:12:48.070 --> 00:12:48.910
+So I'll just go ahead
+
+428
+00:12:48.910 --> 00:12:52.230
+and say T leaves.
+
+429
+00:12:52.950 --> 00:12:54.790
+And we'll just go ahead and say
+
+430
+00:12:55.510 --> 00:12:58.950
+total T leaves harvested.
+
+431
+00:12:58.950 --> 00:13:00.830
+And yes, it doesn't impact anything.
+
+432
+00:13:00.830 --> 00:13:01.750
+The number still comes
+
+433
+00:13:01.750 --> 00:13:02.550
+up just like this.
+
+434
+00:13:02.550 --> 00:13:05.030
+So looks little bit weird, but a lot
+
+435
+00:13:05.030 --> 00:13:07.270
+of Python people love to do it.
+
+436
+00:13:07.270 --> 00:13:08.390
+And this is it.
+
+437
+00:13:08.390 --> 00:13:10.350
+This is what we have done in Integer.
+
+438
+00:13:10.350 --> 00:13:11.670
+So this part of the integer
+
+439
+00:13:11.670 --> 00:13:13.070
+is considered as done.
+
+440
+00:13:13.070 --> 00:13:14.430
+This is all about the integer.
+
+441
+00:13:14.430 --> 00:13:15.870
+You know, how to deal with them, how
+
+442
+00:13:15.870 --> 00:13:17.170
+to work, work with them.
+
+443
+00:13:17.170 --> 00:13:18.330
+Next up, let's take
+
+444
+00:13:18.330 --> 00:13:19.570
+the boolean as well.
+
+445
+00:13:19.570 --> 00:13:21.330
+So can we take this in the same file?
+
+446
+00:13:21.910 --> 00:13:23.090
+Probably use the next one.
+
+447
+00:13:24.290 --> 00:13:28.530
+Let's go ahead with the chapter four.
+
+448
+00:13:28.530 --> 00:13:29.970
+Yeah, we're quite far here.
+
+449
+00:13:30.850 --> 00:13:31.770
+So the Boolean is
+
+450
+00:13:31.770 --> 00:13:33.010
+actually pretty easy.
+
+451
+00:13:33.010 --> 00:13:34.370
+Let's just say I want to ask
+
+452
+00:13:34.370 --> 00:13:36.290
+question that is is boiling.
+
+453
+00:13:36.290 --> 00:13:37.810
+We ask a lot of questions like this
+
+454
+00:13:37.810 --> 00:13:40.970
+is boiling, for the T boiling.
+
+455
+00:13:40.970 --> 00:13:41.730
+I can write that.
+
+456
+00:13:42.480 --> 00:13:43.880
+So the answer of the boiling is
+
+457
+00:13:43.880 --> 00:13:45.880
+either true or it can be false.
+
+458
+00:13:45.880 --> 00:13:47.200
+The first letter is capital
+
+459
+00:13:47.200 --> 00:13:48.240
+and that's it.
+
+460
+00:13:48.240 --> 00:13:48.960
+That is it.
+
+461
+00:13:49.600 --> 00:13:51.200
+You ask a lot of questions like,
+
+462
+00:13:51.200 --> 00:13:52.680
+hey, is the user logged in?
+
+463
+00:13:52.680 --> 00:13:53.680
+Is the credit card there?
+
+464
+00:13:53.680 --> 00:13:54.840
+Is he a paid user?
+
+465
+00:13:54.840 --> 00:13:56.040
+A lot of these questions have
+
+466
+00:13:56.040 --> 00:13:57.759
+just true and false answers.
+
+467
+00:13:57.759 --> 00:13:58.640
+For example,
+
+468
+00:13:58.640 --> 00:14:00.000
+is the temperature hot outside?
+
+469
+00:14:00.000 --> 00:14:01.880
+Is the temperature above 42 degrees?
+
+470
+00:14:01.880 --> 00:14:03.720
+Is the temperature below 42 degrees?
+
+471
+00:14:03.720 --> 00:14:05.800
+A lot of this and then we simply
+
+472
+00:14:05.800 --> 00:14:07.350
+go ahead and say, let's just say we,
+
+473
+00:14:07.350 --> 00:14:08.160
+have another variable,
+
+474
+00:14:08.160 --> 00:14:10.160
+the stir count is five that you
+
+475
+00:14:10.160 --> 00:14:11.440
+want to stir it five times.
+
+476
+00:14:12.460 --> 00:14:15.060
+So one more interesting thing that
+
+477
+00:14:15.060 --> 00:14:17.220
+you will find that this true
+
+478
+00:14:17.220 --> 00:14:19.180
+is actually represented as 1
+
+479
+00:14:19.180 --> 00:14:21.980
+and the false is represented as 0.
+
+480
+00:14:21.980 --> 00:14:23.980
+This is also a short notation for it.
+
+481
+00:14:23.980 --> 00:14:25.500
+And to prove that this exists,
+
+482
+00:14:25.500 --> 00:14:27.580
+I can show you this, that sometimes
+
+483
+00:14:27.580 --> 00:14:29.020
+people does this, that total
+
+484
+00:14:29.020 --> 00:14:32.300
+actions, actions can actually
+
+485
+00:14:32.300 --> 00:14:33.540
+be represented like this.
+
+486
+00:14:33.540 --> 00:14:35.420
+And we can just have a stir
+
+487
+00:14:35.420 --> 00:14:37.380
+count and we can just go ahead
+
+488
+00:14:37.380 --> 00:14:38.820
+and add is boiling to it.
+
+489
+00:14:38.820 --> 00:14:39.980
+And to your surprise, this
+
+490
+00:14:39.980 --> 00:14:41.020
+true will automatically
+
+491
+00:14:41.020 --> 00:14:43.360
+get converted into one.
+
+492
+00:14:43.360 --> 00:14:45.360
+This is known as upcasting.
+
+493
+00:14:45.360 --> 00:14:47.200
+I'll write this as well.
+
+494
+00:14:47.200 --> 00:14:49.040
+This is known as upcasting.
+
+495
+00:14:49.040 --> 00:14:50.440
+Yeah, There is a fancy word for
+
+496
+00:14:50.440 --> 00:14:52.200
+almost everything in Python and yes,
+
+497
+00:14:52.200 --> 00:14:53.160
+this is exactly how you can
+
+498
+00:14:53.160 --> 00:14:54.320
+write your notes and comments.
+
+499
+00:14:55.200 --> 00:14:57.320
+So I think the better version would
+
+500
+00:14:57.320 --> 00:14:59.440
+be just to have a pound sign or
+
+501
+00:14:59.440 --> 00:15:01.920
+a hash and a space looks good.
+
+502
+00:15:01.920 --> 00:15:03.960
+And then I can just go ahead
+
+503
+00:15:03.960 --> 00:15:05.040
+and use a printing of
+
+504
+00:15:05.040 --> 00:15:07.360
+the formatted string and I can say
+
+505
+00:15:07.360 --> 00:15:09.780
+total action or actions.
+
+506
+00:15:10.500 --> 00:15:12.780
+And that would be total actions.
+
+507
+00:15:12.780 --> 00:15:13.540
+That is it.
+
+508
+00:15:14.100 --> 00:15:15.060
+So super nice.
+
+509
+00:15:15.700 --> 00:15:17.700
+And we'll use a Python 3
+
+510
+00:15:17.700 --> 00:15:19.860
+to run a chapter four.
+
+511
+00:15:19.860 --> 00:15:20.660
+There we go.
+
+512
+00:15:20.660 --> 00:15:22.740
+So we can see the total action is six
+
+513
+00:15:22.740 --> 00:15:24.980
+five plus one, which is true.
+
+514
+00:15:26.580 --> 00:15:27.820
+So this is really nice
+
+515
+00:15:27.820 --> 00:15:29.540
+and sometimes we actually use that.
+
+516
+00:15:30.100 --> 00:15:31.900
+And you can also do one more thing.
+
+517
+00:15:31.900 --> 00:15:32.620
+Let me show you one
+
+518
+00:15:32.620 --> 00:15:33.860
+interesting aspect of it.
+
+519
+00:15:34.590 --> 00:15:36.150
+Let's just say you say that
+
+520
+00:15:36.150 --> 00:15:37.270
+whether the milk is present
+
+521
+00:15:37.270 --> 00:15:39.310
+in the shop or not, this is zero
+
+522
+00:15:39.310 --> 00:15:42.670
+and this actually represents that
+
+523
+00:15:42.670 --> 00:15:43.950
+we don't have any milk.
+
+524
+00:15:43.950 --> 00:15:44.630
+So I'll just go ahead
+
+525
+00:15:44.630 --> 00:15:46.550
+and say no milk.
+
+526
+00:15:46.550 --> 00:15:48.110
+This is a representation of it.
+
+527
+00:15:48.750 --> 00:15:50.030
+Now you can actually go ahead
+
+528
+00:15:50.030 --> 00:15:51.470
+and print it into the Boolean
+
+529
+00:15:51.470 --> 00:15:52.590
+format just like this.
+
+530
+00:15:52.590 --> 00:15:53.390
+So I'll just go ahead
+
+531
+00:15:53.390 --> 00:15:54.590
+and say formatted
+
+532
+00:15:55.150 --> 00:15:58.350
+and we'll say is there milk?
+
+533
+00:15:59.550 --> 00:16:01.730
+And I can use this one.
+
+534
+00:16:01.730 --> 00:16:04.170
+And I have a strong keyword or
+
+535
+00:16:04.170 --> 00:16:06.050
+interesting keyword known as bool.
+
+536
+00:16:06.050 --> 00:16:07.690
+This is actually a method or
+
+537
+00:16:07.690 --> 00:16:09.130
+a function and anything that has
+
+538
+00:16:09.130 --> 00:16:11.410
+a function it has two parentheses.
+
+539
+00:16:11.410 --> 00:16:12.730
+And in here I can pass
+
+540
+00:16:12.730 --> 00:16:14.290
+on the variable milk present.
+
+541
+00:16:14.290 --> 00:16:15.370
+It automatically will
+
+542
+00:16:15.370 --> 00:16:18.090
+convert zero to false.
+
+543
+00:16:18.090 --> 00:16:19.450
+Let me go ahead and try that.
+
+544
+00:16:19.450 --> 00:16:21.010
+And yes, it actually does that.
+
+545
+00:16:21.570 --> 00:16:23.250
+And let's try it for one as
+
+546
+00:16:23.250 --> 00:16:24.330
+well, because I know you
+
+547
+00:16:24.330 --> 00:16:25.810
+are wondering that as well.
+
+548
+00:16:26.520 --> 00:16:26.960
+Run this.
+
+549
+00:16:26.960 --> 00:16:28.160
+And yeah, it is true.
+
+550
+00:16:28.160 --> 00:16:28.760
+So pretty good.
+
+551
+00:16:28.760 --> 00:16:30.320
+What happens when it's not one?
+
+552
+00:16:30.320 --> 00:16:32.040
+What happens when it is 11?
+
+553
+00:16:32.040 --> 00:16:33.800
+That's a very interesting answer.
+
+554
+00:16:33.800 --> 00:16:35.240
+It is still true.
+
+555
+00:16:35.240 --> 00:16:37.120
+What happens if I just go ahead
+
+556
+00:16:37.120 --> 00:16:39.320
+and give it a name like Hitesh?
+
+557
+00:16:39.320 --> 00:16:40.600
+What happens in this case?
+
+558
+00:16:41.270 --> 00:16:42.560
+That's very interesting as well.
+
+559
+00:16:42.560 --> 00:16:43.800
+This is still true.
+
+560
+00:16:43.800 --> 00:16:45.840
+So there are only a handful of values
+
+561
+00:16:45.840 --> 00:16:47.960
+which are represented as false.
+
+562
+00:16:47.960 --> 00:16:49.120
+0 is one of them.
+
+563
+00:16:49.120 --> 00:16:51.320
+But we do have more as well.
+
+564
+00:16:51.320 --> 00:16:52.080
+Like there is a one
+
+565
+00:16:52.080 --> 00:16:53.590
+more keyword none.
+
+566
+00:16:53.590 --> 00:16:55.550
+What does this gets converted when
+
+567
+00:16:55.550 --> 00:16:57.030
+you want to convert that that
+
+568
+00:16:57.030 --> 00:16:59.110
+obviously is converted into false.
+
+569
+00:16:59.110 --> 00:17:01.350
+We will There's nothing much,
+
+570
+00:17:01.350 --> 00:17:02.270
+although you have gone through
+
+571
+00:17:02.270 --> 00:17:03.670
+with almost all of them.
+
+572
+00:17:03.670 --> 00:17:06.390
+But yes, I usually hate to actually
+
+573
+00:17:06.390 --> 00:17:07.990
+convert things like that.
+
+574
+00:17:07.990 --> 00:17:09.269
+I convert them when I'm
+
+575
+00:17:09.269 --> 00:17:10.470
+absolutely sure that this is
+
+576
+00:17:10.470 --> 00:17:11.510
+the result I'm probably get.
+
+577
+00:17:11.510 --> 00:17:12.869
+Or these are the only two option
+
+578
+00:17:12.869 --> 00:17:14.710
+which will give me the result.
+
+579
+00:17:14.710 --> 00:17:15.750
+This is really nice.
+
+580
+00:17:16.390 --> 00:17:17.750
+And since we are talking
+
+581
+00:17:17.750 --> 00:17:19.230
+about the Boolean, there's one
+
+582
+00:17:19.230 --> 00:17:20.190
+more thing which we should
+
+583
+00:17:20.190 --> 00:17:21.390
+really talk about when we are
+
+584
+00:17:21.390 --> 00:17:22.470
+talking about the Boolean,
+
+585
+00:17:22.470 --> 00:17:26.970
+which is logical operations.
+
+586
+00:17:27.609 --> 00:17:29.850
+And yeah, it's actually super easy.
+
+587
+00:17:29.850 --> 00:17:31.170
+Don't worry, don't sweat it out.
+
+588
+00:17:31.170 --> 00:17:31.930
+We'll actually cover
+
+589
+00:17:31.930 --> 00:17:33.290
+this part here as well.
+
+590
+00:17:33.290 --> 00:17:35.210
+What are these logical operation.
+
+591
+00:17:35.210 --> 00:17:37.050
+So logical operations are
+
+592
+00:17:37.050 --> 00:17:39.010
+of just majorly of 3 type
+
+593
+00:17:39.010 --> 00:17:42.330
+in the python which is and there is
+
+594
+00:17:42.330 --> 00:17:44.170
+or and there is not
+
+595
+00:17:44.170 --> 00:17:45.530
+what do you mean by all of them?
+
+596
+00:17:46.410 --> 00:17:48.090
+Simply say somebody is asking
+
+597
+00:17:48.090 --> 00:17:50.260
+you for, a T or coffee.
+
+598
+00:17:50.260 --> 00:17:51.300
+So when somebody asks you
+
+599
+00:17:51.300 --> 00:17:52.620
+for a T or coffee, you simply
+
+600
+00:17:52.620 --> 00:17:53.820
+say, hey, T or coffee.
+
+601
+00:17:53.820 --> 00:17:55.620
+You say hey, I'll pick only one.
+
+602
+00:17:55.620 --> 00:17:57.300
+And when somebody says, hey, we
+
+603
+00:17:57.300 --> 00:17:59.060
+would love to have T and biscuit,
+
+604
+00:17:59.060 --> 00:18:00.340
+and means hey, we would love
+
+605
+00:18:00.340 --> 00:18:02.420
+to have both T and biscuit.
+
+606
+00:18:02.420 --> 00:18:02.940
+That's it.
+
+607
+00:18:02.940 --> 00:18:03.940
+And not simply just
+
+608
+00:18:03.940 --> 00:18:05.060
+converts true to false.
+
+609
+00:18:05.060 --> 00:18:05.660
+False to true.
+
+610
+00:18:05.660 --> 00:18:06.420
+That's it.
+
+611
+00:18:06.420 --> 00:18:06.780
+Yeah.
+
+612
+00:18:06.780 --> 00:18:07.460
+I hope you remember
+
+613
+00:18:07.460 --> 00:18:08.980
+the examples as well.
+
+614
+00:18:08.980 --> 00:18:10.580
+So the one example that we worked
+
+615
+00:18:10.580 --> 00:18:14.020
+on is simply T or coffee.
+
+616
+00:18:14.020 --> 00:18:15.940
+So when somebody says T or coffee,
+
+617
+00:18:16.660 --> 00:18:17.980
+this likely means that we are
+
+618
+00:18:17.980 --> 00:18:20.100
+talking about the or part of it.
+
+619
+00:18:20.100 --> 00:18:22.100
+And when somebody is saying T
+
+620
+00:18:22.820 --> 00:18:24.300
+and biscuit, that means,
+
+621
+00:18:24.300 --> 00:18:25.460
+hey, both needs to be true.
+
+622
+00:18:25.460 --> 00:18:28.980
+T and cookies.
+
+623
+00:18:28.980 --> 00:18:29.780
+I like cookies.
+
+624
+00:18:30.980 --> 00:18:32.820
+So when somebody says T and cookies,
+
+625
+00:18:33.700 --> 00:18:34.980
+we'll just go ahead and say,
+
+626
+00:18:34.980 --> 00:18:36.660
+hey, this is the and part.
+
+627
+00:18:37.460 --> 00:18:38.500
+This simply means
+
+628
+00:18:40.260 --> 00:18:42.900
+any one can be true.
+
+629
+00:18:42.900 --> 00:18:44.540
+That is totally fine for our program.
+
+630
+00:18:44.540 --> 00:18:45.540
+We'll still move on.
+
+631
+00:18:46.440 --> 00:18:52.280
+This means both booth, not Booth,
+
+632
+00:18:52.280 --> 00:18:55.800
+both, Both should be true.
+
+633
+00:18:58.040 --> 00:18:59.440
+So this is the meaning of it.
+
+634
+00:18:59.440 --> 00:19:00.280
+Let's go ahead and now
+
+635
+00:19:00.280 --> 00:19:01.160
+work on with this.
+
+636
+00:19:01.960 --> 00:19:03.880
+You will see a variety of examples
+
+637
+00:19:03.880 --> 00:19:05.280
+like hey, is user logged in?
+
+638
+00:19:05.280 --> 00:19:07.640
+Is user having the card information?
+
+639
+00:19:07.640 --> 00:19:09.200
+Then only I, will allow him
+
+640
+00:19:09.200 --> 00:19:10.840
+to check out lot of such incidents.
+
+641
+00:19:11.650 --> 00:19:12.730
+In this case, since we are
+
+642
+00:19:12.730 --> 00:19:14.610
+making the T shop, let's just
+
+643
+00:19:14.610 --> 00:19:16.770
+say water hot is true
+
+644
+00:19:17.570 --> 00:19:25.170
+as well as, T added is false.
+
+645
+00:19:26.130 --> 00:19:27.489
+So what do you think should happen
+
+646
+00:19:28.850 --> 00:19:31.090
+in the variable can serve?
+
+647
+00:19:31.090 --> 00:19:33.410
+So should I be serving the T
+
+648
+00:19:34.050 --> 00:19:35.570
+when the water is hot
+
+649
+00:19:35.570 --> 00:19:37.620
+and I haven't added the T?
+
+650
+00:19:37.620 --> 00:19:38.300
+If you haven't added
+
+651
+00:19:38.300 --> 00:19:40.100
+the tea, that is not tea.
+
+652
+00:19:40.100 --> 00:19:41.620
+So I'll, just go ahead and say
+
+653
+00:19:41.620 --> 00:19:42.660
+water should be hot
+
+654
+00:19:42.660 --> 00:19:44.660
+and the T should be added.
+
+655
+00:19:44.660 --> 00:19:46.580
+Then only it makes a T.
+
+656
+00:19:46.580 --> 00:19:48.340
+So I hope you get the answer of it.
+
+657
+00:19:48.340 --> 00:19:49.060
+Pretty nice.
+
+658
+00:19:49.060 --> 00:19:50.260
+Good example this time.
+
+659
+00:19:50.980 --> 00:19:53.300
+So we'll say can serve
+
+660
+00:19:53.940 --> 00:19:55.340
+Chai will not call it tea.
+
+661
+00:19:55.340 --> 00:19:56.660
+We'll call it chai.
+
+662
+00:19:56.660 --> 00:19:57.700
+We'll use this variable
+
+663
+00:19:57.700 --> 00:20:00.180
+and we can see can serve.
+
+664
+00:20:00.180 --> 00:20:00.820
+That's it.
+
+665
+00:20:01.780 --> 00:20:02.860
+Super easy to work on
+
+666
+00:20:02.860 --> 00:20:03.900
+with can serve chai.
+
+667
+00:20:03.900 --> 00:20:04.180
+False.
+
+668
+00:20:04.180 --> 00:20:04.940
+You cannot serve it.
+
+669
+00:20:04.940 --> 00:20:06.510
+You haven't added the T.
+
+670
+00:20:06.510 --> 00:20:07.390
+And once you have added
+
+671
+00:20:07.390 --> 00:20:08.990
+the tree tea, that means
+
+672
+00:20:08.990 --> 00:20:10.430
+hey, this is all good now.
+
+673
+00:20:10.430 --> 00:20:12.070
+Now probably you should be able
+
+674
+00:20:12.070 --> 00:20:13.790
+to serve and yes, you are.
+
+675
+00:20:13.790 --> 00:20:15.670
+You can now serve this one.
+
+676
+00:20:15.670 --> 00:20:16.750
+So this is pretty nice.
+
+677
+00:20:17.950 --> 00:20:19.790
+All right, I think this
+
+678
+00:20:19.790 --> 00:20:21.030
+part is all done now.
+
+679
+00:20:21.030 --> 00:20:22.150
+The only thing that's remaining
+
+680
+00:20:22.150 --> 00:20:25.070
+for us is the real numbers or
+
+681
+00:20:25.070 --> 00:20:26.670
+the floating point numbers.
+
+682
+00:20:26.670 --> 00:20:28.870
+These are very interesting, examples.
+
+683
+00:20:28.870 --> 00:20:30.390
+We'll take them as a separate
+
+684
+00:20:30.390 --> 00:20:32.110
+example in the chapter five.
+
+685
+00:20:32.110 --> 00:20:33.390
+Let's go ahead and create this.
+
+686
+00:20:33.900 --> 00:20:35.980
+Usually people just prefer to create
+
+687
+00:20:35.980 --> 00:20:37.980
+one video for each one of them.
+
+688
+00:20:38.540 --> 00:20:39.780
+I prefer to have a bit
+
+689
+00:20:39.780 --> 00:20:40.700
+of a longer video.
+
+690
+00:20:40.700 --> 00:20:42.300
+It's okay to have longer videos
+
+691
+00:20:42.300 --> 00:20:43.580
+as long as you are enjoying.
+
+692
+00:20:43.580 --> 00:20:45.500
+So I don't find it as
+
+693
+00:20:45.500 --> 00:20:46.860
+a hesitation or a problem.
+
+694
+00:20:46.860 --> 00:20:49.020
+People get panics out when the video
+
+695
+00:20:49.020 --> 00:20:50.540
+goes about two minutes of length.
+
+696
+00:20:50.540 --> 00:20:51.660
+I don't.
+
+697
+00:20:51.660 --> 00:20:53.300
+All right, so let's just say
+
+698
+00:20:53.300 --> 00:20:55.020
+we want to have chapter five.
+
+699
+00:20:55.020 --> 00:21:00.020
+I'll rename this chapter five.py.
+
+700
+00:21:00.020 --> 00:21:01.220
+there we go.
+
+701
+00:21:01.220 --> 00:21:02.980
+All right, so what does this means?
+
+702
+00:21:02.980 --> 00:21:03.620
+Real number?
+
+703
+00:21:03.620 --> 00:21:05.180
+Real number simply means I want
+
+704
+00:21:05.180 --> 00:21:07.220
+to have precision in my program.
+
+705
+00:21:07.940 --> 00:21:09.620
+Let's just say I call this as.
+
+706
+00:21:09.620 --> 00:21:10.380
+I'll show you a very
+
+707
+00:21:10.380 --> 00:21:11.300
+interesting example.
+
+708
+00:21:11.300 --> 00:21:14.140
+So let's just say I have an ideal
+
+709
+00:21:14.140 --> 00:21:18.020
+temperature which is 95.5.
+
+710
+00:21:18.020 --> 00:21:20.340
+Of course this is all in Celsius
+
+711
+00:21:20.340 --> 00:21:22.180
+and let's just say current
+
+712
+00:21:22.820 --> 00:21:25.380
+temp and the current temperature is
+
+713
+00:21:26.020 --> 00:21:27.100
+a little bit more.
+
+714
+00:21:27.100 --> 00:21:32.470
+So we have 95 dot and we have four.
+
+715
+00:21:33.110 --> 00:21:34.310
+A lot of nines.
+
+716
+00:21:34.310 --> 00:21:35.150
+I don't know how many,
+
+717
+00:21:35.150 --> 00:21:36.870
+but a lot of them.
+
+718
+00:21:36.870 --> 00:21:38.030
+So what does this means?
+
+719
+00:21:38.030 --> 00:21:39.350
+I want to have approximation
+
+720
+00:21:39.990 --> 00:21:42.030
+and in this case I'll just go ahead
+
+721
+00:21:42.030 --> 00:21:43.950
+and say let's print all of them.
+
+722
+00:21:43.950 --> 00:21:44.550
+So print.
+
+723
+00:21:46.150 --> 00:21:48.950
+I will go ahead and say ideal temp
+
+724
+00:21:49.990 --> 00:21:52.550
+is going to be ideal temp
+
+725
+00:21:53.270 --> 00:21:55.670
+and we'll have duplicate of this.
+
+726
+00:21:55.670 --> 00:21:58.170
+This one should be current
+
+727
+00:21:58.170 --> 00:22:03.370
+temperature and we'll have another
+
+728
+00:22:03.370 --> 00:22:06.970
+one which is going to be difference
+
+729
+00:22:08.010 --> 00:22:12.890
+difference, difference temperature.
+
+730
+00:22:13.930 --> 00:22:15.530
+And for the difference temperature
+
+731
+00:22:15.530 --> 00:22:16.930
+I would say that we will take
+
+732
+00:22:16.930 --> 00:22:18.330
+the ideal temperature and we're
+
+733
+00:22:18.330 --> 00:22:19.410
+going to go ahead and subtract
+
+734
+00:22:19.410 --> 00:22:21.290
+the current temperature with it.
+
+735
+00:22:21.290 --> 00:22:22.730
+This is an interesting
+
+736
+00:22:22.730 --> 00:22:23.840
+activity to do.
+
+737
+00:22:23.840 --> 00:22:24.840
+So let's go ahead and call
+
+738
+00:22:24.840 --> 00:22:26.240
+Python, investigate this,
+
+739
+00:22:26.240 --> 00:22:28.240
+what happens when I do so.
+
+740
+00:22:28.240 --> 00:22:29.240
+And we're going to go ahead
+
+741
+00:22:29.240 --> 00:22:30.480
+and say chapter five.
+
+742
+00:22:30.480 --> 00:22:32.240
+I'm pretty sure you're also excited.
+
+743
+00:22:32.240 --> 00:22:33.760
+Hey, what is about to happen?
+
+744
+00:22:33.760 --> 00:22:35.000
+How can I go ahead and work
+
+745
+00:22:35.000 --> 00:22:35.920
+on with this?
+
+746
+00:22:35.920 --> 00:22:37.040
+Now notice you can see
+
+747
+00:22:37.040 --> 00:22:39.920
+the difference temperature is 9.
+
+748
+00:22:39.920 --> 00:22:41.520
+You didn't expected that.
+
+749
+00:22:41.520 --> 00:22:42.360
+Yeah, of course you
+
+750
+00:22:42.360 --> 00:22:43.360
+didn't expected that.
+
+751
+00:22:43.360 --> 00:22:45.120
+You expected 0.0 or something.
+
+752
+00:22:45.680 --> 00:22:47.600
+This is not exactly zero because
+
+753
+00:22:47.600 --> 00:22:49.200
+sometimes the precision are there
+
+754
+00:22:49.200 --> 00:22:51.070
+and the way how Python calculate
+
+755
+00:22:51.070 --> 00:22:52.710
+the precision is bit different.
+
+756
+00:22:52.710 --> 00:22:54.670
+This actually drastically changed
+
+757
+00:22:54.670 --> 00:22:55.910
+when I go ahead and remove
+
+758
+00:22:55.910 --> 00:22:57.710
+this much of the precision and try
+
+759
+00:22:57.710 --> 00:22:59.350
+to run this program again.
+
+760
+00:22:59.350 --> 00:23:01.270
+This time we get 0.01.
+
+761
+00:23:01.270 --> 00:23:02.310
+So this is much more
+
+762
+00:23:02.310 --> 00:23:03.670
+of an expected number.
+
+763
+00:23:03.670 --> 00:23:04.910
+So when you want to deal with
+
+764
+00:23:04.910 --> 00:23:06.950
+higher numbers there are packages,
+
+765
+00:23:06.950 --> 00:23:08.110
+as I mentioned, we borrow
+
+766
+00:23:08.110 --> 00:23:09.870
+the code from somebody else's
+
+767
+00:23:09.870 --> 00:23:11.190
+who has written the code.
+
+768
+00:23:11.190 --> 00:23:12.790
+We simply take that and work
+
+769
+00:23:12.790 --> 00:23:13.830
+on more precision.
+
+770
+00:23:13.830 --> 00:23:16.030
+Python is a very favored
+
+771
+00:23:16.030 --> 00:23:17.430
+language for scientific
+
+772
+00:23:17.430 --> 00:23:19.300
+computings and mathematician,
+
+773
+00:23:19.300 --> 00:23:20.580
+so it does that one.
+
+774
+00:23:20.580 --> 00:23:22.060
+Another interesting thing that you
+
+775
+00:23:22.060 --> 00:23:23.660
+can do is you can actually go ahead
+
+776
+00:23:23.660 --> 00:23:25.780
+and say hey, I want to use sys.
+
+777
+00:23:25.780 --> 00:23:30.900
+And then you can use floatinfo.
+
+778
+00:23:30.900 --> 00:23:31.980
+This is the package.
+
+779
+00:23:31.980 --> 00:23:34.180
+And to actually import this piece
+
+780
+00:23:34.180 --> 00:23:35.419
+of code, this is the code
+
+781
+00:23:35.419 --> 00:23:36.380
+somebody else has written.
+
+782
+00:23:36.380 --> 00:23:37.340
+It's not written by me.
+
+783
+00:23:37.340 --> 00:23:38.460
+So all you just go ahead and say
+
+784
+00:23:38.460 --> 00:23:39.700
+I want to import the sys.
+
+785
+00:23:40.740 --> 00:23:41.780
+We will learn how we
+
+786
+00:23:41.780 --> 00:23:42.620
+can actually do this.
+
+787
+00:23:42.620 --> 00:23:45.020
+This is a code we are bringing
+
+788
+00:23:45.020 --> 00:23:46.060
+in that we haven't written,
+
+789
+00:23:46.060 --> 00:23:47.300
+but Python has written it.
+
+790
+00:23:48.140 --> 00:23:49.860
+So we can actually borrow this.
+
+791
+00:23:49.860 --> 00:23:51.340
+And this gives me a float information
+
+792
+00:23:51.340 --> 00:23:52.860
+that hey, what's the float
+
+793
+00:23:52.860 --> 00:23:54.540
+information you can give me about?
+
+794
+00:23:54.540 --> 00:23:56.380
+It gives that, hey, the float
+
+795
+00:23:56.380 --> 00:23:58.060
+information is like this, the max.
+
+796
+00:23:58.060 --> 00:23:58.780
+This is the number
+
+797
+00:23:58.780 --> 00:23:59.660
+that you can go for.
+
+798
+00:23:59.660 --> 00:24:01.660
+The maxed exponential you can go for.
+
+799
+00:24:01.660 --> 00:24:03.580
+And this actually varies
+
+800
+00:24:03.580 --> 00:24:05.420
+on system to system that how much
+
+801
+00:24:05.420 --> 00:24:06.780
+calculation you can do.
+
+802
+00:24:06.780 --> 00:24:08.100
+More ram, more memory,
+
+803
+00:24:08.100 --> 00:24:09.060
+the system float.
+
+804
+00:24:09.060 --> 00:24:10.260
+This will give you totally
+
+805
+00:24:10.260 --> 00:24:11.740
+different result in your case
+
+806
+00:24:11.740 --> 00:24:12.860
+compared to mine case.
+
+807
+00:24:13.430 --> 00:24:14.630
+So we explored pretty nice.
+
+808
+00:24:14.630 --> 00:24:16.710
+I hope you enjoyed this part as well.
+
+809
+00:24:17.510 --> 00:24:19.950
+And again we actually can have
+
+810
+00:24:19.950 --> 00:24:21.830
+a lot of things, moving on.
+
+811
+00:24:21.830 --> 00:24:24.110
+We have fractions as well, we can
+
+812
+00:24:24.110 --> 00:24:25.990
+work with the decimals as well.
+
+813
+00:24:25.990 --> 00:24:27.350
+A whole lot of things actually
+
+814
+00:24:27.350 --> 00:24:29.670
+work in the world of Python.
+
+815
+00:24:29.670 --> 00:24:31.590
+I probably don't want to go into
+
+816
+00:24:31.590 --> 00:24:34.110
+that, but can I show you a little
+
+817
+00:24:34.110 --> 00:24:36.350
+bit of this just by importing this.
+
+818
+00:24:36.350 --> 00:24:39.540
+All right, so you are going to see
+
+819
+00:24:39.540 --> 00:24:40.980
+that when you want to deal up with
+
+820
+00:24:40.980 --> 00:24:43.260
+the fractions, Python actually go
+
+821
+00:24:43.260 --> 00:24:45.860
+ahead and say that hey, from a
+
+822
+00:24:45.860 --> 00:24:48.620
+package file from known as
+
+823
+00:24:49.500 --> 00:24:52.180
+fractions, fractions, you can go
+
+824
+00:24:52.180 --> 00:24:53.580
+ahead and import fractions.
+
+825
+00:24:53.580 --> 00:24:54.779
+This is a common syntax
+
+826
+00:24:55.340 --> 00:24:57.100
+now you will be able to deal up with
+
+827
+00:24:57.670 --> 00:24:59.340
+a whole lot of fractions,
+
+828
+00:24:59.980 --> 00:25:01.660
+to the power of six and seven.
+
+829
+00:25:01.660 --> 00:25:03.220
+So six decimal point numbers,
+
+830
+00:25:03.220 --> 00:25:04.300
+you can go ahead and do that.
+
+831
+00:25:05.040 --> 00:25:06.560
+Not only this, we have whole
+
+832
+00:25:06.560 --> 00:25:08.080
+powerful decimals as well.
+
+833
+00:25:08.080 --> 00:25:09.080
+So similar to this we
+
+834
+00:25:09.080 --> 00:25:10.960
+have from decimal.
+
+835
+00:25:12.030 --> 00:25:13.560
+Yep, from decimal go
+
+836
+00:25:13.560 --> 00:25:15.480
+ahead and import decimal.
+
+837
+00:25:15.480 --> 00:25:16.600
+And we actually can actually
+
+838
+00:25:16.600 --> 00:25:18.080
+typecast them as well as D.
+
+839
+00:25:18.080 --> 00:25:19.200
+I want to call this as D.
+
+840
+00:25:19.840 --> 00:25:21.720
+Weird syntax, but they do exist.
+
+841
+00:25:21.720 --> 00:25:24.800
+I'll still show you on the Google
+
+842
+00:25:24.800 --> 00:25:26.720
+as well that hey, they do exist,
+
+843
+00:25:28.820 --> 00:25:30.950
+decimal in Python.
+
+844
+00:25:31.990 --> 00:25:33.950
+And we actually will go
+
+845
+00:25:33.950 --> 00:25:34.870
+ahead and see this.
+
+846
+00:25:34.870 --> 00:25:35.910
+Yeah this is the one
+
+847
+00:25:36.870 --> 00:25:38.110
+we have the documentation.
+
+848
+00:25:38.110 --> 00:25:39.830
+So decimal, decimal point, all
+
+849
+00:25:39.830 --> 00:25:42.150
+of this right now you don't have
+
+850
+00:25:42.150 --> 00:25:44.150
+to do much into this but yes, just
+
+851
+00:25:44.150 --> 00:25:46.790
+remember that these Things do exist
+
+852
+00:25:46.790 --> 00:25:48.910
+and they have a huge importance now.
+
+853
+00:25:48.910 --> 00:25:49.950
+You can see that they can
+
+854
+00:25:49.950 --> 00:25:51.750
+actually deal up with a huge number
+
+855
+00:25:51.750 --> 00:25:53.710
+of after decimal values.
+
+856
+00:25:53.710 --> 00:25:54.670
+Yeah, they are designed
+
+857
+00:25:54.670 --> 00:25:55.270
+just for this.
+
+858
+00:25:56.240 --> 00:25:57.520
+We won't be using them right
+
+859
+00:25:57.520 --> 00:25:59.280
+now, but it's actually important
+
+860
+00:25:59.280 --> 00:26:00.640
+that we know about them.
+
+861
+00:26:00.640 --> 00:26:02.360
+That hey, a floating send decimal.
+
+862
+00:26:02.360 --> 00:26:03.040
+They have fractions,
+
+863
+00:26:03.040 --> 00:26:04.320
+they have decimal.
+
+864
+00:26:04.320 --> 00:26:06.120
+You can consist, you can borrow
+
+865
+00:26:06.120 --> 00:26:07.280
+whenever you need more power,
+
+866
+00:26:07.280 --> 00:26:08.480
+anytime from the system.
+
+867
+00:26:08.480 --> 00:26:10.240
+But we can work with that
+
+868
+00:26:10.240 --> 00:26:10.960
+complex number.
+
+869
+00:26:10.960 --> 00:26:12.160
+We are not going to touch because
+
+870
+00:26:12.160 --> 00:26:14.000
+this is bit of out of the scope as
+
+871
+00:26:14.000 --> 00:26:15.440
+of now for this course.
+
+872
+00:26:15.440 --> 00:26:17.520
+But just to give you an idea,
+
+873
+00:26:17.520 --> 00:26:19.520
+yes, complex number do exist.
+
+874
+00:26:20.080 --> 00:26:21.800
+For the complex number, usually
+
+875
+00:26:21.800 --> 00:26:25.270
+we bring out fractions and that
+
+876
+00:26:25.270 --> 00:26:26.710
+library actually works way
+
+877
+00:26:26.710 --> 00:26:28.910
+better in that I haven't dealt
+
+878
+00:26:28.910 --> 00:26:30.430
+much with the complex numbers,
+
+879
+00:26:30.430 --> 00:26:32.390
+especially the imaginary numbers
+
+880
+00:26:32.390 --> 00:26:33.590
+usually in the university
+
+881
+00:26:33.590 --> 00:26:34.790
+scientists and all of them, they
+
+882
+00:26:34.790 --> 00:26:35.630
+work more on it.
+
+883
+00:26:35.630 --> 00:26:37.310
+I don't have much experience with it.
+
+884
+00:26:37.310 --> 00:26:38.070
+I'll be just honest
+
+885
+00:26:38.070 --> 00:26:39.430
+with you on this part.
+
+886
+00:26:39.430 --> 00:26:40.790
+But yes, they do exist.
+
+887
+00:26:41.590 --> 00:26:43.270
+All right, so quite a lot about
+
+888
+00:26:43.270 --> 00:26:44.950
+the numbers that we have dealt up.
+
+889
+00:26:44.950 --> 00:26:46.230
+I hope you have enjoyed
+
+890
+00:26:46.230 --> 00:26:47.350
+this long lecture.
+
+891
+00:26:47.350 --> 00:26:49.070
+Bit long, but very valuable.
+
+892
+00:26:49.070 --> 00:26:50.310
+We have learned so much, we
+
+893
+00:26:50.310 --> 00:26:51.720
+have written so much code.
+
+894
+00:26:51.720 --> 00:26:52.960
+Go ahead, go through with this
+
+895
+00:26:52.960 --> 00:26:54.440
+code entire part and I'm
+
+896
+00:26:54.440 --> 00:26:55.560
+pretty sure you'll love it.
+
+897
+00:26:55.560 --> 00:26:57.520
+Don't forget to rate us and let's
+
+898
+00:26:57.520 --> 00:26:58.840
+catch up in the next video.

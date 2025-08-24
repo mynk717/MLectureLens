@@ -1,0 +1,921 @@
+WEBVTT
+
+1
+00:00:00.640 --> 00:00:02.760
+Hey there everyone and welcome
+
+2
+00:00:02.760 --> 00:00:04.880
+to the Python course on Udemy.
+
+3
+00:00:05.600 --> 00:00:07.080
+So in this video or in this
+
+4
+00:00:07.080 --> 00:00:08.520
+section, we are starting
+
+5
+00:00:08.520 --> 00:00:10.960
+comprehensions in Python.
+
+6
+00:00:10.960 --> 00:00:13.200
+Now here's a two very interesting
+
+7
+00:00:13.200 --> 00:00:14.960
+thing about comprehensions.
+
+8
+00:00:14.960 --> 00:00:16.480
+First of all, almost
+
+9
+00:00:16.480 --> 00:00:17.960
+everything that we are going to do
+
+10
+00:00:17.960 --> 00:00:19.600
+with the comprehensions can be done
+
+11
+00:00:19.600 --> 00:00:21.360
+with the loops as well.
+
+12
+00:00:21.360 --> 00:00:24.000
+Comprehensions are just a stylized
+
+13
+00:00:24.000 --> 00:00:25.760
+way of writing Python code.
+
+14
+00:00:26.340 --> 00:00:27.300
+So if we can do all of these
+
+15
+00:00:27.300 --> 00:00:28.620
+things, why we are using
+
+16
+00:00:28.620 --> 00:00:30.460
+comprehensions because sometimes
+
+17
+00:00:30.460 --> 00:00:31.620
+they make our life little
+
+18
+00:00:31.620 --> 00:00:33.380
+easier, they are a shorter way
+
+19
+00:00:33.380 --> 00:00:34.500
+of writing the code and
+
+20
+00:00:34.500 --> 00:00:36.020
+sometimes they feel like writing
+
+21
+00:00:36.020 --> 00:00:37.620
+just English statement and one
+
+22
+00:00:37.620 --> 00:00:39.300
+statement can do the whole job.
+
+23
+00:00:39.940 --> 00:00:41.420
+Yes, it can be done with the loops
+
+24
+00:00:41.420 --> 00:00:42.740
+as well, but this is more
+
+25
+00:00:42.740 --> 00:00:44.180
+stylized way so more people
+
+26
+00:00:44.180 --> 00:00:46.420
+in the production actually uses it.
+
+27
+00:00:46.420 --> 00:00:48.100
+And if you really want to master
+
+28
+00:00:48.100 --> 00:00:49.940
+the comprehensions in Python,
+
+29
+00:00:49.940 --> 00:00:51.620
+you have to Var this section, you
+
+30
+00:00:51.620 --> 00:00:53.080
+have to go through with this.
+
+31
+00:00:53.080 --> 00:00:54.320
+I have made sure that I keep
+
+32
+00:00:54.320 --> 00:00:55.680
+the videos bite sized so that
+
+33
+00:00:55.680 --> 00:00:57.240
+you can actually learn and focus on
+
+34
+00:00:57.240 --> 00:00:59.320
+just one task or one comprehension
+
+35
+00:00:59.880 --> 00:01:00.640
+at the one time.
+
+36
+00:01:00.640 --> 00:01:02.160
+There are multiple of them which
+
+37
+00:01:02.160 --> 00:01:03.200
+we are going to talk about then.
+
+38
+00:01:03.900 --> 00:01:05.560
+The second most important part about
+
+39
+00:01:05.560 --> 00:01:07.920
+the comprehension is that people
+
+40
+00:01:07.920 --> 00:01:10.200
+don't like it in the very first go.
+
+41
+00:01:10.200 --> 00:01:11.880
+There are only handful of people
+
+42
+00:01:11.880 --> 00:01:13.240
+who actually appreciate
+
+43
+00:01:13.240 --> 00:01:15.160
+the importance and the syntax
+
+44
+00:01:15.160 --> 00:01:17.400
+of comprehensions in the first go.
+
+45
+00:01:17.400 --> 00:01:19.040
+Most of people who want to learn
+
+46
+00:01:19.040 --> 00:01:20.320
+Python, they just learn till
+
+47
+00:01:20.320 --> 00:01:22.240
+the loops and functions and say I
+
+48
+00:01:22.240 --> 00:01:24.120
+want to skip the comprehensions.
+
+49
+00:01:24.820 --> 00:01:25.140
+Not really.
+
+50
+00:01:25.140 --> 00:01:26.820
+For me it's little difficult.
+
+51
+00:01:26.820 --> 00:01:28.140
+I agree it is little
+
+52
+00:01:28.140 --> 00:01:29.340
+difficult, but you have
+
+53
+00:01:29.340 --> 00:01:30.180
+to go through with this.
+
+54
+00:01:30.180 --> 00:01:31.380
+This is really important
+
+55
+00:01:31.380 --> 00:01:32.900
+part and you're going to see
+
+56
+00:01:32.900 --> 00:01:34.140
+so many production code
+
+57
+00:01:34.140 --> 00:01:35.220
+with the comprehension.
+
+58
+00:01:35.220 --> 00:01:36.740
+But the most important question,
+
+59
+00:01:36.740 --> 00:01:38.420
+what is comprehension?
+
+60
+00:01:38.420 --> 00:01:40.300
+So for this we will do this entire
+
+61
+00:01:40.300 --> 00:01:41.860
+video with just the comprehensions.
+
+62
+00:01:41.860 --> 00:01:43.140
+I'm going to write some keywords
+
+63
+00:01:43.140 --> 00:01:44.100
+will help you to understand
+
+64
+00:01:44.100 --> 00:01:45.780
+this and all the syntax.
+
+65
+00:01:45.780 --> 00:01:47.380
+And from the later on video,
+
+66
+00:01:47.380 --> 00:01:48.780
+the next video onwards, we are going
+
+67
+00:01:48.780 --> 00:01:50.260
+to study them one by one.
+
+68
+00:01:51.230 --> 00:01:52.750
+So what are comprehensions?
+
+69
+00:01:52.750 --> 00:01:54.550
+A very good question that you have
+
+70
+00:01:54.550 --> 00:01:56.590
+asked since you are in this section.
+
+71
+00:01:56.590 --> 00:01:58.590
+So comprehensions are a way of,
+
+72
+00:01:58.590 --> 00:02:01.870
+are a concise way of creating lists,
+
+73
+00:02:01.870 --> 00:02:04.790
+sets, dictionaries or generators in
+
+74
+00:02:04.790 --> 00:02:07.070
+Python using a single line of code.
+
+75
+00:02:07.070 --> 00:02:08.350
+Your entire focus should be
+
+76
+00:02:08.350 --> 00:02:10.430
+on using a single line of code.
+
+77
+00:02:10.430 --> 00:02:11.830
+So yes, just like the loops, we
+
+78
+00:02:11.830 --> 00:02:13.070
+don't keep on creating this,
+
+79
+00:02:13.070 --> 00:02:15.070
+we just write a simple one line
+
+80
+00:02:15.070 --> 00:02:16.870
+and it can do a lot of logical
+
+81
+00:02:16.870 --> 00:02:18.030
+things for you as well.
+
+82
+00:02:18.860 --> 00:02:21.900
+So the big question that we have is
+
+83
+00:02:23.020 --> 00:02:28.620
+where, they, where are they used?
+
+84
+00:02:28.620 --> 00:02:30.780
+I'll write that patiently
+
+85
+00:02:30.780 --> 00:02:33.420
+where they are used in real Life.
+
+86
+00:02:33.420 --> 00:02:35.580
+And yes, that's a good question.
+
+87
+00:02:35.580 --> 00:02:36.500
+So where they are used
+
+88
+00:02:36.500 --> 00:02:37.820
+in the real life, are they even
+
+89
+00:02:37.820 --> 00:02:38.940
+used in the real life?
+
+90
+00:02:38.940 --> 00:02:40.780
+And the answer is yes, very much.
+
+91
+00:02:40.780 --> 00:02:42.380
+They are used quite a lot.
+
+92
+00:02:42.380 --> 00:02:43.780
+The most common place that
+
+93
+00:02:43.780 --> 00:02:45.100
+where you're going to see is
+
+94
+00:02:45.100 --> 00:02:46.500
+through filtering the items.
+
+95
+00:02:46.500 --> 00:02:47.740
+So filter item.
+
+96
+00:02:47.740 --> 00:02:48.660
+This is where you're going
+
+97
+00:02:48.660 --> 00:02:50.140
+to see them being used.
+
+98
+00:02:50.140 --> 00:02:51.420
+What items you want to filter.
+
+99
+00:02:51.420 --> 00:02:52.460
+Maybe you want to pick all
+
+100
+00:02:52.460 --> 00:02:54.380
+the hot teas from a menu.
+
+101
+00:02:54.380 --> 00:02:55.500
+Maybe you want to pick all
+
+102
+00:02:55.500 --> 00:02:57.380
+the iced T from the menu.
+
+103
+00:02:57.380 --> 00:02:58.700
+So in that filtering you can do
+
+104
+00:02:58.700 --> 00:03:01.220
+the job in just one line and you
+
+105
+00:03:01.220 --> 00:03:03.540
+can also see them in transforming
+
+106
+00:03:03.540 --> 00:03:05.020
+some of the objects as well.
+
+107
+00:03:05.020 --> 00:03:07.540
+So transform what kind
+
+108
+00:03:07.540 --> 00:03:08.900
+of transforming the item?
+
+109
+00:03:08.900 --> 00:03:10.260
+You might want to say I want
+
+110
+00:03:10.260 --> 00:03:11.620
+to convert all the pricing
+
+111
+00:03:11.620 --> 00:03:13.340
+from INR to USD.
+
+112
+00:03:13.340 --> 00:03:15.060
+I can do that all in one line
+
+113
+00:03:15.060 --> 00:03:16.540
+using the comprehensions.
+
+114
+00:03:17.250 --> 00:03:18.050
+There are more things.
+
+115
+00:03:18.050 --> 00:03:20.210
+Maybe I want to create a new,
+
+116
+00:03:20.770 --> 00:03:23.090
+create a new collection.
+
+117
+00:03:23.090 --> 00:03:24.410
+I can do that in variety
+
+118
+00:03:24.410 --> 00:03:26.570
+of ways, but maybe I want to map
+
+119
+00:03:26.570 --> 00:03:28.170
+the tea names to the pricing.
+
+120
+00:03:28.170 --> 00:03:29.650
+So I want to make a fresh
+
+121
+00:03:29.650 --> 00:03:30.530
+collection out of it.
+
+122
+00:03:30.530 --> 00:03:31.810
+So in that case, yes,
+
+123
+00:03:31.810 --> 00:03:33.490
+comprehensions are super useful.
+
+124
+00:03:34.130 --> 00:03:36.930
+And another thing is sometimes you
+
+125
+00:03:36.930 --> 00:03:39.690
+want to flatten nested structure.
+
+126
+00:03:39.690 --> 00:03:42.410
+So maybe there is you want to extract
+
+127
+00:03:42.410 --> 00:03:44.290
+the ingredients out of a T recipe.
+
+128
+00:03:44.290 --> 00:03:45.370
+It's nested quite a lot
+
+129
+00:03:45.370 --> 00:03:46.730
+in the objects and dictionaries
+
+130
+00:03:46.730 --> 00:03:47.770
+and key value pairs.
+
+131
+00:03:47.770 --> 00:03:50.370
+So if you want to flatten a nested
+
+132
+00:03:50.370 --> 00:03:52.270
+structure they can be used.
+
+133
+00:03:52.270 --> 00:03:53.750
+So again, these are some
+
+134
+00:03:53.750 --> 00:03:55.590
+of the common out of top
+
+135
+00:03:55.590 --> 00:03:57.030
+of the head examples that I
+
+136
+00:03:57.030 --> 00:03:57.870
+could have figured out.
+
+137
+00:03:57.870 --> 00:03:59.070
+But I'm pretty sure there
+
+138
+00:03:59.070 --> 00:04:00.070
+are hundreds of other.
+
+139
+00:04:00.950 --> 00:04:03.270
+But this gives you a clear picture
+
+140
+00:04:03.270 --> 00:04:05.550
+that yes, actually if I go
+
+141
+00:04:05.550 --> 00:04:07.110
+ahead and use them in the real life
+
+142
+00:04:07.110 --> 00:04:08.670
+they will actually make sense.
+
+143
+00:04:08.670 --> 00:04:10.270
+So look at this.
+
+144
+00:04:10.270 --> 00:04:11.350
+We have drawn a pretty good
+
+145
+00:04:11.350 --> 00:04:12.950
+diagram of them as well.
+
+146
+00:04:12.950 --> 00:04:14.390
+So this is the most common one.
+
+147
+00:04:15.490 --> 00:04:17.370
+So if they have this one and we
+
+148
+00:04:17.370 --> 00:04:18.649
+can do the same task with
+
+149
+00:04:18.649 --> 00:04:21.089
+the loops as well, what purpose
+
+150
+00:04:21.970 --> 00:04:25.490
+they might serve do they serve?
+
+151
+00:04:25.490 --> 00:04:27.570
+And that's also a good question
+
+152
+00:04:27.570 --> 00:04:29.290
+that if we know them like this, what
+
+153
+00:04:29.290 --> 00:04:31.170
+purpose they actually serve?
+
+154
+00:04:31.170 --> 00:04:32.730
+The most important purpose, that
+
+155
+00:04:32.730 --> 00:04:34.170
+you're going to see it everywhere.
+
+156
+00:04:34.170 --> 00:04:36.770
+It's actually a cleaner code.
+
+157
+00:04:36.770 --> 00:04:38.730
+I would not say easiest of the code
+
+158
+00:04:38.730 --> 00:04:40.650
+to understand, but comparatively
+
+159
+00:04:40.650 --> 00:04:41.690
+to the loops and other things
+
+160
+00:04:41.690 --> 00:04:43.820
+it's rather cleaner and in some
+
+161
+00:04:43.820 --> 00:04:45.540
+of the cases actually faster.
+
+162
+00:04:45.540 --> 00:04:48.660
+So faster execution is also the way
+
+163
+00:04:48.660 --> 00:04:50.300
+you use less memory.
+
+164
+00:04:50.300 --> 00:04:51.540
+You can do all of the things.
+
+165
+00:04:51.540 --> 00:04:53.260
+It's a functional style code as well.
+
+166
+00:04:53.260 --> 00:04:54.980
+But I would give these two things
+
+167
+00:04:54.980 --> 00:04:56.260
+most of the important parts.
+
+168
+00:04:56.260 --> 00:04:57.860
+First of all It's a cleaner code.
+
+169
+00:04:57.860 --> 00:04:58.700
+Not the easiest one
+
+170
+00:04:58.700 --> 00:05:00.660
+to understand, but it's cleaner one.
+
+171
+00:05:00.660 --> 00:05:01.820
+Once you get in the habit,
+
+172
+00:05:01.820 --> 00:05:02.980
+you'll realize, this one
+
+173
+00:05:02.980 --> 00:05:04.500
+is actually much better.
+
+174
+00:05:04.500 --> 00:05:06.380
+And final and last thing that
+
+175
+00:05:06.380 --> 00:05:07.780
+I would like to discuss is,
+
+176
+00:05:09.390 --> 00:05:13.790
+the types of comprehensions.
+
+177
+00:05:13.790 --> 00:05:16.670
+What are the type of comprehensions
+
+178
+00:05:16.670 --> 00:05:18.670
+that wrote a bad spelling?
+
+179
+00:05:18.670 --> 00:05:20.260
+So what are the types of,
+
+180
+00:05:20.260 --> 00:05:21.710
+comprehensions that we have?
+
+181
+00:05:21.710 --> 00:05:23.150
+Great question you might have asked.
+
+182
+00:05:23.860 --> 00:05:26.110
+Actually we have a few of them.
+
+183
+00:05:26.110 --> 00:05:27.230
+Some of them you have already
+
+184
+00:05:27.230 --> 00:05:28.750
+seen not the comprehensions
+
+185
+00:05:28.750 --> 00:05:30.230
+but the data structure types.
+
+186
+00:05:30.230 --> 00:05:31.630
+So I'll just list them.
+
+187
+00:05:31.630 --> 00:05:33.230
+The first one is the list.
+
+188
+00:05:34.030 --> 00:05:36.990
+The second one that we have is set.
+
+189
+00:05:36.990 --> 00:05:38.750
+Remember we saw the set.
+
+190
+00:05:38.750 --> 00:05:40.110
+Yeah, we discussed the math
+
+191
+00:05:40.110 --> 00:05:41.070
+part of it as well.
+
+192
+00:05:41.710 --> 00:05:44.670
+The next one is dictionary
+
+193
+00:05:44.670 --> 00:05:46.590
+and the last one
+
+194
+00:05:46.590 --> 00:05:48.270
+is actually generator.
+
+195
+00:05:49.230 --> 00:05:50.190
+You might be asking what
+
+196
+00:05:50.190 --> 00:05:50.910
+is this generator?
+
+197
+00:05:50.910 --> 00:05:51.950
+We haven't studied them.
+
+198
+00:05:51.950 --> 00:05:52.830
+Yes, you are correct.
+
+199
+00:05:52.830 --> 00:05:54.070
+It's not a data type.
+
+200
+00:05:54.070 --> 00:05:56.070
+It's a whole new structure in itself.
+
+201
+00:05:56.070 --> 00:05:57.550
+We'll study about them.
+
+202
+00:05:57.550 --> 00:05:58.750
+So the first one is list.
+
+203
+00:05:58.750 --> 00:06:00.030
+The second one is set.
+
+204
+00:06:00.030 --> 00:06:01.630
+The third one is dictionary.
+
+205
+00:06:01.630 --> 00:06:02.990
+And the last one is generator,
+
+206
+00:06:02.990 --> 00:06:03.830
+which is very interesting.
+
+207
+00:06:03.830 --> 00:06:05.350
+Again, we'll spend some good amount
+
+208
+00:06:05.350 --> 00:06:06.830
+of time in the generator as well.
+
+209
+00:06:06.830 --> 00:06:08.190
+First we'll see a brief look
+
+210
+00:06:08.190 --> 00:06:09.670
+in here, then we'll go through
+
+211
+00:06:09.670 --> 00:06:10.670
+with them in the detail.
+
+212
+00:06:11.870 --> 00:06:13.910
+So in the next video we'll
+
+213
+00:06:13.910 --> 00:06:15.390
+directly pick up the list
+
+214
+00:06:15.390 --> 00:06:16.870
+comprehension and we'll see that,
+
+215
+00:06:16.870 --> 00:06:18.150
+okay, this is how the list
+
+216
+00:06:18.150 --> 00:06:19.310
+comprehension looks like.
+
+217
+00:06:19.840 --> 00:06:21.470
+The basic structure will first study
+
+218
+00:06:21.470 --> 00:06:23.070
+the theory part of it and then
+
+219
+00:06:23.070 --> 00:06:25.510
+we'll go into the code part of it.
+
+220
+00:06:25.510 --> 00:06:26.390
+It will be fun.
+
+221
+00:06:26.390 --> 00:06:27.390
+Don't you worry.
+
+222
+00:06:27.390 --> 00:06:28.670
+You will get enough of,
+
+223
+00:06:29.310 --> 00:06:30.270
+the confidence that.
+
+224
+00:06:30.270 --> 00:06:31.710
+Okay, now I can write this within
+
+225
+00:06:31.710 --> 00:06:33.070
+just one example, you'll find
+
+226
+00:06:33.070 --> 00:06:34.550
+immense confidence that I
+
+227
+00:06:34.550 --> 00:06:36.110
+can write the comprehensions.
+
+228
+00:06:36.110 --> 00:06:36.710
+That is it.
+
+229
+00:06:36.710 --> 00:06:37.590
+Let's catch up quickly
+
+230
+00:06:37.590 --> 00:06:38.350
+in the next video.

@@ -1,0 +1,817 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.680
+Alright, so the next topic
+
+2
+00:00:02.680 --> 00:00:03.480
+we are going to study
+
+3
+00:00:03.480 --> 00:00:05.280
+in this object oriented programming
+
+4
+00:00:05.280 --> 00:00:07.520
+is attribute shadowing.
+
+5
+00:00:07.520 --> 00:00:09.280
+What is attribute shadowing?
+
+6
+00:00:09.280 --> 00:00:11.440
+The term sounds really fancy,
+
+7
+00:00:11.440 --> 00:00:12.640
+but the implementation
+
+8
+00:00:12.640 --> 00:00:13.480
+is super easy.
+
+9
+00:00:13.480 --> 00:00:14.760
+The concept is easy, but it
+
+10
+00:00:14.760 --> 00:00:16.160
+has its own meaning.
+
+11
+00:00:16.160 --> 00:00:17.600
+So without wasting any more time, I
+
+12
+00:00:17.600 --> 00:00:19.000
+would like to take you directly to
+
+13
+00:00:19.000 --> 00:00:20.880
+the code part because this is
+
+14
+00:00:20.880 --> 00:00:22.240
+actually super easy to understand
+
+15
+00:00:22.240 --> 00:00:24.640
+in the code, rather code rather
+
+16
+00:00:24.640 --> 00:00:27.250
+than the diagrams and all these
+
+17
+00:00:27.250 --> 00:00:27.570
+stuff.
+
+18
+00:00:27.570 --> 00:00:29.010
+So let's create a new file.
+
+19
+00:00:29.010 --> 00:00:31.810
+Call this one as 03 and this
+
+20
+00:00:31.810 --> 00:00:38.090
+one is attribute shadowing.
+
+21
+00:00:40.010 --> 00:00:42.530
+Shadow shadowing.
+
+22
+00:00:42.530 --> 00:00:43.290
+There we go.
+
+23
+00:00:43.290 --> 00:00:44.170
+Py.
+
+24
+00:00:44.170 --> 00:00:45.010
+All right, so we have
+
+25
+00:00:45.010 --> 00:00:46.250
+seen a couple of things.
+
+26
+00:00:46.250 --> 00:00:47.650
+First thing that you know that this
+
+27
+00:00:47.650 --> 00:00:50.410
+is hot is known as attribute.
+
+28
+00:00:52.820 --> 00:00:55.460
+Yes, these are technically variables.
+
+29
+00:00:57.140 --> 00:00:58.580
+We have seen variables.
+
+30
+00:00:58.580 --> 00:01:00.500
+So yeah, internally they are
+
+31
+00:01:00.500 --> 00:01:02.020
+just variable just like this.
+
+32
+00:01:02.020 --> 00:01:03.020
+So I can just go ahead
+
+33
+00:01:03.020 --> 00:01:03.700
+and work on this.
+
+34
+00:01:03.700 --> 00:01:04.900
+This is also a variable.
+
+35
+00:01:05.540 --> 00:01:07.020
+So these are exchangeable.
+
+36
+00:01:07.020 --> 00:01:08.220
+We can call attribute as
+
+37
+00:01:08.220 --> 00:01:09.940
+variable, variable as attribute.
+
+38
+00:01:09.940 --> 00:01:11.300
+But the only difference that comes
+
+39
+00:01:11.300 --> 00:01:13.140
+up here is when you
+
+40
+00:01:13.140 --> 00:01:15.580
+actually go ahead and have
+
+41
+00:01:15.580 --> 00:01:17.420
+this inside a class or an object.
+
+42
+00:01:17.420 --> 00:01:18.460
+So when it goes inside
+
+43
+00:01:18.460 --> 00:01:20.180
+an object or technically a class,
+
+44
+00:01:20.810 --> 00:01:21.810
+this whole thing variable
+
+45
+00:01:21.810 --> 00:01:23.090
+is called as attribute.
+
+46
+00:01:23.090 --> 00:01:25.770
+Yeah, the functionality remains same.
+
+47
+00:01:25.770 --> 00:01:26.970
+There's no change at all.
+
+48
+00:01:26.970 --> 00:01:28.970
+We just like to call it different.
+
+49
+00:01:28.970 --> 00:01:30.250
+So that is all.
+
+50
+00:01:30.250 --> 00:01:31.210
+So you got the first
+
+51
+00:01:31.210 --> 00:01:32.090
+part, the attribute.
+
+52
+00:01:32.090 --> 00:01:33.330
+But what is the shadowing
+
+53
+00:01:33.330 --> 00:01:34.570
+for this, shadowing.
+
+54
+00:01:34.570 --> 00:01:36.250
+Let's go ahead and have
+
+55
+00:01:36.250 --> 00:01:37.610
+a simple class.
+
+56
+00:01:37.610 --> 00:01:39.450
+Let's call this one again as chai.
+
+57
+00:01:39.450 --> 00:01:40.170
+There we go.
+
+58
+00:01:40.170 --> 00:01:43.370
+And this chai class has temperature.
+
+59
+00:01:43.370 --> 00:01:45.530
+So each chai has its own temperature.
+
+60
+00:01:45.530 --> 00:01:47.290
+And maybe the temperature
+
+61
+00:01:47.290 --> 00:01:49.050
+we are going for is hot.
+
+62
+00:01:49.860 --> 00:01:50.340
+Good enough.
+
+63
+00:01:50.900 --> 00:01:52.820
+And what's the strength of the chai?
+
+64
+00:01:53.630 --> 00:01:55.220
+The chai has different strength, like
+
+65
+00:01:55.220 --> 00:01:57.740
+strong, mild, light, all of that.
+
+66
+00:01:57.740 --> 00:02:00.100
+This one is by default strong.
+
+67
+00:02:00.100 --> 00:02:01.060
+Strong chai.
+
+68
+00:02:01.860 --> 00:02:04.260
+All right, let's go into this.
+
+69
+00:02:04.260 --> 00:02:05.339
+So let's just say we have
+
+70
+00:02:05.339 --> 00:02:07.340
+a cutting chai which comes
+
+71
+00:02:07.340 --> 00:02:08.380
+from the chai itself.
+
+72
+00:02:08.380 --> 00:02:09.620
+So this cutting has all
+
+73
+00:02:09.620 --> 00:02:10.979
+the properties, temperature
+
+74
+00:02:10.979 --> 00:02:12.660
+and the strength as well.
+
+75
+00:02:12.660 --> 00:02:14.500
+I go ahead and say that, hey,
+
+76
+00:02:15.070 --> 00:02:15.790
+I want to print
+
+77
+00:02:16.590 --> 00:02:19.390
+this cutting chai as temperature.
+
+78
+00:02:20.350 --> 00:02:22.190
+So can I go ahead and print this?
+
+79
+00:02:22.190 --> 00:02:23.590
+You might be thinking, all right,
+
+80
+00:02:23.590 --> 00:02:24.950
+I can go ahead and do that.
+
+81
+00:02:24.950 --> 00:02:26.430
+No much of an issue.
+
+82
+00:02:27.150 --> 00:02:27.870
+There we go.
+
+83
+00:02:27.870 --> 00:02:28.830
+It gets a hot.
+
+84
+00:02:28.830 --> 00:02:30.510
+All right, everything expected.
+
+85
+00:02:31.630 --> 00:02:33.350
+Now what happens if I go ahead
+
+86
+00:02:33.350 --> 00:02:36.350
+and take this cutting chai and take
+
+87
+00:02:36.350 --> 00:02:38.230
+its temperature and instead of
+
+88
+00:02:38.230 --> 00:02:41.100
+the hot, I convert this into mild.
+
+89
+00:02:41.100 --> 00:02:42.420
+Surely I know that
+
+90
+00:02:42.420 --> 00:02:43.420
+this will be changed.
+
+91
+00:02:43.420 --> 00:02:45.380
+And if I go ahead and print this
+
+92
+00:02:45.380 --> 00:02:49.100
+again, the cutting dot
+
+93
+00:02:49.100 --> 00:02:50.740
+temperature and we'll put up
+
+94
+00:02:50.740 --> 00:02:54.780
+a message as well, just like this.
+
+95
+00:02:56.060 --> 00:03:00.780
+After changing looks good.
+
+96
+00:03:00.780 --> 00:03:01.940
+And I also want
+
+97
+00:03:01.940 --> 00:03:03.100
+to check one more thing.
+
+98
+00:03:06.060 --> 00:03:09.380
+Direct look into the class.
+
+99
+00:03:11.780 --> 00:03:13.380
+So you might have guessed already
+
+100
+00:03:13.380 --> 00:03:14.900
+what I'm trying to do in this case
+
+101
+00:03:14.900 --> 00:03:16.340
+I'm trying to directly access
+
+102
+00:03:16.340 --> 00:03:18.580
+the chai and the temperature here.
+
+103
+00:03:18.580 --> 00:03:19.220
+Fair enough.
+
+104
+00:03:19.780 --> 00:03:20.860
+What do you think will be
+
+105
+00:03:20.860 --> 00:03:22.340
+the values at line number
+
+106
+00:03:22.340 --> 00:03:23.860
+10 and line number 11?
+
+107
+00:03:24.660 --> 00:03:25.340
+Guess it.
+
+108
+00:03:25.340 --> 00:03:27.220
+It's actually good activity.
+
+109
+00:03:27.220 --> 00:03:28.460
+So what you're going to notice
+
+110
+00:03:28.460 --> 00:03:29.900
+in this one that if I go ahead
+
+111
+00:03:29.900 --> 00:03:31.780
+and check it after changing it
+
+112
+00:03:31.780 --> 00:03:34.460
+smiled, that's obviously and direct
+
+113
+00:03:34.460 --> 00:03:36.700
+look into the class, it's still hot.
+
+114
+00:03:36.700 --> 00:03:37.660
+We have seen that already.
+
+115
+00:03:37.660 --> 00:03:39.100
+We have had a quite
+
+116
+00:03:39.100 --> 00:03:40.700
+discussion on this one.
+
+117
+00:03:40.700 --> 00:03:42.300
+Now the only thing which changes
+
+118
+00:03:42.300 --> 00:03:43.740
+now let's just say I use a del,
+
+119
+00:03:43.740 --> 00:03:45.940
+which is a deletion operator and
+
+120
+00:03:45.940 --> 00:03:47.180
+I go ahead and say that
+
+121
+00:03:47.180 --> 00:03:49.420
+cuttingchai temperature now needs
+
+122
+00:03:49.420 --> 00:03:52.340
+to be deleted and now after
+
+123
+00:03:52.340 --> 00:03:54.140
+deleting it I want to check that
+
+124
+00:03:54.140 --> 00:03:56.620
+what's the value of this cutting
+
+125
+00:03:56.620 --> 00:03:57.660
+dot temperature?
+
+126
+00:03:58.500 --> 00:03:59.580
+That's interesting.
+
+127
+00:03:59.580 --> 00:04:01.180
+You have deleted that in line
+
+128
+00:04:01.180 --> 00:04:03.220
+number 13 and just after deleting
+
+129
+00:04:03.220 --> 00:04:04.540
+it you want to check it.
+
+130
+00:04:05.050 --> 00:04:06.170
+What could be the value?
+
+131
+00:04:06.170 --> 00:04:07.450
+Is it unknown?
+
+132
+00:04:07.450 --> 00:04:10.010
+Like is it none undefined?
+
+133
+00:04:10.010 --> 00:04:12.010
+Don't get the value, get the error
+
+134
+00:04:12.010 --> 00:04:12.970
+or we get still
+
+135
+00:04:12.970 --> 00:04:15.130
+the mild or we get the strong.
+
+136
+00:04:15.130 --> 00:04:16.410
+Lots of question and that's
+
+137
+00:04:16.410 --> 00:04:18.089
+what investigative study is.
+
+138
+00:04:18.089 --> 00:04:19.890
+And this is exactly the attribute
+
+139
+00:04:19.890 --> 00:04:22.450
+shadowing is if I go ahead and run
+
+140
+00:04:22.450 --> 00:04:24.170
+this, it still gets the heart.
+
+141
+00:04:24.170 --> 00:04:25.970
+So if somehow the reference
+
+142
+00:04:25.970 --> 00:04:28.130
+of this variable or the object
+
+143
+00:04:28.130 --> 00:04:30.730
+attribute is no longer available,
+
+144
+00:04:30.730 --> 00:04:32.940
+then it fall backs to the value
+
+145
+00:04:32.940 --> 00:04:34.300
+of the attribute which was
+
+146
+00:04:34.300 --> 00:04:36.660
+defined in the CHAI itself.
+
+147
+00:04:36.660 --> 00:04:37.940
+That's the interesting part.
+
+148
+00:04:38.580 --> 00:04:40.060
+Now let's go ahead and say that
+
+149
+00:04:40.060 --> 00:04:41.700
+if we don't have the temperature
+
+150
+00:04:41.700 --> 00:04:44.100
+or if we try to add some value
+
+151
+00:04:44.100 --> 00:04:46.180
+and we don't have this, here.
+
+152
+00:04:46.180 --> 00:04:48.260
+So for example, let's just say
+
+153
+00:04:48.260 --> 00:04:50.300
+in this cutting I go ahead and
+
+154
+00:04:50.300 --> 00:04:53.660
+say I have a cup and the cup
+
+155
+00:04:53.660 --> 00:04:55.860
+value is going to be small,
+
+156
+00:04:56.420 --> 00:04:57.740
+can I go ahead and print the
+
+157
+00:04:57.740 --> 00:04:58.390
+value?
+
+158
+00:04:58.390 --> 00:04:59.190
+Of course you can go ahead
+
+159
+00:04:59.190 --> 00:05:00.470
+and print the value.
+
+160
+00:05:00.470 --> 00:05:01.990
+Let's go ahead and duplicate this.
+
+161
+00:05:01.990 --> 00:05:05.070
+And we'll say not after
+
+162
+00:05:05.070 --> 00:05:09.190
+changing, we'll say cup size is.
+
+163
+00:05:09.190 --> 00:05:11.230
+And we will say this will be
+
+164
+00:05:11.230 --> 00:05:13.510
+directly cup surely doable.
+
+165
+00:05:13.510 --> 00:05:14.950
+Very, very doable.
+
+166
+00:05:14.950 --> 00:05:16.070
+If I go ahead and look
+
+167
+00:05:16.070 --> 00:05:17.310
+at this, cup size is small.
+
+168
+00:05:17.310 --> 00:05:18.110
+No problem there.
+
+169
+00:05:18.110 --> 00:05:19.590
+We got this value.
+
+170
+00:05:19.590 --> 00:05:21.030
+But what if I go ahead
+
+171
+00:05:21.030 --> 00:05:23.510
+and try to delete this one
+
+172
+00:05:23.510 --> 00:05:25.050
+very interesting case.
+
+173
+00:05:25.050 --> 00:05:26.130
+So if I go ahead and delete
+
+174
+00:05:26.130 --> 00:05:28.370
+the cup reference and now if I try
+
+175
+00:05:28.370 --> 00:05:30.050
+to just print the value, what
+
+176
+00:05:30.050 --> 00:05:31.610
+will happen in that case?
+
+177
+00:05:31.610 --> 00:05:33.610
+This time the value doesn't exist.
+
+178
+00:05:33.610 --> 00:05:34.490
+In the class.
+
+179
+00:05:34.490 --> 00:05:35.490
+Now this also gives
+
+180
+00:05:35.490 --> 00:05:36.410
+an interesting result.
+
+181
+00:05:36.410 --> 00:05:37.610
+You need to see this.
+
+182
+00:05:37.610 --> 00:05:39.470
+So notice here this time.
+
+183
+00:05:39.470 --> 00:05:41.090
+This is an attribute error.
+
+184
+00:05:41.090 --> 00:05:43.290
+The chai object has no attribute
+
+185
+00:05:43.290 --> 00:05:44.650
+because you injected that
+
+186
+00:05:44.650 --> 00:05:45.930
+attribute, but you actually
+
+187
+00:05:45.930 --> 00:05:47.130
+deleted that attribute.
+
+188
+00:05:47.130 --> 00:05:48.490
+So there's no fallback.
+
+189
+00:05:48.490 --> 00:05:49.970
+But if it happens that
+
+190
+00:05:49.970 --> 00:05:52.430
+the fallback is there in the chai,
+
+191
+00:05:52.430 --> 00:05:53.470
+it will get the value
+
+192
+00:05:53.470 --> 00:05:54.950
+the default fallback there.
+
+193
+00:05:54.950 --> 00:05:56.670
+And that's exactly the shadowing.
+
+194
+00:05:56.670 --> 00:05:57.710
+So if there is nothing
+
+195
+00:05:57.710 --> 00:05:59.670
+to fallback, the shadow will fall
+
+196
+00:05:59.670 --> 00:06:01.150
+onto the class itself.
+
+197
+00:06:01.150 --> 00:06:02.910
+If it doesn't exist in the class,
+
+198
+00:06:02.910 --> 00:06:04.390
+there is no fallback for it.
+
+199
+00:06:04.390 --> 00:06:05.270
+And that is it.
+
+200
+00:06:05.270 --> 00:06:07.070
+That is your attribute shadowing.
+
+201
+00:06:07.070 --> 00:06:08.110
+Hope you understood this.
+
+202
+00:06:08.110 --> 00:06:09.670
+Hope you got the concept clearly,
+
+203
+00:06:09.670 --> 00:06:11.870
+nicely, and please rate us.
+
+204
+00:06:11.870 --> 00:06:13.310
+Let's catch up in the next video.

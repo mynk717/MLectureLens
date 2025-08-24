@@ -1,0 +1,537 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:02.000
+All right, so we are going really
+
+2
+00:00:02.000 --> 00:00:03.080
+great with microservice
+
+3
+00:00:03.080 --> 00:00:04.080
+architecture and we are
+
+4
+00:00:04.080 --> 00:00:05.560
+understanding the ins and outs
+
+5
+00:00:05.560 --> 00:00:07.120
+of the microservice architecture.
+
+6
+00:00:07.120 --> 00:00:08.960
+But here is one more fundamental
+
+7
+00:00:08.960 --> 00:00:10.520
+problem that how do
+
+8
+00:00:10.520 --> 00:00:11.680
+microservices are going
+
+9
+00:00:11.680 --> 00:00:12.960
+to communicate with each other?
+
+10
+00:00:13.600 --> 00:00:15.840
+Let's say the order service
+
+11
+00:00:15.840 --> 00:00:17.760
+wants to talk to the email service
+
+12
+00:00:17.760 --> 00:00:18.840
+because you know, when
+
+13
+00:00:18.840 --> 00:00:19.880
+you place an order you want
+
+14
+00:00:19.880 --> 00:00:21.520
+to send an email to the user.
+
+15
+00:00:21.520 --> 00:00:22.640
+So this is a fundamental
+
+16
+00:00:22.640 --> 00:00:24.680
+problem that how to establish
+
+17
+00:00:24.680 --> 00:00:26.160
+this order service, right?
+
+18
+00:00:26.160 --> 00:00:27.360
+This, this communication
+
+19
+00:00:27.360 --> 00:00:28.640
+in between the services.
+
+20
+00:00:28.640 --> 00:00:30.480
+How to establish this communication,
+
+21
+00:00:30.480 --> 00:00:31.840
+how to establish this communic.
+
+22
+00:00:32.380 --> 00:00:33.380
+So there are two methods
+
+23
+00:00:33.380 --> 00:00:34.700
+of establish this particular,
+
+24
+00:00:35.280 --> 00:00:36.460
+you know, communication.
+
+25
+00:00:36.460 --> 00:00:38.580
+One is known as a synchronous,
+
+26
+00:00:38.580 --> 00:00:40.420
+okay, a synchronous communication.
+
+27
+00:00:40.420 --> 00:00:41.700
+And one is known as
+
+28
+00:00:41.700 --> 00:00:43.500
+asynchronous communication.
+
+29
+00:00:43.500 --> 00:00:45.540
+So let me just get the terms first.
+
+30
+00:00:45.540 --> 00:00:47.220
+Sync means something is happening
+
+31
+00:00:47.220 --> 00:00:48.099
+in the sync, right?
+
+32
+00:00:48.099 --> 00:00:48.780
+You have to talk
+
+33
+00:00:48.780 --> 00:00:50.260
+to the service and you have to wait
+
+34
+00:00:50.260 --> 00:00:51.260
+for the response back.
+
+35
+00:00:51.260 --> 00:00:52.540
+That is a sync.
+
+36
+00:00:52.540 --> 00:00:54.380
+When we talk about async
+
+37
+00:00:54.380 --> 00:00:56.260
+means that, hey, you know,
+
+38
+00:00:56.260 --> 00:00:57.300
+do it in the background.
+
+39
+00:00:57.300 --> 00:00:58.140
+That is async.
+
+40
+00:00:58.140 --> 00:00:59.420
+So we will talk about these
+
+41
+00:00:59.420 --> 00:01:00.860
+things in the detail.
+
+42
+00:01:01.420 --> 00:01:02.710
+But these, the fundamental
+
+43
+00:01:02.710 --> 00:01:04.550
+problem is how services
+
+44
+00:01:04.550 --> 00:01:06.470
+can communicate with each other.
+
+45
+00:01:06.470 --> 00:01:08.470
+So in this particular video, let's
+
+46
+00:01:08.470 --> 00:01:10.470
+talk about the HTTP sync method.
+
+47
+00:01:10.470 --> 00:01:12.270
+One method is very simple that what
+
+48
+00:01:12.270 --> 00:01:15.150
+you can do is you can directly, you
+
+49
+00:01:15.150 --> 00:01:16.710
+can directly say the order service
+
+50
+00:01:16.710 --> 00:01:18.630
+that hey, whenever you want to send
+
+51
+00:01:18.630 --> 00:01:22.150
+an email, just make an HTTP call.
+
+52
+00:01:22.150 --> 00:01:23.590
+See how users are basically
+
+53
+00:01:23.590 --> 00:01:24.390
+interacting with the email
+
+54
+00:01:24.390 --> 00:01:26.070
+service using slash email.
+
+55
+00:01:26.070 --> 00:01:28.950
+So order service can also make a post
+
+56
+00:01:28.950 --> 00:01:32.930
+request on/emails/ let's say send
+
+57
+00:01:32.930 --> 00:01:34.610
+and send the payload as body,
+
+58
+00:01:34.610 --> 00:01:36.170
+okay, whatever they want to send
+
+59
+00:01:36.170 --> 00:01:37.970
+and they can talk to each other.
+
+60
+00:01:37.970 --> 00:01:40.770
+So that means any server, right?
+
+61
+00:01:40.770 --> 00:01:42.730
+Any server right here, if it wants
+
+62
+00:01:42.730 --> 00:01:44.290
+to send an email, it has
+
+63
+00:01:44.290 --> 00:01:45.810
+to basically talk to the load
+
+64
+00:01:45.810 --> 00:01:47.570
+balancer of the email service.
+
+65
+00:01:47.570 --> 00:01:49.490
+Now this request can be
+
+66
+00:01:49.490 --> 00:01:51.250
+redirected to any one of the server
+
+67
+00:01:51.250 --> 00:01:53.250
+that is that is all good.
+
+68
+00:01:53.250 --> 00:01:54.570
+And then what we can do, we
+
+69
+00:01:54.570 --> 00:01:56.290
+can basically send the email.
+
+70
+00:01:56.290 --> 00:01:57.490
+This is known as
+
+71
+00:01:57.490 --> 00:01:58.970
+a synchronous method.
+
+72
+00:01:58.970 --> 00:01:59.250
+Okay?
+
+73
+00:01:59.250 --> 00:02:00.750
+This is a synchronous method
+
+74
+00:02:00.750 --> 00:02:02.390
+because when you open a post
+
+75
+00:02:02.390 --> 00:02:03.470
+request, when you open this
+
+76
+00:02:03.470 --> 00:02:04.910
+connection, you have to wait,
+
+77
+00:02:04.910 --> 00:02:06.310
+you have to wait for the email
+
+78
+00:02:06.310 --> 00:02:07.470
+service to complete that
+
+79
+00:02:07.470 --> 00:02:08.710
+particular request and get back
+
+80
+00:02:08.710 --> 00:02:09.949
+the response of 200.
+
+81
+00:02:10.509 --> 00:02:12.190
+Here is a fundamental problem
+
+82
+00:02:12.190 --> 00:02:13.070
+with this approach,
+
+83
+00:02:13.070 --> 00:02:14.190
+the synchronous approach.
+
+84
+00:02:14.190 --> 00:02:15.190
+Number one, that it's
+
+85
+00:02:15.190 --> 00:02:16.430
+a blocking request.
+
+86
+00:02:16.430 --> 00:02:18.070
+Let's say for some reasons
+
+87
+00:02:18.070 --> 00:02:19.390
+the email server was down.
+
+88
+00:02:19.950 --> 00:02:21.350
+For some reasons the email
+
+89
+00:02:21.350 --> 00:02:22.750
+service has been down.
+
+90
+00:02:22.750 --> 00:02:24.230
+Now what will happen is when you will
+
+91
+00:02:24.230 --> 00:02:25.390
+make this particular connection.
+
+92
+00:02:25.390 --> 00:02:26.750
+When you will try to send
+
+93
+00:02:26.750 --> 00:02:28.430
+this request, this request
+
+94
+00:02:28.430 --> 00:02:30.070
+will also fail, right?
+
+95
+00:02:30.070 --> 00:02:31.870
+And if this request fail, this
+
+96
+00:02:31.870 --> 00:02:34.350
+server might also fail because it
+
+97
+00:02:34.350 --> 00:02:36.350
+was dependent on the email service
+
+98
+00:02:36.350 --> 00:02:38.310
+and it was not able to complete.
+
+99
+00:02:38.310 --> 00:02:39.830
+So this is one problem that
+
+100
+00:02:39.830 --> 00:02:41.190
+if this thing fails, this
+
+101
+00:02:41.190 --> 00:02:42.790
+thing also starts to fail.
+
+102
+00:02:42.790 --> 00:02:44.430
+Second problem is that now what
+
+103
+00:02:44.430 --> 00:02:45.750
+you are doing is that it
+
+104
+00:02:45.750 --> 00:02:47.830
+becomes a dependent service.
+
+105
+00:02:47.830 --> 00:02:50.550
+Order service has to know the address
+
+106
+00:02:50.550 --> 00:02:52.070
+of the email service, right?
+
+107
+00:02:52.070 --> 00:02:53.470
+What if there was no email service?
+
+108
+00:02:53.470 --> 00:02:55.230
+So, so order service is now,
+
+109
+00:02:55.870 --> 00:02:58.070
+you know, linked with is dependent
+
+110
+00:02:58.070 --> 00:02:59.430
+on the email service to be healthy.
+
+111
+00:02:59.430 --> 00:03:00.830
+If this service is down, this
+
+112
+00:03:00.830 --> 00:03:02.190
+server might went down.
+
+113
+00:03:02.190 --> 00:03:03.190
+So this is a problem.
+
+114
+00:03:03.190 --> 00:03:04.430
+But that's okay.
+
+115
+00:03:04.430 --> 00:03:05.470
+I mean, I'm not discussing
+
+116
+00:03:05.470 --> 00:03:06.270
+the problem here.
+
+117
+00:03:06.270 --> 00:03:07.870
+I was basically telling you that this
+
+118
+00:03:07.870 --> 00:03:09.629
+is known as a synchronous method.
+
+119
+00:03:09.629 --> 00:03:10.950
+So inside the code you can
+
+120
+00:03:10.950 --> 00:03:12.390
+actually make an API call
+
+121
+00:03:12.390 --> 00:03:14.470
+to the email service, do your stuff,
+
+122
+00:03:14.470 --> 00:03:16.110
+come back and do the stuff.
+
+123
+00:03:16.110 --> 00:03:17.790
+So this was a synchronous method.
+
+124
+00:03:17.790 --> 00:03:20.310
+This method is good, it is guaranteed
+
+125
+00:03:20.310 --> 00:03:21.910
+that the email will be sent.
+
+126
+00:03:21.910 --> 00:03:24.270
+But this introduces new set of
+
+127
+00:03:24.270 --> 00:03:26.270
+problems that it is more dependent.
+
+128
+00:03:26.270 --> 00:03:28.910
+There is a high coupling and we
+
+129
+00:03:28.910 --> 00:03:30.630
+usually do not prefer this method.
+
+130
+00:03:30.630 --> 00:03:32.190
+So to solve this particular method
+
+131
+00:03:32.190 --> 00:03:34.230
+we have an asynchronous method.
+
+132
+00:03:34.230 --> 00:03:35.670
+So in the next video, let's see what
+
+133
+00:03:35.670 --> 00:03:37.230
+is the asynchronous method
+
+134
+00:03:37.230 --> 00:03:39.270
+to communicate between the services.

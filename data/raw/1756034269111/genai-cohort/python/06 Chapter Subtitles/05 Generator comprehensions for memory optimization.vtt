@@ -1,0 +1,977 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.280
+All right, so let's talk about
+
+2
+00:00:02.280 --> 00:00:04.360
+the final type of comprehension,
+
+3
+00:00:04.360 --> 00:00:06.720
+which is generator comprehension.
+
+4
+00:00:06.720 --> 00:00:07.720
+Now, in order to understand
+
+5
+00:00:07.720 --> 00:00:09.480
+the generators, this is your first
+
+6
+00:00:09.480 --> 00:00:11.000
+preview of understanding them.
+
+7
+00:00:11.000 --> 00:00:13.480
+And it's easy, but you need
+
+8
+00:00:13.480 --> 00:00:14.840
+to understand what happens
+
+9
+00:00:14.840 --> 00:00:17.000
+behind the scene in front.
+
+10
+00:00:17.000 --> 00:00:18.760
+If I just give you any example,
+
+11
+00:00:18.760 --> 00:00:20.120
+there is no such example that
+
+12
+00:00:20.120 --> 00:00:21.400
+I have, which has millions
+
+13
+00:00:21.400 --> 00:00:22.600
+of record that I can show you.
+
+14
+00:00:22.600 --> 00:00:23.320
+Okay, this one is
+
+15
+00:00:23.320 --> 00:00:24.960
+faster, this one is not.
+
+16
+00:00:24.960 --> 00:00:27.810
+Generators are used just and just
+
+17
+00:00:27.810 --> 00:00:29.890
+for saving the memory, which is not
+
+18
+00:00:29.890 --> 00:00:32.369
+just, it is a really huge aspect.
+
+19
+00:00:32.369 --> 00:00:33.690
+Most of the Python programs
+
+20
+00:00:33.690 --> 00:00:35.970
+that you see are not really
+
+21
+00:00:35.970 --> 00:00:37.370
+caring much about the memory.
+
+22
+00:00:37.370 --> 00:00:38.410
+But if you're a good
+
+23
+00:00:38.410 --> 00:00:39.570
+software engineer, you do
+
+24
+00:00:39.570 --> 00:00:41.010
+really care about memory.
+
+25
+00:00:41.010 --> 00:00:42.410
+Most of the Python engineers, they
+
+26
+00:00:42.410 --> 00:00:43.810
+work with the heavy machines, which
+
+27
+00:00:43.810 --> 00:00:47.170
+has around, 64 GBs of RAM or 128 GBs
+
+28
+00:00:47.170 --> 00:00:49.170
+of RAM or probably works in the GPU.
+
+29
+00:00:49.170 --> 00:00:50.770
+But if your program is efficient,
+
+30
+00:00:50.770 --> 00:00:52.370
+it can do a lot of job
+
+31
+00:00:52.370 --> 00:00:54.210
+and make Python functions faster.
+
+32
+00:00:54.210 --> 00:00:55.930
+It's already a slow language, but if
+
+33
+00:00:55.930 --> 00:00:57.490
+we can do something about the memory
+
+34
+00:00:57.490 --> 00:00:59.010
+and make it more faster,
+
+35
+00:00:59.010 --> 00:01:00.890
+that is what exactly generator does.
+
+36
+00:01:00.890 --> 00:01:01.890
+The syntax is pretty
+
+37
+00:01:01.890 --> 00:01:02.930
+easy, you will love that.
+
+38
+00:01:03.720 --> 00:01:05.489
+But just get this, this is used
+
+39
+00:01:05.489 --> 00:01:07.370
+entirely for saving the memory.
+
+40
+00:01:07.370 --> 00:01:08.490
+You don't see them here
+
+41
+00:01:08.490 --> 00:01:09.730
+in these small examples.
+
+42
+00:01:09.730 --> 00:01:11.210
+But remember, if you want
+
+43
+00:01:11.210 --> 00:01:13.250
+to save memory in some of the cases,
+
+44
+00:01:13.250 --> 00:01:14.690
+then it's the best thing.
+
+45
+00:01:14.690 --> 00:01:16.530
+So again, it's a super easy one.
+
+46
+00:01:16.530 --> 00:01:18.050
+So we have the final one here.
+
+47
+00:01:18.050 --> 00:01:19.250
+Remember generators?
+
+48
+00:01:19.250 --> 00:01:20.330
+Yep, that's what we are
+
+49
+00:01:20.330 --> 00:01:22.710
+talking about, generator.
+
+50
+00:01:23.350 --> 00:01:25.270
+So if I go ahead and wrap this up,
+
+51
+00:01:25.270 --> 00:01:26.870
+so how does the syntax look like?
+
+52
+00:01:26.870 --> 00:01:28.430
+And you'll be surprised.
+
+53
+00:01:28.430 --> 00:01:28.990
+Exactly.
+
+54
+00:01:28.990 --> 00:01:29.510
+Same.
+
+55
+00:01:29.510 --> 00:01:30.790
+The only thing that changes
+
+56
+00:01:30.790 --> 00:01:32.510
+in this is they start with
+
+57
+00:01:32.510 --> 00:01:35.110
+parenthesis and that is it.
+
+58
+00:01:35.110 --> 00:01:37.390
+That is your generator expression for
+
+59
+00:01:37.390 --> 00:01:39.350
+item in iterable, if condition or
+
+60
+00:01:39.350 --> 00:01:40.990
+for loop or whatever you want to do.
+
+61
+00:01:40.990 --> 00:01:42.110
+Further, you can go
+
+62
+00:01:42.110 --> 00:01:43.430
+ahead and do that.
+
+63
+00:01:43.430 --> 00:01:44.510
+Can we go ahead and take
+
+64
+00:01:44.510 --> 00:01:45.750
+an example of this one?
+
+65
+00:01:46.390 --> 00:01:47.110
+Surely.
+
+66
+00:01:47.110 --> 00:01:48.270
+First I'll tell you how it
+
+67
+00:01:48.270 --> 00:01:49.990
+works actually and what's
+
+68
+00:01:49.990 --> 00:01:51.030
+the difference between them?
+
+69
+00:01:51.030 --> 00:01:52.310
+So you might have seen, for
+
+70
+00:01:52.310 --> 00:01:53.790
+example, I can just use the square
+
+71
+00:01:53.790 --> 00:01:55.630
+brackets and can get exactly
+
+72
+00:01:55.630 --> 00:02:00.830
+same result for X, in, items.
+
+73
+00:02:00.830 --> 00:02:02.790
+And there is another case that
+
+74
+00:02:02.790 --> 00:02:05.590
+we have, or we have to put
+
+75
+00:02:05.590 --> 00:02:07.870
+an expression X for x in items.
+
+76
+00:02:07.870 --> 00:02:08.750
+So this is our first
+
+77
+00:02:08.750 --> 00:02:09.949
+case that we have seen.
+
+78
+00:02:09.949 --> 00:02:11.030
+And there is another one
+
+79
+00:02:11.030 --> 00:02:12.110
+which actually goes through
+
+80
+00:02:12.110 --> 00:02:13.630
+with just like this.
+
+81
+00:02:13.630 --> 00:02:15.750
+So apart from these parentheses,
+
+82
+00:02:15.750 --> 00:02:17.150
+technically there is no
+
+83
+00:02:17.150 --> 00:02:19.470
+difference between, this piece
+
+84
+00:02:19.470 --> 00:02:21.590
+of code and this piece of code.
+
+85
+00:02:21.590 --> 00:02:23.790
+But the only difference is this piece
+
+86
+00:02:23.790 --> 00:02:25.590
+of code actually makes the entire
+
+87
+00:02:25.590 --> 00:02:27.350
+list in the memory it generates
+
+88
+00:02:27.350 --> 00:02:28.870
+it immediately and everything
+
+89
+00:02:28.870 --> 00:02:30.310
+is stored in the memory.
+
+90
+00:02:30.310 --> 00:02:31.990
+On the other hand, this one actually,
+
+91
+00:02:32.560 --> 00:02:34.230
+gives you one item at a time.
+
+92
+00:02:34.230 --> 00:02:35.310
+This is like a stream.
+
+93
+00:02:35.310 --> 00:02:37.750
+So always remember, this thing,
+
+94
+00:02:37.750 --> 00:02:39.430
+is going to make a list
+
+95
+00:02:39.430 --> 00:02:43.860
+or make entire list, in memory.
+
+96
+00:02:45.460 --> 00:02:47.020
+So this is the part where we go
+
+97
+00:02:47.020 --> 00:02:48.100
+with the square brackets.
+
+98
+00:02:48.100 --> 00:02:49.380
+So this is part for this.
+
+99
+00:02:49.380 --> 00:02:51.860
+And this one is more like a stream.
+
+100
+00:02:53.540 --> 00:02:54.820
+So all of your memory is
+
+101
+00:02:54.820 --> 00:02:55.980
+not clogged at once.
+
+102
+00:02:55.980 --> 00:02:57.940
+It actually gives you a constant
+
+103
+00:02:57.940 --> 00:02:59.620
+flow of the things as you require
+
+104
+00:02:59.620 --> 00:03:01.620
+them or as you process them.
+
+105
+00:03:01.620 --> 00:03:02.700
+Let me go ahead and show
+
+106
+00:03:02.700 --> 00:03:03.940
+you how it actually works.
+
+107
+00:03:03.940 --> 00:03:05.780
+It's actually super easy example,
+
+108
+00:03:05.780 --> 00:03:07.340
+don't you worry on that part.
+
+109
+00:03:07.340 --> 00:03:08.620
+So I'll take you onto the screen.
+
+110
+00:03:08.620 --> 00:03:10.220
+We'll close all of this.
+
+111
+00:03:10.220 --> 00:03:11.940
+And this, is probably last video
+
+112
+00:03:11.940 --> 00:03:13.180
+in this section, hopefully.
+
+113
+00:03:13.900 --> 00:03:19.580
+And this one is generator compre py.
+
+114
+00:03:20.220 --> 00:03:21.540
+All right, so let's just
+
+115
+00:03:21.540 --> 00:03:23.820
+say we have a, daily sales.
+
+116
+00:03:23.820 --> 00:03:25.500
+And this could be like
+
+117
+00:03:25.500 --> 00:03:26.700
+hundreds of value.
+
+118
+00:03:26.700 --> 00:03:28.180
+We cannot write hundreds
+
+119
+00:03:28.180 --> 00:03:29.180
+of values as of now.
+
+120
+00:03:29.180 --> 00:03:30.780
+I know we can use range, but I
+
+121
+00:03:30.780 --> 00:03:31.980
+don't want to go with that.
+
+122
+00:03:31.980 --> 00:03:32.980
+So let's just say we have
+
+123
+00:03:32.980 --> 00:03:34.580
+the daily sales and we'll
+
+124
+00:03:34.580 --> 00:03:35.580
+have some of the values.
+
+125
+00:03:35.580 --> 00:03:39.450
+So let's just say we have 5, 10, 12,
+
+126
+00:03:41.610 --> 00:03:42.970
+7, 3.
+
+127
+00:03:42.970 --> 00:03:44.330
+What else you can have?
+
+128
+00:03:45.130 --> 00:03:48.330
+Let's just say 8, 9, 15.
+
+129
+00:03:48.970 --> 00:03:50.570
+You can have more values, but let's
+
+130
+00:03:50.570 --> 00:03:52.250
+just say we have hundreds of values.
+
+131
+00:03:52.250 --> 00:03:53.850
+In this case, you want to find out
+
+132
+00:03:53.850 --> 00:03:57.570
+that what was the total cup sold?
+
+133
+00:03:57.570 --> 00:03:58.090
+One by one.
+
+134
+00:03:58.090 --> 00:03:59.930
+So we want to find out, analyze that,
+
+135
+00:03:59.930 --> 00:04:01.370
+and only want to figure out if
+
+136
+00:04:01.370 --> 00:04:04.460
+the sale is above the 5.5rupees.
+
+137
+00:04:04.460 --> 00:04:06.380
+So any sale which is above 5 rupees,
+
+138
+00:04:06.380 --> 00:04:08.220
+I want to calculate the sum of that.
+
+139
+00:04:09.420 --> 00:04:11.100
+So can we find them out?
+
+140
+00:04:11.100 --> 00:04:13.100
+I guess yes, that is super easy.
+
+141
+00:04:13.100 --> 00:04:15.660
+So you want to find out total cups,
+
+142
+00:04:15.660 --> 00:04:18.779
+but that are, above three rupees.
+
+143
+00:04:19.339 --> 00:04:20.459
+So how can we do that?
+
+144
+00:04:21.420 --> 00:04:22.340
+You, can just go ahead
+
+145
+00:04:22.340 --> 00:04:23.340
+and make it like this.
+
+146
+00:04:23.340 --> 00:04:24.860
+Hey, I want a list comprehension,
+
+147
+00:04:24.860 --> 00:04:25.660
+something like that.
+
+148
+00:04:25.660 --> 00:04:26.420
+But I'll show you
+
+149
+00:04:26.420 --> 00:04:27.580
+a neat trick for that.
+
+150
+00:04:27.580 --> 00:04:28.180
+Let's go with
+
+151
+00:04:28.180 --> 00:04:29.700
+the generator comprehension.
+
+152
+00:04:29.700 --> 00:04:31.610
+In this one we'll go with underscore
+
+153
+00:04:31.610 --> 00:04:33.210
+again, just like a syntax.
+
+154
+00:04:33.210 --> 00:04:35.490
+So for sale in daily,
+
+155
+00:04:35.490 --> 00:04:37.050
+sales, we know this part.
+
+156
+00:04:37.050 --> 00:04:38.770
+We can use conditions pretty easy.
+
+157
+00:04:38.770 --> 00:04:40.330
+We'll call this one as sale,
+
+158
+00:04:40.330 --> 00:04:42.170
+which is going to be above 5.
+
+159
+00:04:42.730 --> 00:04:44.490
+So exactly the same syntax.
+
+160
+00:04:44.490 --> 00:04:46.249
+And what goes into this one?
+
+161
+00:04:46.249 --> 00:04:47.530
+This empty one here?
+
+162
+00:04:48.120 --> 00:04:49.170
+Of course, you get the idea
+
+163
+00:04:49.170 --> 00:04:50.250
+that we get the sale.
+
+164
+00:04:51.130 --> 00:04:54.530
+Now this will feel like that.
+
+165
+00:04:54.530 --> 00:04:55.810
+Okay, we got all the values
+
+166
+00:04:55.810 --> 00:04:56.970
+up here just like this.
+
+167
+00:04:56.970 --> 00:04:58.130
+First of all, let's print this.
+
+168
+00:04:58.130 --> 00:04:59.130
+Let's see what actually
+
+169
+00:04:59.130 --> 00:05:00.370
+goes inside this.
+
+170
+00:05:00.370 --> 00:05:02.170
+This will actually probably surprise.
+
+171
+00:05:02.950 --> 00:05:03.550
+I'll just go ahead
+
+172
+00:05:03.550 --> 00:05:06.030
+and say Total Cups.
+
+173
+00:05:06.030 --> 00:05:07.150
+Yep, that's the one I want
+
+174
+00:05:07.150 --> 00:05:08.310
+and I want to see the result.
+
+175
+00:05:09.430 --> 00:05:11.230
+All right, so no big deal.
+
+176
+00:05:11.230 --> 00:05:13.750
+Python 3,04 and get like this.
+
+177
+00:05:13.750 --> 00:05:15.510
+So we get this notice here
+
+178
+00:05:15.510 --> 00:05:16.950
+generator object.
+
+179
+00:05:17.670 --> 00:05:19.830
+So it's not usable right now.
+
+180
+00:05:19.830 --> 00:05:21.230
+Generator objects need
+
+181
+00:05:21.230 --> 00:05:23.230
+to be consumed since they are
+
+182
+00:05:23.230 --> 00:05:25.030
+streaming this one by one.
+
+183
+00:05:25.030 --> 00:05:26.630
+If I go ahead and change this,
+
+184
+00:05:26.630 --> 00:05:27.870
+that, hey, I will just go ahead
+
+185
+00:05:27.870 --> 00:05:29.810
+and use this, this will be a whole
+
+186
+00:05:29.810 --> 00:05:31.770
+different story altogether.
+
+187
+00:05:31.770 --> 00:05:33.010
+Now notice here, if I go ahead
+
+188
+00:05:33.010 --> 00:05:34.290
+and run this, this gives you
+
+189
+00:05:34.290 --> 00:05:36.450
+a list directly and that is.
+
+190
+00:05:36.450 --> 00:05:38.010
+Okay, that's exactly what I want.
+
+191
+00:05:38.010 --> 00:05:39.530
+And now further through this
+
+192
+00:05:39.530 --> 00:05:40.850
+list I have to go through with
+
+193
+00:05:40.850 --> 00:05:42.530
+the values I have to say that,
+
+194
+00:05:42.530 --> 00:05:44.889
+okay, let's create a global variable
+
+195
+00:05:44.889 --> 00:05:46.370
+which says total sum.
+
+196
+00:05:46.370 --> 00:05:47.770
+If I want to know the sale addition
+
+197
+00:05:47.770 --> 00:05:49.170
+of all of this, then loop
+
+198
+00:05:49.170 --> 00:05:50.410
+through it all that or probably
+
+199
+00:05:50.410 --> 00:05:52.250
+can use a comprehension again.
+
+200
+00:05:52.250 --> 00:05:54.290
+But what the generator allows you
+
+201
+00:05:54.290 --> 00:05:56.130
+to do is if I go back and turn
+
+202
+00:05:56.130 --> 00:05:58.040
+this up into parenthesis I can
+
+203
+00:05:58.040 --> 00:06:00.000
+use inbuilt methods like filter.
+
+204
+00:06:00.000 --> 00:06:02.080
+There's one method which is sum.
+
+205
+00:06:02.080 --> 00:06:04.360
+You provide a iterable to it and it
+
+206
+00:06:04.360 --> 00:06:06.040
+automatically makes the sum of it.
+
+207
+00:06:06.040 --> 00:06:08.080
+And this will be a memory
+
+208
+00:06:08.080 --> 00:06:10.280
+efficient operation because you're
+
+209
+00:06:10.280 --> 00:06:11.720
+not just throwing all the memory
+
+210
+00:06:11.720 --> 00:06:12.800
+of hundreds of this.
+
+211
+00:06:12.800 --> 00:06:14.560
+The sum is given one by one.
+
+212
+00:06:14.560 --> 00:06:15.880
+So automatically the stream
+
+213
+00:06:15.880 --> 00:06:17.440
+of values are given to it.
+
+214
+00:06:17.440 --> 00:06:19.120
+And once you actually do this,
+
+215
+00:06:19.120 --> 00:06:20.960
+what you're going to notice we get
+
+216
+00:06:20.960 --> 00:06:23.540
+the result exactly what we want.
+
+217
+00:06:23.540 --> 00:06:24.700
+But this is a memory
+
+218
+00:06:24.700 --> 00:06:25.860
+efficient operation.
+
+219
+00:06:26.820 --> 00:06:29.340
+All right, so the whole point of
+
+220
+00:06:29.340 --> 00:06:30.900
+teaching you or giving you a glimpse
+
+221
+00:06:30.900 --> 00:06:32.700
+of generator is so that you
+
+222
+00:06:32.700 --> 00:06:34.260
+understand what happens behind the
+
+223
+00:06:34.260 --> 00:06:35.740
+scene and you also get to know about
+
+224
+00:06:35.740 --> 00:06:37.220
+a little bit on the sum operation
+
+225
+00:06:37.220 --> 00:06:38.260
+which we can do.
+
+226
+00:06:38.260 --> 00:06:39.579
+The sum operation can be done
+
+227
+00:06:39.579 --> 00:06:40.940
+on variety of other things as well.
+
+228
+00:06:40.940 --> 00:06:42.180
+But what we have done here is
+
+229
+00:06:42.180 --> 00:06:44.260
+a very memory efficient code.
+
+230
+00:06:44.260 --> 00:06:46.020
+This is very rare to see
+
+231
+00:06:46.020 --> 00:06:47.100
+that somebody writes that.
+
+232
+00:06:47.100 --> 00:06:48.540
+But eventually you'll see that if
+
+233
+00:06:48.540 --> 00:06:50.180
+you work really good in the python,
+
+234
+00:06:50.180 --> 00:06:51.430
+you, you will write similar
+
+235
+00:06:51.430 --> 00:06:53.630
+code out a similar piece of code.
+
+236
+00:06:53.630 --> 00:06:54.790
+That is it for this video.
+
+237
+00:06:54.790 --> 00:06:56.070
+Hope you've enjoyed this section.
+
+238
+00:06:56.070 --> 00:06:58.430
+Pretty fun, a little bit new,
+
+239
+00:06:58.430 --> 00:06:59.750
+little scary, but we have learned
+
+240
+00:06:59.750 --> 00:07:00.510
+a lot and that's kind
+
+241
+00:07:00.510 --> 00:07:02.110
+of a mixed feeling that we get.
+
+242
+00:07:02.110 --> 00:07:03.310
+That is it for this video.
+
+243
+00:07:03.310 --> 00:07:04.830
+Let's catch up in the next one.
+
+244
+00:07:04.830 --> 00:07:05.710
+Don't forget to rate.

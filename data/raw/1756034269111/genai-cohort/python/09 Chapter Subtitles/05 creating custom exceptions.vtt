@@ -1,0 +1,529 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.800
+Continuing from the last class,
+
+2
+00:00:02.800 --> 00:00:04.880
+we saw that we can definitely
+
+3
+00:00:04.880 --> 00:00:06.040
+raise our own errors,
+
+4
+00:00:06.040 --> 00:00:08.160
+but there's still value error.
+
+5
+00:00:08.160 --> 00:00:10.720
+And what we see is raise value error.
+
+6
+00:00:10.720 --> 00:00:12.720
+Now sometimes these kinds of
+
+7
+00:00:12.720 --> 00:00:14.160
+errors which are predefined,
+
+8
+00:00:14.160 --> 00:00:16.199
+like key errors out of bound
+
+9
+00:00:16.199 --> 00:00:18.240
+errors or division by zero
+
+10
+00:00:18.240 --> 00:00:19.480
+error, they're not enough.
+
+11
+00:00:19.480 --> 00:00:21.040
+They are not serving us
+
+12
+00:00:21.040 --> 00:00:22.960
+the way we want it to serve.
+
+13
+00:00:22.960 --> 00:00:24.160
+So what can we do?
+
+14
+00:00:24.160 --> 00:00:26.230
+Yes, you can actually do a lot of.
+
+15
+00:00:26.230 --> 00:00:27.430
+Let me go ahead and close this.
+
+16
+00:00:27.430 --> 00:00:28.510
+Let's create a new file.
+
+17
+00:00:28.510 --> 00:00:29.390
+I want to keep everything
+
+18
+00:00:29.390 --> 00:00:30.990
+in a separate file so that if you're
+
+19
+00:00:30.990 --> 00:00:32.549
+revising them, you just come to that
+
+20
+00:00:32.549 --> 00:00:34.510
+lecture and quickly just download
+
+21
+00:00:34.510 --> 00:00:36.230
+that file and have a revision.
+
+22
+00:00:36.230 --> 00:00:37.830
+So let's call this one as custom.
+
+23
+00:00:39.460 --> 00:00:41.430
+This is actually custom exception.
+
+24
+00:00:41.430 --> 00:00:43.590
+Previously was custom errors
+
+25
+00:00:43.590 --> 00:00:45.590
+raising custom variable.
+
+26
+00:00:45.590 --> 00:00:46.630
+That was a different one.
+
+27
+00:00:46.630 --> 00:00:47.910
+I'll call this one as custom
+
+28
+00:00:49.510 --> 00:00:53.580
+except two, of course.
+
+29
+00:00:53.580 --> 00:00:54.460
+Underscore two.
+
+30
+00:00:54.460 --> 00:00:56.900
+Except underscore two py.
+
+31
+00:00:57.860 --> 00:00:59.140
+So how we can do that?
+
+32
+00:00:59.140 --> 00:01:00.740
+It's actually super simple.
+
+33
+00:01:00.740 --> 00:01:01.900
+You can just go ahead and create
+
+34
+00:01:01.900 --> 00:01:03.420
+a class and let's just call this one
+
+35
+00:01:03.420 --> 00:01:12.100
+as out of out of ingredients error.
+
+36
+00:01:12.100 --> 00:01:12.580
+That's it.
+
+37
+00:01:12.580 --> 00:01:13.660
+You can just literally
+
+38
+00:01:13.660 --> 00:01:14.500
+create a class.
+
+39
+00:01:14.500 --> 00:01:15.700
+And the concept that we
+
+40
+00:01:15.700 --> 00:01:17.220
+studied about inheritance.
+
+41
+00:01:17.220 --> 00:01:18.540
+Yes, that's exactly come
+
+42
+00:01:18.540 --> 00:01:19.300
+into the picture.
+
+43
+00:01:19.300 --> 00:01:21.140
+Now you can, you can actually inherit
+
+44
+00:01:21.140 --> 00:01:22.580
+the exception and we're not going
+
+45
+00:01:22.580 --> 00:01:23.660
+to do anything inside it.
+
+46
+00:01:23.660 --> 00:01:24.980
+You can actually overwrite
+
+47
+00:01:24.980 --> 00:01:25.820
+a lot of things.
+
+48
+00:01:25.820 --> 00:01:27.140
+But as of now, we just want
+
+49
+00:01:27.140 --> 00:01:28.860
+to say pass just like that.
+
+50
+00:01:28.860 --> 00:01:29.620
+And that is it.
+
+51
+00:01:29.620 --> 00:01:31.180
+You have created your own
+
+52
+00:01:31.180 --> 00:01:33.580
+most simplest custom exception.
+
+53
+00:01:34.140 --> 00:01:35.820
+Told you it's really simple.
+
+54
+00:01:35.820 --> 00:01:37.340
+Now let's go ahead and write a simple
+
+55
+00:01:37.340 --> 00:01:38.860
+method that actually uses it.
+
+56
+00:01:38.860 --> 00:01:40.300
+So we are going to call
+
+57
+00:01:40.300 --> 00:01:42.220
+a method which says make Chai.
+
+58
+00:01:42.780 --> 00:01:45.580
+And you pass me on milk as well as
+
+59
+00:01:45.580 --> 00:01:47.460
+the sugar, whatever the quantity it
+
+60
+00:01:47.460 --> 00:01:52.520
+is, and then I check if my milk
+
+61
+00:01:52.520 --> 00:01:59.280
+quantity is zero or if the sugar is
+
+62
+00:01:59.280 --> 00:02:01.200
+zero, then obviously I cannot make
+
+63
+00:02:01.200 --> 00:02:02.000
+chai.
+
+64
+00:02:02.000 --> 00:02:04.079
+So in that case I will raise
+
+65
+00:02:04.079 --> 00:02:05.600
+this time a different error which
+
+66
+00:02:05.600 --> 00:02:07.760
+is out of ingredient error.
+
+67
+00:02:07.760 --> 00:02:13.040
+And I can say missing milk or sugar.
+
+68
+00:02:13.040 --> 00:02:15.190
+Although that's nice, I don't prefer
+
+69
+00:02:15.190 --> 00:02:17.270
+milk, but I prefer sugar in my T.
+
+70
+00:02:17.270 --> 00:02:19.230
+Anyways, I will just go ahead
+
+71
+00:02:19.230 --> 00:02:23.190
+and print Chai is ready
+
+72
+00:02:23.190 --> 00:02:24.470
+with of course three dots.
+
+73
+00:02:25.750 --> 00:02:27.350
+Now how we can use this?
+
+74
+00:02:27.350 --> 00:02:28.550
+Let's just say we call this
+
+75
+00:02:28.550 --> 00:02:30.109
+make chai and we simply go
+
+76
+00:02:30.109 --> 00:02:32.070
+ahead and pass on 0 comma 1.
+
+77
+00:02:32.070 --> 00:02:36.070
+So 0 milk and we have 1 sugar.
+
+78
+00:02:36.070 --> 00:02:37.870
+So will I be able to make the chai?
+
+79
+00:02:37.870 --> 00:02:39.190
+And how does even this out
+
+80
+00:02:39.190 --> 00:02:40.430
+of ingredient error look like?
+
+81
+00:02:40.430 --> 00:02:41.190
+This doesn't exist
+
+82
+00:02:41.190 --> 00:02:42.510
+anywhere in Python.
+
+83
+00:02:42.510 --> 00:02:43.590
+Let's see that it's actually
+
+84
+00:02:43.590 --> 00:02:44.590
+comparatively easy.
+
+85
+00:02:44.590 --> 00:02:47.950
+So Python3.06 and there we go.
+
+86
+00:02:47.950 --> 00:02:48.430
+Voila.
+
+87
+00:02:48.430 --> 00:02:49.750
+This time we have our own color
+
+88
+00:02:49.750 --> 00:02:51.150
+highlightings and everything,
+
+89
+00:02:51.150 --> 00:02:52.950
+but we have our own exception which
+
+90
+00:02:52.950 --> 00:02:54.470
+is out of ingredient error.
+
+91
+00:02:54.470 --> 00:02:56.750
+This says missing milk or sugar.
+
+92
+00:02:56.750 --> 00:02:57.750
+So it's not that hard
+
+93
+00:02:57.750 --> 00:02:58.870
+to have custom errors.
+
+94
+00:02:58.870 --> 00:03:00.150
+And that's how the custom error
+
+95
+00:03:00.150 --> 00:03:01.270
+happens in all the libraries
+
+96
+00:03:01.270 --> 00:03:02.630
+and frameworks like fast
+
+97
+00:03:02.630 --> 00:03:05.150
+APIs and djangos and whatnot.
+
+98
+00:03:05.150 --> 00:03:06.790
+There is so many things that
+
+99
+00:03:06.790 --> 00:03:08.030
+you can do along with this.
+
+100
+00:03:08.030 --> 00:03:10.470
+So the exceptions are really
+
+101
+00:03:10.470 --> 00:03:12.150
+a really in depth topic.
+
+102
+00:03:13.110 --> 00:03:14.590
+As long as you know the basics
+
+103
+00:03:14.590 --> 00:03:16.510
+of it, that these are used to handle
+
+104
+00:03:16.510 --> 00:03:18.270
+the program gracefully or if
+
+105
+00:03:18.270 --> 00:03:19.430
+you want to crash the program.
+
+106
+00:03:19.430 --> 00:03:20.270
+Crashing the program
+
+107
+00:03:20.270 --> 00:03:21.830
+by the way is not a bad idea.
+
+108
+00:03:21.830 --> 00:03:23.670
+Giving you one such example, let's
+
+109
+00:03:23.670 --> 00:03:24.669
+just say you are running an E
+
+110
+00:03:24.669 --> 00:03:26.150
+Commerce page and on the E Commerce
+
+111
+00:03:26.150 --> 00:03:27.230
+page, on the very home page
+
+112
+00:03:27.230 --> 00:03:29.190
+you show all the product list.
+
+113
+00:03:29.190 --> 00:03:30.510
+But if your application is
+
+114
+00:03:30.510 --> 00:03:32.070
+not able to connect the database,
+
+115
+00:03:32.070 --> 00:03:32.870
+then no point
+
+116
+00:03:32.870 --> 00:03:34.230
+of showing them the whole thing.
+
+117
+00:03:34.920 --> 00:03:36.120
+Instead it's better to crash
+
+118
+00:03:36.120 --> 00:03:37.440
+the application right now, right
+
+119
+00:03:37.440 --> 00:03:38.920
+there so that people can,
+
+120
+00:03:38.920 --> 00:03:40.560
+whoever are the coders can debug
+
+121
+00:03:40.560 --> 00:03:41.840
+your application and can actually
+
+122
+00:03:41.840 --> 00:03:43.480
+have the database connection.
+
+123
+00:03:43.480 --> 00:03:45.280
+So sometimes having the crashing
+
+124
+00:03:45.280 --> 00:03:47.000
+is okay and it's all right.
+
+125
+00:03:47.000 --> 00:03:48.000
+Let's go ahead and catch
+
+126
+00:03:48.000 --> 00:03:48.800
+up in the next video.
+
+127
+00:03:48.800 --> 00:03:50.280
+Hope you are enjoying all of this.
+
+128
+00:03:50.280 --> 00:03:51.240
+If you're enjoying them,
+
+129
+00:03:51.240 --> 00:03:52.240
+please do rate us.
+
+130
+00:03:52.240 --> 00:03:53.480
+We really need that.
+
+131
+00:03:53.480 --> 00:03:54.680
+That is it for this video.
+
+132
+00:03:54.680 --> 00:03:56.360
+Let's catch up in the next one.

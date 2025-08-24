@@ -1,0 +1,1009 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:01.960
+All right, so before we wrap
+
+2
+00:00:01.960 --> 00:00:03.720
+up this section, I really want
+
+3
+00:00:03.720 --> 00:00:05.720
+to build a, full kind of app
+
+4
+00:00:05.720 --> 00:00:07.000
+where we see all the things
+
+5
+00:00:07.000 --> 00:00:08.480
+that we have learned so far.
+
+6
+00:00:08.480 --> 00:00:09.160
+Have some code.
+
+7
+00:00:09.160 --> 00:00:09.840
+The more you're going
+
+8
+00:00:09.840 --> 00:00:10.960
+to write the code, the more
+
+9
+00:00:10.960 --> 00:00:11.920
+it's better for you.
+
+10
+00:00:11.920 --> 00:00:12.960
+You are going to enjoy this.
+
+11
+00:00:12.960 --> 00:00:14.520
+And eventually things actually
+
+12
+00:00:14.520 --> 00:00:16.160
+click when you write more code,
+
+13
+00:00:16.160 --> 00:00:18.080
+not just when you Var the videos.
+
+14
+00:00:18.080 --> 00:00:19.560
+So let me take you onto the screen.
+
+15
+00:00:19.560 --> 00:00:22.000
+I have created a new file which is
+
+16
+00:00:22.000 --> 00:00:23.440
+07 complete order.
+
+17
+00:00:23.440 --> 00:00:24.800
+Now, it's actually hidden behind
+
+18
+00:00:24.800 --> 00:00:26.240
+me, so I can just move it up here.
+
+19
+00:00:26.850 --> 00:00:28.370
+This is the new file name,
+
+20
+00:00:28.370 --> 00:00:28.890
+by the way.
+
+21
+00:00:28.890 --> 00:00:29.930
+In this panel, there is nothing
+
+22
+00:00:29.930 --> 00:00:31.250
+much, it's just the file name.
+
+23
+00:00:31.250 --> 00:00:32.409
+So I'll walk you through, and once
+
+24
+00:00:32.409 --> 00:00:33.890
+you see that after that you don't
+
+25
+00:00:33.890 --> 00:00:35.410
+need to Var it again, feel free
+
+26
+00:00:35.410 --> 00:00:36.770
+to name your file whatever you like.
+
+27
+00:00:36.770 --> 00:00:38.450
+It's 07 complete order.
+
+28
+00:00:38.450 --> 00:00:40.130
+And that is all what we have.
+
+29
+00:00:40.130 --> 00:00:40.970
+I'll, take it back.
+
+30
+00:00:40.970 --> 00:00:42.369
+And that's why I keep myself here
+
+31
+00:00:42.369 --> 00:00:43.530
+in the bottom corner, because there
+
+32
+00:00:43.530 --> 00:00:45.250
+is no important information here.
+
+33
+00:00:45.810 --> 00:00:47.250
+All right, so what we're going to
+
+34
+00:00:47.250 --> 00:00:49.410
+do, we are going to build a simple
+
+35
+00:00:49.410 --> 00:00:51.570
+bill app where I just generate
+
+36
+00:00:51.570 --> 00:00:53.210
+your bill with all the precautionary
+
+37
+00:00:53.210 --> 00:00:54.210
+measure that I have.
+
+38
+00:00:54.970 --> 00:00:56.210
+First of all, I'll go ahead
+
+39
+00:00:56.210 --> 00:00:58.170
+and create a class which says
+
+40
+00:01:01.610 --> 00:01:04.890
+invalid chierror.
+
+41
+00:01:04.890 --> 00:01:05.850
+There we go.
+
+42
+00:01:05.850 --> 00:01:07.410
+I know that how this works.
+
+43
+00:01:07.410 --> 00:01:08.610
+We know that we can just go
+
+44
+00:01:08.610 --> 00:01:09.930
+ahead and pass on exception
+
+45
+00:01:09.930 --> 00:01:11.930
+as a base class to this one.
+
+46
+00:01:11.930 --> 00:01:13.370
+And then in the same line
+
+47
+00:01:13.370 --> 00:01:14.570
+also, I can write this pass.
+
+48
+00:01:14.570 --> 00:01:16.290
+This is one liner, but this
+
+49
+00:01:16.290 --> 00:01:17.210
+is a common sentinel.
+
+50
+00:01:17.210 --> 00:01:17.650
+You can write this
+
+51
+00:01:17.650 --> 00:01:18.570
+in the next line as well.
+
+52
+00:01:18.570 --> 00:01:19.970
+But if you have one liner, it's
+
+53
+00:01:19.970 --> 00:01:20.970
+allowed to write like that.
+
+54
+00:01:21.650 --> 00:01:23.130
+Once I have this, I want to simply
+
+55
+00:01:23.130 --> 00:01:25.410
+define a method which says bill.
+
+56
+00:01:25.410 --> 00:01:26.890
+And this time you give me
+
+57
+00:01:26.890 --> 00:01:27.890
+again the same stuff,
+
+58
+00:01:27.890 --> 00:01:30.290
+which is flavor, flavor.
+
+59
+00:01:30.290 --> 00:01:32.290
+And you pass me up cups,
+
+60
+00:01:32.290 --> 00:01:33.410
+how many cups you want.
+
+61
+00:01:34.050 --> 00:01:35.290
+And this time we'll go ahead
+
+62
+00:01:35.290 --> 00:01:37.090
+and precautionary do the things.
+
+63
+00:01:37.090 --> 00:01:38.370
+First of all, let's declare
+
+64
+00:01:38.370 --> 00:01:40.330
+a variable menu, and inside that
+
+65
+00:01:40.330 --> 00:01:42.050
+we'll have the key value pairs.
+
+66
+00:01:42.050 --> 00:01:44.370
+The first one being masala chai,
+
+67
+00:01:44.370 --> 00:01:46.530
+which will be of price 20 rupees.
+
+68
+00:01:46.530 --> 00:01:47.890
+It has dropped its price.
+
+69
+00:01:47.890 --> 00:01:49.890
+And then we have another key,
+
+70
+00:01:49.890 --> 00:01:51.250
+which is ginger.
+
+71
+00:01:53.400 --> 00:01:53.920
+Ginger.
+
+72
+00:01:53.920 --> 00:01:54.480
+There we go.
+
+73
+00:01:54.480 --> 00:01:56.320
+And the value of the ginger chai.
+
+74
+00:01:56.320 --> 00:01:57.240
+I'll keep it 40.
+
+75
+00:01:58.200 --> 00:01:59.840
+Now, next up is I want
+
+76
+00:01:59.840 --> 00:02:01.600
+to try and check all of the things
+
+77
+00:02:01.600 --> 00:02:02.400
+that are coming up.
+
+78
+00:02:02.400 --> 00:02:04.360
+First of all, I want to check whether
+
+79
+00:02:04.360 --> 00:02:05.960
+the flavor is in the menu or not.
+
+80
+00:02:05.960 --> 00:02:07.479
+I can do the same trick if I have
+
+81
+00:02:07.479 --> 00:02:09.039
+just one value Or I can actually
+
+82
+00:02:09.039 --> 00:02:10.720
+do this in the one line as well.
+
+83
+00:02:10.720 --> 00:02:11.720
+But this time I'll not do
+
+84
+00:02:11.720 --> 00:02:12.840
+that since you understand
+
+85
+00:02:12.840 --> 00:02:14.680
+the concept and the syntax.
+
+86
+00:02:14.680 --> 00:02:16.440
+I'll just check whether if
+
+87
+00:02:16.440 --> 00:02:21.270
+the flavor is not in menu.
+
+88
+00:02:22.070 --> 00:02:23.470
+In that case I would love
+
+89
+00:02:23.470 --> 00:02:25.870
+to raise an error and this time I
+
+90
+00:02:25.870 --> 00:02:27.630
+can raise my own custom error
+
+91
+00:02:27.630 --> 00:02:30.230
+which is invalid chai error.
+
+92
+00:02:30.230 --> 00:02:31.030
+Love that.
+
+93
+00:02:31.030 --> 00:02:33.110
+And I can say that
+
+94
+00:02:33.110 --> 00:02:35.560
+chai is not available.
+
+95
+00:02:40.870 --> 00:02:41.150
+All.
+
+96
+00:02:41.150 --> 00:02:42.470
+Right, Good enough.
+
+97
+00:02:42.470 --> 00:02:44.310
+Now I also want to check whether the
+
+98
+00:02:44.310 --> 00:02:45.590
+cups that you are providing me
+
+99
+00:02:45.590 --> 00:02:47.030
+because previously I know it was
+
+100
+00:02:47.030 --> 00:02:49.730
+222I I really want to check whether
+
+101
+00:02:49.730 --> 00:02:51.450
+you are actually providing me a
+
+102
+00:02:51.450 --> 00:02:52.530
+number of not.
+
+103
+00:02:52.530 --> 00:02:53.690
+I can go ahead and check.
+
+104
+00:02:53.690 --> 00:02:56.180
+If not, there is a nice
+
+105
+00:02:56.180 --> 00:02:58.130
+thing is instance.
+
+106
+00:02:58.130 --> 00:02:59.330
+So I can check for anything.
+
+107
+00:02:59.330 --> 00:03:00.450
+Whether you are an instance
+
+108
+00:03:00.450 --> 00:03:02.290
+of a class or something like that.
+
+109
+00:03:02.290 --> 00:03:03.810
+I can just go ahead and provide.
+
+110
+00:03:03.810 --> 00:03:04.810
+What do I want to check?
+
+111
+00:03:04.810 --> 00:03:06.450
+I want to check for cups.
+
+112
+00:03:06.450 --> 00:03:07.410
+What type of instance
+
+113
+00:03:07.410 --> 00:03:08.290
+you want to check?
+
+114
+00:03:08.290 --> 00:03:11.010
+And you can see we have integer here.
+
+115
+00:03:11.010 --> 00:03:12.130
+I can just go ahead and check
+
+116
+00:03:12.130 --> 00:03:13.090
+whether you are an integer.
+
+117
+00:03:13.090 --> 00:03:14.290
+I can check for float
+
+118
+00:03:14.290 --> 00:03:15.880
+double all these values.
+
+119
+00:03:15.880 --> 00:03:16.880
+Remember the data types we
+
+120
+00:03:16.880 --> 00:03:17.880
+were studying earlier?
+
+121
+00:03:17.880 --> 00:03:18.240
+Yes.
+
+122
+00:03:18.240 --> 00:03:19.960
+I can go ahead and check that
+
+123
+00:03:19.960 --> 00:03:22.280
+if it is not an instance of integer,
+
+124
+00:03:22.280 --> 00:03:24.120
+I want to raise the error again.
+
+125
+00:03:24.120 --> 00:03:25.880
+This time I will not probably raise
+
+126
+00:03:25.880 --> 00:03:27.320
+my own custom error because it's
+
+127
+00:03:27.320 --> 00:03:29.160
+a well known error of type error.
+
+128
+00:03:29.160 --> 00:03:30.680
+And I can just provide
+
+129
+00:03:30.680 --> 00:03:32.840
+the number of cups.
+
+130
+00:03:35.400 --> 00:03:38.760
+Must be an integer.
+
+131
+00:03:40.040 --> 00:03:40.760
+There we go.
+
+132
+00:03:41.410 --> 00:03:42.690
+All right, that part is done.
+
+133
+00:03:42.690 --> 00:03:43.850
+Now we have checked both
+
+134
+00:03:43.850 --> 00:03:45.530
+the flavor as well as cups.
+
+135
+00:03:45.530 --> 00:03:46.450
+This time we have done
+
+136
+00:03:46.450 --> 00:03:47.650
+a better job than the previous
+
+137
+00:03:47.650 --> 00:03:49.330
+one we did accidentally.
+
+138
+00:03:49.330 --> 00:03:50.410
+And now I can go ahead
+
+139
+00:03:50.410 --> 00:03:52.250
+and calculate the total, which is
+
+140
+00:03:52.250 --> 00:03:53.330
+pretty easy to calculate.
+
+141
+00:03:53.330 --> 00:03:54.770
+You can just go ahead and say
+
+142
+00:03:55.650 --> 00:03:58.170
+from the menu I want to get a
+
+143
+00:03:58.170 --> 00:03:59.610
+key, whatever the key here you
+
+144
+00:03:59.610 --> 00:04:00.730
+have passed me, which is in
+
+145
+00:04:00.730 --> 00:04:02.010
+this case I can just have a
+
+146
+00:04:02.010 --> 00:04:03.490
+flavor just like that again,
+
+147
+00:04:03.490 --> 00:04:04.450
+same style.
+
+148
+00:04:04.450 --> 00:04:06.530
+And I can multiply it by cups
+
+149
+00:04:06.530 --> 00:04:08.090
+confidently because I know this time
+
+150
+00:04:08.090 --> 00:04:09.330
+that you will be an integer.
+
+151
+00:04:10.450 --> 00:04:11.810
+And I can then print out
+
+152
+00:04:11.810 --> 00:04:14.290
+a formatted string just like this.
+
+153
+00:04:14.290 --> 00:04:19.170
+And I can say your bill for
+
+154
+00:04:19.810 --> 00:04:22.850
+whatever the cups you have ordered.
+
+155
+00:04:23.410 --> 00:04:26.130
+Your bill for X number of cups.
+
+156
+00:04:27.330 --> 00:04:28.730
+I can write that cups
+
+157
+00:04:28.730 --> 00:04:32.610
+again, cups and off.
+
+158
+00:04:32.610 --> 00:04:34.050
+Let's use flavor as well.
+
+159
+00:04:35.180 --> 00:04:37.580
+And we can again use chai.
+
+160
+00:04:37.580 --> 00:04:38.940
+Notice we, are just formatting
+
+161
+00:04:38.940 --> 00:04:40.220
+the values nicely.
+
+162
+00:04:40.220 --> 00:04:43.260
+And I can say rupees
+
+163
+00:04:43.260 --> 00:04:44.940
+and then I can say total.
+
+164
+00:04:45.500 --> 00:04:46.300
+There we go.
+
+165
+00:04:46.300 --> 00:04:46.820
+Nicely.
+
+166
+00:04:46.820 --> 00:04:47.820
+Formatted message
+
+167
+00:04:48.780 --> 00:04:50.380
+all right, so this is all good.
+
+168
+00:04:50.380 --> 00:04:52.300
+Now if anything else goes wrong,
+
+169
+00:04:52.300 --> 00:04:53.500
+we can still handle that.
+
+170
+00:04:53.500 --> 00:04:54.660
+We can go ahead and say
+
+171
+00:04:54.660 --> 00:04:56.300
+accept Just like this.
+
+172
+00:04:56.300 --> 00:04:58.300
+And I can say let's print this
+
+173
+00:04:58.300 --> 00:05:00.140
+error, but where is the error?
+
+174
+00:05:00.140 --> 00:05:01.620
+So in the except you can actually
+
+175
+00:05:01.620 --> 00:05:03.420
+catch all these exception with this
+
+176
+00:05:03.420 --> 00:05:05.410
+exception class that we have and,
+
+177
+00:05:05.410 --> 00:05:07.090
+and let's cast this as E so
+
+178
+00:05:07.090 --> 00:05:08.770
+that it's easier to work on with.
+
+179
+00:05:08.770 --> 00:05:10.170
+And I will say, hey, let's go
+
+180
+00:05:10.170 --> 00:05:11.970
+ahead and print all the error
+
+181
+00:05:11.970 --> 00:05:13.930
+and we can actually handle them just
+
+182
+00:05:13.930 --> 00:05:15.330
+by E, otherwise I have to write
+
+183
+00:05:15.330 --> 00:05:16.730
+the whole exceptions and stuff.
+
+184
+00:05:16.730 --> 00:05:18.090
+But this is a common practice
+
+185
+00:05:18.090 --> 00:05:19.410
+and common pattern.
+
+186
+00:05:19.410 --> 00:05:22.130
+Now once I have done this, of course
+
+187
+00:05:22.130 --> 00:05:23.650
+most common thing, which is finally,
+
+188
+00:05:23.650 --> 00:05:24.970
+you don't have to always write it,
+
+189
+00:05:24.970 --> 00:05:27.010
+but in some cases it makes sense.
+
+190
+00:05:27.010 --> 00:05:28.410
+I will just go ahead and print
+
+191
+00:05:28.410 --> 00:05:30.210
+a simple message that will say
+
+192
+00:05:31.900 --> 00:05:35.980
+thank you for visiting Chai code
+
+193
+00:05:36.620 --> 00:05:37.700
+with an exclamation.
+
+194
+00:05:37.700 --> 00:05:38.780
+We are happy.
+
+195
+00:05:38.780 --> 00:05:40.060
+I'm excited.
+
+196
+00:05:40.060 --> 00:05:40.940
+There we go.
+
+197
+00:05:40.940 --> 00:05:42.660
+Now what could be the use case of it?
+
+198
+00:05:42.660 --> 00:05:43.420
+Couple of use case,
+
+199
+00:05:43.420 --> 00:05:44.420
+we'll try all of this.
+
+200
+00:05:44.420 --> 00:05:46.380
+Let's go ahead and try the bill.
+
+201
+00:05:46.380 --> 00:05:48.260
+This time we'll ask for mint.
+
+202
+00:05:48.260 --> 00:05:49.900
+So I know that mint doesn't exist.
+
+203
+00:05:49.900 --> 00:05:50.980
+We'll go ahead and say
+
+204
+00:05:50.980 --> 00:05:52.220
+two cups of it.
+
+205
+00:05:52.220 --> 00:05:54.580
+I know that masala exists, so I'll
+
+206
+00:05:54.580 --> 00:05:56.060
+just go ahead and say masala.
+
+207
+00:05:56.060 --> 00:05:57.740
+But we'll do the same mistake of
+
+208
+00:05:57.740 --> 00:05:59.570
+instead of two we'll go for three.
+
+209
+00:05:59.570 --> 00:06:01.650
+We can go for two as well.
+
+210
+00:06:01.650 --> 00:06:02.970
+And let's order one thing
+
+211
+00:06:02.970 --> 00:06:03.970
+which actually makes
+
+212
+00:06:03.970 --> 00:06:06.930
+sense, which is ginger.
+
+213
+00:06:06.930 --> 00:06:08.290
+And this time we'll just
+
+214
+00:06:08.290 --> 00:06:10.530
+go ahead and go like this
+
+215
+00:06:10.530 --> 00:06:12.050
+and we'll say three.
+
+216
+00:06:12.050 --> 00:06:13.090
+There we go.
+
+217
+00:06:13.090 --> 00:06:14.690
+So we all mixed and match.
+
+218
+00:06:14.690 --> 00:06:16.610
+This one doesn't exist in the key,
+
+219
+00:06:16.610 --> 00:06:18.490
+this one is having a wrong syntax
+
+220
+00:06:18.490 --> 00:06:19.690
+and this one is actually good.
+
+221
+00:06:19.690 --> 00:06:20.690
+So this time we are actually
+
+222
+00:06:20.690 --> 00:06:21.650
+writing code much
+
+223
+00:06:21.650 --> 00:06:23.170
+better, much more carefully.
+
+224
+00:06:23.770 --> 00:06:24.730
+Just like I would have written
+
+225
+00:06:24.730 --> 00:06:25.490
+in the production.
+
+226
+00:06:26.090 --> 00:06:27.530
+Let's go ahead and run this.
+
+227
+00:06:28.170 --> 00:06:29.970
+So Python 3 this time we'll go
+
+228
+00:06:29.970 --> 00:06:31.970
+ahead and say 07 and run this.
+
+229
+00:06:31.970 --> 00:06:32.730
+There we go.
+
+230
+00:06:32.730 --> 00:06:34.090
+Everything handled nicely.
+
+231
+00:06:34.090 --> 00:06:35.410
+First of all it says error that
+
+232
+00:06:35.410 --> 00:06:37.050
+Chai is not available and thank you
+
+233
+00:06:37.050 --> 00:06:38.890
+for visiting because finally always
+
+234
+00:06:38.890 --> 00:06:40.730
+executes good enough.
+
+235
+00:06:40.730 --> 00:06:42.130
+The second time it says number
+
+236
+00:06:42.130 --> 00:06:43.490
+of cup must be an integer.
+
+237
+00:06:43.490 --> 00:06:45.790
+Thank you for visiting Chai and code.
+
+238
+00:06:45.790 --> 00:06:46.570
+That's good enough.
+
+239
+00:06:46.570 --> 00:06:48.090
+And third time it says your bill
+
+240
+00:06:48.090 --> 00:06:49.730
+for three cups of ginger chai is
+
+241
+00:06:49.730 --> 00:06:52.170
+rupees 120, which is good enough.
+
+242
+00:06:52.170 --> 00:06:53.290
+And we are saying thank you for
+
+243
+00:06:53.290 --> 00:06:56.250
+visiting, so this is good enough.
+
+244
+00:06:56.250 --> 00:06:57.890
+Whatever we have learned so far, we
+
+245
+00:06:57.890 --> 00:06:59.410
+were able to execute all of this.
+
+246
+00:06:59.410 --> 00:07:00.610
+The code files is also
+
+247
+00:07:00.610 --> 00:07:01.810
+available within the lecture.
+
+248
+00:07:01.810 --> 00:07:02.890
+And the most important
+
+249
+00:07:02.890 --> 00:07:04.610
+part is do rate us.
+
+250
+00:07:04.610 --> 00:07:05.530
+We really need that.
+
+251
+00:07:05.530 --> 00:07:07.170
+Now let's go ahead and catch
+
+252
+00:07:07.170 --> 00:07:08.169
+up in the next video.

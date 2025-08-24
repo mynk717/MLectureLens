@@ -1,0 +1,461 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.240
+All right, next one.
+
+2
+00:00:02.240 --> 00:00:04.320
+Can we raise our own exceptions?
+
+3
+00:00:04.320 --> 00:00:05.880
+Yes, this is exactly what we're
+
+4
+00:00:05.880 --> 00:00:07.400
+going to learn in this video.
+
+5
+00:00:07.400 --> 00:00:08.880
+So without a further ado, let me
+
+6
+00:00:08.880 --> 00:00:10.160
+take you on to the code part.
+
+7
+00:00:10.160 --> 00:00:12.480
+And again, some things actually work
+
+8
+00:00:12.480 --> 00:00:14.080
+better just with the code example.
+
+9
+00:00:14.080 --> 00:00:15.080
+So I don't want you to bore
+
+10
+00:00:15.080 --> 00:00:16.160
+in the theory part.
+
+11
+00:00:16.160 --> 00:00:17.760
+Let's write some code.
+
+12
+00:00:17.760 --> 00:00:18.960
+Let's create a new file.
+
+13
+00:00:18.960 --> 00:00:20.640
+This one will be 05.
+
+14
+00:00:20.640 --> 00:00:21.800
+And, we'll call this one
+
+15
+00:00:21.800 --> 00:00:24.400
+as custom exceptions.
+
+16
+00:00:25.120 --> 00:00:25.680
+Py.
+
+17
+00:00:27.130 --> 00:00:28.170
+The first thing that we're going
+
+18
+00:00:28.170 --> 00:00:29.570
+to do is let's just say
+
+19
+00:00:29.570 --> 00:00:31.370
+we have a brew chai method.
+
+20
+00:00:31.370 --> 00:00:31.850
+All right?
+
+21
+00:00:31.850 --> 00:00:33.610
+We'll code it on the go.
+
+22
+00:00:33.610 --> 00:00:35.530
+This is a brew chai, and we
+
+23
+00:00:35.530 --> 00:00:37.530
+have flavor in this.
+
+24
+00:00:37.530 --> 00:00:39.450
+All right, no problem so far.
+
+25
+00:00:39.450 --> 00:00:41.050
+Now we have a particular set
+
+26
+00:00:41.050 --> 00:00:42.970
+of flavor only that we serve.
+
+27
+00:00:42.970 --> 00:00:44.330
+Let's have an array of this.
+
+28
+00:00:44.330 --> 00:00:46.890
+The first one is going to be masala.
+
+29
+00:00:46.890 --> 00:00:48.490
+Then this time we'll serve
+
+30
+00:00:48.490 --> 00:00:51.050
+my favorite one, ginger.
+
+31
+00:00:51.050 --> 00:00:55.670
+And let's just say we have lig as
+
+32
+00:00:55.670 --> 00:00:57.790
+well, whatever the spelling is.
+
+33
+00:00:57.790 --> 00:01:00.150
+All right, now we are only
+
+34
+00:01:00.150 --> 00:01:01.630
+serving this, so we need
+
+35
+00:01:01.630 --> 00:01:03.870
+to check whether the flavor is
+
+36
+00:01:03.870 --> 00:01:05.310
+within this array or not.
+
+37
+00:01:05.310 --> 00:01:06.070
+So we can just go
+
+38
+00:01:06.070 --> 00:01:06.830
+ahead and check this.
+
+39
+00:01:06.830 --> 00:01:08.350
+If flavor in.
+
+40
+00:01:08.350 --> 00:01:09.709
+And we have checked this
+
+41
+00:01:10.270 --> 00:01:12.510
+and flavor, not in.
+
+42
+00:01:12.510 --> 00:01:13.990
+So now we are checking if the flavor
+
+43
+00:01:13.990 --> 00:01:15.870
+is not in any one of them.
+
+44
+00:01:15.870 --> 00:01:17.790
+Then we want to raise an exception.
+
+45
+00:01:17.790 --> 00:01:18.910
+So we can use a keyword,
+
+46
+00:01:18.910 --> 00:01:19.950
+literally raise.
+
+47
+00:01:19.950 --> 00:01:22.050
+And you can raise an exception.
+
+48
+00:01:22.050 --> 00:01:23.330
+And whatever you want to call
+
+49
+00:01:23.330 --> 00:01:24.730
+your exception, it's up to you.
+
+50
+00:01:24.730 --> 00:01:26.530
+You can call this as a key error,
+
+51
+00:01:26.530 --> 00:01:28.450
+value error, whatever makes sense.
+
+52
+00:01:28.450 --> 00:01:30.050
+In this case, it makes sense to call
+
+53
+00:01:30.050 --> 00:01:31.650
+it as value error because the value
+
+54
+00:01:31.650 --> 00:01:33.330
+that you have provided doesn't
+
+55
+00:01:33.330 --> 00:01:35.330
+exist or I don't want to serve it.
+
+56
+00:01:35.330 --> 00:01:37.090
+I'll just go ahead and work like this
+
+57
+00:01:37.090 --> 00:01:41.730
+and we'll say unsupported, chai.
+
+58
+00:01:42.290 --> 00:01:43.170
+That's funny.
+
+59
+00:01:43.730 --> 00:01:44.690
+But it is literally
+
+60
+00:01:44.690 --> 00:01:46.130
+unsupported chai flavor.
+
+61
+00:01:47.980 --> 00:01:48.420
+There we go.
+
+62
+00:01:48.420 --> 00:01:50.140
+And of course, looks good.
+
+63
+00:01:51.420 --> 00:01:53.460
+Now, in all the other case, we
+
+64
+00:01:53.460 --> 00:01:55.340
+simply go ahead and print this.
+
+65
+00:01:55.340 --> 00:01:56.740
+So we'll just go ahead and print
+
+66
+00:01:56.740 --> 00:01:58.700
+a formatted string that we are
+
+67
+00:01:59.820 --> 00:02:02.300
+brewing whatever the flavor
+
+68
+00:02:02.300 --> 00:02:03.980
+you have given me of the chai.
+
+69
+00:02:03.980 --> 00:02:05.140
+In all other cases, we are
+
+70
+00:02:05.140 --> 00:02:06.460
+actually brewing this.
+
+71
+00:02:06.460 --> 00:02:08.139
+So how we can actually use this?
+
+72
+00:02:08.139 --> 00:02:10.380
+Let's go ahead and use it.
+
+73
+00:02:11.020 --> 00:02:12.140
+Brew chai.
+
+74
+00:02:12.140 --> 00:02:13.940
+And if I go ahead and ask it
+
+75
+00:02:13.940 --> 00:02:15.140
+for a chai which doesn't
+
+76
+00:02:15.140 --> 00:02:16.420
+exist, I want to see.
+
+77
+00:02:16.420 --> 00:02:17.540
+I'm only interested what
+
+78
+00:02:17.540 --> 00:02:18.860
+happens because I know it.
+
+79
+00:02:18.860 --> 00:02:19.980
+If I'll provide it masala
+
+80
+00:02:19.980 --> 00:02:21.220
+chai, this will execute.
+
+81
+00:02:21.220 --> 00:02:22.380
+It's just a one line of code.
+
+82
+00:02:22.380 --> 00:02:23.180
+There is no point
+
+83
+00:02:23.180 --> 00:02:24.460
+of running this one.
+
+84
+00:02:25.020 --> 00:02:26.500
+So in this case we'll just go
+
+85
+00:02:26.500 --> 00:02:28.700
+ahead and say Python 3 run 05.
+
+86
+00:02:28.700 --> 00:02:31.020
+And notice here, this time you are
+
+87
+00:02:31.020 --> 00:02:32.500
+raising an error, which is good.
+
+88
+00:02:32.500 --> 00:02:33.300
+Sometimes crashing
+
+89
+00:02:33.300 --> 00:02:34.500
+the program is also good.
+
+90
+00:02:34.500 --> 00:02:36.140
+Don't worry too much on that.
+
+91
+00:02:36.140 --> 00:02:37.900
+But notice here, this time the error
+
+92
+00:02:37.900 --> 00:02:40.140
+that comes up is in our old syntax.
+
+93
+00:02:40.140 --> 00:02:41.900
+The colors and everything are nice.
+
+94
+00:02:41.900 --> 00:02:44.140
+And it says unsoported.
+
+95
+00:02:46.370 --> 00:02:47.810
+Really badly spelled there.
+
+96
+00:02:48.370 --> 00:02:48.410
+Unsupported.
+
+97
+00:02:49.890 --> 00:02:50.770
+Chai.
+
+98
+00:02:50.770 --> 00:02:51.650
+There we go.
+
+99
+00:02:51.650 --> 00:02:52.810
+Some of you might be yelling
+
+100
+00:02:52.810 --> 00:02:54.170
+from the screen, hey, you are
+
+101
+00:02:54.170 --> 00:02:55.490
+writing this really wrong.
+
+102
+00:02:56.110 --> 00:02:56.690
+There we go.
+
+103
+00:02:56.690 --> 00:02:57.410
+So this is better.
+
+104
+00:02:57.410 --> 00:02:58.810
+Unsupported Chai flavor
+
+105
+00:02:58.810 --> 00:02:59.970
+with three dots came in.
+
+106
+00:02:59.970 --> 00:03:01.930
+So this is nice that we were able
+
+107
+00:03:01.930 --> 00:03:04.290
+to actually raise our own errors.
+
+108
+00:03:04.290 --> 00:03:05.810
+Can we create our own
+
+109
+00:03:05.810 --> 00:03:07.490
+custom exceptions also?
+
+110
+00:03:08.770 --> 00:03:10.040
+That's interesting.
+
+111
+00:03:10.040 --> 00:03:10.760
+Can we do that?
+
+112
+00:03:11.290 --> 00:03:12.800
+Yes, actually we can do that.
+
+113
+00:03:12.800 --> 00:03:13.760
+And let's quickly move on
+
+114
+00:03:13.760 --> 00:03:15.280
+to the next video to actually create
+
+115
+00:03:15.280 --> 00:03:17.160
+our own custom exceptions.

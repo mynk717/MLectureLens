@@ -1,0 +1,593 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.480
+Okay, so welcome to one
+
+2
+00:00:01.480 --> 00:00:02.960
+another exciting video
+
+3
+00:00:02.960 --> 00:00:04.880
+in the authentication section.
+
+4
+00:00:04.880 --> 00:00:06.720
+And in this particular video
+
+5
+00:00:06.720 --> 00:00:08.840
+we are going to cover the concept
+
+6
+00:00:08.840 --> 00:00:10.000
+of authorization.
+
+7
+00:00:10.640 --> 00:00:12.800
+So now at this particular point we
+
+8
+00:00:12.800 --> 00:00:14.880
+already know what is authentication.
+
+9
+00:00:14.880 --> 00:00:16.320
+Authentication means
+
+10
+00:00:16.320 --> 00:00:18.960
+that the server knows who are you.
+
+11
+00:00:18.960 --> 00:00:21.120
+That means you are authenticated.
+
+12
+00:00:21.120 --> 00:00:22.240
+And there are two ways
+
+13
+00:00:22.240 --> 00:00:22.960
+of authentication.
+
+14
+00:00:22.960 --> 00:00:23.920
+Number one, there's a session
+
+15
+00:00:23.920 --> 00:00:25.760
+based authentication where you
+
+16
+00:00:25.760 --> 00:00:28.670
+give a session ID or a temporary
+
+17
+00:00:28.670 --> 00:00:31.150
+ID to a user, where the data
+
+18
+00:00:31.150 --> 00:00:33.350
+about that ID is stored on the
+
+19
+00:00:33.350 --> 00:00:34.870
+server, maybe in a database,
+
+20
+00:00:34.870 --> 00:00:35.950
+maybe in your memory.
+
+21
+00:00:35.950 --> 00:00:37.430
+And that is where you let
+
+22
+00:00:37.430 --> 00:00:38.830
+the user authenticate it.
+
+23
+00:00:38.830 --> 00:00:40.510
+And on the other hand you had
+
+24
+00:00:40.510 --> 00:00:41.910
+a stateless version of
+
+25
+00:00:41.910 --> 00:00:44.470
+the authentication that was JSON web
+
+26
+00:00:44.470 --> 00:00:46.710
+tokens where you actually store
+
+27
+00:00:46.710 --> 00:00:48.430
+the information about the user
+
+28
+00:00:48.430 --> 00:00:50.350
+inside the token itself.
+
+29
+00:00:50.350 --> 00:00:51.830
+So that was authentication
+
+30
+00:00:51.830 --> 00:00:52.750
+that whether you are
+
+31
+00:00:52.750 --> 00:00:54.270
+authenticated or not.
+
+32
+00:00:54.270 --> 00:00:55.950
+Does server recognize you?
+
+33
+00:00:55.950 --> 00:00:57.230
+Do server know who are you?
+
+34
+00:00:57.230 --> 00:00:58.270
+That is authentication.
+
+35
+00:00:58.970 --> 00:01:00.810
+Now let's jump onto the concept
+
+36
+00:01:00.810 --> 00:01:02.170
+of authorization.
+
+37
+00:01:02.170 --> 00:01:04.129
+Authorization is basically the next
+
+38
+00:01:04.129 --> 00:01:06.010
+step of the authentication.
+
+39
+00:01:06.010 --> 00:01:08.330
+In order to be authorized
+
+40
+00:01:08.330 --> 00:01:10.570
+to do something, you have to be
+
+41
+00:01:10.570 --> 00:01:12.330
+first of all authenticated.
+
+42
+00:01:12.330 --> 00:01:14.010
+There is no authorization
+
+43
+00:01:14.010 --> 00:01:16.410
+possible without authentication.
+
+44
+00:01:16.410 --> 00:01:17.610
+So first step is something
+
+45
+00:01:17.610 --> 00:01:18.730
+that we have already done.
+
+46
+00:01:18.730 --> 00:01:20.010
+Authorization means if
+
+47
+00:01:20.010 --> 00:01:21.130
+you have access
+
+48
+00:01:21.130 --> 00:01:23.530
+to a particular resource or not.
+
+49
+00:01:23.530 --> 00:01:25.130
+So let's imagine that this is
+
+50
+00:01:25.130 --> 00:01:27.250
+a user, that is U1, okay?
+
+51
+00:01:27.250 --> 00:01:28.610
+And this is a user,
+
+52
+00:01:28.610 --> 00:01:30.380
+let's say U2, okay?
+
+53
+00:01:30.380 --> 00:01:33.140
+Now in on your server, okay,
+
+54
+00:01:33.140 --> 00:01:35.420
+on your server, let's say
+
+55
+00:01:35.420 --> 00:01:37.100
+you have multiple routes, right?
+
+56
+00:01:37.100 --> 00:01:38.060
+You have a lot of data
+
+57
+00:01:38.060 --> 00:01:39.020
+on the back end.
+
+58
+00:01:39.020 --> 00:01:40.260
+Now let's say you want makes
+
+59
+00:01:40.260 --> 00:01:42.540
+a request to get some piece of data.
+
+60
+00:01:42.540 --> 00:01:43.060
+Okay?
+
+61
+00:01:43.060 --> 00:01:44.380
+So let's say that this is basically
+
+62
+00:01:44.380 --> 00:01:47.260
+a data about all the payments.
+
+63
+00:01:47.260 --> 00:01:48.540
+So let's say you were building some
+
+64
+00:01:48.540 --> 00:01:50.500
+financial application and this is
+
+65
+00:01:50.500 --> 00:01:52.060
+the data about all the payments.
+
+66
+00:01:52.060 --> 00:01:52.420
+Okay?
+
+67
+00:01:52.420 --> 00:01:54.300
+So all the payment data lives here.
+
+68
+00:01:54.300 --> 00:01:55.940
+Now technically, if you imagine
+
+69
+00:01:55.940 --> 00:01:57.300
+this thing, payments data
+
+70
+00:01:57.300 --> 00:01:58.700
+is a critical data, right?
+
+71
+00:01:58.700 --> 00:01:59.780
+You don't want to share this
+
+72
+00:01:59.780 --> 00:02:01.220
+particular thing publicly or
+
+73
+00:02:01.220 --> 00:02:02.520
+something, something like that.
+
+74
+00:02:02.520 --> 00:02:04.280
+So now you have to build
+
+75
+00:02:04.280 --> 00:02:06.160
+a mechanism that if you want,
+
+76
+00:02:06.160 --> 00:02:08.840
+hey user one, are you really
+
+77
+00:02:08.840 --> 00:02:11.320
+allowed to access this data?
+
+78
+00:02:11.320 --> 00:02:12.960
+If so, you have to return
+
+79
+00:02:12.960 --> 00:02:14.120
+this data to the user.
+
+80
+00:02:14.120 --> 00:02:17.160
+But if not, see if he does not have
+
+81
+00:02:17.160 --> 00:02:19.000
+that particular access, you can just
+
+82
+00:02:19.000 --> 00:02:21.640
+return return an unauthorized error.
+
+83
+00:02:21.640 --> 00:02:23.240
+So number one thing is that
+
+84
+00:02:23.240 --> 00:02:25.680
+number one, see this U1 user has
+
+85
+00:02:25.680 --> 00:02:26.720
+to be authenticated.
+
+86
+00:02:26.720 --> 00:02:28.200
+That means server
+
+87
+00:02:28.200 --> 00:02:30.400
+knows who the U1 is.
+
+88
+00:02:30.400 --> 00:02:31.610
+Then the next step comes
+
+89
+00:02:31.610 --> 00:02:33.440
+that do you have the permission
+
+90
+00:02:33.440 --> 00:02:35.680
+to access this particular resource?
+
+91
+00:02:35.680 --> 00:02:37.600
+If so, you can return this data.
+
+92
+00:02:37.600 --> 00:02:38.880
+If not, just return
+
+93
+00:02:38.880 --> 00:02:40.400
+an error response.
+
+94
+00:02:40.400 --> 00:02:41.880
+So how can you achieve
+
+95
+00:02:41.880 --> 00:02:42.760
+this particular thing?
+
+96
+00:02:42.760 --> 00:02:43.759
+It's very simple.
+
+97
+00:02:43.759 --> 00:02:45.440
+I mean there are a lot of techniques
+
+98
+00:02:45.440 --> 00:02:46.640
+to implement authorization,
+
+99
+00:02:46.640 --> 00:02:47.560
+but let's cover
+
+100
+00:02:47.560 --> 00:02:49.280
+the simplest one, that is
+
+101
+00:02:49.280 --> 00:02:51.160
+just attach a, role to this user.
+
+102
+00:02:51.160 --> 00:02:52.880
+So let's say if U1
+
+103
+00:02:52.880 --> 00:02:55.530
+has a role, which is admin, right?
+
+104
+00:02:55.530 --> 00:02:56.330
+Very simple.
+
+105
+00:02:56.330 --> 00:02:58.210
+And you too has a role that
+
+106
+00:02:58.210 --> 00:02:59.850
+is, let's say, simple user.
+
+107
+00:02:59.850 --> 00:03:01.690
+Now if the role is admin,
+
+108
+00:03:01.690 --> 00:03:03.370
+you return this particular data,
+
+109
+00:03:03.370 --> 00:03:05.650
+but if the role is not admin, you
+
+110
+00:03:05.650 --> 00:03:07.450
+are not going to return this data.
+
+111
+00:03:07.450 --> 00:03:08.810
+And what is this role?
+
+112
+00:03:08.810 --> 00:03:10.090
+At the end of the day, this
+
+113
+00:03:10.090 --> 00:03:11.530
+role is nothing but just
+
+114
+00:03:11.530 --> 00:03:13.450
+a value in the database.
+
+115
+00:03:13.450 --> 00:03:15.090
+So in the users table, I
+
+116
+00:03:15.090 --> 00:03:16.530
+can extend that table
+
+117
+00:03:16.530 --> 00:03:18.410
+to have one more entry, I.e.
+
+118
+00:03:18.410 --> 00:03:20.290
+role, where default value can
+
+119
+00:03:20.290 --> 00:03:22.250
+be user, and we can promote
+
+120
+00:03:22.250 --> 00:03:23.610
+special users to be admin.
+
+121
+00:03:24.260 --> 00:03:25.660
+And then we can even store
+
+122
+00:03:25.660 --> 00:03:26.540
+this particular thing
+
+123
+00:03:26.540 --> 00:03:28.340
+in the user's token, right?
+
+124
+00:03:28.340 --> 00:03:29.700
+You have JWT tokens,
+
+125
+00:03:29.700 --> 00:03:30.700
+which are signed tokens.
+
+126
+00:03:30.700 --> 00:03:31.780
+No one can change it.
+
+127
+00:03:31.780 --> 00:03:34.420
+So in the JWT token I can just write
+
+128
+00:03:34.420 --> 00:03:37.060
+role admin, and then I can check
+
+129
+00:03:37.060 --> 00:03:38.980
+that if you are an admin,
+
+130
+00:03:39.699 --> 00:03:41.780
+only and only then you are allowed
+
+131
+00:03:41.780 --> 00:03:43.300
+to access this particular resource.
+
+132
+00:03:43.300 --> 00:03:44.620
+So basically this is how
+
+133
+00:03:44.620 --> 00:03:46.820
+the authorization happens.
+
+134
+00:03:46.820 --> 00:03:48.460
+So this is the basic concept
+
+135
+00:03:48.460 --> 00:03:49.380
+behind the authorization.
+
+136
+00:03:49.940 --> 00:03:52.420
+So what I would like you to do is
+
+137
+00:03:52.980 --> 00:03:54.420
+pause the video right here.
+
+138
+00:03:54.420 --> 00:03:55.060
+Implement.
+
+139
+00:03:55.060 --> 00:03:56.580
+Try to implement this particular
+
+140
+00:03:56.580 --> 00:03:58.260
+thing on your own before
+
+141
+00:03:58.260 --> 00:03:59.940
+jumping onto the next video.
+
+142
+00:03:59.940 --> 00:04:01.740
+Because in the next video I will
+
+143
+00:04:01.740 --> 00:04:03.020
+be coding this particular thing.
+
+144
+00:04:03.020 --> 00:04:04.340
+I'll be refactoring the whole
+
+145
+00:04:04.340 --> 00:04:06.020
+code, but I would like you
+
+146
+00:04:06.020 --> 00:04:07.540
+to give it a try first.
+
+147
+00:04:07.540 --> 00:04:08.740
+So let's meet you
+
+148
+00:04:08.740 --> 00:04:09.860
+in the next particular video.

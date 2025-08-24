@@ -1,0 +1,985 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.360
+All right, so the next problem
+
+2
+00:00:02.360 --> 00:00:04.400
+that we are going to deal up with is
+
+3
+00:00:04.400 --> 00:00:05.560
+little bit had to do more
+
+4
+00:00:05.560 --> 00:00:07.400
+with the syntax of Python rather
+
+5
+00:00:07.400 --> 00:00:08.880
+than just solving the problem.
+
+6
+00:00:09.440 --> 00:00:11.000
+This exact same problem can be
+
+7
+00:00:11.000 --> 00:00:13.440
+solved by if and else, and rightly
+
+8
+00:00:13.440 --> 00:00:15.280
+so, it can be easily done.
+
+9
+00:00:15.280 --> 00:00:16.520
+But the whole point of learning
+
+10
+00:00:16.520 --> 00:00:18.160
+the Python so that we can understand
+
+11
+00:00:18.160 --> 00:00:19.480
+variety of syntax that
+
+12
+00:00:19.480 --> 00:00:20.320
+other people are writing.
+
+13
+00:00:20.320 --> 00:00:21.560
+And this is one of the common way
+
+14
+00:00:21.560 --> 00:00:23.360
+of writing the Python syntax.
+
+15
+00:00:23.360 --> 00:00:24.880
+So notice here the problem statement.
+
+16
+00:00:24.880 --> 00:00:26.320
+First let's go ahead and read this.
+
+17
+00:00:26.320 --> 00:00:27.680
+This is the most fun part.
+
+18
+00:00:28.460 --> 00:00:30.020
+You run an online T store.
+
+19
+00:00:30.020 --> 00:00:31.060
+I would love to run
+
+20
+00:00:31.060 --> 00:00:32.380
+an online T store.
+
+21
+00:00:32.380 --> 00:00:34.860
+If the order amount is more than 300,
+
+22
+00:00:34.860 --> 00:00:36.380
+delivery is free,
+
+23
+00:00:36.380 --> 00:00:38.620
+otherwise it costs 30 rupees.
+
+24
+00:00:38.620 --> 00:00:39.260
+Fair deal.
+
+25
+00:00:39.900 --> 00:00:41.420
+Now the task that we have is
+
+26
+00:00:41.420 --> 00:00:42.860
+input the order amount
+
+27
+00:00:42.860 --> 00:00:44.540
+and use a ternary operator
+
+28
+00:00:44.540 --> 00:00:46.220
+to decide the delivery fees.
+
+29
+00:00:46.220 --> 00:00:47.060
+Now there are a variety
+
+30
+00:00:47.060 --> 00:00:48.460
+of ways how this problem can be
+
+31
+00:00:48.460 --> 00:00:49.740
+solved and rightfully so.
+
+32
+00:00:49.740 --> 00:00:51.260
+I can simply take the order amount,
+
+33
+00:00:51.260 --> 00:00:52.940
+then I can do an if and else.
+
+34
+00:00:52.940 --> 00:00:55.140
+If the order amount is more
+
+35
+00:00:55.140 --> 00:00:56.860
+than 300, I can mark a variable
+
+36
+00:00:56.860 --> 00:00:59.180
+delivery fees as 0.
+
+37
+00:00:59.180 --> 00:01:00.900
+If it is less than 300, I
+
+38
+00:01:00.900 --> 00:01:03.340
+can mark it as 330 rupees.
+
+39
+00:01:03.340 --> 00:01:04.420
+Surely I am pretty sure
+
+40
+00:01:04.420 --> 00:01:05.660
+you can do this now.
+
+41
+00:01:05.660 --> 00:01:07.380
+But the way how it is asked us
+
+42
+00:01:07.380 --> 00:01:09.060
+to do so is use the ternary
+
+43
+00:01:09.060 --> 00:01:10.540
+operator to decide the fees.
+
+44
+00:01:10.540 --> 00:01:11.740
+This is where the syntax
+
+45
+00:01:11.740 --> 00:01:12.820
+comes and it's a really
+
+46
+00:01:12.820 --> 00:01:13.900
+interesting syntax.
+
+47
+00:01:14.620 --> 00:01:18.820
+So let's call this one as new file
+
+48
+00:01:18.820 --> 00:01:20.380
+and we're going to call this one as
+
+49
+00:01:21.250 --> 00:01:27.650
+delivery fees waiver or calculator.
+
+50
+00:01:27.650 --> 00:01:28.610
+I think waiver would
+
+51
+00:01:28.610 --> 00:01:30.930
+be good waiver py.
+
+52
+00:01:32.530 --> 00:01:33.530
+So the way how we want
+
+53
+00:01:33.530 --> 00:01:34.770
+to do it, first of all we have
+
+54
+00:01:34.770 --> 00:01:35.850
+to grab the order amount.
+
+55
+00:01:35.850 --> 00:01:37.049
+So let's go ahead and say this
+
+56
+00:01:37.049 --> 00:01:38.330
+is our order amount that we
+
+57
+00:01:38.330 --> 00:01:39.770
+have and the order amount.
+
+58
+00:01:39.770 --> 00:01:42.010
+Again my AI needs to shut
+
+59
+00:01:42.010 --> 00:01:44.370
+up and the order amount.
+
+60
+00:01:44.370 --> 00:01:46.410
+So how we're going to do this, we
+
+61
+00:01:46.410 --> 00:01:47.850
+are going to first go ahead and take
+
+62
+00:01:47.850 --> 00:01:50.440
+the input and we'll ask the user
+
+63
+00:01:50.440 --> 00:01:53.720
+to say enter the order amount.
+
+64
+00:01:53.720 --> 00:01:54.840
+There we go.
+
+65
+00:01:54.840 --> 00:01:56.840
+Now whatever the user enters at his
+
+66
+00:01:56.840 --> 00:01:58.720
+order amount first we need to check
+
+67
+00:01:58.720 --> 00:02:00.600
+that how we are getting the data.
+
+68
+00:02:00.600 --> 00:02:02.640
+And for this I would like to print
+
+69
+00:02:02.640 --> 00:02:04.560
+this order amount just like this.
+
+70
+00:02:04.560 --> 00:02:05.960
+Let's use a formatted string
+
+71
+00:02:05.960 --> 00:02:09.400
+and say order amount.
+
+72
+00:02:09.400 --> 00:02:10.919
+And I can definitely go ahead
+
+73
+00:02:10.919 --> 00:02:12.720
+and get the order amount as a value.
+
+74
+00:02:12.720 --> 00:02:14.280
+But what I really want is
+
+75
+00:02:14.280 --> 00:02:15.640
+to check the type of it.
+
+76
+00:02:15.640 --> 00:02:16.920
+And the way how we do it is
+
+77
+00:02:16.920 --> 00:02:18.180
+just put the type
+
+78
+00:02:18.180 --> 00:02:20.020
+and I simply say order amount.
+
+79
+00:02:20.020 --> 00:02:21.580
+Now this will teach you a really
+
+80
+00:02:21.580 --> 00:02:23.180
+interesting aspect of how we
+
+81
+00:02:23.180 --> 00:02:24.660
+go ahead and run the program
+
+82
+00:02:24.660 --> 00:02:26.580
+or how we get the input data.
+
+83
+00:02:26.580 --> 00:02:27.740
+So I'll just go ahead and say
+
+84
+00:02:27.740 --> 00:02:29.340
+Python 3 and we are going
+
+85
+00:02:29.340 --> 00:02:30.900
+to run this delivery fees.
+
+86
+00:02:30.900 --> 00:02:32.820
+It asks us the order amount and I
+
+87
+00:02:32.820 --> 00:02:35.540
+just say this is 40, rupees.
+
+88
+00:02:35.540 --> 00:02:36.780
+Now, notice here it says
+
+89
+00:02:36.780 --> 00:02:38.260
+the class of string.
+
+90
+00:02:38.260 --> 00:02:39.780
+So the data that we are getting
+
+91
+00:02:39.780 --> 00:02:41.420
+from the user back is actually
+
+92
+00:02:41.420 --> 00:02:43.060
+in the string format.
+
+93
+00:02:43.060 --> 00:02:43.940
+You might be wondering,
+
+94
+00:02:43.940 --> 00:02:45.250
+no, this is a number.
+
+95
+00:02:45.250 --> 00:02:46.050
+This is a number.
+
+96
+00:02:46.050 --> 00:02:47.730
+But in the world of Python,
+
+97
+00:02:48.350 --> 00:02:49.330
+there are two different things.
+
+98
+00:02:49.330 --> 00:02:50.570
+Once you write a 40 like
+
+99
+00:02:50.570 --> 00:02:51.930
+this, and once you write a 40
+
+100
+00:02:51.930 --> 00:02:53.450
+like this, there is a huge
+
+101
+00:02:53.450 --> 00:02:54.930
+difference between them.
+
+102
+00:02:54.930 --> 00:02:55.930
+One inside the double
+
+103
+00:02:55.930 --> 00:02:56.810
+quote is a string.
+
+104
+00:02:56.810 --> 00:02:57.770
+One, this is a number.
+
+105
+00:02:57.770 --> 00:02:59.250
+So we need to figure out
+
+106
+00:02:59.250 --> 00:03:01.489
+a way how we can convert this string
+
+107
+00:03:02.050 --> 00:03:03.330
+into a number.
+
+108
+00:03:03.330 --> 00:03:04.490
+And trust me, there
+
+109
+00:03:04.490 --> 00:03:05.650
+is a super easy way.
+
+110
+00:03:06.450 --> 00:03:08.840
+Just take your input, wrap them,
+
+111
+00:03:08.840 --> 00:03:10.930
+in a parenthesis, and this just
+
+112
+00:03:10.930 --> 00:03:13.220
+at the front of it, write int.
+
+113
+00:03:13.220 --> 00:03:14.660
+Int stands for integer.
+
+114
+00:03:14.660 --> 00:03:15.500
+Just like this, you can
+
+115
+00:03:15.500 --> 00:03:16.700
+convert them into float as
+
+116
+00:03:16.700 --> 00:03:18.180
+well or a string as well.
+
+117
+00:03:18.180 --> 00:03:19.940
+The moment you say int, that means
+
+118
+00:03:19.940 --> 00:03:21.340
+whatever the value is coming up
+
+119
+00:03:21.340 --> 00:03:23.780
+from, which is a string, it will try
+
+120
+00:03:23.780 --> 00:03:25.820
+its best to convert into the string.
+
+121
+00:03:25.820 --> 00:03:27.420
+If it fail, that's okay,
+
+122
+00:03:27.420 --> 00:03:29.060
+but it will try its best.
+
+123
+00:03:29.060 --> 00:03:30.420
+Let's run the program again.
+
+124
+00:03:30.420 --> 00:03:32.180
+And when I say 40 this time,
+
+125
+00:03:32.180 --> 00:03:33.220
+notice here, the class
+
+126
+00:03:33.220 --> 00:03:34.820
+changes to the integer
+
+127
+00:03:34.820 --> 00:03:36.580
+and the order amount is 40.
+
+128
+00:03:36.580 --> 00:03:38.100
+But yes, our program is still
+
+129
+00:03:38.100 --> 00:03:39.740
+prone to some of the errors.
+
+130
+00:03:39.740 --> 00:03:40.700
+We will talk about them
+
+131
+00:03:40.700 --> 00:03:41.500
+as we go forward.
+
+132
+00:03:41.500 --> 00:03:42.300
+Let's just say instead
+
+133
+00:03:42.300 --> 00:03:43.580
+of the amount, if I just go ahead
+
+134
+00:03:43.580 --> 00:03:45.440
+and add my, it will crash.
+
+135
+00:03:45.440 --> 00:03:46.600
+That, hey, I don't know how
+
+136
+00:03:46.600 --> 00:03:48.800
+to convert hitesh into a number
+
+137
+00:03:48.800 --> 00:03:50.960
+or rather a specific integer.
+
+138
+00:03:50.960 --> 00:03:52.480
+So this is the first part that you
+
+139
+00:03:52.480 --> 00:03:54.040
+have learned so far and pretty good.
+
+140
+00:03:54.040 --> 00:03:54.640
+Notice here.
+
+141
+00:03:54.640 --> 00:03:55.640
+Each project gives you
+
+142
+00:03:55.640 --> 00:03:56.760
+a new knowledge which is
+
+143
+00:03:56.760 --> 00:03:57.920
+absolutely, I love.
+
+144
+00:03:57.920 --> 00:03:59.840
+All right, next up, what we want
+
+145
+00:03:59.840 --> 00:04:01.040
+to do now that we have gone through
+
+146
+00:04:01.040 --> 00:04:03.040
+with this, particular cycle,
+
+147
+00:04:03.040 --> 00:04:04.040
+let's see how we want
+
+148
+00:04:04.040 --> 00:04:05.520
+to calculate the delivery fees.
+
+149
+00:04:05.520 --> 00:04:06.960
+So I have another one.
+
+150
+00:04:06.960 --> 00:04:08.240
+Delivery fees.
+
+151
+00:04:10.330 --> 00:04:11.210
+Delivery fees.
+
+152
+00:04:11.770 --> 00:04:13.330
+Now you can just go ahead and do
+
+153
+00:04:13.330 --> 00:04:14.450
+something like this, that my
+
+154
+00:04:14.450 --> 00:04:16.570
+Delivery fees is 0 as of now
+
+155
+00:04:16.570 --> 00:04:19.130
+and I can do a simple if statement.
+
+156
+00:04:19.130 --> 00:04:23.770
+If the order amount is greater than
+
+157
+00:04:24.330 --> 00:04:27.170
+300, I can just go ahead and change
+
+158
+00:04:27.170 --> 00:04:29.050
+the value of this delivery fees
+
+159
+00:04:29.050 --> 00:04:30.970
+instead of pointing towards zero.
+
+160
+00:04:30.970 --> 00:04:33.170
+If it is above 300, then I can
+
+161
+00:04:33.170 --> 00:04:34.890
+just keep it as it is zero.
+
+162
+00:04:35.830 --> 00:04:39.030
+And in the else part, if it is less
+
+163
+00:04:39.030 --> 00:04:41.110
+than 300 or I can use an else if
+
+164
+00:04:41.110 --> 00:04:43.110
+that is also if the order amount
+
+165
+00:04:43.110 --> 00:04:45.350
+is less than 300, I can mark it.
+
+166
+00:04:45.350 --> 00:04:46.630
+All we can do.
+
+167
+00:04:46.630 --> 00:04:48.710
+But I want you to pay attention
+
+168
+00:04:48.710 --> 00:04:50.390
+on this ternary operation.
+
+169
+00:04:50.390 --> 00:04:51.589
+In the world of ternary
+
+170
+00:04:51.589 --> 00:04:52.790
+operation, how you can actually
+
+171
+00:04:52.790 --> 00:04:54.150
+shrink this piece of code
+
+172
+00:04:54.150 --> 00:04:55.590
+instead of if and else.
+
+173
+00:04:55.590 --> 00:04:56.790
+It might sound a little
+
+174
+00:04:56.790 --> 00:04:57.870
+bit overwhelming at first,
+
+175
+00:04:57.870 --> 00:04:59.190
+but just pay attention.
+
+176
+00:04:59.990 --> 00:05:00.670
+Right now we have
+
+177
+00:05:00.670 --> 00:05:02.540
+a variable, delivery fees.
+
+178
+00:05:02.540 --> 00:05:03.820
+After that you're putting up what
+
+179
+00:05:03.820 --> 00:05:05.380
+should go inside this variable.
+
+180
+00:05:05.380 --> 00:05:06.460
+It can be zero or it
+
+181
+00:05:06.460 --> 00:05:07.500
+can be something.
+
+182
+00:05:07.500 --> 00:05:09.100
+The way how ternary operation work,
+
+183
+00:05:09.100 --> 00:05:10.620
+you simply say the delivery fees
+
+184
+00:05:10.620 --> 00:05:14.500
+is zero if the order amount that
+
+185
+00:05:14.500 --> 00:05:16.780
+you have is greater than 300.
+
+186
+00:05:17.580 --> 00:05:19.980
+And on the same line you can say else
+
+187
+00:05:19.980 --> 00:05:22.540
+the order fees will be 30 rupees.
+
+188
+00:05:22.540 --> 00:05:23.820
+Now this looks like a lot,
+
+189
+00:05:23.820 --> 00:05:25.580
+but notice here what's happening.
+
+190
+00:05:26.700 --> 00:05:29.100
+This whole thing is being calculated,
+
+191
+00:05:29.100 --> 00:05:30.860
+this whole thing is being evaluated.
+
+192
+00:05:31.380 --> 00:05:32.820
+And whatever is the result that
+
+193
+00:05:32.820 --> 00:05:34.220
+goes into the delivery fees
+
+194
+00:05:34.220 --> 00:05:36.420
+as a variable, the first
+
+195
+00:05:36.420 --> 00:05:38.580
+value that we are Putting up is 0.
+
+196
+00:05:38.580 --> 00:05:41.220
+If the order amount is above 300, if
+
+197
+00:05:41.220 --> 00:05:42.940
+this statement is correct, then this
+
+198
+00:05:42.940 --> 00:05:45.460
+value will go inside the variable.
+
+199
+00:05:45.460 --> 00:05:47.300
+If this statement is false,
+
+200
+00:05:47.300 --> 00:05:48.620
+then the else part, whatever
+
+201
+00:05:48.620 --> 00:05:50.020
+the value are putting up will
+
+202
+00:05:50.020 --> 00:05:51.860
+go inside the delivery fees.
+
+203
+00:05:51.860 --> 00:05:53.500
+Let's go ahead and try this and try
+
+204
+00:05:53.500 --> 00:05:54.740
+to print the delivery fees so
+
+205
+00:05:54.740 --> 00:05:56.100
+that we can see that in action.
+
+206
+00:05:56.960 --> 00:05:58.040
+So we'll just go ahead and print
+
+207
+00:05:58.040 --> 00:05:59.320
+the statement and we're going
+
+208
+00:05:59.320 --> 00:06:01.600
+to say delivery fees is.
+
+209
+00:06:02.720 --> 00:06:04.800
+And we'll use our classic
+
+210
+00:06:04.800 --> 00:06:08.640
+just like this, delivery fees.
+
+211
+00:06:09.600 --> 00:06:11.320
+All right, and why is
+
+212
+00:06:11.320 --> 00:06:12.280
+it having the issue?
+
+213
+00:06:12.280 --> 00:06:15.120
+I guess delivery fees is.
+
+214
+00:06:15.120 --> 00:06:17.640
+And I forgot to close this one should
+
+215
+00:06:17.640 --> 00:06:20.200
+be all happy now let's try to run
+
+216
+00:06:20.200 --> 00:06:21.920
+this program and see what happens.
+
+217
+00:06:22.730 --> 00:06:23.610
+So let's just say
+
+218
+00:06:23.610 --> 00:06:24.610
+enter the order amount.
+
+219
+00:06:24.610 --> 00:06:25.250
+Let's just say my
+
+220
+00:06:25.250 --> 00:06:26.570
+order amount is 100.
+
+221
+00:06:26.570 --> 00:06:27.290
+So in that case
+
+222
+00:06:27.290 --> 00:06:28.890
+the delivery fees is 30.
+
+223
+00:06:28.890 --> 00:06:31.050
+If I run it again and if my order
+
+224
+00:06:31.050 --> 00:06:32.970
+amount is, let's just say 400,
+
+225
+00:06:32.970 --> 00:06:34.490
+the delivery fees is zero.
+
+226
+00:06:34.490 --> 00:06:35.490
+So you can see both
+
+227
+00:06:35.490 --> 00:06:36.810
+the things in action.
+
+228
+00:06:36.810 --> 00:06:39.370
+We get the delivery fees as 0 and 30.
+
+229
+00:06:39.370 --> 00:06:41.330
+And this is a lot that we are writing
+
+230
+00:06:41.330 --> 00:06:42.730
+in just one line of code.
+
+231
+00:06:42.730 --> 00:06:43.890
+And that is why I say
+
+232
+00:06:43.890 --> 00:06:45.290
+Python looks simple.
+
+233
+00:06:45.290 --> 00:06:47.050
+It's just like reading English.
+
+234
+00:06:47.050 --> 00:06:49.090
+But sometimes the logic is little
+
+235
+00:06:49.090 --> 00:06:50.690
+bit interesting to Var out for.
+
+236
+00:06:50.690 --> 00:06:52.200
+So, so that is what I'm saying.
+
+237
+00:06:52.200 --> 00:06:53.200
+Go ahead and Var out
+
+238
+00:06:53.200 --> 00:06:53.720
+for these things.
+
+239
+00:06:53.720 --> 00:06:55.160
+And again we can only learn
+
+240
+00:06:55.160 --> 00:06:57.160
+about them as we write these kinds
+
+241
+00:06:57.160 --> 00:06:59.720
+of real world programs and try
+
+242
+00:06:59.720 --> 00:07:01.000
+to solve real world problems
+
+243
+00:07:01.000 --> 00:07:02.440
+as a software problems.
+
+244
+00:07:02.440 --> 00:07:03.640
+That is it for this video.
+
+245
+00:07:03.640 --> 00:07:05.200
+Make sure to review us and let's
+
+246
+00:07:05.200 --> 00:07:06.520
+catch up in the next video.

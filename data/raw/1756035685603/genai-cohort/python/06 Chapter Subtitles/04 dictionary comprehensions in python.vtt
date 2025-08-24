@@ -1,0 +1,797 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:02.400
+All right, so we have seen quite
+
+2
+00:00:02.400 --> 00:00:03.960
+a lot and I hope you are having fun
+
+3
+00:00:03.960 --> 00:00:05.440
+with the comprehensions.
+
+4
+00:00:05.440 --> 00:00:07.440
+And now what I want you to do is
+
+5
+00:00:08.320 --> 00:00:09.880
+let's go ahead and work with
+
+6
+00:00:09.880 --> 00:00:11.800
+the dictionary as a comprehension,
+
+7
+00:00:11.800 --> 00:00:13.120
+which is very interesting actually.
+
+8
+00:00:13.760 --> 00:00:14.920
+I don't have too much
+
+9
+00:00:14.920 --> 00:00:16.760
+of the tricks remaining with me
+
+10
+00:00:16.760 --> 00:00:17.600
+in the comprehension.
+
+11
+00:00:17.600 --> 00:00:18.320
+Just one more.
+
+12
+00:00:18.320 --> 00:00:19.560
+But it will help you to understand
+
+13
+00:00:19.560 --> 00:00:20.920
+dictionaries like quite
+
+14
+00:00:20.920 --> 00:00:22.640
+in detail and quite in depth.
+
+15
+00:00:22.640 --> 00:00:24.320
+So I have created a new file which
+
+16
+00:00:24.320 --> 00:00:27.200
+I've called it as dictcompre for py.
+
+17
+00:00:27.200 --> 00:00:28.810
+Very innovative name.
+
+18
+00:00:28.810 --> 00:00:30.090
+And let's call this one as.
+
+19
+00:00:30.090 --> 00:00:31.370
+Okay, so how does
+
+20
+00:00:31.370 --> 00:00:33.130
+the dictionary actually works?
+
+21
+00:00:33.130 --> 00:00:33.970
+So let's just go ahead
+
+22
+00:00:33.970 --> 00:00:35.050
+and copy this one.
+
+23
+00:00:35.610 --> 00:00:39.250
+So this is my dictionary
+
+24
+00:00:39.250 --> 00:00:40.650
+and I want to work with this.
+
+25
+00:00:40.650 --> 00:00:43.610
+And the thing with the dictionary is
+
+26
+00:00:43.610 --> 00:00:44.330
+that you can actually
+
+27
+00:00:44.330 --> 00:00:45.690
+go ahead and copy this.
+
+28
+00:00:45.690 --> 00:00:47.450
+The set also works with the curly
+
+29
+00:00:47.450 --> 00:00:48.890
+braces, and dictionary also
+
+30
+00:00:48.890 --> 00:00:50.010
+works with the curly braces.
+
+31
+00:00:50.010 --> 00:00:51.970
+The only difference is how you
+
+32
+00:00:51.970 --> 00:00:53.730
+store the value as a final
+
+33
+00:00:53.730 --> 00:00:56.220
+expression, if this expression is
+
+34
+00:00:56.220 --> 00:00:57.860
+actually a key value pair.
+
+35
+00:00:57.860 --> 00:01:00.780
+So if we have a key and then a value.
+
+36
+00:01:00.780 --> 00:01:02.140
+So if we are storing this as
+
+37
+00:01:02.140 --> 00:01:03.300
+an expression, this will
+
+38
+00:01:03.300 --> 00:01:05.140
+be treated as dictionary.
+
+39
+00:01:05.140 --> 00:01:08.060
+Otherwise this is regular one.
+
+40
+00:01:08.060 --> 00:01:09.270
+And I'll show you one.
+
+41
+00:01:09.270 --> 00:01:10.499
+Really nice and a neat
+
+42
+00:01:10.499 --> 00:01:11.660
+example for this one.
+
+43
+00:01:11.660 --> 00:01:12.780
+You'll love the example.
+
+44
+00:01:13.340 --> 00:01:15.500
+So let's just say we go back and we
+
+45
+00:01:15.500 --> 00:01:17.180
+have some of the tea prices.
+
+46
+00:01:17.180 --> 00:01:19.940
+So let's just say tea prices.
+
+47
+00:01:19.940 --> 00:01:21.460
+And we have all these prices
+
+48
+00:01:21.460 --> 00:01:23.900
+in inr, which is Indian rupees.
+
+49
+00:01:24.540 --> 00:01:25.820
+And I have a dictionary.
+
+50
+00:01:25.820 --> 00:01:27.340
+And for this dictionary, let's
+
+51
+00:01:27.340 --> 00:01:30.620
+just say we have masala chai,
+
+52
+00:01:30.620 --> 00:01:32.700
+which is right now 40 rupees.
+
+53
+00:01:32.700 --> 00:01:33.980
+It will be really pennies
+
+54
+00:01:33.980 --> 00:01:34.740
+in the dollars.
+
+55
+00:01:34.740 --> 00:01:36.700
+But we'll just do that.
+
+56
+00:01:36.700 --> 00:01:39.300
+We also have green, chai or
+
+57
+00:01:39.300 --> 00:01:41.260
+green T actually sounds better.
+
+58
+00:01:41.260 --> 00:01:43.180
+And then we have the green T,
+
+59
+00:01:43.180 --> 00:01:45.420
+which will be, let's just say 50.
+
+60
+00:01:46.220 --> 00:01:47.420
+And then we have one more.
+
+61
+00:01:47.420 --> 00:01:48.460
+We'll just have three.
+
+62
+00:01:48.460 --> 00:01:50.220
+You can add more if you wish to have.
+
+63
+00:01:50.910 --> 00:01:52.830
+I'll have lemon T.
+
+64
+00:01:52.830 --> 00:01:54.030
+Again, favorite one.
+
+65
+00:01:54.030 --> 00:01:55.950
+And this is bit expensive.
+
+66
+00:01:55.950 --> 00:01:57.230
+Let's just say 200.
+
+67
+00:01:57.230 --> 00:01:59.230
+All right, now here's the thing.
+
+68
+00:01:59.230 --> 00:02:00.470
+I want to convert all
+
+69
+00:02:00.470 --> 00:02:02.990
+of these prices into dollars.
+
+70
+00:02:02.990 --> 00:02:04.750
+So all the prices needs
+
+71
+00:02:04.750 --> 00:02:06.299
+to be divided by 80.
+
+72
+00:02:06.299 --> 00:02:07.150
+80 rupees.
+
+73
+00:02:07.150 --> 00:02:09.550
+It is general average right now.
+
+74
+00:02:09.550 --> 00:02:10.590
+How can I do this?
+
+75
+00:02:11.630 --> 00:02:13.630
+I have to create a fresh dictionary.
+
+76
+00:02:14.190 --> 00:02:15.750
+So comprehensions comes
+
+77
+00:02:15.750 --> 00:02:16.990
+really handy in this case.
+
+78
+00:02:16.990 --> 00:02:19.110
+And we'll directly write them just
+
+79
+00:02:19.110 --> 00:02:20.590
+like we have learned right now.
+
+80
+00:02:20.590 --> 00:02:23.170
+I'll just go ahead and say, but this
+
+81
+00:02:23.170 --> 00:02:26.130
+time this is in USD and the way how
+
+82
+00:02:26.130 --> 00:02:28.090
+it works again Same just like list.
+
+83
+00:02:28.090 --> 00:02:28.850
+We go like that.
+
+84
+00:02:28.850 --> 00:02:30.210
+And first of all we keep them as
+
+85
+00:02:30.210 --> 00:02:31.330
+underscore because I don't know
+
+86
+00:02:31.330 --> 00:02:32.810
+what to fill this up here.
+
+87
+00:02:32.810 --> 00:02:33.970
+I'll just go ahead and say
+
+88
+00:02:33.970 --> 00:02:35.850
+for and then I have to loop through.
+
+89
+00:02:35.850 --> 00:02:37.410
+So far we have been going through
+
+90
+00:02:37.410 --> 00:02:40.010
+with only, one item itself.
+
+91
+00:02:40.010 --> 00:02:41.330
+But now we want to worry
+
+92
+00:02:41.330 --> 00:02:43.050
+about key as well as value.
+
+93
+00:02:43.050 --> 00:02:45.170
+So I have what's come back as
+
+94
+00:02:45.170 --> 00:02:46.570
+a return value are two things.
+
+95
+00:02:46.570 --> 00:02:48.570
+I'll call them as tea and price.
+
+96
+00:02:49.180 --> 00:02:50.780
+This is just my regular loops,
+
+97
+00:02:50.780 --> 00:02:52.060
+nothing fancy in this.
+
+98
+00:02:52.060 --> 00:02:53.140
+And I have to say
+
+99
+00:02:53.140 --> 00:02:55.740
+in and then tea price is inr.
+
+100
+00:02:55.740 --> 00:02:57.220
+This is the looping part of it.
+
+101
+00:02:57.220 --> 00:02:57.940
+All right, let's get
+
+102
+00:02:57.940 --> 00:02:59.420
+more space for us.
+
+103
+00:02:59.420 --> 00:03:00.820
+And then what you want to do
+
+104
+00:03:00.820 --> 00:03:02.460
+in this, I want to go
+
+105
+00:03:02.460 --> 00:03:04.899
+ahead and take, the prices.
+
+106
+00:03:04.899 --> 00:03:07.500
+So for this I have to actually grab
+
+107
+00:03:07.500 --> 00:03:08.780
+all of this value.
+
+108
+00:03:08.780 --> 00:03:10.460
+So if I go ahead and say just the tea
+
+109
+00:03:10.460 --> 00:03:12.660
+prices inr it's not going to work.
+
+110
+00:03:12.660 --> 00:03:13.900
+I have to say either
+
+111
+00:03:13.900 --> 00:03:15.700
+dot keys or dot values.
+
+112
+00:03:15.700 --> 00:03:17.340
+Or if I want to grab both of them,
+
+113
+00:03:17.910 --> 00:03:18.990
+I have a method for that.
+
+114
+00:03:18.990 --> 00:03:20.070
+We studied that
+
+115
+00:03:20.070 --> 00:03:21.430
+that is known as items.
+
+116
+00:03:21.430 --> 00:03:22.270
+I have to run this.
+
+117
+00:03:22.270 --> 00:03:24.630
+So I have got now the whole thing.
+
+118
+00:03:24.630 --> 00:03:27.110
+So in each of the tea prize, I get
+
+119
+00:03:27.110 --> 00:03:28.950
+this one in the first iteration,
+
+120
+00:03:28.950 --> 00:03:30.310
+this one in the second one,
+
+121
+00:03:30.310 --> 00:03:31.830
+and this one in the third one.
+
+122
+00:03:32.390 --> 00:03:33.830
+All right, got it.
+
+123
+00:03:33.830 --> 00:03:35.150
+But what we're going to put
+
+124
+00:03:35.150 --> 00:03:36.470
+this here and it hasn't.
+
+125
+00:03:36.470 --> 00:03:37.870
+We haven't yet divided
+
+126
+00:03:37.870 --> 00:03:39.430
+it back with the price.
+
+127
+00:03:39.430 --> 00:03:41.350
+So how we're going to get it.
+
+128
+00:03:41.350 --> 00:03:42.150
+So this is where
+
+129
+00:03:42.150 --> 00:03:43.390
+the expression comes up.
+
+130
+00:03:43.390 --> 00:03:44.270
+Expression is something
+
+131
+00:03:44.270 --> 00:03:45.470
+that you want to return.
+
+132
+00:03:45.470 --> 00:03:46.070
+In this case, I want
+
+133
+00:03:46.070 --> 00:03:47.710
+to return tea as a price.
+
+134
+00:03:47.710 --> 00:03:49.470
+tea and a price here.
+
+135
+00:03:49.470 --> 00:03:50.870
+So the way how I'm going to store
+
+136
+00:03:50.870 --> 00:03:52.350
+this, I'll call this one as a tea
+
+137
+00:03:52.350 --> 00:03:54.670
+then colon and then the price here.
+
+138
+00:03:55.390 --> 00:03:56.750
+So this will be exactly.
+
+139
+00:03:56.750 --> 00:03:57.830
+We have done nothing.
+
+140
+00:03:57.830 --> 00:03:59.550
+We have just looped through it, got
+
+141
+00:03:59.550 --> 00:04:00.990
+the value and we're storing it.
+
+142
+00:04:00.990 --> 00:04:02.550
+But I can do something interesting.
+
+143
+00:04:02.550 --> 00:04:03.350
+I can just go ahead
+
+144
+00:04:03.350 --> 00:04:05.150
+and divide the price 80.
+
+145
+00:04:05.150 --> 00:04:06.910
+So before saving the price,
+
+146
+00:04:06.910 --> 00:04:08.270
+now this will be evaluated.
+
+147
+00:04:08.270 --> 00:04:09.550
+This is an expression which will
+
+148
+00:04:09.550 --> 00:04:11.110
+be evaluated and you will
+
+149
+00:04:11.110 --> 00:04:13.330
+get all the prices in dollars.
+
+150
+00:04:13.330 --> 00:04:14.890
+So told you comprehension are a way
+
+151
+00:04:14.890 --> 00:04:16.529
+of shrinking your code.
+
+152
+00:04:16.529 --> 00:04:18.649
+It makes logic everything.
+
+153
+00:04:18.649 --> 00:04:19.970
+You just have to start reading
+
+154
+00:04:19.970 --> 00:04:22.130
+from the for loop always and always.
+
+155
+00:04:22.130 --> 00:04:23.770
+And then whatever comes back,
+
+156
+00:04:23.770 --> 00:04:25.890
+this is always towards the end
+
+157
+00:04:25.890 --> 00:04:27.090
+the expression says something
+
+158
+00:04:27.090 --> 00:04:31.130
+like this, for all of my
+
+159
+00:04:31.130 --> 00:04:32.770
+items here in the tea prices
+
+160
+00:04:32.770 --> 00:04:34.170
+get me back tea and prices.
+
+161
+00:04:34.170 --> 00:04:35.730
+This is I'm sending back
+
+162
+00:04:35.730 --> 00:04:37.490
+and then I'll just divide it
+
+163
+00:04:37.490 --> 00:04:39.210
+by 80 super easy.
+
+164
+00:04:39.210 --> 00:04:40.370
+But really fun.
+
+165
+00:04:40.370 --> 00:04:41.890
+Told you it's really fun.
+
+166
+00:04:41.890 --> 00:04:42.210
+And.
+
+167
+00:04:42.210 --> 00:04:43.610
+And in the very last I'm going
+
+168
+00:04:43.610 --> 00:04:44.650
+to go ahead and print
+
+169
+00:04:44.650 --> 00:04:46.450
+the tea prices in the USD.
+
+170
+00:04:46.450 --> 00:04:48.610
+Let's go ahead and grab it like this
+
+171
+00:04:49.250 --> 00:04:54.210
+And I will love to run Python.
+
+172
+00:04:56.530 --> 00:04:57.170
+Python.
+
+173
+00:04:57.170 --> 00:04:59.330
+And this time we are running.03.
+
+174
+00:04:59.330 --> 00:05:00.370
+There we go.
+
+175
+00:05:00.370 --> 00:05:01.450
+So I told you it's
+
+176
+00:05:01.450 --> 00:05:02.410
+almost like pennies.
+
+177
+00:05:02.410 --> 00:05:04.090
+So 0.5 which makes sense.
+
+178
+00:05:04.090 --> 00:05:04.610
+80.
+
+179
+00:05:04.610 --> 00:05:07.330
+So this is 0.5 and then we have all
+
+180
+00:05:07.330 --> 00:05:09.730
+of this in this and surely
+
+181
+00:05:09.730 --> 00:05:11.370
+you can use your backticks.
+
+182
+00:05:11.370 --> 00:05:13.090
+You can use your formatted strings.
+
+183
+00:05:13.090 --> 00:05:14.970
+Not backticks, the formatted strings.
+
+184
+00:05:14.970 --> 00:05:16.090
+Whatever you wish to have.
+
+185
+00:05:16.090 --> 00:05:17.250
+You can just go ahead and work
+
+186
+00:05:17.250 --> 00:05:18.610
+with this super easy.
+
+187
+00:05:19.120 --> 00:05:20.850
+But I hope you are now
+
+188
+00:05:20.850 --> 00:05:22.770
+somewhat in there between that.
+
+189
+00:05:22.770 --> 00:05:24.170
+Okay, I'm getting it.
+
+190
+00:05:24.170 --> 00:05:25.290
+I'm started to loving it
+
+191
+00:05:25.290 --> 00:05:26.650
+but I still need more practice
+
+192
+00:05:26.650 --> 00:05:27.770
+and that is totally fine.
+
+193
+00:05:27.770 --> 00:05:29.010
+That is totally okay.
+
+194
+00:05:29.010 --> 00:05:29.810
+So this was it.
+
+195
+00:05:29.810 --> 00:05:31.050
+This was all about your
+
+196
+00:05:31.050 --> 00:05:32.770
+dictionary comprehensions.
+
+197
+00:05:32.770 --> 00:05:33.810
+Hope you enjoyed it.
+
+198
+00:05:33.810 --> 00:05:34.650
+Do rate us.
+
+199
+00:05:34.650 --> 00:05:36.050
+Let's catch up in the next video.

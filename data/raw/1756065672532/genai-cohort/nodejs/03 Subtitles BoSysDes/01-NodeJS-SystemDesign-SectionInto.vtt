@@ -1,0 +1,145 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:02.280
+All right, so hey there and welcome
+
+2
+00:00:02.280 --> 00:00:03.680
+to a very exciting
+
+3
+00:00:03.680 --> 00:00:05.920
+new section on system design.
+
+4
+00:00:05.920 --> 00:00:07.280
+So in this particular section
+
+5
+00:00:07.280 --> 00:00:08.560
+we are going to master
+
+6
+00:00:08.560 --> 00:00:10.480
+the fundamentals of system design.
+
+7
+00:00:10.480 --> 00:00:11.840
+We are going to see how
+
+8
+00:00:11.840 --> 00:00:14.080
+in real world these servers work.
+
+9
+00:00:14.080 --> 00:00:15.600
+What is a server?
+
+10
+00:00:15.600 --> 00:00:16.960
+What is your scaling?
+
+11
+00:00:16.960 --> 00:00:17.640
+What are different,
+
+12
+00:00:17.640 --> 00:00:19.040
+different scaling policies?
+
+13
+00:00:19.040 --> 00:00:20.360
+What is vertical scaling?
+
+14
+00:00:20.360 --> 00:00:21.760
+What is horizontal scaling?
+
+15
+00:00:21.760 --> 00:00:24.240
+How do systems work at a scale?
+
+16
+00:00:24.240 --> 00:00:25.600
+What are queue systems?
+
+17
+00:00:25.600 --> 00:00:27.680
+What is pubnub and how these
+
+18
+00:00:27.680 --> 00:00:29.160
+systems, how these all the
+
+19
+00:00:29.160 --> 00:00:31.240
+components of system design work
+
+20
+00:00:31.240 --> 00:00:33.500
+together to become a robust
+
+21
+00:00:33.500 --> 00:00:35.380
+system, how Your Netflix and
+
+22
+00:00:35.380 --> 00:00:37.420
+YouTube works at that much scale
+
+23
+00:00:37.420 --> 00:00:39.380
+and how even this platform where
+
+24
+00:00:39.380 --> 00:00:40.980
+you are watching this video is
+
+25
+00:00:40.980 --> 00:00:42.220
+getting delivered to you.
+
+26
+00:00:42.220 --> 00:00:43.740
+This particular section is really,
+
+27
+00:00:43.740 --> 00:00:45.220
+really, really important for all
+
+28
+00:00:45.220 --> 00:00:46.460
+the beginners because this is
+
+29
+00:00:46.460 --> 00:00:48.300
+where you actually get the gist of
+
+30
+00:00:48.300 --> 00:00:49.900
+all the system design components
+
+31
+00:00:49.900 --> 00:00:51.380
+and what is happening behind the
+
+32
+00:00:51.380 --> 00:00:52.140
+scenes.
+
+33
+00:00:52.140 --> 00:00:54.060
+So I welcome you to this very
+
+34
+00:00:54.060 --> 00:00:55.060
+interesting section
+
+35
+00:00:55.060 --> 00:00:56.940
+of system design and with that,
+
+36
+00:00:56.940 --> 00:00:58.466
+let's start with the section.

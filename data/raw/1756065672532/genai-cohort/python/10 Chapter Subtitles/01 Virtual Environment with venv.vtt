@@ -1,0 +1,2637 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:02.080
+Hey there everyone,
+
+2
+00:00:02.080 --> 00:00:04.000
+and welcome to the video.
+
+3
+00:00:04.560 --> 00:00:05.880
+In this video we are going
+
+4
+00:00:05.880 --> 00:00:07.000
+to learn how we can create
+
+5
+00:00:07.000 --> 00:00:08.920
+a virtual environment in Python.
+
+6
+00:00:08.920 --> 00:00:11.600
+And just want to heads up on that
+
+7
+00:00:11.600 --> 00:00:13.000
+that there are many ways of
+
+8
+00:00:13.000 --> 00:00:14.440
+creating virtual environment and
+
+9
+00:00:14.440 --> 00:00:15.919
+there are variety of tools
+
+10
+00:00:15.919 --> 00:00:17.360
+available to create virtual
+
+11
+00:00:17.360 --> 00:00:19.280
+environments and we're going to
+
+12
+00:00:19.280 --> 00:00:20.880
+see all of them, but we have to
+
+13
+00:00:20.880 --> 00:00:21.520
+start somewhere.
+
+14
+00:00:21.520 --> 00:00:22.240
+So we're going to start
+
+15
+00:00:22.240 --> 00:00:23.720
+with the most commonly used.
+
+16
+00:00:23.720 --> 00:00:26.440
+As of now I am moving
+
+17
+00:00:26.440 --> 00:00:27.400
+on to the new tool.
+
+18
+00:00:27.400 --> 00:00:28.680
+Actually, I'll be honest with
+
+19
+00:00:28.680 --> 00:00:31.230
+you, I now prefer to use UV
+
+20
+00:00:31.230 --> 00:00:32.900
+and as a virtual environment tool
+
+21
+00:00:32.900 --> 00:00:34.260
+I will definitely cover that
+
+22
+00:00:34.260 --> 00:00:36.100
+up eventually in the series.
+
+23
+00:00:36.100 --> 00:00:37.700
+But I would want you to
+
+24
+00:00:37.700 --> 00:00:39.300
+have an experience where
+
+25
+00:00:39.300 --> 00:00:41.140
+everybody is going right now.
+
+26
+00:00:41.140 --> 00:00:42.500
+So majority of people haven't
+
+27
+00:00:42.500 --> 00:00:43.900
+moved on to the uv that's
+
+28
+00:00:43.900 --> 00:00:45.220
+latest and cutting edge.
+
+29
+00:00:45.220 --> 00:00:47.030
+Majority of the people use
+
+30
+00:00:47.030 --> 00:00:50.180
+pip, VENV as a tool.
+
+31
+00:00:50.180 --> 00:00:51.740
+I will walk you through how we can
+
+32
+00:00:51.740 --> 00:00:53.260
+work with that and you will also
+
+33
+00:00:53.260 --> 00:00:55.060
+learn how you can install other
+
+34
+00:00:55.060 --> 00:00:57.140
+dependencies as well with this.
+
+35
+00:00:57.140 --> 00:00:58.830
+So, so first of all let's go on
+
+36
+00:00:58.830 --> 00:01:00.430
+to the screen and try to understand
+
+37
+00:01:00.430 --> 00:01:02.590
+that why anybody would want
+
+38
+00:01:02.590 --> 00:01:03.790
+to have a virtual environment.
+
+39
+00:01:04.510 --> 00:01:05.470
+So there is a simple
+
+40
+00:01:05.470 --> 00:01:06.830
+explanation for this.
+
+41
+00:01:06.830 --> 00:01:08.630
+Let's just say this is your
+
+42
+00:01:08.630 --> 00:01:10.450
+machine, a pretty big one.
+
+43
+00:01:10.450 --> 00:01:12.910
+This is your machine and I happen
+
+44
+00:01:12.910 --> 00:01:14.590
+to call everything as a machine.
+
+45
+00:01:14.590 --> 00:01:15.230
+You can feel free
+
+46
+00:01:15.230 --> 00:01:16.310
+to call it as computer.
+
+47
+00:01:16.310 --> 00:01:17.270
+This is my old habit
+
+48
+00:01:17.270 --> 00:01:18.830
+of calling computers as machine.
+
+49
+00:01:18.830 --> 00:01:20.030
+I love to call them
+
+50
+00:01:20.030 --> 00:01:21.870
+and I have a habit of this.
+
+51
+00:01:21.870 --> 00:01:23.310
+So in this machine, let's
+
+52
+00:01:23.310 --> 00:01:24.110
+just say you go ahead
+
+53
+00:01:24.110 --> 00:01:25.790
+and install a Python version.
+
+54
+00:01:25.790 --> 00:01:27.230
+So we go ahead and say, hey,
+
+55
+00:01:27.230 --> 00:01:28.710
+now I have installed Python
+
+56
+00:01:28.710 --> 00:01:30.650
+in my machine, this is my Python.
+
+57
+00:01:30.650 --> 00:01:32.170
+And along with the Python,
+
+58
+00:01:32.170 --> 00:01:33.130
+let's just say you are working
+
+59
+00:01:33.130 --> 00:01:34.610
+on something interesting which
+
+60
+00:01:34.610 --> 00:01:36.090
+includes database as well.
+
+61
+00:01:36.090 --> 00:01:37.730
+So we'll just go ahead and say we are
+
+62
+00:01:37.730 --> 00:01:41.050
+working on postgres as a database.
+
+63
+00:01:41.050 --> 00:01:42.610
+All right, no problem at all.
+
+64
+00:01:42.610 --> 00:01:44.290
+We can go ahead and install all of
+
+65
+00:01:44.290 --> 00:01:46.330
+them and keep on working with them.
+
+66
+00:01:46.330 --> 00:01:47.610
+But there is a problem.
+
+67
+00:01:47.610 --> 00:01:49.610
+There is a new project and which
+
+68
+00:01:49.610 --> 00:01:52.010
+uses a different version of Python.
+
+69
+00:01:52.010 --> 00:01:52.970
+So let's just say we are going
+
+70
+00:01:52.970 --> 00:01:54.610
+to tilt this a little so that we
+
+71
+00:01:54.610 --> 00:01:55.970
+can just reference this as
+
+72
+00:01:55.970 --> 00:01:57.290
+a different version of Python.
+
+73
+00:01:57.880 --> 00:01:58.720
+How you're going to work
+
+74
+00:01:58.720 --> 00:02:00.440
+on a different version of Python.
+
+75
+00:02:00.440 --> 00:02:02.400
+All right, for this version
+
+76
+00:02:02.400 --> 00:02:04.360
+to work on, you have to uninstall
+
+77
+00:02:04.360 --> 00:02:05.600
+this version and go ahead
+
+78
+00:02:05.600 --> 00:02:07.080
+and install this version.
+
+79
+00:02:07.640 --> 00:02:09.479
+That's little bit difficult.
+
+80
+00:02:10.039 --> 00:02:12.280
+Now apart from this, that's just one
+
+81
+00:02:12.280 --> 00:02:14.200
+tip of the iceberg of the problem.
+
+82
+00:02:14.200 --> 00:02:16.200
+Let's just say you want to again
+
+83
+00:02:16.200 --> 00:02:17.720
+go back onto the latest version.
+
+84
+00:02:17.720 --> 00:02:19.520
+So you will uninstall this and you
+
+85
+00:02:19.520 --> 00:02:21.560
+will install the latest version.
+
+86
+00:02:21.560 --> 00:02:23.250
+This is the problem, this.
+
+87
+00:02:23.250 --> 00:02:24.570
+But there could be other tools
+
+88
+00:02:24.570 --> 00:02:27.330
+as well that you want to use.
+
+89
+00:02:27.330 --> 00:02:28.850
+For example, let's just say this
+
+90
+00:02:28.850 --> 00:02:30.650
+is another utility that you have
+
+91
+00:02:30.650 --> 00:02:32.770
+installed to work on the Python.
+
+92
+00:02:32.770 --> 00:02:33.890
+This could be a utility
+
+93
+00:02:33.890 --> 00:02:36.370
+to talk to CSV files or PDF
+
+94
+00:02:36.370 --> 00:02:37.650
+files or anything else.
+
+95
+00:02:37.650 --> 00:02:39.210
+If you go ahead and want to use
+
+96
+00:02:39.210 --> 00:02:41.050
+it, you can install that using
+
+97
+00:02:41.050 --> 00:02:42.810
+Pip, which is a utility that comes
+
+98
+00:02:42.810 --> 00:02:44.690
+up by default with the Python.
+
+99
+00:02:44.690 --> 00:02:45.930
+So you can go ahead and say,
+
+100
+00:02:45.930 --> 00:02:46.970
+hey, I want to install this
+
+101
+00:02:46.970 --> 00:02:48.370
+utility on my machine.
+
+102
+00:02:48.370 --> 00:02:49.450
+That's great, you can go
+
+103
+00:02:49.450 --> 00:02:50.830
+ahead and install this.
+
+104
+00:02:50.830 --> 00:02:52.070
+Similarly, there are utilities
+
+105
+00:02:52.070 --> 00:02:54.070
+like Flask, there are utilities
+
+106
+00:02:54.070 --> 00:02:56.350
+like Numpy for Data Science.
+
+107
+00:02:56.350 --> 00:02:58.030
+Now, all of them you're installing,
+
+108
+00:02:58.030 --> 00:03:00.710
+and if any one of them gets a change
+
+109
+00:03:00.710 --> 00:03:01.950
+in the version, you have
+
+110
+00:03:01.950 --> 00:03:04.630
+to actually uninstall this and have
+
+111
+00:03:04.630 --> 00:03:06.230
+to grab another version of it.
+
+112
+00:03:06.230 --> 00:03:08.190
+So this needs to go out and this new
+
+113
+00:03:08.190 --> 00:03:09.630
+version needs to come into this.
+
+114
+00:03:10.270 --> 00:03:12.750
+But maybe your other files were
+
+115
+00:03:12.750 --> 00:03:14.830
+dependent on this previous version.
+
+116
+00:03:14.830 --> 00:03:16.310
+I hope you are getting the sense
+
+117
+00:03:16.310 --> 00:03:18.920
+of why this is getting a nightmare
+
+118
+00:03:18.920 --> 00:03:20.840
+as we go further into this.
+
+119
+00:03:20.840 --> 00:03:22.720
+So what we do or what we try to
+
+120
+00:03:22.720 --> 00:03:24.840
+do is instead of doing installation
+
+121
+00:03:24.840 --> 00:03:26.840
+on the whole of my machine,
+
+122
+00:03:26.840 --> 00:03:28.600
+I really don't like to install
+
+123
+00:03:28.600 --> 00:03:30.480
+these days, even any database.
+
+124
+00:03:30.480 --> 00:03:32.040
+I use the docker for this
+
+125
+00:03:32.040 --> 00:03:34.200
+docker for another day.
+
+126
+00:03:34.200 --> 00:03:36.240
+But I don't prefer to install any
+
+127
+00:03:36.240 --> 00:03:38.680
+Python utilities on my whole system.
+
+128
+00:03:38.680 --> 00:03:41.680
+What I prefer to do is that,
+
+129
+00:03:41.680 --> 00:03:44.160
+hey, give me inside my computer a,
+
+130
+00:03:44.160 --> 00:03:44.920
+virtual environment.
+
+131
+00:03:45.720 --> 00:03:47.240
+This is a temporary environment
+
+132
+00:03:47.240 --> 00:03:48.280
+which you can activate
+
+133
+00:03:48.280 --> 00:03:50.200
+and deactivate based on when you are
+
+134
+00:03:50.200 --> 00:03:51.880
+using it or not using it.
+
+135
+00:03:51.880 --> 00:03:54.160
+And inside this environment, I prefer
+
+136
+00:03:54.160 --> 00:03:55.880
+to install all of my utilities,
+
+137
+00:03:55.880 --> 00:03:57.560
+so I can just go ahead and keep on
+
+138
+00:03:57.560 --> 00:03:59.880
+adding my utilities as I need them.
+
+139
+00:03:59.880 --> 00:04:01.559
+Now, this utility and whatever
+
+140
+00:04:01.559 --> 00:04:03.400
+I'm installing on my main machine
+
+141
+00:04:03.400 --> 00:04:04.920
+have no connection at all.
+
+142
+00:04:04.920 --> 00:04:06.520
+This is a sandboxed environment.
+
+143
+00:04:07.080 --> 00:04:09.240
+This environment is not going
+
+144
+00:04:09.240 --> 00:04:10.680
+to talk to your real environment
+
+145
+00:04:10.680 --> 00:04:12.430
+or real Python installed.
+
+146
+00:04:12.430 --> 00:04:14.020
+You, you have to get a copy
+
+147
+00:04:14.020 --> 00:04:15.620
+of Python into this.
+
+148
+00:04:15.620 --> 00:04:18.500
+Luckily for us, the tools that we are
+
+149
+00:04:18.500 --> 00:04:20.260
+going to use like pip, they actually
+
+150
+00:04:20.260 --> 00:04:21.740
+go ahead and install a version
+
+151
+00:04:21.740 --> 00:04:23.460
+of Python automatically for you.
+
+152
+00:04:23.460 --> 00:04:24.980
+And on top of that, you can go
+
+153
+00:04:24.980 --> 00:04:27.220
+ahead and install any
+
+154
+00:04:27.220 --> 00:04:29.860
+further utilities, like Numpies,
+
+155
+00:04:29.860 --> 00:04:32.060
+Flask, Pandas, whatever you
+
+156
+00:04:32.060 --> 00:04:33.620
+wish, any Python utility,
+
+157
+00:04:33.620 --> 00:04:35.300
+you can go ahead and install that.
+
+158
+00:04:35.300 --> 00:04:36.460
+If you want something to be
+
+159
+00:04:36.460 --> 00:04:37.580
+on your main machine, you can
+
+160
+00:04:37.580 --> 00:04:39.260
+still use Python and PIP and install
+
+161
+00:04:39.260 --> 00:04:40.060
+that on main machine,
+
+162
+00:04:40.060 --> 00:04:41.460
+but that will not be available
+
+163
+00:04:42.320 --> 00:04:43.600
+inside your virtual environment.
+
+164
+00:04:43.600 --> 00:04:45.280
+You have to go ahead and say, hey,
+
+165
+00:04:45.280 --> 00:04:46.560
+this is my Virtual Environment.
+
+166
+00:04:46.560 --> 00:04:48.440
+This is activated and I want
+
+167
+00:04:48.440 --> 00:04:49.760
+to just work within this.
+
+168
+00:04:49.760 --> 00:04:50.640
+Once I'm done working
+
+169
+00:04:50.640 --> 00:04:51.440
+I can go outside.
+
+170
+00:04:52.080 --> 00:04:53.320
+Now apart from this, there
+
+171
+00:04:53.320 --> 00:04:54.760
+are also a couple of ways that
+
+172
+00:04:54.760 --> 00:04:56.320
+you create a special file.
+
+173
+00:04:56.320 --> 00:04:57.879
+And the name of this file,
+
+174
+00:04:57.879 --> 00:04:59.480
+at least for the initial one, is
+
+175
+00:04:59.480 --> 00:05:01.680
+called as requirement Txt.
+
+176
+00:05:03.040 --> 00:05:04.520
+This file has nothing, it
+
+177
+00:05:04.520 --> 00:05:05.600
+just has all the things
+
+178
+00:05:05.600 --> 00:05:06.600
+that you're installing.
+
+179
+00:05:06.600 --> 00:05:08.200
+So as soon as you install something
+
+180
+00:05:08.200 --> 00:05:09.560
+you go ahead and mark this, that
+
+181
+00:05:09.560 --> 00:05:10.960
+hey, I want to move this
+
+182
+00:05:11.580 --> 00:05:12.820
+information that I have installed
+
+183
+00:05:12.820 --> 00:05:15.100
+this file in my requirement txt so
+
+184
+00:05:15.100 --> 00:05:17.300
+that if anybody else wants to work
+
+185
+00:05:17.300 --> 00:05:19.660
+on it they can actually consult
+
+186
+00:05:19.660 --> 00:05:22.020
+the requirement Txt and can
+
+187
+00:05:22.020 --> 00:05:23.500
+install my file.
+
+188
+00:05:23.500 --> 00:05:24.780
+I hope you are getting it.
+
+189
+00:05:24.780 --> 00:05:25.740
+It's not that hard.
+
+190
+00:05:25.740 --> 00:05:26.900
+It's just a text file
+
+191
+00:05:26.900 --> 00:05:28.580
+in which the information for all
+
+192
+00:05:28.580 --> 00:05:30.140
+of this file is available.
+
+193
+00:05:30.140 --> 00:05:30.420
+All.
+
+194
+00:05:30.420 --> 00:05:31.260
+Right, good enough.
+
+195
+00:05:32.300 --> 00:05:34.860
+So one of the most common way
+
+196
+00:05:34.860 --> 00:05:36.340
+of installing these virtual
+
+197
+00:05:36.340 --> 00:05:37.420
+environment or creating this
+
+198
+00:05:37.420 --> 00:05:40.100
+sandbox is known as Venv.
+
+199
+00:05:41.290 --> 00:05:42.250
+Virtual Environment.
+
+200
+00:05:42.250 --> 00:05:43.370
+Yeah, that's the name.
+
+201
+00:05:43.370 --> 00:05:44.930
+But this is not the only one.
+
+202
+00:05:44.930 --> 00:05:46.410
+There are a couple of others
+
+203
+00:05:46.410 --> 00:05:48.490
+available as well and out
+
+204
+00:05:48.490 --> 00:05:50.930
+of that one of my favorite one is uv
+
+205
+00:05:50.930 --> 00:05:51.770
+and we're going to cover
+
+206
+00:05:51.770 --> 00:05:53.530
+the installation of UV as well.
+
+207
+00:05:53.530 --> 00:05:54.570
+And we'll cover both
+
+208
+00:05:54.570 --> 00:05:55.890
+Virtual Environment and uv.
+
+209
+00:05:55.890 --> 00:05:57.780
+There are others as well, like
+
+210
+00:05:57.780 --> 00:05:59.770
+there is one known as Poetry.
+
+211
+00:06:00.660 --> 00:06:01.690
+We will not cover that
+
+212
+00:06:01.690 --> 00:06:02.890
+but again there could be like
+
+213
+00:06:02.890 --> 00:06:03.890
+five others as well.
+
+214
+00:06:03.890 --> 00:06:05.540
+I don't know much about them.
+
+215
+00:06:05.540 --> 00:06:06.660
+The most common one which are
+
+216
+00:06:06.660 --> 00:06:08.060
+used in the industry are
+
+217
+00:06:08.060 --> 00:06:10.660
+Virtual Environment and uv.
+
+218
+00:06:10.660 --> 00:06:11.580
+These are the ones that
+
+219
+00:06:11.580 --> 00:06:12.660
+we are going to cover.
+
+220
+00:06:12.660 --> 00:06:13.900
+Now let's go ahead and see
+
+221
+00:06:13.900 --> 00:06:15.380
+a practical example of how
+
+222
+00:06:15.380 --> 00:06:17.180
+this actually can be done.
+
+223
+00:06:17.180 --> 00:06:18.340
+This is not really
+
+224
+00:06:18.340 --> 00:06:19.940
+that hard of a program to work
+
+225
+00:06:19.940 --> 00:06:21.380
+on with super easy.
+
+226
+00:06:21.380 --> 00:06:23.860
+Just go ahead and create a new folder
+
+227
+00:06:23.860 --> 00:06:25.180
+and we're going to create a virtual
+
+228
+00:06:25.180 --> 00:06:26.900
+environment within this folder.
+
+229
+00:06:26.900 --> 00:06:27.980
+So I'll go ahead and create
+
+230
+00:06:27.980 --> 00:06:29.180
+a new folder and I'm going
+
+231
+00:06:29.180 --> 00:06:32.450
+to call this one as Test Venv.
+
+232
+00:06:32.450 --> 00:06:34.340
+I'll actually remove this
+
+233
+00:06:34.340 --> 00:06:36.770
+folder after creating this video
+
+234
+00:06:37.420 --> 00:06:38.210
+because there's no point
+
+235
+00:06:38.210 --> 00:06:39.890
+of providing this folder.
+
+236
+00:06:39.890 --> 00:06:41.450
+It's just a configuration file.
+
+237
+00:06:41.450 --> 00:06:43.410
+You can always regenerate that.
+
+238
+00:06:43.410 --> 00:06:45.090
+Now inside this folder I would
+
+239
+00:06:45.090 --> 00:06:46.930
+like to right click and we'll click
+
+240
+00:06:46.930 --> 00:06:48.610
+on Open Integrated Terminal.
+
+241
+00:06:50.050 --> 00:06:51.810
+Now this is our Python
+
+242
+00:06:51.810 --> 00:06:53.170
+environment and terminal.
+
+243
+00:06:53.170 --> 00:06:55.610
+Let's go ahead and see that I do
+
+244
+00:06:55.610 --> 00:06:56.970
+have a Python and if I go ahead
+
+245
+00:06:56.970 --> 00:06:59.170
+and say V, I don't remember it's a
+
+246
+00:06:59.170 --> 00:07:01.140
+dash V or dash dash version I have
+
+247
+00:07:01.140 --> 00:07:03.620
+to always look for what's the
+
+248
+00:07:03.620 --> 00:07:04.300
+version?
+
+249
+00:07:04.300 --> 00:07:05.020
+Come on.
+
+250
+00:07:05.020 --> 00:07:06.380
+Oh My bad, it's actually
+
+251
+00:07:06.380 --> 00:07:07.660
+Python 3 in my case.
+
+252
+00:07:08.220 --> 00:07:10.460
+So Python 3 and I guess
+
+253
+00:07:10.460 --> 00:07:11.900
+then I can say V.
+
+254
+00:07:13.940 --> 00:07:15.660
+Again it's little difficult
+
+255
+00:07:15.660 --> 00:07:16.700
+to find it out.
+
+256
+00:07:16.700 --> 00:07:17.660
+I usually don't check
+
+257
+00:07:17.660 --> 00:07:18.500
+the versions like this.
+
+258
+00:07:18.500 --> 00:07:20.260
+But anyways, so we'll just kill
+
+259
+00:07:20.260 --> 00:07:22.020
+this and I will walk you through
+
+260
+00:07:22.020 --> 00:07:23.140
+that how we can actually
+
+261
+00:07:23.140 --> 00:07:24.460
+generate a virtual environment.
+
+262
+00:07:25.180 --> 00:07:27.100
+So now notice here I am inside this.
+
+263
+00:07:27.100 --> 00:07:29.140
+So if I check the pwd present working
+
+264
+00:07:29.140 --> 00:07:30.860
+directory, I'm in the test vnv.
+
+265
+00:07:30.860 --> 00:07:32.220
+That's the most important part.
+
+266
+00:07:32.850 --> 00:07:34.370
+Once I'm here I have to use
+
+267
+00:07:34.930 --> 00:07:37.410
+Python 3 in my case and in your
+
+268
+00:07:37.410 --> 00:07:38.570
+case it's just Python because
+
+269
+00:07:38.570 --> 00:07:40.370
+you are on Windows and then I
+
+270
+00:07:40.370 --> 00:07:41.290
+have to provide an option of
+
+271
+00:07:41.290 --> 00:07:43.370
+dash that I want to use a module
+
+272
+00:07:43.370 --> 00:07:44.130
+with Python.
+
+273
+00:07:44.130 --> 00:07:47.770
+The module name is venv and I want
+
+274
+00:07:47.770 --> 00:07:49.170
+to create a virtual environment.
+
+275
+00:07:49.170 --> 00:07:50.210
+Now virtual environment
+
+276
+00:07:50.210 --> 00:07:52.010
+will like to keep some of the files
+
+277
+00:07:52.010 --> 00:07:53.770
+and Python installations somewhere
+
+278
+00:07:53.770 --> 00:07:55.250
+in your directory.
+
+279
+00:07:55.250 --> 00:07:57.290
+So that can be kept in any directory.
+
+280
+00:07:57.290 --> 00:07:58.850
+Some people like to call it as dot
+
+281
+00:08:00.170 --> 00:08:01.890
+venv Some people like
+
+282
+00:08:01.890 --> 00:08:03.570
+to call it as directly venv.
+
+283
+00:08:03.570 --> 00:08:04.770
+Whatever you do, there is no
+
+284
+00:08:04.770 --> 00:08:06.170
+right or wrong in this one.
+
+285
+00:08:06.170 --> 00:08:08.610
+As soon as I hit enter you will
+
+286
+00:08:08.610 --> 00:08:10.730
+notice that this will take a
+
+287
+00:08:10.730 --> 00:08:12.250
+second, but if I open this up
+
+288
+00:08:12.250 --> 00:08:15.770
+folder now I do have this venv
+
+289
+00:08:15.770 --> 00:08:17.970
+and I have bin include lib all
+
+290
+00:08:17.970 --> 00:08:18.730
+of this.
+
+291
+00:08:18.730 --> 00:08:20.650
+This whole thing actually is
+
+292
+00:08:20.650 --> 00:08:21.730
+saying that hey, you have
+
+293
+00:08:21.730 --> 00:08:24.130
+a Python 3.1.3.2 version, we can
+
+294
+00:08:24.130 --> 00:08:25.290
+change the versions as well.
+
+295
+00:08:25.880 --> 00:08:27.880
+Apart from this we have this bin
+
+296
+00:08:27.880 --> 00:08:29.840
+and inside the bin you
+
+297
+00:08:29.840 --> 00:08:30.880
+can see that we have this
+
+298
+00:08:30.880 --> 00:08:32.600
+activate script as well.
+
+299
+00:08:32.600 --> 00:08:34.320
+We have the pip and a whole
+
+300
+00:08:34.320 --> 00:08:35.559
+bunch of other things.
+
+301
+00:08:35.559 --> 00:08:36.480
+Now the next thing that
+
+302
+00:08:36.480 --> 00:08:38.840
+you have to do is go inside
+
+303
+00:08:38.840 --> 00:08:40.840
+this venv and activate
+
+304
+00:08:40.840 --> 00:08:41.880
+your virtual environment.
+
+305
+00:08:41.880 --> 00:08:43.799
+Right now it's not activated.
+
+306
+00:08:43.799 --> 00:08:45.000
+So first I'll walk you through how
+
+307
+00:08:45.000 --> 00:08:46.480
+you can do that in Windows and then
+
+308
+00:08:46.480 --> 00:08:48.000
+I will walk you through that how
+
+309
+00:08:48.000 --> 00:08:50.120
+we can do that on Mac and Linux.
+
+310
+00:08:50.120 --> 00:08:52.120
+So Windows user, your file
+
+311
+00:08:52.120 --> 00:08:57.150
+environment is venv v Env.
+
+312
+00:08:57.150 --> 00:08:58.990
+Go inside that, then you can just
+
+313
+00:08:58.990 --> 00:09:00.670
+press the forward slash, that's
+
+314
+00:09:00.670 --> 00:09:02.430
+a Windows thing and you will have
+
+315
+00:09:02.430 --> 00:09:03.870
+something known as script and this
+
+316
+00:09:03.870 --> 00:09:05.430
+always remains exactly same.
+
+317
+00:09:05.430 --> 00:09:07.030
+So inside the scripts you
+
+318
+00:09:07.030 --> 00:09:07.950
+will further can have
+
+319
+00:09:07.950 --> 00:09:10.190
+a forward slash and activate.
+
+320
+00:09:10.190 --> 00:09:11.150
+As long as you just
+
+321
+00:09:11.150 --> 00:09:12.750
+press this, that is it.
+
+322
+00:09:12.750 --> 00:09:13.910
+You will activate your
+
+323
+00:09:13.910 --> 00:09:14.990
+virtual environment.
+
+324
+00:09:14.990 --> 00:09:16.910
+If any point you want to deactivate
+
+325
+00:09:16.910 --> 00:09:18.950
+it, just write deactivate, hit Enter
+
+326
+00:09:18.950 --> 00:09:21.620
+and that's it for if you're on Linux
+
+327
+00:09:21.620 --> 00:09:23.020
+or a Mac, then you have to write
+
+328
+00:09:23.020 --> 00:09:24.540
+source in front of it and then we
+
+329
+00:09:24.540 --> 00:09:26.060
+will go again, exactly in the same
+
+330
+00:09:26.060 --> 00:09:27.060
+directory.
+
+331
+00:09:27.060 --> 00:09:29.220
+For in our case it's venv.
+
+332
+00:09:30.180 --> 00:09:31.220
+Venv.
+
+333
+00:09:32.260 --> 00:09:33.420
+And then we know that
+
+334
+00:09:33.420 --> 00:09:34.380
+it's inside the bin.
+
+335
+00:09:34.380 --> 00:09:36.620
+So let's go inside Bin and then
+
+336
+00:09:36.620 --> 00:09:39.020
+again the same file activate as
+
+337
+00:09:39.020 --> 00:09:40.820
+soon as I hit enter for this.
+
+338
+00:09:40.820 --> 00:09:42.020
+Oops, my bad.
+
+339
+00:09:42.740 --> 00:09:44.980
+The file name is actually venv.
+
+340
+00:09:44.980 --> 00:09:45.860
+I missed a V.
+
+341
+00:09:46.880 --> 00:09:47.760
+And there we go.
+
+342
+00:09:47.760 --> 00:09:50.040
+Notice here it says Venv
+
+343
+00:09:50.040 --> 00:09:51.280
+at the very start of it.
+
+344
+00:09:51.280 --> 00:09:52.240
+This means the virtual
+
+345
+00:09:52.240 --> 00:09:53.560
+environment is active.
+
+346
+00:09:53.560 --> 00:09:55.240
+Now I can go ahead and run
+
+347
+00:09:55.240 --> 00:09:56.600
+all these commands which we
+
+348
+00:09:56.600 --> 00:09:58.240
+are going to see in a second.
+
+349
+00:09:58.880 --> 00:10:01.280
+And now let's go ahead and see that.
+
+350
+00:10:01.280 --> 00:10:03.200
+Can I go ahead and deactivate it?
+
+351
+00:10:03.200 --> 00:10:04.720
+Yes, the command is same,
+
+352
+00:10:04.720 --> 00:10:07.520
+deactivate and hit enter.
+
+353
+00:10:07.520 --> 00:10:07.960
+That's it.
+
+354
+00:10:07.960 --> 00:10:09.600
+Your virtual environment is gone.
+
+355
+00:10:09.600 --> 00:10:11.200
+So what just happened?
+
+356
+00:10:11.200 --> 00:10:12.840
+You just asked your terminal that,
+
+357
+00:10:12.840 --> 00:10:15.200
+hey, I want to be inside this box or
+
+358
+00:10:15.200 --> 00:10:16.720
+I want to be in the whole machine.
+
+359
+00:10:16.720 --> 00:10:18.140
+So this whole machine is your
+
+360
+00:10:18.140 --> 00:10:19.060
+basic Python where you have
+
+361
+00:10:19.060 --> 00:10:20.420
+installed, but we have a one copy
+
+362
+00:10:20.420 --> 00:10:21.900
+of Python installed in our
+
+363
+00:10:21.900 --> 00:10:23.500
+virtual environment as well.
+
+364
+00:10:23.500 --> 00:10:25.100
+So we are into this Venv.
+
+365
+00:10:25.980 --> 00:10:27.740
+Let's go ahead and try this again.
+
+366
+00:10:27.740 --> 00:10:30.220
+Source Venv Bin Activate.
+
+367
+00:10:30.220 --> 00:10:31.140
+So if you're calling it as
+
+368
+00:10:31.140 --> 00:10:32.660
+vnv, go inside that folder.
+
+369
+00:10:32.660 --> 00:10:33.740
+If you're calling it as
+
+370
+00:10:33.740 --> 00:10:35.660
+vnv, go inside that folder.
+
+371
+00:10:35.660 --> 00:10:37.340
+Windows, exactly same,
+
+372
+00:10:37.340 --> 00:10:39.340
+just the path is forward slashed.
+
+373
+00:10:39.340 --> 00:10:42.100
+All right, now sometimes what will
+
+374
+00:10:42.100 --> 00:10:44.820
+happen that your VS code might not
+
+375
+00:10:44.820 --> 00:10:46.940
+be able to detect the whole thing
+
+376
+00:10:46.940 --> 00:10:48.700
+that hey, we haven't seen that.
+
+377
+00:10:48.700 --> 00:10:49.740
+Where is your virtual environment?
+
+378
+00:10:50.440 --> 00:10:51.840
+In that case you can just go ahead
+
+379
+00:10:51.840 --> 00:10:53.760
+and say pwd as a present working
+
+380
+00:10:53.760 --> 00:10:55.960
+directory, copy this whole thing
+
+381
+00:10:56.520 --> 00:10:58.480
+along with this whole thing.
+
+382
+00:10:58.480 --> 00:10:59.200
+Because this is where
+
+383
+00:10:59.200 --> 00:11:00.480
+your Activate file is.
+
+384
+00:11:00.480 --> 00:11:01.440
+And at least you have
+
+385
+00:11:01.440 --> 00:11:03.080
+to walk till the bin.
+
+386
+00:11:03.080 --> 00:11:05.160
+And then what you can do is
+
+387
+00:11:05.160 --> 00:11:06.200
+let me just go ahead
+
+388
+00:11:06.200 --> 00:11:07.480
+and run the command again.
+
+389
+00:11:07.480 --> 00:11:08.520
+Let's just say I have
+
+390
+00:11:08.520 --> 00:11:09.640
+copied this whole thing.
+
+391
+00:11:09.640 --> 00:11:10.520
+Copy that.
+
+392
+00:11:10.520 --> 00:11:12.400
+And then press on your VS
+
+393
+00:11:12.400 --> 00:11:13.760
+code command shift P.
+
+394
+00:11:13.760 --> 00:11:15.080
+If you're on the Mac or Control
+
+395
+00:11:15.080 --> 00:11:18.180
+Shift, push on Windows and this will
+
+396
+00:11:18.180 --> 00:11:19.940
+open up this whole terminal thing.
+
+397
+00:11:19.940 --> 00:11:22.500
+And then write Select Interpreter.
+
+398
+00:11:22.500 --> 00:11:23.820
+This is the first thing that will
+
+399
+00:11:23.820 --> 00:11:25.620
+come to you, the select interpreter.
+
+400
+00:11:25.620 --> 00:11:28.220
+Click on this and then you
+
+401
+00:11:28.220 --> 00:11:29.260
+can actually go ahead and create
+
+402
+00:11:29.260 --> 00:11:29.940
+a virtual environment
+
+403
+00:11:29.940 --> 00:11:31.180
+from here as well, which I
+
+404
+00:11:31.180 --> 00:11:32.300
+usually don't recommend.
+
+405
+00:11:32.300 --> 00:11:34.180
+And then you have to enter the path
+
+406
+00:11:34.180 --> 00:11:35.740
+you can select from the recommended
+
+407
+00:11:35.740 --> 00:11:38.260
+one which will select a few for you.
+
+408
+00:11:38.260 --> 00:11:39.860
+Like there's one in the user
+
+409
+00:11:39.860 --> 00:11:41.260
+Bin, there's one Anaconda
+
+410
+00:11:41.260 --> 00:11:42.540
+installation as well.
+
+411
+00:11:42.540 --> 00:11:44.140
+But if you click on Enter the path
+
+412
+00:11:44.140 --> 00:11:45.540
+now you can just enter the path.
+
+413
+00:11:45.540 --> 00:11:48.060
+So Whatever we have copied using pwd,
+
+414
+00:11:48.060 --> 00:11:50.100
+just place that and then we
+
+415
+00:11:50.100 --> 00:11:51.740
+know that inside this we have
+
+416
+00:11:52.860 --> 00:11:55.740
+venv and we have a slash bin.
+
+417
+00:11:55.740 --> 00:11:57.380
+This is where my activate script is.
+
+418
+00:11:57.380 --> 00:11:58.860
+So you can just give that path.
+
+419
+00:11:58.860 --> 00:12:00.100
+In my case it has already
+
+420
+00:12:00.100 --> 00:12:02.460
+activated, so I'm fine with that.
+
+421
+00:12:02.460 --> 00:12:04.180
+But this is also another way of
+
+422
+00:12:04.180 --> 00:12:05.580
+activating your virtual environment.
+
+423
+00:12:06.220 --> 00:12:07.700
+Sometimes when we do that, you will
+
+424
+00:12:07.700 --> 00:12:09.780
+notice that with the uv, it
+
+425
+00:12:09.780 --> 00:12:11.460
+sometimes is not able to recognize
+
+426
+00:12:11.460 --> 00:12:12.700
+this virtual environment because
+
+427
+00:12:12.700 --> 00:12:14.940
+the flow of UV is kind of fresh.
+
+428
+00:12:14.940 --> 00:12:16.340
+It's not that much known
+
+429
+00:12:16.340 --> 00:12:18.500
+by the interpreters and VS code.
+
+430
+00:12:18.500 --> 00:12:19.700
+So it happens.
+
+431
+00:12:19.700 --> 00:12:21.060
+All right, let's go back.
+
+432
+00:12:21.060 --> 00:12:22.340
+And this is the basic
+
+433
+00:12:22.340 --> 00:12:23.220
+of virtual environment.
+
+434
+00:12:23.220 --> 00:12:24.860
+Now the interesting part is what can
+
+435
+00:12:24.860 --> 00:12:26.660
+I do with this virtual environment?
+
+436
+00:12:26.660 --> 00:12:28.100
+You can do a lot of stuff.
+
+437
+00:12:28.100 --> 00:12:29.980
+First and most common stuff is
+
+438
+00:12:29.980 --> 00:12:31.340
+now first of all, I don't have
+
+439
+00:12:31.340 --> 00:12:33.700
+to say Python 3 now because we
+
+440
+00:12:33.700 --> 00:12:34.820
+are in this virtual environment
+
+441
+00:12:34.820 --> 00:12:36.380
+and it's exactly same for you
+
+442
+00:12:36.380 --> 00:12:37.340
+and me whether you are on
+
+443
+00:12:37.340 --> 00:12:39.060
+Windows, I'm, on Mac, doesn't
+
+444
+00:12:39.060 --> 00:12:40.740
+really matter for all of us it's
+
+445
+00:12:40.740 --> 00:12:41.660
+just Python now.
+
+446
+00:12:42.220 --> 00:12:43.260
+And another utility
+
+447
+00:12:43.260 --> 00:12:44.780
+that we have is pip.
+
+448
+00:12:44.780 --> 00:12:46.340
+So if you just write, hit PIP
+
+449
+00:12:46.340 --> 00:12:48.460
+and enter, you are going
+
+450
+00:12:48.460 --> 00:12:50.780
+to notice that we have the PIP
+
+451
+00:12:50.780 --> 00:12:51.780
+installed and this is how
+
+452
+00:12:51.780 --> 00:12:53.260
+we can run this command.
+
+453
+00:12:53.260 --> 00:12:54.259
+Let's go ahead and run
+
+454
+00:12:54.259 --> 00:12:55.260
+the PIP command.
+
+455
+00:12:55.260 --> 00:12:57.380
+So I will say that hey pip, I want
+
+456
+00:12:57.380 --> 00:13:00.580
+to install the PIP, which is already
+
+457
+00:13:00.580 --> 00:13:01.980
+installed, but I want to upgrade it.
+
+458
+00:13:01.980 --> 00:13:03.300
+So I can just go ahead and provide
+
+459
+00:13:03.300 --> 00:13:06.430
+a flag of dash dash so it will get
+
+460
+00:13:06.430 --> 00:13:08.550
+me a latest version of the pip.
+
+461
+00:13:08.550 --> 00:13:09.910
+And you will notice it says
+
+462
+00:13:09.910 --> 00:13:10.990
+you have installed Python
+
+463
+00:13:10.990 --> 00:13:12.390
+package global environment.
+
+464
+00:13:12.390 --> 00:13:14.470
+You may have that and conflicts.
+
+465
+00:13:14.470 --> 00:13:15.270
+Would you like to create
+
+466
+00:13:15.270 --> 00:13:15.870
+Virtual environment?
+
+467
+00:13:15.870 --> 00:13:17.230
+No, I am already on Virtual
+
+468
+00:13:17.230 --> 00:13:17.870
+environment, so please
+
+469
+00:13:17.870 --> 00:13:19.510
+ignore this message.
+
+470
+00:13:19.510 --> 00:13:20.750
+Now we have the latest version
+
+471
+00:13:20.750 --> 00:13:21.870
+of pip, being installed.
+
+472
+00:13:21.870 --> 00:13:23.670
+I can install dependencies with it.
+
+473
+00:13:23.670 --> 00:13:26.150
+I can go ahead and say pip, install
+
+474
+00:13:26.150 --> 00:13:28.390
+and whatever I want to install.
+
+475
+00:13:28.390 --> 00:13:29.510
+That is nice.
+
+476
+00:13:29.510 --> 00:13:30.790
+Let's just say there is a package
+
+477
+00:13:30.790 --> 00:13:32.150
+known as Request which
+
+478
+00:13:32.150 --> 00:13:34.450
+helps you to make web request.
+
+479
+00:13:34.450 --> 00:13:36.290
+I can go ahead and install this.
+
+480
+00:13:36.290 --> 00:13:37.330
+That is it.
+
+481
+00:13:37.330 --> 00:13:38.530
+It will go ahead,
+
+482
+00:13:38.530 --> 00:13:39.850
+take the dependencies, sub
+
+483
+00:13:39.850 --> 00:13:41.250
+dependencies, everything.
+
+484
+00:13:41.250 --> 00:13:41.930
+There is another
+
+485
+00:13:41.930 --> 00:13:43.930
+package known as Flask.
+
+486
+00:13:43.930 --> 00:13:45.450
+So I can go ahead and say I want to
+
+487
+00:13:45.450 --> 00:13:48.610
+install Flask or Django or Fast API.
+
+488
+00:13:48.610 --> 00:13:50.410
+There are so many of them, I can go
+
+489
+00:13:50.410 --> 00:13:51.850
+ahead and enter this and this will
+
+490
+00:13:51.850 --> 00:13:53.410
+install this package as well.
+
+491
+00:13:53.410 --> 00:13:55.050
+Now most important part is I'm
+
+492
+00:13:55.050 --> 00:13:56.170
+installing these packages
+
+493
+00:13:56.170 --> 00:13:57.570
+in the virtual environment,
+
+494
+00:13:57.570 --> 00:13:58.770
+not in the main environment.
+
+495
+00:13:59.500 --> 00:14:01.620
+So if I go outside of this and I say
+
+496
+00:14:01.620 --> 00:14:03.660
+that hey, I want to use request or
+
+497
+00:14:03.660 --> 00:14:05.260
+Flask, they are not available to me.
+
+498
+00:14:05.260 --> 00:14:06.300
+They're available within
+
+499
+00:14:06.300 --> 00:14:07.100
+this virtual environment.
+
+500
+00:14:07.820 --> 00:14:09.700
+And sometimes people don't ship
+
+501
+00:14:09.700 --> 00:14:13.140
+this venv they simply ship a file
+
+502
+00:14:13.140 --> 00:14:14.300
+which we just studied that
+
+503
+00:14:14.300 --> 00:14:16.420
+requirement txt that if you want
+
+504
+00:14:16.420 --> 00:14:17.700
+to know what all things are
+
+505
+00:14:17.700 --> 00:14:18.740
+installed in my virtual
+
+506
+00:14:18.740 --> 00:14:20.420
+environment, I will give you a
+
+507
+00:14:20.420 --> 00:14:23.060
+file and take consultancy with
+
+508
+00:14:23.060 --> 00:14:24.580
+this file and install all the
+
+509
+00:14:24.580 --> 00:14:25.820
+things which are mentioned there.
+
+510
+00:14:26.350 --> 00:14:27.630
+How do we generate this file?
+
+511
+00:14:28.510 --> 00:14:29.990
+PIP can actually generate
+
+512
+00:14:29.990 --> 00:14:31.110
+that file very easily.
+
+513
+00:14:31.110 --> 00:14:32.150
+The command that we want
+
+514
+00:14:32.150 --> 00:14:33.630
+to use is PIP Freeze.
+
+515
+00:14:33.630 --> 00:14:34.990
+If you enter the PIP freeze
+
+516
+00:14:34.990 --> 00:14:35.990
+command you will notice that
+
+517
+00:14:35.990 --> 00:14:37.670
+these are all the dependencies
+
+518
+00:14:37.670 --> 00:14:38.990
+which we have installed.
+
+519
+00:14:38.990 --> 00:14:40.270
+And you might be wondering,
+
+520
+00:14:40.270 --> 00:14:41.590
+hey, we didn't install this
+
+521
+00:14:41.590 --> 00:14:43.230
+much, we only installed Flask.
+
+522
+00:14:43.230 --> 00:14:44.510
+All right, that is there.
+
+523
+00:14:44.510 --> 00:14:45.990
+We also install request.
+
+524
+00:14:45.990 --> 00:14:47.710
+But what are the other things?
+
+525
+00:14:47.710 --> 00:14:49.110
+Now when you install Flask
+
+526
+00:14:49.110 --> 00:14:50.150
+or request, they are not
+
+527
+00:14:50.150 --> 00:14:51.350
+the alone that comes up.
+
+528
+00:14:51.350 --> 00:14:52.710
+Sometimes they are sub dependent
+
+529
+00:14:52.710 --> 00:14:54.960
+on other modules of Python.
+
+530
+00:14:54.960 --> 00:14:56.360
+They also need to be installed.
+
+531
+00:14:56.360 --> 00:14:57.560
+In this case that's exactly
+
+532
+00:14:57.560 --> 00:14:58.960
+what PIP has done for you.
+
+533
+00:14:58.960 --> 00:15:00.840
+It has gone ahead and installed
+
+534
+00:15:00.840 --> 00:15:02.240
+all these dependencies or
+
+535
+00:15:02.240 --> 00:15:03.680
+sub dependencies for you.
+
+536
+00:15:03.680 --> 00:15:05.320
+And in order to work all of this we
+
+537
+00:15:05.320 --> 00:15:07.680
+need to actually grab all of this.
+
+538
+00:15:07.680 --> 00:15:08.800
+Now here's a command.
+
+539
+00:15:08.800 --> 00:15:10.280
+Once we know that PIP freeze
+
+540
+00:15:10.280 --> 00:15:12.160
+command exists, we can redirect it
+
+541
+00:15:12.160 --> 00:15:13.240
+into any file.
+
+542
+00:15:13.240 --> 00:15:15.360
+And this is a Linux based utility.
+
+543
+00:15:15.360 --> 00:15:16.480
+What we are going here is
+
+544
+00:15:16.480 --> 00:15:17.800
+a Linux based utility which
+
+545
+00:15:17.800 --> 00:15:19.460
+comes in Python as well.
+
+546
+00:15:19.460 --> 00:15:19.980
+So again, if you are
+
+547
+00:15:19.980 --> 00:15:20.940
+in Windows it will work.
+
+548
+00:15:20.940 --> 00:15:21.900
+If you are in a Mac or
+
+549
+00:15:21.900 --> 00:15:22.740
+Linux it will work.
+
+550
+00:15:22.740 --> 00:15:24.420
+But remember this whole thing,
+
+551
+00:15:24.420 --> 00:15:25.740
+a lot of people think that this
+
+552
+00:15:25.740 --> 00:15:27.020
+is a Python specific thing.
+
+553
+00:15:27.020 --> 00:15:27.580
+It is not.
+
+554
+00:15:27.580 --> 00:15:28.660
+It is a Linux.
+
+555
+00:15:28.660 --> 00:15:30.660
+We are just redirecting the output
+
+556
+00:15:30.660 --> 00:15:32.340
+of this command in a file.
+
+557
+00:15:32.340 --> 00:15:33.860
+That is all we are doing.
+
+558
+00:15:33.860 --> 00:15:35.300
+I still wonder that so many
+
+559
+00:15:35.300 --> 00:15:37.020
+people who are so much experienced
+
+560
+00:15:37.020 --> 00:15:38.180
+in Python don't know this
+
+561
+00:15:38.740 --> 00:15:41.340
+requirements txt and this doesn't
+
+562
+00:15:41.340 --> 00:15:42.900
+need to be requirement txt.
+
+563
+00:15:42.900 --> 00:15:44.540
+You can call it as dependencies
+
+564
+00:15:44.540 --> 00:15:46.420
+txt or install txt.
+
+565
+00:15:46.420 --> 00:15:47.740
+Whatever you wish to call, you
+
+566
+00:15:47.740 --> 00:15:49.210
+can just go ahead and call this.
+
+567
+00:15:49.210 --> 00:15:51.010
+This is just a kind of a philosophy
+
+568
+00:15:51.010 --> 00:15:52.170
+that people use that hey, let's
+
+569
+00:15:52.170 --> 00:15:54.010
+call this as requirement txt.
+
+570
+00:15:54.010 --> 00:15:55.490
+If I hit it enter what
+
+571
+00:15:55.490 --> 00:15:56.210
+you will notice.
+
+572
+00:15:56.210 --> 00:15:59.610
+Now inside this file we have this
+
+573
+00:15:59.610 --> 00:16:01.530
+requirement txt and all
+
+574
+00:16:01.530 --> 00:16:03.410
+of the files are available to me.
+
+575
+00:16:03.410 --> 00:16:05.490
+If I install anything I have to go
+
+576
+00:16:05.490 --> 00:16:07.450
+ahead and repeat this process again.
+
+577
+00:16:07.450 --> 00:16:09.370
+Super simple, super easy.
+
+578
+00:16:09.370 --> 00:16:10.970
+Now I can go ahead and install
+
+579
+00:16:10.970 --> 00:16:12.370
+from this and you can
+
+580
+00:16:12.370 --> 00:16:13.370
+just go ahead and say hey, I
+
+581
+00:16:13.370 --> 00:16:14.210
+want to install all this.
+
+582
+00:16:14.210 --> 00:16:16.100
+Or you can install them one by one
+
+583
+00:16:16.100 --> 00:16:16.940
+along with the version
+
+584
+00:16:16.940 --> 00:16:18.410
+and everything we will see this,
+
+585
+00:16:18.410 --> 00:16:19.940
+some of the stuff as well.
+
+586
+00:16:19.940 --> 00:16:20.900
+But this is all.
+
+587
+00:16:20.900 --> 00:16:22.860
+Now I can go back and say that,
+
+588
+00:16:22.860 --> 00:16:24.500
+hey, I want to deactivate it.
+
+589
+00:16:24.500 --> 00:16:26.980
+So go ahead and say deactivate
+
+590
+00:16:27.780 --> 00:16:29.300
+and that is all.
+
+591
+00:16:29.300 --> 00:16:30.900
+Now you are outside of this.
+
+592
+00:16:30.900 --> 00:16:33.630
+Notice the venv also is gone.
+
+593
+00:16:33.630 --> 00:16:34.460
+But again, that's not
+
+594
+00:16:34.460 --> 00:16:35.820
+a true check of this.
+
+595
+00:16:35.820 --> 00:16:36.620
+Always check that.
+
+596
+00:16:36.620 --> 00:16:37.980
+Hey, whether the Python version
+
+597
+00:16:37.980 --> 00:16:39.340
+that we are installing is different
+
+598
+00:16:39.340 --> 00:16:41.180
+or not, or just kill this.
+
+599
+00:16:41.180 --> 00:16:42.660
+And by the way, one more interesting
+
+600
+00:16:42.660 --> 00:16:44.170
+thing I want to walk you through.
+
+601
+00:16:44.170 --> 00:16:45.730
+If I go ahead and activate this
+
+602
+00:16:45.730 --> 00:16:48.810
+command again, source activate.
+
+603
+00:16:48.810 --> 00:16:50.290
+And if you're thinking that,
+
+604
+00:16:50.290 --> 00:16:51.290
+hey, I'll just go ahead
+
+605
+00:16:51.290 --> 00:16:53.610
+and kill this terminal and I will
+
+606
+00:16:53.610 --> 00:16:54.970
+start another terminal.
+
+607
+00:16:54.970 --> 00:16:57.170
+Notice here, this terminal which
+
+608
+00:16:57.170 --> 00:16:58.850
+you're going for, this doesn't have
+
+609
+00:16:58.850 --> 00:16:59.969
+this virtual environment because
+
+610
+00:16:59.969 --> 00:17:01.850
+you're opening the folder terminal
+
+611
+00:17:01.850 --> 00:17:02.810
+in the root of this.
+
+612
+00:17:02.810 --> 00:17:03.810
+But we have the virtual
+
+613
+00:17:03.810 --> 00:17:05.849
+environment in the test vnv.
+
+614
+00:17:05.849 --> 00:17:06.970
+Now let's go ahead and open
+
+615
+00:17:06.970 --> 00:17:09.810
+an integrated terminal here and you
+
+616
+00:17:09.810 --> 00:17:11.490
+will notice your terminal is gone.
+
+617
+00:17:11.490 --> 00:17:12.650
+Sometimes it goes away,
+
+618
+00:17:12.650 --> 00:17:14.589
+sometimes it doesn't go away.
+
+619
+00:17:14.589 --> 00:17:15.589
+So make sure you're aware
+
+620
+00:17:15.589 --> 00:17:16.550
+of whether the virtual
+
+621
+00:17:16.550 --> 00:17:18.069
+environment is activate or not.
+
+622
+00:17:18.069 --> 00:17:19.470
+Always pay attention to this.
+
+623
+00:17:19.470 --> 00:17:20.670
+And I can run this.
+
+624
+00:17:21.470 --> 00:17:22.270
+And there we go.
+
+625
+00:17:22.270 --> 00:17:23.950
+Our virtual environment is activated.
+
+626
+00:17:23.950 --> 00:17:25.470
+Now I can go ahead and install
+
+627
+00:17:25.470 --> 00:17:26.750
+whatever I wish to do.
+
+628
+00:17:26.750 --> 00:17:28.670
+Let's go ahead and say deactivate.
+
+629
+00:17:28.670 --> 00:17:29.790
+And it's gone now.
+
+630
+00:17:29.790 --> 00:17:31.190
+Now sometimes, again, remember,
+
+631
+00:17:31.190 --> 00:17:32.910
+sometimes it goes away by
+
+632
+00:17:32.910 --> 00:17:33.830
+killing the terminal,
+
+633
+00:17:33.830 --> 00:17:35.150
+sometimes it doesn't go away.
+
+634
+00:17:35.710 --> 00:17:36.590
+And that's it.
+
+635
+00:17:36.590 --> 00:17:37.150
+Told you.
+
+636
+00:17:37.150 --> 00:17:38.910
+That is the reason why I said I won't
+
+637
+00:17:38.910 --> 00:17:40.460
+be giving you this file because
+
+638
+00:17:40.460 --> 00:17:42.060
+there is nothing inside this file.
+
+639
+00:17:42.060 --> 00:17:43.980
+It is absolutely the basic.
+
+640
+00:17:43.980 --> 00:17:45.540
+I'll, go ahead and delete
+
+641
+00:17:45.540 --> 00:17:46.780
+this because we don't
+
+642
+00:17:46.780 --> 00:17:48.140
+need it technically.
+
+643
+00:17:48.140 --> 00:17:49.740
+I hope you got the idea
+
+644
+00:17:49.740 --> 00:17:51.380
+of why the virtual environments
+
+645
+00:17:51.380 --> 00:17:52.700
+are important and what
+
+646
+00:17:52.700 --> 00:17:54.060
+they do and how it works.
+
+647
+00:17:54.060 --> 00:17:56.219
+Now UV also does exactly same.
+
+648
+00:17:56.219 --> 00:17:57.980
+We have this sandbox environment.
+
+649
+00:17:57.980 --> 00:18:00.460
+We can install the utilities, but uv,
+
+650
+00:18:00.460 --> 00:18:02.020
+instead of using the requirement
+
+651
+00:18:02.020 --> 00:18:04.220
+txt, it uses a different file name.
+
+652
+00:18:04.220 --> 00:18:06.220
+Rest of the process is exactly same.
+
+653
+00:18:07.000 --> 00:18:08.280
+All right, hope you have enjoyed
+
+654
+00:18:08.280 --> 00:18:09.560
+this video and this was very
+
+655
+00:18:09.560 --> 00:18:10.920
+beneficial for you to understand
+
+656
+00:18:10.920 --> 00:18:12.440
+the virtual environments.
+
+657
+00:18:12.440 --> 00:18:13.640
+That is it for this video.
+
+658
+00:18:13.640 --> 00:18:14.640
+Let's go ahead and catch
+
+659
+00:18:14.640 --> 00:18:15.560
+up in the next one.

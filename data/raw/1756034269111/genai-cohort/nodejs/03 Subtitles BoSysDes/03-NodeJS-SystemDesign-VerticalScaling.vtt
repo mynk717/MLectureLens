@@ -1,0 +1,849 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.480
+All right, so welcome to the second
+
+2
+00:00:01.480 --> 00:00:03.640
+video of system design section.
+
+3
+00:00:03.640 --> 00:00:05.320
+And in this particular video, let's
+
+4
+00:00:05.320 --> 00:00:06.760
+understand how are we going
+
+5
+00:00:06.760 --> 00:00:09.280
+to solve this typical problem of
+
+6
+00:00:09.280 --> 00:00:11.080
+not able to handle so many requests.
+
+7
+00:00:11.080 --> 00:00:13.120
+Okay, so what is the fundamental
+
+8
+00:00:13.120 --> 00:00:14.080
+reason that you are not
+
+9
+00:00:14.080 --> 00:00:15.240
+able to handle the request?
+
+10
+00:00:15.240 --> 00:00:16.279
+Because you have a lot
+
+11
+00:00:16.279 --> 00:00:17.520
+of users, right?
+
+12
+00:00:17.520 --> 00:00:20.040
+The problem is that your machine
+
+13
+00:00:20.040 --> 00:00:22.320
+is just a 2 CPU and 4GB RAM.
+
+14
+00:00:22.320 --> 00:00:24.440
+And it was able to maybe handle
+
+15
+00:00:24.440 --> 00:00:25.840
+80 requests, it was able
+
+16
+00:00:25.840 --> 00:00:27.610
+to handle 90 requests, but.
+
+17
+00:00:27.610 --> 00:00:28.930
+But it eventually crashed
+
+18
+00:00:28.930 --> 00:00:30.170
+on 100 request.
+
+19
+00:00:30.730 --> 00:00:32.570
+So Piyush, if this.
+
+20
+00:00:32.570 --> 00:00:33.810
+Let's, let's do some
+
+21
+00:00:33.810 --> 00:00:34.730
+of the calculations, right?
+
+22
+00:00:34.730 --> 00:00:36.010
+Some, estimates.
+
+23
+00:00:36.730 --> 00:00:38.290
+This machine configuration, that
+
+24
+00:00:38.290 --> 00:00:40.330
+is a 2 CPU, 4GB RAM machine
+
+25
+00:00:40.330 --> 00:00:42.250
+can handle these many requests.
+
+26
+00:00:42.250 --> 00:00:44.410
+What if I spend some more money,
+
+27
+00:00:44.410 --> 00:00:47.050
+okay, And I double my configuration?
+
+28
+00:00:47.050 --> 00:00:49.450
+This time I can use a 4 CPU.
+
+29
+00:00:49.450 --> 00:00:51.530
+Okay, let's say a 4 CPU machine
+
+30
+00:00:51.530 --> 00:00:54.250
+and I can use an 8GB of RAM.
+
+31
+00:00:54.250 --> 00:00:55.530
+So what I'm basically doing is
+
+32
+00:00:55.530 --> 00:00:57.430
+I'm doubling on my resources.
+
+33
+00:00:57.430 --> 00:00:58.630
+I am spending some money
+
+34
+00:00:58.630 --> 00:01:00.190
+on the infrastructure, I
+
+35
+00:01:00.190 --> 00:01:01.750
+am upgrading my system.
+
+36
+00:01:01.750 --> 00:01:04.069
+And now can I say that my system can
+
+37
+00:01:04.069 --> 00:01:07.070
+actually handle somewhat, okay,
+
+38
+00:01:07.070 --> 00:01:10.870
+somewhat around, 170 to 200 request.
+
+39
+00:01:10.870 --> 00:01:11.510
+Can I say that?
+
+40
+00:01:11.510 --> 00:01:13.030
+Of course I can say that, right?
+
+41
+00:01:13.030 --> 00:01:15.430
+So that means when my users
+
+42
+00:01:15.430 --> 00:01:17.510
+increased and my server got
+
+43
+00:01:17.510 --> 00:01:19.350
+crashed, what should I do?
+
+44
+00:01:19.350 --> 00:01:20.670
+I should spend some money because
+
+45
+00:01:20.670 --> 00:01:21.470
+of course the business
+
+46
+00:01:21.470 --> 00:01:22.630
+is also increasing, right?
+
+47
+00:01:22.630 --> 00:01:24.230
+So now what I will do is I will
+
+48
+00:01:24.230 --> 00:01:26.990
+do 8gb of RAM and 4gb of CPU.
+
+49
+00:01:26.990 --> 00:01:28.470
+So this solves my problem.
+
+50
+00:01:28.470 --> 00:01:30.930
+Now, hundred users or maybe 110
+
+51
+00:01:30.930 --> 00:01:32.770
+users is not a problem for me
+
+52
+00:01:32.770 --> 00:01:34.850
+because now my system is tuned.
+
+53
+00:01:35.490 --> 00:01:37.090
+Now my system is capable
+
+54
+00:01:37.090 --> 00:01:39.650
+of handling 170 to 200 request.
+
+55
+00:01:39.650 --> 00:01:40.810
+So that means this was
+
+56
+00:01:40.810 --> 00:01:42.290
+a good solution to have
+
+57
+00:01:42.290 --> 00:01:43.250
+spend some more money.
+
+58
+00:01:43.250 --> 00:01:43.850
+And that's it.
+
+59
+00:01:43.850 --> 00:01:45.730
+You have your server up and running,
+
+60
+00:01:45.730 --> 00:01:46.770
+but now still,
+
+61
+00:01:46.770 --> 00:01:48.050
+still, still, still, still.
+
+62
+00:01:48.050 --> 00:01:49.290
+The problem is that if you
+
+63
+00:01:49.290 --> 00:01:50.890
+have 200 users or more than
+
+64
+00:01:50.890 --> 00:01:52.690
+200 users, like 250 users, your
+
+65
+00:01:52.690 --> 00:01:54.210
+server is going to crash.
+
+66
+00:01:54.210 --> 00:01:55.570
+Now what will you do?
+
+67
+00:01:55.570 --> 00:01:57.530
+Okay, you will say when I reach to
+
+68
+00:01:57.530 --> 00:01:59.730
+that threshold, that is 200 users,
+
+69
+00:02:00.250 --> 00:02:01.530
+I'll again spend some money.
+
+70
+00:02:01.530 --> 00:02:02.810
+And this time what I'm going
+
+71
+00:02:02.810 --> 00:02:04.370
+to do is I'm going to do 8 CPU
+
+72
+00:02:04.370 --> 00:02:06.250
+and I'm going to do 16GB RAM.
+
+73
+00:02:06.250 --> 00:02:08.210
+And this time I can maybe
+
+74
+00:02:08.210 --> 00:02:11.770
+handle 400 to, 500 users.
+
+75
+00:02:11.770 --> 00:02:13.370
+This is your new benchmark, right?
+
+76
+00:02:13.370 --> 00:02:14.690
+So now you have finally
+
+77
+00:02:14.690 --> 00:02:15.849
+spent some more money.
+
+78
+00:02:15.849 --> 00:02:17.130
+So now your machine is
+
+79
+00:02:17.130 --> 00:02:18.290
+even more upgraded.
+
+80
+00:02:18.290 --> 00:02:18.850
+You are, you know,
+
+81
+00:02:18.850 --> 00:02:19.810
+upgrading your machine.
+
+82
+00:02:19.810 --> 00:02:21.370
+You're spending some more money
+
+83
+00:02:21.370 --> 00:02:22.890
+on the machine, and now
+
+84
+00:02:22.890 --> 00:02:25.290
+you can handle 500 users.
+
+85
+00:02:25.290 --> 00:02:26.690
+So initially you were just able
+
+86
+00:02:26.690 --> 00:02:28.850
+to handle 80 to 90 users and now you
+
+87
+00:02:28.850 --> 00:02:30.995
+are able to handle 400 to 500 users.
+
+88
+00:02:30.995 --> 00:02:32.250
+And it's an upgrade, right?
+
+89
+00:02:32.250 --> 00:02:34.450
+It's a scale, right?
+
+90
+00:02:34.450 --> 00:02:36.210
+So this is one way
+
+91
+00:02:36.210 --> 00:02:37.890
+of scaling your servers.
+
+92
+00:02:37.890 --> 00:02:39.130
+And this technique is
+
+93
+00:02:39.130 --> 00:02:41.330
+known as vertical scaling.
+
+94
+00:02:41.330 --> 00:02:43.090
+So this is known as vertical scaling.
+
+95
+00:02:43.090 --> 00:02:44.130
+So what you basically do
+
+96
+00:02:44.130 --> 00:02:46.370
+in the vertical scaling is you add
+
+97
+00:02:47.250 --> 00:02:50.770
+more power slash resources
+
+98
+00:02:52.290 --> 00:02:55.170
+to the system or to the server.
+
+99
+00:02:55.170 --> 00:02:56.570
+So what is a vertical scaling?
+
+100
+00:02:56.570 --> 00:02:58.050
+That what you do, you basically spend
+
+101
+00:02:58.050 --> 00:02:59.370
+more money on the infrastructure,
+
+102
+00:02:59.370 --> 00:03:00.690
+you add more power
+
+103
+00:03:00.690 --> 00:03:02.570
+and resources to, to the server.
+
+104
+00:03:02.570 --> 00:03:04.530
+So this is your vertical scaling.
+
+105
+00:03:04.530 --> 00:03:06.530
+Now the pro is very good, right?
+
+106
+00:03:06.530 --> 00:03:07.450
+The pro there.
+
+107
+00:03:07.450 --> 00:03:08.450
+What is the pro of this
+
+108
+00:03:08.450 --> 00:03:09.490
+particular scaling stuff?
+
+109
+00:03:09.490 --> 00:03:11.330
+That you have more power, okay,
+
+110
+00:03:11.330 --> 00:03:14.610
+you have more power on server.
+
+111
+00:03:14.610 --> 00:03:16.290
+But there is a drawback,
+
+112
+00:03:16.290 --> 00:03:17.370
+There is a trade off.
+
+113
+00:03:17.370 --> 00:03:19.010
+There is a con of this particular
+
+114
+00:03:19.010 --> 00:03:20.730
+mechanism of this vertical scaling.
+
+115
+00:03:20.730 --> 00:03:23.410
+Number one, tell me one thing.
+
+116
+00:03:23.410 --> 00:03:25.570
+Maybe you have a flash sale, maybe
+
+117
+00:03:25.570 --> 00:03:27.610
+you have a sale on near Diwali
+
+118
+00:03:27.610 --> 00:03:29.090
+where you have a lot of users, you
+
+119
+00:03:29.090 --> 00:03:30.370
+are expecting a lot of users.
+
+120
+00:03:30.370 --> 00:03:32.620
+What will happen is you are
+
+121
+00:03:32.620 --> 00:03:34.900
+expecting some 3000 users, okay?
+
+122
+00:03:34.900 --> 00:03:37.540
+So for 3000 users you need more
+
+123
+00:03:37.540 --> 00:03:38.620
+CPU and more RAM.
+
+124
+00:03:38.620 --> 00:03:40.060
+So okay, you, you go
+
+125
+00:03:40.060 --> 00:03:41.900
+to the market, you invest more
+
+126
+00:03:41.900 --> 00:03:44.100
+in the CPU and and RAM.
+
+127
+00:03:44.100 --> 00:03:45.516
+So now you have 32
+
+128
+00:03:45.516 --> 00:03:46.780
+CPUs, which is a lot.
+
+129
+00:03:46.780 --> 00:03:48.740
+And now you have a 128GB RAM.
+
+130
+00:03:48.740 --> 00:03:50.100
+So now your system can even
+
+131
+00:03:50.100 --> 00:03:51.620
+handle more than 3,000 users.
+
+132
+00:03:51.620 --> 00:03:52.340
+That's good.
+
+133
+00:03:52.340 --> 00:03:54.780
+But on a typical day when the sale
+
+134
+00:03:54.780 --> 00:03:56.580
+is not there, on an average
+
+135
+00:03:56.580 --> 00:03:58.800
+you only have 200 users, let's say,
+
+136
+00:03:58.800 --> 00:04:00.880
+or 170 users or 150 users.
+
+137
+00:04:00.880 --> 00:04:02.480
+So do you, so do you really think
+
+138
+00:04:02.480 --> 00:04:03.840
+that this is, this money that
+
+139
+00:04:03.840 --> 00:04:05.440
+you're spending is worth it?
+
+140
+00:04:06.000 --> 00:04:08.320
+Because once in a year you need
+
+141
+00:04:08.320 --> 00:04:09.600
+this particular scale, that is
+
+142
+00:04:09.600 --> 00:04:10.960
+of 3,000 users, right?
+
+143
+00:04:10.960 --> 00:04:12.040
+But once you have already
+
+144
+00:04:12.040 --> 00:04:13.520
+upgraded your machine, once you
+
+145
+00:04:13.520 --> 00:04:14.880
+have already invested on it.
+
+146
+00:04:14.880 --> 00:04:17.040
+Now on an average day, on a typical
+
+147
+00:04:17.040 --> 00:04:19.200
+day you only have 150 users, right?
+
+148
+00:04:19.200 --> 00:04:20.800
+But you still have 32 CPUs
+
+149
+00:04:20.800 --> 00:04:22.280
+and 128GB RAM running.
+
+150
+00:04:22.280 --> 00:04:23.680
+So the problem is that
+
+151
+00:04:23.680 --> 00:04:25.380
+overall cost is more.
+
+152
+00:04:25.380 --> 00:04:25.860
+Okay?
+
+153
+00:04:25.860 --> 00:04:27.700
+So that means you are always
+
+154
+00:04:27.700 --> 00:04:29.140
+prepared for the best case.
+
+155
+00:04:29.140 --> 00:04:31.220
+You are always prepared for the sale.
+
+156
+00:04:31.220 --> 00:04:32.860
+So even if you are not running
+
+157
+00:04:32.860 --> 00:04:34.500
+a sale, even if you have just 80
+
+158
+00:04:34.500 --> 00:04:37.020
+to 90 users, you still have 32 CPU
+
+159
+00:04:37.020 --> 00:04:39.460
+and 128GB RAM, which is an overkill.
+
+160
+00:04:39.460 --> 00:04:40.780
+So most of your system
+
+161
+00:04:40.780 --> 00:04:41.900
+is sitting idle.
+
+162
+00:04:41.900 --> 00:04:43.460
+You are not using the system
+
+163
+00:04:43.460 --> 00:04:44.340
+to the full potential.
+
+164
+00:04:44.340 --> 00:04:45.580
+So this is one con that
+
+165
+00:04:45.580 --> 00:04:48.100
+you have second con is.
+
+166
+00:04:48.100 --> 00:04:49.980
+Okay, what happens Even if you
+
+167
+00:04:49.980 --> 00:04:51.530
+have upgraded too much,
+
+168
+00:04:51.530 --> 00:04:53.410
+you have 32 CPUs, which is a lot.
+
+169
+00:04:53.410 --> 00:04:53.850
+Okay?
+
+170
+00:04:53.850 --> 00:04:55.010
+You have invested good amount
+
+171
+00:04:55.010 --> 00:04:57.930
+of money and you have 128 GB of RAM.
+
+172
+00:04:57.930 --> 00:05:00.490
+But for some technical reasons,
+
+173
+00:05:00.490 --> 00:05:02.730
+this machine has some fault.
+
+174
+00:05:02.730 --> 00:05:03.730
+I'm not saying you that
+
+175
+00:05:03.730 --> 00:05:04.610
+it is not scalable.
+
+176
+00:05:04.610 --> 00:05:05.770
+I'm not saying you that it
+
+177
+00:05:05.770 --> 00:05:06.690
+cannot handle the load.
+
+178
+00:05:06.690 --> 00:05:07.770
+It can handle the load.
+
+179
+00:05:07.770 --> 00:05:09.690
+But for some reasons, something
+
+180
+00:05:09.690 --> 00:05:11.090
+technical failure happened
+
+181
+00:05:11.090 --> 00:05:12.330
+in this particular machine.
+
+182
+00:05:12.330 --> 00:05:14.730
+Some circuit went off, there was,
+
+183
+00:05:14.730 --> 00:05:16.290
+some kind of mishap, there was
+
+184
+00:05:16.290 --> 00:05:18.290
+some kind of power issue, or maybe
+
+185
+00:05:18.290 --> 00:05:20.450
+the motherboard got some spark.
+
+186
+00:05:20.450 --> 00:05:21.090
+Okay?
+
+187
+00:05:21.090 --> 00:05:22.450
+This machine is dead.
+
+188
+00:05:22.450 --> 00:05:23.490
+So now what happens?
+
+189
+00:05:23.490 --> 00:05:24.970
+Even if you have spent a lot
+
+190
+00:05:24.970 --> 00:05:27.090
+of money on your resources, right?
+
+191
+00:05:27.090 --> 00:05:28.250
+Even if you have spent a lot
+
+192
+00:05:28.250 --> 00:05:29.730
+of money on your resources,
+
+193
+00:05:29.730 --> 00:05:31.730
+your server is still down.
+
+194
+00:05:31.730 --> 00:05:33.970
+So you have a single point
+
+195
+00:05:33.970 --> 00:05:36.090
+of failure here, okay.
+
+196
+00:05:36.090 --> 00:05:37.370
+That if this server goes down,
+
+197
+00:05:37.370 --> 00:05:38.930
+there's a single point of failure.
+
+198
+00:05:38.930 --> 00:05:40.170
+Even though this machine was
+
+199
+00:05:40.170 --> 00:05:41.810
+a big, giant machine,
+
+200
+00:05:41.810 --> 00:05:43.490
+it was a very powerful machine.
+
+201
+00:05:43.490 --> 00:05:44.930
+But because of some technical
+
+202
+00:05:44.930 --> 00:05:46.290
+issues, this machine is off.
+
+203
+00:05:46.290 --> 00:05:47.570
+And now you have a single
+
+204
+00:05:47.570 --> 00:05:48.450
+point of failure.
+
+205
+00:05:48.450 --> 00:05:50.170
+So this is your vertical scaling.
+
+206
+00:05:50.170 --> 00:05:50.570
+Okay?
+
+207
+00:05:50.570 --> 00:05:51.000
+So.
+
+208
+00:05:51.000 --> 00:05:52.480
+So in this particular video, we have
+
+209
+00:05:52.480 --> 00:05:54.200
+understood what is vertical scaling.
+
+210
+00:05:54.200 --> 00:05:55.520
+So let's see how can we solve
+
+211
+00:05:55.520 --> 00:05:56.680
+these particular problems
+
+212
+00:05:56.680 --> 00:05:58.500
+in the next scaling strategy.

@@ -1,0 +1,809 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:02.400
+All right, let's move on.
+
+2
+00:00:02.400 --> 00:00:04.000
+And this one is a little bit
+
+3
+00:00:04.000 --> 00:00:05.000
+of a complex problem.
+
+4
+00:00:05.000 --> 00:00:06.760
+But yes, we have to deal with
+
+5
+00:00:06.760 --> 00:00:08.160
+the complex problems as well.
+
+6
+00:00:08.800 --> 00:00:10.320
+The ability to handle
+
+7
+00:00:10.320 --> 00:00:11.800
+the complex problems will make
+
+8
+00:00:11.800 --> 00:00:12.920
+you a great developer.
+
+9
+00:00:12.920 --> 00:00:14.240
+Don't shy them away.
+
+10
+00:00:14.240 --> 00:00:16.279
+They look really, scary at first.
+
+11
+00:00:16.279 --> 00:00:17.320
+But eventually you will
+
+12
+00:00:17.320 --> 00:00:18.640
+nail down much, much
+
+13
+00:00:18.640 --> 00:00:19.840
+greater problems than this.
+
+14
+00:00:19.840 --> 00:00:21.600
+So let's read this one by one.
+
+15
+00:00:21.600 --> 00:00:23.160
+The step one is always to read
+
+16
+00:00:23.160 --> 00:00:25.440
+the problem as closely as you can.
+
+17
+00:00:25.440 --> 00:00:26.720
+So notice here you can.
+
+18
+00:00:26.720 --> 00:00:27.920
+You are building a smart
+
+19
+00:00:27.920 --> 00:00:29.920
+thermostat alert system.
+
+20
+00:00:29.920 --> 00:00:30.480
+Pretty good.
+
+21
+00:00:30.480 --> 00:00:31.680
+We are building a thermostat
+
+22
+00:00:31.680 --> 00:00:32.960
+alerting system.
+
+23
+00:00:32.960 --> 00:00:34.120
+And what do we want
+
+24
+00:00:34.120 --> 00:00:36.000
+to do in this, system?
+
+25
+00:00:36.000 --> 00:00:37.840
+Just read this pretty easy.
+
+26
+00:00:37.840 --> 00:00:39.920
+If the device status is active,
+
+27
+00:00:39.920 --> 00:00:41.160
+okay, so we have to measure
+
+28
+00:00:41.160 --> 00:00:42.719
+the device status first
+
+29
+00:00:42.719 --> 00:00:46.560
+and the temperature is above 35.
+
+30
+00:00:47.120 --> 00:00:47.920
+Then we have to put
+
+31
+00:00:47.920 --> 00:00:49.320
+up a warning sign that high
+
+32
+00:00:49.320 --> 00:00:51.520
+temperature alert, all right?
+
+33
+00:00:51.520 --> 00:00:54.300
+Else the temperature is normal.
+
+34
+00:00:54.300 --> 00:00:55.740
+If the device is off,
+
+35
+00:00:55.740 --> 00:00:57.580
+device is offline.
+
+36
+00:00:58.220 --> 00:01:00.340
+So notice here we are not checking
+
+37
+00:01:00.340 --> 00:01:01.620
+just for one condition, but we
+
+38
+00:01:01.620 --> 00:01:02.820
+are checking for one condition
+
+39
+00:01:02.820 --> 00:01:04.500
+and inside that also we are checking
+
+40
+00:01:04.500 --> 00:01:05.660
+for another condition.
+
+41
+00:01:06.220 --> 00:01:07.940
+And this is a kind
+
+42
+00:01:07.940 --> 00:01:09.740
+of a leveling of the condition.
+
+43
+00:01:09.740 --> 00:01:10.780
+As you can say.
+
+44
+00:01:10.780 --> 00:01:13.180
+This is also known as a nesting
+
+45
+00:01:13.180 --> 00:01:14.180
+of if statements.
+
+46
+00:01:14.180 --> 00:01:15.980
+But again, that doesn't really matter
+
+47
+00:01:15.980 --> 00:01:17.820
+or doesn't really sound much.
+
+48
+00:01:18.440 --> 00:01:19.200
+Now you have seen
+
+49
+00:01:19.200 --> 00:01:20.080
+the problem statement.
+
+50
+00:01:20.080 --> 00:01:21.720
+You can see, it makes sense.
+
+51
+00:01:21.720 --> 00:01:23.080
+I'm checking for one condition,
+
+52
+00:01:23.080 --> 00:01:25.000
+then inside that I'm checking for
+
+53
+00:01:25.000 --> 00:01:26.600
+further another condition.
+
+54
+00:01:26.600 --> 00:01:28.080
+And then only I'm putting
+
+55
+00:01:28.080 --> 00:01:29.480
+up the warning message.
+
+56
+00:01:29.480 --> 00:01:30.760
+Else part is pretty clear.
+
+57
+00:01:30.760 --> 00:01:32.440
+And we are checking for here.
+
+58
+00:01:32.440 --> 00:01:33.840
+So first let's see how we can
+
+59
+00:01:33.840 --> 00:01:35.240
+actually take down this problem.
+
+60
+00:01:35.240 --> 00:01:38.320
+So we'll close this one and we'll
+
+61
+00:01:38.320 --> 00:01:39.840
+create a new file and we'll
+
+62
+00:01:39.840 --> 00:01:41.560
+call this one as smart,
+
+63
+00:01:41.560 --> 00:01:48.410
+probably lowercase smart thermostat.
+
+64
+00:01:51.210 --> 00:01:53.730
+Py the first thing that we have
+
+65
+00:01:53.730 --> 00:01:56.330
+to measure is device status.
+
+66
+00:01:56.330 --> 00:01:57.450
+I don't know how that is coming
+
+67
+00:01:57.450 --> 00:01:59.250
+up, but as of now, let's assume that
+
+68
+00:01:59.250 --> 00:02:01.530
+the device status is active.
+
+69
+00:02:02.250 --> 00:02:04.170
+Now as the problem statement says, it
+
+70
+00:02:04.170 --> 00:02:06.250
+could be device status as active or
+
+71
+00:02:06.250 --> 00:02:08.169
+it could be as device is offline.
+
+72
+00:02:08.169 --> 00:02:09.610
+So that's good.
+
+73
+00:02:09.610 --> 00:02:11.409
+And I another thing that will come
+
+74
+00:02:11.409 --> 00:02:12.729
+up here is notice here
+
+75
+00:02:12.729 --> 00:02:14.489
+the temperature is 35, so we are
+
+76
+00:02:14.489 --> 00:02:16.329
+checking this 35 only when
+
+77
+00:02:16.329 --> 00:02:18.369
+the device status is active.
+
+78
+00:02:18.369 --> 00:02:19.249
+So let's just say we
+
+79
+00:02:19.249 --> 00:02:20.129
+create a variable.
+
+80
+00:02:21.089 --> 00:02:22.849
+We call this one as temperature.
+
+81
+00:02:23.809 --> 00:02:24.609
+Temperature.
+
+82
+00:02:25.809 --> 00:02:27.729
+And the temperature is 38.
+
+83
+00:02:28.289 --> 00:02:30.329
+Okay, so how do we write a program?
+
+84
+00:02:30.329 --> 00:02:32.209
+We simply go ahead and say if
+
+85
+00:02:32.209 --> 00:02:33.889
+the device status
+
+86
+00:02:33.889 --> 00:02:35.889
+is equals to active.
+
+87
+00:02:36.670 --> 00:02:38.390
+If it is active, we simply go
+
+88
+00:02:38.390 --> 00:02:40.110
+ahead and Put some message.
+
+89
+00:02:40.110 --> 00:02:42.830
+And by the way, just for temporary
+
+90
+00:02:42.830 --> 00:02:44.110
+point, you want
+
+91
+00:02:44.110 --> 00:02:45.270
+to write the else part first.
+
+92
+00:02:45.270 --> 00:02:46.310
+There is a nice trick
+
+93
+00:02:46.310 --> 00:02:47.870
+in these kinds of statements.
+
+94
+00:02:47.870 --> 00:02:49.470
+You can write a keyword as pass.
+
+95
+00:02:49.470 --> 00:02:50.630
+Pass simply means I
+
+96
+00:02:50.630 --> 00:02:51.430
+will come back here.
+
+97
+00:02:51.430 --> 00:02:52.830
+We'll do about it later on.
+
+98
+00:02:52.830 --> 00:02:54.390
+Right now just ignore this so that
+
+99
+00:02:54.390 --> 00:02:56.110
+you don't give me any warning.
+
+100
+00:02:56.110 --> 00:02:57.590
+I come back here and I write
+
+101
+00:02:57.590 --> 00:03:00.270
+the else part here and else part.
+
+102
+00:03:00.270 --> 00:03:02.480
+The writing of the else part is easy.
+
+103
+00:03:02.480 --> 00:03:03.840
+If the device status is active,
+
+104
+00:03:03.840 --> 00:03:05.000
+we are doing something else.
+
+105
+00:03:05.000 --> 00:03:06.560
+If the device is off, we are
+
+106
+00:03:06.560 --> 00:03:08.400
+saying device is offline.
+
+107
+00:03:08.400 --> 00:03:09.520
+So here I can simply go
+
+108
+00:03:09.520 --> 00:03:10.720
+ahead and print a statement
+
+109
+00:03:10.720 --> 00:03:12.000
+that says like this.
+
+110
+00:03:12.640 --> 00:03:13.960
+And we simply call this
+
+111
+00:03:13.960 --> 00:03:16.400
+one as device is offline.
+
+112
+00:03:17.280 --> 00:03:18.730
+So I hope you can see,
+
+113
+00:03:18.730 --> 00:03:20.160
+the keyword pass helped me
+
+114
+00:03:20.160 --> 00:03:21.440
+to write the else part first.
+
+115
+00:03:21.440 --> 00:03:22.600
+Without giving me any warning.
+
+116
+00:03:22.600 --> 00:03:23.840
+If I just go ahead and remove
+
+117
+00:03:23.840 --> 00:03:25.360
+this and write it like this,
+
+118
+00:03:25.360 --> 00:03:26.960
+it always keeps me yelling
+
+119
+00:03:26.960 --> 00:03:28.320
+give me that squiggly line.
+
+120
+00:03:28.320 --> 00:03:29.740
+So I don't like them.
+
+121
+00:03:29.740 --> 00:03:31.340
+So I sometimes temporarily write
+
+122
+00:03:31.340 --> 00:03:33.500
+these kinds of code just because
+
+123
+00:03:33.500 --> 00:03:35.100
+I want to come back here later.
+
+124
+00:03:35.740 --> 00:03:37.900
+Now notice here it says
+
+125
+00:03:37.900 --> 00:03:39.060
+okay, device is active.
+
+126
+00:03:39.060 --> 00:03:40.580
+If we go into this part, then we
+
+127
+00:03:40.580 --> 00:03:41.860
+simply check for the temperature.
+
+128
+00:03:41.860 --> 00:03:44.540
+If it is above 35, we put a warning.
+
+129
+00:03:44.540 --> 00:03:45.340
+Otherwise we say
+
+130
+00:03:45.340 --> 00:03:46.860
+temperature is normal.
+
+131
+00:03:46.860 --> 00:03:48.460
+So inside this we can again
+
+132
+00:03:48.460 --> 00:03:50.300
+start if condition here or
+
+133
+00:03:50.300 --> 00:03:52.420
+conditional block and we can check
+
+134
+00:03:52.420 --> 00:03:53.580
+for temperature here.
+
+135
+00:03:53.580 --> 00:03:54.300
+Now temperature.
+
+136
+00:03:54.300 --> 00:03:56.980
+If it is greater than 35, we simply
+
+137
+00:03:56.980 --> 00:03:58.860
+go ahead and say some message.
+
+138
+00:03:58.860 --> 00:04:00.700
+So I'll just go ahead and print
+
+139
+00:04:00.700 --> 00:04:01.660
+a simple statement,
+
+140
+00:04:03.020 --> 00:04:07.020
+high temperature alert.
+
+141
+00:04:08.140 --> 00:04:10.340
+And if it is an alert, it should end
+
+142
+00:04:10.340 --> 00:04:11.740
+with an exclamation.
+
+143
+00:04:11.740 --> 00:04:12.980
+And here also I can put
+
+144
+00:04:12.980 --> 00:04:13.900
+up an else part.
+
+145
+00:04:15.500 --> 00:04:17.140
+And this is the most interesting
+
+146
+00:04:17.140 --> 00:04:18.500
+and point where you should
+
+147
+00:04:18.500 --> 00:04:19.540
+pay a little attention.
+
+148
+00:04:19.540 --> 00:04:21.180
+So I'll just go ahead and print this
+
+149
+00:04:21.180 --> 00:04:22.540
+and I will first say
+
+150
+00:04:23.760 --> 00:04:26.000
+temperature is normal.
+
+151
+00:04:28.880 --> 00:04:30.480
+So the most important part here is.
+
+152
+00:04:30.480 --> 00:04:31.600
+Notice here we have two
+
+153
+00:04:31.600 --> 00:04:33.560
+else's here, but each one is
+
+154
+00:04:33.560 --> 00:04:35.120
+denoted inside a block.
+
+155
+00:04:35.120 --> 00:04:36.720
+The block is the most important
+
+156
+00:04:36.720 --> 00:04:38.400
+part that we are studying here.
+
+157
+00:04:38.400 --> 00:04:40.000
+This is the outer block.
+
+158
+00:04:40.000 --> 00:04:41.440
+The else part here is
+
+159
+00:04:41.440 --> 00:04:43.040
+of the outer if.
+
+160
+00:04:43.040 --> 00:04:44.440
+But here we can see this is
+
+161
+00:04:44.440 --> 00:04:45.920
+if statement and the if
+
+162
+00:04:46.800 --> 00:04:47.880
+can be easily found out.
+
+163
+00:04:47.880 --> 00:04:49.520
+The else part with the indentation.
+
+164
+00:04:50.040 --> 00:04:51.720
+Now here the else part is
+
+165
+00:04:51.720 --> 00:04:52.760
+actually totally optional.
+
+166
+00:04:52.760 --> 00:04:53.680
+We could have it.
+
+167
+00:04:53.680 --> 00:04:55.160
+We couldn't have it.
+
+168
+00:04:55.160 --> 00:04:56.760
+Doesn't really bother us much.
+
+169
+00:04:56.760 --> 00:04:57.720
+We can have it.
+
+170
+00:04:57.720 --> 00:04:59.240
+We might ignore it,
+
+171
+00:04:59.240 --> 00:05:00.520
+but in this case we have it.
+
+172
+00:05:00.520 --> 00:05:01.800
+Our problem statement says
+
+173
+00:05:01.800 --> 00:05:03.160
+that we need to have it.
+
+174
+00:05:03.160 --> 00:05:04.840
+But again, pay small attention
+
+175
+00:05:04.840 --> 00:05:05.640
+on the indentation
+
+176
+00:05:05.640 --> 00:05:06.840
+and how the leveling.
+
+177
+00:05:06.840 --> 00:05:08.160
+And again there is nothing which
+
+178
+00:05:08.160 --> 00:05:09.800
+is stopping you to start another
+
+179
+00:05:09.800 --> 00:05:11.080
+block inside the if statement.
+
+180
+00:05:11.080 --> 00:05:12.800
+Maybe after printing a message
+
+181
+00:05:12.800 --> 00:05:14.240
+you want to start another condition
+
+182
+00:05:14.240 --> 00:05:15.440
+here, so you can go ahead
+
+183
+00:05:15.440 --> 00:05:16.860
+and start another condition.
+
+184
+00:05:16.860 --> 00:05:18.330
+So so let's just say I will simply
+
+185
+00:05:18.330 --> 00:05:20.050
+write it as true and then I want
+
+186
+00:05:20.050 --> 00:05:21.170
+to write another print statement.
+
+187
+00:05:21.170 --> 00:05:22.330
+I can just go ahead and write
+
+188
+00:05:22.330 --> 00:05:24.050
+that I will not do it here.
+
+189
+00:05:24.050 --> 00:05:25.530
+This was just to explain you,
+
+190
+00:05:25.530 --> 00:05:27.130
+but get the point that yes,
+
+191
+00:05:27.130 --> 00:05:28.770
+we can write as many if else
+
+192
+00:05:28.770 --> 00:05:30.530
+nesting of them as we like.
+
+193
+00:05:30.530 --> 00:05:32.490
+Or the problem statement says right
+
+194
+00:05:32.490 --> 00:05:33.930
+now, our problem statement says that
+
+195
+00:05:33.930 --> 00:05:35.250
+hey, you should do only this much.
+
+196
+00:05:35.250 --> 00:05:36.570
+So yeah, we are okay, we
+
+197
+00:05:36.570 --> 00:05:37.810
+are doing this much only.
+
+198
+00:05:37.810 --> 00:05:39.410
+Hope you have enjoyed building this
+
+199
+00:05:39.410 --> 00:05:41.050
+smart thermostat warning system
+
+200
+00:05:41.050 --> 00:05:42.330
+and hope you have enjoyed this.
+
+201
+00:05:42.330 --> 00:05:43.890
+If yes, please do rate us.
+
+202
+00:05:43.890 --> 00:05:45.410
+Let's catch up in the next video.

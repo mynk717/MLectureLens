@@ -1,0 +1,549 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.360
+All right, so in this particular
+
+2
+00:00:01.360 --> 00:00:02.720
+video, let's understand
+
+3
+00:00:02.720 --> 00:00:04.040
+two fundamental things.
+
+4
+00:00:04.040 --> 00:00:05.560
+That is how scaling works
+
+5
+00:00:05.560 --> 00:00:07.040
+in microservice architecture.
+
+6
+00:00:07.040 --> 00:00:08.880
+And second is how does
+
+7
+00:00:08.880 --> 00:00:10.680
+people, the external users, talk
+
+8
+00:00:10.680 --> 00:00:11.760
+to the microservices.
+
+9
+00:00:11.760 --> 00:00:12.920
+So with that, let's start
+
+10
+00:00:12.920 --> 00:00:14.000
+with the video.
+
+11
+00:00:14.000 --> 00:00:16.318
+Now, one thing is that the first
+
+12
+00:00:16.318 --> 00:00:17.720
+benefit that you get of
+
+13
+00:00:17.720 --> 00:00:19.560
+a microservice architecture is that
+
+14
+00:00:19.560 --> 00:00:21.440
+every service is independent.
+
+15
+00:00:21.440 --> 00:00:24.640
+They can be scaled independently.
+
+16
+00:00:24.640 --> 00:00:26.520
+And one more thing is what I
+
+17
+00:00:26.520 --> 00:00:28.200
+can do is I can actually host my
+
+18
+00:00:28.200 --> 00:00:31.120
+order service on Amazon aws.
+
+19
+00:00:31.120 --> 00:00:32.659
+I can host my, my email service
+
+20
+00:00:32.659 --> 00:00:34.140
+on maybe digitaloceans.
+
+21
+00:00:34.140 --> 00:00:35.620
+I can host my payment service
+
+22
+00:00:35.620 --> 00:00:37.260
+on some other cloud provider,
+
+23
+00:00:37.260 --> 00:00:38.700
+because these services are
+
+24
+00:00:38.700 --> 00:00:40.460
+decoupled from each other.
+
+25
+00:00:40.460 --> 00:00:42.060
+Now, the problem is that, hey,
+
+26
+00:00:42.060 --> 00:00:43.380
+let's say you have users, right?
+
+27
+00:00:43.380 --> 00:00:45.020
+Ultimately this is a user.
+
+28
+00:00:45.020 --> 00:00:47.180
+Now user wants to create an order.
+
+29
+00:00:47.180 --> 00:00:49.100
+Where should this user go, right?
+
+30
+00:00:49.100 --> 00:00:50.780
+What is the DNS server?
+
+31
+00:00:50.780 --> 00:00:52.340
+How to communicate, like how
+
+32
+00:00:52.340 --> 00:00:53.980
+the API structure works.
+
+33
+00:00:53.980 --> 00:00:55.900
+So when you talk about microservice
+
+34
+00:00:55.900 --> 00:00:57.580
+architecture, one more
+
+35
+00:00:57.580 --> 00:00:59.420
+component comes into the picture
+
+36
+00:00:59.420 --> 00:01:01.980
+that is known as an API gateway.
+
+37
+00:01:01.980 --> 00:01:02.380
+Okay?
+
+38
+00:01:02.380 --> 00:01:04.060
+So this is an API gateway.
+
+39
+00:01:04.060 --> 00:01:05.700
+So this is a service from Amazon.
+
+40
+00:01:05.700 --> 00:01:07.260
+Or you can even have more API
+
+41
+00:01:07.260 --> 00:01:08.620
+gateways, okay, from other services.
+
+42
+00:01:09.340 --> 00:01:13.020
+API gateway basically has some rules.
+
+43
+00:01:13.020 --> 00:01:15.100
+Number one, and this is
+
+44
+00:01:15.100 --> 00:01:17.420
+your entry point to the system.
+
+45
+00:01:18.060 --> 00:01:20.140
+That means on your DNS server,
+
+46
+00:01:20.140 --> 00:01:22.220
+if I have a Piyushkar
+
+47
+00:01:22.220 --> 00:01:24.780
+dev as a domain, piyushkarg.dev
+
+48
+00:01:24.780 --> 00:01:26.060
+let me just bring it here.
+
+49
+00:01:26.060 --> 00:01:28.100
+So you are going to map this IP
+
+50
+00:01:28.100 --> 00:01:30.655
+address to the API gateway, okay?
+
+51
+00:01:30.655 --> 00:01:32.400
+So, so that means all the Internet
+
+52
+00:01:32.400 --> 00:01:33.880
+traffic is routed to where
+
+53
+00:01:33.880 --> 00:01:35.040
+all the Internet traffic
+
+54
+00:01:35.040 --> 00:01:36.680
+is routed to this gateway.
+
+55
+00:01:36.680 --> 00:01:37.720
+Now what you can do is
+
+56
+00:01:37.720 --> 00:01:39.400
+to this particular gateway, okay,
+
+57
+00:01:39.400 --> 00:01:41.160
+you can set up some rules.
+
+58
+00:01:41.160 --> 00:01:43.240
+So let's say my rule is if
+
+59
+00:01:43.240 --> 00:01:46.520
+the request, that is my host name.
+
+60
+00:01:46.520 --> 00:01:48.000
+So Pushkar is my host name.
+
+61
+00:01:48.000 --> 00:01:49.240
+That is host slash.
+
+62
+00:01:49.240 --> 00:01:51.080
+If it starts with auth
+
+63
+00:01:51.080 --> 00:01:52.280
+slash something, something.
+
+64
+00:01:52.280 --> 00:01:54.800
+Okay, Something, something, we must
+
+65
+00:01:54.800 --> 00:01:56.280
+redirect this particular request
+
+66
+00:01:56.280 --> 00:01:58.640
+to the authentication service.
+
+67
+00:01:58.640 --> 00:01:59.880
+SVC is for the service.
+
+68
+00:01:59.880 --> 00:02:00.560
+Okay?
+
+69
+00:02:00.560 --> 00:02:02.120
+So this is my rule number one.
+
+70
+00:02:02.120 --> 00:02:04.000
+So that means this is the rule.
+
+71
+00:02:04.000 --> 00:02:06.080
+Second is if this is your host,
+
+72
+00:02:06.080 --> 00:02:07.560
+so whatever is your host name.
+
+73
+00:02:07.560 --> 00:02:08.440
+I'll just say host name,
+
+74
+00:02:08.440 --> 00:02:10.320
+that is push dev slash.
+
+75
+00:02:10.320 --> 00:02:12.160
+If something starts from email
+
+76
+00:02:12.160 --> 00:02:14.600
+and anything goes, like emails.
+
+77
+00:02:14.600 --> 00:02:16.080
+So for example, email slash
+
+78
+00:02:16.080 --> 00:02:18.640
+send email slash get email slash
+
+79
+00:02:18.640 --> 00:02:20.760
+discard anything, it must go
+
+80
+00:02:20.760 --> 00:02:23.480
+to the email SVC service.
+
+81
+00:02:23.480 --> 00:02:24.080
+Okay?
+
+82
+00:02:24.080 --> 00:02:25.160
+Similarly, I can just
+
+83
+00:02:25.160 --> 00:02:26.840
+say, hey, the host name.
+
+84
+00:02:26.840 --> 00:02:28.120
+And then I can set up a rule
+
+85
+00:02:28.120 --> 00:02:29.160
+for orders as well.
+
+86
+00:02:29.160 --> 00:02:30.200
+So if something starts with
+
+87
+00:02:30.200 --> 00:02:31.840
+orders, it must go to where
+
+88
+00:02:31.840 --> 00:02:35.080
+it must go to the order svc.
+
+89
+00:02:35.080 --> 00:02:36.720
+So now what happens is your
+
+90
+00:02:36.720 --> 00:02:38.440
+users are basically going
+
+91
+00:02:38.440 --> 00:02:40.120
+to talk to the API gateway.
+
+92
+00:02:40.120 --> 00:02:41.520
+Okay, so let's say you
+
+93
+00:02:41.520 --> 00:02:43.160
+have a lot of users here.
+
+94
+00:02:43.160 --> 00:02:45.880
+So I'll just make some users here.
+
+95
+00:02:45.880 --> 00:02:47.960
+So all these users are talking
+
+96
+00:02:47.960 --> 00:02:49.400
+to this API gateway.
+
+97
+00:02:49.400 --> 00:02:50.680
+So let me just paste it here.
+
+98
+00:02:50.680 --> 00:02:52.280
+Let me just also bring it here.
+
+99
+00:02:52.280 --> 00:02:54.450
+Okay, yeah, all cool.
+
+100
+00:02:54.450 --> 00:02:56.450
+Now what will happen is this API
+
+101
+00:02:56.450 --> 00:02:58.850
+gateway will route the request
+
+102
+00:02:58.850 --> 00:03:01.490
+to the NGINX of that service.
+
+103
+00:03:02.130 --> 00:03:03.370
+That's the main catch.
+
+104
+00:03:03.370 --> 00:03:05.170
+Okay, let me just make it as green.
+
+105
+00:03:05.170 --> 00:03:07.050
+So this API gateway is routing
+
+106
+00:03:07.050 --> 00:03:08.530
+the request to this particular
+
+107
+00:03:08.530 --> 00:03:10.850
+load balancer, to the nginx,
+
+108
+00:03:10.850 --> 00:03:12.130
+to the load balancer
+
+109
+00:03:12.130 --> 00:03:13.970
+of that appropriate service.
+
+110
+00:03:13.970 --> 00:03:15.490
+And this load balancer
+
+111
+00:03:15.490 --> 00:03:17.370
+will internally route the request
+
+112
+00:03:17.370 --> 00:03:18.610
+to one of the server.
+
+113
+00:03:19.260 --> 00:03:20.700
+So this is how the communication
+
+114
+00:03:20.700 --> 00:03:21.260
+happens
+
+115
+00:03:21.260 --> 00:03:23.420
+in microservice architecture.
+
+116
+00:03:23.420 --> 00:03:25.100
+People come, people talk
+
+117
+00:03:25.100 --> 00:03:26.300
+to the API gateway.
+
+118
+00:03:26.300 --> 00:03:28.540
+API gateway sends to the appropriate
+
+119
+00:03:29.220 --> 00:03:31.340
+reverse proxy or the load balancer.
+
+120
+00:03:31.340 --> 00:03:32.660
+This load balancer is
+
+121
+00:03:32.660 --> 00:03:34.380
+basically set, as per rules.
+
+122
+00:03:34.380 --> 00:03:36.540
+Like you have to tell the API gateway
+
+123
+00:03:36.540 --> 00:03:39.180
+from like on what basis the request
+
+124
+00:03:39.180 --> 00:03:40.940
+must be redirected and then this
+
+125
+00:03:40.940 --> 00:03:42.460
+load balancer will internally give
+
+126
+00:03:42.460 --> 00:03:44.300
+this request to one of the server.
+
+127
+00:03:44.300 --> 00:03:45.780
+So this is basically a hybrid
+
+128
+00:03:45.780 --> 00:03:46.700
+approach, if you see.
+
+129
+00:03:46.700 --> 00:03:48.180
+So microservice architectures are
+
+130
+00:03:48.180 --> 00:03:50.090
+easy to scale, easy to monitor, but.
+
+131
+00:03:50.090 --> 00:03:52.090
+But yes, it comes with a lot of cost
+
+132
+00:03:52.090 --> 00:03:53.130
+because now you have a cost
+
+133
+00:03:53.130 --> 00:03:55.050
+for API gateway, you have a cost of
+
+134
+00:03:55.050 --> 00:03:56.170
+a lot of servers
+
+135
+00:03:56.170 --> 00:03:58.250
+and the maintenance is also high.
+
+136
+00:03:58.250 --> 00:04:00.210
+And big tech giant companies always
+
+137
+00:04:00.210 --> 00:04:02.010
+use microservices architecture.

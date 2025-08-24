@@ -1,0 +1,641 @@
+WEBVTT
+
+1
+00:00:00.480 --> 00:00:01.960
+So hey guys, welcome to the second
+
+2
+00:00:01.960 --> 00:00:03.680
+video on Node J series.
+
+3
+00:00:03.680 --> 00:00:05.760
+And in this particular video
+
+4
+00:00:05.760 --> 00:00:07.400
+I'll walk you through how you can
+
+5
+00:00:07.400 --> 00:00:09.680
+install Node js on your machine.
+
+6
+00:00:09.680 --> 00:00:10.840
+So it's very simple.
+
+7
+00:00:10.840 --> 00:00:11.840
+What you have to do is you have
+
+8
+00:00:11.840 --> 00:00:13.200
+to go to this website that is
+
+9
+00:00:13.200 --> 00:00:15.720
+nodejs.org so this is the official
+
+10
+00:00:15.720 --> 00:00:17.920
+website from no of Node js.
+
+11
+00:00:17.920 --> 00:00:19.160
+And here what you can see is,
+
+12
+00:00:19.160 --> 00:00:20.280
+you can see this big button
+
+13
+00:00:20.280 --> 00:00:22.800
+that is download Node js lts.
+
+14
+00:00:22.800 --> 00:00:23.560
+Now what is this?
+
+15
+00:00:23.560 --> 00:00:26.640
+LTS means LTS here means
+
+16
+00:00:26.640 --> 00:00:27.840
+long term support.
+
+17
+00:00:28.360 --> 00:00:30.120
+That means it's a stable
+
+18
+00:00:30.120 --> 00:00:31.560
+version of Node js.
+
+19
+00:00:31.560 --> 00:00:33.560
+So there are two versions of Node js.
+
+20
+00:00:33.560 --> 00:00:34.720
+So let me just search if you
+
+21
+00:00:34.720 --> 00:00:35.880
+have this download button here.
+
+22
+00:00:35.880 --> 00:00:37.200
+So you can see that you have this
+
+23
+00:00:37.200 --> 00:00:39.080
+LTS and you have a current versions.
+
+24
+00:00:39.640 --> 00:00:41.600
+So what happens is that how the Node
+
+25
+00:00:41.600 --> 00:00:43.400
+js team basically develops is.
+
+26
+00:00:43.400 --> 00:00:44.680
+So if you can see that this
+
+27
+00:00:44.680 --> 00:00:45.800
+is your LTS version,
+
+28
+00:00:45.800 --> 00:00:47.560
+basically the stable version.
+
+29
+00:00:47.560 --> 00:00:50.400
+And currently the team of Node js
+
+30
+00:00:50.400 --> 00:00:52.120
+is working on this feature, this
+
+31
+00:00:52.120 --> 00:00:53.640
+particular version that is 23.
+
+32
+00:00:54.160 --> 00:00:55.600
+So this is the current version.
+
+33
+00:00:55.600 --> 00:00:57.560
+This current feature has a lot
+
+34
+00:00:57.560 --> 00:00:58.800
+of more features which are
+
+35
+00:00:58.800 --> 00:01:00.960
+upcoming, but they are not stable.
+
+36
+00:01:00.960 --> 00:01:03.120
+They are not recommended to use
+
+37
+00:01:03.120 --> 00:01:04.519
+on the machine,
+
+38
+00:01:04.519 --> 00:01:06.480
+on the production machine, right?
+
+39
+00:01:06.480 --> 00:01:08.000
+I mean if you want to play around
+
+40
+00:01:08.000 --> 00:01:10.039
+with these things, with the new
+
+41
+00:01:10.039 --> 00:01:11.000
+features you can go with
+
+42
+00:01:11.000 --> 00:01:12.480
+current, but they are not stable.
+
+43
+00:01:12.480 --> 00:01:13.840
+So there can be bugs, there
+
+44
+00:01:13.840 --> 00:01:16.000
+can be crashes and definitely
+
+45
+00:01:16.000 --> 00:01:16.920
+not recommended for
+
+46
+00:01:16.920 --> 00:01:18.320
+the production use case.
+
+47
+00:01:18.320 --> 00:01:20.160
+So LTS is a long term support.
+
+48
+00:01:20.160 --> 00:01:22.040
+Now what will happen is once the team
+
+49
+00:01:22.040 --> 00:01:23.670
+finishes this, once the team
+
+50
+00:01:23.670 --> 00:01:25.270
+develops all the features,
+
+51
+00:01:25.270 --> 00:01:26.910
+they are going to Release a version
+
+52
+00:01:26.910 --> 00:01:29.030
+24 that is going to be an LTS.
+
+53
+00:01:29.030 --> 00:01:30.230
+So all the features developed
+
+54
+00:01:30.230 --> 00:01:32.790
+in 23 will be moved to 24.
+
+55
+00:01:32.790 --> 00:01:34.070
+One interesting thing is that
+
+56
+00:01:34.070 --> 00:01:35.910
+all the even versions are
+
+57
+00:01:35.910 --> 00:01:37.670
+always lts and all the odd
+
+58
+00:01:37.670 --> 00:01:38.869
+versions are something that,
+
+59
+00:01:38.869 --> 00:01:40.630
+that teams are working on.
+
+60
+00:01:40.630 --> 00:01:42.270
+So we have to go with this LTS
+
+61
+00:01:42.270 --> 00:01:43.830
+version and you can select your
+
+62
+00:01:43.830 --> 00:01:45.470
+platform, Mac OS is there, Linux
+
+63
+00:01:45.470 --> 00:01:47.190
+is there and Windows is there.
+
+64
+00:01:47.190 --> 00:01:48.790
+So you can select and using,
+
+65
+00:01:48.790 --> 00:01:50.630
+you can just say NVM Docker.
+
+66
+00:01:50.630 --> 00:01:51.710
+So NVM is fine.
+
+67
+00:01:51.710 --> 00:01:53.240
+Okay, so what you can do is
+
+68
+00:01:53.240 --> 00:01:55.320
+you can use this also or
+
+69
+00:01:55.320 --> 00:01:56.560
+it's a package manager.
+
+70
+00:01:56.560 --> 00:01:57.600
+Or what you can do is you can
+
+71
+00:01:57.600 --> 00:01:59.000
+just download it from here.
+
+72
+00:01:59.000 --> 00:02:00.560
+So I would recommend to go
+
+73
+00:02:00.560 --> 00:02:02.240
+with this pre built installer.
+
+74
+00:02:02.240 --> 00:02:03.200
+So select the version
+
+75
+00:02:03.200 --> 00:02:04.920
+22 or any LTS version.
+
+76
+00:02:04.920 --> 00:02:05.640
+Okay.
+
+77
+00:02:05.640 --> 00:02:07.120
+Because you might be watching
+
+78
+00:02:07.120 --> 00:02:08.199
+this video in future
+
+79
+00:02:08.199 --> 00:02:09.960
+when There is version 24.
+
+80
+00:02:09.960 --> 00:02:11.000
+Just make sure that you
+
+81
+00:02:11.000 --> 00:02:12.560
+are on an LTS version.
+
+82
+00:02:12.560 --> 00:02:14.200
+Select your operating system
+
+83
+00:02:14.200 --> 00:02:16.760
+and which, like which,
+
+84
+00:02:16.760 --> 00:02:18.400
+what do you Call which architecture
+
+85
+00:02:18.400 --> 00:02:19.300
+you are using
+
+86
+00:02:19.300 --> 00:02:20.660
+and just click on this download.
+
+87
+00:02:20.660 --> 00:02:23.020
+Now once you download the setup, what
+
+88
+00:02:23.020 --> 00:02:24.540
+will happen is you will be prompted
+
+89
+00:02:24.540 --> 00:02:25.820
+with like, you know, next, next,
+
+90
+00:02:25.820 --> 00:02:27.300
+next, agree and all that stuff.
+
+91
+00:02:27.300 --> 00:02:28.820
+And node js will be installed
+
+92
+00:02:28.820 --> 00:02:29.700
+on your machine.
+
+93
+00:02:29.700 --> 00:02:30.900
+I won't be doing this step
+
+94
+00:02:30.900 --> 00:02:32.260
+because I already have node js
+
+95
+00:02:32.260 --> 00:02:33.780
+installed on my machine.
+
+96
+00:02:33.780 --> 00:02:35.900
+Now once you have done all this
+
+97
+00:02:35.900 --> 00:02:38.580
+process, let's verify that if you
+
+98
+00:02:38.580 --> 00:02:40.420
+have node js installed or not.
+
+99
+00:02:40.420 --> 00:02:42.820
+So first command is if you say node
+
+100
+00:02:43.780 --> 00:02:45.380
+version, you can see
+
+101
+00:02:45.380 --> 00:02:48.160
+that I'm getting v.22.11.0.
+
+102
+00:02:48.160 --> 00:02:49.440
+That means my node
+
+103
+00:02:49.440 --> 00:02:52.000
+version is 22.1 1.0.
+
+104
+00:02:52.000 --> 00:02:53.760
+If you are getting 24 or if you are
+
+105
+00:02:53.760 --> 00:02:55.680
+getting any number that's fine.
+
+106
+00:02:55.680 --> 00:02:58.000
+But if you are getting any error,
+
+107
+00:02:58.000 --> 00:02:59.480
+that is where you might have
+
+108
+00:02:59.480 --> 00:03:00.720
+messed up with the installation
+
+109
+00:03:00.720 --> 00:03:01.920
+and you might want to re
+
+110
+00:03:01.920 --> 00:03:03.200
+verify that what went wrong.
+
+111
+00:03:03.200 --> 00:03:07.440
+Okay, But I'm sure 99% in the chances
+
+112
+00:03:07.440 --> 00:03:09.080
+you will be right, you will
+
+113
+00:03:09.080 --> 00:03:10.640
+be able to install this thing.
+
+114
+00:03:10.640 --> 00:03:12.160
+There is only just 1% chance.
+
+115
+00:03:12.160 --> 00:03:14.290
+And even, even if it is not working,
+
+116
+00:03:14.290 --> 00:03:15.370
+try restarting your machine
+
+117
+00:03:15.370 --> 00:03:16.850
+because sometimes, you know,
+
+118
+00:03:16.850 --> 00:03:19.090
+things do work after the restart.
+
+119
+00:03:19.090 --> 00:03:20.650
+One more thing is that when you
+
+120
+00:03:20.650 --> 00:03:23.570
+install node you can just do an npm.
+
+121
+00:03:23.570 --> 00:03:25.330
+So there is a tool npm,
+
+122
+00:03:25.330 --> 00:03:26.850
+which unofficially stands
+
+123
+00:03:26.850 --> 00:03:28.450
+for Node Package Manager.
+
+124
+00:03:29.090 --> 00:03:31.610
+So this comes automatically
+
+125
+00:03:31.610 --> 00:03:33.170
+when you install node js.
+
+126
+00:03:33.170 --> 00:03:34.050
+So you can see that I
+
+127
+00:03:34.050 --> 00:03:35.410
+have npm version 10.
+
+128
+00:03:36.690 --> 00:03:38.610
+So we are going to use this npm
+
+129
+00:03:38.610 --> 00:03:40.490
+Unofficial Full Form Node Package
+
+130
+00:03:40.490 --> 00:03:42.850
+Manager to, to create, manage,
+
+131
+00:03:42.850 --> 00:03:45.010
+install external dependencies.
+
+132
+00:03:45.010 --> 00:03:46.170
+So let's say I want to install
+
+133
+00:03:46.170 --> 00:03:47.370
+some extra package, I want
+
+134
+00:03:47.370 --> 00:03:48.250
+to install some extra
+
+135
+00:03:48.250 --> 00:03:50.210
+dependency so I can use npm.
+
+136
+00:03:50.210 --> 00:03:51.770
+Or maybe I want to create my
+
+137
+00:03:51.770 --> 00:03:53.610
+own packages so I can use npm.
+
+138
+00:03:53.610 --> 00:03:55.570
+Okay, this comes along
+
+139
+00:03:55.570 --> 00:03:56.530
+with the node js.
+
+140
+00:03:56.530 --> 00:03:58.290
+So when you install this node js,
+
+141
+00:03:58.290 --> 00:04:00.450
+this automatically installs npm.
+
+142
+00:04:00.450 --> 00:04:02.090
+So you can see here it says node
+
+143
+00:04:02.090 --> 00:04:03.810
+js includes npm this thing.
+
+144
+00:04:03.810 --> 00:04:05.970
+So this is by default shipped
+
+145
+00:04:05.970 --> 00:04:07.250
+along with the node js only.
+
+146
+00:04:07.960 --> 00:04:09.600
+So if you are getting these numbers,
+
+147
+00:04:09.600 --> 00:04:11.240
+congratulation guys, you have
+
+148
+00:04:11.240 --> 00:04:13.000
+successfully installed node js.
+
+149
+00:04:13.000 --> 00:04:14.040
+One thing you can do is you
+
+150
+00:04:14.040 --> 00:04:15.640
+can just say node and you can
+
+151
+00:04:15.640 --> 00:04:17.000
+play around with the Node js.
+
+152
+00:04:17.000 --> 00:04:19.000
+So you can write any JavaScript code
+
+153
+00:04:19.000 --> 00:04:21.320
+and to exit out just say Ctrl D.
+
+154
+00:04:21.320 --> 00:04:25.600
+So Control D, that is Ctrl D is going
+
+155
+00:04:25.600 --> 00:04:27.640
+to exit out this particular repl.
+
+156
+00:04:27.640 --> 00:04:29.960
+Okay, so with node it basically gives
+
+157
+00:04:29.960 --> 00:04:31.360
+you a console where you can play
+
+158
+00:04:31.360 --> 00:04:32.800
+around with the Node js where
+
+159
+00:04:32.800 --> 00:04:34.280
+you can write any JavaScript code
+
+160
+00:04:34.280 --> 00:04:35.960
+and that executes like a charm.

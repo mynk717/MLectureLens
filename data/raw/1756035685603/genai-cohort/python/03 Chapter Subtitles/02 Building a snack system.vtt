@@ -1,0 +1,985 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:02.400
+All right, moving into our
+
+2
+00:00:02.400 --> 00:00:04.240
+Python journey, we got another
+
+3
+00:00:04.240 --> 00:00:05.240
+project and we have
+
+4
+00:00:05.240 --> 00:00:07.440
+to serve to this local cafe.
+
+5
+00:00:07.440 --> 00:00:08.640
+Let's see what is the problem
+
+6
+00:00:08.640 --> 00:00:09.440
+that they are facing.
+
+7
+00:00:09.440 --> 00:00:10.480
+And based on that we
+
+8
+00:00:10.480 --> 00:00:11.600
+will create a software.
+
+9
+00:00:11.600 --> 00:00:13.400
+And the best way to learn how
+
+10
+00:00:13.400 --> 00:00:15.520
+to build software is through tackle
+
+11
+00:00:15.520 --> 00:00:16.640
+down these kinds of problem.
+
+12
+00:00:16.640 --> 00:00:18.160
+You will learn so much more than
+
+13
+00:00:18.160 --> 00:00:19.440
+just going through with the syntax.
+
+14
+00:00:19.440 --> 00:00:19.960
+So let's go through
+
+15
+00:00:19.960 --> 00:00:21.360
+with this one by one.
+
+16
+00:00:21.360 --> 00:00:22.720
+So here's what we have.
+
+17
+00:00:22.720 --> 00:00:24.800
+A local cafe wants a program
+
+18
+00:00:24.800 --> 00:00:26.040
+that suggests a snack.
+
+19
+00:00:26.040 --> 00:00:26.960
+So we are building
+
+20
+00:00:26.960 --> 00:00:29.110
+suggestion system, all right?
+
+21
+00:00:29.110 --> 00:00:30.230
+And you will be surprised to know
+
+22
+00:00:30.230 --> 00:00:32.070
+a lot of suggestion systems are
+
+23
+00:00:32.070 --> 00:00:33.550
+actually mapped one to one, just
+
+24
+00:00:33.550 --> 00:00:34.830
+like what we are building right now.
+
+25
+00:00:34.830 --> 00:00:35.870
+In the early days there was
+
+26
+00:00:35.870 --> 00:00:37.350
+no AI machine learning.
+
+27
+00:00:37.350 --> 00:00:38.750
+We were actually doing all
+
+28
+00:00:38.750 --> 00:00:39.390
+the things that we are
+
+29
+00:00:39.390 --> 00:00:40.550
+about to do just like this.
+
+30
+00:00:41.190 --> 00:00:43.750
+If a customer ask for cookies
+
+31
+00:00:43.750 --> 00:00:45.149
+or samosa, which is
+
+32
+00:00:45.149 --> 00:00:46.550
+a local Indian dish,
+
+33
+00:00:46.550 --> 00:00:49.110
+it confirms the order, all right?
+
+34
+00:00:49.750 --> 00:00:52.630
+Otherwise it says it's not available.
+
+35
+00:00:52.630 --> 00:00:53.590
+So what it's saying
+
+36
+00:00:54.310 --> 00:00:56.710
+first task is take snack input.
+
+37
+00:00:56.710 --> 00:00:58.350
+So we have to put the question
+
+38
+00:00:58.350 --> 00:01:00.070
+in front of the user that hey,
+
+39
+00:01:00.070 --> 00:01:01.990
+enter your preferred snack.
+
+40
+00:01:01.990 --> 00:01:03.430
+And then we are going to go
+
+41
+00:01:03.430 --> 00:01:04.190
+ahead and check whether
+
+42
+00:01:04.190 --> 00:01:06.470
+this is cookies or samosa.
+
+43
+00:01:06.470 --> 00:01:08.390
+Both of them are absolutely fine.
+
+44
+00:01:08.390 --> 00:01:09.150
+Then we go ahead
+
+45
+00:01:09.150 --> 00:01:10.470
+and confirm the order.
+
+46
+00:01:10.470 --> 00:01:12.510
+Otherwise we simply show that, sorry,
+
+47
+00:01:12.510 --> 00:01:14.830
+we only serve cookies or samosa.
+
+48
+00:01:14.830 --> 00:01:15.310
+That's it.
+
+49
+00:01:15.310 --> 00:01:16.590
+So this is kind of a software we
+
+50
+00:01:16.590 --> 00:01:18.030
+have to build and you might be
+
+51
+00:01:18.030 --> 00:01:19.670
+wondering, hey, the wording of the
+
+52
+00:01:19.670 --> 00:01:21.150
+software is not really that clear
+
+53
+00:01:21.150 --> 00:01:22.590
+that this is exactly what we have
+
+54
+00:01:22.590 --> 00:01:23.360
+to do.
+
+55
+00:01:23.360 --> 00:01:24.120
+And this is what you do
+
+56
+00:01:24.120 --> 00:01:24.720
+in the real life.
+
+57
+00:01:24.720 --> 00:01:26.640
+You actually try to get as max
+
+58
+00:01:26.640 --> 00:01:27.920
+as possible from the user
+
+59
+00:01:27.920 --> 00:01:29.040
+and then you try to build
+
+60
+00:01:29.040 --> 00:01:30.840
+the software around it and then
+
+61
+00:01:30.840 --> 00:01:32.480
+the feedback loops continue.
+
+62
+00:01:32.480 --> 00:01:34.360
+So let's build this story and try
+
+63
+00:01:34.360 --> 00:01:35.440
+to walk you through with a couple
+
+64
+00:01:35.440 --> 00:01:36.800
+of new things that you haven't seen.
+
+65
+00:01:36.800 --> 00:01:38.640
+But these kinds of things you learn
+
+66
+00:01:38.640 --> 00:01:39.440
+on the go.
+
+67
+00:01:39.440 --> 00:01:40.800
+And this is our on the go.
+
+68
+00:01:41.440 --> 00:01:42.960
+So this is our snack system.
+
+69
+00:01:42.960 --> 00:01:44.080
+So I think instead of mini
+
+70
+00:01:44.080 --> 00:01:46.000
+story, I'll call this one as a snack
+
+71
+00:01:46.800 --> 00:01:51.370
+suggestion.py of course
+
+72
+00:01:51.930 --> 00:01:53.170
+the first problem in front
+
+73
+00:01:53.170 --> 00:01:55.450
+of us is take snack input.
+
+74
+00:01:55.450 --> 00:01:57.290
+So how do I take input from the user,
+
+75
+00:01:57.290 --> 00:01:58.530
+especially on the command line?
+
+76
+00:01:58.530 --> 00:01:59.890
+Later on we are going to learn that
+
+77
+00:01:59.890 --> 00:02:01.690
+how we can take input from anywhere.
+
+78
+00:02:01.690 --> 00:02:03.450
+You can take into a GUI software,
+
+79
+00:02:03.450 --> 00:02:04.890
+you can take input onto a,
+
+80
+00:02:04.890 --> 00:02:06.570
+web interface like website.
+
+81
+00:02:06.570 --> 00:02:07.690
+There are a lot of ways.
+
+82
+00:02:07.690 --> 00:02:08.729
+Right now command line
+
+83
+00:02:08.729 --> 00:02:10.009
+is our best tool.
+
+84
+00:02:10.009 --> 00:02:11.930
+So the way how we take input from
+
+85
+00:02:11.930 --> 00:02:14.090
+the Python input, command line
+
+86
+00:02:14.090 --> 00:02:16.250
+input is simply say input.
+
+87
+00:02:16.250 --> 00:02:17.810
+Really I told you, Python is
+
+88
+00:02:17.810 --> 00:02:19.690
+the most Easiest language of all.
+
+89
+00:02:19.690 --> 00:02:21.330
+We simply go ahead and simply
+
+90
+00:02:21.330 --> 00:02:23.770
+ask a question that hey, enter
+
+91
+00:02:23.770 --> 00:02:28.090
+your preferred snack.
+
+92
+00:02:29.610 --> 00:02:30.690
+And we simply go ahead
+
+93
+00:02:30.690 --> 00:02:32.290
+and add some space here.
+
+94
+00:02:32.290 --> 00:02:34.690
+And we want to store this whole user,
+
+95
+00:02:34.690 --> 00:02:36.410
+input into a variable.
+
+96
+00:02:36.410 --> 00:02:37.930
+Let's call this one as a snack.
+
+97
+00:02:38.730 --> 00:02:39.850
+And there we go.
+
+98
+00:02:39.850 --> 00:02:41.290
+First of all, I just want to print
+
+99
+00:02:41.290 --> 00:02:42.650
+whatever the value, I'm getting it.
+
+100
+00:02:42.650 --> 00:02:44.170
+This is how you build real software.
+
+101
+00:02:44.170 --> 00:02:46.160
+So we'll just go ahead and say let's
+
+102
+00:02:46.160 --> 00:02:48.360
+use a formatted string for this.
+
+103
+00:02:48.360 --> 00:02:53.160
+And user said user said.
+
+104
+00:02:53.160 --> 00:02:53.920
+And then we'll use
+
+105
+00:02:53.920 --> 00:02:55.400
+the variable of snack.
+
+106
+00:02:55.400 --> 00:02:56.840
+Let's run this program and see
+
+107
+00:02:56.840 --> 00:02:58.000
+what happens when we run
+
+108
+00:02:58.000 --> 00:02:59.080
+these kinds of programs.
+
+109
+00:02:59.080 --> 00:03:00.240
+So again we'll just go ahead
+
+110
+00:03:00.240 --> 00:03:03.080
+and say Python, Python 3
+
+111
+00:03:04.760 --> 00:03:07.520
+and snack suggestion, it says
+
+112
+00:03:07.520 --> 00:03:08.920
+enter your preferred snack.
+
+113
+00:03:08.920 --> 00:03:10.280
+So if I go ahead and say
+
+114
+00:03:11.000 --> 00:03:12.160
+something else, let's just say
+
+115
+00:03:12.160 --> 00:03:13.320
+I want to have a burger.
+
+116
+00:03:14.050 --> 00:03:16.370
+I enter this and it says burger.
+
+117
+00:03:16.370 --> 00:03:18.090
+Now what additionally you can do
+
+118
+00:03:18.090 --> 00:03:20.330
+in such kind of a program is you can
+
+119
+00:03:20.330 --> 00:03:22.930
+just go ahead and add an input.
+
+120
+00:03:22.930 --> 00:03:24.290
+Because I don't want to process
+
+121
+00:03:24.290 --> 00:03:25.850
+burger in so many ways.
+
+122
+00:03:25.850 --> 00:03:27.010
+The B could be capital,
+
+123
+00:03:27.010 --> 00:03:28.330
+the B could be lowercase,
+
+124
+00:03:28.330 --> 00:03:29.490
+the G could be capital.
+
+125
+00:03:29.490 --> 00:03:30.730
+User can enter the input
+
+126
+00:03:30.730 --> 00:03:32.610
+in any way or any format.
+
+127
+00:03:32.610 --> 00:03:33.930
+So what you can do further on
+
+128
+00:03:33.930 --> 00:03:35.090
+to this, because this is just
+
+129
+00:03:35.090 --> 00:03:36.490
+a string that user enters,
+
+130
+00:03:36.490 --> 00:03:37.850
+whenever user gives you input,
+
+131
+00:03:37.850 --> 00:03:39.410
+it always comes into a string
+
+132
+00:03:39.410 --> 00:03:41.480
+format, even the numbers.
+
+133
+00:03:41.480 --> 00:03:43.360
+So we go ahead and simply say I want
+
+134
+00:03:43.360 --> 00:03:45.040
+to run a function known as lower.
+
+135
+00:03:45.040 --> 00:03:46.760
+This is a function so you put up
+
+136
+00:03:46.760 --> 00:03:48.040
+parenthesis just like that.
+
+137
+00:03:48.840 --> 00:03:50.920
+Now no matter how you say this,
+
+138
+00:03:50.920 --> 00:03:52.280
+it's always going to be same.
+
+139
+00:03:52.280 --> 00:03:53.800
+So enter a preferred snack.
+
+140
+00:03:53.800 --> 00:03:55.760
+So I'm going to go ahead and say
+
+141
+00:03:55.760 --> 00:03:57.240
+burger just like this.
+
+142
+00:03:57.240 --> 00:03:58.400
+But the result we are
+
+143
+00:03:58.400 --> 00:04:00.000
+getting is all lowercase.
+
+144
+00:04:00.000 --> 00:04:01.280
+This will make our life little
+
+145
+00:04:01.280 --> 00:04:02.760
+bit easier in just a moment.
+
+146
+00:04:03.480 --> 00:04:04.400
+All right, so this is
+
+147
+00:04:04.400 --> 00:04:05.160
+first part is done.
+
+148
+00:04:05.160 --> 00:04:06.120
+We don't need to validate
+
+149
+00:04:06.120 --> 00:04:08.550
+by printing again we are happy.
+
+150
+00:04:08.550 --> 00:04:10.070
+Then if it is cookies
+
+151
+00:04:10.070 --> 00:04:11.910
+or samosa, confirm the order.
+
+152
+00:04:11.910 --> 00:04:13.150
+So we need to check whether
+
+153
+00:04:13.150 --> 00:04:14.790
+the snack which user is giving
+
+154
+00:04:14.790 --> 00:04:16.589
+the input should be either equal
+
+155
+00:04:16.589 --> 00:04:18.630
+to the cookie or to samosa.
+
+156
+00:04:18.630 --> 00:04:19.750
+And this is where you learn
+
+157
+00:04:19.750 --> 00:04:21.230
+another style of writing.
+
+158
+00:04:21.230 --> 00:04:23.990
+So if we know and this snack needs
+
+159
+00:04:23.990 --> 00:04:25.550
+to convert into some kind
+
+160
+00:04:25.550 --> 00:04:27.350
+of a true and false value.
+
+161
+00:04:27.350 --> 00:04:28.950
+So I can actually go ahead and say
+
+162
+00:04:28.950 --> 00:04:31.310
+this snack needs to be equal to and
+
+163
+00:04:31.310 --> 00:04:33.150
+by the way, one equal that we are
+
+164
+00:04:33.150 --> 00:04:34.350
+using at line number one, that
+
+165
+00:04:34.350 --> 00:04:35.790
+means I'm transferring the value
+
+166
+00:04:35.790 --> 00:04:37.190
+from the right hand side to the
+
+167
+00:04:37.190 --> 00:04:38.360
+left hand side.
+
+168
+00:04:38.360 --> 00:04:39.520
+But once you put two equal,
+
+169
+00:04:39.520 --> 00:04:40.560
+that means you are comparing
+
+170
+00:04:40.560 --> 00:04:42.440
+the thing this is comparison.
+
+171
+00:04:42.440 --> 00:04:43.960
+So I want to compare for
+
+172
+00:04:43.960 --> 00:04:45.560
+one thing which is cookies.
+
+173
+00:04:45.560 --> 00:04:46.600
+That is good.
+
+174
+00:04:46.600 --> 00:04:47.880
+But I also want to compare
+
+175
+00:04:47.880 --> 00:04:49.880
+for another thing which is samosa.
+
+176
+00:04:49.880 --> 00:04:51.240
+So let's go ahead and write
+
+177
+00:04:51.240 --> 00:04:54.760
+simple python or your snack
+
+178
+00:04:54.760 --> 00:04:59.000
+is equals to samosa.
+
+179
+00:04:59.000 --> 00:04:59.720
+That is it.
+
+180
+00:05:00.680 --> 00:05:03.360
+Now if user answers this, then we
+
+181
+00:05:03.360 --> 00:05:04.840
+simply go ahead and print a message
+
+182
+00:05:04.840 --> 00:05:06.360
+to the user that hey, your order,
+
+183
+00:05:07.200 --> 00:05:08.640
+was successfully taken.
+
+184
+00:05:08.640 --> 00:05:10.560
+Or we can also say something like
+
+185
+00:05:11.120 --> 00:05:11.920
+great, choice.
+
+186
+00:05:12.480 --> 00:05:13.480
+It's always a good idea
+
+187
+00:05:13.480 --> 00:05:15.080
+to complement the choice of the user
+
+188
+00:05:15.080 --> 00:05:17.440
+with an exclamation and we will say
+
+189
+00:05:18.560 --> 00:05:22.400
+will serve you and then whatever
+
+190
+00:05:22.400 --> 00:05:24.320
+the user has mentioned snack.
+
+191
+00:05:24.320 --> 00:05:25.440
+That's a good one.
+
+192
+00:05:25.440 --> 00:05:27.120
+But what if user
+
+193
+00:05:27.120 --> 00:05:28.560
+is saying something else?
+
+194
+00:05:28.560 --> 00:05:30.720
+Else we'll say show unavailability.
+
+195
+00:05:31.280 --> 00:05:32.960
+So we're going to go ahead and put
+
+196
+00:05:32.960 --> 00:05:34.400
+again notice the indentation.
+
+197
+00:05:34.400 --> 00:05:36.730
+We'll go back into indentation part.
+
+198
+00:05:36.730 --> 00:05:38.570
+We'll go ahead and say else and then
+
+199
+00:05:38.570 --> 00:05:40.130
+again follow with the colon.
+
+200
+00:05:40.130 --> 00:05:41.850
+This is important, hit enter.
+
+201
+00:05:41.850 --> 00:05:43.490
+And again notice the indentation.
+
+202
+00:05:43.490 --> 00:05:45.170
+We are using four automatically.
+
+203
+00:05:45.170 --> 00:05:47.250
+The editor is giving me four spaces.
+
+204
+00:05:47.250 --> 00:05:48.570
+That's good of it.
+
+205
+00:05:48.570 --> 00:05:49.810
+And then we'll simply go ahead
+
+206
+00:05:49.810 --> 00:05:51.770
+and print something like a message
+
+207
+00:05:51.770 --> 00:05:54.890
+which says, sorry, we only.
+
+208
+00:05:54.890 --> 00:05:59.210
+Not only only serve cookies
+
+209
+00:06:00.250 --> 00:06:03.380
+or samosa, with tea.
+
+210
+00:06:04.500 --> 00:06:06.180
+So let's run this program and see
+
+211
+00:06:06.180 --> 00:06:07.460
+that what user is giving.
+
+212
+00:06:07.460 --> 00:06:08.980
+Now we have created a dynamic
+
+213
+00:06:08.980 --> 00:06:11.460
+program which user actually can use.
+
+214
+00:06:11.460 --> 00:06:12.860
+So let's just say user simply
+
+215
+00:06:12.860 --> 00:06:14.820
+says I want to have burger.
+
+216
+00:06:14.820 --> 00:06:16.260
+So he says, oh, we only
+
+217
+00:06:16.260 --> 00:06:17.900
+serve cookies or samosa.
+
+218
+00:06:17.900 --> 00:06:19.260
+Now again, let's run the program.
+
+219
+00:06:19.260 --> 00:06:21.140
+This time user says samosa,
+
+220
+00:06:21.140 --> 00:06:23.100
+but he tries a little bit different.
+
+221
+00:06:23.100 --> 00:06:23.940
+So he says something
+
+222
+00:06:23.940 --> 00:06:27.060
+like this samosa.
+
+223
+00:06:27.060 --> 00:06:28.900
+Now this definitely is a weird
+
+224
+00:06:28.900 --> 00:06:30.500
+input, but we'll try this.
+
+225
+00:06:31.160 --> 00:06:32.840
+Enter this and it says great choice.
+
+226
+00:06:32.840 --> 00:06:34.440
+We serve you samosa.
+
+227
+00:06:34.440 --> 00:06:36.320
+So notice here, just adding a small
+
+228
+00:06:36.320 --> 00:06:38.800
+method had made our life so much
+
+229
+00:06:38.800 --> 00:06:41.000
+easier for these kinds of program.
+
+230
+00:06:41.000 --> 00:06:42.560
+And this is kind of exactly
+
+231
+00:06:42.560 --> 00:06:45.600
+the thing that you learn when you
+
+232
+00:06:45.600 --> 00:06:46.920
+build these kinds of programs.
+
+233
+00:06:46.920 --> 00:06:48.760
+So this part is all done.
+
+234
+00:06:48.760 --> 00:06:49.960
+And by the way, you have
+
+235
+00:06:49.960 --> 00:06:51.280
+the access to all the notes.
+
+236
+00:06:51.280 --> 00:06:52.920
+I'm just creating the notes back
+
+237
+00:06:52.920 --> 00:06:53.840
+to back so that you have
+
+238
+00:06:53.840 --> 00:06:55.640
+also all the access of them.
+
+239
+00:06:55.640 --> 00:06:57.770
+These stories, yes, do really take
+
+240
+00:06:57.770 --> 00:06:59.290
+a little bit extra effort, but they
+
+241
+00:06:59.290 --> 00:07:00.490
+actually teach really better.
+
+242
+00:07:00.490 --> 00:07:02.250
+And I think you will definitely rate
+
+243
+00:07:02.250 --> 00:07:03.810
+us pretty good and leave some
+
+244
+00:07:03.810 --> 00:07:06.250
+kind words in the review section.
+
+245
+00:07:06.250 --> 00:07:07.410
+That is it for this video.
+
+246
+00:07:07.410 --> 00:07:08.970
+Let's catch up in the next one.

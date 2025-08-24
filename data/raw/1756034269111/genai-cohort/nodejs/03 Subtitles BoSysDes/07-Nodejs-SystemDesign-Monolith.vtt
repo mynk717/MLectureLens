@@ -1,0 +1,565 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.440
+All right, so in this particular
+
+2
+00:00:01.440 --> 00:00:03.520
+video, let's understand something
+
+3
+00:00:03.520 --> 00:00:05.600
+known as monolith architecture.
+
+4
+00:00:05.600 --> 00:00:07.360
+So monolith architecture is
+
+5
+00:00:07.360 --> 00:00:08.680
+actually a very common thing,
+
+6
+00:00:08.680 --> 00:00:09.800
+and that is something we
+
+7
+00:00:09.800 --> 00:00:11.040
+have been already doing.
+
+8
+00:00:11.040 --> 00:00:11.760
+Okay?
+
+9
+00:00:11.760 --> 00:00:13.080
+So till now you already have
+
+10
+00:00:13.080 --> 00:00:14.440
+a knowledge about horizontal
+
+11
+00:00:14.440 --> 00:00:15.680
+scaling, vertical scaling,
+
+12
+00:00:15.680 --> 00:00:17.280
+and how to scale databases.
+
+13
+00:00:17.280 --> 00:00:18.640
+Now let's understand what is this
+
+14
+00:00:18.640 --> 00:00:20.720
+monolith architecture, okay?
+
+15
+00:00:20.720 --> 00:00:22.920
+Now in reality, how the whole
+
+16
+00:00:22.920 --> 00:00:24.440
+workflow happens is that you
+
+17
+00:00:24.440 --> 00:00:25.890
+have a source code, right?
+
+18
+00:00:25.890 --> 00:00:26.930
+Now what is a source code?
+
+19
+00:00:26.930 --> 00:00:27.930
+Source code is something
+
+20
+00:00:27.930 --> 00:00:29.250
+that you write, that you
+
+21
+00:00:29.250 --> 00:00:30.610
+as a developer writes.
+
+22
+00:00:30.610 --> 00:00:32.130
+And what you do, you push
+
+23
+00:00:32.130 --> 00:00:33.210
+this particular source code
+
+24
+00:00:33.210 --> 00:00:34.290
+to the GitHub, right?
+
+25
+00:00:34.290 --> 00:00:35.690
+To your Git, GitHub or
+
+26
+00:00:35.690 --> 00:00:37.010
+whatever you are using.
+
+27
+00:00:37.010 --> 00:00:38.610
+Now this source code, which is
+
+28
+00:00:38.610 --> 00:00:40.130
+your Node JS course in our
+
+29
+00:00:40.130 --> 00:00:42.130
+case, has a lot of endpoints
+
+30
+00:00:42.130 --> 00:00:43.890
+and has a lot of services.
+
+31
+00:00:43.890 --> 00:00:45.490
+For example, if you're building an E
+
+32
+00:00:45.490 --> 00:00:47.090
+Commerce application, this source
+
+33
+00:00:47.090 --> 00:00:49.090
+code has authentication code.
+
+34
+00:00:49.090 --> 00:00:50.970
+It has all the payment code, it
+
+35
+00:00:50.970 --> 00:00:52.770
+has all the order code, it has all
+
+36
+00:00:52.770 --> 00:00:54.540
+the, let's say, payment, payment
+
+37
+00:00:54.540 --> 00:00:55.740
+processing order, and all
+
+38
+00:00:55.740 --> 00:00:57.700
+the emailing and notification code.
+
+39
+00:00:57.700 --> 00:00:59.220
+Now this code is packaged
+
+40
+00:00:59.220 --> 00:01:01.100
+into one single repository,
+
+41
+00:01:01.100 --> 00:01:02.460
+pushed onto the GitHub.
+
+42
+00:01:02.460 --> 00:01:04.780
+And then what you do, you basically
+
+43
+00:01:04.780 --> 00:01:06.500
+create a server out of it, right?
+
+44
+00:01:06.500 --> 00:01:08.540
+So let's say this is my server, okay?
+
+45
+00:01:08.540 --> 00:01:09.620
+So this is my server.
+
+46
+00:01:09.620 --> 00:01:10.740
+So you pull this particular
+
+47
+00:01:10.740 --> 00:01:11.860
+code from the GitHub.
+
+48
+00:01:11.860 --> 00:01:13.540
+And now this is a, server.
+
+49
+00:01:13.540 --> 00:01:14.940
+Let's say your application is
+
+50
+00:01:14.940 --> 00:01:16.340
+running on port number 80.
+
+51
+00:01:16.900 --> 00:01:18.740
+Now this particular port 80,
+
+52
+00:01:18.740 --> 00:01:21.220
+the server contains all the code
+
+53
+00:01:21.220 --> 00:01:22.260
+you can, your authentication
+
+54
+00:01:22.260 --> 00:01:23.620
+code, your payment code,
+
+55
+00:01:23.620 --> 00:01:25.380
+your orders code, and even
+
+56
+00:01:25.380 --> 00:01:26.740
+your, you know, emailing code.
+
+57
+00:01:26.740 --> 00:01:27.980
+All the code is in this
+
+58
+00:01:27.980 --> 00:01:28.700
+particular service.
+
+59
+00:01:29.580 --> 00:01:31.540
+Now this particular thing is known
+
+60
+00:01:31.540 --> 00:01:33.220
+as a monolith architecture because
+
+61
+00:01:33.220 --> 00:01:35.260
+everything is in single server.
+
+62
+00:01:35.260 --> 00:01:37.180
+Now what happens is, let's assume,
+
+63
+00:01:37.180 --> 00:01:38.460
+let's, you know, take something
+
+64
+00:01:38.460 --> 00:01:40.380
+that this order service is
+
+65
+00:01:40.380 --> 00:01:41.900
+something which is very busy.
+
+66
+00:01:41.900 --> 00:01:43.900
+Let's take, because authentication
+
+67
+00:01:43.900 --> 00:01:45.260
+is not that busy, because let's
+
+68
+00:01:45.260 --> 00:01:46.660
+say users have already signed up,
+
+69
+00:01:46.660 --> 00:01:48.060
+they are not doing something.
+
+70
+00:01:48.060 --> 00:01:49.380
+Payments are also okay.
+
+71
+00:01:49.380 --> 00:01:50.500
+It is not that much.
+
+72
+00:01:50.500 --> 00:01:51.700
+But orders is something
+
+73
+00:01:51.700 --> 00:01:52.780
+which is actually very
+
+74
+00:01:52.780 --> 00:01:54.000
+overwhelming coming, okay?
+
+75
+00:01:54.000 --> 00:01:55.040
+People are fetching their
+
+76
+00:01:55.040 --> 00:01:55.880
+orders again and again.
+
+77
+00:01:55.880 --> 00:01:57.440
+And it is a very, very, very
+
+78
+00:01:57.440 --> 00:01:58.800
+expensive and very, you
+
+79
+00:01:58.800 --> 00:02:00.360
+know, highly used route.
+
+80
+00:02:00.360 --> 00:02:01.720
+Now what happens is, because
+
+81
+00:02:01.720 --> 00:02:03.960
+people are making a lot of request
+
+82
+00:02:03.960 --> 00:02:05.240
+on the order service, your
+
+83
+00:02:05.240 --> 00:02:06.680
+server is getting overwhelmed.
+
+84
+00:02:06.680 --> 00:02:08.080
+You have to horizontally
+
+85
+00:02:08.080 --> 00:02:09.000
+scale your server.
+
+86
+00:02:09.000 --> 00:02:10.280
+So see, what I'm doing is
+
+87
+00:02:10.280 --> 00:02:11.440
+I'm basically horizontally
+
+88
+00:02:11.440 --> 00:02:12.560
+scaling my server, right?
+
+89
+00:02:12.560 --> 00:02:13.880
+And now what will happen because
+
+90
+00:02:13.880 --> 00:02:15.360
+I'm doing a horizontal scaling,
+
+91
+00:02:15.360 --> 00:02:16.740
+you need some kind of a,
+
+92
+00:02:16.740 --> 00:02:18.640
+reverse proxy, a load balancer.
+
+93
+00:02:18.640 --> 00:02:19.920
+So let's say nginx is
+
+94
+00:02:19.920 --> 00:02:21.000
+our load balancer.
+
+95
+00:02:21.000 --> 00:02:22.200
+So your request basically
+
+96
+00:02:22.200 --> 00:02:23.620
+goes to this nginx.
+
+97
+00:02:23.620 --> 00:02:24.480
+Not from the GitHub.
+
+98
+00:02:24.480 --> 00:02:26.580
+My basically the users will interact
+
+99
+00:02:26.580 --> 00:02:28.540
+from NGINX and NGINX will
+
+100
+00:02:28.540 --> 00:02:30.180
+load balance these servers.
+
+101
+00:02:30.180 --> 00:02:31.300
+Now, understand one thing.
+
+102
+00:02:31.300 --> 00:02:32.540
+In this particular architecture,
+
+103
+00:02:32.540 --> 00:02:33.740
+because it was a monolith
+
+104
+00:02:33.740 --> 00:02:35.100
+architecture, all these
+
+105
+00:02:35.100 --> 00:02:37.220
+servers have same code.
+
+106
+00:02:37.220 --> 00:02:38.860
+Now, even your AUTH server,
+
+107
+00:02:38.860 --> 00:02:40.340
+AUTH service has six codes.
+
+108
+00:02:40.340 --> 00:02:42.300
+Your payment also has six instances.
+
+109
+00:02:42.300 --> 00:02:44.420
+Your order also has six instances.
+
+110
+00:02:44.420 --> 00:02:46.060
+Just because you wanted to scale
+
+111
+00:02:46.060 --> 00:02:48.300
+the order service, you actually have
+
+112
+00:02:48.300 --> 00:02:50.340
+to scale all the servers at once.
+
+113
+00:02:50.340 --> 00:02:52.740
+Because we are here following the,
+
+114
+00:02:52.740 --> 00:02:54.330
+monolith architecture.
+
+115
+00:02:54.960 --> 00:02:56.280
+So monolith architecture is
+
+116
+00:02:56.280 --> 00:02:58.080
+basically, that is all your
+
+117
+00:02:58.080 --> 00:02:59.720
+code into one single code
+
+118
+00:02:59.720 --> 00:03:01.240
+base deployed on a server.
+
+119
+00:03:01.240 --> 00:03:02.600
+And then when you want to scale, you
+
+120
+00:03:02.600 --> 00:03:04.160
+basically scale the whole server.
+
+121
+00:03:04.160 --> 00:03:05.920
+So there is no segregation behind
+
+122
+00:03:05.920 --> 00:03:07.680
+the services, right in between
+
+123
+00:03:07.680 --> 00:03:09.520
+services, there is no segregation.
+
+124
+00:03:09.520 --> 00:03:11.120
+Everything is just one.
+
+125
+00:03:11.120 --> 00:03:12.800
+If you want to scale out,
+
+126
+00:03:12.800 --> 00:03:14.000
+you have to scale everything.
+
+127
+00:03:14.000 --> 00:03:15.640
+If you want to scale in, you have
+
+128
+00:03:15.640 --> 00:03:16.640
+to scale in everything.
+
+129
+00:03:17.360 --> 00:03:18.560
+So this is known as
+
+130
+00:03:18.560 --> 00:03:20.320
+a monolith architecture.
+
+131
+00:03:20.320 --> 00:03:22.080
+There are very common practices.
+
+132
+00:03:22.080 --> 00:03:24.000
+A lot of companies use this monolith
+
+133
+00:03:24.000 --> 00:03:25.640
+architecture because it is simpler
+
+134
+00:03:25.640 --> 00:03:26.820
+to implement and, you know,
+
+135
+00:03:26.820 --> 00:03:28.860
+it gives scaling out of the box.
+
+136
+00:03:28.860 --> 00:03:30.300
+And in the next particular
+
+137
+00:03:30.300 --> 00:03:31.900
+video, let's understand
+
+138
+00:03:31.900 --> 00:03:33.300
+the reverse of monolith.
+
+139
+00:03:33.300 --> 00:03:34.860
+Like, how can we break this
+
+140
+00:03:34.860 --> 00:03:36.700
+particular thing, monolith, and what
+
+141
+00:03:36.700 --> 00:03:37.900
+that thing is known as?

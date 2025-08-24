@@ -1,0 +1,381 @@
+WEBVTT
+
+1
+00:00:00.880 --> 00:00:02.480
+All right, so moving on,
+
+2
+00:00:03.120 --> 00:00:05.160
+this is another interesting
+
+3
+00:00:05.160 --> 00:00:06.440
+project and I'm pretty sure
+
+4
+00:00:06.440 --> 00:00:07.360
+you're going to love this.
+
+5
+00:00:07.360 --> 00:00:08.720
+Let's read the problem statement.
+
+6
+00:00:09.280 --> 00:00:11.160
+I love to introduce you with
+
+7
+00:00:11.160 --> 00:00:12.280
+the problem statements because
+
+8
+00:00:12.280 --> 00:00:13.880
+this is actually you'll be doing
+
+9
+00:00:13.880 --> 00:00:15.120
+in the real world as well.
+
+10
+00:00:15.680 --> 00:00:17.480
+You received a list of names
+
+11
+00:00:17.480 --> 00:00:19.640
+for chai orders, and the goal is
+
+12
+00:00:19.640 --> 00:00:21.840
+to print out the order queue.
+
+13
+00:00:21.840 --> 00:00:23.440
+Your task is to use a list
+
+14
+00:00:23.440 --> 00:00:25.480
+of names and print the order ready
+
+15
+00:00:25.480 --> 00:00:27.040
+for whatever the name is.
+
+16
+00:00:27.610 --> 00:00:28.810
+So, so far, whatever we have
+
+17
+00:00:28.810 --> 00:00:31.060
+seen or whatever we have done,
+
+18
+00:00:31.060 --> 00:00:32.210
+was just on the range.
+
+19
+00:00:32.210 --> 00:00:33.130
+This was the range,
+
+20
+00:00:33.130 --> 00:00:33.970
+this was the range.
+
+21
+00:00:33.970 --> 00:00:35.130
+But now we want to work
+
+22
+00:00:35.130 --> 00:00:36.170
+on something different.
+
+23
+00:00:36.730 --> 00:00:37.490
+So let's go ahead
+
+24
+00:00:37.490 --> 00:00:38.970
+and create a new file.
+
+25
+00:00:38.970 --> 00:00:44.010
+Call this one as 03,_t order
+
+26
+00:00:44.010 --> 00:00:47.090
+or orders py and the first thing
+
+27
+00:00:47.090 --> 00:00:49.210
+that we have to do here is to create
+
+28
+00:00:49.210 --> 00:00:51.810
+a list which has, names in it.
+
+29
+00:00:51.810 --> 00:00:52.610
+So let's just call this
+
+30
+00:00:52.610 --> 00:00:53.810
+one as orders, which will
+
+31
+00:00:53.810 --> 00:00:54.970
+be a list just like this.
+
+32
+00:00:55.510 --> 00:00:56.630
+It will have a lot of name.
+
+33
+00:00:56.630 --> 00:00:58.870
+I'll go ahead and add my name first.
+
+34
+00:00:58.870 --> 00:01:00.270
+And then let's just say we
+
+35
+00:01:00.270 --> 00:01:01.390
+have other name as well.
+
+36
+00:01:01.390 --> 00:01:02.870
+Let's just say Aman is one
+
+37
+00:01:02.870 --> 00:01:05.390
+of another name and another,
+
+38
+00:01:05.390 --> 00:01:07.910
+one is, let's just say Becky.
+
+39
+00:01:08.630 --> 00:01:09.510
+Another one.
+
+40
+00:01:09.510 --> 00:01:11.430
+Let's just say we have Carlos.
+
+41
+00:01:13.190 --> 00:01:14.510
+So now we want to loop through.
+
+42
+00:01:14.510 --> 00:01:16.110
+And again, keep in mind that
+
+43
+00:01:16.110 --> 00:01:17.430
+you have no idea how many
+
+44
+00:01:17.430 --> 00:01:18.310
+names are in this order.
+
+45
+00:01:18.310 --> 00:01:20.030
+There could be four, there could be
+
+46
+00:01:20.030 --> 00:01:22.150
+four, zero, or there could be 400.
+
+47
+00:01:22.770 --> 00:01:23.490
+No idea.
+
+48
+00:01:23.490 --> 00:01:24.810
+So in such case, just like we
+
+49
+00:01:24.810 --> 00:01:25.930
+have used the range, we can
+
+50
+00:01:25.930 --> 00:01:27.590
+simply go ahead and create a,
+
+51
+00:01:27.590 --> 00:01:30.210
+loop using the for, use the for
+
+52
+00:01:30.210 --> 00:01:32.210
+keyword, provide a, variable.
+
+53
+00:01:32.210 --> 00:01:33.650
+It could be name, it could be my
+
+54
+00:01:33.650 --> 00:01:34.770
+name, it could be your name,
+
+55
+00:01:34.770 --> 00:01:36.370
+whatever you want to go with this,
+
+56
+00:01:36.370 --> 00:01:38.170
+then in and then provide just like
+
+57
+00:01:38.170 --> 00:01:39.690
+the range we are providing, we can
+
+58
+00:01:39.690 --> 00:01:41.250
+also provide a list which is also
+
+59
+00:01:41.250 --> 00:01:42.530
+iteratable.
+
+60
+00:01:42.530 --> 00:01:43.690
+Yeah, this is the word.
+
+61
+00:01:43.690 --> 00:01:44.690
+You'll see quite a lot.
+
+62
+00:01:44.690 --> 00:01:45.810
+A lot of objects
+
+63
+00:01:45.810 --> 00:01:47.330
+in the Python are iteratable.
+
+64
+00:01:47.330 --> 00:01:48.530
+That means you can loop through them.
+
+65
+00:01:49.090 --> 00:01:50.170
+So I'll just go ahead and put up
+
+66
+00:01:50.170 --> 00:01:52.250
+the orders just like this and I'll
+
+67
+00:01:52.250 --> 00:01:55.130
+just go say print just like this
+
+68
+00:01:55.130 --> 00:01:58.450
+and I will say order ready for.
+
+69
+00:01:58.450 --> 00:02:00.090
+And then simply go ahead and put
+
+70
+00:02:00.090 --> 00:02:01.850
+up this name automatically.
+
+71
+00:02:01.850 --> 00:02:03.210
+This loop will go to the list
+
+72
+00:02:03.210 --> 00:02:04.769
+and first time on the first
+
+73
+00:02:04.769 --> 00:02:06.210
+loop this will be the value.
+
+74
+00:02:06.210 --> 00:02:07.290
+On the second loop, this
+
+75
+00:02:07.290 --> 00:02:08.370
+will be the value.
+
+76
+00:02:08.370 --> 00:02:09.650
+On the third loop this will be
+
+77
+00:02:09.650 --> 00:02:11.130
+the value, and on the fourth loop
+
+78
+00:02:11.130 --> 00:02:12.690
+this is going to be the value.
+
+79
+00:02:13.570 --> 00:02:14.290
+So this is it.
+
+80
+00:02:14.860 --> 00:02:15.380
+Super easy.
+
+81
+00:02:15.380 --> 00:02:15.980
+Told you.
+
+82
+00:02:15.980 --> 00:02:17.540
+Python is really really easy
+
+83
+00:02:17.540 --> 00:02:19.660
+if you work just like that.
+
+84
+00:02:19.660 --> 00:02:20.660
+So let's just say I want
+
+85
+00:02:20.660 --> 00:02:21.420
+to run this one.
+
+86
+00:02:21.420 --> 00:02:22.620
+And we can see order
+
+87
+00:02:22.620 --> 00:02:23.980
+is ready for Hitesh.
+
+88
+00:02:23.980 --> 00:02:25.900
+Next time, it's ready for Aman.
+
+89
+00:02:25.900 --> 00:02:26.740
+Next time, it's ready
+
+90
+00:02:26.740 --> 00:02:29.020
+for Becky and Carlos.
+
+91
+00:02:29.020 --> 00:02:30.380
+So pretty good, pretty fun.
+
+92
+00:02:30.380 --> 00:02:32.220
+And we can see we have actually
+
+93
+00:02:32.220 --> 00:02:33.900
+done this task as well.
+
+94
+00:02:33.900 --> 00:02:35.260
+That is it for this video.
+
+95
+00:02:35.260 --> 00:02:37.180
+Let's catch up in the next one.

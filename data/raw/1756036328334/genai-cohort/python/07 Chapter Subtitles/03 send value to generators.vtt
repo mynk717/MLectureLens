@@ -1,0 +1,1061 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:02.840
+All right, hope you are having fun
+
+2
+00:00:02.840 --> 00:00:04.400
+with these generators.
+
+3
+00:00:04.400 --> 00:00:05.560
+I'm going pretty much
+
+4
+00:00:05.560 --> 00:00:07.040
+in depth of the generator,
+
+5
+00:00:07.040 --> 00:00:08.980
+leaving no stone unturned.
+
+6
+00:00:08.980 --> 00:00:10.800
+That's why little more number
+
+7
+00:00:10.800 --> 00:00:12.080
+of videos but hey, you're getting
+
+8
+00:00:12.080 --> 00:00:13.200
+more knowledge for that.
+
+9
+00:00:13.200 --> 00:00:15.120
+Hope you'll rate this as well.
+
+10
+00:00:15.120 --> 00:00:16.119
+Let me take you onto
+
+11
+00:00:16.119 --> 00:00:17.120
+the screen and show you
+
+12
+00:00:17.120 --> 00:00:18.720
+something more interesting.
+
+13
+00:00:18.720 --> 00:00:20.720
+Now so far what we have seen is
+
+14
+00:00:20.720 --> 00:00:23.360
+the classic use of the yield
+
+15
+00:00:23.360 --> 00:00:24.680
+statement and there is
+
+16
+00:00:24.680 --> 00:00:25.600
+nothing wrong, this is how
+
+17
+00:00:25.600 --> 00:00:26.960
+majorly it is being used.
+
+18
+00:00:27.590 --> 00:00:29.270
+But there is also a different
+
+19
+00:00:29.270 --> 00:00:30.550
+use case of this yield.
+
+20
+00:00:30.550 --> 00:00:32.470
+You will not see them mostly
+
+21
+00:00:32.470 --> 00:00:34.030
+in the tutorials or the courses
+
+22
+00:00:34.030 --> 00:00:36.310
+which are made just on the surface
+
+23
+00:00:36.310 --> 00:00:38.070
+level or probably like that.
+
+24
+00:00:38.070 --> 00:00:40.350
+But I'll show you how this can be
+
+25
+00:00:40.350 --> 00:00:42.270
+used in the production and you will
+
+26
+00:00:42.270 --> 00:00:44.470
+see, you will unlock a really new
+
+27
+00:00:44.470 --> 00:00:46.470
+way of looking at the yield and also
+
+28
+00:00:46.470 --> 00:00:48.070
+interacting with the yield.
+
+29
+00:00:48.070 --> 00:00:49.590
+So so far we have seen that
+
+30
+00:00:49.590 --> 00:00:50.910
+actually whenever you call this.
+
+31
+00:00:50.910 --> 00:00:52.230
+So let's just say this is the person
+
+32
+00:00:52.230 --> 00:00:53.270
+who is calling the yield.
+
+33
+00:00:53.270 --> 00:00:55.150
+Yield actually generates the data
+
+34
+00:00:55.150 --> 00:00:56.800
+or gives the data when
+
+35
+00:00:56.800 --> 00:00:58.120
+what if this person wants
+
+36
+00:00:58.120 --> 00:01:00.240
+to send some data to the yield?
+
+37
+00:01:00.240 --> 00:01:01.760
+Yeah, that's also possible.
+
+38
+00:01:01.760 --> 00:01:03.440
+That can be possible and that
+
+39
+00:01:03.440 --> 00:01:05.640
+is used quite a lot but rarely
+
+40
+00:01:05.640 --> 00:01:06.880
+anybody discuss about this.
+
+41
+00:01:06.880 --> 00:01:08.120
+So this time we'll just go
+
+42
+00:01:08.120 --> 00:01:10.880
+ahead and say send data.
+
+43
+00:01:10.880 --> 00:01:12.360
+So we'll just go ahead and send
+
+44
+00:01:12.360 --> 00:01:13.360
+the data to this one.
+
+45
+00:01:13.360 --> 00:01:14.400
+Again this is too zoomed
+
+46
+00:01:14.400 --> 00:01:16.480
+in but you get the idea.
+
+47
+00:01:16.480 --> 00:01:18.320
+We want to send the data.
+
+48
+00:01:18.320 --> 00:01:19.840
+All right, let's go to the code
+
+49
+00:01:19.840 --> 00:01:22.080
+part and that's fairly easy,
+
+50
+00:01:22.770 --> 00:01:24.730
+not that easy but comparatively
+
+51
+00:01:24.730 --> 00:01:27.330
+to the comprehensions fairly easy.
+
+52
+00:01:27.330 --> 00:01:29.490
+So let's just call this1 as 03
+
+53
+00:01:29.490 --> 00:01:34.770
+and send generators py of course,
+
+54
+00:01:35.330 --> 00:01:37.650
+let's create a fresh new method
+
+55
+00:01:37.650 --> 00:01:41.330
+and call this one as Chai customer.
+
+56
+00:01:41.330 --> 00:01:42.530
+So somebody is asking us
+
+57
+00:01:42.530 --> 00:01:44.370
+for a chai and this time
+
+58
+00:01:44.370 --> 00:01:45.570
+here's the interesting part.
+
+59
+00:01:46.370 --> 00:01:47.770
+First of all we're going to print
+
+60
+00:01:47.770 --> 00:01:52.250
+up a message which says welcome.
+
+61
+00:01:52.250 --> 00:01:54.530
+First of all, welcome with
+
+62
+00:01:54.530 --> 00:01:57.290
+an exclamation and we will ask what
+
+63
+00:01:57.290 --> 00:02:02.650
+chai would you, would you like?
+
+64
+00:02:02.650 --> 00:02:03.450
+Just like that.
+
+65
+00:02:04.010 --> 00:02:06.450
+Now what we're expecting is somebody
+
+66
+00:02:06.450 --> 00:02:09.090
+will give me a chai order and from
+
+67
+00:02:09.090 --> 00:02:10.570
+where this is going to come.
+
+68
+00:02:10.570 --> 00:02:11.050
+Yes.
+
+69
+00:02:11.610 --> 00:02:13.130
+Yeah, this is very strange.
+
+70
+00:02:13.130 --> 00:02:14.290
+So far we have used it
+
+71
+00:02:14.290 --> 00:02:15.530
+like a return statement.
+
+72
+00:02:15.530 --> 00:02:18.820
+We but can I actually store the value
+
+73
+00:02:18.820 --> 00:02:20.660
+of the yield in a variable?
+
+74
+00:02:20.660 --> 00:02:21.460
+Yes, you can.
+
+75
+00:02:21.460 --> 00:02:22.420
+This is Python world.
+
+76
+00:02:22.420 --> 00:02:23.340
+You can store anything
+
+77
+00:02:23.340 --> 00:02:24.660
+in the variable.
+
+78
+00:02:24.660 --> 00:02:26.220
+Now apart from this, we are going
+
+79
+00:02:26.220 --> 00:02:27.940
+to go ahead and run a loop
+
+80
+00:02:27.940 --> 00:02:30.820
+as well while true and we will say
+
+81
+00:02:30.820 --> 00:02:33.540
+print formatted string
+
+82
+00:02:33.540 --> 00:02:35.780
+which says preparing
+
+83
+00:02:35.780 --> 00:02:37.940
+and you are preparing an order.
+
+84
+00:02:38.660 --> 00:02:40.260
+So we are printing this.
+
+85
+00:02:40.260 --> 00:02:42.920
+Not only that, we again are going to
+
+86
+00:02:42.920 --> 00:02:45.760
+go ahead and say order equals yield.
+
+87
+00:02:46.400 --> 00:02:47.680
+Why we are doing it again?
+
+88
+00:02:47.680 --> 00:02:49.200
+Why you want to have a yield again?
+
+89
+00:02:49.200 --> 00:02:51.120
+We just took the order above.
+
+90
+00:02:51.120 --> 00:02:52.320
+That is great.
+
+91
+00:02:52.320 --> 00:02:53.480
+But this is the order
+
+92
+00:02:53.480 --> 00:02:55.480
+that you took this time.
+
+93
+00:02:55.480 --> 00:02:56.440
+And right now this is
+
+94
+00:02:56.440 --> 00:02:57.320
+preparing that order.
+
+95
+00:02:57.320 --> 00:02:59.200
+But what if the new order comes up?
+
+96
+00:02:59.920 --> 00:03:01.920
+That's also interesting case.
+
+97
+00:03:01.920 --> 00:03:03.920
+Let me walk you through what happens.
+
+98
+00:03:03.920 --> 00:03:05.520
+Because assuming things is not
+
+99
+00:03:05.520 --> 00:03:06.640
+a good idea in programming.
+
+100
+00:03:06.640 --> 00:03:08.400
+Let's just go ahead and execute them.
+
+101
+00:03:09.000 --> 00:03:09.680
+Let's just say again,
+
+102
+00:03:09.680 --> 00:03:11.240
+we have a tea stall.
+
+103
+00:03:11.240 --> 00:03:12.520
+And in this we call
+
+104
+00:03:12.520 --> 00:03:13.640
+this Chai customer.
+
+105
+00:03:13.640 --> 00:03:14.440
+There we go.
+
+106
+00:03:14.440 --> 00:03:16.440
+This right now is storing
+
+107
+00:03:16.440 --> 00:03:18.240
+the reference of the Chai customer.
+
+108
+00:03:18.240 --> 00:03:19.720
+Not doing anything at all.
+
+109
+00:03:19.720 --> 00:03:21.560
+In order to run this, I have to call
+
+110
+00:03:21.560 --> 00:03:24.120
+the next method and say this stall.
+
+111
+00:03:25.480 --> 00:03:26.920
+So this is interesting.
+
+112
+00:03:26.920 --> 00:03:28.840
+This is actually a point where you
+
+113
+00:03:28.840 --> 00:03:32.120
+are having a start the generator.
+
+114
+00:03:32.120 --> 00:03:33.360
+This is a starting point
+
+115
+00:03:33.360 --> 00:03:34.120
+of the generator.
+
+116
+00:03:34.960 --> 00:03:36.640
+Now after this I can just go
+
+117
+00:03:36.640 --> 00:03:40.640
+ahead and say stall dot send.
+
+118
+00:03:41.600 --> 00:03:43.600
+Once I go ahead and send this,
+
+119
+00:03:43.600 --> 00:03:45.040
+then for the first time
+
+120
+00:03:45.040 --> 00:03:48.800
+I'm sending masala Shai.
+
+121
+00:03:48.800 --> 00:03:50.720
+Let's run this program as it is.
+
+122
+00:03:50.720 --> 00:03:52.480
+What's happening in this case?
+
+123
+00:03:52.480 --> 00:03:53.720
+We'll add more code to this.
+
+124
+00:03:53.720 --> 00:03:54.800
+But right now I just want
+
+125
+00:03:54.800 --> 00:03:56.800
+to execute it as it is.
+
+126
+00:03:56.800 --> 00:03:58.120
+So once I do this notice
+
+127
+00:03:58.120 --> 00:04:00.160
+here, it says, welcome.
+
+128
+00:04:00.160 --> 00:04:01.520
+What chai would you like to have?
+
+129
+00:04:01.520 --> 00:04:03.520
+And it's preparing a masala chai.
+
+130
+00:04:04.220 --> 00:04:06.300
+Okay, it's preparing a masala chai.
+
+131
+00:04:06.300 --> 00:04:07.700
+The order that you are yielding
+
+132
+00:04:07.700 --> 00:04:08.780
+right now is this one.
+
+133
+00:04:08.780 --> 00:04:09.900
+So you have started this.
+
+134
+00:04:09.900 --> 00:04:10.700
+This one.
+
+135
+00:04:10.700 --> 00:04:11.860
+But what if somebody
+
+136
+00:04:11.860 --> 00:04:13.500
+gives me another one?
+
+137
+00:04:13.500 --> 00:04:15.500
+All right, let's go ahead and see.
+
+138
+00:04:15.500 --> 00:04:18.380
+This one is lemon chai.
+
+139
+00:04:20.060 --> 00:04:21.339
+All right, let's run this
+
+140
+00:04:21.339 --> 00:04:23.100
+and I'll show you exactly.
+
+141
+00:04:23.100 --> 00:04:24.740
+Notice here, it says masala
+
+142
+00:04:24.740 --> 00:04:26.020
+chai and lemon chai.
+
+143
+00:04:26.020 --> 00:04:27.300
+So it's preparing nicely.
+
+144
+00:04:27.300 --> 00:04:28.860
+But what if I don't
+
+145
+00:04:28.860 --> 00:04:30.570
+write this order yield.
+
+146
+00:04:30.570 --> 00:04:31.250
+Interesting question.
+
+147
+00:04:31.250 --> 00:04:33.050
+Let's go ahead and remove this.
+
+148
+00:04:33.050 --> 00:04:33.770
+Let's run this.
+
+149
+00:04:33.770 --> 00:04:34.890
+What happens in this case.
+
+150
+00:04:34.890 --> 00:04:35.770
+And we can see.
+
+151
+00:04:35.770 --> 00:04:36.730
+Oh, goodness.
+
+152
+00:04:36.730 --> 00:04:38.690
+This is continuously just running.
+
+153
+00:04:38.690 --> 00:04:40.090
+I'll kill this before it actually,
+
+154
+00:04:40.730 --> 00:04:41.570
+kills my memory.
+
+155
+00:04:41.570 --> 00:04:43.130
+But you can see now we are just
+
+156
+00:04:43.130 --> 00:04:44.490
+constantly going with
+
+157
+00:04:44.490 --> 00:04:46.570
+the memory, memory, all of that.
+
+158
+00:04:46.570 --> 00:04:47.970
+Because the point is this is
+
+159
+00:04:47.970 --> 00:04:49.770
+a while true loop and this is
+
+160
+00:04:49.770 --> 00:04:52.010
+constantly just keep on going with,
+
+161
+00:04:52.630 --> 00:04:54.250
+the infinite amount of loops.
+
+162
+00:04:55.530 --> 00:04:57.730
+Now we need to analyze this to truly
+
+163
+00:04:57.730 --> 00:04:59.330
+understand what just happened here.
+
+164
+00:04:59.330 --> 00:05:00.730
+Because this is a very interesting
+
+165
+00:05:00.730 --> 00:05:02.470
+case study altogether.
+
+166
+00:05:02.470 --> 00:05:04.830
+Let's close this and let's
+
+167
+00:05:04.830 --> 00:05:06.030
+bring it back so that we can
+
+168
+00:05:06.030 --> 00:05:07.430
+actually understand this.
+
+169
+00:05:07.430 --> 00:05:09.110
+And oops.
+
+170
+00:05:09.110 --> 00:05:10.630
+Oh, my bad.
+
+171
+00:05:10.630 --> 00:05:11.270
+All Right.
+
+172
+00:05:11.270 --> 00:05:12.750
+So notice here what is
+
+173
+00:05:12.750 --> 00:05:14.070
+happening in this program.
+
+174
+00:05:14.070 --> 00:05:15.750
+We define a simple program.
+
+175
+00:05:15.750 --> 00:05:17.430
+We simply print the message
+
+176
+00:05:17.430 --> 00:05:18.830
+and this is line number three
+
+177
+00:05:18.830 --> 00:05:20.230
+where we wait for the order.
+
+178
+00:05:20.950 --> 00:05:23.150
+So this order value is not going
+
+179
+00:05:23.150 --> 00:05:24.630
+to get filled if you just
+
+180
+00:05:24.630 --> 00:05:25.670
+run the function like this
+
+181
+00:05:25.670 --> 00:05:27.590
+next, all because you haven't
+
+182
+00:05:27.590 --> 00:05:28.550
+passed on any value.
+
+183
+00:05:28.550 --> 00:05:29.910
+This function is expecting
+
+184
+00:05:29.910 --> 00:05:31.110
+that something will be given
+
+185
+00:05:31.110 --> 00:05:32.310
+to me via the yield.
+
+186
+00:05:32.900 --> 00:05:34.220
+And since nothing is being given
+
+187
+00:05:34.220 --> 00:05:36.620
+to you, you simply go ahead and say,
+
+188
+00:05:36.620 --> 00:05:37.860
+okay, nothing is being given.
+
+189
+00:05:37.860 --> 00:05:39.140
+I will pause here.
+
+190
+00:05:39.140 --> 00:05:40.260
+So technically you never
+
+191
+00:05:40.260 --> 00:05:41.300
+reach line number three.
+
+192
+00:05:41.300 --> 00:05:43.140
+You are always at line number two.
+
+193
+00:05:43.140 --> 00:05:44.940
+So when I simply said stall chai
+
+194
+00:05:44.940 --> 00:05:46.420
+customer, this is just a reference.
+
+195
+00:05:46.420 --> 00:05:48.180
+And when I said next stall,
+
+196
+00:05:48.180 --> 00:05:50.540
+this starts my function and runs
+
+197
+00:05:50.540 --> 00:05:52.660
+this print line here, but actually
+
+198
+00:05:52.660 --> 00:05:54.620
+does nothing outside of this.
+
+199
+00:05:54.620 --> 00:05:56.140
+And to show you the proof
+
+200
+00:05:56.140 --> 00:05:58.190
+of this, I'll just comment this
+
+201
+00:05:58.190 --> 00:06:00.270
+and we'll run this program again.
+
+202
+00:06:00.270 --> 00:06:01.390
+And there we go.
+
+203
+00:06:01.390 --> 00:06:02.630
+So notice here it prints
+
+204
+00:06:02.630 --> 00:06:03.710
+what chai would you like?
+
+205
+00:06:03.710 --> 00:06:05.830
+But now it's waiting that, hey, give
+
+206
+00:06:05.830 --> 00:06:07.150
+me some value so that I can
+
+207
+00:06:07.150 --> 00:06:08.910
+actually store that into the order.
+
+208
+00:06:09.470 --> 00:06:11.110
+The moment you go ahead and first
+
+209
+00:06:11.110 --> 00:06:13.470
+time you send the value using send,
+
+210
+00:06:13.470 --> 00:06:14.950
+this send method directly
+
+211
+00:06:14.950 --> 00:06:16.350
+interacts to your generator.
+
+212
+00:06:16.350 --> 00:06:18.110
+And this is where the yield
+
+213
+00:06:18.110 --> 00:06:19.430
+value comes into the picture.
+
+214
+00:06:19.430 --> 00:06:21.390
+So yield, value comes up here.
+
+215
+00:06:21.390 --> 00:06:22.110
+So we have paused
+
+216
+00:06:22.110 --> 00:06:23.070
+the program in between.
+
+217
+00:06:23.750 --> 00:06:24.630
+And after that, this, while
+
+218
+00:06:24.630 --> 00:06:26.150
+true, this will always execute.
+
+219
+00:06:26.150 --> 00:06:27.190
+Then we are printing that.
+
+220
+00:06:27.190 --> 00:06:28.810
+Okay, you are preparing a,
+
+221
+00:06:28.810 --> 00:06:30.830
+order and then here also we are
+
+222
+00:06:30.830 --> 00:06:32.070
+pausing this program again.
+
+223
+00:06:32.710 --> 00:06:35.430
+If this doesn't exist, there is
+
+224
+00:06:35.430 --> 00:06:36.510
+no way of stopping this program.
+
+225
+00:06:36.510 --> 00:06:38.310
+This is always keep on running.
+
+226
+00:06:38.310 --> 00:06:39.190
+So this is the point
+
+227
+00:06:39.190 --> 00:06:40.430
+at line number six where you
+
+228
+00:06:40.430 --> 00:06:41.510
+stop the program again.
+
+229
+00:06:42.070 --> 00:06:43.990
+So when I run this program again,
+
+230
+00:06:43.990 --> 00:06:45.630
+then the program again comes
+
+231
+00:06:45.630 --> 00:06:47.190
+to the life and says, all right,
+
+232
+00:06:47.190 --> 00:06:48.790
+the order value is yield.
+
+233
+00:06:49.440 --> 00:06:51.240
+So your order gets a value
+
+234
+00:06:51.240 --> 00:06:52.760
+and then it again goes back.
+
+235
+00:06:52.760 --> 00:06:54.520
+Okay, so this is true.
+
+236
+00:06:54.520 --> 00:06:57.040
+So I'll just print that value again
+
+237
+00:06:57.040 --> 00:06:58.200
+and I will wait that
+
+238
+00:06:58.200 --> 00:07:00.000
+you pass me another value.
+
+239
+00:07:00.000 --> 00:07:01.480
+So the program then after that
+
+240
+00:07:01.480 --> 00:07:03.120
+keeps on going with the values
+
+241
+00:07:03.120 --> 00:07:04.560
+that you have, passed on.
+
+242
+00:07:04.560 --> 00:07:06.400
+It's a very interesting case study
+
+243
+00:07:06.400 --> 00:07:08.080
+of how the values are gone.
+
+244
+00:07:08.080 --> 00:07:09.920
+And I know this is a aha moment.
+
+245
+00:07:09.920 --> 00:07:12.200
+All right, so we are always stuck
+
+246
+00:07:12.200 --> 00:07:13.760
+in the while loop in the memory.
+
+247
+00:07:13.760 --> 00:07:15.360
+And this is the reason why
+
+248
+00:07:15.360 --> 00:07:17.070
+this program is getting
+
+249
+00:07:17.070 --> 00:07:18.310
+stopped in running into
+
+250
+00:07:18.310 --> 00:07:19.710
+the infinite generators.
+
+251
+00:07:19.710 --> 00:07:21.750
+And that is the reason I just
+
+252
+00:07:21.750 --> 00:07:23.350
+talked about the infinite generator
+
+253
+00:07:23.350 --> 00:07:24.470
+in the last video,
+
+254
+00:07:24.470 --> 00:07:26.430
+because the infinite generators
+
+255
+00:07:26.430 --> 00:07:28.630
+are used less this one here.
+
+256
+00:07:28.630 --> 00:07:30.230
+But this is the implementation
+
+257
+00:07:30.230 --> 00:07:31.990
+which is used quite a lot,
+
+258
+00:07:31.990 --> 00:07:33.670
+especially in the frameworks.
+
+259
+00:07:33.670 --> 00:07:35.270
+So I hope this gives you more idea
+
+260
+00:07:35.270 --> 00:07:36.430
+of why this is happening,
+
+261
+00:07:36.430 --> 00:07:37.990
+how this is happening, and each
+
+262
+00:07:37.990 --> 00:07:39.910
+line is broken down to you.
+
+263
+00:07:39.910 --> 00:07:41.030
+This was fun.
+
+264
+00:07:41.030 --> 00:07:42.430
+All right, for this video,
+
+265
+00:07:42.430 --> 00:07:43.990
+let's catch up in the next one.

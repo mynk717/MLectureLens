@@ -1,0 +1,577 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:03.600
+All right, so continuing further
+
+2
+00:00:03.600 --> 00:00:06.040
+from the last video which says, hey,
+
+3
+00:00:06.040 --> 00:00:07.600
+why do you want to learn Python?
+
+4
+00:00:08.320 --> 00:00:09.920
+The easiest answer would be
+
+5
+00:00:09.920 --> 00:00:11.040
+because it's easy.
+
+6
+00:00:11.040 --> 00:00:12.800
+That is why I want to learn it.
+
+7
+00:00:12.800 --> 00:00:13.760
+And most, for most
+
+8
+00:00:13.760 --> 00:00:15.080
+of the people it is actually true.
+
+9
+00:00:15.080 --> 00:00:16.520
+And I also started with Python
+
+10
+00:00:16.520 --> 00:00:17.960
+because it was super easy to learn
+
+11
+00:00:17.960 --> 00:00:19.640
+and eventually I switched to other
+
+12
+00:00:19.640 --> 00:00:21.360
+languages which I also enjoy.
+
+13
+00:00:21.360 --> 00:00:22.480
+But still I come back onto
+
+14
+00:00:22.480 --> 00:00:24.000
+the Python every now and then.
+
+15
+00:00:24.000 --> 00:00:25.000
+So the first reason that
+
+16
+00:00:25.000 --> 00:00:26.000
+you want to learn about it
+
+17
+00:00:26.000 --> 00:00:28.030
+is it's really portable.
+
+18
+00:00:28.030 --> 00:00:29.550
+Yeah, once the program is being
+
+19
+00:00:29.550 --> 00:00:31.150
+written in the Python they can
+
+20
+00:00:31.150 --> 00:00:33.110
+actually go ahead and run on variety
+
+21
+00:00:33.110 --> 00:00:34.430
+of operating system including
+
+22
+00:00:34.430 --> 00:00:37.910
+Windows, Mac and everybody's
+
+23
+00:00:37.910 --> 00:00:38.950
+favorite Linux as well.
+
+24
+00:00:38.950 --> 00:00:40.910
+So there is no such thing as
+
+25
+00:00:40.910 --> 00:00:41.870
+hey, I've written this,
+
+26
+00:00:41.870 --> 00:00:43.030
+you need exact same system.
+
+27
+00:00:43.030 --> 00:00:44.430
+No, it's not like that.
+
+28
+00:00:44.430 --> 00:00:45.990
+Once it's being written it can
+
+29
+00:00:45.990 --> 00:00:47.790
+be used on anywhere at all.
+
+30
+00:00:47.790 --> 00:00:49.230
+That's the first major
+
+31
+00:00:49.230 --> 00:00:50.190
+advantage of it.
+
+32
+00:00:50.910 --> 00:00:53.110
+Also another example is Python is
+
+33
+00:00:53.110 --> 00:00:56.090
+very, very readable and it's
+
+34
+00:00:56.090 --> 00:00:57.490
+super easy to guess what things
+
+35
+00:00:57.490 --> 00:00:59.130
+are doing, as long as you
+
+36
+00:00:59.130 --> 00:01:00.650
+maintain some form of readability
+
+37
+00:01:00.650 --> 00:01:02.410
+in your code as well, but it's
+
+38
+00:01:02.410 --> 00:01:03.330
+fairly readable.
+
+39
+00:01:03.330 --> 00:01:05.250
+Whatever you are doing, it's very
+
+40
+00:01:05.250 --> 00:01:06.330
+kind of predictable.
+
+41
+00:01:06.330 --> 00:01:07.570
+And I like predictability.
+
+42
+00:01:08.210 --> 00:01:10.010
+And one of the major reason why
+
+43
+00:01:10.010 --> 00:01:11.810
+this language even was invented
+
+44
+00:01:11.810 --> 00:01:13.570
+is for productive reasons.
+
+45
+00:01:14.130 --> 00:01:16.210
+Writing code in Java and C
+
+46
+00:01:16.210 --> 00:01:17.450
+definitely could be a little bit
+
+47
+00:01:17.450 --> 00:01:18.530
+faster, you can do the same
+
+48
+00:01:18.530 --> 00:01:19.730
+task but you can also do
+
+49
+00:01:19.730 --> 00:01:20.970
+the same task in Python as well.
+
+50
+00:01:20.970 --> 00:01:23.720
+Almost same, almost all task and it's
+
+51
+00:01:23.720 --> 00:01:26.000
+meant to be productive, friendly.
+
+52
+00:01:26.000 --> 00:01:27.200
+Python and Java code
+
+53
+00:01:27.200 --> 00:01:28.320
+looks too verbose.
+
+54
+00:01:28.320 --> 00:01:29.480
+There is a steep learning
+
+55
+00:01:29.480 --> 00:01:30.400
+curve for that.
+
+56
+00:01:30.400 --> 00:01:31.560
+But Python you can pick it
+
+57
+00:01:31.560 --> 00:01:32.880
+up pretty quickly.
+
+58
+00:01:32.880 --> 00:01:33.800
+Within a week you can pick
+
+59
+00:01:33.800 --> 00:01:35.200
+up decent Python.
+
+60
+00:01:35.200 --> 00:01:36.880
+And that is one of the reason,
+
+61
+00:01:36.880 --> 00:01:38.840
+other reason why everybody love
+
+62
+00:01:38.840 --> 00:01:41.920
+this is something known as
+
+63
+00:01:41.920 --> 00:01:44.000
+STL or I will call this one as
+
+64
+00:01:44.000 --> 00:01:46.880
+easier one standard library.
+
+65
+00:01:46.880 --> 00:01:48.320
+What do you mean by standard library?
+
+66
+00:01:48.950 --> 00:01:50.870
+A lot of code is already being
+
+67
+00:01:50.870 --> 00:01:52.230
+written in the Python and people
+
+68
+00:01:52.230 --> 00:01:53.470
+are very generous that they
+
+69
+00:01:53.470 --> 00:01:54.870
+have open sourced their code.
+
+70
+00:01:54.870 --> 00:01:56.310
+That means those codes are available
+
+71
+00:01:56.310 --> 00:01:58.470
+for you even to use commercially.
+
+72
+00:01:58.470 --> 00:01:59.750
+And that is the reason, one of
+
+73
+00:01:59.750 --> 00:02:00.950
+the reason why it's getting popular
+
+74
+00:02:00.950 --> 00:02:03.030
+in the world of data science
+
+75
+00:02:03.030 --> 00:02:04.710
+and machine learning and AI.
+
+76
+00:02:05.510 --> 00:02:06.870
+Hundreds, probably not hundred
+
+77
+00:02:06.870 --> 00:02:07.830
+millions of people have
+
+78
+00:02:07.830 --> 00:02:09.150
+written the code and made it
+
+79
+00:02:09.150 --> 00:02:10.509
+available for people, hey, go
+
+80
+00:02:10.509 --> 00:02:11.990
+ahead and use it for free.
+
+81
+00:02:11.990 --> 00:02:13.830
+And this huge standard library,
+
+82
+00:02:14.720 --> 00:02:15.960
+availability of the code built
+
+83
+00:02:15.960 --> 00:02:17.560
+in tools is the reason why
+
+84
+00:02:17.560 --> 00:02:18.600
+everybody loves and we will
+
+85
+00:02:18.600 --> 00:02:20.480
+learn a lot about pre built
+
+86
+00:02:20.480 --> 00:02:22.800
+libraries and we just import
+
+87
+00:02:22.800 --> 00:02:23.520
+these code.
+
+88
+00:02:23.520 --> 00:02:25.880
+It's like moving up here so
+
+89
+00:02:25.880 --> 00:02:27.680
+somebody has created this class.
+
+90
+00:02:27.680 --> 00:02:29.800
+All I got to do is bring up this part
+
+91
+00:02:29.800 --> 00:02:31.040
+of it and now I can use it.
+
+92
+00:02:31.040 --> 00:02:32.440
+I am commercially allowed to use
+
+93
+00:02:32.440 --> 00:02:33.800
+this piece of code from somebody
+
+94
+00:02:33.800 --> 00:02:35.680
+else's code that makes it
+
+95
+00:02:35.680 --> 00:02:37.200
+super powerful as a language.
+
+96
+00:02:37.200 --> 00:02:38.640
+So this is the beauty of it.
+
+97
+00:02:38.640 --> 00:02:39.760
+Now apart from this, this
+
+98
+00:02:39.760 --> 00:02:41.280
+language is actually
+
+99
+00:02:41.280 --> 00:02:43.480
+pretty flexible and multi use.
+
+100
+00:02:43.480 --> 00:02:45.120
+So I'll call this one as multi use.
+
+101
+00:02:45.750 --> 00:02:46.830
+So Python a lot of people
+
+102
+00:02:46.830 --> 00:02:48.190
+think is just terminal or
+
+103
+00:02:48.190 --> 00:02:49.110
+just for data science.
+
+104
+00:02:49.110 --> 00:02:50.910
+But no, it can actually use
+
+105
+00:02:50.910 --> 00:02:52.710
+for a lot of web apps.
+
+106
+00:02:52.710 --> 00:02:53.710
+Yes, you can build full
+
+107
+00:02:53.710 --> 00:02:54.830
+stack application with it.
+
+108
+00:02:54.830 --> 00:02:57.430
+We use it actually in that majorly.
+
+109
+00:02:57.430 --> 00:02:59.150
+We can do a lot of automation stuff.
+
+110
+00:02:59.150 --> 00:03:00.710
+We can do a lot of data science,
+
+111
+00:03:00.710 --> 00:03:03.270
+data manipulation, CSVs,
+
+112
+00:03:03.870 --> 00:03:05.670
+even for machine learning AI.
+
+113
+00:03:06.310 --> 00:03:08.750
+It's really a lot and my most
+
+114
+00:03:08.750 --> 00:03:10.870
+important reason is most favorite is
+
+115
+00:03:12.360 --> 00:03:13.480
+I call this one as
+
+116
+00:03:14.360 --> 00:03:16.600
+simply Chai level happiness.
+
+117
+00:03:16.600 --> 00:03:18.600
+So yeah, this language is super
+
+118
+00:03:19.320 --> 00:03:21.560
+amazing to learn and you enjoy
+
+119
+00:03:21.560 --> 00:03:23.240
+every bit of writing of it and I'll
+
+120
+00:03:23.240 --> 00:03:24.360
+make sure that you actually
+
+121
+00:03:24.360 --> 00:03:26.040
+go through with each part of it.
+
+122
+00:03:26.040 --> 00:03:27.800
+So this whole thing is at one place.
+
+123
+00:03:27.800 --> 00:03:30.400
+But this is my reason for using.
+
+124
+00:03:30.400 --> 00:03:32.200
+It's a Chai level happiness
+
+125
+00:03:32.200 --> 00:03:33.800
+that you get through writing
+
+126
+00:03:33.800 --> 00:03:34.880
+the code for this language.
+
+127
+00:03:34.880 --> 00:03:36.680
+And I will show you some of my
+
+128
+00:03:37.210 --> 00:03:38.840
+neat tricks and my super easy
+
+129
+00:03:38.840 --> 00:03:40.280
+scripts that I use still
+
+130
+00:03:40.280 --> 00:03:41.480
+to this date and every day
+
+131
+00:03:42.570 --> 00:03:43.970
+to do some of my regular tasks.
+
+132
+00:03:43.970 --> 00:03:45.770
+So these are my reason why I use
+
+133
+00:03:45.770 --> 00:03:47.650
+Python and I'm pretty sure you
+
+134
+00:03:47.650 --> 00:03:49.290
+will also leave some of your reason
+
+135
+00:03:49.290 --> 00:03:50.930
+to learn the Python or enjoy
+
+136
+00:03:50.930 --> 00:03:52.570
+the Python or write the Python.
+
+137
+00:03:52.570 --> 00:03:53.530
+Please do tweet me out.
+
+138
+00:03:53.530 --> 00:03:54.810
+I would love to know your reason
+
+139
+00:03:54.810 --> 00:03:56.370
+why you are using Python
+
+140
+00:03:56.370 --> 00:03:57.930
+or you want to learn Python.
+
+141
+00:03:57.930 --> 00:03:59.010
+Probably it will help me
+
+142
+00:03:59.010 --> 00:04:00.090
+to improve to make these
+
+143
+00:04:00.090 --> 00:04:01.450
+kinds of videos as well.
+
+144
+00:04:01.450 --> 00:04:03.050
+Let's catch up in the next video.

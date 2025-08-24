@@ -1,0 +1,401 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.600
+Okay, so right now you can
+
+2
+00:00:01.600 --> 00:00:03.560
+see that we have a very simple
+
+3
+00:00:03.560 --> 00:00:04.920
+application that we built
+
+4
+00:00:04.920 --> 00:00:06.520
+in the last video and which
+
+5
+00:00:06.520 --> 00:00:08.640
+is working absolutely fine.
+
+6
+00:00:08.640 --> 00:00:10.280
+But guys, tell me one thing,
+
+7
+00:00:10.280 --> 00:00:11.600
+just tell me one thing.
+
+8
+00:00:11.600 --> 00:00:13.440
+Do you think that this code
+
+9
+00:00:13.440 --> 00:00:14.400
+right here, which is a very
+
+10
+00:00:14.400 --> 00:00:16.239
+small code, is easy to write?
+
+11
+00:00:16.239 --> 00:00:16.920
+Do you think?
+
+12
+00:00:16.920 --> 00:00:18.160
+Do you like this code?
+
+13
+00:00:18.160 --> 00:00:19.840
+Absolutely not, right?
+
+14
+00:00:19.840 --> 00:00:20.880
+This particular
+
+15
+00:00:20.880 --> 00:00:22.960
+code is absolute mess.
+
+16
+00:00:22.960 --> 00:00:25.080
+Now imagine that you are working in
+
+17
+00:00:25.080 --> 00:00:26.960
+a company where you have a very,
+
+18
+00:00:26.960 --> 00:00:28.800
+very, very big code and you have
+
+19
+00:00:28.800 --> 00:00:29.960
+database integration, you have
+
+20
+00:00:29.960 --> 00:00:31.240
+redis integration, you have rate
+
+21
+00:00:31.240 --> 00:00:32.880
+limiting, you have a lot of
+
+22
+00:00:32.880 --> 00:00:35.160
+features set up and, coding like
+
+23
+00:00:35.160 --> 00:00:36.880
+this and that to having five to six
+
+24
+00:00:36.880 --> 00:00:38.600
+developers in your team.
+
+25
+00:00:38.600 --> 00:00:40.760
+Just imagine the amount of mess that
+
+26
+00:00:40.760 --> 00:00:42.360
+you guys are going to create, right?
+
+27
+00:00:42.360 --> 00:00:43.880
+Because you cannot have switch
+
+28
+00:00:43.880 --> 00:00:45.360
+cases, switch cases, switch cases
+
+29
+00:00:45.360 --> 00:00:46.920
+and do all the things manually.
+
+30
+00:00:46.920 --> 00:00:49.240
+This is not at all a good
+
+31
+00:00:49.240 --> 00:00:51.000
+developer experience, right?
+
+32
+00:00:51.000 --> 00:00:52.680
+You need some framework.
+
+33
+00:00:52.680 --> 00:00:53.640
+You need something
+
+34
+00:00:54.200 --> 00:00:55.640
+that, you know, makes a,
+
+35
+00:00:55.640 --> 00:00:57.240
+consistency among developer.
+
+36
+00:00:57.240 --> 00:00:59.590
+You need something that takes away
+
+37
+00:00:59.590 --> 00:01:02.110
+this whole messy part and creates
+
+38
+00:01:02.110 --> 00:01:03.630
+your code in a more structured
+
+39
+00:01:03.630 --> 00:01:05.390
+and a more maintainable way.
+
+40
+00:01:05.390 --> 00:01:06.790
+So for that there is one
+
+41
+00:01:06.790 --> 00:01:07.990
+very popular framework that
+
+42
+00:01:07.990 --> 00:01:09.430
+is known as Express js.
+
+43
+00:01:09.430 --> 00:01:10.830
+You might have heard about it.
+
+44
+00:01:10.830 --> 00:01:11.750
+And right now Express
+
+45
+00:01:11.750 --> 00:01:13.310
+5 is also out there.
+
+46
+00:01:13.310 --> 00:01:15.030
+So this Express, which is like
+
+47
+00:01:15.030 --> 00:01:16.510
+a battle tested and it is
+
+48
+00:01:16.510 --> 00:01:17.630
+therefore in the market
+
+49
+00:01:17.630 --> 00:01:19.070
+for years and years and it will stay
+
+50
+00:01:19.070 --> 00:01:20.510
+in the market for years.
+
+51
+00:01:20.510 --> 00:01:21.830
+So this basically takes
+
+52
+00:01:21.830 --> 00:01:23.230
+this headache, okay?
+
+53
+00:01:23.230 --> 00:01:24.900
+So from the next video onwards, we
+
+54
+00:01:24.900 --> 00:01:26.800
+are not going to use this HTTP
+
+55
+00:01:26.800 --> 00:01:28.600
+module because, you know, using this
+
+56
+00:01:28.600 --> 00:01:31.200
+HTTP raw module gives you a good
+
+57
+00:01:31.200 --> 00:01:32.680
+capability to create a server.
+
+58
+00:01:32.680 --> 00:01:34.480
+But the code is absolute mess.
+
+59
+00:01:34.480 --> 00:01:36.160
+So we are going to use Express
+
+60
+00:01:36.160 --> 00:01:37.800
+which internally, which
+
+61
+00:01:37.800 --> 00:01:39.480
+internally uses this HTTP
+
+62
+00:01:39.480 --> 00:01:41.280
+package only to create servers.
+
+63
+00:01:41.280 --> 00:01:42.440
+So we are going to use this.
+
+64
+00:01:42.440 --> 00:01:43.560
+So let me just show you a hello
+
+65
+00:01:43.560 --> 00:01:44.920
+world example at what it looks.
+
+66
+00:01:44.920 --> 00:01:47.520
+So see how clean it is.
+
+67
+00:01:47.520 --> 00:01:48.640
+You just do Express.
+
+68
+00:01:48.640 --> 00:01:50.440
+You create an application of Express.
+
+69
+00:01:50.440 --> 00:01:51.760
+You say, hey, if there is a get
+
+70
+00:01:51.760 --> 00:01:53.430
+request and slash, send this
+
+71
+00:01:53.430 --> 00:01:55.430
+response listen on this port.
+
+72
+00:01:55.430 --> 00:01:56.830
+So this is how, this is how
+
+73
+00:01:56.830 --> 00:01:59.110
+declarative this Express jss, okay?
+
+74
+00:01:59.110 --> 00:02:01.070
+And not only that, when you
+
+75
+00:02:01.070 --> 00:02:02.870
+are coding a server, a lot
+
+76
+00:02:02.870 --> 00:02:04.150
+of things comes in, right?
+
+77
+00:02:04.150 --> 00:02:06.110
+You need header parsing, you know,
+
+78
+00:02:06.110 --> 00:02:08.229
+you need body parsing, you know
+
+79
+00:02:08.229 --> 00:02:09.389
+how to say, you should know how
+
+80
+00:02:09.389 --> 00:02:11.390
+to send responses, how can you
+
+81
+00:02:11.390 --> 00:02:12.910
+declutter your code, how can you
+
+82
+00:02:12.910 --> 00:02:14.310
+move your codes into separate
+
+83
+00:02:14.310 --> 00:02:14.710
+files?
+
+84
+00:02:14.710 --> 00:02:15.750
+So there are a lot of things
+
+85
+00:02:15.750 --> 00:02:16.710
+that are going to come.
+
+86
+00:02:16.710 --> 00:02:17.710
+So for that we are going
+
+87
+00:02:17.710 --> 00:02:19.270
+to use Express js.
+
+88
+00:02:19.270 --> 00:02:21.030
+And trust me, all the companies,
+
+89
+00:02:21.030 --> 00:02:22.790
+big companies, small companies,
+
+90
+00:02:22.790 --> 00:02:24.790
+everyone uses Express js a lot.
+
+91
+00:02:24.790 --> 00:02:26.790
+And even in future,
+
+92
+00:02:26.790 --> 00:02:29.190
+any other library comes they are
+
+93
+00:02:29.190 --> 00:02:30.790
+inspired from the Express.
+
+94
+00:02:30.790 --> 00:02:32.270
+So if you know Express, you
+
+95
+00:02:32.270 --> 00:02:33.750
+can easily adapt to other
+
+96
+00:02:33.750 --> 00:02:35.830
+frameworks and libraries as well.
+
+97
+00:02:35.830 --> 00:02:36.990
+So I'll meet you in the next
+
+98
+00:02:36.990 --> 00:02:38.110
+class where we are going to set
+
+99
+00:02:38.110 --> 00:02:39.510
+up an Express application.
+
+100
+00:02:39.510 --> 00:02:41.350
+Till then, bye bye and take care.

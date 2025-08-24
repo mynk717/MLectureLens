@@ -1,0 +1,1389 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:01.800
+Okay, so enough of the theory.
+
+2
+00:00:01.800 --> 00:00:03.000
+Let's start with the practical
+
+3
+00:00:03.000 --> 00:00:05.560
+and build our very first server.
+
+4
+00:00:05.560 --> 00:00:06.400
+So what I'm going to do is
+
+5
+00:00:06.400 --> 00:00:07.160
+I'm just going to close
+
+6
+00:00:07.160 --> 00:00:08.080
+this particular window.
+
+7
+00:00:08.080 --> 00:00:09.280
+This was the FS1.
+
+8
+00:00:09.280 --> 00:00:11.280
+And let me just open the terminal.
+
+9
+00:00:11.280 --> 00:00:12.560
+So what I'm going to do is let
+
+10
+00:00:12.560 --> 00:00:14.160
+me just zoom in a little bit.
+
+11
+00:00:14.160 --> 00:00:15.400
+I should have done this setup
+
+12
+00:00:15.400 --> 00:00:16.520
+before, but yeah, that's fine.
+
+13
+00:00:16.520 --> 00:00:17.920
+So I'll just go into my coding
+
+14
+00:00:17.920 --> 00:00:19.080
+folder and there I have
+
+15
+00:00:19.080 --> 00:00:21.200
+this node, js thing, right?
+
+16
+00:00:21.200 --> 00:00:23.120
+And here I'm going to do
+
+17
+00:00:23.860 --> 00:00:26.810
+mkdir and let's say HTTP server.
+
+18
+00:00:26.810 --> 00:00:29.930
+Okay, so code the HTTP server.
+
+19
+00:00:29.930 --> 00:00:33.290
+And here we have RVs code, right?
+
+20
+00:00:33.290 --> 00:00:35.450
+Let's create a new file that is index
+
+21
+00:00:35.450 --> 00:00:36.090
+js.
+
+22
+00:00:36.090 --> 00:00:36.970
+So this is going to be
+
+23
+00:00:36.970 --> 00:00:38.210
+our entry point file.
+
+24
+00:00:38.210 --> 00:00:39.290
+Okay?
+
+25
+00:00:39.290 --> 00:00:42.410
+Now in order to create a server,
+
+26
+00:00:42.410 --> 00:00:44.450
+you have to use one built
+
+27
+00:00:44.450 --> 00:00:46.570
+in module that is HTTP.
+
+28
+00:00:46.570 --> 00:00:48.170
+So this HTTP module
+
+29
+00:00:48.170 --> 00:00:49.330
+which is again built in.
+
+30
+00:00:49.330 --> 00:00:50.330
+How do I know built in?
+
+31
+00:00:50.330 --> 00:00:51.250
+You can see that it's
+
+32
+00:00:51.250 --> 00:00:52.410
+on the official documentation.
+
+33
+00:00:52.410 --> 00:00:53.530
+Plus node is there, right?
+
+34
+00:00:54.070 --> 00:00:56.710
+This helps me to create a server.
+
+35
+00:00:56.710 --> 00:00:58.630
+So let's try to import it first.
+
+36
+00:00:58.630 --> 00:01:02.390
+So cause HTTP equals require
+
+37
+00:01:02.390 --> 00:01:04.069
+and I can just say HTTP.
+
+38
+00:01:04.069 --> 00:01:06.510
+Fine, then let's create a server.
+
+39
+00:01:06.510 --> 00:01:07.630
+So how do you create a server?
+
+40
+00:01:07.630 --> 00:01:09.749
+You can just say HTTP.um.
+
+41
+00:01:09.749 --> 00:01:11.030
+oh, okay.
+
+42
+00:01:11.030 --> 00:01:11.990
+Do you see that we are
+
+43
+00:01:11.990 --> 00:01:13.110
+not getting typings?
+
+44
+00:01:13.110 --> 00:01:14.470
+So for that, first of all,
+
+45
+00:01:14.470 --> 00:01:16.150
+I'll just do npm in it.
+
+46
+00:01:16.150 --> 00:01:17.630
+And interestingly I can just
+
+47
+00:01:17.630 --> 00:01:19.430
+do an hyphen Y which will
+
+48
+00:01:19.430 --> 00:01:20.550
+skip all the questions
+
+49
+00:01:20.550 --> 00:01:22.160
+and go with the default.
+
+50
+00:01:22.160 --> 00:01:24.640
+Now npm install@ the rate
+
+51
+00:01:24.640 --> 00:01:26.640
+types/ node.
+
+52
+00:01:26.640 --> 00:01:28.120
+So this will give me the bindings.
+
+53
+00:01:28.120 --> 00:01:29.160
+Right now you can see
+
+54
+00:01:29.160 --> 00:01:30.960
+I have create server.
+
+55
+00:01:30.960 --> 00:01:33.440
+Okay, so this line
+
+56
+00:01:33.440 --> 00:01:36.080
+creates a server for me and returns
+
+57
+00:01:36.080 --> 00:01:37.520
+a server instance.
+
+58
+00:01:37.520 --> 00:01:38.680
+Now what I can do is I
+
+59
+00:01:38.680 --> 00:01:40.640
+can take the server and make
+
+60
+00:01:40.640 --> 00:01:42.480
+it listen on a port.
+
+61
+00:01:42.480 --> 00:01:45.360
+I can bind this server to a port.
+
+62
+00:01:45.360 --> 00:01:46.720
+Now what is a port number?
+
+63
+00:01:46.720 --> 00:01:48.350
+Don't worry, I'll tell you.
+
+64
+00:01:48.350 --> 00:01:50.270
+So right now just type in 8000.
+
+65
+00:01:50.270 --> 00:01:50.710
+Okay?
+
+66
+00:01:50.710 --> 00:01:52.350
+So you can just type in 8000
+
+67
+00:01:52.350 --> 00:01:54.110
+and then a callback function.
+
+68
+00:01:54.110 --> 00:01:56.110
+So let's have a callback function.
+
+69
+00:01:56.110 --> 00:01:58.990
+So if my server successfully sets
+
+70
+00:01:58.990 --> 00:02:00.550
+up, if my server successfully
+
+71
+00:02:00.550 --> 00:02:02.190
+tries to listen to this port,
+
+72
+00:02:02.190 --> 00:02:05.070
+I can just say console.log okay,
+
+73
+00:02:05.070 --> 00:02:11.630
+that HTTP server is up and running
+
+74
+00:02:11.630 --> 00:02:14.110
+on port which 8000.
+
+75
+00:02:14.830 --> 00:02:16.310
+So this is just a successful
+
+76
+00:02:16.310 --> 00:02:19.070
+callback that if this successfully.
+
+77
+00:02:19.070 --> 00:02:20.310
+Listens, just give me
+
+78
+00:02:20.310 --> 00:02:21.270
+this console log.
+
+79
+00:02:21.270 --> 00:02:22.350
+That's it.
+
+80
+00:02:22.350 --> 00:02:23.630
+So now you have created
+
+81
+00:02:23.630 --> 00:02:24.990
+a server which might crash.
+
+82
+00:02:24.990 --> 00:02:25.830
+Let me just check.
+
+83
+00:02:25.830 --> 00:02:26.790
+So you can see that,
+
+84
+00:02:26.790 --> 00:02:27.950
+okay, it's not crashing.
+
+85
+00:02:27.950 --> 00:02:29.430
+HTTP server is up and running
+
+86
+00:02:29.430 --> 00:02:30.670
+on port number 8000.
+
+87
+00:02:30.670 --> 00:02:31.790
+But right now we have not
+
+88
+00:02:31.790 --> 00:02:33.310
+coded anything right.
+
+89
+00:02:33.310 --> 00:02:35.070
+So now just do a control C
+
+90
+00:02:35.070 --> 00:02:36.870
+to halt this server.
+
+91
+00:02:36.870 --> 00:02:38.190
+So this is basically means as
+
+92
+00:02:38.190 --> 00:02:39.430
+halt halt Basically means
+
+93
+00:02:39.430 --> 00:02:40.790
+you have just halted it, you
+
+94
+00:02:40.790 --> 00:02:41.990
+have just terminated it.
+
+95
+00:02:41.990 --> 00:02:42.430
+Okay?
+
+96
+00:02:43.360 --> 00:02:46.360
+So this HTTP createserver takes
+
+97
+00:02:46.360 --> 00:02:49.520
+in a callback function, okay?
+
+98
+00:02:49.520 --> 00:02:51.760
+This create server thing
+
+99
+00:02:51.760 --> 00:02:52.960
+gives you access.
+
+100
+00:02:52.960 --> 00:02:54.400
+This create server thing takes
+
+101
+00:02:54.400 --> 00:02:57.080
+in a function and it gives you
+
+102
+00:02:57.080 --> 00:02:58.440
+access to two things, that is
+
+103
+00:02:58.440 --> 00:03:00.080
+a request and a response.
+
+104
+00:03:00.080 --> 00:03:02.760
+The incoming request, and this is
+
+105
+00:03:02.760 --> 00:03:04.320
+where you can send a response.
+
+106
+00:03:04.320 --> 00:03:08.040
+So whatsoever user has requested that
+
+107
+00:03:08.040 --> 00:03:10.000
+will be available in this variable
+
+108
+00:03:10.000 --> 00:03:11.720
+that what user is trying to access.
+
+109
+00:03:11.720 --> 00:03:13.520
+For example, this request
+
+110
+00:03:13.520 --> 00:03:14.720
+will contain the method.
+
+111
+00:03:14.720 --> 00:03:16.360
+If it is a get method or post
+
+112
+00:03:16.360 --> 00:03:17.640
+method or patch method.
+
+113
+00:03:17.640 --> 00:03:19.680
+This will also contain that what
+
+114
+00:03:19.680 --> 00:03:21.240
+that user is trying to access.
+
+115
+00:03:21.240 --> 00:03:23.640
+So all the data that is coming
+
+116
+00:03:23.640 --> 00:03:24.960
+in the request will be
+
+117
+00:03:24.960 --> 00:03:26.120
+available in this object.
+
+118
+00:03:26.680 --> 00:03:29.240
+And using this object
+
+119
+00:03:29.240 --> 00:03:31.880
+we can construct a, response.
+
+120
+00:03:31.880 --> 00:03:33.520
+So now what I, what else is
+
+121
+00:03:33.520 --> 00:03:34.160
+in this function?
+
+122
+00:03:34.160 --> 00:03:35.960
+I'll just say console dot log
+
+123
+00:03:35.960 --> 00:03:38.930
+that I got an eight incoming
+
+124
+00:03:38.930 --> 00:03:41.250
+request, very simple, right?
+
+125
+00:03:41.250 --> 00:03:43.490
+And then I have to return
+
+126
+00:03:43.490 --> 00:03:44.490
+a response, right?
+
+127
+00:03:44.490 --> 00:03:47.130
+But let's say I mention I decide
+
+128
+00:03:47.130 --> 00:03:48.890
+that I will never send a response.
+
+129
+00:03:48.890 --> 00:03:50.770
+So see, what I'm trying to do is
+
+130
+00:03:50.770 --> 00:03:52.890
+in this, my request response
+
+131
+00:03:52.890 --> 00:03:54.650
+cycle, I am basically never
+
+132
+00:03:54.650 --> 00:03:56.170
+sending a response, which is,
+
+133
+00:03:56.170 --> 00:03:57.090
+which is a bad thing, right?
+
+134
+00:03:57.090 --> 00:03:58.370
+Now see what will happen
+
+135
+00:03:58.370 --> 00:03:59.970
+if I do node index js.
+
+136
+00:03:59.970 --> 00:04:01.090
+You can see that it is running
+
+137
+00:04:01.090 --> 00:04:02.610
+on port number 8,000.
+
+138
+00:04:02.610 --> 00:04:04.610
+Now see, if I go on my browser
+
+139
+00:04:04.610 --> 00:04:07.190
+and I Type in local host 8000, you
+
+140
+00:04:07.190 --> 00:04:08.910
+can see that it is stuck forever.
+
+141
+00:04:09.470 --> 00:04:11.630
+So I am trying to access
+
+142
+00:04:11.630 --> 00:04:14.750
+in my web browser localhost8000.
+
+143
+00:04:14.750 --> 00:04:15.990
+And you can see what happened
+
+144
+00:04:15.990 --> 00:04:17.630
+when I am trying to access this,
+
+145
+00:04:17.630 --> 00:04:20.110
+my browser is stuck, right?
+
+146
+00:04:20.110 --> 00:04:21.550
+Why is it stuck?
+
+147
+00:04:21.550 --> 00:04:23.390
+Because my server has
+
+148
+00:04:23.390 --> 00:04:24.590
+taken the request.
+
+149
+00:04:24.590 --> 00:04:26.070
+I got an incoming request,
+
+150
+00:04:26.070 --> 00:04:27.710
+but there is no response.
+
+151
+00:04:27.710 --> 00:04:29.150
+Similarly, if I copy this
+
+152
+00:04:29.150 --> 00:04:31.790
+localhost8000 thing, enter, the.
+
+153
+00:04:31.790 --> 00:04:33.710
+Then I do enter, then I do enter,
+
+154
+00:04:33.710 --> 00:04:35.470
+you can see that we are
+
+155
+00:04:35.470 --> 00:04:37.510
+like getting a request, but no
+
+156
+00:04:37.510 --> 00:04:39.150
+one is there to resolve these.
+
+157
+00:04:40.510 --> 00:04:43.110
+So let's send a, response because we
+
+158
+00:04:43.110 --> 00:04:44.830
+need to complete the cycle, right?
+
+159
+00:04:44.830 --> 00:04:46.110
+So you can see you got four
+
+160
+00:04:46.110 --> 00:04:47.790
+requests, but no one is there
+
+161
+00:04:47.790 --> 00:04:50.190
+to complete this request, right?
+
+162
+00:04:50.190 --> 00:04:51.870
+So how can you send a response?
+
+163
+00:04:51.870 --> 00:04:52.870
+So first of all, we
+
+164
+00:04:52.870 --> 00:04:53.990
+will copy this line.
+
+165
+00:04:53.990 --> 00:04:55.110
+I'm just copying it from here.
+
+166
+00:04:55.110 --> 00:04:56.270
+This is the documentation.
+
+167
+00:04:56.910 --> 00:04:59.780
+So this line sets a header.
+
+168
+00:04:59.780 --> 00:05:00.300
+Okay?
+
+169
+00:05:00.300 --> 00:05:02.700
+So we are sending a 200 response.
+
+170
+00:05:02.700 --> 00:05:04.100
+What is a 200 response?
+
+171
+00:05:04.100 --> 00:05:05.500
+This is a status code.
+
+172
+00:05:05.500 --> 00:05:07.540
+So 200 status code means that
+
+173
+00:05:07.540 --> 00:05:09.140
+it's a success response.
+
+174
+00:05:09.140 --> 00:05:09.540
+Okay?
+
+175
+00:05:09.540 --> 00:05:10.500
+As of now you can just
+
+176
+00:05:10.500 --> 00:05:11.420
+ignore this part.
+
+177
+00:05:11.420 --> 00:05:12.860
+So I'm just saying, hey,
+
+178
+00:05:12.860 --> 00:05:14.860
+response dot write at 200
+
+179
+00:05:15.420 --> 00:05:18.140
+and I will also end a, response.
+
+180
+00:05:18.140 --> 00:05:19.060
+Finally I'll just end
+
+181
+00:05:19.060 --> 00:05:21.500
+a response saying thanks for
+
+182
+00:05:22.060 --> 00:05:23.740
+visiting my server.
+
+183
+00:05:23.740 --> 00:05:24.740
+That, that's it.
+
+184
+00:05:24.740 --> 00:05:27.260
+So what I'm doing is I am getting
+
+185
+00:05:27.260 --> 00:05:28.900
+a request for every request.
+
+186
+00:05:28.900 --> 00:05:30.340
+I'm just doing a console log.
+
+187
+00:05:30.340 --> 00:05:32.100
+You can do DB operations, all that.
+
+188
+00:05:32.100 --> 00:05:33.660
+So all the DB operations,
+
+189
+00:05:33.660 --> 00:05:34.980
+everything will go here.
+
+190
+00:05:34.980 --> 00:05:37.100
+And finally you send a,
+
+191
+00:05:37.100 --> 00:05:39.620
+200 response back to the server.
+
+192
+00:05:39.620 --> 00:05:41.180
+Every time you make a change
+
+193
+00:05:41.180 --> 00:05:42.700
+in your code, you have to Rerun
+
+194
+00:05:42.700 --> 00:05:44.580
+this command that is node index.
+
+195
+00:05:44.580 --> 00:05:45.900
+Now if I try to visit
+
+196
+00:05:45.900 --> 00:05:48.260
+this localhost8000port.
+
+197
+00:05:48.820 --> 00:05:51.050
+Oh, see what I'm getting?
+
+198
+00:05:51.050 --> 00:05:52.130
+Okay, let me just do
+
+199
+00:05:52.130 --> 00:05:53.130
+it couple of times.
+
+200
+00:05:53.130 --> 00:05:55.130
+Every time my server, is returning.
+
+201
+00:05:55.130 --> 00:05:56.810
+Thanks for visiting my server.
+
+202
+00:05:56.810 --> 00:05:58.250
+What if I change something here?
+
+203
+00:05:58.250 --> 00:06:00.490
+Okay, what if I add an emoji?
+
+204
+00:06:00.490 --> 00:06:01.490
+So what you will notice is
+
+205
+00:06:01.490 --> 00:06:02.450
+that I'm not getting that
+
+206
+00:06:02.450 --> 00:06:03.850
+emoji even after refresh.
+
+207
+00:06:03.850 --> 00:06:04.490
+Why?
+
+208
+00:06:04.490 --> 00:06:06.250
+Because I have to do a control C.
+
+209
+00:06:06.250 --> 00:06:07.570
+I have to restart my server
+
+210
+00:06:07.570 --> 00:06:09.210
+and now I will see the change.
+
+211
+00:06:09.210 --> 00:06:10.890
+So yeah, in node js you have
+
+212
+00:06:10.890 --> 00:06:12.410
+to restart the server anytime
+
+213
+00:06:12.410 --> 00:06:14.170
+you make a change on your code.
+
+214
+00:06:14.170 --> 00:06:15.770
+And we have tools for that.
+
+215
+00:06:15.770 --> 00:06:16.850
+Don't worry, that I'll
+
+216
+00:06:16.850 --> 00:06:17.810
+show you while moving.
+
+217
+00:06:17.810 --> 00:06:19.910
+Okay, so now your
+
+218
+00:06:19.910 --> 00:06:21.430
+server is up and running.
+
+219
+00:06:21.430 --> 00:06:23.030
+You were able to create
+
+220
+00:06:23.030 --> 00:06:23.910
+your own server.
+
+221
+00:06:23.910 --> 00:06:25.270
+Let me halt the server.
+
+222
+00:06:25.270 --> 00:06:25.990
+Now you will see that
+
+223
+00:06:25.990 --> 00:06:27.110
+it will go away.
+
+224
+00:06:27.110 --> 00:06:28.910
+So you were able to create a very
+
+225
+00:06:28.910 --> 00:06:31.070
+simple server using HTTP module.
+
+226
+00:06:31.070 --> 00:06:32.670
+And yeah, one thing, let's have
+
+227
+00:06:32.670 --> 00:06:35.270
+the node that makes it more cleaner.
+
+228
+00:06:35.270 --> 00:06:36.790
+So you created a server.
+
+229
+00:06:36.790 --> 00:06:38.390
+Okay, so create a server using
+
+230
+00:06:38.390 --> 00:06:40.550
+this HTTP createserver pass
+
+231
+00:06:40.550 --> 00:06:41.910
+in a callback function.
+
+232
+00:06:41.910 --> 00:06:43.150
+This callback function will
+
+233
+00:06:43.150 --> 00:06:44.740
+run for every request.
+
+234
+00:06:44.740 --> 00:06:45.580
+This function has access
+
+235
+00:06:45.580 --> 00:06:47.380
+to request and the response
+
+236
+00:06:47.380 --> 00:06:48.820
+request is used to see what
+
+237
+00:06:48.820 --> 00:06:50.060
+the user is trying to request.
+
+238
+00:06:50.060 --> 00:06:50.900
+Response is used
+
+239
+00:06:50.900 --> 00:06:52.740
+to construct a, response.
+
+240
+00:06:52.740 --> 00:06:54.100
+And finally you can just make
+
+241
+00:06:54.100 --> 00:06:55.940
+the server listen on a particular
+
+242
+00:06:55.940 --> 00:06:57.940
+port and a success callback.
+
+243
+00:06:57.940 --> 00:06:59.700
+So if this line is successful,
+
+244
+00:06:59.700 --> 00:07:01.300
+if your server is up and running
+
+245
+00:07:01.300 --> 00:07:02.300
+successful, it will just
+
+246
+00:07:02.300 --> 00:07:03.380
+give you this indication
+
+247
+00:07:03.380 --> 00:07:05.300
+again, it's an optional thing.
+
+248
+00:07:05.300 --> 00:07:07.700
+Okay, now what is this port?
+
+249
+00:07:07.700 --> 00:07:08.100
+Right?
+
+250
+00:07:08.100 --> 00:07:10.340
+Now what is this port, guys?
+
+251
+00:07:11.580 --> 00:07:12.500
+In simpler terms.
+
+252
+00:07:12.500 --> 00:07:13.420
+Okay, I'll just tell
+
+253
+00:07:13.420 --> 00:07:14.620
+you what is a port.
+
+254
+00:07:14.620 --> 00:07:15.940
+Let's say that you have
+
+255
+00:07:15.940 --> 00:07:16.980
+a physical machine.
+
+256
+00:07:16.980 --> 00:07:18.460
+So when you talk about a server,
+
+257
+00:07:19.100 --> 00:07:19.860
+first you have
+
+258
+00:07:19.860 --> 00:07:21.340
+a physical machine, right?
+
+259
+00:07:21.340 --> 00:07:24.220
+Like your MacBook or anything, right?
+
+260
+00:07:24.220 --> 00:07:24.620
+Anything.
+
+261
+00:07:24.620 --> 00:07:25.460
+Your physical machine.
+
+262
+00:07:25.460 --> 00:07:26.780
+So it's a server.
+
+263
+00:07:26.780 --> 00:07:29.100
+So your physical machine
+
+264
+00:07:29.100 --> 00:07:31.020
+is like your house.
+
+265
+00:07:31.020 --> 00:07:31.500
+Okay?
+
+266
+00:07:31.500 --> 00:07:33.860
+Your physical machine, it's, it has
+
+267
+00:07:33.860 --> 00:07:35.580
+like RAM and Something, something.
+
+268
+00:07:35.580 --> 00:07:36.620
+It is like your house.
+
+269
+00:07:37.200 --> 00:07:39.000
+Now, on your physical machine you
+
+270
+00:07:39.000 --> 00:07:41.360
+can have multiple services running.
+
+271
+00:07:41.360 --> 00:07:42.080
+Multiple services.
+
+272
+00:07:42.080 --> 00:07:44.400
+For example, there is a service
+
+273
+00:07:44.400 --> 00:07:45.680
+running, let's say this is
+
+274
+00:07:45.680 --> 00:07:47.000
+a database service running.
+
+275
+00:07:47.000 --> 00:07:48.920
+Then there is a, one more service
+
+276
+00:07:48.920 --> 00:07:49.960
+running, which is, let's say
+
+277
+00:07:49.960 --> 00:07:51.680
+a Node js application running.
+
+278
+00:07:51.680 --> 00:07:53.039
+Then you can have one
+
+279
+00:07:53.039 --> 00:07:54.120
+more thing, okay?
+
+280
+00:07:54.120 --> 00:07:56.240
+This can be like something else.
+
+281
+00:07:56.240 --> 00:07:57.000
+So you have different,
+
+282
+00:07:57.000 --> 00:07:58.360
+different services running.
+
+283
+00:07:58.360 --> 00:08:00.920
+And these services can listen
+
+284
+00:08:00.920 --> 00:08:02.720
+on a specific port.
+
+285
+00:08:02.720 --> 00:08:06.320
+For example, let's say, okay, let's
+
+286
+00:08:06.320 --> 00:08:08.280
+say that this particular service is
+
+287
+00:08:08.280 --> 00:08:09.840
+listening on port number eight.
+
+288
+00:08:09.840 --> 00:08:11.680
+Let's say 3001, okay?
+
+289
+00:08:11.680 --> 00:08:12.880
+I'm just taking a random port.
+
+290
+00:08:13.440 --> 00:08:15.160
+Then no other service
+
+291
+00:08:15.160 --> 00:08:16.560
+can listen on this port.
+
+292
+00:08:16.560 --> 00:08:19.280
+This service can listen on 3002.
+
+293
+00:08:19.280 --> 00:08:20.520
+This service can listen
+
+294
+00:08:20.520 --> 00:08:22.080
+on port number 3003.
+
+295
+00:08:22.800 --> 00:08:25.680
+Now it's basically like
+
+296
+00:08:25.680 --> 00:08:27.200
+a room number, okay?
+
+297
+00:08:27.200 --> 00:08:28.120
+Like you have room numbers.
+
+298
+00:08:28.120 --> 00:08:29.520
+So these are like room numbers.
+
+299
+00:08:29.520 --> 00:08:31.040
+Now this physical
+
+300
+00:08:31.040 --> 00:08:32.240
+machine has an address.
+
+301
+00:08:32.240 --> 00:08:33.960
+So let's say the IP of this physical
+
+302
+00:08:33.960 --> 00:08:35.120
+machine is something like this.
+
+303
+00:08:35.679 --> 00:08:39.919
+So let's say if I am a user, right?
+
+304
+00:08:39.919 --> 00:08:42.120
+I am a user and I want
+
+305
+00:08:42.120 --> 00:08:44.640
+to access this service.
+
+306
+00:08:44.640 --> 00:08:46.000
+So I can say, hey,
+
+307
+00:08:46.000 --> 00:08:48.400
+on this machine go.
+
+308
+00:08:49.040 --> 00:08:49.680
+Do you see this?
+
+309
+00:08:49.680 --> 00:08:50.800
+This is a different one, right?
+
+310
+00:08:50.800 --> 00:08:53.600
+Go on port number 3003.
+
+311
+00:08:53.600 --> 00:08:55.090
+So what this will do is,
+
+312
+00:08:55.090 --> 00:08:56.810
+what this is going to do is this is
+
+313
+00:08:56.810 --> 00:08:58.410
+your machine address, right
+
+314
+00:08:58.410 --> 00:09:00.210
+where your physical machine is.
+
+315
+00:09:00.210 --> 00:09:01.690
+So it will basically route
+
+316
+00:09:01.690 --> 00:09:03.730
+the request to this machine.
+
+317
+00:09:03.730 --> 00:09:05.290
+Then you are specifying
+
+318
+00:09:05.290 --> 00:09:06.850
+the port, right?
+
+319
+00:09:06.850 --> 00:09:08.450
+You are specifying the port.
+
+320
+00:09:08.450 --> 00:09:10.849
+This basically means inside
+
+321
+00:09:10.849 --> 00:09:13.330
+this machine you have to route
+
+322
+00:09:13.330 --> 00:09:16.850
+the request to the specified port.
+
+323
+00:09:16.850 --> 00:09:18.650
+So if you say 3003, this is going
+
+324
+00:09:18.650 --> 00:09:19.970
+to communicate to 3003.
+
+325
+00:09:19.970 --> 00:09:22.090
+If you say 3001, this is
+
+326
+00:09:22.090 --> 00:09:24.010
+going to 3001 this way.
+
+327
+00:09:24.010 --> 00:09:25.490
+That means it is going to go
+
+328
+00:09:25.490 --> 00:09:27.370
+in this service, so on.
+
+329
+00:09:27.370 --> 00:09:30.010
+So when I said localhost, localhost,
+
+330
+00:09:30.010 --> 00:09:31.730
+basically Means my machine,
+
+331
+00:09:31.730 --> 00:09:35.490
+my local machine on 8000 right?
+
+332
+00:09:35.490 --> 00:09:37.649
+Now on my machine I can have a lot
+
+333
+00:09:37.649 --> 00:09:39.210
+of services running, right?
+
+334
+00:09:39.210 --> 00:09:41.050
+But I am interested in a service
+
+335
+00:09:41.050 --> 00:09:42.810
+which is running on port 8000.
+
+336
+00:09:42.810 --> 00:09:44.930
+That is this one you can even run
+
+337
+00:09:44.930 --> 00:09:47.650
+on 8001, 8002, 8300.
+
+338
+00:09:47.650 --> 00:09:49.210
+The only thing is that no
+
+339
+00:09:49.210 --> 00:09:50.890
+other service should be
+
+340
+00:09:50.890 --> 00:09:52.450
+running on the same port.
+
+341
+00:09:52.450 --> 00:09:53.370
+So this is what you're
+
+342
+00:09:53.370 --> 00:09:55.490
+known as a port, okay?
+
+343
+00:09:55.490 --> 00:09:57.730
+So that means the syntax goes
+
+344
+00:09:57.730 --> 00:09:59.690
+like, you have the hostname, then
+
+345
+00:09:59.690 --> 00:10:01.890
+this, and then the port, okay?
+
+346
+00:10:01.890 --> 00:10:03.569
+So this is how you access a service
+
+347
+00:10:03.569 --> 00:10:04.930
+on a particular server.

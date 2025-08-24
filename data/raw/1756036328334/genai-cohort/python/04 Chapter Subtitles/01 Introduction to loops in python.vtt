@@ -1,0 +1,589 @@
+WEBVTT
+
+1
+00:00:00.860 --> 00:00:01.520
+Right.
+
+2
+00:00:01.520 --> 00:00:03.040
+Welcome to the new section
+
+3
+00:00:03.040 --> 00:00:04.800
+of the Udemy's Python course.
+
+4
+00:00:05.360 --> 00:00:06.880
+So, next up, what we are
+
+5
+00:00:06.880 --> 00:00:08.520
+taking up next, we want
+
+6
+00:00:08.520 --> 00:00:09.960
+to study about the loops.
+
+7
+00:00:09.960 --> 00:00:11.640
+This is an interesting concept
+
+8
+00:00:11.640 --> 00:00:12.600
+in the world of Python,
+
+9
+00:00:12.600 --> 00:00:13.760
+but requires a little bit
+
+10
+00:00:13.760 --> 00:00:15.040
+more additional practice.
+
+11
+00:00:15.040 --> 00:00:16.360
+So make sure you are practicing
+
+12
+00:00:16.360 --> 00:00:18.960
+enough on the Python loop section.
+
+13
+00:00:18.960 --> 00:00:20.400
+The loop simply means I want
+
+14
+00:00:20.400 --> 00:00:22.240
+to do a task again and again.
+
+15
+00:00:22.960 --> 00:00:24.520
+So far in the course, we have seen
+
+16
+00:00:24.520 --> 00:00:26.720
+that based on certain condition,
+
+17
+00:00:26.720 --> 00:00:28.320
+we go either left or right.
+
+18
+00:00:28.320 --> 00:00:29.720
+And by the left and right, I mean
+
+19
+00:00:29.720 --> 00:00:31.480
+to say whether we go onto a route
+
+20
+00:00:31.480 --> 00:00:34.060
+of yes or we go for a route of no.
+
+21
+00:00:34.060 --> 00:00:35.380
+The condition was false,
+
+22
+00:00:35.380 --> 00:00:36.380
+so I'm going this side.
+
+23
+00:00:36.380 --> 00:00:37.540
+If the condition is false,
+
+24
+00:00:37.540 --> 00:00:38.940
+I'm going that side.
+
+25
+00:00:38.940 --> 00:00:40.620
+This is what we have done so far.
+
+26
+00:00:40.620 --> 00:00:41.700
+Now we want to do certain
+
+27
+00:00:41.700 --> 00:00:43.020
+tasks again and again.
+
+28
+00:00:43.020 --> 00:00:44.540
+And you might be asking, why
+
+29
+00:00:44.540 --> 00:00:45.820
+would you want to do that?
+
+30
+00:00:45.820 --> 00:00:46.140
+Why?
+
+31
+00:00:46.140 --> 00:00:47.620
+A task needs to be performed
+
+32
+00:00:47.620 --> 00:00:48.980
+10 times or 20 times.
+
+33
+00:00:48.980 --> 00:00:50.380
+What's the point of it?
+
+34
+00:00:50.380 --> 00:00:51.980
+Now, sometimes programming, and
+
+35
+00:00:51.980 --> 00:00:53.340
+especially in the world of
+
+36
+00:00:53.340 --> 00:00:54.540
+programming, it requires you to
+
+37
+00:00:54.540 --> 00:00:55.900
+perform a task again, again,
+
+38
+00:00:55.900 --> 00:00:57.540
+sometimes 10 times, sometimes five
+
+39
+00:00:57.540 --> 00:00:59.520
+times, and sometimes you don't even
+
+40
+00:00:59.520 --> 00:01:00.760
+know how many times.
+
+41
+00:01:00.760 --> 00:01:02.280
+I'll give you an example.
+
+42
+00:01:02.280 --> 00:01:03.760
+Let's just say you made a web
+
+43
+00:01:03.760 --> 00:01:05.519
+request to a database, a,
+
+44
+00:01:05.519 --> 00:01:08.000
+backend side, and that backend gave
+
+45
+00:01:08.000 --> 00:01:09.960
+you five books to display.
+
+46
+00:01:09.960 --> 00:01:12.080
+So you have wrote a code, you
+
+47
+00:01:12.080 --> 00:01:13.920
+have written a code that displays
+
+48
+00:01:13.920 --> 00:01:15.800
+the book one time, and based
+
+49
+00:01:15.800 --> 00:01:17.240
+on the request, you get five
+
+50
+00:01:17.240 --> 00:01:18.560
+data to display the books.
+
+51
+00:01:18.560 --> 00:01:20.400
+You repeat the logic again, you
+
+52
+00:01:20.400 --> 00:01:21.960
+display one book, then second book,
+
+53
+00:01:21.960 --> 00:01:23.890
+then third book, and all of this.
+
+54
+00:01:23.890 --> 00:01:25.290
+Now, in the world of programming,
+
+55
+00:01:25.290 --> 00:01:26.810
+we don't say we start with one.
+
+56
+00:01:26.810 --> 00:01:28.050
+In the world of programming,
+
+57
+00:01:28.050 --> 00:01:28.730
+everything, almost
+
+58
+00:01:28.730 --> 00:01:30.210
+everything starts with zero.
+
+59
+00:01:30.210 --> 00:01:32.050
+So first item is always 0th
+
+60
+00:01:32.050 --> 00:01:33.250
+index, then first index.
+
+61
+00:01:33.250 --> 00:01:34.330
+So we display all
+
+62
+00:01:34.330 --> 00:01:36.130
+of the five items like that.
+
+63
+00:01:36.130 --> 00:01:37.770
+This is a common thing that you'll
+
+64
+00:01:37.770 --> 00:01:39.210
+be doing, and we will be learning
+
+65
+00:01:39.210 --> 00:01:41.090
+about them in the course itself.
+
+66
+00:01:41.090 --> 00:01:43.050
+So take a moment and try to
+
+67
+00:01:43.050 --> 00:01:44.450
+understand what we are doing here.
+
+68
+00:01:44.450 --> 00:01:46.610
+Loops are a very interesting concept,
+
+69
+00:01:46.610 --> 00:01:48.290
+but they require a little bit
+
+70
+00:01:48.290 --> 00:01:50.210
+more effort than the regular ones.
+
+71
+00:01:50.210 --> 00:01:51.690
+And don't worry, we will have
+
+72
+00:01:51.690 --> 00:01:53.010
+stories for this one as well.
+
+73
+00:01:53.640 --> 00:01:54.600
+So let's go with the sum
+
+74
+00:01:54.600 --> 00:01:55.240
+of the stories.
+
+75
+00:01:55.960 --> 00:01:57.960
+So we will start the loop section.
+
+76
+00:01:57.960 --> 00:02:00.000
+And loops are pretty fun, actually.
+
+77
+00:02:00.000 --> 00:02:01.320
+They are pretty fun.
+
+78
+00:02:01.320 --> 00:02:02.920
+And by the end of this chapter,
+
+79
+00:02:02.920 --> 00:02:04.560
+you'll be able to use for loop.
+
+80
+00:02:04.560 --> 00:02:05.960
+And while loop, these are the most
+
+81
+00:02:05.960 --> 00:02:07.640
+prominent loop that are used.
+
+82
+00:02:07.640 --> 00:02:09.320
+Just like we have the condition if
+
+83
+00:02:09.320 --> 00:02:11.240
+else if, or else,
+
+84
+00:02:11.240 --> 00:02:12.560
+these are just the keywords.
+
+85
+00:02:12.560 --> 00:02:14.120
+So we will be fully comfortable with
+
+86
+00:02:14.120 --> 00:02:16.360
+working with for and the while loop.
+
+87
+00:02:16.360 --> 00:02:17.680
+Apart from this, we will also
+
+88
+00:02:17.680 --> 00:02:18.760
+learn how we can loop through
+
+89
+00:02:18.760 --> 00:02:19.720
+some of the sequences.
+
+90
+00:02:19.720 --> 00:02:21.320
+Like there is a sequence range,
+
+91
+00:02:21.940 --> 00:02:22.980
+they gives you certain
+
+92
+00:02:22.980 --> 00:02:24.380
+range like this range.
+
+93
+00:02:24.380 --> 00:02:25.620
+If you give a start limit
+
+94
+00:02:25.620 --> 00:02:26.740
+and end limit, it gives you
+
+95
+00:02:26.740 --> 00:02:27.900
+all the data in between.
+
+96
+00:02:27.900 --> 00:02:29.700
+For example, you can put a range of
+
+97
+00:02:29.700 --> 00:02:32.140
+1 to 11 and it will give you all
+
+98
+00:02:32.140 --> 00:02:34.340
+the numbers starting from 1 to 10.
+
+99
+00:02:34.340 --> 00:02:36.020
+Remember in the Python,
+
+100
+00:02:36.020 --> 00:02:37.460
+range is never inclusive.
+
+101
+00:02:38.660 --> 00:02:40.540
+In the whole of Python, wherever
+
+102
+00:02:40.540 --> 00:02:42.580
+you see whether numbers, strings,
+
+103
+00:02:42.580 --> 00:02:44.180
+range or anything,
+
+104
+00:02:44.900 --> 00:02:47.700
+the range is never inclusive.
+
+105
+00:02:47.700 --> 00:02:48.810
+So, so keep that in mind
+
+106
+00:02:48.810 --> 00:02:50.530
+and we will use it later on.
+
+107
+00:02:50.530 --> 00:02:51.850
+So we'll see that how we can
+
+108
+00:02:51.850 --> 00:02:53.170
+produce some of the sequences.
+
+109
+00:02:53.170 --> 00:02:54.890
+The sequences producers can
+
+110
+00:02:54.890 --> 00:02:56.770
+be range, enumerate, zip,
+
+111
+00:02:56.770 --> 00:02:58.530
+and they all have their equal.
+
+112
+00:02:58.530 --> 00:02:59.570
+I will show you real world
+
+113
+00:02:59.570 --> 00:03:00.730
+stories so that we can actually
+
+114
+00:03:00.730 --> 00:03:02.130
+learn to utilize them.
+
+115
+00:03:02.130 --> 00:03:03.570
+We will see some of the control
+
+116
+00:03:03.570 --> 00:03:04.850
+behaviors on the loop.
+
+117
+00:03:04.850 --> 00:03:06.010
+Like how we can control
+
+118
+00:03:06.010 --> 00:03:07.010
+the loop in between.
+
+119
+00:03:07.010 --> 00:03:08.290
+Let's just say the loop was asked
+
+120
+00:03:08.290 --> 00:03:10.050
+to run between 1 and 10.
+
+121
+00:03:10.050 --> 00:03:11.410
+But there are certain conditions,
+
+122
+00:03:11.410 --> 00:03:13.090
+if those conditions are met,
+
+123
+00:03:13.090 --> 00:03:14.770
+they might met, they might not met.
+
+124
+00:03:15.290 --> 00:03:16.210
+We want to break out
+
+125
+00:03:16.210 --> 00:03:17.330
+of the loop or we want to just
+
+126
+00:03:17.330 --> 00:03:18.570
+skip one part of the loop.
+
+127
+00:03:18.570 --> 00:03:19.570
+There are so many things that
+
+128
+00:03:19.570 --> 00:03:20.530
+we can do so we are going
+
+129
+00:03:20.530 --> 00:03:22.010
+to just work with that.
+
+130
+00:03:22.010 --> 00:03:24.010
+Then we are going to identify when
+
+131
+00:03:24.010 --> 00:03:26.010
+to use for VS while loop.
+
+132
+00:03:26.010 --> 00:03:28.450
+Again they are kind of same, but of
+
+133
+00:03:28.450 --> 00:03:29.570
+course they are two different ones.
+
+134
+00:03:29.570 --> 00:03:31.209
+So we will see that how it can work
+
+135
+00:03:31.209 --> 00:03:32.730
+and we will of course go through
+
+136
+00:03:32.730 --> 00:03:34.090
+with the real world logic.
+
+137
+00:03:34.090 --> 00:03:35.290
+We will have the challenges,
+
+138
+00:03:35.290 --> 00:03:36.610
+we will fix those challenges
+
+139
+00:03:36.610 --> 00:03:38.250
+and work just like that.
+
+140
+00:03:39.530 --> 00:03:41.330
+So with this, I really don't want
+
+141
+00:03:41.330 --> 00:03:42.810
+to waste too much of your time.
+
+142
+00:03:42.810 --> 00:03:44.570
+We will directly jump into
+
+143
+00:03:44.570 --> 00:03:47.270
+very first, exercise here, very
+
+144
+00:03:47.270 --> 00:03:48.230
+first example, but that
+
+145
+00:03:48.230 --> 00:03:49.430
+we'll do in the next video.
+
+146
+00:03:49.970 --> 00:03:50.750
+So let's catch up
+
+147
+00:03:50.750 --> 00:03:51.990
+in the next video quickly.

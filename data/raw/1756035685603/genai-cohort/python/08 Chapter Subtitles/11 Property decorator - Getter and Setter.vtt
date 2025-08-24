@@ -1,0 +1,1145 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:02.640
+Next up, we're going to take a look
+
+2
+00:00:02.640 --> 00:00:05.200
+at property decorators.
+
+3
+00:00:05.200 --> 00:00:06.720
+Now property decorators
+
+4
+00:00:06.720 --> 00:00:09.760
+are really fun and they are actually
+
+5
+00:00:09.760 --> 00:00:10.840
+solving a purpose
+
+6
+00:00:10.840 --> 00:00:12.840
+of controlling the elements.
+
+7
+00:00:12.840 --> 00:00:14.720
+And what does that even mean?
+
+8
+00:00:14.720 --> 00:00:16.520
+Let me take you on to the screen
+
+9
+00:00:16.520 --> 00:00:17.920
+and walk you through with the whole
+
+10
+00:00:17.920 --> 00:00:20.520
+idea behind, these decorators, or
+
+11
+00:00:20.520 --> 00:00:22.000
+also known as property decorator.
+
+12
+00:00:22.560 --> 00:00:24.080
+So let's just say you have designed
+
+13
+00:00:24.080 --> 00:00:25.960
+a class and in this class you
+
+14
+00:00:25.960 --> 00:00:27.640
+have added some value to it.
+
+15
+00:00:27.640 --> 00:00:29.800
+Maybe there is age factor.
+
+16
+00:00:29.800 --> 00:00:31.920
+So you are having this age
+
+17
+00:00:31.920 --> 00:00:33.920
+of T leaves you're within,
+
+18
+00:00:33.920 --> 00:00:35.960
+and this whole thing just try
+
+19
+00:00:35.960 --> 00:00:37.280
+to assume this is a class.
+
+20
+00:00:38.080 --> 00:00:40.600
+Now as of now, this age is just
+
+21
+00:00:40.600 --> 00:00:42.560
+a property and anybody can actually,
+
+22
+00:00:43.410 --> 00:00:44.640
+let just say this is
+
+23
+00:00:44.640 --> 00:00:46.960
+an object or this is any other user.
+
+24
+00:00:46.960 --> 00:00:48.680
+They have the full capacity to
+
+25
+00:00:48.680 --> 00:00:50.800
+reach out to this age, they can read
+
+26
+00:00:50.800 --> 00:00:52.840
+it and they can also get all
+
+27
+00:00:52.840 --> 00:00:54.000
+the values, whatever is stored
+
+28
+00:00:54.000 --> 00:00:55.760
+in this age, four years, five years.
+
+29
+00:00:55.760 --> 00:00:56.890
+Now not only that, they can
+
+30
+00:00:56.890 --> 00:00:58.050
+also go ahead and reach out
+
+31
+00:00:58.050 --> 00:00:59.850
+and update the value of this age
+
+32
+00:00:59.850 --> 00:01:01.570
+to anything, anything that
+
+33
+00:01:01.570 --> 00:01:03.210
+they want, probably minus 10.
+
+34
+00:01:03.210 --> 00:01:04.970
+That doesn't mean an age,
+
+35
+00:01:04.970 --> 00:01:06.210
+but they have full
+
+36
+00:01:06.210 --> 00:01:07.610
+control over this property.
+
+37
+00:01:07.610 --> 00:01:09.450
+And sometimes in the classes
+
+38
+00:01:09.450 --> 00:01:10.650
+you want that this control
+
+39
+00:01:10.650 --> 00:01:12.810
+should not be given to, or at least
+
+40
+00:01:12.810 --> 00:01:14.570
+for all of the properties.
+
+41
+00:01:14.570 --> 00:01:16.850
+So for that particular case we have
+
+42
+00:01:16.850 --> 00:01:18.690
+a special mechanism, a special way
+
+43
+00:01:18.690 --> 00:01:19.850
+of writing the code so that
+
+44
+00:01:19.850 --> 00:01:22.450
+we can control, these properties.
+
+45
+00:01:22.450 --> 00:01:23.970
+And this can be done for all
+
+46
+00:01:23.970 --> 00:01:25.700
+the properties, or this can be done
+
+47
+00:01:25.700 --> 00:01:27.620
+for just one, two, however you wish
+
+48
+00:01:27.620 --> 00:01:29.580
+to do and accomplish that.
+
+49
+00:01:29.580 --> 00:01:31.580
+So I'll take you up, up here
+
+50
+00:01:31.580 --> 00:01:32.660
+and I will walk you
+
+51
+00:01:32.660 --> 00:01:33.900
+through how this can be done.
+
+52
+00:01:33.900 --> 00:01:36.620
+So we need to have a new file
+
+53
+00:01:37.580 --> 00:01:39.660
+and let's call this one as 11/
+
+54
+00:01:39.660 --> 00:01:41.100
+underscore and we're going to call
+
+55
+00:01:41.100 --> 00:01:45.420
+this one as property decorators.
+
+56
+00:01:46.380 --> 00:01:46.940
+Py.
+
+57
+00:01:46.940 --> 00:01:47.500
+Of course.
+
+58
+00:01:48.460 --> 00:01:50.180
+All right, the step one is
+
+59
+00:01:50.180 --> 00:01:51.420
+to turn off the AI.
+
+60
+00:01:51.420 --> 00:01:53.180
+I use AI a lot these days.
+
+61
+00:01:54.330 --> 00:01:55.170
+So let's just say we have
+
+62
+00:01:55.170 --> 00:01:56.370
+the same example and we
+
+63
+00:01:56.370 --> 00:01:58.250
+call this one as T leaf.
+
+64
+00:01:58.250 --> 00:01:59.810
+And the step one is
+
+65
+00:01:59.810 --> 00:02:01.330
+to declare a constructor.
+
+66
+00:02:01.330 --> 00:02:02.130
+So we'll just go ahead
+
+67
+00:02:02.130 --> 00:02:03.610
+and say constructor.
+
+68
+00:02:03.610 --> 00:02:04.970
+As you are creating this T
+
+69
+00:02:04.970 --> 00:02:07.770
+leaf, you take this age as your
+
+70
+00:02:07.770 --> 00:02:09.090
+argument and then you simply
+
+71
+00:02:09.090 --> 00:02:10.530
+go ahead and say self dot.
+
+72
+00:02:10.530 --> 00:02:11.930
+And here's the interesting thing,
+
+73
+00:02:11.930 --> 00:02:13.490
+we don't call it as age, we
+
+74
+00:02:13.490 --> 00:02:15.290
+call it as underscore age.
+
+75
+00:02:15.290 --> 00:02:16.490
+And this underscore doesn't
+
+76
+00:02:16.490 --> 00:02:17.690
+mean on its own anything.
+
+77
+00:02:17.690 --> 00:02:18.770
+It's just a Python way
+
+78
+00:02:18.770 --> 00:02:20.370
+of saying that, hey, this is
+
+79
+00:02:20.370 --> 00:02:21.370
+an interesting property.
+
+80
+00:02:21.370 --> 00:02:22.330
+This shouldn't be allowed
+
+81
+00:02:22.330 --> 00:02:23.130
+to touch directly.
+
+82
+00:02:23.130 --> 00:02:24.890
+There needs to be a way of
+
+83
+00:02:24.890 --> 00:02:26.210
+reading, this property as well
+
+84
+00:02:26.210 --> 00:02:28.010
+as writing to this property.
+
+85
+00:02:28.010 --> 00:02:30.250
+And this is a symbol which is
+
+86
+00:02:30.250 --> 00:02:31.690
+used throughout the industry.
+
+87
+00:02:31.690 --> 00:02:33.050
+So whenever you see an underscore
+
+88
+00:02:33.050 --> 00:02:35.090
+that means, this is having
+
+89
+00:02:35.090 --> 00:02:36.370
+something special as a meaning.
+
+90
+00:02:36.370 --> 00:02:37.410
+Now surely this can be done
+
+91
+00:02:37.410 --> 00:02:38.610
+without underscore as well.
+
+92
+00:02:38.610 --> 00:02:40.330
+But this is such a common thing
+
+93
+00:02:40.330 --> 00:02:41.770
+and Python also knows this.
+
+94
+00:02:41.770 --> 00:02:43.570
+So Python doesn't treat this in a lot
+
+95
+00:02:43.570 --> 00:02:45.250
+of places as underscore age.
+
+96
+00:02:45.250 --> 00:02:46.480
+You'll see this as
+
+97
+00:02:46.480 --> 00:02:47.520
+age treated like this.
+
+98
+00:02:47.520 --> 00:02:48.840
+But I want to show you that how this
+
+99
+00:02:48.840 --> 00:02:49.920
+is being done in the industry.
+
+100
+00:02:50.560 --> 00:02:52.280
+So the step one of doing this is
+
+101
+00:02:52.280 --> 00:02:53.560
+first of all go ahead and use
+
+102
+00:02:53.560 --> 00:02:55.320
+decorator again and write that,
+
+103
+00:02:55.320 --> 00:02:57.040
+hey, I want to use property.
+
+104
+00:02:57.040 --> 00:02:57.920
+Yep.
+
+105
+00:02:57.920 --> 00:02:59.240
+After that you simply define
+
+106
+00:02:59.240 --> 00:03:00.520
+the method just after this
+
+107
+00:03:00.520 --> 00:03:02.279
+and you name the property
+
+108
+00:03:02.279 --> 00:03:03.760
+which you want to control.
+
+109
+00:03:03.760 --> 00:03:05.280
+And this is going to be age.
+
+110
+00:03:05.280 --> 00:03:06.720
+But hey, we called our
+
+111
+00:03:06.720 --> 00:03:08.120
+property as underscore age.
+
+112
+00:03:08.120 --> 00:03:09.520
+That's exactly my point.
+
+113
+00:03:09.520 --> 00:03:11.320
+Python knows this, that this variable
+
+114
+00:03:11.320 --> 00:03:12.960
+has to have a special meaning.
+
+115
+00:03:12.960 --> 00:03:14.280
+So anything underscore will
+
+116
+00:03:14.280 --> 00:03:15.600
+be treated as just age.
+
+117
+00:03:15.600 --> 00:03:16.880
+How interesting that is.
+
+118
+00:03:17.400 --> 00:03:19.000
+And we can just go ahead and after
+
+119
+00:03:19.000 --> 00:03:20.520
+this call this one as self.
+
+120
+00:03:20.520 --> 00:03:21.600
+And this method names
+
+121
+00:03:21.600 --> 00:03:22.760
+to be exactly same.
+
+122
+00:03:22.760 --> 00:03:23.560
+You cannot change this.
+
+123
+00:03:23.560 --> 00:03:25.160
+This is called to be as age.
+
+124
+00:03:26.520 --> 00:03:28.480
+All right, so here what we are going
+
+125
+00:03:28.480 --> 00:03:30.200
+to say that while we return
+
+126
+00:03:30.200 --> 00:03:31.960
+this variable which is self
+
+127
+00:03:31.960 --> 00:03:35.560
+dot underscore age, obviously we
+
+128
+00:03:35.560 --> 00:03:37.080
+actually don't return it directly.
+
+129
+00:03:37.080 --> 00:03:39.600
+We can, but just for the fun we'll
+
+130
+00:03:39.600 --> 00:03:41.000
+just go ahead and say we'll always
+
+131
+00:03:41.000 --> 00:03:42.840
+return you an additional two value.
+
+132
+00:03:42.840 --> 00:03:44.580
+So, so if the age you're passing me,
+
+133
+00:03:44.580 --> 00:03:45.340
+as zero, we'll call
+
+134
+00:03:45.340 --> 00:03:46.980
+this as two years probably.
+
+135
+00:03:46.980 --> 00:03:47.980
+I don't know why you will
+
+136
+00:03:47.980 --> 00:03:49.100
+do that, but let's just
+
+137
+00:03:49.100 --> 00:03:50.020
+say that's your use case.
+
+138
+00:03:50.580 --> 00:03:52.860
+And apart from this, now what you
+
+139
+00:03:52.860 --> 00:03:54.300
+can do once you have defined this,
+
+140
+00:03:54.300 --> 00:03:56.020
+now I can actually use an age.
+
+141
+00:03:56.660 --> 00:03:57.780
+That's interesting.
+
+142
+00:03:57.780 --> 00:03:59.220
+It has automatically made it
+
+143
+00:03:59.220 --> 00:04:00.580
+as a decorator and you can
+
+144
+00:04:00.580 --> 00:04:02.020
+use that same variable name.
+
+145
+00:04:02.020 --> 00:04:03.980
+And then you can go ahead and say
+
+146
+00:04:03.980 --> 00:04:06.660
+that I want to use a setter method.
+
+147
+00:04:06.660 --> 00:04:08.100
+So this method that you have
+
+148
+00:04:08.100 --> 00:04:09.740
+made, this is how we get
+
+149
+00:04:09.740 --> 00:04:11.300
+the value outside of this class.
+
+150
+00:04:11.940 --> 00:04:13.540
+This is going to be responsible how
+
+151
+00:04:13.540 --> 00:04:15.780
+you set the value inside this class.
+
+152
+00:04:15.780 --> 00:04:17.700
+So very interesting aspect.
+
+153
+00:04:17.700 --> 00:04:20.100
+And we call this same age.
+
+154
+00:04:20.100 --> 00:04:20.660
+Yep.
+
+155
+00:04:21.220 --> 00:04:22.380
+And we take this one.
+
+156
+00:04:22.380 --> 00:04:24.140
+Since we need to set some value
+
+157
+00:04:24.140 --> 00:04:25.780
+inside it, we are going to take that
+
+158
+00:04:25.780 --> 00:04:27.460
+value, whatever you are adding this.
+
+159
+00:04:27.460 --> 00:04:28.940
+And now we will perform
+
+160
+00:04:28.940 --> 00:04:30.020
+a simple check.
+
+161
+00:04:30.020 --> 00:04:33.460
+If the value is less than
+
+162
+00:04:33.460 --> 00:04:36.060
+or probably equal to the age, it's
+
+163
+00:04:36.060 --> 00:04:39.190
+in the range of one and it should be
+
+164
+00:04:39.190 --> 00:04:40.470
+maximum of five,
+
+165
+00:04:41.670 --> 00:04:43.510
+we can have a space, no problem.
+
+166
+00:04:43.510 --> 00:04:45.790
+All right, then only we are going
+
+167
+00:04:45.790 --> 00:04:47.190
+to go ahead and say self
+
+168
+00:04:47.750 --> 00:04:50.470
+dot underscore age, and we're
+
+169
+00:04:50.470 --> 00:04:51.510
+going to put this as age.
+
+170
+00:04:52.150 --> 00:04:53.670
+And in all the other cases,
+
+171
+00:04:53.670 --> 00:04:54.870
+we are going to go ahead.
+
+172
+00:04:54.870 --> 00:04:55.830
+Let's actually go ahead
+
+173
+00:04:55.830 --> 00:04:57.990
+and have an else case.
+
+174
+00:04:57.990 --> 00:04:59.550
+In all the else cases, we
+
+175
+00:04:59.550 --> 00:05:00.830
+are going to go ahead and say,
+
+176
+00:05:00.830 --> 00:05:02.270
+let's raise an error.
+
+177
+00:05:02.270 --> 00:05:04.150
+We'll call this one as value error.
+
+178
+00:05:04.990 --> 00:05:06.760
+And we are going to mark this as tea
+
+179
+00:05:08.040 --> 00:05:13.640
+leaf age must be between.
+
+180
+00:05:16.360 --> 00:05:19.720
+Between one and five years.
+
+181
+00:05:21.800 --> 00:05:23.640
+Five years, There we go.
+
+182
+00:05:23.640 --> 00:05:24.960
+So notice here how we are
+
+183
+00:05:24.960 --> 00:05:26.920
+actually controlling each aspect
+
+184
+00:05:26.920 --> 00:05:28.920
+in this really beautiful
+
+185
+00:05:28.920 --> 00:05:30.040
+class that we have written.
+
+186
+00:05:30.040 --> 00:05:31.680
+So we have this age, we have single
+
+187
+00:05:31.680 --> 00:05:33.060
+property here, and it could be
+
+188
+00:05:33.060 --> 00:05:34.700
+more, but then you have to perform
+
+189
+00:05:34.700 --> 00:05:36.380
+all this operation for each one of
+
+190
+00:05:36.380 --> 00:05:37.300
+the value that you want to
+
+191
+00:05:37.300 --> 00:05:37.980
+control.
+
+192
+00:05:37.980 --> 00:05:39.420
+Now, here's the interesting aspect.
+
+193
+00:05:39.420 --> 00:05:40.820
+Let's just say we call this as
+
+194
+00:05:40.820 --> 00:05:43.140
+a simple leaf, and we create this
+
+195
+00:05:43.140 --> 00:05:45.580
+object from this class tea leaf,
+
+196
+00:05:46.620 --> 00:05:48.700
+and we provide a value of two.
+
+197
+00:05:48.700 --> 00:05:50.780
+All right, that's surely doable.
+
+198
+00:05:50.780 --> 00:05:52.180
+Now, I want to simply go ahead
+
+199
+00:05:52.180 --> 00:05:54.220
+and print this leaf age.
+
+200
+00:05:54.220 --> 00:05:55.700
+I'll just go ahead and say I want
+
+201
+00:05:55.700 --> 00:05:56.540
+to just print the age,
+
+202
+00:05:56.540 --> 00:05:58.430
+just like I regularly do that.
+
+203
+00:05:58.430 --> 00:05:59.510
+Notice here, I'm not calling it
+
+204
+00:05:59.510 --> 00:06:00.910
+as underscore age or anything.
+
+205
+00:06:00.910 --> 00:06:02.070
+I'm saying, hey, I'm just
+
+206
+00:06:02.070 --> 00:06:03.310
+calling the age
+
+207
+00:06:03.310 --> 00:06:04.550
+technically behind the scene.
+
+208
+00:06:04.550 --> 00:06:05.670
+You're calling this method.
+
+209
+00:06:05.670 --> 00:06:08.030
+But hey, we never called it like this
+
+210
+00:06:08.030 --> 00:06:09.510
+because that's the magic
+
+211
+00:06:09.510 --> 00:06:11.790
+of this, property here.
+
+212
+00:06:11.790 --> 00:06:12.590
+That's what it does
+
+213
+00:06:12.590 --> 00:06:13.230
+behind the scenes.
+
+214
+00:06:13.230 --> 00:06:14.510
+Let's go ahead and actually
+
+215
+00:06:14.510 --> 00:06:15.310
+print the value.
+
+216
+00:06:15.310 --> 00:06:17.070
+That will give us a lot of ideas
+
+217
+00:06:17.070 --> 00:06:18.350
+of how things are going on.
+
+218
+00:06:18.910 --> 00:06:20.990
+We'll go ahead and say Python 3.
+
+219
+00:06:20.990 --> 00:06:22.430
+This one is 11.
+
+220
+00:06:22.430 --> 00:06:23.190
+And there we go.
+
+221
+00:06:23.190 --> 00:06:24.640
+Notice here it says feh.
+
+222
+00:06:24.640 --> 00:06:25.880
+It says four, although we
+
+223
+00:06:25.880 --> 00:06:27.360
+provided the value as two.
+
+224
+00:06:27.360 --> 00:06:28.120
+That's because we have
+
+225
+00:06:28.120 --> 00:06:28.880
+overwritten that.
+
+226
+00:06:28.880 --> 00:06:29.880
+What you are going to read
+
+227
+00:06:29.880 --> 00:06:31.120
+the value, how you are going
+
+228
+00:06:31.120 --> 00:06:33.200
+to read, we are controlling that.
+
+229
+00:06:33.200 --> 00:06:34.960
+Now, on top of this, if I go ahead
+
+230
+00:06:34.960 --> 00:06:37.120
+and try to set some value onto this,
+
+231
+00:06:37.120 --> 00:06:38.680
+let's just say I go ahead and say
+
+232
+00:06:38.680 --> 00:06:43.520
+leaf age, and that age can be four.
+
+233
+00:06:43.520 --> 00:06:44.640
+That's totally allowed.
+
+234
+00:06:44.640 --> 00:06:46.080
+Let's go ahead and print this again.
+
+235
+00:06:47.680 --> 00:06:48.840
+Surely that will be
+
+236
+00:06:48.840 --> 00:06:49.720
+totally allowed that.
+
+237
+00:06:49.720 --> 00:06:51.040
+All right, the value is,
+
+238
+00:06:51.040 --> 00:06:52.720
+although we did set it up four.
+
+239
+00:06:53.280 --> 00:06:54.320
+But we get it six.
+
+240
+00:06:54.320 --> 00:06:56.160
+But if we try to have the value
+
+241
+00:06:56.160 --> 00:06:58.160
+of something, let's just say six,
+
+242
+00:06:58.720 --> 00:07:00.000
+that will give us a problem.
+
+243
+00:07:00.880 --> 00:07:01.400
+Notice here.
+
+244
+00:07:01.400 --> 00:07:03.000
+We get the error and this is
+
+245
+00:07:03.000 --> 00:07:04.240
+something that we have designed.
+
+246
+00:07:04.240 --> 00:07:05.800
+We have designed our own errors, in
+
+247
+00:07:05.800 --> 00:07:07.800
+this case, arrays, as a value error.
+
+248
+00:07:07.800 --> 00:07:09.200
+tea error must be like this
+
+249
+00:07:09.200 --> 00:07:10.360
+T leaf age must be
+
+250
+00:07:10.360 --> 00:07:12.000
+between 1 and 5 value error.
+
+251
+00:07:12.000 --> 00:07:13.320
+So all of this thing, we are
+
+252
+00:07:13.320 --> 00:07:15.280
+controlling the error part as well.
+
+253
+00:07:15.280 --> 00:07:16.440
+Now again, in this case it
+
+254
+00:07:16.440 --> 00:07:18.000
+doesn't make sense that you are
+
+255
+00:07:18.000 --> 00:07:19.360
+calling me that value can only
+
+256
+00:07:19.360 --> 00:07:21.000
+be between 1 and 5, but you
+
+257
+00:07:21.000 --> 00:07:22.080
+are adding the value to.
+
+258
+00:07:22.080 --> 00:07:23.600
+And that's the beauty of learning.
+
+259
+00:07:24.220 --> 00:07:25.060
+We can actually go ahead
+
+260
+00:07:25.060 --> 00:07:26.420
+and control the things that we want
+
+261
+00:07:26.420 --> 00:07:27.300
+to do to make sure that
+
+262
+00:07:27.300 --> 00:07:28.700
+we understand the things.
+
+263
+00:07:28.700 --> 00:07:29.940
+So this is really interesting.
+
+264
+00:07:29.940 --> 00:07:31.060
+You can use a, property
+
+265
+00:07:31.060 --> 00:07:32.260
+to actually have this.
+
+266
+00:07:32.260 --> 00:07:33.460
+Don't forget this underscore.
+
+267
+00:07:33.460 --> 00:07:36.020
+This is kind of a secret handshake
+
+268
+00:07:36.020 --> 00:07:37.460
+between the Python programmers
+
+269
+00:07:37.460 --> 00:07:38.500
+in the world of Python that
+
+270
+00:07:38.500 --> 00:07:40.060
+hey, this is how we define it.
+
+271
+00:07:40.060 --> 00:07:41.220
+Anything with underscore that
+
+272
+00:07:41.220 --> 00:07:42.420
+means it needs to have
+
+273
+00:07:42.420 --> 00:07:44.540
+a setter, getters and setters.
+
+274
+00:07:44.540 --> 00:07:46.380
+This is by the way called as getter.
+
+275
+00:07:46.380 --> 00:07:47.700
+This is called as setter.
+
+276
+00:07:47.700 --> 00:07:49.820
+We have a lot of names, we call
+
+277
+00:07:49.820 --> 00:07:51.020
+them as sometimes properties,
+
+278
+00:07:51.020 --> 00:07:52.420
+sometimes getters and setters,
+
+279
+00:07:52.420 --> 00:07:54.130
+whatever we call them, the goal
+
+280
+00:07:54.130 --> 00:07:55.890
+is same to control the value that
+
+281
+00:07:55.890 --> 00:07:57.530
+how we read the value and control
+
+282
+00:07:57.530 --> 00:07:59.610
+that how we actually edit those
+
+283
+00:07:59.610 --> 00:08:00.130
+values.
+
+284
+00:08:00.130 --> 00:08:01.170
+That is it for this video.
+
+285
+00:08:01.170 --> 00:08:03.090
+Don't forget to rate us and let's
+
+286
+00:08:03.090 --> 00:08:04.330
+catch up in the next video.

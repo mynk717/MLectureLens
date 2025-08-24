@@ -1,0 +1,1797 @@
+WEBVTT
+
+1
+00:00:01.200 --> 00:00:03.480
+All right, so let's move on to
+
+2
+00:00:03.480 --> 00:00:05.080
+probably the final video of this
+
+3
+00:00:05.080 --> 00:00:07.200
+section where we are going to study
+
+4
+00:00:07.200 --> 00:00:09.120
+about the two important topic which
+
+5
+00:00:09.120 --> 00:00:11.520
+is one is a skip, another one is a
+
+6
+00:00:11.520 --> 00:00:12.080
+break.
+
+7
+00:00:12.080 --> 00:00:14.040
+So we'll study the first of all
+
+8
+00:00:14.040 --> 00:00:15.440
+the problem statement and then we're
+
+9
+00:00:15.440 --> 00:00:17.040
+going to write the code for it.
+
+10
+00:00:17.040 --> 00:00:18.320
+And then I'll show you one
+
+11
+00:00:18.320 --> 00:00:19.520
+of the interesting case
+
+12
+00:00:19.520 --> 00:00:20.680
+of the loop as well.
+
+13
+00:00:20.680 --> 00:00:22.200
+It's not a part of a subject
+
+14
+00:00:22.200 --> 00:00:24.400
+as such, but it's a pretty
+
+15
+00:00:24.400 --> 00:00:26.170
+interesting use case as well.
+
+16
+00:00:26.170 --> 00:00:27.330
+So notice here it says some
+
+17
+00:00:27.330 --> 00:00:29.370
+chai flavors are out of stock.
+
+18
+00:00:29.370 --> 00:00:31.130
+You want to skip those and stop
+
+19
+00:00:31.130 --> 00:00:32.810
+entirely if someone
+
+20
+00:00:32.810 --> 00:00:35.370
+requests a restricted flavor.
+
+21
+00:00:35.370 --> 00:00:37.210
+So the task is skip if flavor
+
+22
+00:00:37.210 --> 00:00:39.290
+is out of stock and break if
+
+23
+00:00:39.290 --> 00:00:41.210
+the flavor is discontinued.
+
+24
+00:00:41.210 --> 00:00:42.130
+Now let's go ahead
+
+25
+00:00:42.130 --> 00:00:43.610
+and study about them.
+
+26
+00:00:43.610 --> 00:00:45.370
+First of all, so let's just say
+
+27
+00:00:45.370 --> 00:00:47.770
+this is your loop that's going on.
+
+28
+00:00:47.770 --> 00:00:48.890
+So this is your loop.
+
+29
+00:00:50.890 --> 00:00:53.250
+And in your loop you are constantly
+
+30
+00:00:53.250 --> 00:00:54.450
+going ahead and trying
+
+31
+00:00:54.450 --> 00:00:56.250
+to get the values just like this.
+
+32
+00:00:56.250 --> 00:00:57.750
+This is how the loop work.
+
+33
+00:00:57.750 --> 00:01:00.070
+Constantly keep on going into it.
+
+34
+00:01:00.070 --> 00:01:01.990
+Now what this skip and these things
+
+35
+00:01:01.990 --> 00:01:03.590
+means that let's just say
+
+36
+00:01:04.390 --> 00:01:06.110
+you are going to go ahead and loop
+
+37
+00:01:06.110 --> 00:01:07.710
+through it probably five or six
+
+38
+00:01:07.710 --> 00:01:09.230
+different times just like that.
+
+39
+00:01:09.230 --> 00:01:10.790
+So we'll just change this up here
+
+40
+00:01:11.910 --> 00:01:13.070
+a little bit here so
+
+41
+00:01:13.070 --> 00:01:14.550
+that it actually looks good.
+
+42
+00:01:14.550 --> 00:01:16.230
+So let's just assume this is five
+
+43
+00:01:16.230 --> 00:01:17.910
+different times that you're looping.
+
+44
+00:01:17.910 --> 00:01:19.070
+The first thing that you're going
+
+45
+00:01:19.070 --> 00:01:22.310
+to study is known as continue.
+
+46
+00:01:22.310 --> 00:01:24.510
+This is a keyword now the continue.
+
+47
+00:01:24.510 --> 00:01:26.830
+The whole job of the continue is
+
+48
+00:01:26.830 --> 00:01:28.110
+to make sure that
+
+49
+00:01:28.110 --> 00:01:29.510
+whatever the time you're looping,
+
+50
+00:01:29.510 --> 00:01:31.230
+I'll just skip one of them.
+
+51
+00:01:31.230 --> 00:01:32.510
+So let's just say this is one of
+
+52
+00:01:32.510 --> 00:01:33.430
+them and probably we should
+
+53
+00:01:33.430 --> 00:01:35.070
+have one more of them to make
+
+54
+00:01:35.070 --> 00:01:36.350
+sure that we are actually going
+
+55
+00:01:36.350 --> 00:01:39.909
+through with this nicely and we
+
+56
+00:01:39.909 --> 00:01:41.110
+can actually understand this
+
+57
+00:01:41.110 --> 00:01:41.950
+part.
+
+58
+00:01:41.950 --> 00:01:42.950
+So we will put up some
+
+59
+00:01:42.950 --> 00:01:44.430
+of the checking condition and let's
+
+60
+00:01:44.430 --> 00:01:46.150
+just say out of these three, this
+
+61
+00:01:46.150 --> 00:01:48.430
+is the condition which matches.
+
+62
+00:01:48.430 --> 00:01:49.430
+So as soon as we write
+
+63
+00:01:49.430 --> 00:01:51.690
+the continue statement, this whole
+
+64
+00:01:51.690 --> 00:01:53.450
+thing will just go away.
+
+65
+00:01:53.450 --> 00:01:54.530
+So as we can see, this
+
+66
+00:01:54.530 --> 00:01:55.290
+will be deleted.
+
+67
+00:01:55.290 --> 00:01:56.450
+So this part of the loop
+
+68
+00:01:56.450 --> 00:01:57.610
+will be skipped.
+
+69
+00:01:57.610 --> 00:01:59.210
+On the other hand, the break
+
+70
+00:01:59.210 --> 00:02:00.490
+is also another keyword
+
+71
+00:02:00.490 --> 00:02:01.210
+just like the continue.
+
+72
+00:02:01.770 --> 00:02:04.140
+But since the continue just breaks,
+
+73
+00:02:04.140 --> 00:02:06.730
+or kind of allows you to skip one
+
+74
+00:02:06.730 --> 00:02:08.810
+of the loop while the break allows
+
+75
+00:02:08.810 --> 00:02:10.770
+you to just completely stop the loop
+
+76
+00:02:10.770 --> 00:02:12.730
+wherever it has encountered this.
+
+77
+00:02:12.730 --> 00:02:14.090
+It's much more easier actually
+
+78
+00:02:14.090 --> 00:02:15.450
+to see in the code part
+
+79
+00:02:15.450 --> 00:02:17.210
+and realize that what's happening.
+
+80
+00:02:17.210 --> 00:02:18.680
+I hope you got some of the GIST
+
+81
+00:02:18.680 --> 00:02:20.280
+at least 20, 30% of it.
+
+82
+00:02:20.280 --> 00:02:22.040
+But rest you will easily understand
+
+83
+00:02:22.040 --> 00:02:23.320
+as we go through this one.
+
+84
+00:02:24.200 --> 00:02:25.320
+So we call this one as
+
+85
+00:02:25.320 --> 00:02:28.280
+simply 07 underscore.
+
+86
+00:02:29.560 --> 00:02:33.160
+Not like that, out of order.
+
+87
+00:02:33.160 --> 00:02:33.720
+Py.
+
+88
+00:02:36.120 --> 00:02:37.600
+And let's just say we have some
+
+89
+00:02:37.600 --> 00:02:39.240
+of these orders in front of us.
+
+90
+00:02:39.240 --> 00:02:41.320
+Let's just say we call them, flavors.
+
+91
+00:02:41.320 --> 00:02:42.720
+So somebody's asking us for
+
+92
+00:02:42.720 --> 00:02:44.700
+the flavors of the chai, and we're
+
+93
+00:02:44.700 --> 00:02:46.060
+going to literally match with them.
+
+94
+00:02:46.060 --> 00:02:47.940
+So first is ginger.
+
+95
+00:02:47.940 --> 00:02:49.660
+The second flavor in itself,
+
+96
+00:02:49.660 --> 00:02:51.380
+we call this as out of stock.
+
+97
+00:02:52.980 --> 00:02:55.780
+Let's go and say out of stock.
+
+98
+00:02:55.780 --> 00:02:56.740
+Just like this.
+
+99
+00:02:57.380 --> 00:03:00.259
+Another one is, lemon.
+
+100
+00:03:00.900 --> 00:03:02.660
+And just like this, another
+
+101
+00:03:02.660 --> 00:03:06.180
+one is discontinued.
+
+102
+00:03:08.980 --> 00:03:10.150
+Discontinued.
+
+103
+00:03:10.150 --> 00:03:10.380
+And.
+
+104
+00:03:10.380 --> 00:03:11.220
+And let's just say there is
+
+105
+00:03:11.220 --> 00:03:13.140
+another one which is Tulsi.
+
+106
+00:03:13.140 --> 00:03:15.020
+This is also an interesting flavor.
+
+107
+00:03:15.020 --> 00:03:16.540
+So these are all the flavors that
+
+108
+00:03:16.540 --> 00:03:17.900
+we have, and right now we want
+
+109
+00:03:17.900 --> 00:03:19.060
+to loop through all of them.
+
+110
+00:03:19.060 --> 00:03:20.460
+So simple way of looping
+
+111
+00:03:20.460 --> 00:03:21.140
+through that is.
+
+112
+00:03:21.140 --> 00:03:22.700
+Let's call this one as
+
+113
+00:03:22.700 --> 00:03:25.180
+flavor out of in flavors.
+
+114
+00:03:25.900 --> 00:03:27.100
+There we go.
+
+115
+00:03:27.100 --> 00:03:28.580
+So first flavor is a variable.
+
+116
+00:03:28.580 --> 00:03:31.340
+The second flavors is a list.
+
+117
+00:03:31.340 --> 00:03:33.180
+So we need to put up a check.
+
+118
+00:03:33.180 --> 00:03:34.580
+Check always comes up
+
+119
+00:03:34.580 --> 00:03:35.620
+with the if condition.
+
+120
+00:03:35.620 --> 00:03:37.580
+And yes, this again gets up.
+
+121
+00:03:38.350 --> 00:03:41.030
+So we'll just say if the flavor
+
+122
+00:03:41.030 --> 00:03:44.390
+that we have is discontinued,
+
+123
+00:03:44.390 --> 00:03:46.450
+so we'll just match it exactly.
+
+124
+00:03:46.450 --> 00:03:47.550
+First of all, we'll just check
+
+125
+00:03:47.550 --> 00:03:48.830
+for out of stock, and then we'll
+
+126
+00:03:48.830 --> 00:03:50.110
+check for the discontinued.
+
+127
+00:03:50.750 --> 00:03:53.310
+So if the flavor is out of stock,
+
+128
+00:03:53.310 --> 00:03:54.670
+then we can simply go ahead
+
+129
+00:03:54.670 --> 00:03:56.510
+and skip that particular loop.
+
+130
+00:03:56.510 --> 00:03:57.750
+So all you got to do is
+
+131
+00:03:57.750 --> 00:03:58.830
+in this case, we use
+
+132
+00:03:58.830 --> 00:04:00.670
+the keyword which is continue.
+
+133
+00:04:00.670 --> 00:04:01.430
+So we'll just go ahead
+
+134
+00:04:01.430 --> 00:04:02.510
+and say continue.
+
+135
+00:04:02.510 --> 00:04:03.390
+Now, here's a small
+
+136
+00:04:03.390 --> 00:04:04.430
+mistake that we have done.
+
+137
+00:04:04.430 --> 00:04:06.470
+We forgot the semicolon.
+
+138
+00:04:06.470 --> 00:04:07.870
+The moment you put up a semicolon,
+
+139
+00:04:07.870 --> 00:04:08.870
+the continue is going
+
+140
+00:04:08.870 --> 00:04:09.950
+to give you a problem because we
+
+141
+00:04:09.950 --> 00:04:11.670
+have an indentation problem.
+
+142
+00:04:11.670 --> 00:04:12.750
+So make sure you go up here
+
+143
+00:04:12.750 --> 00:04:14.910
+and hit four spaces or tab,
+
+144
+00:04:14.910 --> 00:04:16.410
+whatever you want to wish.
+
+145
+00:04:16.410 --> 00:04:18.310
+Literally in the Python file
+
+146
+00:04:18.310 --> 00:04:19.790
+automatically VS code will give
+
+147
+00:04:19.790 --> 00:04:21.430
+you four spaces, just like as
+
+148
+00:04:21.430 --> 00:04:23.430
+mentioned in the pep as well.
+
+149
+00:04:23.430 --> 00:04:24.630
+Now we also want to check
+
+150
+00:04:24.630 --> 00:04:25.590
+for another condition.
+
+151
+00:04:25.590 --> 00:04:26.630
+So we can just come up here
+
+152
+00:04:26.630 --> 00:04:27.950
+and check for another one.
+
+153
+00:04:27.950 --> 00:04:30.790
+If the flavor is equals to.
+
+154
+00:04:30.790 --> 00:04:32.270
+Let's go ahead and copy this so
+
+155
+00:04:32.270 --> 00:04:33.670
+that we don't make any typo.
+
+156
+00:04:34.340 --> 00:04:35.180
+And just like this.
+
+157
+00:04:35.180 --> 00:04:36.380
+So in this case, we use
+
+158
+00:04:36.380 --> 00:04:37.620
+a keyword known as break.
+
+159
+00:04:38.660 --> 00:04:40.300
+Now, after this, we go ahead
+
+160
+00:04:40.300 --> 00:04:42.020
+and print, whatever
+
+161
+00:04:42.020 --> 00:04:43.260
+the statement we want to print.
+
+162
+00:04:43.260 --> 00:04:44.700
+So we'll just go ahead and say
+
+163
+00:04:44.700 --> 00:04:46.900
+that, hey, I, would love to print
+
+164
+00:04:48.660 --> 00:04:50.420
+and use a printing method.
+
+165
+00:04:50.980 --> 00:04:53.220
+And we'll just say this
+
+166
+00:04:54.420 --> 00:04:59.750
+continued item Foundation.
+
+167
+00:04:59.750 --> 00:05:00.750
+Now here's a very, very
+
+168
+00:05:00.750 --> 00:05:02.350
+interesting, part of it.
+
+169
+00:05:02.350 --> 00:05:03.750
+We can just go ahead and break it
+
+170
+00:05:03.750 --> 00:05:05.510
+and we'll see what happens in this.
+
+171
+00:05:05.510 --> 00:05:07.070
+And notice here the indentation.
+
+172
+00:05:07.070 --> 00:05:09.110
+This is my if statement.
+
+173
+00:05:09.110 --> 00:05:11.270
+This is outside of the if statement,
+
+174
+00:05:11.270 --> 00:05:13.190
+but still inside the loop.
+
+175
+00:05:13.190 --> 00:05:14.950
+And we can have another such
+
+176
+00:05:14.950 --> 00:05:16.350
+statement, but we can actually
+
+177
+00:05:16.350 --> 00:05:17.870
+go ahead and move it outside
+
+178
+00:05:17.870 --> 00:05:19.590
+of the for statement as well.
+
+179
+00:05:19.590 --> 00:05:21.070
+And we can just print and see
+
+180
+00:05:21.070 --> 00:05:22.230
+what happens in this.
+
+181
+00:05:22.230 --> 00:05:24.070
+So I'll just go ahead and remove this
+
+182
+00:05:24.070 --> 00:05:26.580
+and I'll just say F and we'll just
+
+183
+00:05:26.580 --> 00:05:32.460
+go ahead and say outside of, loop.
+
+184
+00:05:32.460 --> 00:05:33.820
+So this is just to make sure that
+
+185
+00:05:33.820 --> 00:05:35.220
+you understand what is happening
+
+186
+00:05:35.220 --> 00:05:36.860
+and we'll definitely add a little
+
+187
+00:05:36.860 --> 00:05:38.340
+bit more to it that how it goes
+
+188
+00:05:38.340 --> 00:05:39.740
+and how it works and everything.
+
+189
+00:05:40.540 --> 00:05:41.820
+Let's just go ahead and run this.
+
+190
+00:05:41.820 --> 00:05:42.980
+You will learn quite a lot,
+
+191
+00:05:42.980 --> 00:05:44.020
+although it looks a little bit
+
+192
+00:05:44.020 --> 00:05:45.140
+confusing, but bear with me.
+
+193
+00:05:45.140 --> 00:05:46.300
+You will learn a lot
+
+194
+00:05:46.300 --> 00:05:48.060
+in this video itself.
+
+195
+00:05:48.060 --> 00:05:48.740
+So let's just go
+
+196
+00:05:48.740 --> 00:05:50.940
+ahead and run and 07.
+
+197
+00:05:50.940 --> 00:05:51.580
+There we go.
+
+198
+00:05:52.200 --> 00:05:53.160
+Notice here it says
+
+199
+00:05:53.160 --> 00:05:54.640
+discontinued item found.
+
+200
+00:05:54.640 --> 00:05:56.600
+Then again, discontinued item found.
+
+201
+00:05:56.600 --> 00:05:57.760
+And then we are simply
+
+202
+00:05:57.760 --> 00:05:59.000
+outside of the loop.
+
+203
+00:05:59.000 --> 00:06:00.240
+This is interesting that.
+
+204
+00:06:00.240 --> 00:06:01.560
+Why did this happen?
+
+205
+00:06:01.560 --> 00:06:02.040
+Why did.
+
+206
+00:06:02.040 --> 00:06:03.400
+We got, this one being
+
+207
+00:06:03.400 --> 00:06:04.840
+printed two times.
+
+208
+00:06:04.840 --> 00:06:06.520
+So the first time it actually looped
+
+209
+00:06:06.520 --> 00:06:08.320
+through, it found ginger and then
+
+210
+00:06:08.320 --> 00:06:10.040
+it went to the out of stock.
+
+211
+00:06:10.040 --> 00:06:12.440
+So the out of stock ginger, one
+
+212
+00:06:12.440 --> 00:06:14.360
+went, all the way through it.
+
+213
+00:06:14.360 --> 00:06:15.680
+We didn't do any printing
+
+214
+00:06:15.680 --> 00:06:17.250
+of the ginger or anything, but.
+
+215
+00:06:17.250 --> 00:06:18.570
+But as you will notice, this was
+
+216
+00:06:18.570 --> 00:06:21.090
+printed at the time of ginger.
+
+217
+00:06:21.090 --> 00:06:23.090
+Then as we simply move to the out
+
+218
+00:06:23.090 --> 00:06:25.250
+of stock, it simply says, hey,
+
+219
+00:06:25.250 --> 00:06:26.530
+I don't want to do anything.
+
+220
+00:06:26.530 --> 00:06:28.570
+So out of stock simply came up here.
+
+221
+00:06:28.570 --> 00:06:30.210
+And as soon as it saw the continue,
+
+222
+00:06:30.210 --> 00:06:31.890
+it didn't worked out there.
+
+223
+00:06:31.890 --> 00:06:33.530
+It would be rather interesting if
+
+224
+00:06:33.530 --> 00:06:35.250
+we go ahead and also print out.
+
+225
+00:06:35.810 --> 00:06:37.090
+Let's go ahead and print
+
+226
+00:06:37.090 --> 00:06:38.130
+this, statement
+
+227
+00:06:39.090 --> 00:06:40.930
+because this is interesting.
+
+228
+00:06:40.930 --> 00:06:42.290
+Instead of saying discontinued
+
+229
+00:06:42.290 --> 00:06:45.330
+out term, find, go ahead and remove
+
+230
+00:06:45.330 --> 00:06:47.130
+this, add this one, and say
+
+231
+00:06:47.130 --> 00:06:48.650
+we want to print the flavor.
+
+232
+00:06:48.650 --> 00:06:50.330
+Can we print the flavor?
+
+233
+00:06:50.330 --> 00:06:51.850
+Much more interesting stuff.
+
+234
+00:06:52.650 --> 00:06:53.730
+All right, let's go
+
+235
+00:06:53.730 --> 00:06:54.810
+ahead and print this.
+
+236
+00:06:54.810 --> 00:06:56.050
+So it says first time
+
+237
+00:06:56.050 --> 00:06:57.610
+the ginger item was found.
+
+238
+00:06:57.610 --> 00:06:58.730
+All right, no problem there.
+
+239
+00:06:58.730 --> 00:07:00.330
+Ginger item was found.
+
+240
+00:07:00.330 --> 00:07:01.890
+Then it found the out of stock.
+
+241
+00:07:01.890 --> 00:07:03.530
+So as soon as it finds the out
+
+242
+00:07:03.530 --> 00:07:04.650
+of stock, it says continue.
+
+243
+00:07:04.650 --> 00:07:05.610
+That means I will not
+
+244
+00:07:05.610 --> 00:07:06.450
+continue the loop.
+
+245
+00:07:06.450 --> 00:07:08.010
+I'll skip right from here.
+
+246
+00:07:08.010 --> 00:07:09.210
+So nothing was printed.
+
+247
+00:07:09.950 --> 00:07:11.430
+Then it says lemon.
+
+248
+00:07:11.430 --> 00:07:13.470
+So lemon was printed here.
+
+249
+00:07:13.470 --> 00:07:15.190
+And then, it didn't
+
+250
+00:07:15.190 --> 00:07:16.070
+match this condition.
+
+251
+00:07:16.070 --> 00:07:17.270
+It didn't match this condition.
+
+252
+00:07:17.270 --> 00:07:18.590
+So it printed out.
+
+253
+00:07:18.590 --> 00:07:20.630
+Then we Simply got interacted
+
+254
+00:07:20.630 --> 00:07:21.870
+with the discontinued.
+
+255
+00:07:21.870 --> 00:07:23.150
+So as soon as you interact
+
+256
+00:07:23.150 --> 00:07:24.030
+with the discontinued,
+
+257
+00:07:24.030 --> 00:07:25.550
+the break statement hits.
+
+258
+00:07:25.550 --> 00:07:27.470
+That means the whole of the loop is
+
+259
+00:07:27.470 --> 00:07:29.470
+not going to run outside of this.
+
+260
+00:07:29.470 --> 00:07:31.310
+So you got only till the lemon.
+
+261
+00:07:31.310 --> 00:07:32.750
+After that nothing prints.
+
+262
+00:07:33.550 --> 00:07:35.510
+This guy never got a chance
+
+263
+00:07:35.510 --> 00:07:36.430
+to be printed.
+
+264
+00:07:36.430 --> 00:07:38.190
+And as soon as we got out of this we
+
+265
+00:07:38.190 --> 00:07:39.590
+simply go ahead and say that, hey,
+
+266
+00:07:39.590 --> 00:07:41.870
+I am printing outside of the loop.
+
+267
+00:07:41.870 --> 00:07:43.670
+This understanding of indentation
+
+268
+00:07:43.670 --> 00:07:45.070
+is pretty important and we
+
+269
+00:07:45.070 --> 00:07:46.430
+really, really need that.
+
+270
+00:07:46.430 --> 00:07:47.750
+Now apart from this, you could have
+
+271
+00:07:47.750 --> 00:07:48.950
+done something like this, that
+
+272
+00:07:48.950 --> 00:07:50.790
+hey, before we break this, we want
+
+273
+00:07:50.790 --> 00:07:52.150
+to print this and obviously we
+
+274
+00:07:52.150 --> 00:07:53.350
+need to work on indentation.
+
+275
+00:07:53.350 --> 00:07:54.110
+So there we go.
+
+276
+00:07:54.670 --> 00:07:56.189
+Now the output will be
+
+277
+00:07:56.189 --> 00:07:57.190
+drastically different.
+
+278
+00:07:57.190 --> 00:07:58.790
+So if I go ahead and run this notice
+
+279
+00:07:58.790 --> 00:08:01.310
+here, Discontinued item found.
+
+280
+00:08:01.310 --> 00:08:02.310
+And we simply say
+
+281
+00:08:02.310 --> 00:08:03.550
+outside of the loop.
+
+282
+00:08:03.550 --> 00:08:04.830
+Because this time we don't
+
+283
+00:08:04.830 --> 00:08:07.080
+have anything to be printed out in
+
+284
+00:08:07.080 --> 00:08:07.800
+in just the loop.
+
+285
+00:08:07.800 --> 00:08:08.680
+We just are checking
+
+286
+00:08:08.680 --> 00:08:09.640
+for the two condition.
+
+287
+00:08:09.640 --> 00:08:11.400
+First one for out of stock,
+
+288
+00:08:11.400 --> 00:08:12.880
+second one for the discontinued.
+
+289
+00:08:12.880 --> 00:08:14.720
+So the only item that gets printed
+
+290
+00:08:14.720 --> 00:08:16.440
+is discontinued because only
+
+291
+00:08:16.440 --> 00:08:18.000
+then you move inside this loop.
+
+292
+00:08:18.000 --> 00:08:19.320
+So that's why we see
+
+293
+00:08:19.320 --> 00:08:20.920
+discontinued outem found.
+
+294
+00:08:20.920 --> 00:08:22.880
+And then we simply have the item,
+
+295
+00:08:22.880 --> 00:08:24.680
+outside of this being found.
+
+296
+00:08:24.680 --> 00:08:26.080
+We can do one more thing, one
+
+297
+00:08:26.080 --> 00:08:27.480
+more very interesting thing.
+
+298
+00:08:27.480 --> 00:08:28.720
+I can just go ahead and have
+
+299
+00:08:28.720 --> 00:08:29.800
+a duplicate of this.
+
+300
+00:08:29.800 --> 00:08:31.440
+I'll print this up and notice
+
+301
+00:08:31.440 --> 00:08:32.600
+here I'm printing it outside.
+
+302
+00:08:33.599 --> 00:08:35.438
+So this is if block.
+
+303
+00:08:35.438 --> 00:08:37.039
+This again is if block.
+
+304
+00:08:37.039 --> 00:08:39.119
+But this is a loop block.
+
+305
+00:08:39.119 --> 00:08:41.039
+Notice here it's inside the loop.
+
+306
+00:08:41.039 --> 00:08:42.239
+So the ability to understand
+
+307
+00:08:42.239 --> 00:08:43.639
+what's happening and how is it
+
+308
+00:08:43.639 --> 00:08:44.959
+happening is actually very,
+
+309
+00:08:44.959 --> 00:08:46.239
+very interesting and important
+
+310
+00:08:46.239 --> 00:08:47.759
+in the world of Python.
+
+311
+00:08:47.759 --> 00:08:48.998
+I'll print this notice here.
+
+312
+00:08:48.998 --> 00:08:50.159
+Ginger, item found.
+
+313
+00:08:50.159 --> 00:08:52.359
+Lemon, item found Discontinued
+
+314
+00:08:52.359 --> 00:08:54.399
+Block also got executed outside.
+
+315
+00:08:54.959 --> 00:08:56.799
+After that nothing gets executed.
+
+316
+00:08:56.799 --> 00:08:58.399
+So this one gets out.
+
+317
+00:08:58.399 --> 00:08:59.879
+So this is the most important part
+
+318
+00:08:59.879 --> 00:09:01.559
+that you learn and understand deeply
+
+319
+00:09:01.559 --> 00:09:03.319
+about the continue break and how
+
+320
+00:09:03.319 --> 00:09:04.639
+the structure of the loop work.
+
+321
+00:09:05.260 --> 00:09:07.020
+Now I have another such example
+
+322
+00:09:07.820 --> 00:09:09.500
+and that will be interesting.
+
+323
+00:09:09.500 --> 00:09:11.140
+I thought to keep it as a separate
+
+324
+00:09:11.140 --> 00:09:12.020
+video, but I'll just
+
+325
+00:09:12.020 --> 00:09:14.460
+introduce you within this video.
+
+326
+00:09:14.460 --> 00:09:16.620
+So this is 08 and we're going
+
+327
+00:09:16.620 --> 00:09:18.300
+to call this one as for else.
+
+328
+00:09:18.300 --> 00:09:19.460
+Yes, there is a such thing
+
+329
+00:09:19.460 --> 00:09:21.020
+as known as for else.
+
+330
+00:09:21.020 --> 00:09:22.460
+Now look at this very interesting
+
+331
+00:09:22.460 --> 00:09:23.660
+example that we have.
+
+332
+00:09:23.660 --> 00:09:24.660
+So I'll just go ahead
+
+333
+00:09:24.660 --> 00:09:26.140
+and call this one as staff.
+
+334
+00:09:27.020 --> 00:09:28.220
+So we have some of the staff
+
+335
+00:09:28.220 --> 00:09:29.580
+members which is a list.
+
+336
+00:09:29.580 --> 00:09:31.420
+Inside the list we have tuples.
+
+337
+00:09:31.940 --> 00:09:33.460
+So first of all we have Amit
+
+338
+00:09:33.460 --> 00:09:36.020
+and we also store the age of them.
+
+339
+00:09:36.020 --> 00:09:37.220
+So let's just say 16.
+
+340
+00:09:38.180 --> 00:09:41.420
+And we have another staff
+
+341
+00:09:41.420 --> 00:09:43.540
+which is also a Tuple.
+
+342
+00:09:43.540 --> 00:09:46.020
+So I'll just go ahead and say Zara
+
+343
+00:09:46.020 --> 00:09:48.660
+and the staff age probably 17.
+
+344
+00:09:49.620 --> 00:09:52.660
+And then we have another tuple
+
+345
+00:09:52.660 --> 00:09:53.860
+and let's just say we call
+
+346
+00:09:53.860 --> 00:09:56.020
+this as Raj, fictitious name.
+
+347
+00:09:56.020 --> 00:09:57.140
+No, no matter there.
+
+348
+00:09:57.650 --> 00:09:58.330
+And we simply go
+
+349
+00:09:58.330 --> 00:09:59.730
+ahead and work on 15.
+
+350
+00:09:59.730 --> 00:10:01.210
+Now we have the tuple, we
+
+351
+00:10:01.210 --> 00:10:02.730
+have name as well as age.
+
+352
+00:10:02.730 --> 00:10:03.810
+Can we loop through them?
+
+353
+00:10:03.810 --> 00:10:04.370
+For sure.
+
+354
+00:10:04.370 --> 00:10:05.730
+We can just go ahead and say
+
+355
+00:10:06.400 --> 00:10:08.090
+name age, because that's what
+
+356
+00:10:08.090 --> 00:10:09.410
+we are about to return.
+
+357
+00:10:09.410 --> 00:10:10.850
+And we'll simply say
+
+358
+00:10:10.850 --> 00:10:12.050
+this in the staff.
+
+359
+00:10:12.050 --> 00:10:14.130
+Now I don't want to use it like that.
+
+360
+00:10:14.130 --> 00:10:15.690
+I only want to print when
+
+361
+00:10:15.690 --> 00:10:17.410
+the age is above 18.
+
+362
+00:10:17.410 --> 00:10:18.770
+Hey Hitesh, what are you saying?
+
+363
+00:10:18.770 --> 00:10:20.170
+Nobody's age is above 18.
+
+364
+00:10:20.170 --> 00:10:21.730
+That's exactly my point.
+
+365
+00:10:21.730 --> 00:10:22.650
+So I can just go ahead
+
+366
+00:10:22.650 --> 00:10:24.140
+and write it like this.
+
+367
+00:10:24.140 --> 00:10:27.460
+If age is greater than or equal
+
+368
+00:10:27.460 --> 00:10:30.020
+to 18, then only we are
+
+369
+00:10:30.020 --> 00:10:31.100
+doing the hiring or we are
+
+370
+00:10:31.100 --> 00:10:32.300
+printing some message.
+
+371
+00:10:32.300 --> 00:10:33.860
+In this case we are simply go ahead
+
+372
+00:10:33.860 --> 00:10:35.860
+and simply use the print just like
+
+373
+00:10:35.860 --> 00:10:38.660
+this and formatted string and we
+
+374
+00:10:38.660 --> 00:10:45.500
+will say name is eligible for.
+
+375
+00:10:47.900 --> 00:10:49.580
+Eligible to manage the staff.
+
+376
+00:10:52.570 --> 00:10:54.170
+Manage the staff or hiring,
+
+377
+00:10:54.170 --> 00:10:55.930
+whatever you want to call this.
+
+378
+00:10:55.930 --> 00:10:58.130
+All right, now once this is all
+
+379
+00:10:58.130 --> 00:10:59.650
+done, we simply want to go ahead
+
+380
+00:10:59.650 --> 00:11:01.210
+and hit the break as well.
+
+381
+00:11:01.210 --> 00:11:03.290
+Now here's the most interesting part.
+
+382
+00:11:03.290 --> 00:11:05.770
+We will go ahead and simply say else.
+
+383
+00:11:05.770 --> 00:11:06.890
+That's interesting.
+
+384
+00:11:06.890 --> 00:11:08.810
+Yes, just in the indentation level
+
+385
+00:11:08.810 --> 00:11:10.170
+of where the for loop is.
+
+386
+00:11:10.170 --> 00:11:11.690
+And I can go ahead and print
+
+387
+00:11:11.690 --> 00:11:13.050
+the value just like this
+
+388
+00:11:13.610 --> 00:11:15.490
+and can have a probably a formatted
+
+389
+00:11:15.490 --> 00:11:17.050
+string however you like that.
+
+390
+00:11:17.610 --> 00:11:20.730
+No one is eligible
+
+391
+00:11:22.250 --> 00:11:25.130
+to manage the stuff.
+
+392
+00:11:26.570 --> 00:11:28.010
+This is one of the most interesting
+
+393
+00:11:28.010 --> 00:11:29.330
+case and interesting style
+
+394
+00:11:29.330 --> 00:11:30.810
+of writing the Python code.
+
+395
+00:11:31.450 --> 00:11:33.690
+I'll run this one and we will call
+
+396
+00:11:33.690 --> 00:11:37.570
+this1as08 and run this notice here.
+
+397
+00:11:37.570 --> 00:11:39.250
+It says no one is eligible
+
+398
+00:11:39.250 --> 00:11:40.250
+for managing the staff.
+
+399
+00:11:40.250 --> 00:11:41.610
+But let's go ahead and reverse
+
+400
+00:11:41.610 --> 00:11:43.210
+the rule we are looking up
+
+401
+00:11:43.210 --> 00:11:45.610
+for less than eight should be
+
+402
+00:11:45.610 --> 00:11:48.170
+less than or again use this.
+
+403
+00:11:48.730 --> 00:11:50.730
+So age should be less than
+
+404
+00:11:50.730 --> 00:11:51.930
+or equal to 18.
+
+405
+00:11:51.930 --> 00:11:53.850
+So all of them are now part of it.
+
+406
+00:11:53.850 --> 00:11:55.130
+Now here's the interesting part.
+
+407
+00:11:55.130 --> 00:11:56.490
+What will be printed?
+
+408
+00:11:56.490 --> 00:11:57.130
+That's the most
+
+409
+00:11:57.130 --> 00:11:58.410
+interesting part of it.
+
+410
+00:11:58.410 --> 00:12:00.170
+Notice here Amit is eligible, so
+
+411
+00:12:00.170 --> 00:12:01.930
+the very first guy is eligible.
+
+412
+00:12:01.930 --> 00:12:02.690
+And after that we are
+
+413
+00:12:02.690 --> 00:12:03.530
+just breaking this.
+
+414
+00:12:03.530 --> 00:12:04.690
+So we are not running
+
+415
+00:12:04.690 --> 00:12:05.690
+the loop anymore.
+
+416
+00:12:05.690 --> 00:12:07.090
+Whoever the first guy comes
+
+417
+00:12:07.090 --> 00:12:08.330
+up and meets the criteria,
+
+418
+00:12:08.330 --> 00:12:09.250
+we're just simply saying that
+
+419
+00:12:09.250 --> 00:12:10.650
+you are eligible for it.
+
+420
+00:12:10.650 --> 00:12:11.850
+But notice here the else
+
+421
+00:12:11.850 --> 00:12:12.850
+statement doesn't print.
+
+422
+00:12:12.850 --> 00:12:14.650
+And this is one of the strangest
+
+423
+00:12:14.650 --> 00:12:15.970
+behavior that where the else
+
+424
+00:12:15.970 --> 00:12:17.170
+statement is used or could
+
+425
+00:12:17.170 --> 00:12:19.420
+be used, the indentation is not
+
+426
+00:12:19.420 --> 00:12:20.380
+in the if statement.
+
+427
+00:12:20.380 --> 00:12:21.940
+This is not a part of if statement.
+
+428
+00:12:21.940 --> 00:12:24.300
+This is a part of a For statement.
+
+429
+00:12:24.860 --> 00:12:26.500
+So this is one of the most
+
+430
+00:12:26.500 --> 00:12:28.780
+interesting way the else block only
+
+431
+00:12:28.780 --> 00:12:32.060
+runs if the loop didn't break.
+
+432
+00:12:32.060 --> 00:12:33.340
+Use it when you are searching
+
+433
+00:12:33.340 --> 00:12:35.340
+for something, it's not found.
+
+434
+00:12:35.340 --> 00:12:37.380
+It's kind of a execution
+
+435
+00:12:37.380 --> 00:12:38.780
+of the fallback logic.
+
+436
+00:12:38.780 --> 00:12:39.860
+So call this one as
+
+437
+00:12:39.860 --> 00:12:41.180
+a fallback one here.
+
+438
+00:12:41.180 --> 00:12:42.320
+Pretty interesting.
+
+439
+00:12:42.320 --> 00:12:43.380
+You will see this quite a lot,
+
+440
+00:12:43.380 --> 00:12:45.220
+but only in the in depth series,
+
+441
+00:12:45.220 --> 00:12:46.300
+just like we are doing here.
+
+442
+00:12:46.930 --> 00:12:47.970
+That is it for this video.
+
+443
+00:12:47.970 --> 00:12:49.490
+Hope you enjoyed this one.
+
+444
+00:12:49.490 --> 00:12:51.010
+It was a pretty interesting video
+
+445
+00:12:51.010 --> 00:12:52.490
+altogether and hope you have
+
+446
+00:12:52.490 --> 00:12:54.170
+learned in that and that is it all
+
+447
+00:12:54.170 --> 00:12:56.210
+about the loops in Python.
+
+448
+00:12:56.210 --> 00:12:57.330
+That is it for this video.
+
+449
+00:12:57.330 --> 00:12:59.010
+And let's catch up in the next one.

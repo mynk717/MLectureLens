@@ -1,0 +1,1221 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:02.280
+All right, going with
+
+2
+00:00:02.280 --> 00:00:03.560
+the chapter one, let me take
+
+3
+00:00:03.560 --> 00:00:04.760
+you directly on the screen.
+
+4
+00:00:04.760 --> 00:00:06.160
+And first of all, let's go
+
+5
+00:00:06.160 --> 00:00:07.600
+ahead and clean everything up.
+
+6
+00:00:07.600 --> 00:00:09.120
+We don't want any files opened
+
+7
+00:00:09.120 --> 00:00:10.160
+up or anything like that.
+
+8
+00:00:10.800 --> 00:00:12.880
+So we'll start with the 07.
+
+9
+00:00:12.880 --> 00:00:14.440
+And, I can now go
+
+10
+00:00:14.440 --> 00:00:15.200
+ahead and delete this.
+
+11
+00:00:15.200 --> 00:00:16.480
+We don't need this.
+
+12
+00:00:16.480 --> 00:00:17.800
+I just shadcn this file
+
+13
+00:00:17.800 --> 00:00:18.400
+with you already.
+
+14
+00:00:19.460 --> 00:00:20.520
+Let's create a new folder.
+
+15
+00:00:20.520 --> 00:00:22.240
+Let's call this one as 07.
+
+16
+00:00:22.240 --> 00:00:26.080
+And that will be comprehensions.
+
+17
+00:00:26.080 --> 00:00:26.800
+There we go.
+
+18
+00:00:27.620 --> 00:00:29.020
+Now, in this, let's go ahead
+
+19
+00:00:29.020 --> 00:00:30.460
+and start with the very first one,
+
+20
+00:00:30.460 --> 00:00:31.820
+which is the list comprehension.
+
+21
+00:00:31.820 --> 00:00:33.340
+So what is this list comprehension?
+
+22
+00:00:33.340 --> 00:00:34.660
+How does it work?
+
+23
+00:00:34.660 --> 00:00:36.780
+So the list comprehension, let's
+
+24
+00:00:36.780 --> 00:00:38.020
+go ahead and write that,
+
+25
+00:00:38.020 --> 00:00:39.780
+because that would be easier for me.
+
+26
+00:00:40.420 --> 00:00:41.540
+There we go.
+
+27
+00:00:41.540 --> 00:00:42.380
+First of all, let's
+
+28
+00:00:42.380 --> 00:00:43.379
+understand the syntax.
+
+29
+00:00:43.379 --> 00:00:45.060
+That's the most important part.
+
+30
+00:00:45.060 --> 00:00:46.220
+So the syntax looks
+
+31
+00:00:46.220 --> 00:00:46.820
+something like this.
+
+32
+00:00:46.820 --> 00:00:47.940
+We have the square brackets.
+
+33
+00:00:47.940 --> 00:00:49.100
+So we go ahead and put
+
+34
+00:00:49.100 --> 00:00:50.340
+up the square brackets.
+
+35
+00:00:50.340 --> 00:00:51.500
+Then you simply go ahead
+
+36
+00:00:51.500 --> 00:00:53.540
+and write your expression here,
+
+37
+00:00:54.140 --> 00:00:55.260
+whatever you want to do.
+
+38
+00:00:55.260 --> 00:00:56.660
+I'll show you what expression
+
+39
+00:00:56.660 --> 00:00:57.820
+and all of this means.
+
+40
+00:00:57.820 --> 00:00:58.900
+And then you simply go
+
+41
+00:00:58.900 --> 00:01:00.380
+ahead and put a loop.
+
+42
+00:01:00.380 --> 00:01:01.500
+Yes, I know I told you
+
+43
+00:01:01.500 --> 00:01:02.620
+that we will be using.
+
+44
+00:01:02.620 --> 00:01:03.940
+We'll not be using the loop.
+
+45
+00:01:03.940 --> 00:01:04.620
+We can do it.
+
+46
+00:01:04.620 --> 00:01:06.180
+But actually the loop is being used.
+
+47
+00:01:06.180 --> 00:01:07.340
+Just look at the syntax.
+
+48
+00:01:07.340 --> 00:01:08.220
+You will get this.
+
+49
+00:01:08.780 --> 00:01:12.020
+So for item in items, and I hope you
+
+50
+00:01:12.020 --> 00:01:13.900
+got the syntax, items is an array.
+
+51
+00:01:13.900 --> 00:01:16.140
+Item is an individual item of that.
+
+52
+00:01:16.140 --> 00:01:17.380
+Rather, it would be correct
+
+53
+00:01:17.380 --> 00:01:19.340
+to write it as iterable.
+
+54
+00:01:20.290 --> 00:01:21.330
+Iterable.
+
+55
+00:01:21.330 --> 00:01:22.930
+So that I can iterate over it.
+
+56
+00:01:22.930 --> 00:01:23.930
+And then you simply
+
+57
+00:01:23.930 --> 00:01:25.530
+write if condition.
+
+58
+00:01:25.530 --> 00:01:26.890
+And you might be thinking, all
+
+59
+00:01:26.890 --> 00:01:28.690
+right, all right, I was there
+
+60
+00:01:28.690 --> 00:01:31.050
+with you, but now I'm not with you.
+
+61
+00:01:31.050 --> 00:01:32.930
+What is all of this?
+
+62
+00:01:32.930 --> 00:01:34.090
+That's why I say sometimes
+
+63
+00:01:34.090 --> 00:01:35.690
+the practicals are much more easier.
+
+64
+00:01:35.690 --> 00:01:38.290
+So expression for item in iteratable.
+
+65
+00:01:38.290 --> 00:01:39.090
+Iterable.
+
+66
+00:01:40.010 --> 00:01:41.090
+If condition.
+
+67
+00:01:41.090 --> 00:01:42.730
+I know, I know, you lost me
+
+68
+00:01:42.730 --> 00:01:44.330
+there, but let me walk you
+
+69
+00:01:44.330 --> 00:01:45.250
+through with an example.
+
+70
+00:01:45.250 --> 00:01:46.370
+The practical examples
+
+71
+00:01:46.370 --> 00:01:47.250
+are much easier.
+
+72
+00:01:48.580 --> 00:01:50.340
+Call this one as 01 and call
+
+73
+00:01:50.340 --> 00:01:54.740
+this one as list, compre py.
+
+74
+00:01:55.700 --> 00:01:57.300
+All right, let's go with this.
+
+75
+00:01:57.300 --> 00:01:59.020
+Let's just say we have a menu.
+
+76
+00:01:59.020 --> 00:02:00.500
+Let's go with the real example.
+
+77
+00:02:00.500 --> 00:02:01.940
+We have a menu, all right?
+
+78
+00:02:01.940 --> 00:02:03.260
+This is your menu, which
+
+79
+00:02:03.260 --> 00:02:05.540
+is a list in itself.
+
+80
+00:02:05.540 --> 00:02:07.460
+And if you remember, list actually
+
+81
+00:02:07.460 --> 00:02:09.500
+can be written in just one line.
+
+82
+00:02:09.500 --> 00:02:11.260
+Or you can hit an enter and can
+
+83
+00:02:11.260 --> 00:02:12.100
+write a list like this.
+
+84
+00:02:12.100 --> 00:02:13.020
+This is much easier
+
+85
+00:02:13.020 --> 00:02:13.700
+to read, actually.
+
+86
+00:02:14.350 --> 00:02:16.550
+So we just have some of the masala
+
+87
+00:02:16.550 --> 00:02:18.110
+chai, and then separated
+
+88
+00:02:18.110 --> 00:02:20.030
+by comma, we can have another chai
+
+89
+00:02:20.030 --> 00:02:24.830
+this one is iced lemon, T.
+
+90
+00:02:25.870 --> 00:02:28.190
+Then we have another one which is
+
+91
+00:02:29.070 --> 00:02:31.430
+green T or chai,
+
+92
+00:02:31.430 --> 00:02:32.830
+whichever you want to have.
+
+93
+00:02:32.830 --> 00:02:34.390
+Another one we have is going
+
+94
+00:02:34.390 --> 00:02:39.390
+to be iced peach T.
+
+95
+00:02:40.070 --> 00:02:41.990
+And we have one last one which is
+
+96
+00:02:42.630 --> 00:02:45.990
+maybe ginger T or ginger chai,
+
+97
+00:02:45.990 --> 00:02:47.070
+whichever you want to call it.
+
+98
+00:02:47.070 --> 00:02:48.710
+That's totally okay.
+
+99
+00:02:48.710 --> 00:02:49.710
+So this is our menu.
+
+100
+00:02:49.710 --> 00:02:50.630
+This is our list.
+
+101
+00:02:50.630 --> 00:02:51.990
+Now, I want to bring all
+
+102
+00:02:51.990 --> 00:02:54.070
+the iced T out of it.
+
+103
+00:02:54.070 --> 00:02:55.110
+So how can I do this?
+
+104
+00:02:55.110 --> 00:02:56.150
+Pretty easy way.
+
+105
+00:02:56.150 --> 00:02:57.590
+You can loop through the values
+
+106
+00:02:57.590 --> 00:02:58.910
+and look for the character
+
+107
+00:02:58.910 --> 00:03:00.390
+that it should have iced,
+
+108
+00:03:01.070 --> 00:03:02.950
+in that particular T.
+
+109
+00:03:02.950 --> 00:03:04.750
+And then I'll filter them out.
+
+110
+00:03:04.750 --> 00:03:06.370
+But the easiest way is
+
+111
+00:03:06.370 --> 00:03:07.690
+with the comprehension.
+
+112
+00:03:07.690 --> 00:03:09.130
+Now let's go through with the syntax.
+
+113
+00:03:09.130 --> 00:03:10.330
+So we have the square brackets.
+
+114
+00:03:10.330 --> 00:03:11.170
+All right, I understand
+
+115
+00:03:11.170 --> 00:03:11.890
+square brackets.
+
+116
+00:03:11.890 --> 00:03:13.290
+That's easy for me.
+
+117
+00:03:13.290 --> 00:03:14.730
+Now then I go ahead and say that,
+
+118
+00:03:14.730 --> 00:03:17.370
+hey, this is expression for items.
+
+119
+00:03:17.370 --> 00:03:19.050
+So what is this expression?
+
+120
+00:03:19.050 --> 00:03:20.410
+Expression means
+
+121
+00:03:20.410 --> 00:03:21.530
+it's not going to be.
+
+122
+00:03:21.530 --> 00:03:22.850
+It's going to be evaluated in
+
+123
+00:03:22.850 --> 00:03:24.330
+a moment, but it will get the value.
+
+124
+00:03:24.330 --> 00:03:26.330
+So I'll just call this as, tea.
+
+125
+00:03:26.330 --> 00:03:27.890
+All right, tea for a moment.
+
+126
+00:03:27.890 --> 00:03:29.930
+We can call this simply a variable.
+
+127
+00:03:29.930 --> 00:03:31.290
+Okay, Acceptable.
+
+128
+00:03:32.080 --> 00:03:33.000
+Let's go ahead and call this
+
+129
+00:03:33.000 --> 00:03:35.920
+one as for tea in menu.
+
+130
+00:03:37.120 --> 00:03:38.960
+This is also acceptable that.
+
+131
+00:03:38.960 --> 00:03:41.360
+All right, you are using a loop
+
+132
+00:03:41.360 --> 00:03:41.840
+in this.
+
+133
+00:03:41.840 --> 00:03:43.360
+The menu is a trable,
+
+134
+00:03:43.360 --> 00:03:45.440
+which is a, list in itself.
+
+135
+00:03:45.440 --> 00:03:48.080
+The tea is each individual item.
+
+136
+00:03:48.080 --> 00:03:50.800
+All right, I got this part as well.
+
+137
+00:03:52.080 --> 00:03:54.440
+And then we simply go ahead and use
+
+138
+00:03:54.440 --> 00:03:56.720
+condition, Remember if condition.
+
+139
+00:03:56.720 --> 00:03:57.720
+So we'll always have
+
+140
+00:03:57.720 --> 00:03:58.720
+a if condition in this.
+
+141
+00:03:58.720 --> 00:04:00.720
+No exception if.
+
+142
+00:04:00.720 --> 00:04:06.160
+And I can go ahead and say iced int.
+
+143
+00:04:07.840 --> 00:04:09.440
+What did I just did here?
+
+144
+00:04:09.440 --> 00:04:11.160
+Remember, each of this is a string.
+
+145
+00:04:11.160 --> 00:04:14.080
+And I can check for the characters
+
+146
+00:04:14.080 --> 00:04:16.560
+that, hey, I want iced inside tea.
+
+147
+00:04:16.560 --> 00:04:17.880
+So this can be done because
+
+148
+00:04:17.880 --> 00:04:19.360
+it's a, whole iterable.
+
+149
+00:04:19.360 --> 00:04:20.880
+Strings are also iterable.
+
+150
+00:04:20.880 --> 00:04:22.000
+I can go ahead and look.
+
+151
+00:04:22.000 --> 00:04:24.160
+I want this to be a part of this tea.
+
+152
+00:04:24.160 --> 00:04:25.640
+So this whole item should
+
+153
+00:04:25.640 --> 00:04:27.040
+have iced somewhere in it.
+
+154
+00:04:27.610 --> 00:04:28.010
+So first.
+
+155
+00:04:28.010 --> 00:04:29.490
+Nope, the second one.
+
+156
+00:04:29.490 --> 00:04:31.290
+Surely it has the third one.
+
+157
+00:04:31.290 --> 00:04:33.170
+Nope, the fourth one will have it,
+
+158
+00:04:33.170 --> 00:04:34.890
+and the fifth one will not have it.
+
+159
+00:04:34.890 --> 00:04:36.450
+So each there should be
+
+160
+00:04:36.450 --> 00:04:37.890
+somewhere iced word into it,
+
+161
+00:04:37.890 --> 00:04:40.250
+either here or here or here.
+
+162
+00:04:40.250 --> 00:04:41.610
+So once we find it,
+
+163
+00:04:41.610 --> 00:04:42.850
+we actually filter that.
+
+164
+00:04:42.850 --> 00:04:44.410
+So we are looping through it.
+
+165
+00:04:44.410 --> 00:04:46.250
+We are checking for a condition.
+
+166
+00:04:46.250 --> 00:04:47.890
+And finally we are actually
+
+167
+00:04:47.890 --> 00:04:49.530
+collecting this, all of this
+
+168
+00:04:49.530 --> 00:04:51.770
+inside an expression, which is teas.
+
+169
+00:04:51.770 --> 00:04:53.370
+And this whole thing will be
+
+170
+00:04:53.930 --> 00:04:55.210
+collected inside the iced tea.
+
+171
+00:04:55.210 --> 00:04:55.970
+And I'm pretty sure
+
+172
+00:04:55.970 --> 00:04:56.810
+you're looking forward.
+
+173
+00:04:56.810 --> 00:04:57.890
+I want to see this.
+
+174
+00:04:57.890 --> 00:04:59.050
+I want to see the print
+
+175
+00:04:59.050 --> 00:04:59.930
+statement of this.
+
+176
+00:04:59.930 --> 00:05:01.250
+And you're Absolutely correct.
+
+177
+00:05:01.250 --> 00:05:02.890
+I can just go ahead and say print.
+
+178
+00:05:02.890 --> 00:05:04.330
+We'll change some of the variables
+
+179
+00:05:04.330 --> 00:05:06.410
+and do investigative study as well.
+
+180
+00:05:06.410 --> 00:05:08.330
+I'll just say iced tea and let's
+
+181
+00:05:08.330 --> 00:05:09.170
+go ahead and print this.
+
+182
+00:05:09.170 --> 00:05:10.730
+What do we get in return?
+
+183
+00:05:11.610 --> 00:05:14.090
+So I'll just go ahead and close this.
+
+184
+00:05:14.090 --> 00:05:15.730
+Open up an integrated terminal
+
+185
+00:05:15.730 --> 00:05:19.610
+just here, and with the Python
+
+186
+00:05:19.610 --> 00:05:21.570
+3, I want to run single file.
+
+187
+00:05:21.570 --> 00:05:22.390
+There we go.
+
+188
+00:05:22.390 --> 00:05:23.430
+Notice here we have iced
+
+189
+00:05:23.430 --> 00:05:25.590
+T, lemon T, iced peach T,
+
+190
+00:05:25.590 --> 00:05:27.350
+and lemon T all up here.
+
+191
+00:05:27.350 --> 00:05:28.950
+Okay, you might be having.
+
+192
+00:05:28.950 --> 00:05:30.430
+I do have some questions.
+
+193
+00:05:30.430 --> 00:05:30.870
+What is this?
+
+194
+00:05:30.870 --> 00:05:31.150
+T.
+
+195
+00:05:31.150 --> 00:05:32.190
+Can I call this one as
+
+196
+00:05:32.190 --> 00:05:33.750
+my underscore tea?
+
+197
+00:05:33.750 --> 00:05:34.710
+You will immediately
+
+198
+00:05:34.710 --> 00:05:36.230
+notice an error here.
+
+199
+00:05:36.230 --> 00:05:37.590
+The notice here, the error
+
+200
+00:05:37.590 --> 00:05:39.350
+says my T is not defined.
+
+201
+00:05:40.470 --> 00:05:42.110
+How can you say it is not defined?
+
+202
+00:05:42.110 --> 00:05:43.830
+Because this variable
+
+203
+00:05:43.830 --> 00:05:45.270
+actually comes from there.
+
+204
+00:05:46.230 --> 00:05:49.330
+Each individual item of the tea is
+
+205
+00:05:49.330 --> 00:05:51.010
+actually called this one here.
+
+206
+00:05:51.010 --> 00:05:52.170
+This is the syntax part.
+
+207
+00:05:52.170 --> 00:05:53.370
+So if I go ahead and call this as
+
+208
+00:05:53.370 --> 00:05:55.850
+myt, I have to call my variable
+
+209
+00:05:55.850 --> 00:05:58.130
+as myt, then it's all happy.
+
+210
+00:05:58.130 --> 00:05:59.730
+All right, so this part is all clear.
+
+211
+00:06:00.290 --> 00:06:01.970
+Now, this part shouldn't make
+
+212
+00:06:01.970 --> 00:06:03.090
+much of the trouble for you.
+
+213
+00:06:03.090 --> 00:06:04.610
+This is just any table.
+
+214
+00:06:04.610 --> 00:06:06.090
+In this case, since we call it
+
+215
+00:06:06.090 --> 00:06:07.970
+as list comprehension,
+
+216
+00:06:07.970 --> 00:06:09.410
+it expects that you will provide
+
+217
+00:06:09.410 --> 00:06:11.890
+a list, or in short array,
+
+218
+00:06:11.890 --> 00:06:13.610
+then comes up the condition part.
+
+219
+00:06:13.610 --> 00:06:15.610
+So this condition could be iced
+
+220
+00:06:15.610 --> 00:06:17.640
+here, but this could also be that.
+
+221
+00:06:17.640 --> 00:06:20.600
+Hey, if, maybe you want to check
+
+222
+00:06:20.600 --> 00:06:21.720
+for something different.
+
+223
+00:06:21.720 --> 00:06:22.400
+Notice here.
+
+224
+00:06:22.400 --> 00:06:23.640
+This one is also now getting
+
+225
+00:06:23.640 --> 00:06:24.560
+in trouble because we are
+
+226
+00:06:24.560 --> 00:06:26.480
+calling everything as myt, so you
+
+227
+00:06:26.480 --> 00:06:27.560
+should call this as well.
+
+228
+00:06:28.120 --> 00:06:29.360
+So right now we are checking
+
+229
+00:06:29.360 --> 00:06:31.400
+for iced in my tea, but I
+
+230
+00:06:31.400 --> 00:06:32.680
+can also go ahead and check if
+
+231
+00:06:34.040 --> 00:06:37.640
+my tea is or Mighty dot.
+
+232
+00:06:37.640 --> 00:06:39.320
+I can use the length operator,
+
+233
+00:06:39.320 --> 00:06:40.240
+or I can simply go
+
+234
+00:06:40.240 --> 00:06:42.440
+ahead and say, the length.
+
+235
+00:06:43.000 --> 00:06:44.070
+Not like that.
+
+236
+00:06:44.070 --> 00:06:47.750
+If the length of my tea is,
+
+237
+00:06:49.510 --> 00:06:52.070
+probably greater than, 10,
+
+238
+00:06:53.030 --> 00:06:54.510
+again, we can just calculate that.
+
+239
+00:06:54.510 --> 00:06:55.630
+But I want to see the result
+
+240
+00:06:55.630 --> 00:06:56.790
+of this as well.
+
+241
+00:06:56.790 --> 00:06:58.310
+So notice here, if I go ahead
+
+242
+00:06:58.310 --> 00:06:59.909
+for that, all of them are actually
+
+243
+00:06:59.909 --> 00:07:01.830
+bigger than 10, so that's great.
+
+244
+00:07:01.830 --> 00:07:05.612
+So, 1, 2, 3, 4, 5,
+
+245
+00:07:05.612 --> 00:07:08.310
+6, 7, 8, 9, 10, 11.
+
+246
+00:07:08.310 --> 00:07:10.150
+So we should actually try for 12.
+
+247
+00:07:10.150 --> 00:07:11.550
+Maybe we can get some different
+
+248
+00:07:11.550 --> 00:07:13.810
+result just to show you.
+
+249
+00:07:13.810 --> 00:07:14.450
+So there we go.
+
+250
+00:07:14.450 --> 00:07:16.170
+Now we have iced T and lemon T.
+
+251
+00:07:16.170 --> 00:07:17.010
+Because these are three
+
+252
+00:07:17.010 --> 00:07:18.250
+characters and they are
+
+253
+00:07:18.250 --> 00:07:19.170
+definitely more than 12.
+
+254
+00:07:19.170 --> 00:07:20.610
+So we only get the result
+
+255
+00:07:20.610 --> 00:07:22.210
+if we go ahead and change this sign.
+
+256
+00:07:22.210 --> 00:07:24.130
+They should be less than 12.
+
+257
+00:07:24.130 --> 00:07:25.730
+So what we're going to get.
+
+258
+00:07:25.730 --> 00:07:27.290
+And, I hope you get the power
+
+259
+00:07:27.290 --> 00:07:28.490
+of it, all right?
+
+260
+00:07:28.490 --> 00:07:29.610
+It's a pretty fun way
+
+261
+00:07:29.610 --> 00:07:30.850
+of writing the code, and it's
+
+262
+00:07:30.850 --> 00:07:32.010
+actually pretty understandable.
+
+263
+00:07:32.010 --> 00:07:33.210
+Now let's take this one here
+
+264
+00:07:33.210 --> 00:07:34.410
+or I'll actually go back
+
+265
+00:07:34.410 --> 00:07:35.290
+to the previous example.
+
+266
+00:07:35.290 --> 00:07:36.690
+That was pretty much more fun.
+
+267
+00:07:37.330 --> 00:07:39.680
+So this one.
+
+268
+00:07:39.680 --> 00:07:40.600
+Yeah, this one was
+
+269
+00:07:40.600 --> 00:07:41.760
+actually much more fun.
+
+270
+00:07:41.760 --> 00:07:43.000
+Let's go ahead and copy this
+
+271
+00:07:43.000 --> 00:07:44.320
+and compare with
+
+272
+00:07:44.320 --> 00:07:45.760
+the example that we have here.
+
+273
+00:07:46.480 --> 00:07:48.040
+So notice here, this one says
+
+274
+00:07:48.040 --> 00:07:50.880
+expression for item in iterable.
+
+275
+00:07:50.880 --> 00:07:52.320
+Now I hope this is much easier.
+
+276
+00:07:52.320 --> 00:07:53.240
+So this expression is
+
+277
+00:07:53.240 --> 00:07:54.880
+actually my tea here.
+
+278
+00:07:54.880 --> 00:07:56.080
+And then we have this
+
+279
+00:07:56.080 --> 00:07:57.080
+for matching up.
+
+280
+00:07:57.080 --> 00:07:57.760
+So item.
+
+281
+00:07:57.760 --> 00:07:59.920
+This is exactly the item we have
+
+282
+00:07:59.920 --> 00:08:00.800
+in iterable.
+
+283
+00:08:00.800 --> 00:08:02.720
+This menu is our iterable.
+
+284
+00:08:02.720 --> 00:08:04.000
+And the if condition.
+
+285
+00:08:04.000 --> 00:08:04.420
+The.
+
+286
+00:08:04.420 --> 00:08:05.900
+The whole condition part is up here.
+
+287
+00:08:05.900 --> 00:08:06.820
+So I can just go ahead
+
+288
+00:08:06.820 --> 00:08:07.620
+and wrap this up.
+
+289
+00:08:07.620 --> 00:08:09.540
+So this is whole condition part.
+
+290
+00:08:09.540 --> 00:08:09.860
+So.
+
+291
+00:08:09.860 --> 00:08:10.340
+Told you.
+
+292
+00:08:10.340 --> 00:08:12.300
+It looks weird at first, but once
+
+293
+00:08:12.300 --> 00:08:14.340
+you practice this a little bit more,
+
+294
+00:08:14.340 --> 00:08:15.780
+this will actually become
+
+295
+00:08:15.780 --> 00:08:17.100
+easier and you will see.
+
+296
+00:08:17.100 --> 00:08:18.420
+Yeah, this is actually much
+
+297
+00:08:18.420 --> 00:08:19.740
+fun way of writing Python
+
+298
+00:08:19.740 --> 00:08:21.140
+and easier as well.
+
+299
+00:08:21.140 --> 00:08:22.820
+Again, practice is the key,
+
+300
+00:08:22.820 --> 00:08:24.940
+but I hope I have done a good job
+
+301
+00:08:24.940 --> 00:08:25.940
+in making sure that you
+
+302
+00:08:25.940 --> 00:08:27.780
+understand each and every line
+
+303
+00:08:27.780 --> 00:08:29.620
+of list comprehensions.
+
+304
+00:08:29.620 --> 00:08:30.820
+That is it for this video.
+
+305
+00:08:30.820 --> 00:08:32.340
+Let's catch up in the next one.

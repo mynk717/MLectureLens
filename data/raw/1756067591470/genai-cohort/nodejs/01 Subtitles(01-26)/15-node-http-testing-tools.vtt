@@ -1,0 +1,557 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.000
+Hey guys, welcome back
+
+2
+00:00:01.000 --> 00:00:02.320
+to another exciting video.
+
+3
+00:00:02.320 --> 00:00:04.360
+And in this video I'm going
+
+4
+00:00:04.360 --> 00:00:06.560
+to show you that how we can use
+
+5
+00:00:06.560 --> 00:00:09.680
+these API testing clients and tools
+
+6
+00:00:09.680 --> 00:00:10.880
+in order to build
+
+7
+00:00:10.880 --> 00:00:13.960
+a very reliable and great APIs.
+
+8
+00:00:13.960 --> 00:00:15.640
+Okay, so these testing tools
+
+9
+00:00:15.640 --> 00:00:16.880
+are very, very important
+
+10
+00:00:16.880 --> 00:00:18.560
+to build an API and they are very
+
+11
+00:00:18.560 --> 00:00:20.080
+helpful while you're developing.
+
+12
+00:00:20.080 --> 00:00:20.760
+So there are a lot
+
+13
+00:00:20.760 --> 00:00:21.840
+of API testing tools.
+
+14
+00:00:21.840 --> 00:00:22.600
+And don't worry, I'll tell
+
+15
+00:00:22.600 --> 00:00:23.760
+you that what these does.
+
+16
+00:00:23.760 --> 00:00:25.320
+So like you have the Postman.
+
+17
+00:00:25.320 --> 00:00:26.960
+This is the like most famous one.
+
+18
+00:00:26.960 --> 00:00:29.130
+And I have used the Postman a lot.
+
+19
+00:00:29.130 --> 00:00:30.450
+But the only problem with them is
+
+20
+00:00:30.450 --> 00:00:32.450
+that now there is a lot of features
+
+21
+00:00:32.450 --> 00:00:34.010
+in Postman which you don't need.
+
+22
+00:00:34.010 --> 00:00:35.930
+So they have made this particular
+
+23
+00:00:35.930 --> 00:00:38.290
+product a lot bloated.
+
+24
+00:00:38.290 --> 00:00:40.010
+Okay, so this is a very bloated
+
+25
+00:00:40.010 --> 00:00:41.650
+product and it requires
+
+26
+00:00:41.650 --> 00:00:43.130
+you a sign in and all that.
+
+27
+00:00:43.130 --> 00:00:44.050
+So it was a great
+
+28
+00:00:44.050 --> 00:00:44.969
+product, I would say.
+
+29
+00:00:44.969 --> 00:00:46.050
+And it is still a great
+
+30
+00:00:46.050 --> 00:00:47.210
+product, no doubt in that.
+
+31
+00:00:47.210 --> 00:00:48.090
+But the only problem
+
+32
+00:00:48.090 --> 00:00:49.010
+is it's very heavy.
+
+33
+00:00:49.010 --> 00:00:50.650
+Now then there is a,
+
+34
+00:00:51.270 --> 00:00:53.050
+alternative that is Isomnia.
+
+35
+00:00:53.050 --> 00:00:54.330
+Again it was also a great
+
+36
+00:00:54.330 --> 00:00:55.490
+product, but now it is
+
+37
+00:00:55.490 --> 00:00:57.080
+very, very, very heavy.
+
+38
+00:00:57.080 --> 00:00:58.280
+So I don't prefer to use it
+
+39
+00:00:58.280 --> 00:00:59.240
+or something like that.
+
+40
+00:00:59.240 --> 00:01:00.920
+And these are not open source.
+
+41
+00:01:00.920 --> 00:01:03.080
+I mean Isomnia is open source.
+
+42
+00:01:03.080 --> 00:01:05.160
+But my personal favorite that I
+
+43
+00:01:05.160 --> 00:01:07.440
+want to show you is one Bruno.
+
+44
+00:01:07.440 --> 00:01:09.200
+Okay, so Bruno is open source.
+
+45
+00:01:09.200 --> 00:01:09.520
+Great.
+
+46
+00:01:09.520 --> 00:01:11.480
+And next is thunderclient.
+
+47
+00:01:11.480 --> 00:01:12.840
+My personal favorite one is
+
+48
+00:01:12.840 --> 00:01:14.680
+thunderclient because this is
+
+49
+00:01:14.680 --> 00:01:16.680
+not a standalone application.
+
+50
+00:01:16.680 --> 00:01:18.720
+This is a VS code extension
+
+51
+00:01:18.720 --> 00:01:20.480
+which directly gives you
+
+52
+00:01:20.480 --> 00:01:22.690
+this UI in the VS code.
+
+53
+00:01:22.690 --> 00:01:23.770
+So this particular thing
+
+54
+00:01:23.770 --> 00:01:25.250
+is a game changer.
+
+55
+00:01:25.250 --> 00:01:26.690
+So what we are going to do is
+
+56
+00:01:26.690 --> 00:01:28.370
+in my Extensions tab, let's
+
+57
+00:01:28.370 --> 00:01:30.290
+search for Thunder client.
+
+58
+00:01:30.290 --> 00:01:31.650
+Okay, so you can see that we
+
+59
+00:01:31.650 --> 00:01:32.970
+have this Thunder client and I
+
+60
+00:01:32.970 --> 00:01:34.090
+can just do an installation.
+
+61
+00:01:34.090 --> 00:01:36.410
+Okay, so let's install thunderclient.
+
+62
+00:01:36.410 --> 00:01:36.850
+And done.
+
+63
+00:01:36.850 --> 00:01:39.250
+You can see that there is a new logo.
+
+64
+00:01:39.250 --> 00:01:41.610
+Now these Thunder clients can
+
+65
+00:01:41.610 --> 00:01:43.690
+help you, these API clients can
+
+66
+00:01:43.690 --> 00:01:45.330
+help you to test your APIs.
+
+67
+00:01:45.330 --> 00:01:47.010
+How what you have to do is you have
+
+68
+00:01:47.010 --> 00:01:48.540
+to click on this new request.
+
+69
+00:01:48.540 --> 00:01:49.260
+Cool.
+
+70
+00:01:49.260 --> 00:01:50.420
+From where do you want
+
+71
+00:01:50.420 --> 00:01:51.180
+to make the request?
+
+72
+00:01:51.180 --> 00:01:52.300
+So HTTP.
+
+73
+00:01:52.300 --> 00:01:52.660
+Hey.
+
+74
+00:01:52.660 --> 00:01:53.580
+HTTP.
+
+75
+00:01:53.580 --> 00:01:55.580
+Colon, colon, localhost.
+
+76
+00:01:55.580 --> 00:01:57.100
+Right on 8000.
+
+77
+00:01:57.100 --> 00:01:58.420
+Right on 8000.
+
+78
+00:01:58.420 --> 00:01:59.820
+I want to make a request.
+
+79
+00:01:59.820 --> 00:02:01.300
+What kind of request
+
+80
+00:02:01.300 --> 00:02:01.980
+you want to make?
+
+81
+00:02:01.980 --> 00:02:03.780
+I want to make a get request.
+
+82
+00:02:03.780 --> 00:02:05.740
+So you have get, post, put delete,
+
+83
+00:02:05.740 --> 00:02:07.620
+patch, head options and all.
+
+84
+00:02:07.620 --> 00:02:08.660
+Okay, so I want to make
+
+85
+00:02:08.660 --> 00:02:10.740
+a get request and I do.
+
+86
+00:02:10.740 --> 00:02:11.660
+Do you want to send any
+
+87
+00:02:11.660 --> 00:02:12.660
+headers to the backend?
+
+88
+00:02:12.660 --> 00:02:13.180
+Yeah, I just want
+
+89
+00:02:13.180 --> 00:02:13.940
+to send two headers.
+
+90
+00:02:13.940 --> 00:02:14.510
+That's it.
+
+91
+00:02:14.510 --> 00:02:15.390
+And sent.
+
+92
+00:02:15.390 --> 00:02:16.830
+So what happens when you send, See
+
+93
+00:02:16.830 --> 00:02:18.630
+your server got a request and this
+
+94
+00:02:18.630 --> 00:02:20.270
+is what you get as a response.
+
+95
+00:02:20.270 --> 00:02:22.710
+So you got 200 as a response, 8 byte
+
+96
+00:02:22.710 --> 00:02:24.510
+size, 7 milliseconds it took
+
+97
+00:02:24.510 --> 00:02:26.910
+and your server sent three headers.
+
+98
+00:02:26.910 --> 00:02:27.710
+Nice.
+
+99
+00:02:27.710 --> 00:02:28.990
+Let's make a post request.
+
+100
+00:02:28.990 --> 00:02:30.470
+Okay, so you can make a post request.
+
+101
+00:02:30.470 --> 00:02:31.350
+So you can see that it's
+
+102
+00:02:31.350 --> 00:02:32.350
+an incoming request.
+
+103
+00:02:32.350 --> 00:02:34.590
+Let's make a request at slash contact
+
+104
+00:02:35.600 --> 00:02:37.750
+us and do a send contact me
+
+105
+00:02:37.750 --> 00:02:39.150
+at this you're getting a 200.
+
+106
+00:02:39.150 --> 00:02:40.710
+So you can see that I can do all
+
+107
+00:02:40.710 --> 00:02:42.610
+the testing the that how my APIs
+
+108
+00:02:42.610 --> 00:02:43.850
+are working using this tool.
+
+109
+00:02:43.850 --> 00:02:45.770
+Okay, you can add headers, you can
+
+110
+00:02:45.770 --> 00:02:47.930
+add authorization, you can add body
+
+111
+00:02:47.930 --> 00:02:49.690
+here if you want to send something.
+
+112
+00:02:49.690 --> 00:02:51.290
+So everything is available here
+
+113
+00:02:51.290 --> 00:02:52.530
+and it also creates
+
+114
+00:02:52.530 --> 00:02:53.530
+a history of everything.
+
+115
+00:02:54.090 --> 00:02:56.130
+So I mean too good.
+
+116
+00:02:56.130 --> 00:02:57.410
+Okay, so this is what
+
+117
+00:02:57.410 --> 00:02:58.130
+we are going to use.
+
+118
+00:02:58.130 --> 00:02:59.210
+That is Thunder Client.
+
+119
+00:02:59.210 --> 00:03:00.650
+No installation, no overhead.
+
+120
+00:03:00.650 --> 00:03:02.130
+But please feel free to use
+
+121
+00:03:02.130 --> 00:03:03.330
+Postman if you want to.
+
+122
+00:03:03.330 --> 00:03:04.530
+It is same only if you will see
+
+123
+00:03:04.530 --> 00:03:05.930
+that if you will install Postman.
+
+124
+00:03:05.930 --> 00:03:07.450
+So here is where you
+
+125
+00:03:07.450 --> 00:03:08.330
+can give the URL.
+
+126
+00:03:08.330 --> 00:03:09.330
+You can select the method,
+
+127
+00:03:09.330 --> 00:03:10.590
+you can just click on this.
+
+128
+00:03:10.590 --> 00:03:11.390
+You know there is a send
+
+129
+00:03:11.390 --> 00:03:12.470
+button on the top which
+
+130
+00:03:12.470 --> 00:03:13.430
+they have not rendered.
+
+131
+00:03:13.430 --> 00:03:14.350
+You can do send.
+
+132
+00:03:14.350 --> 00:03:15.190
+So this is the data that
+
+133
+00:03:15.190 --> 00:03:15.790
+you are sending and you
+
+134
+00:03:15.790 --> 00:03:16.630
+will get the response.
+
+135
+00:03:16.630 --> 00:03:18.030
+So yeah, you can use Postman.
+
+136
+00:03:18.030 --> 00:03:19.510
+But yeah, for me it is little
+
+137
+00:03:19.510 --> 00:03:21.230
+bit bloated now and I prefer
+
+138
+00:03:21.230 --> 00:03:22.350
+Thunder Client over it.
+
+139
+00:03:22.350 --> 00:03:22.910
+Okay.

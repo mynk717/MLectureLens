@@ -1,0 +1,805 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:01.600
+All right.
+
+2
+00:00:01.600 --> 00:00:02.880
+Another day, another
+
+3
+00:00:02.880 --> 00:00:04.480
+project that we have to do.
+
+4
+00:00:04.480 --> 00:00:06.160
+So this time the project is going
+
+5
+00:00:06.160 --> 00:00:07.760
+little bit complex and as you will
+
+6
+00:00:07.760 --> 00:00:09.240
+move forward the project are going
+
+7
+00:00:09.240 --> 00:00:10.800
+to be little bit more complex.
+
+8
+00:00:10.800 --> 00:00:11.720
+Nothing much, nothing
+
+9
+00:00:11.720 --> 00:00:12.960
+to be worried on.
+
+10
+00:00:12.960 --> 00:00:14.040
+So the next project that
+
+11
+00:00:14.040 --> 00:00:15.360
+we have is this one.
+
+12
+00:00:16.720 --> 00:00:18.720
+We have a T stall which
+
+13
+00:00:18.720 --> 00:00:20.560
+offers different prices
+
+14
+00:00:20.560 --> 00:00:22.080
+for different cup sizes.
+
+15
+00:00:22.080 --> 00:00:23.280
+Very valid.
+
+16
+00:00:23.280 --> 00:00:24.800
+Write a program that calculates
+
+17
+00:00:24.800 --> 00:00:26.440
+the price based on the size.
+
+18
+00:00:26.440 --> 00:00:27.960
+And I want your attention fully
+
+19
+00:00:27.960 --> 00:00:28.880
+on the problem statement.
+
+20
+00:00:28.880 --> 00:00:30.480
+So I'll remove myself from the screen
+
+21
+00:00:30.480 --> 00:00:31.640
+so that you get full attention
+
+22
+00:00:31.640 --> 00:00:33.820
+on the screen itself, nothing else.
+
+23
+00:00:33.820 --> 00:00:35.300
+So try to analyze this program.
+
+24
+00:00:35.300 --> 00:00:36.300
+No need to hurry up.
+
+25
+00:00:36.300 --> 00:00:37.740
+Try to pause and even see that
+
+26
+00:00:37.740 --> 00:00:39.340
+how you will approach this program,
+
+27
+00:00:39.340 --> 00:00:41.020
+at least, at least some
+
+28
+00:00:41.020 --> 00:00:42.340
+part of the task, you can
+
+29
+00:00:42.340 --> 00:00:44.140
+actually go ahead and do this.
+
+30
+00:00:44.140 --> 00:00:45.220
+So write a program that
+
+31
+00:00:45.220 --> 00:00:46.460
+calculates the price.
+
+32
+00:00:46.460 --> 00:00:48.460
+So the first step is input
+
+33
+00:00:48.460 --> 00:00:50.060
+small, medium or large.
+
+34
+00:00:50.060 --> 00:00:51.900
+That simply says that user is trying
+
+35
+00:00:51.900 --> 00:00:53.580
+to give me an input based on small,
+
+36
+00:00:53.580 --> 00:00:55.580
+medium or large as a price size.
+
+37
+00:00:55.580 --> 00:00:56.420
+And we have done this
+
+38
+00:00:56.420 --> 00:00:57.180
+in the past as well.
+
+39
+00:00:57.180 --> 00:00:58.860
+This is not anything new to us.
+
+40
+00:00:59.600 --> 00:01:00.560
+Then we have to evaluate
+
+41
+00:01:00.560 --> 00:01:01.600
+for the three conditions.
+
+42
+00:01:01.600 --> 00:01:03.640
+This time it can be a small, it can
+
+43
+00:01:03.640 --> 00:01:05.319
+be a medium, or it can be a large.
+
+44
+00:01:05.319 --> 00:01:07.160
+But the difference is this time
+
+45
+00:01:07.160 --> 00:01:08.720
+we have to take different decision
+
+46
+00:01:08.720 --> 00:01:09.840
+based on what's happening.
+
+47
+00:01:09.840 --> 00:01:11.240
+Previously we were just checking for
+
+48
+00:01:11.240 --> 00:01:13.680
+the OR condition cookies or samosa.
+
+49
+00:01:13.680 --> 00:01:14.960
+This time we are actually
+
+50
+00:01:14.960 --> 00:01:17.240
+taking different steps or we
+
+51
+00:01:17.240 --> 00:01:18.520
+are taking different measures
+
+52
+00:01:18.520 --> 00:01:19.600
+based on different
+
+53
+00:01:19.600 --> 00:01:21.200
+condition that we are checking.
+
+54
+00:01:21.200 --> 00:01:22.320
+So we have to be little bit
+
+55
+00:01:22.320 --> 00:01:23.680
+more thorough this time.
+
+56
+00:01:23.680 --> 00:01:25.440
+And if we don't see any
+
+57
+00:01:25.440 --> 00:01:26.840
+of the cup size between small,
+
+58
+00:01:26.840 --> 00:01:28.120
+medium and large, we simply
+
+59
+00:01:28.120 --> 00:01:29.440
+say is unknown cup size.
+
+60
+00:01:29.950 --> 00:01:31.230
+So let's take down this problem
+
+61
+00:01:31.230 --> 00:01:32.590
+and try to build this
+
+62
+00:01:32.590 --> 00:01:34.430
+small chai price calculator.
+
+63
+00:01:35.080 --> 00:01:36.590
+Let's go ahead and close this
+
+64
+00:01:36.590 --> 00:01:38.270
+and create the new one.
+
+65
+00:01:39.550 --> 00:01:41.470
+And this one is chai
+
+66
+00:01:41.470 --> 00:01:45.230
+price calculator.
+
+67
+00:01:45.950 --> 00:01:46.910
+PY of course.
+
+68
+00:01:47.470 --> 00:01:49.310
+So the step one should be very
+
+69
+00:01:49.310 --> 00:01:50.630
+clear and I think everybody
+
+70
+00:01:50.630 --> 00:01:51.870
+should be able to do this.
+
+71
+00:01:51.870 --> 00:01:52.830
+This is input.
+
+72
+00:01:52.830 --> 00:01:54.110
+We have done this in the past.
+
+73
+00:01:54.110 --> 00:01:55.190
+You simply go ahead and put
+
+74
+00:01:55.190 --> 00:01:56.150
+up a message
+
+75
+00:01:56.150 --> 00:01:57.830
+which says something like this.
+
+76
+00:01:57.830 --> 00:02:01.030
+Choose your cup size.
+
+77
+00:02:01.030 --> 00:02:02.910
+And we also will give some message
+
+78
+00:02:02.910 --> 00:02:04.350
+to the user, an indication that
+
+79
+00:02:04.350 --> 00:02:05.750
+you can only choose from small
+
+80
+00:02:06.310 --> 00:02:08.630
+or you can choose from medium,
+
+81
+00:02:09.590 --> 00:02:11.909
+or you can choose from large.
+
+82
+00:02:11.909 --> 00:02:13.870
+And whatever the user says, we'll
+
+83
+00:02:13.870 --> 00:02:15.630
+just go ahead and add a dot lower.
+
+84
+00:02:15.630 --> 00:02:16.910
+We have already seen this is a good
+
+85
+00:02:16.910 --> 00:02:18.790
+practice that we can apply and we
+
+86
+00:02:18.790 --> 00:02:20.470
+have to store this into a variable.
+
+87
+00:02:20.470 --> 00:02:22.230
+Let's call this one as simply cup
+
+88
+00:02:22.230 --> 00:02:24.590
+or user input cup, whatever you
+
+89
+00:02:24.590 --> 00:02:26.110
+want to call now don't worry.
+
+90
+00:02:26.110 --> 00:02:27.800
+Automatically this my
+
+91
+00:02:27.800 --> 00:02:30.830
+co data actually wrap the lines.
+
+92
+00:02:30.830 --> 00:02:32.070
+If they don't fit in the same
+
+93
+00:02:32.070 --> 00:02:33.110
+line, it automatically
+
+94
+00:02:33.110 --> 00:02:34.310
+moves into the next line.
+
+95
+00:02:34.310 --> 00:02:35.230
+But again, nothing to worry.
+
+96
+00:02:35.230 --> 00:02:36.310
+It's still on the same line.
+
+97
+00:02:36.310 --> 00:02:37.670
+No indentation is going on.
+
+98
+00:02:38.230 --> 00:02:39.950
+Okay, once this is done,
+
+99
+00:02:39.950 --> 00:02:41.230
+now we have to evaluate.
+
+100
+00:02:41.230 --> 00:02:42.990
+For evaluation we simply can say
+
+101
+00:02:42.990 --> 00:02:46.070
+if the cup is equals to
+
+102
+00:02:46.070 --> 00:02:48.030
+the variable small or the checking
+
+103
+00:02:48.030 --> 00:02:49.660
+that we are doing for is small
+
+104
+00:02:49.660 --> 00:02:51.970
+and we pretty much know what to do.
+
+105
+00:02:51.970 --> 00:02:53.970
+We have seen this part so far, so
+
+106
+00:02:53.970 --> 00:02:56.450
+this shouldn't be a problem anymore.
+
+107
+00:02:56.450 --> 00:02:58.290
+And we're going to go ahead and say
+
+108
+00:02:58.290 --> 00:03:01.730
+that Your price is 10, rupees.
+
+109
+00:03:03.810 --> 00:03:05.210
+All right, this is all good.
+
+110
+00:03:05.210 --> 00:03:06.290
+We have seen this.
+
+111
+00:03:06.290 --> 00:03:07.890
+So this is 10 rupees.
+
+112
+00:03:07.890 --> 00:03:08.930
+Or we can use the rupee
+
+113
+00:03:08.930 --> 00:03:09.530
+symbol as well.
+
+114
+00:03:09.530 --> 00:03:11.010
+But this is all okay.
+
+115
+00:03:11.010 --> 00:03:11.850
+Now we have to check
+
+116
+00:03:11.850 --> 00:03:13.330
+for another condition.
+
+117
+00:03:13.330 --> 00:03:14.810
+So so far we have seen that
+
+118
+00:03:14.810 --> 00:03:15.930
+in the very first problem
+
+119
+00:03:15.930 --> 00:03:17.410
+statement we have if and else.
+
+120
+00:03:17.410 --> 00:03:18.970
+But what about this case when we
+
+121
+00:03:18.970 --> 00:03:20.980
+have to check for three condition or
+
+122
+00:03:20.980 --> 00:03:22.300
+probably more, we have
+
+123
+00:03:22.300 --> 00:03:23.460
+another keyword that we are going
+
+124
+00:03:23.460 --> 00:03:25.060
+to study instead of the else.
+
+125
+00:03:25.060 --> 00:03:26.180
+Just rewrite that.
+
+126
+00:03:26.180 --> 00:03:27.180
+We have another one which
+
+127
+00:03:27.180 --> 00:03:29.940
+is elif, also known as lf.
+
+128
+00:03:29.940 --> 00:03:31.060
+No other way.
+
+129
+00:03:31.060 --> 00:03:32.900
+We simply can check for cup now
+
+130
+00:03:32.900 --> 00:03:34.940
+and again put another condition that
+
+131
+00:03:34.940 --> 00:03:37.700
+I want to check the cup for medium.
+
+132
+00:03:38.260 --> 00:03:40.260
+Now if the cup is of size medium,
+
+133
+00:03:40.260 --> 00:03:42.100
+I can go ahead and do another print
+
+134
+00:03:42.100 --> 00:03:44.100
+statement, something like this.
+
+135
+00:03:44.100 --> 00:03:46.610
+And I can say price is medium.
+
+136
+00:03:46.610 --> 00:03:48.130
+How much is the price for medium?
+
+137
+00:03:48.130 --> 00:03:49.490
+15 and 20 rupees.
+
+138
+00:03:51.010 --> 00:03:52.930
+15 rupees.
+
+139
+00:03:55.170 --> 00:03:55.810
+Rupees.
+
+140
+00:03:56.450 --> 00:03:57.490
+There we go.
+
+141
+00:03:57.490 --> 00:03:59.170
+We also have to check another one.
+
+142
+00:03:59.170 --> 00:03:59.890
+So no worries.
+
+143
+00:03:59.890 --> 00:04:01.570
+We can again use the same
+
+144
+00:04:01.570 --> 00:04:03.610
+lf and we can put up a check
+
+145
+00:04:03.610 --> 00:04:04.690
+for the condition.
+
+146
+00:04:04.690 --> 00:04:05.610
+And there we go.
+
+147
+00:04:05.610 --> 00:04:06.410
+We simply go ahead
+
+148
+00:04:06.410 --> 00:04:07.250
+and check for large.
+
+149
+00:04:07.250 --> 00:04:08.330
+We all have to check for
+
+150
+00:04:08.330 --> 00:04:09.530
+the lowercase large because
+
+151
+00:04:09.530 --> 00:04:10.930
+we are converting our input
+
+152
+00:04:10.930 --> 00:04:12.210
+into the all lowercase.
+
+153
+00:04:12.850 --> 00:04:14.330
+And in this part we'll just go ahead
+
+154
+00:04:14.330 --> 00:04:18.850
+and say print and we will say price.
+
+155
+00:04:18.850 --> 00:04:19.410
+Oops.
+
+156
+00:04:19.410 --> 00:04:20.769
+In the quotes I have to say
+
+157
+00:04:21.410 --> 00:04:25.410
+price is 20 rupees.
+
+158
+00:04:27.730 --> 00:04:29.090
+20 rupees.
+
+159
+00:04:29.090 --> 00:04:30.530
+For rest of the all things.
+
+160
+00:04:30.530 --> 00:04:31.890
+This is our conditional part.
+
+161
+00:04:31.890 --> 00:04:33.130
+So this is our part two where we
+
+162
+00:04:33.130 --> 00:04:34.610
+check for all the condition.
+
+163
+00:04:34.610 --> 00:04:38.140
+If invalid show cup unknown cup size.
+
+164
+00:04:38.140 --> 00:04:39.580
+So for rest of all the things, I
+
+165
+00:04:39.580 --> 00:04:40.820
+don't want to check anything when
+
+166
+00:04:40.820 --> 00:04:41.980
+you don't want to check anything
+
+167
+00:04:41.980 --> 00:04:43.740
+else is again your best friend.
+
+168
+00:04:44.860 --> 00:04:46.220
+So we simply go ahead and say
+
+169
+00:04:46.220 --> 00:04:47.860
+print and we are going
+
+170
+00:04:47.860 --> 00:04:53.180
+to say unknown cup size.
+
+171
+00:04:54.140 --> 00:04:55.700
+So I hope now you understand that
+
+172
+00:04:55.700 --> 00:04:57.300
+why I didn't want it to teach you
+
+173
+00:04:57.300 --> 00:04:58.940
+about just the conditionals and
+
+174
+00:04:58.940 --> 00:05:00.900
+just the keywords, because these
+
+175
+00:05:00.900 --> 00:05:01.980
+kinds of real world
+
+176
+00:05:01.980 --> 00:05:03.860
+implementation, you only and only
+
+177
+00:05:03.860 --> 00:05:05.180
+learn when you actually solve
+
+178
+00:05:05.180 --> 00:05:06.780
+these kinds of problems.
+
+179
+00:05:06.780 --> 00:05:07.780
+Again, we have studied that.
+
+180
+00:05:07.780 --> 00:05:09.300
+What's the importance of converting
+
+181
+00:05:09.300 --> 00:05:10.820
+everything, what we are taking from
+
+182
+00:05:10.820 --> 00:05:12.860
+the user into a single case, whether
+
+183
+00:05:12.860 --> 00:05:14.700
+that's an upper case or lowercase.
+
+184
+00:05:14.700 --> 00:05:16.060
+And what's really important
+
+185
+00:05:16.060 --> 00:05:17.180
+that we go through
+
+186
+00:05:17.180 --> 00:05:18.780
+with these cycles of this.
+
+187
+00:05:18.780 --> 00:05:21.050
+This is really boring of a,
+
+188
+00:05:21.050 --> 00:05:22.540
+learning process if you just go
+
+189
+00:05:22.540 --> 00:05:24.220
+ahead and learn the syntax.
+
+190
+00:05:24.220 --> 00:05:25.500
+But this time we are actually taking
+
+191
+00:05:25.500 --> 00:05:27.580
+down a problem for a real cafe.
+
+192
+00:05:27.580 --> 00:05:28.860
+Yeah, it is very real.
+
+193
+00:05:28.860 --> 00:05:29.900
+I know this.
+
+194
+00:05:29.900 --> 00:05:31.180
+So I hope you have enjoyed this.
+
+195
+00:05:31.180 --> 00:05:32.860
+Don't forget to rate us and hope you
+
+196
+00:05:32.860 --> 00:05:34.020
+are enjoying the entire content.
+
+197
+00:05:34.020 --> 00:05:35.420
+If yes, do tweet as well.
+
+198
+00:05:35.420 --> 00:05:36.420
+We would love to enjoy
+
+199
+00:05:36.420 --> 00:05:37.740
+to see your progress as well.
+
+200
+00:05:38.300 --> 00:05:39.260
+That is it for this video.
+
+201
+00:05:39.260 --> 00:05:40.780
+Let's catch up in the next video.

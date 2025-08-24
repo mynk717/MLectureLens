@@ -1,0 +1,2057 @@
+WEBVTT
+
+1
+00:00:00.320 --> 00:00:01.880
+So, hey guys, welcome back.
+
+2
+00:00:01.880 --> 00:00:04.680
+And in this particular video, let's
+
+3
+00:00:04.680 --> 00:00:08.960
+understand more about HTTP in depth.
+
+4
+00:00:08.960 --> 00:00:09.680
+Okay?
+
+5
+00:00:09.680 --> 00:00:10.920
+So here I have a very great
+
+6
+00:00:10.920 --> 00:00:12.520
+article that is from the Cloudflare
+
+7
+00:00:12.520 --> 00:00:13.680
+that what is HTTP?
+
+8
+00:00:13.680 --> 00:00:15.200
+What is an HTTP request?
+
+9
+00:00:15.200 --> 00:00:16.640
+And a lot of things.
+
+10
+00:00:16.640 --> 00:00:18.240
+So right now, right now what do
+
+11
+00:00:18.240 --> 00:00:19.640
+you know is that, you know what,
+
+12
+00:00:19.640 --> 00:00:21.200
+let's understand, what is a URL?
+
+13
+00:00:21.200 --> 00:00:22.720
+What is this HTTP version?
+
+14
+00:00:22.720 --> 00:00:23.760
+What is a method?
+
+15
+00:00:23.760 --> 00:00:25.080
+You already know method, right?
+
+16
+00:00:25.080 --> 00:00:26.560
+Get, put, post.
+
+17
+00:00:26.560 --> 00:00:28.240
+You know, we have to understand
+
+18
+00:00:28.240 --> 00:00:30.340
+that what are these request headers
+
+19
+00:00:30.340 --> 00:00:32.220
+and what is this HTTP body?
+
+20
+00:00:32.220 --> 00:00:34.180
+So these are basically the components
+
+21
+00:00:34.180 --> 00:00:35.580
+of an HTTP request, like
+
+22
+00:00:35.580 --> 00:00:37.500
+what a request can contain.
+
+23
+00:00:37.500 --> 00:00:38.140
+Okay.
+
+24
+00:00:38.140 --> 00:00:39.620
+Similarly, you have a response
+
+25
+00:00:39.620 --> 00:00:40.980
+and there is a status code that
+
+26
+00:00:40.980 --> 00:00:41.980
+we have already discussed.
+
+27
+00:00:41.980 --> 00:00:44.020
+Okay, first of all, you know
+
+28
+00:00:44.020 --> 00:00:45.260
+what is an HTTP method?
+
+29
+00:00:45.260 --> 00:00:48.060
+That means when a client tries
+
+30
+00:00:48.060 --> 00:00:50.300
+to send or basically sends
+
+31
+00:00:50.300 --> 00:00:52.860
+a request to a server, right?
+
+32
+00:00:52.860 --> 00:00:54.860
+So this is what, this is a request.
+
+33
+00:00:54.860 --> 00:00:57.220
+Now this particular request can be
+
+34
+00:00:57.220 --> 00:01:00.080
+a get request or, or a, post request
+
+35
+00:01:00.080 --> 00:01:02.480
+or delete request, Put request, right?
+
+36
+00:01:02.480 --> 00:01:03.280
+So let's say that this
+
+37
+00:01:03.280 --> 00:01:04.720
+is a get request, okay?
+
+38
+00:01:04.720 --> 00:01:06.480
+So we know that this particular
+
+39
+00:01:06.480 --> 00:01:08.640
+thing is known as method, right?
+
+40
+00:01:08.640 --> 00:01:10.400
+This is known as method.
+
+41
+00:01:10.400 --> 00:01:11.960
+So let me just have an annotation
+
+42
+00:01:11.960 --> 00:01:13.120
+here so that you have the notes
+
+43
+00:01:13.120 --> 00:01:14.040
+and don't worry, you will
+
+44
+00:01:14.040 --> 00:01:15.200
+get all these whiteboard files.
+
+45
+00:01:15.200 --> 00:01:15.920
+Okay?
+
+46
+00:01:15.920 --> 00:01:17.760
+So yeah, so this is your
+
+47
+00:01:17.760 --> 00:01:18.960
+what, this is your method.
+
+48
+00:01:18.960 --> 00:01:20.720
+Okay, cool stuff.
+
+49
+00:01:20.720 --> 00:01:21.600
+Nice.
+
+50
+00:01:21.600 --> 00:01:23.320
+Then what happens when
+
+51
+00:01:23.320 --> 00:01:24.480
+you have a method?
+
+52
+00:01:24.480 --> 00:01:26.410
+There is something known as X
+
+53
+00:01:26.410 --> 00:01:28.650
+HTTP request headers.
+
+54
+00:01:28.650 --> 00:01:30.130
+Now what are these headers?
+
+55
+00:01:30.130 --> 00:01:31.530
+Okay, let's understand that.
+
+56
+00:01:31.530 --> 00:01:32.570
+What are these headers
+
+57
+00:01:32.570 --> 00:01:33.930
+which are sent along.
+
+58
+00:01:33.930 --> 00:01:36.170
+Guys, have you ever got
+
+59
+00:01:36.170 --> 00:01:38.490
+a parcel, A mail at your home?
+
+60
+00:01:38.490 --> 00:01:40.530
+A mail that looks something like this.
+
+61
+00:01:40.530 --> 00:01:42.169
+Like you have a line here
+
+62
+00:01:42.169 --> 00:01:44.010
+and let me grab one more line.
+
+63
+00:01:44.010 --> 00:01:45.850
+A mail that looks something like this.
+
+64
+00:01:45.850 --> 00:01:46.450
+Like it's a.
+
+65
+00:01:46.450 --> 00:01:47.410
+It's a physical mail.
+
+66
+00:01:47.410 --> 00:01:48.730
+I'm not talking about email.
+
+67
+00:01:48.730 --> 00:01:50.810
+It's a physical envelope, right?
+
+68
+00:01:50.810 --> 00:01:52.010
+So you get a physical
+
+69
+00:01:52.590 --> 00:01:53.870
+mail at your home, right?
+
+70
+00:01:54.510 --> 00:01:56.910
+Now if you see this physical mail
+
+71
+00:01:56.910 --> 00:01:59.310
+that postman comes and gives you,
+
+72
+00:01:59.310 --> 00:02:02.190
+on this physical mail you have some
+
+73
+00:02:02.190 --> 00:02:04.270
+like printed thing here, right?
+
+74
+00:02:04.270 --> 00:02:06.430
+This printed thing contains that
+
+75
+00:02:06.430 --> 00:02:08.389
+from where this parcel is coming or
+
+76
+00:02:08.389 --> 00:02:09.949
+from where this mail is coming
+
+77
+00:02:09.949 --> 00:02:11.550
+to where it has to be delivered.
+
+78
+00:02:11.550 --> 00:02:13.950
+It can have some phone number and it
+
+79
+00:02:13.950 --> 00:02:15.510
+can have the address, right?
+
+80
+00:02:15.510 --> 00:02:17.390
+Some landmark kind of a thing.
+
+81
+00:02:17.390 --> 00:02:19.120
+So this particular thing can,
+
+82
+00:02:19.120 --> 00:02:20.880
+contains some information
+
+83
+00:02:20.880 --> 00:02:22.240
+about this packet, right?
+
+84
+00:02:22.240 --> 00:02:23.880
+What is the weight of this packet
+
+85
+00:02:23.880 --> 00:02:25.360
+from where it originated?
+
+86
+00:02:25.360 --> 00:02:27.000
+And a lot of things can be there
+
+87
+00:02:27.000 --> 00:02:28.640
+on this particular seal.
+
+88
+00:02:28.640 --> 00:02:30.680
+So this is like an extra
+
+89
+00:02:30.680 --> 00:02:31.680
+information, right?
+
+90
+00:02:31.680 --> 00:02:34.320
+Then if you open this parcel, okay?
+
+91
+00:02:34.320 --> 00:02:36.160
+So let me just open this parcel.
+
+92
+00:02:36.160 --> 00:02:38.000
+When you open this parcel,
+
+93
+00:02:38.000 --> 00:02:40.960
+there is some data here, right?
+
+94
+00:02:40.960 --> 00:02:42.120
+This is the actual data which
+
+95
+00:02:42.120 --> 00:02:43.800
+is inside the parcel, Correct?
+
+96
+00:02:43.800 --> 00:02:45.130
+This is the actual thing
+
+97
+00:02:45.130 --> 00:02:46.250
+inside the parcel.
+
+98
+00:02:46.250 --> 00:02:48.010
+So this is the actual data.
+
+99
+00:02:48.010 --> 00:02:48.450
+Correct.
+
+100
+00:02:48.450 --> 00:02:51.530
+This is the actual data or actual
+
+101
+00:02:51.530 --> 00:02:52.810
+thing that you wanted to receive.
+
+102
+00:02:53.370 --> 00:02:56.530
+Similarly, in terms of HTTP, this
+
+103
+00:02:56.530 --> 00:02:59.090
+particular part that is on the above,
+
+104
+00:02:59.090 --> 00:03:00.730
+right, this, this meridata kind of
+
+105
+00:03:00.730 --> 00:03:03.130
+a thing, these are known as headers.
+
+106
+00:03:03.130 --> 00:03:03.570
+Okay?
+
+107
+00:03:03.570 --> 00:03:05.210
+These are known as headers.
+
+108
+00:03:05.210 --> 00:03:07.370
+So whenever, okay, sorry for that.
+
+109
+00:03:07.370 --> 00:03:10.010
+So whenever you are sending a request,
+
+110
+00:03:10.010 --> 00:03:10.930
+first of all you have
+
+111
+00:03:10.930 --> 00:03:12.910
+to specify what method it is.
+
+112
+00:03:12.910 --> 00:03:15.630
+Plus for every request you can
+
+113
+00:03:15.630 --> 00:03:18.190
+send some extra piece of data
+
+114
+00:03:18.190 --> 00:03:19.670
+which is known as headers.
+
+115
+00:03:19.670 --> 00:03:21.190
+Okay, so you can send
+
+116
+00:03:21.190 --> 00:03:22.510
+something known as headers.
+
+117
+00:03:22.510 --> 00:03:24.310
+Along with headers are nothing.
+
+118
+00:03:24.310 --> 00:03:25.670
+These are just key value pairs.
+
+119
+00:03:25.670 --> 00:03:27.070
+For example, there can be
+
+120
+00:03:27.070 --> 00:03:29.790
+a header of, let's say type that
+
+121
+00:03:29.790 --> 00:03:31.310
+what kind of type it is.
+
+122
+00:03:31.310 --> 00:03:32.470
+There can be a header
+
+123
+00:03:32.470 --> 00:03:33.710
+of let's say authorization.
+
+124
+00:03:33.710 --> 00:03:35.390
+There can be a header of xyz,
+
+125
+00:03:35.390 --> 00:03:37.630
+There can be a header of abc.
+
+126
+00:03:37.630 --> 00:03:39.390
+So these headers can have a value.
+
+127
+00:03:39.390 --> 00:03:40.660
+For example for type, I
+
+128
+00:03:40.660 --> 00:03:41.820
+can have a value of A.
+
+129
+00:03:41.820 --> 00:03:43.820
+For auth, I can have a value of B.
+
+130
+00:03:43.820 --> 00:03:45.740
+For xyz I can have a value C.
+
+131
+00:03:45.740 --> 00:03:47.540
+So these are nothing but just a,
+
+132
+00:03:47.540 --> 00:03:48.860
+key value pairs which
+
+133
+00:03:48.860 --> 00:03:50.500
+are sent along the request.
+
+134
+00:03:50.500 --> 00:03:52.620
+Okay, so basically extra information.
+
+135
+00:03:53.580 --> 00:03:55.420
+So if I have to tell you that what
+
+136
+00:03:55.420 --> 00:03:57.500
+these headers in reality looks like,
+
+137
+00:03:57.500 --> 00:03:59.020
+these looks like something like this.
+
+138
+00:03:59.020 --> 00:04:00.460
+So usually you have a header.
+
+139
+00:04:01.080 --> 00:04:03.660
+One common header is content type.
+
+140
+00:04:03.660 --> 00:04:04.300
+Okay?
+
+141
+00:04:04.300 --> 00:04:06.100
+This tells that what kind
+
+142
+00:04:06.100 --> 00:04:07.820
+of content I am dealing with.
+
+143
+00:04:07.820 --> 00:04:09.340
+So this can be adjacent data
+
+144
+00:04:09.340 --> 00:04:11.540
+and HTML data, something like this.
+
+145
+00:04:11.540 --> 00:04:13.580
+So here the key is content type
+
+146
+00:04:13.580 --> 00:04:15.260
+and the value is application/JSON.
+
+147
+00:04:15.260 --> 00:04:16.019
+Right?
+
+148
+00:04:16.019 --> 00:04:17.860
+And then there can be a,
+
+149
+00:04:17.860 --> 00:04:19.220
+header of authorization.
+
+150
+00:04:19.860 --> 00:04:21.540
+So if you are authenticated,
+
+151
+00:04:21.540 --> 00:04:22.340
+right, Authorization.
+
+152
+00:04:22.900 --> 00:04:24.900
+So you have to give your token, right?
+
+153
+00:04:24.900 --> 00:04:26.460
+If you have any token or something like
+
+154
+00:04:26.460 --> 00:04:28.180
+that, you can take along with that.
+
+155
+00:04:28.180 --> 00:04:29.860
+So you can have headers.
+
+156
+00:04:29.860 --> 00:04:31.860
+So these headers are basically
+
+157
+00:04:31.860 --> 00:04:34.420
+extra information about your request.
+
+158
+00:04:34.420 --> 00:04:35.380
+Got it.
+
+159
+00:04:35.380 --> 00:04:36.980
+So these headers are also
+
+160
+00:04:36.980 --> 00:04:38.420
+sent along with the request.
+
+161
+00:04:38.420 --> 00:04:38.750
+Okay?
+
+162
+00:04:38.750 --> 00:04:40.510
+Okay, so server can take these
+
+163
+00:04:40.510 --> 00:04:42.630
+headers, read the headers and based
+
+164
+00:04:42.630 --> 00:04:44.510
+on that process your content.
+
+165
+00:04:44.510 --> 00:04:46.430
+Okay, so you have HTTP headers.
+
+166
+00:04:46.430 --> 00:04:47.950
+So HTTP headers contains text
+
+167
+00:04:47.950 --> 00:04:49.190
+information stored in key
+
+168
+00:04:49.190 --> 00:04:50.950
+value pairs and they are included
+
+169
+00:04:50.950 --> 00:04:52.670
+in every HTTP request.
+
+170
+00:04:52.670 --> 00:04:54.230
+So you can see that this is what a,
+
+171
+00:04:54.230 --> 00:04:55.390
+request header can look like.
+
+172
+00:04:55.390 --> 00:04:58.430
+Authority, method, path, scheme, accept
+
+173
+00:04:58.430 --> 00:05:00.190
+what kind of data I want to accept,
+
+174
+00:05:00.190 --> 00:05:02.190
+which encodings I can accept
+
+175
+00:05:02.190 --> 00:05:04.110
+in what language I want the data.
+
+176
+00:05:04.110 --> 00:05:05.430
+What is my user agent?
+
+177
+00:05:05.430 --> 00:05:07.310
+For example, you can send that hey,
+
+178
+00:05:07.880 --> 00:05:09.040
+you are sending a request header.
+
+179
+00:05:09.040 --> 00:05:11.080
+So you can even add some information
+
+180
+00:05:11.080 --> 00:05:12.240
+about the client.
+
+181
+00:05:12.240 --> 00:05:14.560
+For example, hey, right now my
+
+182
+00:05:14.560 --> 00:05:16.320
+user agent, that means my machine
+
+183
+00:05:16.320 --> 00:05:17.800
+is a Mac machine, let's say.
+
+184
+00:05:17.800 --> 00:05:19.680
+So you can send this kind of data
+
+185
+00:05:19.680 --> 00:05:21.640
+as well in the header, right?
+
+186
+00:05:21.640 --> 00:05:23.360
+To tell the server, that I am
+
+187
+00:05:23.360 --> 00:05:25.000
+requesting from a Mac device.
+
+188
+00:05:25.000 --> 00:05:26.960
+Okay, so these all things
+
+189
+00:05:26.960 --> 00:05:28.600
+can be sent as a header.
+
+190
+00:05:28.600 --> 00:05:32.680
+Okay, now it can also have a body.
+
+191
+00:05:32.680 --> 00:05:34.490
+Now, now that's an optional thing.
+
+192
+00:05:34.490 --> 00:05:37.450
+Okay, so the body, the body
+
+193
+00:05:37.450 --> 00:05:38.730
+part is an optional thing.
+
+194
+00:05:38.730 --> 00:05:39.090
+Why?
+
+195
+00:05:39.650 --> 00:05:41.090
+Guys, tell me one thing.
+
+196
+00:05:41.090 --> 00:05:42.730
+If you are trying to make a get
+
+197
+00:05:42.730 --> 00:05:43.930
+request, that means you want
+
+198
+00:05:43.930 --> 00:05:46.130
+to get something from the server.
+
+199
+00:05:46.130 --> 00:05:47.770
+Do I need to send any
+
+200
+00:05:47.770 --> 00:05:49.090
+data to the server?
+
+201
+00:05:49.090 --> 00:05:49.730
+No, right?
+
+202
+00:05:49.730 --> 00:05:50.850
+There is no need to send
+
+203
+00:05:50.850 --> 00:05:52.050
+any data to the server.
+
+204
+00:05:52.050 --> 00:05:53.810
+In that case, body can be
+
+205
+00:05:53.810 --> 00:05:55.650
+left, Body can be ignored.
+
+206
+00:05:55.650 --> 00:05:58.010
+But let's say for some, like you are
+
+207
+00:05:58.010 --> 00:05:59.970
+making a post request, that means you
+
+208
+00:05:59.970 --> 00:06:01.970
+want to send some data to the server.
+
+209
+00:06:01.970 --> 00:06:03.370
+In this case you have
+
+210
+00:06:03.370 --> 00:06:05.010
+to include a body, right?
+
+211
+00:06:05.010 --> 00:06:06.050
+And this body can
+
+212
+00:06:06.050 --> 00:06:07.130
+contain the actual data.
+
+213
+00:06:07.130 --> 00:06:09.170
+For example, if you are trying
+
+214
+00:06:09.170 --> 00:06:10.770
+to build a Twitter, right
+
+215
+00:06:10.770 --> 00:06:12.810
+in Twitter you can actually send your
+
+216
+00:06:12.810 --> 00:06:13.730
+tweet something like this.
+
+217
+00:06:13.730 --> 00:06:19.530
+That what an awesome day, let's say.
+
+218
+00:06:19.530 --> 00:06:21.290
+Okay, so what you can do is if you're
+
+219
+00:06:21.290 --> 00:06:22.810
+sending a post request, you
+
+220
+00:06:22.810 --> 00:06:24.530
+have, you can send this body along.
+
+221
+00:06:24.530 --> 00:06:26.410
+Okay, so what the backend
+
+222
+00:06:26.410 --> 00:06:27.450
+will do is backend will see.
+
+223
+00:06:27.450 --> 00:06:28.530
+Oh, it's a post request.
+
+224
+00:06:28.530 --> 00:06:30.090
+That means you want to create some
+
+225
+00:06:30.090 --> 00:06:31.510
+content, you're trying to post some
+
+226
+00:06:31.510 --> 00:06:33.710
+content and then backend will actually
+
+227
+00:06:33.710 --> 00:06:36.030
+read your body which can be any data.
+
+228
+00:06:36.030 --> 00:06:38.390
+Okay, so I am sending a JSON data which
+
+229
+00:06:38.390 --> 00:06:40.390
+is like tweet and what an awesome day.
+
+230
+00:06:40.390 --> 00:06:41.950
+So backend can read this par,
+
+231
+00:06:42.670 --> 00:06:44.910
+store it into database and along that.
+
+232
+00:06:44.910 --> 00:06:45.830
+So this is your body.
+
+233
+00:06:45.830 --> 00:06:47.590
+Okay, in case of get, there
+
+234
+00:06:47.590 --> 00:06:48.470
+is no need of the body.
+
+235
+00:06:48.470 --> 00:06:49.470
+But if you are making a post
+
+236
+00:06:49.470 --> 00:06:51.110
+request, so of course it makes sense
+
+237
+00:06:51.110 --> 00:06:52.070
+to send the body along.
+
+238
+00:06:52.070 --> 00:06:54.110
+Okay, so the body
+
+239
+00:06:54.110 --> 00:06:56.190
+of a request is the part that contains
+
+240
+00:06:56.190 --> 00:06:57.230
+the body information.
+
+241
+00:06:57.230 --> 00:06:59.910
+Okay, the body of the HTTP request
+
+242
+00:06:59.910 --> 00:07:01.110
+contain any information being
+
+243
+00:07:01.110 --> 00:07:02.230
+submitted to the web server such
+
+244
+00:07:02.230 --> 00:07:03.650
+as username, password or any
+
+245
+00:07:03.650 --> 00:07:05.170
+other data entered in the form.
+
+246
+00:07:05.170 --> 00:07:05.690
+Okay.
+
+247
+00:07:06.410 --> 00:07:06.890
+Okay.
+
+248
+00:07:06.890 --> 00:07:08.250
+So this was your request thing.
+
+249
+00:07:08.250 --> 00:07:10.490
+So your request contains a method.
+
+250
+00:07:10.490 --> 00:07:12.850
+Okay, that what is the HTTP method.
+
+251
+00:07:12.850 --> 00:07:13.810
+It can have headers
+
+252
+00:07:13.810 --> 00:07:14.810
+and it can have body.
+
+253
+00:07:15.450 --> 00:07:18.050
+Now let's go to google.com okay, so
+
+254
+00:07:18.050 --> 00:07:19.530
+right now what happened when I opened
+
+255
+00:07:19.530 --> 00:07:21.650
+this google.com let's go on to the
+
+256
+00:07:21.650 --> 00:07:23.730
+inspect element and I'll go into this
+
+257
+00:07:23.730 --> 00:07:25.330
+network tab just in case you are not
+
+258
+00:07:25.330 --> 00:07:26.690
+able to Find this you can find in
+
+259
+00:07:26.690 --> 00:07:27.690
+here list.
+
+260
+00:07:27.690 --> 00:07:29.210
+This network tab, basically
+
+261
+00:07:29.210 --> 00:07:31.140
+shows all the incoming requests
+
+262
+00:07:31.140 --> 00:07:32.500
+and response to the server.
+
+263
+00:07:32.500 --> 00:07:34.900
+So I am right now the client, right?
+
+264
+00:07:34.900 --> 00:07:36.860
+So if I do a refresh, can you
+
+265
+00:07:36.860 --> 00:07:38.900
+see that we made a request
+
+266
+00:07:39.460 --> 00:07:43.460
+to HTTPs to www.google.com right?
+
+267
+00:07:43.460 --> 00:07:44.420
+This is the request
+
+268
+00:07:44.420 --> 00:07:46.260
+that my client sent.
+
+269
+00:07:46.260 --> 00:07:48.180
+And this was a get request.
+
+270
+00:07:48.180 --> 00:07:48.740
+Can you see that?
+
+271
+00:07:48.740 --> 00:07:50.900
+This was a get request to which
+
+272
+00:07:50.900 --> 00:07:52.540
+server replied with a 200.
+
+273
+00:07:52.540 --> 00:07:53.500
+That means everything is
+
+274
+00:07:53.500 --> 00:07:54.620
+working you can see, right?
+
+275
+00:07:54.620 --> 00:07:55.340
+Everything is working.
+
+276
+00:07:55.340 --> 00:07:56.100
+So that's why I'm
+
+277
+00:07:56.100 --> 00:07:57.120
+getting a 200 response.
+
+278
+00:07:57.910 --> 00:07:59.750
+Then let's see what all
+
+279
+00:07:59.750 --> 00:08:00.750
+things are also here.
+
+280
+00:08:00.750 --> 00:08:01.790
+Can you see that there are
+
+281
+00:08:01.790 --> 00:08:03.150
+some headers that are sent as
+
+282
+00:08:03.150 --> 00:08:04.710
+a request Headers, right?
+
+283
+00:08:04.710 --> 00:08:06.790
+So request headers, are authority,
+
+284
+00:08:06.790 --> 00:08:09.350
+method, path, scheme,
+
+285
+00:08:09.350 --> 00:08:11.670
+what kind of encodings I can accept.
+
+286
+00:08:11.670 --> 00:08:13.510
+You can see key value pairs.
+
+287
+00:08:13.510 --> 00:08:14.950
+The cache control is there,
+
+288
+00:08:14.950 --> 00:08:16.390
+the cookie is there.
+
+289
+00:08:16.390 --> 00:08:18.670
+Then if I just scroll down then you
+
+290
+00:08:18.670 --> 00:08:19.710
+can see that you have something
+
+291
+00:08:19.710 --> 00:08:22.310
+like priority, you have scheme, you
+
+292
+00:08:22.310 --> 00:08:24.710
+have If you see I have a platform
+
+293
+00:08:24.710 --> 00:08:28.180
+of Mac OS 15 and which chromium
+
+294
+00:08:28.180 --> 00:08:29.540
+version I'm using, I am in a
+
+295
+00:08:29.540 --> 00:08:30.660
+desktop version.
+
+296
+00:08:30.660 --> 00:08:33.700
+So a lot of information is being sent
+
+297
+00:08:33.700 --> 00:08:35.140
+from my client, right?
+
+298
+00:08:35.140 --> 00:08:37.020
+And similarly, similarly I have
+
+299
+00:08:37.020 --> 00:08:38.419
+a response headers as well.
+
+300
+00:08:38.419 --> 00:08:40.179
+So these are all the headers that
+
+301
+00:08:40.179 --> 00:08:42.580
+the server sent me back as a response.
+
+302
+00:08:42.580 --> 00:08:43.460
+Okay?
+
+303
+00:08:43.460 --> 00:08:44.460
+So right now we are just
+
+304
+00:08:44.460 --> 00:08:45.860
+talking about the request.
+
+305
+00:08:45.860 --> 00:08:47.140
+So this is what a request
+
+306
+00:08:47.140 --> 00:08:48.620
+can contain and this is.
+
+307
+00:08:48.620 --> 00:08:50.340
+And what a server can accept.
+
+308
+00:08:50.340 --> 00:08:53.150
+Okay, now one more thing that
+
+309
+00:08:53.150 --> 00:08:54.470
+is very important for you is
+
+310
+00:08:54.470 --> 00:08:56.230
+to understand the URL.
+
+311
+00:08:56.230 --> 00:08:58.230
+Okay, let's understand
+
+312
+00:08:58.230 --> 00:09:00.710
+that what a URL looks like.
+
+313
+00:09:00.710 --> 00:09:01.870
+So let's say you have something
+
+314
+00:09:01.870 --> 00:09:07.990
+like HTTPs/google.com contact us.
+
+315
+00:09:08.630 --> 00:09:11.110
+So this is what a typical let's
+
+316
+00:09:11.110 --> 00:09:13.150
+say www.google.com so this is what
+
+317
+00:09:13.150 --> 00:09:14.870
+a typical URL looks like, right?
+
+318
+00:09:14.870 --> 00:09:16.230
+So let's understand
+
+319
+00:09:16.230 --> 00:09:18.050
+that what exactly is happening?
+
+320
+00:09:18.050 --> 00:09:20.610
+Okay, so this URL contains
+
+321
+00:09:20.610 --> 00:09:21.730
+a lot of things, right?
+
+322
+00:09:21.730 --> 00:09:24.170
+Now first this is your scheme.
+
+323
+00:09:24.170 --> 00:09:24.570
+Okay?
+
+324
+00:09:24.570 --> 00:09:26.530
+So this part is basically your scheme
+
+325
+00:09:26.530 --> 00:09:28.410
+that what protocol you are using.
+
+326
+00:09:28.410 --> 00:09:30.810
+So for example you can use HTTP, which
+
+327
+00:09:30.810 --> 00:09:32.690
+is like hypertext transfer protocol
+
+328
+00:09:32.690 --> 00:09:34.610
+or you are using HTTPs, which is
+
+329
+00:09:34.610 --> 00:09:37.170
+a hypertext transfer protocol secure.
+
+330
+00:09:37.170 --> 00:09:38.730
+This contains an SSL
+
+331
+00:09:38.730 --> 00:09:39.810
+certificate, right?
+
+332
+00:09:39.810 --> 00:09:41.650
+So this is your scheme part.
+
+333
+00:09:41.650 --> 00:09:43.090
+Nice, cool.
+
+334
+00:09:43.090 --> 00:09:45.080
+Let's move further then.
+
+335
+00:09:45.080 --> 00:09:46.760
+Then you have this particular
+
+336
+00:09:46.760 --> 00:09:47.880
+part, okay, I'm just talking
+
+337
+00:09:47.880 --> 00:09:49.720
+about this particular part here.
+
+338
+00:09:49.720 --> 00:09:51.160
+This particular part is
+
+339
+00:09:51.160 --> 00:09:53.880
+known as your naked domain.
+
+340
+00:09:53.880 --> 00:09:54.480
+Okay?
+
+341
+00:09:54.480 --> 00:09:55.600
+This is your actual domain
+
+342
+00:09:55.600 --> 00:09:57.560
+or it is also known as, or
+
+343
+00:09:57.560 --> 00:09:59.800
+it is known as apex domain.
+
+344
+00:09:59.800 --> 00:10:01.680
+So this is your actual domain.
+
+345
+00:10:01.680 --> 00:10:02.880
+Or naked domain, that is
+
+346
+00:10:02.880 --> 00:10:05.640
+google.com okay, so google.com
+
+347
+00:10:05.640 --> 00:10:07.400
+is your naked domain.
+
+348
+00:10:07.400 --> 00:10:09.560
+In this naked domain, for this
+
+349
+00:10:09.560 --> 00:10:11.680
+particular naked domain you have
+
+350
+00:10:11.680 --> 00:10:13.880
+something known as a subdomain.
+
+351
+00:10:13.880 --> 00:10:15.840
+So this particular part right here
+
+352
+00:10:15.840 --> 00:10:18.320
+is basically your subdomain.
+
+353
+00:10:18.320 --> 00:10:19.920
+So sub domain.
+
+354
+00:10:19.920 --> 00:10:21.360
+So these sub domains can be like
+
+355
+00:10:21.360 --> 00:10:24.440
+www.maps.google.com it can be like
+
+356
+00:10:24.440 --> 00:10:26.120
+YouTube.google.com it can be
+
+357
+00:10:26.120 --> 00:10:28.640
+something.google.com admin.google.com
+
+358
+00:10:28.640 --> 00:10:30.880
+so this is your subdomain, right?
+
+359
+00:10:30.880 --> 00:10:32.040
+So this is a subdomain
+
+360
+00:10:32.040 --> 00:10:33.320
+of this apex domain.
+
+361
+00:10:33.320 --> 00:10:35.720
+Okay, then then you have
+
+362
+00:10:35.720 --> 00:10:37.380
+this separator right here.
+
+363
+00:10:37.380 --> 00:10:38.900
+After the separator,
+
+364
+00:10:38.900 --> 00:10:40.500
+this particular whole thing.
+
+365
+00:10:40.500 --> 00:10:41.620
+This particular whole thing.
+
+366
+00:10:41.620 --> 00:10:43.540
+Let me just have a nice color.
+
+367
+00:10:43.540 --> 00:10:44.780
+This particular thing is known
+
+368
+00:10:44.780 --> 00:10:47.540
+as the path, okay, that which
+
+369
+00:10:47.540 --> 00:10:49.540
+path you are trying to access.
+
+370
+00:10:49.540 --> 00:10:51.380
+So this can be like slash contact us.
+
+371
+00:10:51.380 --> 00:10:52.380
+This can be slash contact
+
+372
+00:10:52.380 --> 00:10:54.340
+us, slash A, slash B.
+
+373
+00:10:54.340 --> 00:10:55.220
+So slash.
+
+374
+00:10:55.220 --> 00:10:56.540
+Then you can have something else
+
+375
+00:10:56.540 --> 00:10:58.980
+also that this whole is a path
+
+376
+00:10:58.980 --> 00:11:00.740
+that on which path you are
+
+377
+00:11:00.740 --> 00:11:02.180
+trying to make this request.
+
+378
+00:11:02.180 --> 00:11:05.810
+Okay, so this is your path and then
+
+379
+00:11:05.810 --> 00:11:07.650
+along with the path, then if
+
+380
+00:11:07.650 --> 00:11:09.130
+you have a question mark then
+
+381
+00:11:09.130 --> 00:11:10.410
+you can have query parameters.
+
+382
+00:11:10.410 --> 00:11:14.530
+So Q equals to XYZ and okay,
+
+383
+00:11:14.530 --> 00:11:15.970
+you can have something like
+
+384
+00:11:16.850 --> 00:11:19.490
+maybe sort equals descending.
+
+385
+00:11:19.490 --> 00:11:20.570
+So these are known as.
+
+386
+00:11:20.570 --> 00:11:21.970
+So if you have a question mark
+
+387
+00:11:21.970 --> 00:11:23.410
+in between, so let's say that you have
+
+388
+00:11:23.410 --> 00:11:24.770
+in question mark in between.
+
+389
+00:11:24.770 --> 00:11:26.370
+This is basically your separator
+
+390
+00:11:26.370 --> 00:11:28.690
+for the query parameters.
+
+391
+00:11:28.690 --> 00:11:30.160
+So, so anything after this question
+
+392
+00:11:30.160 --> 00:11:32.360
+mark will be considered as what will
+
+393
+00:11:32.360 --> 00:11:34.680
+be considered as query parameters.
+
+394
+00:11:34.680 --> 00:11:37.720
+Okay, query parameters.
+
+395
+00:11:37.720 --> 00:11:39.200
+So query parameters are what?
+
+396
+00:11:39.200 --> 00:11:40.320
+Basically this, these are some
+
+397
+00:11:40.320 --> 00:11:41.480
+extra key value pairs that
+
+398
+00:11:41.480 --> 00:11:43.240
+you can send along the URL.
+
+399
+00:11:43.240 --> 00:11:45.560
+So right now here I have two query
+
+400
+00:11:45.560 --> 00:11:47.240
+parameters separated by this.
+
+401
+00:11:47.240 --> 00:11:48.960
+And so this is my
+
+402
+00:11:48.960 --> 00:11:50.360
+first query parameter.
+
+403
+00:11:50.360 --> 00:11:52.920
+Okay, so my first query parameter is Q
+
+404
+00:11:52.920 --> 00:11:55.400
+is the key and value is XYZ
+
+405
+00:11:55.400 --> 00:11:56.520
+and my second,
+
+406
+00:11:57.140 --> 00:11:58.980
+okay, my second query parameter is
+
+407
+00:11:58.980 --> 00:12:00.580
+sort, which is descending.
+
+408
+00:12:00.580 --> 00:12:02.460
+So yeah, this over can decide to,
+
+409
+00:12:02.460 --> 00:12:04.060
+you know, take this one and you
+
+410
+00:12:04.060 --> 00:12:06.180
+know, read these one, separated by
+
+411
+00:12:06.180 --> 00:12:08.300
+an and operator and they can see,
+
+412
+00:12:08.300 --> 00:12:09.700
+oh, you are trying to access a
+
+413
+00:12:09.700 --> 00:12:10.700
+data which is sorted on the
+
+414
+00:12:10.700 --> 00:12:11.220
+descending.
+
+415
+00:12:11.220 --> 00:12:12.819
+So again server related thing.
+
+416
+00:12:12.819 --> 00:12:15.220
+So this is how your URL is constructed.
+
+417
+00:12:15.220 --> 00:12:18.900
+Okay, so now here is one thing,
+
+418
+00:12:19.540 --> 00:12:20.900
+this particular part,
+
+419
+00:12:20.900 --> 00:12:22.220
+okay, now now hear me out.
+
+420
+00:12:22.220 --> 00:12:24.220
+Very important, this particular
+
+421
+00:12:24.220 --> 00:12:26.220
+part right here, okay, that means
+
+422
+00:12:26.220 --> 00:12:29.180
+this part, this part is taken care
+
+423
+00:12:29.180 --> 00:12:31.260
+to reach to the server, right?
+
+424
+00:12:31.260 --> 00:12:33.580
+This part is for the DNS purpose.
+
+425
+00:12:33.580 --> 00:12:35.420
+So this part right here
+
+426
+00:12:35.420 --> 00:12:37.660
+helps you to reach to the correct
+
+427
+00:12:37.660 --> 00:12:39.180
+server on the Internet.
+
+428
+00:12:39.180 --> 00:12:43.100
+Okay then this whole thing, right,
+
+429
+00:12:43.100 --> 00:12:46.420
+this whole thing here is processed
+
+430
+00:12:46.420 --> 00:12:48.780
+by the server to decide what kind
+
+431
+00:12:48.780 --> 00:12:50.190
+of response to send to you.
+
+432
+00:12:50.900 --> 00:12:51.140
+Right.
+
+433
+00:12:51.140 --> 00:12:52.540
+And this is for the like scheme
+
+434
+00:12:52.540 --> 00:12:53.620
+for the authentication purpose.
+
+435
+00:12:53.620 --> 00:12:54.260
+Oh, sorry.
+
+436
+00:12:54.260 --> 00:12:55.260
+For the like, you know,
+
+437
+00:12:55.260 --> 00:12:56.580
+secure and transfer purpose.
+
+438
+00:12:56.580 --> 00:12:57.860
+This is for the protocol.
+
+439
+00:12:57.860 --> 00:13:00.620
+So www.google.com is just for reaching
+
+440
+00:13:00.620 --> 00:13:02.100
+to the server and anything
+
+441
+00:13:02.100 --> 00:13:03.780
+after that is for your server
+
+442
+00:13:03.780 --> 00:13:05.620
+application logic to process it.
+
+443
+00:13:05.620 --> 00:13:07.620
+Okay, so this you have to take care.
+
+444
+00:13:07.620 --> 00:13:10.140
+So right now like if I open
+
+445
+00:13:10.140 --> 00:13:12.660
+up the headers again and I do an enter
+
+446
+00:13:12.660 --> 00:13:14.700
+right now I am on google.com, correct?
+
+447
+00:13:14.700 --> 00:13:15.420
+You can see that I am
+
+448
+00:13:15.420 --> 00:13:17.420
+on www.google.com.
+
+449
+00:13:17.420 --> 00:13:18.700
+so if I open up the network
+
+450
+00:13:18.700 --> 00:13:21.180
+request and you can see that
+
+451
+00:13:21.180 --> 00:13:22.780
+I am on which part?
+
+452
+00:13:22.780 --> 00:13:23.980
+Okay, on which path?
+
+453
+00:13:23.980 --> 00:13:24.540
+Sorry.
+
+454
+00:13:24.540 --> 00:13:26.620
+So I am right now on slash path.
+
+455
+00:13:26.620 --> 00:13:28.220
+This means the root path.
+
+456
+00:13:28.220 --> 00:13:30.380
+Let's try to Open/,
+
+457
+00:13:31.020 --> 00:13:33.740
+XYZ, which doesn't exist right now.
+
+458
+00:13:33.740 --> 00:13:34.500
+See what happened.
+
+459
+00:13:34.500 --> 00:13:37.060
+First of all, I try to make a request
+
+460
+00:13:37.060 --> 00:13:38.700
+on this particular path.
+
+461
+00:13:38.700 --> 00:13:41.820
+So the path is XYZ, scheme
+
+462
+00:13:41.820 --> 00:13:43.660
+is HTTPs, method is GET.
+
+463
+00:13:43.660 --> 00:13:45.980
+And server sent me a 404.
+
+464
+00:13:45.980 --> 00:13:47.660
+That means not found,
+
+465
+00:13:47.660 --> 00:13:50.580
+let's say/XYZ/A/ B.
+
+466
+00:13:50.580 --> 00:13:52.620
+Okay, now you can see it is
+
+467
+00:13:52.620 --> 00:13:54.700
+again a, 404 not found.
+
+468
+00:13:54.700 --> 00:13:56.300
+And this is the path.
+
+469
+00:13:56.300 --> 00:13:59.260
+Okay, let's have some query parameters.
+
+470
+00:13:59.260 --> 00:14:00.820
+So how query parameters work
+
+471
+00:14:00.820 --> 00:14:03.060
+is if I go to google.com and so
+
+472
+00:14:03.060 --> 00:14:05.060
+now if I on google.com and I
+
+473
+00:14:05.060 --> 00:14:06.540
+search for, let's say cat.
+
+474
+00:14:06.540 --> 00:14:10.860
+Okay, cat, as a, coding.
+
+475
+00:14:10.860 --> 00:14:13.240
+Okay, so if I go on,
+
+476
+00:14:13.240 --> 00:14:14.280
+let's say this one.
+
+477
+00:14:14.280 --> 00:14:16.400
+So right now if you will see my URL.
+
+478
+00:14:16.400 --> 00:14:17.560
+Let me just take my URL.
+
+479
+00:14:17.560 --> 00:14:19.120
+My URL looks something like this.
+
+480
+00:14:19.120 --> 00:14:21.560
+Okay, this is what my URL is looking.
+
+481
+00:14:21.560 --> 00:14:23.400
+So let's try to decode, let's try
+
+482
+00:14:23.400 --> 00:14:24.160
+to decode that what
+
+483
+00:14:24.160 --> 00:14:25.080
+is actually happening here.
+
+484
+00:14:25.080 --> 00:14:27.040
+Okay, so I'll just expand this a little
+
+485
+00:14:27.040 --> 00:14:28.920
+bit so that everything is in one line
+
+486
+00:14:28.920 --> 00:14:30.880
+and let's make it white in color.
+
+487
+00:14:30.880 --> 00:14:33.200
+So see, you got the scheme, you
+
+488
+00:14:33.200 --> 00:14:35.000
+got subdomain, you got the naked
+
+489
+00:14:35.000 --> 00:14:36.760
+domain, you got slash search.
+
+490
+00:14:36.760 --> 00:14:40.280
+So your path is slash search, right?
+
+491
+00:14:40.280 --> 00:14:42.440
+And then you have a query parameter, Q.
+
+492
+00:14:42.440 --> 00:14:43.960
+I mean Q is for query.
+
+493
+00:14:43.960 --> 00:14:45.600
+That what you are trying to search,
+
+494
+00:14:45.600 --> 00:14:46.680
+what you are trying to search.
+
+495
+00:14:46.680 --> 00:14:47.640
+You are trying to search
+
+496
+00:14:47.640 --> 00:14:48.440
+this particular thing.
+
+497
+00:14:48.440 --> 00:14:50.120
+Okay, so server can basically
+
+498
+00:14:50.120 --> 00:14:51.160
+take this as a query
+
+499
+00:14:51.160 --> 00:14:53.280
+parameter and it can parse it.
+
+500
+00:14:53.280 --> 00:14:55.080
+Now if I copy this and I just paste
+
+501
+00:14:55.080 --> 00:14:56.720
+it here also you can see the query
+
+502
+00:14:56.720 --> 00:14:58.600
+parameters were already there, right?
+
+503
+00:14:58.600 --> 00:15:00.680
+So these are handy to store some
+
+504
+00:15:00.680 --> 00:15:02.520
+information right into the URL.
+
+505
+00:15:02.520 --> 00:15:04.280
+So this is how your URLs work.
+
+506
+00:15:04.280 --> 00:15:07.720
+Okay, now I think you have a very
+
+507
+00:15:07.720 --> 00:15:08.760
+good information about,
+
+508
+00:15:08.760 --> 00:15:10.880
+you know, what a, request looks like.
+
+509
+00:15:10.880 --> 00:15:11.280
+Okay.
+
+510
+00:15:11.280 --> 00:15:12.080
+What a request.
+
+511
+00:15:12.080 --> 00:15:12.800
+Just a request.
+
+512
+00:15:12.800 --> 00:15:14.080
+I'm not talking about response.
+
+513
+00:15:14.080 --> 00:15:15.960
+We were just talking about that what a,
+
+514
+00:15:15.960 --> 00:15:18.040
+request could look like, right?

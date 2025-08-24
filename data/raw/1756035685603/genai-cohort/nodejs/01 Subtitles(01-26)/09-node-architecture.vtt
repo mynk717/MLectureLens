@@ -1,0 +1,1241 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:02.040
+Okay, so in the previous lecture
+
+2
+00:00:02.040 --> 00:00:03.480
+we have seen that how we can
+
+3
+00:00:03.480 --> 00:00:04.960
+work with the file system.
+
+4
+00:00:04.960 --> 00:00:06.960
+And I know that there was one
+
+5
+00:00:06.960 --> 00:00:09.080
+unsolved puzzle that was piuz.
+
+6
+00:00:09.080 --> 00:00:10.560
+What is this synchronous version?
+
+7
+00:00:10.560 --> 00:00:12.040
+Right, so this particular video
+
+8
+00:00:12.040 --> 00:00:13.920
+is going to be super duper important
+
+9
+00:00:13.920 --> 00:00:15.200
+in order to understand
+
+10
+00:00:15.200 --> 00:00:17.000
+the node js internal working.
+
+11
+00:00:17.000 --> 00:00:19.000
+Okay, so what I'm going to do is
+
+12
+00:00:19.000 --> 00:00:20.280
+I'm going to create a file that
+
+13
+00:00:20.280 --> 00:00:22.600
+is, let's say script js file.
+
+14
+00:00:22.600 --> 00:00:24.640
+So this is where I am going to code.
+
+15
+00:00:24.640 --> 00:00:26.880
+Now let's import the FS module first.
+
+16
+00:00:26.880 --> 00:00:28.580
+So, so that is pretty simple.
+
+17
+00:00:28.580 --> 00:00:29.780
+You know the stuff that is
+
+18
+00:00:29.780 --> 00:00:31.580
+node and then colon fs.
+
+19
+00:00:31.580 --> 00:00:31.940
+Right?
+
+20
+00:00:31.940 --> 00:00:33.540
+So we have the FS module.
+
+21
+00:00:34.100 --> 00:00:36.260
+Now what we can do is.
+
+22
+00:00:36.260 --> 00:00:38.060
+Now see, let's say I have
+
+23
+00:00:38.060 --> 00:00:39.140
+a very simple task.
+
+24
+00:00:39.140 --> 00:00:42.340
+So my task is that, sorry, task.
+
+25
+00:00:42.340 --> 00:00:46.260
+My task is just read the contents
+
+26
+00:00:46.260 --> 00:00:49.700
+of notes Txt file, right?
+
+27
+00:00:49.700 --> 00:00:51.860
+So what you will do first, you will
+
+28
+00:00:51.860 --> 00:00:53.100
+do it in a synchronous manner.
+
+29
+00:00:53.100 --> 00:00:53.740
+So let's say I'll
+
+30
+00:00:53.740 --> 00:00:55.870
+just say console log that this
+
+31
+00:00:55.870 --> 00:00:57.990
+is the start of script.
+
+32
+00:00:57.990 --> 00:00:59.750
+Okay, Start of script.
+
+33
+00:00:59.750 --> 00:01:01.190
+Okay, Then what you will say,
+
+34
+00:01:01.190 --> 00:01:02.310
+you will say, hey, const.
+
+35
+00:01:02.310 --> 00:01:03.670
+I get the contents.
+
+36
+00:01:03.670 --> 00:01:04.950
+So how can you get the contents?
+
+37
+00:01:04.950 --> 00:01:07.590
+You will just say fs.read file sync
+
+38
+00:01:07.590 --> 00:01:09.750
+and just pass in the path
+
+39
+00:01:09.750 --> 00:01:12.830
+that is notes, dot TXT and let's
+
+40
+00:01:12.830 --> 00:01:15.590
+read it as a UTF8 encoding.
+
+41
+00:01:15.590 --> 00:01:17.110
+And then you will say, hey,
+
+42
+00:01:17.110 --> 00:01:19.870
+console, log, the contents.
+
+43
+00:01:19.870 --> 00:01:21.430
+Okay, let's try to console
+
+44
+00:01:21.430 --> 00:01:22.660
+log the contents
+
+45
+00:01:22.660 --> 00:01:23.980
+of this particular thing.
+
+46
+00:01:23.980 --> 00:01:25.700
+And, and, and finally let's just
+
+47
+00:01:25.700 --> 00:01:27.780
+do a console log, saying that
+
+48
+00:01:27.780 --> 00:01:30.060
+this is the end of script.
+
+49
+00:01:30.620 --> 00:01:31.940
+So this is the code.
+
+50
+00:01:31.940 --> 00:01:32.980
+Like this is a very cool
+
+51
+00:01:32.980 --> 00:01:34.140
+code that you have written.
+
+52
+00:01:34.140 --> 00:01:35.660
+So now if I run this particular
+
+53
+00:01:35.660 --> 00:01:37.140
+code, can you guys guess
+
+54
+00:01:37.140 --> 00:01:38.420
+the output for this code?
+
+55
+00:01:38.420 --> 00:01:39.340
+Pretty simple, right?
+
+56
+00:01:39.340 --> 00:01:40.660
+First you will get this console
+
+57
+00:01:40.660 --> 00:01:41.460
+log, then you will get
+
+58
+00:01:41.460 --> 00:01:42.500
+the contents, and then you will
+
+59
+00:01:42.500 --> 00:01:43.900
+get the end of script.
+
+60
+00:01:43.900 --> 00:01:46.220
+Now if I say node script and enter.
+
+61
+00:01:46.220 --> 00:01:47.300
+So yeah, indeed, you
+
+62
+00:01:47.300 --> 00:01:48.590
+got this art of script.
+
+63
+00:01:48.590 --> 00:01:49.470
+You got the contents
+
+64
+00:01:49.470 --> 00:01:51.230
+of the file and end of the script.
+
+65
+00:01:51.230 --> 00:01:52.790
+So this code actually worked
+
+66
+00:01:52.790 --> 00:01:54.910
+in a manner that we liked.
+
+67
+00:01:54.910 --> 00:01:56.510
+Now understand one thing.
+
+68
+00:01:56.510 --> 00:01:58.470
+Whenever you call the synchronous
+
+69
+00:01:58.470 --> 00:02:00.350
+operation, these
+
+70
+00:02:00.350 --> 00:02:02.750
+synchronous operations are actually
+
+71
+00:02:02.750 --> 00:02:05.790
+known as blocking operations.
+
+72
+00:02:05.790 --> 00:02:07.630
+Okay, These are known as,
+
+73
+00:02:07.630 --> 00:02:09.229
+blocking operations.
+
+74
+00:02:09.229 --> 00:02:10.470
+What do I mean by that
+
+75
+00:02:10.470 --> 00:02:11.550
+blocking operation?
+
+76
+00:02:12.510 --> 00:02:14.490
+Guys, tell me one thing.
+
+77
+00:02:14.490 --> 00:02:15.530
+What do you think?
+
+78
+00:02:15.530 --> 00:02:17.570
+How much easy is it
+
+79
+00:02:17.570 --> 00:02:18.730
+to read this file?
+
+80
+00:02:19.610 --> 00:02:23.410
+How much time it can take to this
+
+81
+00:02:23.410 --> 00:02:25.290
+particular line of code to execute?
+
+82
+00:02:25.850 --> 00:02:27.010
+You will say that piu.
+
+83
+00:02:27.010 --> 00:02:28.730
+This depends upon the file.
+
+84
+00:02:28.730 --> 00:02:30.650
+For example, you are trying
+
+85
+00:02:30.650 --> 00:02:32.570
+to Read this file, right?
+
+86
+00:02:32.570 --> 00:02:33.370
+You are trying to read
+
+87
+00:02:33.370 --> 00:02:34.970
+a file that is this one.
+
+88
+00:02:34.970 --> 00:02:37.130
+Now if this file is one mb, it will
+
+89
+00:02:37.130 --> 00:02:38.530
+take, it will be very quick, right?
+
+90
+00:02:38.530 --> 00:02:40.100
+Because one MB is very less.
+
+91
+00:02:40.100 --> 00:02:41.340
+It can be, but, but it
+
+92
+00:02:41.340 --> 00:02:42.580
+can be a 1gb file.
+
+93
+00:02:42.580 --> 00:02:44.540
+It can be a 1terabyte of file.
+
+94
+00:02:44.540 --> 00:02:46.060
+It can be a 1petabytes
+
+95
+00:02:46.060 --> 00:02:46.820
+of file, right?
+
+96
+00:02:47.380 --> 00:02:49.900
+So if this file is, let's say, one
+
+97
+00:02:49.900 --> 00:02:52.340
+GB and it has a lot of content,
+
+98
+00:02:52.900 --> 00:02:54.500
+can I say that this whole
+
+99
+00:02:54.500 --> 00:02:56.420
+operation, this whole line is
+
+100
+00:02:56.420 --> 00:02:58.260
+going to take, let's say, maybe,
+
+101
+00:02:58.260 --> 00:03:00.180
+maybe one minute, depending upon,
+
+102
+00:03:00.180 --> 00:03:01.180
+of course, your machine
+
+103
+00:03:01.180 --> 00:03:02.580
+configuration and all that.
+
+104
+00:03:02.580 --> 00:03:04.500
+So let's say to read one GB
+
+105
+00:03:04.500 --> 00:03:06.420
+of file, this code takes one minute.
+
+106
+00:03:07.070 --> 00:03:08.630
+That means when your code
+
+107
+00:03:08.630 --> 00:03:10.150
+is executing line by line,
+
+108
+00:03:10.150 --> 00:03:11.790
+you execute this line.
+
+109
+00:03:11.790 --> 00:03:13.390
+Then you block the operation
+
+110
+00:03:13.390 --> 00:03:14.910
+for one minute, right?
+
+111
+00:03:14.910 --> 00:03:16.950
+This, this particular line docks
+
+112
+00:03:16.950 --> 00:03:18.350
+everything for one minute.
+
+113
+00:03:18.350 --> 00:03:20.230
+So till one minute, if something is
+
+114
+00:03:20.230 --> 00:03:21.430
+going on in the background which
+
+115
+00:03:21.430 --> 00:03:23.550
+is trying to read the file, once
+
+116
+00:03:23.550 --> 00:03:26.030
+you have read this one GB of file,
+
+117
+00:03:26.030 --> 00:03:27.670
+then all the code will execute
+
+118
+00:03:27.670 --> 00:03:27.870
+here.
+
+119
+00:03:27.870 --> 00:03:28.710
+So let's say here you
+
+120
+00:03:28.710 --> 00:03:30.710
+have 100, line of code.
+
+121
+00:03:30.710 --> 00:03:32.670
+More so this, all 100 line
+
+122
+00:03:32.670 --> 00:03:33.430
+of code will execute
+
+123
+00:03:33.980 --> 00:03:36.380
+once this has been completed.
+
+124
+00:03:36.380 --> 00:03:39.100
+So that means if you see
+
+125
+00:03:39.100 --> 00:03:42.220
+the execution of the code, this
+
+126
+00:03:42.220 --> 00:03:44.140
+blocked everything right here was
+
+127
+00:03:44.140 --> 00:03:46.180
+a blocking thing, which is not good.
+
+128
+00:03:46.180 --> 00:03:46.580
+Okay?
+
+129
+00:03:46.580 --> 00:03:47.420
+You should not use
+
+130
+00:03:47.420 --> 00:03:48.300
+blocking operations.
+
+131
+00:03:48.300 --> 00:03:49.539
+I mean, it depends when
+
+132
+00:03:49.539 --> 00:03:50.780
+to use and when not to use.
+
+133
+00:03:50.780 --> 00:03:52.420
+But in most of the cases you
+
+134
+00:03:52.420 --> 00:03:54.460
+will not use the blocking operations
+
+135
+00:03:54.460 --> 00:03:55.860
+because let's say you are
+
+136
+00:03:55.860 --> 00:03:57.500
+building a web server, okay?
+
+137
+00:03:57.500 --> 00:03:59.020
+So let's say, let's.
+
+138
+00:03:59.020 --> 00:04:01.160
+Let me give you a real world example.
+
+139
+00:04:01.160 --> 00:04:03.080
+So if you are building a web server
+
+140
+00:04:03.080 --> 00:04:05.200
+and you have users, right?
+
+141
+00:04:05.200 --> 00:04:07.240
+If you, if this is your server
+
+142
+00:04:07.240 --> 00:04:09.560
+and this server is written in node,
+
+143
+00:04:09.560 --> 00:04:10.960
+I mean not written in node.
+
+144
+00:04:10.960 --> 00:04:13.080
+I mean it is, running node js.
+
+145
+00:04:13.080 --> 00:04:14.720
+So let's say the users
+
+146
+00:04:14.720 --> 00:04:15.800
+are coming, okay?
+
+147
+00:04:15.800 --> 00:04:17.360
+So this is your first user, this
+
+148
+00:04:17.360 --> 00:04:18.360
+is your second user, third
+
+149
+00:04:18.360 --> 00:04:20.360
+user, fourth user, and five user.
+
+150
+00:04:20.360 --> 00:04:21.720
+So users are coming.
+
+151
+00:04:21.720 --> 00:04:24.160
+Now let's say he requested that, Hey,
+
+152
+00:04:24.160 --> 00:04:26.940
+I want the contents of some file.
+
+153
+00:04:26.940 --> 00:04:28.300
+Now that file lives
+
+154
+00:04:28.300 --> 00:04:30.140
+on the server, and that particular
+
+155
+00:04:30.140 --> 00:04:32.380
+file is one GB in size.
+
+156
+00:04:32.380 --> 00:04:34.020
+Now you have to wait for one minute.
+
+157
+00:04:34.020 --> 00:04:35.820
+Your server is now blocked
+
+158
+00:04:35.820 --> 00:04:37.420
+and reading that file,
+
+159
+00:04:37.420 --> 00:04:39.100
+which is going to take one minute.
+
+160
+00:04:39.100 --> 00:04:41.900
+So for next one minute, all these
+
+161
+00:04:41.900 --> 00:04:44.940
+users cannot use your server.
+
+162
+00:04:44.940 --> 00:04:45.700
+You get it, right?
+
+163
+00:04:45.700 --> 00:04:47.180
+Because you have made your
+
+164
+00:04:47.180 --> 00:04:48.980
+server busy to read that file.
+
+165
+00:04:48.980 --> 00:04:52.500
+And all these extra users are, are
+
+166
+00:04:52.500 --> 00:04:55.540
+now going to face a downtime, okay?
+
+167
+00:04:55.540 --> 00:04:56.460
+They will say, hey,
+
+168
+00:04:56.460 --> 00:04:58.180
+the server is not working.
+
+169
+00:04:59.240 --> 00:05:00.620
+You remember that when you were
+
+170
+00:05:00.620 --> 00:05:01.900
+in college or when you were in
+
+171
+00:05:01.900 --> 00:05:03.180
+school you used to check your
+
+172
+00:05:03.180 --> 00:05:05.020
+result and when there is a lot
+
+173
+00:05:05.020 --> 00:05:07.260
+of rush, server didn't respond,
+
+174
+00:05:07.260 --> 00:05:08.540
+it is going to take a lot of
+
+175
+00:05:08.540 --> 00:05:09.220
+time.
+
+176
+00:05:09.220 --> 00:05:11.500
+So because of this one user, because
+
+177
+00:05:11.500 --> 00:05:13.060
+you have written your code in a
+
+178
+00:05:13.060 --> 00:05:15.140
+synchronous way or in a blocking
+
+179
+00:05:15.140 --> 00:05:17.300
+way, due to this blocking nature,
+
+180
+00:05:17.300 --> 00:05:19.990
+you have made your server work a
+
+181
+00:05:19.990 --> 00:05:20.830
+lot, right?
+
+182
+00:05:20.830 --> 00:05:23.150
+Your server is continuously working
+
+183
+00:05:23.150 --> 00:05:24.590
+to read that file.
+
+184
+00:05:24.590 --> 00:05:26.510
+But in the, on the other hand,
+
+185
+00:05:26.510 --> 00:05:27.950
+no other request is served.
+
+186
+00:05:27.950 --> 00:05:29.470
+So this is your blocking operation.
+
+187
+00:05:29.470 --> 00:05:31.070
+So this is what you're doing here.
+
+188
+00:05:31.070 --> 00:05:33.030
+Now alternative to the blocking
+
+189
+00:05:33.030 --> 00:05:33.710
+operation is
+
+190
+00:05:33.710 --> 00:05:35.590
+an asynchronous operation, also
+
+191
+00:05:35.590 --> 00:05:36.950
+known as non blocking.
+
+192
+00:05:36.950 --> 00:05:38.190
+Okay, so let me show
+
+193
+00:05:38.190 --> 00:05:39.230
+you how that works.
+
+194
+00:05:39.230 --> 00:05:40.830
+So on the other hand you have
+
+195
+00:05:40.830 --> 00:05:42.150
+asynchronous, so you can
+
+196
+00:05:42.150 --> 00:05:43.840
+do it asynchronously or
+
+197
+00:05:43.840 --> 00:05:45.920
+also known as non blocking.
+
+198
+00:05:46.480 --> 00:05:48.520
+So in non blocking fashion,
+
+199
+00:05:48.520 --> 00:05:49.360
+what you can do is you
+
+200
+00:05:49.360 --> 00:05:52.000
+can just say fs.read file.
+
+201
+00:05:52.000 --> 00:05:54.240
+Okay, now this is an asynchronous.
+
+202
+00:05:54.240 --> 00:05:55.560
+Now what you will notice is that
+
+203
+00:05:55.560 --> 00:05:57.120
+first parameters remain same,
+
+204
+00:05:57.120 --> 00:05:59.120
+second parameter remain same.
+
+205
+00:05:59.120 --> 00:06:01.080
+Only difference is that now you have
+
+206
+00:06:01.080 --> 00:06:03.600
+to pass a callback function, right?
+
+207
+00:06:03.600 --> 00:06:06.000
+Because this particular operation
+
+208
+00:06:06.000 --> 00:06:07.960
+runs in background, right?
+
+209
+00:06:07.960 --> 00:06:09.760
+Runs somewhere else.
+
+210
+00:06:09.760 --> 00:06:11.160
+How will it tell you that?
+
+211
+00:06:11.160 --> 00:06:11.800
+Hey, I am.
+
+212
+00:06:11.800 --> 00:06:13.320
+I have completed reading the file
+
+213
+00:06:13.320 --> 00:06:14.640
+and how will it give you the data?
+
+214
+00:06:15.190 --> 00:06:16.470
+So for that it requires
+
+215
+00:06:16.470 --> 00:06:17.590
+a callback function.
+
+216
+00:06:17.590 --> 00:06:19.270
+In this callback function, the first
+
+217
+00:06:19.270 --> 00:06:21.110
+parameter is the error if there
+
+218
+00:06:21.110 --> 00:06:23.110
+is any, and second is the data.
+
+219
+00:06:23.110 --> 00:06:24.070
+So you can actually keep
+
+220
+00:06:24.070 --> 00:06:25.990
+a check that, hey, if it has got
+
+221
+00:06:25.990 --> 00:06:27.350
+error, you can just do
+
+222
+00:06:27.350 --> 00:06:29.270
+a console dot log of the error.
+
+223
+00:06:30.200 --> 00:06:31.830
+So whatsoever is the error.
+
+224
+00:06:31.830 --> 00:06:33.830
+Else you can just console log
+
+225
+00:06:33.830 --> 00:06:35.070
+the contents of the file.
+
+226
+00:06:35.070 --> 00:06:36.950
+So you can just say console.log
+
+227
+00:06:36.950 --> 00:06:38.950
+contents got.
+
+228
+00:06:38.950 --> 00:06:40.470
+And you can just say, hey,
+
+229
+00:06:40.470 --> 00:06:41.470
+these are the contents.
+
+230
+00:06:42.100 --> 00:06:43.900
+So now what you have done is you
+
+231
+00:06:43.900 --> 00:06:46.420
+have converted this piece of code.
+
+232
+00:06:46.420 --> 00:06:47.500
+Okay, you can just pause
+
+233
+00:06:47.500 --> 00:06:48.900
+the screen right here.
+
+234
+00:06:48.900 --> 00:06:50.460
+This particular piece of code
+
+235
+00:06:50.460 --> 00:06:51.820
+and this piece of code are
+
+236
+00:06:51.820 --> 00:06:53.220
+actually doing the same thing.
+
+237
+00:06:53.220 --> 00:06:54.900
+The only difference is this is non
+
+238
+00:06:54.900 --> 00:06:56.660
+blocking and this is blocking.
+
+239
+00:06:56.660 --> 00:06:58.700
+So now if I remove this code.
+
+240
+00:06:58.700 --> 00:07:00.500
+So now what you have is you have this
+
+241
+00:07:00.500 --> 00:07:02.860
+console log start, you are doing
+
+242
+00:07:02.860 --> 00:07:05.220
+some asynchronous operation and end.
+
+243
+00:07:05.220 --> 00:07:06.700
+Now interestingly, if I run
+
+244
+00:07:06.700 --> 00:07:09.110
+this code, and we got the error
+
+245
+00:07:09.110 --> 00:07:10.710
+because this is not content,
+
+246
+00:07:10.710 --> 00:07:11.830
+actually this is data.
+
+247
+00:07:11.830 --> 00:07:13.310
+Okay, so yeah, my bad.
+
+248
+00:07:13.310 --> 00:07:14.630
+So if I run this particular code
+
+249
+00:07:14.630 --> 00:07:17.550
+again, start of script, end of
+
+250
+00:07:17.550 --> 00:07:19.110
+script and then you got the content,
+
+251
+00:07:19.110 --> 00:07:20.550
+do you see what happened?
+
+252
+00:07:20.550 --> 00:07:22.430
+That this particular line, this
+
+253
+00:07:22.430 --> 00:07:24.150
+particular statement was not
+
+254
+00:07:24.150 --> 00:07:26.070
+able to block the execution.
+
+255
+00:07:26.070 --> 00:07:27.670
+See, we got start first,
+
+256
+00:07:27.670 --> 00:07:29.110
+that is on the top.
+
+257
+00:07:29.110 --> 00:07:30.870
+Then we got end of the script.
+
+258
+00:07:30.870 --> 00:07:32.550
+See end of the script.
+
+259
+00:07:32.550 --> 00:07:34.230
+Meanwhile this thing was reading
+
+260
+00:07:34.230 --> 00:07:35.430
+the file in the background.
+
+261
+00:07:35.430 --> 00:07:37.790
+And once it has completed reading
+
+262
+00:07:37.790 --> 00:07:39.330
+the file, once it got the content
+
+263
+00:07:39.330 --> 00:07:41.570
+contents, it executed a function
+
+264
+00:07:41.570 --> 00:07:43.130
+that I have passed as a callback
+
+265
+00:07:43.130 --> 00:07:44.930
+function which is at the end.
+
+266
+00:07:44.930 --> 00:07:46.410
+So if Even you have 100 line
+
+267
+00:07:46.410 --> 00:07:48.450
+of code that will continue to work
+
+268
+00:07:48.450 --> 00:07:50.610
+while it is reading the file.
+
+269
+00:07:50.610 --> 00:07:52.170
+So this is how the asynchronous
+
+270
+00:07:52.170 --> 00:07:54.130
+or non blocking operation works.
+
+271
+00:07:54.130 --> 00:07:55.730
+So whenever you do a heavy
+
+272
+00:07:55.730 --> 00:07:58.210
+task, for example cfs.everything
+
+273
+00:07:58.210 --> 00:07:59.370
+has a synchronous
+
+274
+00:07:59.370 --> 00:08:00.610
+and a non synchronous way.
+
+275
+00:08:00.610 --> 00:08:02.650
+For example append file, this
+
+276
+00:08:02.650 --> 00:08:03.970
+is what this is
+
+277
+00:08:03.970 --> 00:08:06.050
+asynchronously appending the data.
+
+278
+00:08:06.050 --> 00:08:07.250
+But on the synchronous
+
+279
+00:08:07.250 --> 00:08:08.610
+this is a blocking call.
+
+280
+00:08:08.610 --> 00:08:10.890
+Similarly CHMOD is an asynchronous CH
+
+281
+00:08:10.890 --> 00:08:12.830
+mod sync is a blocking operation.
+
+282
+00:08:12.830 --> 00:08:15.710
+So every operation has an equivalent
+
+283
+00:08:16.300 --> 00:08:17.870
+blocking and non blocking code.
+
+284
+00:08:17.870 --> 00:08:19.790
+So the code is absolutely same.
+
+285
+00:08:19.790 --> 00:08:21.310
+The only difference is that
+
+286
+00:08:21.310 --> 00:08:22.950
+the read file is asynchronous,
+
+287
+00:08:22.950 --> 00:08:24.470
+whereas the synchronous version
+
+288
+00:08:24.470 --> 00:08:25.790
+is a blocking operation.
+
+289
+00:08:25.790 --> 00:08:27.109
+And it doesn't take any
+
+290
+00:08:27.109 --> 00:08:28.830
+callback, it gives you the content
+
+291
+00:08:28.830 --> 00:08:30.030
+as a return statement.
+
+292
+00:08:30.030 --> 00:08:31.190
+But here you have to pass a
+
+293
+00:08:31.190 --> 00:08:32.630
+callback function, which makes
+
+294
+00:08:32.630 --> 00:08:34.510
+sense right now at this
+
+295
+00:08:34.510 --> 00:08:36.230
+particular point of time I can
+
+296
+00:08:36.230 --> 00:08:38.830
+even go a too much deep into
+
+297
+00:08:38.830 --> 00:08:40.270
+the architecture of node js,
+
+298
+00:08:40.270 --> 00:08:41.590
+how node js works.
+
+299
+00:08:41.590 --> 00:08:42.789
+But let's keep that
+
+300
+00:08:42.789 --> 00:08:43.750
+for the next video.
+
+301
+00:08:43.750 --> 00:08:45.470
+I will try to explain that how
+
+302
+00:08:45.470 --> 00:08:47.040
+internally JavaScript or
+
+303
+00:08:47.040 --> 00:08:48.510
+I can, I should say the Node js
+
+304
+00:08:48.510 --> 00:08:50.150
+handles all these requests.
+
+305
+00:08:50.150 --> 00:08:51.870
+So let's talk about that
+
+306
+00:08:51.870 --> 00:08:52.950
+thing in the next video.
+
+307
+00:08:52.950 --> 00:08:54.070
+So yeah, super excited
+
+308
+00:08:54.070 --> 00:08:54.710
+for the next video.
+
+309
+00:08:54.710 --> 00:08:55.750
+Let's meet you in the next one.
+
+310
+00:08:55.750 --> 00:08:57.590
+Until then, bye bye and take care.

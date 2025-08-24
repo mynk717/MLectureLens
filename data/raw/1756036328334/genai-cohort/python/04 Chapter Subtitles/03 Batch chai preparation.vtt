@@ -1,0 +1,425 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.600
+All right, welcome to another
+
+2
+00:00:02.600 --> 00:00:03.880
+challenge that we are
+
+3
+00:00:03.880 --> 00:00:05.240
+going to do in this one.
+
+4
+00:00:05.240 --> 00:00:07.000
+And this will sound a little bit
+
+5
+00:00:07.000 --> 00:00:08.560
+similar because sometimes
+
+6
+00:00:08.560 --> 00:00:11.040
+reputation is also quite necessary.
+
+7
+00:00:11.040 --> 00:00:12.720
+So let's see this problem.
+
+8
+00:00:12.720 --> 00:00:14.240
+A, chai shop makes
+
+9
+00:00:14.240 --> 00:00:16.720
+T in batches every 15 minutes.
+
+10
+00:00:16.720 --> 00:00:18.240
+Now don't pay too much attention.
+
+11
+00:00:18.240 --> 00:00:18.920
+15 minutes.
+
+12
+00:00:18.920 --> 00:00:20.160
+We are not going to be stopping our
+
+13
+00:00:20.160 --> 00:00:22.000
+program for 15 minutes for that.
+
+14
+00:00:22.000 --> 00:00:24.160
+We just want to simulate that.
+
+15
+00:00:24.160 --> 00:00:26.000
+You want to simulate four batches.
+
+16
+00:00:26.000 --> 00:00:27.440
+So the point is, the important
+
+17
+00:00:27.440 --> 00:00:28.520
+part is that we want
+
+18
+00:00:28.520 --> 00:00:30.400
+to simulate four batches.
+
+19
+00:00:31.040 --> 00:00:32.200
+The task is pretty simple.
+
+20
+00:00:32.200 --> 00:00:34.280
+Use the range method to simulate
+
+21
+00:00:34.280 --> 00:00:36.240
+the batch numbers and prepare
+
+22
+00:00:36.240 --> 00:00:37.520
+the chai for the batch.
+
+23
+00:00:37.520 --> 00:00:39.120
+The whole point that I want you
+
+24
+00:00:39.120 --> 00:00:40.840
+to see in this entire problem is we
+
+25
+00:00:40.840 --> 00:00:42.560
+want to simulate four batches.
+
+26
+00:00:42.560 --> 00:00:44.560
+So use the range for simulating
+
+27
+00:00:44.560 --> 00:00:46.440
+the four batches and then
+
+28
+00:00:46.440 --> 00:00:48.480
+print the number for each batch.
+
+29
+00:00:48.480 --> 00:00:50.000
+It's a pretty similar problem that we
+
+30
+00:00:50.000 --> 00:00:52.000
+did in the token dispenser as well.
+
+31
+00:00:52.640 --> 00:00:53.280
+So this is kind
+
+32
+00:00:53.280 --> 00:00:55.280
+of a reputation, but this is okay.
+
+33
+00:00:55.280 --> 00:00:56.240
+Sometimes reputation
+
+34
+00:00:56.240 --> 00:00:57.730
+is actually good.
+
+35
+00:00:57.730 --> 00:00:58.330
+So let's call this
+
+36
+00:00:58.330 --> 00:01:00.530
+one as 02 underscore.
+
+37
+00:01:00.530 --> 00:01:03.450
+And this is, batch chai.
+
+38
+00:01:03.450 --> 00:01:04.569
+So I'll just move my
+
+39
+00:01:04.569 --> 00:01:05.330
+keyboard a little.
+
+40
+00:01:06.050 --> 00:01:08.770
+Batch chai py of course.
+
+41
+00:01:09.730 --> 00:01:10.490
+There we go.
+
+42
+00:01:10.490 --> 00:01:13.570
+And, now let's try to use a simple
+
+43
+00:01:13.570 --> 00:01:15.650
+for loop for batching this.
+
+44
+00:01:15.650 --> 00:01:17.410
+Now for is a keyword.
+
+45
+00:01:17.410 --> 00:01:18.770
+Then we can name the variable.
+
+46
+00:01:18.770 --> 00:01:20.170
+Let's call this as batch, but feel
+
+47
+00:01:20.170 --> 00:01:22.370
+free to call this whatever you like
+
+48
+00:01:22.370 --> 00:01:24.090
+then in and provide your
+
+49
+00:01:24.090 --> 00:01:26.230
+range or anything like that.
+
+50
+00:01:26.230 --> 00:01:28.270
+And again, we'll close our AI so that
+
+51
+00:01:28.270 --> 00:01:29.990
+we can actually discuss these things
+
+52
+00:01:29.990 --> 00:01:32.230
+and then simply go with the range.
+
+53
+00:01:32.230 --> 00:01:34.030
+Now you want to simulate range
+
+54
+00:01:34.030 --> 00:01:35.430
+of how many numbers?
+
+55
+00:01:35.430 --> 00:01:36.470
+So I want to simulate
+
+56
+00:01:36.470 --> 00:01:38.390
+a range of four batches.
+
+57
+00:01:38.390 --> 00:01:39.790
+Now we have couple of options
+
+58
+00:01:39.790 --> 00:01:41.270
+of how this actually works.
+
+59
+00:01:41.270 --> 00:01:42.750
+Range can have a start value
+
+60
+00:01:42.750 --> 00:01:44.590
+and can have end value or just
+
+61
+00:01:44.590 --> 00:01:46.150
+have an end value as well.
+
+62
+00:01:46.790 --> 00:01:48.030
+We'll start with the value
+
+63
+00:01:48.030 --> 00:01:49.630
+of one because I want to start
+
+64
+00:01:49.630 --> 00:01:50.790
+the range not from the zero
+
+65
+00:01:50.790 --> 00:01:51.910
+but from a starting number.
+
+66
+00:01:52.470 --> 00:01:53.990
+And then I'll go till 5.
+
+67
+00:01:53.990 --> 00:01:55.390
+As I mentioned, range is
+
+68
+00:01:55.390 --> 00:01:56.190
+non inclusive
+
+69
+00:01:56.190 --> 00:01:57.430
+in the programming languages.
+
+70
+00:01:58.790 --> 00:02:00.990
+So five is not going to be inclusive.
+
+71
+00:02:00.990 --> 00:02:02.870
+We'll get the range till the four,
+
+72
+00:02:02.870 --> 00:02:04.710
+put up a colon sign, hit the enter,
+
+73
+00:02:04.710 --> 00:02:06.550
+and this is where we are right now.
+
+74
+00:02:06.550 --> 00:02:08.389
+Let's go ahead and print the values.
+
+75
+00:02:08.389 --> 00:02:09.030
+Pretty easy.
+
+76
+00:02:09.030 --> 00:02:10.910
+Use the formatted strings and put up
+
+77
+00:02:10.910 --> 00:02:13.670
+a message, something like preparing,
+
+78
+00:02:13.670 --> 00:02:19.040
+prepare ring chai for batch.
+
+79
+00:02:19.040 --> 00:02:20.080
+And then we'll provide
+
+80
+00:02:20.080 --> 00:02:20.800
+the batch number.
+
+81
+00:02:20.800 --> 00:02:22.000
+So we'll use a pound sign
+
+82
+00:02:22.000 --> 00:02:23.440
+or a hash sign, whatever
+
+83
+00:02:23.440 --> 00:02:24.640
+you want to call this.
+
+84
+00:02:24.640 --> 00:02:26.480
+We'll inject the curly braces to
+
+85
+00:02:26.480 --> 00:02:27.920
+get this variable and the variable
+
+86
+00:02:27.920 --> 00:02:29.550
+will automatically increase.
+
+87
+00:02:29.550 --> 00:02:31.040
+We don't have to do anything.
+
+88
+00:02:31.040 --> 00:02:31.840
+That is it.
+
+89
+00:02:31.840 --> 00:02:33.120
+Pretty simple example
+
+90
+00:02:33.120 --> 00:02:34.960
+and pretty nice one.
+
+91
+00:02:34.960 --> 00:02:36.920
+Let's open our integrated terminal
+
+92
+00:02:36.920 --> 00:02:39.600
+just right here and use Python.
+
+93
+00:02:40.160 --> 00:02:41.800
+And for this we will open
+
+94
+00:02:41.800 --> 00:02:43.040
+up the 02 file.
+
+95
+00:02:43.040 --> 00:02:43.680
+There we go.
+
+96
+00:02:43.680 --> 00:02:45.660
+And notice here it it's preparing
+
+97
+00:02:45.660 --> 00:02:47.660
+exactly for four batches and this
+
+98
+00:02:47.660 --> 00:02:48.900
+is exactly what we wanted.
+
+99
+00:02:48.900 --> 00:02:50.260
+So pretty simple problem.
+
+100
+00:02:50.260 --> 00:02:51.540
+But now that we have this
+
+101
+00:02:51.540 --> 00:02:53.060
+problem, I am super happy
+
+102
+00:02:53.060 --> 00:02:54.340
+that we did it together.
+
+103
+00:02:54.340 --> 00:02:56.300
+It will give you a good reputation as
+
+104
+00:02:56.300 --> 00:02:58.020
+well as more confidence in the loop.
+
+105
+00:02:58.020 --> 00:02:59.500
+Now let's move on to the next video
+
+106
+00:02:59.500 --> 00:03:01.300
+and take down the next challenge.

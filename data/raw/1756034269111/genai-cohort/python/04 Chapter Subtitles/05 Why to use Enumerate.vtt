@@ -1,0 +1,729 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:02.760
+All right, let's go ahead and move
+
+2
+00:00:02.760 --> 00:00:03.840
+on to the next challenge
+
+3
+00:00:03.840 --> 00:00:05.000
+that we have in front of us.
+
+4
+00:00:05.000 --> 00:00:07.600
+And that says you're creating a tea
+
+5
+00:00:07.600 --> 00:00:09.160
+menu board and each
+
+6
+00:00:09.160 --> 00:00:11.120
+item must be numbered.
+
+7
+00:00:11.120 --> 00:00:13.440
+Task use enumerate to print
+
+8
+00:00:13.440 --> 00:00:15.919
+the menu with the numbers.
+
+9
+00:00:15.919 --> 00:00:17.240
+Now this is a very interesting
+
+10
+00:00:17.240 --> 00:00:18.560
+problem because we have a new
+
+11
+00:00:18.560 --> 00:00:20.040
+keyword here which is enumerate.
+
+12
+00:00:20.040 --> 00:00:20.840
+And as you can see, I
+
+13
+00:00:20.840 --> 00:00:21.800
+have opened up the docs.
+
+14
+00:00:21.800 --> 00:00:22.600
+I'll come back onto
+
+15
+00:00:22.600 --> 00:00:23.760
+the docs in a second.
+
+16
+00:00:24.320 --> 00:00:25.600
+First of all, let's see what
+
+17
+00:00:25.600 --> 00:00:26.840
+is the problem and how we
+
+18
+00:00:26.840 --> 00:00:28.580
+can actually deal with that.
+
+19
+00:00:28.580 --> 00:00:29.660
+Just like we saw that we have
+
+20
+00:00:29.660 --> 00:00:30.860
+orders here, let's go ahead
+
+21
+00:00:30.860 --> 00:00:32.740
+and create a new file and see
+
+22
+00:00:32.740 --> 00:00:34.220
+what is exactly the problem.
+
+23
+00:00:34.220 --> 00:00:35.940
+Why can't we deal with this problem
+
+24
+00:00:35.940 --> 00:00:37.860
+using the classic for loop?
+
+25
+00:00:37.860 --> 00:00:39.140
+So let's just say I create a new
+
+26
+00:00:39.140 --> 00:00:42.020
+one and call this one as 04.
+
+27
+00:00:42.020 --> 00:00:43.540
+Yep, that's the number.
+
+28
+00:00:43.540 --> 00:00:44.660
+And we'll be call this
+
+29
+00:00:44.660 --> 00:00:48.660
+one as tea menu py.
+
+30
+00:00:48.660 --> 00:00:50.180
+Let's just say we have a simple
+
+31
+00:00:50.180 --> 00:00:52.340
+menu, we call it like this.
+
+32
+00:00:52.340 --> 00:00:53.980
+And this menu has lot
+
+33
+00:00:53.980 --> 00:00:55.700
+of items of list.
+
+34
+00:00:55.700 --> 00:00:57.260
+For example, there might be
+
+35
+00:00:57.260 --> 00:00:59.810
+a green green T for that,
+
+36
+00:00:59.810 --> 00:01:03.010
+we might have lemon for lemon T,
+
+37
+00:01:03.010 --> 00:01:04.690
+which is my favorite one.
+
+38
+00:01:04.690 --> 00:01:07.010
+We also might have spiced one
+
+39
+00:01:07.010 --> 00:01:08.010
+which is pretty good.
+
+40
+00:01:08.010 --> 00:01:09.330
+I like that part too.
+
+41
+00:01:09.330 --> 00:01:11.290
+And we can have a mint too as well.
+
+42
+00:01:11.290 --> 00:01:12.730
+Not one of my favorite, but still
+
+43
+00:01:12.730 --> 00:01:15.130
+we have now we can definitely
+
+44
+00:01:15.130 --> 00:01:16.810
+go ahead and create a variable
+
+45
+00:01:16.810 --> 00:01:19.410
+for In menu just like this.
+
+46
+00:01:19.970 --> 00:01:21.290
+And we can definitely go
+
+47
+00:01:21.290 --> 00:01:22.290
+ahead and print this.
+
+48
+00:01:22.850 --> 00:01:23.890
+And you have seen this.
+
+49
+00:01:24.780 --> 00:01:25.620
+And we can call this
+
+50
+00:01:25.620 --> 00:01:27.500
+one as menu item is.
+
+51
+00:01:28.220 --> 00:01:31.180
+And then I can use curly braces and I
+
+52
+00:01:31.180 --> 00:01:33.580
+can just put a Here for this menu.
+
+53
+00:01:34.300 --> 00:01:35.340
+This has no problem.
+
+54
+00:01:35.340 --> 00:01:36.620
+You might be wondering, yeah,
+
+55
+00:01:36.620 --> 00:01:38.780
+we have studied this and this works
+
+56
+00:01:38.780 --> 00:01:40.140
+absolutely fine.
+
+57
+00:01:40.860 --> 00:01:42.140
+And you are correct.
+
+58
+00:01:42.140 --> 00:01:44.220
+This works absolutely fine.
+
+59
+00:01:44.220 --> 00:01:45.500
+We can just verify that
+
+60
+00:01:45.500 --> 00:01:46.380
+by running this.
+
+61
+00:01:46.380 --> 00:01:47.540
+So we can see that the menu
+
+62
+00:01:47.540 --> 00:01:49.260
+item is green spice lemon.
+
+63
+00:01:49.260 --> 00:01:50.220
+Everything is good.
+
+64
+00:01:50.850 --> 00:01:52.490
+But what the question says is
+
+65
+00:01:52.490 --> 00:01:54.530
+each item must be numbered.
+
+66
+00:01:55.250 --> 00:01:58.130
+So right now I have this list
+
+67
+00:01:58.130 --> 00:02:00.330
+or an array and I know that this
+
+68
+00:02:00.330 --> 00:02:01.850
+is my 0th position, this is
+
+69
+00:02:01.850 --> 00:02:03.250
+my first position, second
+
+70
+00:02:03.250 --> 00:02:04.930
+position, and third position.
+
+71
+00:02:04.930 --> 00:02:06.689
+But I have no way of right
+
+72
+00:02:06.689 --> 00:02:08.970
+now printing out the numbers
+
+73
+00:02:08.970 --> 00:02:10.370
+of each of these item.
+
+74
+00:02:10.370 --> 00:02:11.970
+And for exactly this problem,
+
+75
+00:02:11.970 --> 00:02:15.010
+the enumerate function is utilized.
+
+76
+00:02:15.010 --> 00:02:16.490
+If you study the docs of this
+
+77
+00:02:16.490 --> 00:02:17.810
+enumerate, you're going to see
+
+78
+00:02:18.640 --> 00:02:20.160
+that we have the seasons.
+
+79
+00:02:20.160 --> 00:02:21.360
+This is exactly like
+
+80
+00:02:21.360 --> 00:02:23.680
+the problem statement that
+
+81
+00:02:23.680 --> 00:02:25.280
+we have in front of us.
+
+82
+00:02:25.280 --> 00:02:26.200
+Now we can go ahead
+
+83
+00:02:26.200 --> 00:02:27.680
+and create a list out of it.
+
+84
+00:02:27.680 --> 00:02:29.760
+Notice here the list and in the list
+
+85
+00:02:29.760 --> 00:02:31.920
+we are using this enumerate method
+
+86
+00:02:31.920 --> 00:02:33.999
+for this seasons and what we
+
+87
+00:02:33.999 --> 00:02:35.360
+get back of course it's a list.
+
+88
+00:02:35.360 --> 00:02:36.880
+So outer one is the list, we
+
+89
+00:02:36.880 --> 00:02:38.560
+get a list and inside this
+
+90
+00:02:38.560 --> 00:02:40.560
+we get each of the item being
+
+91
+00:02:40.560 --> 00:02:41.640
+numbered automatically.
+
+92
+00:02:41.640 --> 00:02:44.530
+So the spring gets zero, one gets
+
+93
+00:02:44.530 --> 00:02:46.250
+summer, or summer gets one,
+
+94
+00:02:46.250 --> 00:02:48.730
+fall gets two and three gets winter.
+
+95
+00:02:48.730 --> 00:02:50.650
+And notice here it says
+
+96
+00:02:50.650 --> 00:02:52.530
+enumerate and I can still give
+
+97
+00:02:52.530 --> 00:02:54.010
+the season and I can say hey, I want
+
+98
+00:02:54.010 --> 00:02:55.250
+to start with one, I don't
+
+99
+00:02:55.250 --> 00:02:56.650
+want to start with zero.
+
+100
+00:02:56.650 --> 00:02:58.370
+So this is also pretty
+
+101
+00:02:58.370 --> 00:02:59.290
+good, we can just go ahead
+
+102
+00:02:59.290 --> 00:03:01.130
+and start just like that.
+
+103
+00:03:01.130 --> 00:03:03.170
+So this is one of the way of how
+
+104
+00:03:03.170 --> 00:03:04.690
+you actually work with enumerate.
+
+105
+00:03:04.690 --> 00:03:05.930
+So this is one example that
+
+106
+00:03:05.930 --> 00:03:07.210
+is being given to us.
+
+107
+00:03:07.210 --> 00:03:09.010
+And surely numerate has more things
+
+108
+00:03:09.010 --> 00:03:11.100
+like it has a next take, it can
+
+109
+00:03:11.100 --> 00:03:12.140
+used as a generator,
+
+110
+00:03:12.140 --> 00:03:13.940
+iterators and lot of things we will
+
+111
+00:03:13.940 --> 00:03:15.340
+study about them later on.
+
+112
+00:03:15.340 --> 00:03:16.820
+But one of the another way this
+
+113
+00:03:16.820 --> 00:03:17.940
+is already you have seen, so no
+
+114
+00:03:17.940 --> 00:03:19.580
+need to discuss more on this.
+
+115
+00:03:19.580 --> 00:03:21.100
+Another way of handling this
+
+116
+00:03:21.100 --> 00:03:22.140
+is something like this.
+
+117
+00:03:22.140 --> 00:03:23.980
+So instead of printing it like this,
+
+118
+00:03:23.980 --> 00:03:25.740
+I can actually declare two variable.
+
+119
+00:03:25.740 --> 00:03:27.420
+The first one is index.
+
+120
+00:03:27.420 --> 00:03:28.340
+You can write the whole
+
+121
+00:03:28.340 --> 00:03:29.820
+index or IDX for short.
+
+122
+00:03:29.820 --> 00:03:30.700
+It doesn't really matter,
+
+123
+00:03:30.700 --> 00:03:31.900
+it's a variable name.
+
+124
+00:03:31.900 --> 00:03:33.460
+And the next thing that I'll say
+
+125
+00:03:33.460 --> 00:03:36.100
+is item and then I'll use the same
+
+126
+00:03:36.100 --> 00:03:38.500
+in and now interestingly I can
+
+127
+00:03:38.500 --> 00:03:40.290
+use enumerate and, and in this
+
+128
+00:03:40.290 --> 00:03:42.370
+enumerate I can pass on two things.
+
+129
+00:03:42.370 --> 00:03:44.170
+The first one is menu
+
+130
+00:03:44.170 --> 00:03:45.690
+and as we just saw we don't want
+
+131
+00:03:45.690 --> 00:03:46.490
+to start with zero.
+
+132
+00:03:46.490 --> 00:03:48.010
+So I'll just create a variable
+
+133
+00:03:48.010 --> 00:03:49.890
+which is start and I'll
+
+134
+00:03:49.890 --> 00:03:52.090
+provide start my value 1.
+
+135
+00:03:52.090 --> 00:03:53.370
+Now as we just saw here
+
+136
+00:03:53.370 --> 00:03:55.050
+in the enumerate portion
+
+137
+00:03:55.930 --> 00:03:57.330
+that now the value can start
+
+138
+00:03:57.330 --> 00:03:59.290
+with 1, 2 and all of that.
+
+139
+00:03:59.290 --> 00:04:00.690
+But when you loop through with
+
+140
+00:04:00.690 --> 00:04:02.810
+an enumerated list you can actually
+
+141
+00:04:02.810 --> 00:04:04.210
+use two variables because
+
+142
+00:04:04.210 --> 00:04:06.050
+notice here this is a tuple.
+
+143
+00:04:06.050 --> 00:04:07.730
+So every time the value gets
+
+144
+00:04:07.730 --> 00:04:09.620
+returned to you it's two set
+
+145
+00:04:09.620 --> 00:04:11.180
+of values one and two.
+
+146
+00:04:11.180 --> 00:04:13.020
+So this is our IDX or index
+
+147
+00:04:13.020 --> 00:04:15.180
+and this is our value itself.
+
+148
+00:04:15.180 --> 00:04:16.339
+So that is why I have two
+
+149
+00:04:16.339 --> 00:04:18.940
+variable here, IDX and item.
+
+150
+00:04:18.940 --> 00:04:20.500
+Once I'm here I can just go ahead
+
+151
+00:04:20.500 --> 00:04:21.660
+and use the classic print
+
+152
+00:04:21.660 --> 00:04:22.740
+statement with the formatted
+
+153
+00:04:22.740 --> 00:04:24.300
+string and I can say something
+
+154
+00:04:24.300 --> 00:04:27.460
+like this, this is going to put my
+
+155
+00:04:27.460 --> 00:04:31.340
+index and I'll just say item just
+
+156
+00:04:31.340 --> 00:04:33.580
+like this and chai.
+
+157
+00:04:33.580 --> 00:04:36.220
+So this is how we construct our menu.
+
+158
+00:04:36.220 --> 00:04:38.060
+Now if I run this program again,
+
+159
+00:04:38.060 --> 00:04:39.500
+you'll notice that the first
+
+160
+00:04:39.500 --> 00:04:42.040
+is greench, the second is lemon chai
+
+161
+00:04:42.570 --> 00:04:44.160
+the third is Spiced Chai
+
+162
+00:04:44.160 --> 00:04:45.960
+and the fourth is Mint chai.
+
+163
+00:04:45.960 --> 00:04:47.680
+So how nicely we have handled this
+
+164
+00:04:47.680 --> 00:04:49.560
+problem because we knew about
+
+165
+00:04:49.560 --> 00:04:52.040
+one more thing in our programming
+
+166
+00:04:52.040 --> 00:04:53.720
+tool belt, which is Enumerate.
+
+167
+00:04:53.720 --> 00:04:55.160
+It's a pretty interesting,
+
+168
+00:04:55.160 --> 00:04:57.200
+very powerful thing, and I highly
+
+169
+00:04:57.200 --> 00:04:58.280
+recommend to at least check
+
+170
+00:04:58.280 --> 00:04:59.280
+out this example as well.
+
+171
+00:04:59.280 --> 00:05:01.480
+This is a pretty beautiful example.
+
+172
+00:05:01.480 --> 00:05:03.040
+We are not yet capable
+
+173
+00:05:03.040 --> 00:05:04.560
+of understanding this yield yet,
+
+174
+00:05:04.560 --> 00:05:06.440
+but surely it will come on later on.
+
+175
+00:05:06.440 --> 00:05:07.800
+We are not skipping anything
+
+176
+00:05:07.800 --> 00:05:08.440
+in this course,
+
+177
+00:05:08.960 --> 00:05:10.080
+so I hope you have enjoyed this.
+
+178
+00:05:10.080 --> 00:05:11.400
+And Enumerate is actually
+
+179
+00:05:11.400 --> 00:05:12.480
+fun and pretty easy
+
+180
+00:05:12.480 --> 00:05:13.760
+to understand, especially after
+
+181
+00:05:13.760 --> 00:05:14.960
+watching this video.
+
+182
+00:05:14.960 --> 00:05:16.720
+Let's catch up in the next video.

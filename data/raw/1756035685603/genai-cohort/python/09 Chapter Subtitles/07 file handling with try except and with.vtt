@@ -1,0 +1,1301 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:02.680
+You are going to handle a lot
+
+2
+00:00:02.680 --> 00:00:03.960
+of files with Python.
+
+3
+00:00:03.960 --> 00:00:05.600
+This is a common thing that we do.
+
+4
+00:00:05.600 --> 00:00:09.320
+PDFs, CSVs, JSons, Excel file
+
+5
+00:00:09.320 --> 00:00:10.720
+and so many other formats that
+
+6
+00:00:10.720 --> 00:00:12.000
+I even don't know about them.
+
+7
+00:00:12.600 --> 00:00:13.680
+There are so many things
+
+8
+00:00:13.680 --> 00:00:15.440
+and Python handles everything,
+
+9
+00:00:15.440 --> 00:00:17.120
+but not natively.
+
+10
+00:00:17.120 --> 00:00:18.800
+There are different libraries that
+
+11
+00:00:18.800 --> 00:00:20.160
+actually helps you to understand
+
+12
+00:00:20.160 --> 00:00:21.760
+the whole process of them
+
+13
+00:00:21.760 --> 00:00:23.280
+and don't even worry about them.
+
+14
+00:00:23.280 --> 00:00:25.160
+For example, Pandas is one such
+
+15
+00:00:25.160 --> 00:00:27.000
+library which handles CSVs
+
+16
+00:00:27.000 --> 00:00:29.000
+and Excels and PDFs and so many
+
+17
+00:00:29.000 --> 00:00:31.050
+other formats super easily.
+
+18
+00:00:31.050 --> 00:00:33.210
+You don't even sweat at a little bit.
+
+19
+00:00:33.210 --> 00:00:35.130
+You just say, pandas,
+
+20
+00:00:35.130 --> 00:00:37.490
+opencsvs and open Python and just
+
+21
+00:00:37.490 --> 00:00:38.490
+provide the path and it
+
+22
+00:00:38.490 --> 00:00:39.330
+does everything for you.
+
+23
+00:00:39.330 --> 00:00:41.130
+And that's majorly is the job.
+
+24
+00:00:41.130 --> 00:00:42.570
+But you also should know how
+
+25
+00:00:42.570 --> 00:00:44.690
+to natively open all the files.
+
+26
+00:00:44.690 --> 00:00:45.849
+And that's exactly what
+
+27
+00:00:45.849 --> 00:00:46.450
+we're going to do.
+
+28
+00:00:46.450 --> 00:00:47.210
+In this video.
+
+29
+00:00:47.210 --> 00:00:48.330
+We'll see what are the
+
+30
+00:00:48.330 --> 00:00:49.650
+precautionary things you have
+
+31
+00:00:49.650 --> 00:00:50.850
+to take here while opening up
+
+32
+00:00:50.850 --> 00:00:52.490
+the file, what can go wrong and
+
+33
+00:00:52.490 --> 00:00:53.770
+how you can actually fix them,
+
+34
+00:00:53.770 --> 00:00:55.170
+and different ways of opening
+
+35
+00:00:55.170 --> 00:00:55.940
+up the file.
+
+36
+00:00:55.940 --> 00:00:57.380
+That's exactly what we'll be doing.
+
+37
+00:00:57.380 --> 00:00:58.900
+So let me take you onto the screen.
+
+38
+00:00:58.900 --> 00:01:00.900
+This is also a pretty fun lecture
+
+39
+00:01:00.900 --> 00:01:02.620
+to be honest, and you're going
+
+40
+00:01:02.620 --> 00:01:03.860
+to enjoy this one as well.
+
+41
+00:01:04.500 --> 00:01:07.060
+Let's close all of this and we'll
+
+42
+00:01:07.060 --> 00:01:08.900
+just open up a new file.
+
+43
+00:01:08.900 --> 00:01:10.980
+So since there we go, hopefully
+
+44
+00:01:10.980 --> 00:01:13.700
+good enough, I'll create a new file
+
+45
+00:01:13.700 --> 00:01:15.820
+and call this one as what?
+
+46
+00:01:15.820 --> 00:01:18.060
+0808.
+
+47
+00:01:18.060 --> 00:01:23.950
+This one is file handling, of course.
+
+48
+00:01:23.950 --> 00:01:26.150
+All right, now let me walk you
+
+49
+00:01:26.150 --> 00:01:27.990
+through what happens in this one.
+
+50
+00:01:27.990 --> 00:01:29.310
+And notice here we don't have
+
+51
+00:01:29.310 --> 00:01:30.830
+any other file or text file
+
+52
+00:01:30.830 --> 00:01:31.830
+into this one, but we want
+
+53
+00:01:31.830 --> 00:01:33.190
+to actually open up something.
+
+54
+00:01:33.190 --> 00:01:35.230
+Let's see what happens in that case.
+
+55
+00:01:35.790 --> 00:01:36.710
+Let's just say I want
+
+56
+00:01:36.710 --> 00:01:37.669
+to open up a file.
+
+57
+00:01:37.669 --> 00:01:38.910
+To open up any file, you
+
+58
+00:01:38.910 --> 00:01:40.430
+simply have an open method.
+
+59
+00:01:40.430 --> 00:01:41.830
+Yes, it's available directly
+
+60
+00:01:41.830 --> 00:01:42.750
+in the Python.
+
+61
+00:01:42.750 --> 00:01:44.390
+It's a file descriptor, which
+
+62
+00:01:44.390 --> 00:01:45.910
+means you can just open up a file.
+
+63
+00:01:45.910 --> 00:01:47.270
+You have to provide the file name
+
+64
+00:01:47.270 --> 00:01:48.550
+as well as in the mode
+
+65
+00:01:48.550 --> 00:01:50.130
+in which you want to open the file.
+
+66
+00:01:50.130 --> 00:01:50.440
+You.
+
+67
+00:01:50.440 --> 00:01:51.360
+And if you read more
+
+68
+00:01:51.360 --> 00:01:52.720
+of the documentation, they tell you
+
+69
+00:01:52.720 --> 00:01:54.200
+more about the modes of it.
+
+70
+00:01:54.200 --> 00:01:55.640
+Like you can open this up.
+
+71
+00:01:55.640 --> 00:01:57.560
+Notice, here they are having this W
+
+72
+00:01:57.560 --> 00:01:59.880
+for writing the mode, X.
+
+73
+00:02:00.600 --> 00:02:02.120
+So many modes are there,
+
+74
+00:02:02.120 --> 00:02:03.440
+hardly anybody uses them.
+
+75
+00:02:03.440 --> 00:02:05.280
+They are just basics.
+
+76
+00:02:05.280 --> 00:02:07.400
+Now that with the topic we have.
+
+77
+00:02:07.400 --> 00:02:08.199
+All right, so which
+
+78
+00:02:08.199 --> 00:02:09.160
+file you want to open?
+
+79
+00:02:09.160 --> 00:02:10.919
+I want to open a file order
+
+80
+00:02:10.919 --> 00:02:12.800
+Txt, but that file doesn't
+
+81
+00:02:12.800 --> 00:02:13.840
+exist in this folder.
+
+82
+00:02:13.840 --> 00:02:15.720
+You're absolutely correct.
+
+83
+00:02:15.720 --> 00:02:17.240
+Let's see if I want to open
+
+84
+00:02:17.240 --> 00:02:18.200
+this up into the right.
+
+85
+00:02:18.200 --> 00:02:19.720
+And as you can see, so many modes.
+
+86
+00:02:19.720 --> 00:02:22.060
+Write, write plus write plus tea.
+
+87
+00:02:22.060 --> 00:02:23.500
+Nobody remembers all of them.
+
+88
+00:02:23.500 --> 00:02:25.980
+I just know W means write.
+
+89
+00:02:25.980 --> 00:02:27.380
+And then I want to store
+
+90
+00:02:27.380 --> 00:02:28.900
+the reference of it into a variable.
+
+91
+00:02:28.900 --> 00:02:30.780
+Let's call this one as a file.
+
+92
+00:02:30.780 --> 00:02:31.740
+And I want to write
+
+93
+00:02:31.740 --> 00:02:32.500
+something into this.
+
+94
+00:02:32.500 --> 00:02:34.060
+So for this I can just say
+
+95
+00:02:34.060 --> 00:02:35.780
+file dot and notice here,
+
+96
+00:02:35.780 --> 00:02:37.580
+buffer close, close, detach.
+
+97
+00:02:37.580 --> 00:02:38.620
+So many things.
+
+98
+00:02:38.620 --> 00:02:39.660
+I just want to write
+
+99
+00:02:39.660 --> 00:02:40.780
+something into it.
+
+100
+00:02:40.780 --> 00:02:41.740
+There we go.
+
+101
+00:02:41.740 --> 00:02:45.340
+And I go ahead and say masala
+
+102
+00:02:45.980 --> 00:02:48.300
+chai and that will be two cups.
+
+103
+00:02:49.810 --> 00:02:50.530
+Two cups.
+
+104
+00:02:50.530 --> 00:02:51.250
+There we go.
+
+105
+00:02:51.250 --> 00:02:52.730
+Now what happened at this point,
+
+106
+00:02:52.730 --> 00:02:54.410
+let's just say when you come to
+
+107
+00:02:54.410 --> 00:02:55.730
+line number three, there is a code
+
+108
+00:02:55.730 --> 00:02:58.090
+which somehow happened and this
+
+109
+00:02:58.090 --> 00:02:59.490
+has crashed your program.
+
+110
+00:02:59.490 --> 00:03:00.450
+This is really bad.
+
+111
+00:03:00.450 --> 00:03:01.810
+Why you might be asking
+
+112
+00:03:01.810 --> 00:03:03.810
+the reason why this is bad is
+
+113
+00:03:03.810 --> 00:03:05.090
+this is your file.
+
+114
+00:03:05.090 --> 00:03:05.930
+So if I go ahead and.
+
+115
+00:03:05.930 --> 00:03:06.810
+Let's just say we have
+
+116
+00:03:06.810 --> 00:03:09.250
+a simple file, this is your file,
+
+117
+00:03:09.250 --> 00:03:10.330
+very teeny tiny one.
+
+118
+00:03:10.330 --> 00:03:11.490
+But this is your file
+
+119
+00:03:11.490 --> 00:03:13.650
+and this is your computer memory.
+
+120
+00:03:15.660 --> 00:03:16.820
+So if I go ahead and write
+
+121
+00:03:16.820 --> 00:03:18.700
+this, this is memory.
+
+122
+00:03:19.340 --> 00:03:21.340
+And any single time you try
+
+123
+00:03:21.340 --> 00:03:22.740
+to open up a file, it actually
+
+124
+00:03:22.740 --> 00:03:25.220
+takes this file from disk and loads
+
+125
+00:03:25.220 --> 00:03:26.540
+this file in the memory.
+
+126
+00:03:26.540 --> 00:03:27.780
+This is what we have done so far.
+
+127
+00:03:27.780 --> 00:03:28.860
+We have loaded this file
+
+128
+00:03:28.860 --> 00:03:29.380
+in the memory.
+
+129
+00:03:29.380 --> 00:03:30.339
+We are trying to write
+
+130
+00:03:30.339 --> 00:03:31.420
+that in the memory.
+
+131
+00:03:31.420 --> 00:03:32.980
+But just before we were trying
+
+132
+00:03:32.980 --> 00:03:34.900
+to just remove it from the memory
+
+133
+00:03:34.900 --> 00:03:36.620
+and put it into the disk again,
+
+134
+00:03:36.620 --> 00:03:38.220
+our program crashed.
+
+135
+00:03:38.220 --> 00:03:39.220
+Lot of things can happen.
+
+136
+00:03:39.220 --> 00:03:41.450
+This file entirely might corrupt.
+
+137
+00:03:41.450 --> 00:03:42.490
+This might corrupt some portion
+
+138
+00:03:42.490 --> 00:03:43.610
+of our memory so that other
+
+139
+00:03:43.610 --> 00:03:44.890
+program might get affected.
+
+140
+00:03:44.890 --> 00:03:46.290
+Hey, we are in a sensitive zone.
+
+141
+00:03:46.290 --> 00:03:47.370
+We are in the memory.
+
+142
+00:03:47.370 --> 00:03:49.210
+So anything happens at this position
+
+143
+00:03:49.210 --> 00:03:50.570
+is really, really bad.
+
+144
+00:03:50.570 --> 00:03:52.330
+You shouldn't do it like this.
+
+145
+00:03:52.330 --> 00:03:54.330
+So what could be the other thing?
+
+146
+00:03:54.330 --> 00:03:55.970
+The taking of reference is
+
+147
+00:03:55.970 --> 00:03:56.650
+of no problem.
+
+148
+00:03:56.650 --> 00:03:58.450
+Once you are writing the file or
+
+149
+00:03:58.450 --> 00:03:59.730
+doing something sensitive
+
+150
+00:03:59.730 --> 00:04:01.090
+operation that can be problem or
+
+151
+00:04:01.090 --> 00:04:03.370
+even you can open the file hole
+
+152
+00:04:03.370 --> 00:04:05.610
+in a closed sensitive manner.
+
+153
+00:04:05.610 --> 00:04:06.890
+I can just go ahead and take
+
+154
+00:04:06.890 --> 00:04:08.530
+this and I can say, hey, I want
+
+155
+00:04:08.530 --> 00:04:10.250
+to just go ahead and use try.
+
+156
+00:04:10.250 --> 00:04:10.660
+So.
+
+157
+00:04:10.660 --> 00:04:12.420
+So let's try to write into the file
+
+158
+00:04:12.420 --> 00:04:14.380
+and once we are all done, we can
+
+159
+00:04:14.380 --> 00:04:16.740
+go ahead and use finally in this.
+
+160
+00:04:16.740 --> 00:04:18.860
+And with the finally I can go ahead
+
+161
+00:04:18.860 --> 00:04:20.579
+and take this file and close this.
+
+162
+00:04:20.579 --> 00:04:21.860
+No matter what happens,
+
+163
+00:04:21.860 --> 00:04:23.780
+finally we just close the file.
+
+164
+00:04:23.780 --> 00:04:25.140
+Can we move this reference
+
+165
+00:04:25.140 --> 00:04:26.740
+also inside the try block?
+
+166
+00:04:26.740 --> 00:04:28.340
+Probably yes, we can actually
+
+167
+00:04:28.340 --> 00:04:29.540
+go ahead and do this.
+
+168
+00:04:29.540 --> 00:04:30.700
+Let's go ahead and try this.
+
+169
+00:04:30.700 --> 00:04:32.420
+What happens in this case
+
+170
+00:04:32.420 --> 00:04:35.020
+if I go ahead and say Python 3 this
+
+171
+00:04:35.020 --> 00:04:37.140
+will be a 08 and notice it.
+
+172
+00:04:37.890 --> 00:04:39.490
+So if you will notice closely,
+
+173
+00:04:39.490 --> 00:04:41.250
+which is little difficult.
+
+174
+00:04:41.250 --> 00:04:42.850
+So this actually creates an order.
+
+175
+00:04:42.850 --> 00:04:43.850
+Txt file?
+
+176
+00:04:43.850 --> 00:04:45.730
+Yeah, it didn't exist before.
+
+177
+00:04:45.730 --> 00:04:46.490
+So I'll just go ahead
+
+178
+00:04:46.490 --> 00:04:47.250
+and remove this again.
+
+179
+00:04:47.250 --> 00:04:48.090
+We can run the program
+
+180
+00:04:48.090 --> 00:04:48.930
+again, no problem.
+
+181
+00:04:50.050 --> 00:04:51.890
+I'll just go ahead and delete
+
+182
+00:04:51.890 --> 00:04:53.569
+this again just to show you
+
+183
+00:04:54.530 --> 00:04:55.730
+this file doesn't exist.
+
+184
+00:04:55.730 --> 00:04:58.450
+But when I run this now, there we go.
+
+185
+00:04:58.450 --> 00:04:58.770
+Order.
+
+186
+00:04:58.770 --> 00:05:00.130
+Txt magically appear.
+
+187
+00:05:00.130 --> 00:05:01.730
+We have created a file and we
+
+188
+00:05:01.730 --> 00:05:03.250
+have handled it gracefully.
+
+189
+00:05:03.790 --> 00:05:04.870
+But there is another way,
+
+190
+00:05:04.870 --> 00:05:06.510
+the modern way of handling this.
+
+191
+00:05:06.510 --> 00:05:07.910
+I'll keep all of this file with
+
+192
+00:05:07.910 --> 00:05:09.470
+you, all of the code with you, so
+
+193
+00:05:09.470 --> 00:05:10.830
+that you can use it later on.
+
+194
+00:05:11.630 --> 00:05:13.190
+And there's another way if you
+
+195
+00:05:13.190 --> 00:05:14.510
+don't want to use Try catch,
+
+196
+00:05:14.510 --> 00:05:15.870
+especially just with the file.
+
+197
+00:05:15.870 --> 00:05:17.790
+Python has a new operator known as
+
+198
+00:05:17.790 --> 00:05:19.669
+with this automatically
+
+199
+00:05:19.669 --> 00:05:20.710
+wraps everything in the Try
+
+200
+00:05:20.710 --> 00:05:21.670
+Catch does everything.
+
+201
+00:05:21.670 --> 00:05:22.350
+I'll show you behind
+
+202
+00:05:22.350 --> 00:05:23.710
+the scene as well.
+
+203
+00:05:23.710 --> 00:05:24.630
+Now you can just go
+
+204
+00:05:24.630 --> 00:05:25.790
+ahead and say open.
+
+205
+00:05:25.790 --> 00:05:26.790
+What do you want to open?
+
+206
+00:05:26.790 --> 00:05:27.470
+I want to open.
+
+207
+00:05:28.750 --> 00:05:29.150
+Open.
+
+208
+00:05:29.890 --> 00:05:32.370
+I want to open a file name as order.
+
+209
+00:05:32.370 --> 00:05:33.570
+Txt or orders.
+
+210
+00:05:33.570 --> 00:05:35.410
+Txt, whatever you want to open.
+
+211
+00:05:35.410 --> 00:05:36.650
+I want to open that up
+
+212
+00:05:36.650 --> 00:05:38.530
+into the right mode.
+
+213
+00:05:38.530 --> 00:05:39.650
+There we go.
+
+214
+00:05:39.650 --> 00:05:41.930
+And I will just say as file.
+
+215
+00:05:41.930 --> 00:05:43.530
+So instead of taking the variable
+
+216
+00:05:43.530 --> 00:05:44.730
+just like this, the syntax
+
+217
+00:05:44.730 --> 00:05:46.610
+is much simpler, easier.
+
+218
+00:05:46.610 --> 00:05:47.770
+Then I can just go ahead
+
+219
+00:05:47.770 --> 00:05:48.850
+and say I want to write
+
+220
+00:05:48.850 --> 00:05:50.210
+some order into this file.
+
+221
+00:05:50.210 --> 00:05:51.490
+I'll open this up and this
+
+222
+00:05:51.490 --> 00:05:53.490
+time I will say ginger T.
+
+223
+00:05:56.220 --> 00:05:57.660
+Ginger T.
+
+224
+00:05:57.660 --> 00:06:01.460
+And the ginger T will be four cups.
+
+225
+00:06:01.460 --> 00:06:02.620
+Four cups is good enough.
+
+226
+00:06:03.180 --> 00:06:03.980
+And that's it.
+
+227
+00:06:04.860 --> 00:06:06.220
+That is the whole code.
+
+228
+00:06:06.220 --> 00:06:07.460
+You don't close it, you
+
+229
+00:06:07.460 --> 00:06:08.500
+does nothing at all.
+
+230
+00:06:08.500 --> 00:06:11.339
+It happens everything safely
+
+231
+00:06:11.339 --> 00:06:12.940
+and it works magically.
+
+232
+00:06:12.940 --> 00:06:13.980
+It does everything behind
+
+233
+00:06:13.980 --> 00:06:14.700
+the scene for you.
+
+234
+00:06:14.700 --> 00:06:15.940
+So let's go ahead and delete
+
+235
+00:06:15.940 --> 00:06:17.420
+the order Txt again
+
+236
+00:06:18.380 --> 00:06:20.140
+and try it again one more time.
+
+237
+00:06:21.270 --> 00:06:22.350
+This is the modern
+
+238
+00:06:22.350 --> 00:06:23.310
+way, my favorite way.
+
+239
+00:06:23.310 --> 00:06:25.110
+And everybody uses this way.
+
+240
+00:06:25.110 --> 00:06:26.470
+So notice here everything
+
+241
+00:06:26.470 --> 00:06:28.030
+happens nicely easily.
+
+242
+00:06:28.030 --> 00:06:29.190
+Ginger teacup.
+
+243
+00:06:29.190 --> 00:06:30.830
+Now, what happens behind the scene is
+
+244
+00:06:30.830 --> 00:06:32.470
+something that you should also know
+
+245
+00:06:32.470 --> 00:06:34.070
+as soon as you take this file.
+
+246
+00:06:34.070 --> 00:06:36.070
+This file is an interesting one.
+
+247
+00:06:36.070 --> 00:06:37.910
+So if I go ahead and take this file,
+
+248
+00:06:38.550 --> 00:06:40.830
+this file variable is interesting.
+
+249
+00:06:40.830 --> 00:06:42.430
+As soon as you take a reference
+
+250
+00:06:42.430 --> 00:06:43.950
+of the context of the file,
+
+251
+00:06:43.950 --> 00:06:46.370
+it actually invokes a dunder.
+
+252
+00:06:46.370 --> 00:06:48.120
+There is another one dunder,
+
+253
+00:06:48.120 --> 00:06:50.280
+it says underscore, underscore,
+
+254
+00:06:51.000 --> 00:06:52.400
+enter underscore,
+
+255
+00:06:52.400 --> 00:06:54.280
+underscore and it executes.
+
+256
+00:06:54.920 --> 00:06:57.520
+This is one dunder which as soon as
+
+257
+00:06:57.520 --> 00:06:58.880
+you open up the file, this starts.
+
+258
+00:06:58.880 --> 00:06:59.840
+And as soon as you close
+
+259
+00:06:59.840 --> 00:07:01.720
+this file, this goes ahead
+
+260
+00:07:01.720 --> 00:07:03.560
+and runs another dunder.
+
+261
+00:07:03.560 --> 00:07:05.880
+If I can just unselect that.
+
+262
+00:07:05.880 --> 00:07:07.880
+And that says exit.
+
+263
+00:07:07.880 --> 00:07:08.360
+Yeah.
+
+264
+00:07:08.920 --> 00:07:11.400
+So like everything that you are
+
+265
+00:07:11.400 --> 00:07:12.920
+doing, appending the file, writing
+
+266
+00:07:12.920 --> 00:07:14.240
+into this, loading the memory.
+
+267
+00:07:14.240 --> 00:07:15.960
+This is one which is responsible
+
+268
+00:07:15.960 --> 00:07:17.480
+for loading this up in the memory.
+
+269
+00:07:17.990 --> 00:07:19.390
+This is the one which is responsible
+
+270
+00:07:19.390 --> 00:07:20.710
+for moving it out.
+
+271
+00:07:20.710 --> 00:07:21.710
+When you actually go ahead
+
+272
+00:07:21.710 --> 00:07:23.350
+and do this safely, like file
+
+273
+00:07:23.350 --> 00:07:25.070
+close, this is the dunder
+
+274
+00:07:25.070 --> 00:07:27.950
+which gets called FileExit.
+
+275
+00:07:27.950 --> 00:07:29.390
+Nobody uses that, but it
+
+276
+00:07:29.390 --> 00:07:31.190
+automatically closes the file.
+
+277
+00:07:31.190 --> 00:07:32.510
+While in the other hand, if you
+
+278
+00:07:32.510 --> 00:07:33.949
+read the documentation about the.
+
+279
+00:07:33.949 --> 00:07:35.950
+With this actually calls all these
+
+280
+00:07:35.950 --> 00:07:37.550
+dunders automatically for you.
+
+281
+00:07:37.550 --> 00:07:38.670
+So you don't have to worry about
+
+282
+00:07:38.670 --> 00:07:40.710
+closing the file, doing anything.
+
+283
+00:07:40.710 --> 00:07:41.670
+It just happens out
+
+284
+00:07:41.670 --> 00:07:43.190
+of the box and that is it.
+
+285
+00:07:43.190 --> 00:07:44.510
+You can open up literally any
+
+286
+00:07:44.510 --> 00:07:46.690
+file, but the format of supporting
+
+287
+00:07:46.690 --> 00:07:47.890
+the text is the easiest one.
+
+288
+00:07:47.890 --> 00:07:49.450
+But when you want to open the binary
+
+289
+00:07:49.450 --> 00:07:51.050
+files, you shouldn't be opening
+
+290
+00:07:51.050 --> 00:07:52.130
+up with the raw Python.
+
+291
+00:07:52.130 --> 00:07:53.770
+There are libraries like Pillow
+
+292
+00:07:53.770 --> 00:07:55.530
+and others which are designed for
+
+293
+00:07:56.090 --> 00:07:57.610
+specifically this purpose.
+
+294
+00:07:57.610 --> 00:07:59.170
+If you want to open CSV, we
+
+295
+00:07:59.170 --> 00:08:00.730
+have Pandas and other thousands
+
+296
+00:08:00.730 --> 00:08:01.770
+of libraries which can
+
+297
+00:08:01.770 --> 00:08:03.290
+actually do the job better.
+
+298
+00:08:03.290 --> 00:08:04.530
+So my recommendation is
+
+299
+00:08:04.530 --> 00:08:06.850
+beyond this, having this is
+
+300
+00:08:06.850 --> 00:08:08.010
+just a wastage of time.
+
+301
+00:08:08.010 --> 00:08:09.090
+You should be exploring
+
+302
+00:08:09.090 --> 00:08:09.730
+the libraries.
+
+303
+00:08:09.730 --> 00:08:11.380
+You know the syntax, you know
+
+304
+00:08:11.380 --> 00:08:13.100
+the behind the scene of what dunders
+
+305
+00:08:13.100 --> 00:08:14.860
+are actually responsible, what
+
+306
+00:08:14.860 --> 00:08:17.100
+can be the gotchas of doing this.
+
+307
+00:08:17.100 --> 00:08:18.660
+But apart from this, that is it.
+
+308
+00:08:18.660 --> 00:08:20.060
+That's majorly it.
+
+309
+00:08:20.060 --> 00:08:21.620
+Now surely some people discuss more
+
+310
+00:08:21.620 --> 00:08:23.580
+about the context and local context.
+
+311
+00:08:23.580 --> 00:08:24.580
+I don't think that's
+
+312
+00:08:24.580 --> 00:08:25.740
+necessary as of now.
+
+313
+00:08:25.740 --> 00:08:27.220
+Surely once you will need them,
+
+314
+00:08:27.220 --> 00:08:29.340
+you'll get to know more about them.
+
+315
+00:08:29.340 --> 00:08:30.980
+But I usually don't go much
+
+316
+00:08:30.980 --> 00:08:32.539
+beyond this, otherwise students
+
+317
+00:08:32.539 --> 00:08:34.140
+get too confused in that
+
+318
+00:08:34.140 --> 00:08:36.240
+this is it very simple lecture.
+
+319
+00:08:36.240 --> 00:08:37.870
+You, you understand the whole concept
+
+320
+00:08:37.870 --> 00:08:39.230
+behind the scene and that is it.
+
+321
+00:08:39.230 --> 00:08:40.070
+That is all you need.
+
+322
+00:08:40.070 --> 00:08:41.830
+Don't worry too much about that.
+
+323
+00:08:41.830 --> 00:08:43.470
+All right, that is it for this video.
+
+324
+00:08:43.470 --> 00:08:44.410
+Let's go ahead and catch
+
+325
+00:08:44.410 --> 00:08:45.350
+up in the next one.

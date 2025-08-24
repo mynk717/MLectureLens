@@ -1,0 +1,2105 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:02.960
+Hey there everyone and welcome
+
+2
+00:00:02.960 --> 00:00:05.000
+to the section of functions
+
+3
+00:00:05.000 --> 00:00:07.360
+in the udemy's Python course.
+
+4
+00:00:07.360 --> 00:00:08.920
+So in this course we are
+
+5
+00:00:08.920 --> 00:00:11.720
+learning a lot on Python and further
+
+6
+00:00:11.720 --> 00:00:12.800
+down we want to learn
+
+7
+00:00:12.800 --> 00:00:14.880
+and explore about functions.
+
+8
+00:00:14.880 --> 00:00:16.400
+Now functions are nothing
+
+9
+00:00:16.400 --> 00:00:17.760
+much more than a wrapper.
+
+10
+00:00:17.760 --> 00:00:19.160
+So they wrap your code
+
+11
+00:00:19.160 --> 00:00:20.920
+and make your code reusable.
+
+12
+00:00:20.920 --> 00:00:22.600
+But not only just reusable, it
+
+13
+00:00:22.600 --> 00:00:25.200
+has some more advantages of that.
+
+14
+00:00:25.200 --> 00:00:26.640
+And we're going to study each
+
+15
+00:00:26.640 --> 00:00:27.760
+of those advantages.
+
+16
+00:00:27.760 --> 00:00:29.280
+Not only we are going to study,
+
+17
+00:00:29.280 --> 00:00:31.040
+we do have a use case just like
+
+18
+00:00:31.040 --> 00:00:32.860
+a small story or a mini project.
+
+19
+00:00:32.860 --> 00:00:34.180
+And through that we are going
+
+20
+00:00:34.180 --> 00:00:36.060
+to learn about each individual
+
+21
+00:00:36.060 --> 00:00:37.460
+specification that why
+
+22
+00:00:37.460 --> 00:00:39.420
+the functions are being created.
+
+23
+00:00:39.420 --> 00:00:40.780
+Now functions are known with
+
+24
+00:00:40.780 --> 00:00:42.340
+variety of different names,
+
+25
+00:00:42.340 --> 00:00:44.740
+especially functions methods, you
+
+26
+00:00:44.740 --> 00:00:46.060
+can call them whatever you like,
+
+27
+00:00:46.060 --> 00:00:47.460
+the way how they are defined
+
+28
+00:00:47.460 --> 00:00:49.900
+exactly same but depends on where
+
+29
+00:00:49.900 --> 00:00:50.780
+you are defining.
+
+30
+00:00:50.780 --> 00:00:52.380
+Sometimes the naming might change
+
+31
+00:00:52.380 --> 00:00:54.220
+as you know programmers really
+
+32
+00:00:54.220 --> 00:00:55.420
+love to name things really
+
+33
+00:00:55.420 --> 00:00:56.900
+complex, although they are not
+
+34
+00:00:56.900 --> 00:00:58.180
+really complex under the hood
+
+35
+00:00:58.180 --> 00:01:00.020
+they does exactly the same kind
+
+36
+00:01:00.020 --> 00:01:00.860
+of a job.
+
+37
+00:01:00.860 --> 00:01:01.860
+So in this section we are
+
+38
+00:01:01.860 --> 00:01:02.740
+going to learn about them.
+
+39
+00:01:02.740 --> 00:01:04.599
+So let me take you up on to the
+
+40
+00:01:04.599 --> 00:01:07.000
+section and let me take you
+
+41
+00:01:07.000 --> 00:01:08.440
+onto the screen with the
+
+42
+00:01:09.120 --> 00:01:11.600
+screen, let me take you to the
+
+43
+00:01:11.600 --> 00:01:13.520
+screen with me so that we can
+
+44
+00:01:13.520 --> 00:01:14.120
+study.
+
+45
+00:01:14.120 --> 00:01:15.600
+Now not only that, we're going
+
+46
+00:01:15.600 --> 00:01:16.920
+to go ahead and write the code
+
+47
+00:01:16.920 --> 00:01:18.040
+along with me so that we
+
+48
+00:01:18.040 --> 00:01:19.719
+can actually truly understand
+
+49
+00:01:19.719 --> 00:01:21.400
+the meaning of all of them.
+
+50
+00:01:21.400 --> 00:01:22.720
+So I'll just arrange my
+
+51
+00:01:22.720 --> 00:01:24.360
+keyboard a little so that I
+
+52
+00:01:24.360 --> 00:01:26.520
+don't do much of the typos.
+
+53
+00:01:26.520 --> 00:01:28.680
+So we will have a simple
+
+54
+00:01:29.650 --> 00:01:31.250
+functions and just like that,
+
+55
+00:01:31.810 --> 00:01:33.450
+if I can write them better that
+
+56
+00:01:33.450 --> 00:01:35.170
+would be great functions.
+
+57
+00:01:35.170 --> 00:01:36.290
+There we go.
+
+58
+00:01:36.290 --> 00:01:39.010
+And let's start with pretty
+
+59
+00:01:39.010 --> 00:01:40.330
+much exploring about what
+
+60
+00:01:40.330 --> 00:01:41.770
+the functions are and how do
+
+61
+00:01:41.770 --> 00:01:43.090
+they work first of all.
+
+62
+00:01:43.650 --> 00:01:45.170
+So welcome to the topic
+
+63
+00:01:45.170 --> 00:01:47.010
+officially of the functions.
+
+64
+00:01:47.010 --> 00:01:49.170
+Now by the end of this whole
+
+65
+00:01:49.170 --> 00:01:50.930
+chapter and by the term chapter
+
+66
+00:01:50.930 --> 00:01:52.530
+means I mean to say the whole
+
+67
+00:01:52.530 --> 00:01:53.890
+section because we have a lot
+
+68
+00:01:53.890 --> 00:01:55.650
+of videos in this section as well.
+
+69
+00:01:55.650 --> 00:01:56.490
+You will be able to
+
+70
+00:01:56.490 --> 00:01:58.090
+understand the purpose and benefit
+
+71
+00:01:58.090 --> 00:01:58.690
+of the function.
+
+72
+00:01:58.690 --> 00:02:00.610
+Now this first video is, or probably
+
+73
+00:02:00.610 --> 00:02:02.110
+the first two videos are all
+
+74
+00:02:02.110 --> 00:02:03.630
+about understanding the purpose
+
+75
+00:02:03.630 --> 00:02:05.310
+and benefits of the function.
+
+76
+00:02:05.310 --> 00:02:06.830
+We will learn how we can create
+
+77
+00:02:06.830 --> 00:02:08.590
+a reusable and modular
+
+78
+00:02:08.590 --> 00:02:10.470
+code using the def keyword.
+
+79
+00:02:10.470 --> 00:02:12.030
+I'll show you that part as well.
+
+80
+00:02:12.030 --> 00:02:13.110
+And we want to improve
+
+81
+00:02:13.110 --> 00:02:15.070
+the readability, traceability,
+
+82
+00:02:15.070 --> 00:02:16.790
+maintainability with the function.
+
+83
+00:02:16.790 --> 00:02:17.670
+Now I know these are
+
+84
+00:02:17.670 --> 00:02:18.390
+really big words.
+
+85
+00:02:18.390 --> 00:02:20.030
+What do you mean by readability?
+
+86
+00:02:20.030 --> 00:02:21.470
+What do you mean by traceability
+
+87
+00:02:21.470 --> 00:02:22.910
+and maintainability?
+
+88
+00:02:22.910 --> 00:02:24.830
+We do have a separate example
+
+89
+00:02:24.830 --> 00:02:26.430
+for each one of These words
+
+90
+00:02:26.430 --> 00:02:27.550
+so that you truly understand.
+
+91
+00:02:27.550 --> 00:02:28.670
+Okay, this is why I'm
+
+92
+00:02:28.670 --> 00:02:29.710
+creating the function.
+
+93
+00:02:29.710 --> 00:02:30.710
+Otherwise your regular
+
+94
+00:02:30.710 --> 00:02:31.630
+code is working fine.
+
+95
+00:02:31.630 --> 00:02:32.390
+What's the need?
+
+96
+00:02:32.390 --> 00:02:33.210
+What's the problem?
+
+97
+00:02:33.210 --> 00:02:34.010
+Problem we are solving
+
+98
+00:02:34.010 --> 00:02:34.730
+with the functions.
+
+99
+00:02:34.730 --> 00:02:36.170
+We are going to focus on that.
+
+100
+00:02:36.730 --> 00:02:38.490
+After that we have break down
+
+101
+00:02:38.490 --> 00:02:41.370
+larger task into smaller steps using
+
+102
+00:02:41.370 --> 00:02:43.290
+well named function.
+
+103
+00:02:43.290 --> 00:02:44.970
+The well name here is a pretty
+
+104
+00:02:44.970 --> 00:02:46.010
+much big keyword here.
+
+105
+00:02:46.010 --> 00:02:46.930
+So make sure you pay
+
+106
+00:02:46.930 --> 00:02:48.730
+a huge attention on this.
+
+107
+00:02:48.730 --> 00:02:50.530
+Naming your variables as well
+
+108
+00:02:50.530 --> 00:02:51.730
+as your function is one
+
+109
+00:02:51.730 --> 00:02:53.290
+of the most important tasks.
+
+110
+00:02:53.290 --> 00:02:54.810
+This is written in the PEP
+
+111
+00:02:54.810 --> 00:02:56.730
+of Python as well and it's
+
+112
+00:02:56.730 --> 00:02:58.410
+in general good practice.
+
+113
+00:02:58.410 --> 00:02:59.650
+Your function should ideally
+
+114
+00:02:59.650 --> 00:03:01.060
+describe what it does
+
+115
+00:03:01.060 --> 00:03:03.380
+as descriptive as you want to be.
+
+116
+00:03:03.380 --> 00:03:05.060
+Make it really good so that
+
+117
+00:03:05.060 --> 00:03:06.780
+somebody don't have to ask anybody
+
+118
+00:03:06.780 --> 00:03:07.860
+or read the documentation.
+
+119
+00:03:07.860 --> 00:03:09.540
+The function should say it itself
+
+120
+00:03:09.540 --> 00:03:10.900
+that what we are going to be doing.
+
+121
+00:03:11.620 --> 00:03:13.500
+All right, I hope we are clear with
+
+122
+00:03:13.500 --> 00:03:14.980
+the agenda, what we are about to do.
+
+123
+00:03:14.980 --> 00:03:16.380
+And now we have a lot of tasks.
+
+124
+00:03:16.380 --> 00:03:17.270
+So we have this
+
+125
+00:03:17.270 --> 00:03:20.700
+task 1, 2, 3, 4 and 5.
+
+126
+00:03:20.700 --> 00:03:22.500
+So we have five of these tasks.
+
+127
+00:03:22.500 --> 00:03:24.460
+We'll try to do two tasks in this
+
+128
+00:03:24.460 --> 00:03:25.740
+video and three tasks we're going
+
+129
+00:03:25.740 --> 00:03:27.380
+to do in the next video itself.
+
+130
+00:03:27.890 --> 00:03:29.250
+Let's go ahead and study about.
+
+131
+00:03:29.250 --> 00:03:30.810
+So this is the task where we
+
+132
+00:03:30.810 --> 00:03:31.730
+are going to work on
+
+133
+00:03:32.590 --> 00:03:34.370
+reducing the code duplication.
+
+134
+00:03:34.370 --> 00:03:35.770
+So let me go ahead and move it
+
+135
+00:03:35.770 --> 00:03:36.890
+up here so that we can
+
+136
+00:03:36.890 --> 00:03:38.370
+actually understand this,
+
+137
+00:03:38.370 --> 00:03:39.810
+see it a little bit better.
+
+138
+00:03:39.810 --> 00:03:41.410
+So this is what we have.
+
+139
+00:03:42.290 --> 00:03:43.970
+I can expand this a little.
+
+140
+00:03:43.970 --> 00:03:44.770
+There we go.
+
+141
+00:03:44.770 --> 00:03:46.130
+Looks nice now.
+
+142
+00:03:46.130 --> 00:03:47.650
+So this is for reducing
+
+143
+00:03:47.650 --> 00:03:48.770
+the code duplication.
+
+144
+00:03:49.650 --> 00:03:50.250
+What do you mean
+
+145
+00:03:50.250 --> 00:03:51.650
+by even code duplication?
+
+146
+00:03:51.650 --> 00:03:53.370
+Sometimes the code that we
+
+147
+00:03:53.370 --> 00:03:54.850
+are writing needs to be utilized
+
+148
+00:03:54.850 --> 00:03:56.130
+at multiple places.
+
+149
+00:03:56.720 --> 00:03:58.080
+So why to write this code again
+
+150
+00:03:58.080 --> 00:04:00.440
+and again, Maybe we can wrap that up
+
+151
+00:04:00.440 --> 00:04:02.400
+in a function and wherever we need
+
+152
+00:04:02.400 --> 00:04:03.960
+we can actually call the same guy
+
+153
+00:04:03.960 --> 00:04:05.680
+because the functionality is same.
+
+154
+00:04:05.680 --> 00:04:06.920
+So here is a simple example
+
+155
+00:04:06.920 --> 00:04:08.240
+in front of us that we have.
+
+156
+00:04:08.800 --> 00:04:10.280
+You are managing a busy T
+
+157
+00:04:10.280 --> 00:04:12.239
+stall, which is a good stuff.
+
+158
+00:04:12.239 --> 00:04:13.920
+You receive many orders and want
+
+159
+00:04:13.920 --> 00:04:16.200
+to print each customer's name along
+
+160
+00:04:16.200 --> 00:04:18.200
+with the type of chai they ordered.
+
+161
+00:04:18.200 --> 00:04:19.390
+All right, pretty much
+
+162
+00:04:19.390 --> 00:04:21.680
+very much doable kind of a job.
+
+163
+00:04:21.680 --> 00:04:23.520
+And then it says task.
+
+164
+00:04:23.520 --> 00:04:24.920
+We have to do write a function
+
+165
+00:04:24.920 --> 00:04:26.160
+which says print order
+
+166
+00:04:26.680 --> 00:04:28.440
+and it prints the name and the type
+
+167
+00:04:28.440 --> 00:04:30.680
+of chai that the person wants.
+
+168
+00:04:30.680 --> 00:04:31.920
+Call it multiple times
+
+169
+00:04:31.920 --> 00:04:33.200
+for different customer.
+
+170
+00:04:33.200 --> 00:04:34.000
+All right, pretty good
+
+171
+00:04:34.000 --> 00:04:35.800
+example, pretty good one.
+
+172
+00:04:35.800 --> 00:04:36.880
+So let's go ahead
+
+173
+00:04:36.880 --> 00:04:38.460
+and work on with this.
+
+174
+00:04:38.460 --> 00:04:39.680
+This is the problem that
+
+175
+00:04:39.680 --> 00:04:40.920
+we are solving is reducing
+
+176
+00:04:40.920 --> 00:04:42.120
+the code duplication.
+
+177
+00:04:42.120 --> 00:04:43.960
+So let's go into function
+
+178
+00:04:43.960 --> 00:04:45.080
+create a New file.
+
+179
+00:04:45.080 --> 00:04:48.040
+And call this one as 01
+
+180
+00:04:49.720 --> 00:04:51.240
+and let's call this one as
+
+181
+00:04:51.240 --> 00:04:52.720
+duplication, because that's what
+
+182
+00:04:52.720 --> 00:04:53.920
+we are solving in this one.
+
+183
+00:04:53.920 --> 00:04:55.220
+Duplication Python.
+
+184
+00:04:55.770 --> 00:04:57.130
+All right, so what is
+
+185
+00:04:57.130 --> 00:04:58.490
+the task that we have to do?
+
+186
+00:04:58.490 --> 00:04:59.810
+First of all it's saying write
+
+187
+00:04:59.810 --> 00:05:01.530
+a function print order,
+
+188
+00:05:01.530 --> 00:05:03.690
+which accepts name and child types.
+
+189
+00:05:03.690 --> 00:05:04.490
+So let me tell you
+
+190
+00:05:04.490 --> 00:05:05.490
+how it's being done.
+
+191
+00:05:05.490 --> 00:05:06.650
+It's a super easy process,
+
+192
+00:05:06.650 --> 00:05:07.690
+don't you worry.
+
+193
+00:05:07.690 --> 00:05:09.010
+Every single function, whenever
+
+194
+00:05:09.010 --> 00:05:09.850
+you're writing, starts
+
+195
+00:05:09.850 --> 00:05:10.970
+with the keyword def, just
+
+196
+00:05:10.970 --> 00:05:12.730
+like we have if else for.
+
+197
+00:05:12.730 --> 00:05:14.170
+So it starts with def.
+
+198
+00:05:14.170 --> 00:05:15.170
+Then you simply go ahead
+
+199
+00:05:15.170 --> 00:05:16.370
+and write the function name.
+
+200
+00:05:16.370 --> 00:05:18.130
+So this is my function name
+
+201
+00:05:18.130 --> 00:05:20.330
+in this case print order.
+
+202
+00:05:20.330 --> 00:05:22.130
+And this is a valid function.
+
+203
+00:05:22.130 --> 00:05:23.330
+We can just put up a colon
+
+204
+00:05:23.330 --> 00:05:25.010
+and I'll come back to write the body
+
+205
+00:05:25.010 --> 00:05:25.970
+of the function that what
+
+206
+00:05:25.970 --> 00:05:27.670
+this function actually does.
+
+207
+00:05:27.670 --> 00:05:29.070
+I can just put a pass for
+
+208
+00:05:29.070 --> 00:05:30.190
+a moment here so that we
+
+209
+00:05:30.190 --> 00:05:31.110
+can come back later on.
+
+210
+00:05:31.110 --> 00:05:31.950
+Fill this up so that
+
+211
+00:05:31.950 --> 00:05:33.670
+syntax doesn't bother us.
+
+212
+00:05:33.670 --> 00:05:34.590
+Now whenever you need
+
+213
+00:05:34.590 --> 00:05:36.190
+to actually call this function, all
+
+214
+00:05:36.190 --> 00:05:37.310
+you have to do now is say
+
+215
+00:05:37.310 --> 00:05:39.030
+print order and execute this
+
+216
+00:05:39.030 --> 00:05:40.530
+function, just like we do.
+
+217
+00:05:40.530 --> 00:05:41.990
+The print just like this.
+
+218
+00:05:43.029 --> 00:05:45.110
+It is exactly same print was already
+
+219
+00:05:45.110 --> 00:05:46.710
+defined by the Python developers.
+
+220
+00:05:46.710 --> 00:05:47.670
+Print order is something
+
+221
+00:05:47.670 --> 00:05:48.950
+that we are defining.
+
+222
+00:05:48.950 --> 00:05:50.230
+I hope you got this.
+
+223
+00:05:50.230 --> 00:05:51.590
+Now we also have noticed that
+
+224
+00:05:51.590 --> 00:05:52.710
+in the print, sometimes we
+
+225
+00:05:52.710 --> 00:05:54.270
+actually put the strings and whole
+
+226
+00:05:54.270 --> 00:05:54.990
+lot of different things.
+
+227
+00:05:54.990 --> 00:05:56.930
+So this will print my name.
+
+228
+00:05:56.930 --> 00:05:58.450
+So print order can also
+
+229
+00:05:58.450 --> 00:06:00.290
+takes these parameters.
+
+230
+00:06:00.290 --> 00:06:03.250
+Notice here, this is there is a
+
+231
+00:06:03.250 --> 00:06:04.210
+different name when you actually
+
+232
+00:06:04.210 --> 00:06:05.570
+put the names here and when you
+
+233
+00:06:05.570 --> 00:06:06.770
+put the names here, although
+
+234
+00:06:06.770 --> 00:06:07.770
+they are the same thing, the
+
+235
+00:06:07.770 --> 00:06:09.370
+value is passed on directly like
+
+236
+00:06:09.370 --> 00:06:09.730
+this.
+
+237
+00:06:09.730 --> 00:06:10.770
+But there is a way
+
+238
+00:06:10.770 --> 00:06:11.849
+how we call them up.
+
+239
+00:06:11.849 --> 00:06:13.490
+And I'll show you what this is.
+
+240
+00:06:13.490 --> 00:06:14.690
+So what you accept here
+
+241
+00:06:14.690 --> 00:06:16.690
+is known as parameters.
+
+242
+00:06:16.690 --> 00:06:17.410
+Yep.
+
+243
+00:06:17.410 --> 00:06:18.930
+And when we actually pass up them
+
+244
+00:06:18.930 --> 00:06:20.930
+here, they are called as argument.
+
+245
+00:06:20.930 --> 00:06:22.250
+Yeah, Note them down
+
+246
+00:06:22.250 --> 00:06:23.090
+in your notebook.
+
+247
+00:06:23.090 --> 00:06:25.210
+It's important to be really clear
+
+248
+00:06:25.210 --> 00:06:26.930
+about what we call each things.
+
+249
+00:06:26.930 --> 00:06:28.530
+Programmers really love that.
+
+250
+00:06:28.530 --> 00:06:29.490
+So we're going to pass
+
+251
+00:06:29.490 --> 00:06:30.370
+parameters here.
+
+252
+00:06:30.370 --> 00:06:31.650
+Let's just say you accept two things.
+
+253
+00:06:31.650 --> 00:06:33.730
+The one is I accept names
+
+254
+00:06:33.730 --> 00:06:36.170
+and I also accept chaitype.
+
+255
+00:06:36.170 --> 00:06:37.329
+You can accept as many
+
+256
+00:06:37.329 --> 00:06:39.090
+parameters as you wish to have.
+
+257
+00:06:39.090 --> 00:06:40.170
+There is no stoppage.
+
+258
+00:06:40.170 --> 00:06:42.530
+You can also get no parameters.
+
+259
+00:06:42.530 --> 00:06:44.130
+You can get 3, 5,
+
+260
+00:06:44.130 --> 00:06:45.250
+whatever you wish to have.
+
+261
+00:06:45.810 --> 00:06:47.330
+Now after that we just simply
+
+262
+00:06:47.330 --> 00:06:48.370
+want to process this.
+
+263
+00:06:49.280 --> 00:06:50.520
+We will learn more about this.
+
+264
+00:06:50.520 --> 00:06:52.240
+Right now I just want to print it.
+
+265
+00:06:52.240 --> 00:06:53.840
+So we'll just say that, hey,
+
+266
+00:06:53.840 --> 00:06:55.760
+whatever the name you pass me up,
+
+267
+00:06:55.760 --> 00:06:57.520
+I'll just go ahead and use this.
+
+268
+00:06:57.520 --> 00:06:59.920
+So for this I have to say
+
+269
+00:06:59.920 --> 00:07:05.520
+this and say name ordered, ordered
+
+270
+00:07:05.520 --> 00:07:10.400
+and the chai type Chai type chai.
+
+271
+00:07:10.400 --> 00:07:11.320
+So this is the message
+
+272
+00:07:11.320 --> 00:07:12.560
+that I want to print.
+
+273
+00:07:12.560 --> 00:07:13.920
+Now the advantage of this
+
+274
+00:07:13.920 --> 00:07:15.800
+particular syntax is that I can
+
+275
+00:07:15.800 --> 00:07:17.080
+just pass on these parameter.
+
+276
+00:07:17.080 --> 00:07:19.470
+For example, just say aman
+
+277
+00:07:20.110 --> 00:07:23.390
+and he is ordering a chai of masala.
+
+278
+00:07:23.390 --> 00:07:24.430
+So this is masala.
+
+279
+00:07:24.430 --> 00:07:25.830
+But I can also duplicate this
+
+280
+00:07:25.830 --> 00:07:26.950
+and say that, hey, another
+
+281
+00:07:26.950 --> 00:07:29.350
+guy is ordering ginger.
+
+282
+00:07:29.350 --> 00:07:30.950
+And who is ordering Ginger?
+
+283
+00:07:30.950 --> 00:07:31.710
+Probably me.
+
+284
+00:07:32.270 --> 00:07:34.430
+And there's another guy who might
+
+285
+00:07:34.430 --> 00:07:35.800
+be ordering something else.
+
+286
+00:07:35.800 --> 00:07:37.550
+For example, let's just say jia
+
+287
+00:07:37.550 --> 00:07:42.190
+and she orders tulsi chai.
+
+288
+00:07:42.190 --> 00:07:42.750
+There we go.
+
+289
+00:07:42.750 --> 00:07:44.200
+And again, we don't have
+
+290
+00:07:44.200 --> 00:07:45.240
+to write this line again.
+
+291
+00:07:45.240 --> 00:07:47.080
+Again you don't get it much
+
+292
+00:07:47.080 --> 00:07:48.480
+because hey, it's just one line.
+
+293
+00:07:48.480 --> 00:07:49.800
+I could have done it here as well.
+
+294
+00:07:49.800 --> 00:07:50.760
+That's okay.
+
+295
+00:07:50.760 --> 00:07:52.080
+But it could be a long
+
+296
+00:07:52.080 --> 00:07:52.840
+printing statement.
+
+297
+00:07:52.840 --> 00:07:53.880
+I'll show you one more
+
+298
+00:07:53.880 --> 00:07:54.720
+example of this.
+
+299
+00:07:54.720 --> 00:07:56.360
+So we will first open this up
+
+300
+00:07:56.360 --> 00:07:58.920
+in a new in the integrated terminal
+
+301
+00:07:58.920 --> 00:08:02.680
+and then we are going to.
+
+302
+00:08:02.680 --> 00:08:03.800
+Let's open this again.
+
+303
+00:08:03.800 --> 00:08:05.280
+Too many terminals opened up.
+
+304
+00:08:05.280 --> 00:08:07.240
+Open an integrated terminal.
+
+305
+00:08:07.240 --> 00:08:08.480
+And now I can just go
+
+306
+00:08:08.480 --> 00:08:10.280
+ahead and say Python.
+
+307
+00:08:10.930 --> 00:08:12.330
+Let's go ahead and run 01
+
+308
+00:08:12.330 --> 00:08:14.210
+duplication and we can see
+
+309
+00:08:14.210 --> 00:08:16.290
+aman ordered masala chai Hitesh.
+
+310
+00:08:16.290 --> 00:08:17.650
+But now there is a problem.
+
+311
+00:08:17.650 --> 00:08:19.130
+The problem is simple that hey,
+
+312
+00:08:19.130 --> 00:08:20.250
+we don't want this message
+
+313
+00:08:20.250 --> 00:08:22.050
+like this name ordered chai.
+
+314
+00:08:23.410 --> 00:08:25.250
+Let's just say we want to add
+
+315
+00:08:25.250 --> 00:08:27.090
+maybe just an exclamation here
+
+316
+00:08:27.090 --> 00:08:28.050
+so we don't have to write
+
+317
+00:08:28.050 --> 00:08:29.490
+the exclamation three times.
+
+318
+00:08:29.490 --> 00:08:32.049
+This is something which is fun here.
+
+319
+00:08:32.049 --> 00:08:33.169
+And notice here, this is what
+
+320
+00:08:33.169 --> 00:08:34.809
+the reducing the code duplication.
+
+321
+00:08:34.809 --> 00:08:36.169
+We are not duplicating the code,
+
+322
+00:08:36.169 --> 00:08:37.809
+we just are appending this or
+
+323
+00:08:38.490 --> 00:08:39.929
+editing this at one place.
+
+324
+00:08:39.929 --> 00:08:41.690
+Now just by editing it one place I
+
+325
+00:08:41.690 --> 00:08:43.130
+can run the code again and I got
+
+326
+00:08:43.130 --> 00:08:45.610
+the exclamation every single place.
+
+327
+00:08:45.610 --> 00:08:47.130
+This is the advantage of it.
+
+328
+00:08:47.130 --> 00:08:48.170
+And I hope you understand
+
+329
+00:08:48.170 --> 00:08:49.170
+that we are reducing
+
+330
+00:08:49.170 --> 00:08:50.650
+the duplication of the code.
+
+331
+00:08:50.650 --> 00:08:52.130
+This piece of code, there could
+
+332
+00:08:52.130 --> 00:08:53.690
+be like 10 different lines.
+
+333
+00:08:53.690 --> 00:08:55.210
+There could be a call to a database,
+
+334
+00:08:55.210 --> 00:08:56.490
+There could be a lot of things
+
+335
+00:08:56.490 --> 00:08:58.290
+and those all lot of things
+
+336
+00:08:58.290 --> 00:09:00.330
+can be easily done at one place.
+
+337
+00:09:00.330 --> 00:09:01.930
+And whenever you want to use it,
+
+338
+00:09:01.930 --> 00:09:03.170
+you can just go ahead and pass
+
+339
+00:09:03.170 --> 00:09:04.570
+on different arguments.
+
+340
+00:09:04.570 --> 00:09:05.850
+Remember this is argument,
+
+341
+00:09:05.850 --> 00:09:06.970
+this is parameter.
+
+342
+00:09:07.880 --> 00:09:09.000
+So you can pass on different
+
+343
+00:09:09.000 --> 00:09:10.800
+arguments and can just get
+
+344
+00:09:10.800 --> 00:09:12.360
+the value a lot of time.
+
+345
+00:09:12.360 --> 00:09:14.040
+It just saves the time.
+
+346
+00:09:14.040 --> 00:09:15.480
+So this is one of the example
+
+347
+00:09:15.480 --> 00:09:17.480
+that we have now let's go ahead
+
+348
+00:09:17.480 --> 00:09:19.240
+and see another example here.
+
+349
+00:09:19.880 --> 00:09:21.600
+We'll do two examples in this one
+
+350
+00:09:21.600 --> 00:09:22.760
+which will help you to Understand
+
+351
+00:09:22.760 --> 00:09:24.400
+more about the functions and as
+
+352
+00:09:24.400 --> 00:09:26.080
+I say, the more you write the code,
+
+353
+00:09:26.080 --> 00:09:27.480
+the better it is for you.
+
+354
+00:09:27.480 --> 00:09:28.600
+All right, so let's go
+
+355
+00:09:28.600 --> 00:09:30.840
+ahead and get this one up.
+
+356
+00:09:31.560 --> 00:09:32.640
+So what the next problem
+
+357
+00:09:32.640 --> 00:09:34.380
+statement say to us?
+
+358
+00:09:34.380 --> 00:09:35.460
+All right, hope this is
+
+359
+00:09:35.460 --> 00:09:36.740
+much more visible now.
+
+360
+00:09:36.740 --> 00:09:37.420
+There we go.
+
+361
+00:09:38.300 --> 00:09:39.540
+So next one is splitting
+
+362
+00:09:39.540 --> 00:09:40.660
+the complex task.
+
+363
+00:09:40.660 --> 00:09:41.660
+All right, so let's just
+
+364
+00:09:41.660 --> 00:09:42.660
+see what the problem says.
+
+365
+00:09:42.660 --> 00:09:44.300
+The problem statement says
+
+366
+00:09:44.300 --> 00:09:46.380
+you are creating a monthly report
+
+367
+00:09:46.380 --> 00:09:48.300
+for a cafe's sale.
+
+368
+00:09:48.300 --> 00:09:49.260
+Pretty much doable.
+
+369
+00:09:49.820 --> 00:09:51.460
+Instead of putting all logic
+
+370
+00:09:51.460 --> 00:09:53.260
+in one place, break it down.
+
+371
+00:09:53.260 --> 00:09:55.140
+Task and write a function,
+
+372
+00:09:55.140 --> 00:09:56.940
+generate report that calls
+
+373
+00:09:56.940 --> 00:09:59.660
+fetch sales, filter valid orders
+
+374
+00:09:59.660 --> 00:10:01.170
+and summarize the data.
+
+375
+00:10:01.170 --> 00:10:02.410
+All right, so this time we are
+
+376
+00:10:02.410 --> 00:10:04.690
+creating different methods and each
+
+377
+00:10:04.690 --> 00:10:07.010
+method is doing some complex task.
+
+378
+00:10:07.010 --> 00:10:09.090
+And that is also one of the key thing
+
+379
+00:10:09.090 --> 00:10:10.610
+about the functions which
+
+380
+00:10:10.610 --> 00:10:12.450
+is splitting the complex task.
+
+381
+00:10:12.450 --> 00:10:13.650
+So we are splitting that.
+
+382
+00:10:13.650 --> 00:10:14.770
+How do we generate the report?
+
+383
+00:10:14.770 --> 00:10:16.800
+We'll keep this somewhere, safe.
+
+384
+00:10:16.800 --> 00:10:18.250
+How do we fetch the sales?
+
+385
+00:10:18.250 --> 00:10:20.450
+We keep it separate and filter valid.
+
+386
+00:10:20.450 --> 00:10:21.770
+So all of these things are
+
+387
+00:10:21.770 --> 00:10:23.290
+definitely reusable, but they are
+
+388
+00:10:23.290 --> 00:10:24.530
+performing each of the task.
+
+389
+00:10:24.530 --> 00:10:25.890
+And maybe you're working in a team.
+
+390
+00:10:25.890 --> 00:10:27.970
+So each team member is doing
+
+391
+00:10:27.970 --> 00:10:29.690
+a different complex task.
+
+392
+00:10:29.690 --> 00:10:31.170
+Let's go ahead and try to work
+
+393
+00:10:31.170 --> 00:10:32.890
+on this complex task as well.
+
+394
+00:10:32.890 --> 00:10:34.850
+Let's close this one and see
+
+395
+00:10:34.850 --> 00:10:36.010
+how that can be done.
+
+396
+00:10:36.010 --> 00:10:39.490
+Let's create a new file 02 and we
+
+397
+00:10:39.490 --> 00:10:44.170
+will say complex python, not js.
+
+398
+00:10:44.170 --> 00:10:46.370
+All right, so the first part
+
+399
+00:10:46.370 --> 00:10:48.810
+of my problem is to fetch the sales.
+
+400
+00:10:48.810 --> 00:10:50.050
+I don't know how to fetch
+
+401
+00:10:50.050 --> 00:10:51.290
+the sales as of now, but I
+
+402
+00:10:51.290 --> 00:10:52.290
+can mimic the functions.
+
+403
+00:10:52.290 --> 00:10:53.410
+I can just go ahead and call
+
+404
+00:10:53.410 --> 00:10:55.140
+the fetch underscore
+
+405
+00:10:55.140 --> 00:10:56.500
+sales and assume that
+
+406
+00:10:56.500 --> 00:10:57.740
+it does complex tasks.
+
+407
+00:10:57.740 --> 00:10:59.700
+Maybe you provide some CSV file
+
+408
+00:10:59.700 --> 00:11:00.580
+into it and all of that.
+
+409
+00:11:00.580 --> 00:11:01.820
+We'll do that later on.
+
+410
+00:11:01.820 --> 00:11:03.220
+Right now I just want to print
+
+411
+00:11:03.220 --> 00:11:04.460
+a message that okay, sales
+
+412
+00:11:04.460 --> 00:11:06.180
+report is generated or it
+
+413
+00:11:06.180 --> 00:11:08.380
+is fetching the sales data.
+
+414
+00:11:08.380 --> 00:11:09.660
+So we'll just say
+
+415
+00:11:09.660 --> 00:11:12.420
+fetching the sales data all.
+
+416
+00:11:12.420 --> 00:11:12.620
+Right.
+
+417
+00:11:12.620 --> 00:11:14.140
+It has done its job.
+
+418
+00:11:14.140 --> 00:11:15.660
+This is one function.
+
+419
+00:11:15.660 --> 00:11:16.700
+What could be another
+
+420
+00:11:16.700 --> 00:11:17.900
+function that we can use?
+
+421
+00:11:18.460 --> 00:11:19.910
+Another function is
+
+422
+00:11:19.910 --> 00:11:21.830
+filter valid orders all.
+
+423
+00:11:21.830 --> 00:11:23.190
+Right, so this one says
+
+424
+00:11:23.830 --> 00:11:30.830
+my job is filter valid sales.
+
+425
+00:11:30.830 --> 00:11:32.870
+This is what I do, how I do it.
+
+426
+00:11:32.870 --> 00:11:33.830
+We will learn about those
+
+427
+00:11:33.830 --> 00:11:35.070
+things later on in the project,
+
+428
+00:11:35.070 --> 00:11:36.230
+but right now we're just
+
+429
+00:11:36.230 --> 00:11:37.910
+focusing on the function.
+
+430
+00:11:37.910 --> 00:11:39.830
+So I'll just go ahead and say print
+
+431
+00:11:40.710 --> 00:11:41.790
+and this is going
+
+432
+00:11:41.790 --> 00:11:44.230
+to go ahead and say filtering
+
+433
+00:11:45.680 --> 00:11:50.800
+valid valid sales data.
+
+434
+00:11:50.800 --> 00:11:52.920
+All right, and what's the third
+
+435
+00:11:52.920 --> 00:11:54.080
+thing that we have to do?
+
+436
+00:11:55.520 --> 00:11:56.960
+Summarize the data.
+
+437
+00:11:56.960 --> 00:11:58.160
+All right, no problem,
+
+438
+00:12:00.240 --> 00:12:01.760
+summarize the data.
+
+439
+00:12:02.800 --> 00:12:04.320
+So this summarize the data.
+
+440
+00:12:04.320 --> 00:12:06.960
+All it does is pretty simple.
+
+441
+00:12:07.600 --> 00:12:08.720
+Oops, my bad.
+
+442
+00:12:09.360 --> 00:12:10.560
+Summarize the data.
+
+443
+00:12:10.560 --> 00:12:11.990
+Syntax mistake.
+
+444
+00:12:11.990 --> 00:12:12.710
+And there we go.
+
+445
+00:12:12.710 --> 00:12:14.750
+And we are going to go ahead and say
+
+446
+00:12:14.750 --> 00:12:19.350
+this is summarizing sales data.
+
+447
+00:12:19.350 --> 00:12:20.950
+Hopefully that's the sales data.
+
+448
+00:12:20.950 --> 00:12:22.590
+But I hope you can see that how we
+
+449
+00:12:22.590 --> 00:12:24.110
+have splitted the complex task
+
+450
+00:12:24.110 --> 00:12:25.390
+into different this could be one
+
+451
+00:12:25.390 --> 00:12:26.830
+line, this could be hundred lines,
+
+452
+00:12:26.830 --> 00:12:27.989
+or probably thousand lines.
+
+453
+00:12:27.989 --> 00:12:28.590
+There could be more.
+
+454
+00:12:28.590 --> 00:12:30.550
+Usually it's not thousand lines,
+
+455
+00:12:30.550 --> 00:12:32.350
+but I'm exaggerating to make sure
+
+456
+00:12:32.350 --> 00:12:33.590
+that you are understanding.
+
+457
+00:12:33.590 --> 00:12:34.750
+And finally we can do
+
+458
+00:12:34.750 --> 00:12:35.830
+is generate report.
+
+459
+00:12:35.830 --> 00:12:38.150
+When the report is generating, we
+
+460
+00:12:38.150 --> 00:12:39.550
+have to call all of these functions.
+
+461
+00:12:39.550 --> 00:12:40.830
+So it's also pretty doable.
+
+462
+00:12:40.830 --> 00:12:42.190
+It's pretty simple.
+
+463
+00:12:42.190 --> 00:12:43.870
+Let's just say I am going to call
+
+464
+00:12:43.870 --> 00:12:48.030
+this one as generate report report.
+
+465
+00:12:49.310 --> 00:12:51.470
+And in this method all we do is
+
+466
+00:12:52.030 --> 00:12:53.869
+first of all we fetch the sales.
+
+467
+00:12:53.869 --> 00:12:56.270
+So there we go, sales data is done.
+
+468
+00:12:56.270 --> 00:12:58.030
+How complex this is, I don't really
+
+469
+00:12:58.030 --> 00:12:59.870
+care, I am just calling the methods
+
+470
+00:12:59.870 --> 00:13:02.510
+just like I've been doing so far.
+
+471
+00:13:02.510 --> 00:13:03.670
+Filter valid sales.
+
+472
+00:13:03.670 --> 00:13:05.500
+There we go, done that task.
+
+473
+00:13:05.500 --> 00:13:06.860
+And now after that we
+
+474
+00:13:06.860 --> 00:13:07.900
+summarize the data.
+
+475
+00:13:07.900 --> 00:13:08.860
+So there we go.
+
+476
+00:13:08.860 --> 00:13:10.100
+And finally we just go
+
+477
+00:13:10.100 --> 00:13:11.540
+ahead and print the ready,
+
+478
+00:13:11.540 --> 00:13:13.020
+report ready message.
+
+479
+00:13:13.020 --> 00:13:14.220
+So I'll just say print.
+
+480
+00:13:15.260 --> 00:13:17.900
+I will say report is ready.
+
+481
+00:13:17.900 --> 00:13:18.700
+There we go.
+
+482
+00:13:18.700 --> 00:13:20.139
+This is how it's literally
+
+483
+00:13:20.139 --> 00:13:21.380
+easy to work with that.
+
+484
+00:13:21.380 --> 00:13:22.940
+Let's go ahead and execute this
+
+485
+00:13:22.940 --> 00:13:25.020
+as well so that we get the idea.
+
+486
+00:13:25.740 --> 00:13:27.740
+So we'll say Python 3 this time
+
+487
+00:13:27.740 --> 00:13:30.940
+we'll print the complex PI and we
+
+488
+00:13:30.940 --> 00:13:32.380
+forgot to call the function.
+
+489
+00:13:32.950 --> 00:13:33.630
+If you're not going
+
+490
+00:13:33.630 --> 00:13:34.590
+to call the function, this
+
+491
+00:13:34.590 --> 00:13:35.670
+is how it will behave.
+
+492
+00:13:35.670 --> 00:13:37.830
+So this all task is being done.
+
+493
+00:13:37.830 --> 00:13:38.990
+But remember you have never
+
+494
+00:13:38.990 --> 00:13:40.470
+called this particular method.
+
+495
+00:13:40.470 --> 00:13:41.750
+You have called other methods,
+
+496
+00:13:41.750 --> 00:13:43.990
+but these methods are called
+
+497
+00:13:43.990 --> 00:13:45.590
+when this method is called.
+
+498
+00:13:45.590 --> 00:13:46.510
+Pretty good catch that
+
+499
+00:13:46.510 --> 00:13:47.510
+we have done here.
+
+500
+00:13:47.510 --> 00:13:48.909
+So all I have to do is once all
+
+501
+00:13:48.909 --> 00:13:50.350
+of this is done then we have
+
+502
+00:13:50.350 --> 00:13:52.030
+to say what's the name?
+
+503
+00:13:52.030 --> 00:13:52.870
+Generate report.
+
+504
+00:13:54.870 --> 00:13:56.150
+Generate report.
+
+505
+00:13:56.150 --> 00:13:57.310
+Call this method just
+
+506
+00:13:57.310 --> 00:13:58.070
+like you call print.
+
+507
+00:13:58.070 --> 00:14:00.710
+And now these are all definitions.
+
+508
+00:14:00.710 --> 00:14:02.230
+So as soon as you use the def,
+
+509
+00:14:02.230 --> 00:14:03.270
+that means you are providing
+
+510
+00:14:03.270 --> 00:14:04.540
+a definition of function.
+
+511
+00:14:05.170 --> 00:14:07.170
+This is where you use the function.
+
+512
+00:14:07.170 --> 00:14:08.250
+All right, let's go
+
+513
+00:14:08.250 --> 00:14:08.890
+ahead and run this.
+
+514
+00:14:08.890 --> 00:14:10.490
+So notice here it says
+
+515
+00:14:10.490 --> 00:14:12.130
+fetching the sales data.
+
+516
+00:14:12.130 --> 00:14:14.130
+Filtering the valid sales data,
+
+517
+00:14:14.130 --> 00:14:15.570
+summarizing the sales data
+
+518
+00:14:15.570 --> 00:14:18.370
+and then says report is ready.
+
+519
+00:14:18.370 --> 00:14:19.250
+So there we go.
+
+520
+00:14:19.250 --> 00:14:20.810
+Pretty good, pretty fun exercise.
+
+521
+00:14:20.810 --> 00:14:22.370
+I hope you have enjoyed this.
+
+522
+00:14:22.370 --> 00:14:23.370
+So this is the part where
+
+523
+00:14:23.370 --> 00:14:24.610
+we have the basics done.
+
+524
+00:14:24.610 --> 00:14:25.970
+We have three more exercises
+
+525
+00:14:25.970 --> 00:14:27.130
+to be done, but let's go ahead
+
+526
+00:14:27.130 --> 00:14:28.610
+and do them in the next video.

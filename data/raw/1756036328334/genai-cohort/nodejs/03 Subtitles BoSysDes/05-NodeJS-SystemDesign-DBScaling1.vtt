@@ -1,0 +1,781 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:01.960
+All right, so you have done a good
+
+2
+00:00:01.960 --> 00:00:03.640
+job in scaling your servers
+
+3
+00:00:03.640 --> 00:00:05.440
+both vertically and horizontally.
+
+4
+00:00:05.440 --> 00:00:06.800
+But guys, what about
+
+5
+00:00:06.800 --> 00:00:08.000
+this little piece?
+
+6
+00:00:08.000 --> 00:00:09.360
+What about the database?
+
+7
+00:00:09.360 --> 00:00:11.400
+Because when load increases, it
+
+8
+00:00:11.400 --> 00:00:13.040
+is not only about the server.
+
+9
+00:00:13.040 --> 00:00:14.280
+It's a good thing that you have
+
+10
+00:00:14.280 --> 00:00:15.500
+already scaled your server.
+
+11
+00:00:15.500 --> 00:00:16.760
+But your database also
+
+12
+00:00:16.760 --> 00:00:18.040
+becomes a bottleneck.
+
+13
+00:00:18.040 --> 00:00:19.280
+So let's understand how can
+
+14
+00:00:19.280 --> 00:00:20.680
+we scale the data layer,
+
+15
+00:00:20.680 --> 00:00:22.560
+also known as the database.
+
+16
+00:00:22.560 --> 00:00:24.040
+So one way is very simple that what
+
+17
+00:00:24.040 --> 00:00:26.100
+I can do is when my email know,
+
+18
+00:00:26.100 --> 00:00:28.160
+the scale is increasing, when my
+
+19
+00:00:28.160 --> 00:00:30.280
+users are increasing, I can also
+
+20
+00:00:30.280 --> 00:00:32.640
+give more compute power to my
+
+21
+00:00:32.640 --> 00:00:33.400
+database.
+
+22
+00:00:33.400 --> 00:00:36.140
+If my database was originally 2,
+
+23
+00:00:36.140 --> 00:00:38.280
+4 CPU, let's say 4 CPU,
+
+24
+00:00:38.280 --> 00:00:40.560
+CPUs, I can make it 8, I can
+
+25
+00:00:40.560 --> 00:00:42.720
+make it 12, I can make it 20,
+
+26
+00:00:42.720 --> 00:00:44.280
+I can make it like 36, right?
+
+27
+00:00:44.280 --> 00:00:45.640
+I can make it 128.
+
+28
+00:00:45.640 --> 00:00:47.080
+So what I can do is I can still
+
+29
+00:00:47.080 --> 00:00:48.920
+have a single database instance
+
+30
+00:00:48.920 --> 00:00:51.160
+running and then based on the
+
+31
+00:00:51.160 --> 00:00:52.920
+load, based on how many active
+
+32
+00:00:52.920 --> 00:00:55.320
+users I have, I can make this
+
+33
+00:00:55.320 --> 00:00:56.440
+particular database more
+
+34
+00:00:56.440 --> 00:00:56.880
+powerful.
+
+35
+00:00:56.880 --> 00:00:58.340
+So this is one way of scaling,
+
+36
+00:00:58.340 --> 00:01:00.100
+but still the same problem
+
+37
+00:01:00.100 --> 00:01:01.460
+number one single point
+
+38
+00:01:01.460 --> 00:01:02.860
+of failure that what happens if
+
+39
+00:01:02.860 --> 00:01:04.420
+this database goes down?
+
+40
+00:01:04.420 --> 00:01:06.060
+Secondly, what happens if
+
+41
+00:01:06.060 --> 00:01:07.380
+this database goes down?
+
+42
+00:01:07.380 --> 00:01:09.380
+My all data is lost.
+
+43
+00:01:09.940 --> 00:01:12.620
+So yes, you can make the databases
+
+44
+00:01:12.620 --> 00:01:13.739
+more powerful by adding
+
+45
+00:01:13.739 --> 00:01:15.860
+more CPUs and more power to it.
+
+46
+00:01:15.860 --> 00:01:17.340
+But that's not the right way
+
+47
+00:01:17.340 --> 00:01:18.980
+to scale a database.
+
+48
+00:01:18.980 --> 00:01:20.180
+Now you might be thinking
+
+49
+00:01:20.180 --> 00:01:21.940
+that how can we actually
+
+50
+00:01:21.940 --> 00:01:23.300
+scale a database, right?
+
+51
+00:01:24.080 --> 00:01:25.240
+Vertical scaling is good, it
+
+52
+00:01:25.240 --> 00:01:26.560
+works, it works out of the box.
+
+53
+00:01:26.560 --> 00:01:27.320
+But now you will be
+
+54
+00:01:27.320 --> 00:01:28.440
+thinking, hey Piyush, what
+
+55
+00:01:28.440 --> 00:01:29.560
+about horizontal scaling?
+
+56
+00:01:29.560 --> 00:01:31.040
+Let's add more databases.
+
+57
+00:01:31.040 --> 00:01:33.040
+So technically that is not possible.
+
+58
+00:01:33.040 --> 00:01:34.800
+You cannot add more databases
+
+59
+00:01:34.800 --> 00:01:36.520
+because database is not a server,
+
+60
+00:01:36.520 --> 00:01:38.080
+it's not a stateless thing.
+
+61
+00:01:38.080 --> 00:01:40.240
+It is something which holds a data.
+
+62
+00:01:40.240 --> 00:01:42.400
+So you cannot really scale a database
+
+63
+00:01:42.400 --> 00:01:43.480
+like this because let's say you
+
+64
+00:01:43.480 --> 00:01:45.320
+have some data here, you have some
+
+65
+00:01:45.320 --> 00:01:47.120
+data here, you have some data here.
+
+66
+00:01:47.120 --> 00:01:48.640
+So if you are actually
+
+67
+00:01:48.640 --> 00:01:50.360
+making it horizontal, how will
+
+68
+00:01:50.360 --> 00:01:51.920
+you keep the data in sync?
+
+69
+00:01:52.750 --> 00:01:54.430
+Are you also copying the data?
+
+70
+00:01:54.430 --> 00:01:55.950
+If you are copying the data, then
+
+71
+00:01:55.950 --> 00:01:57.230
+what's the point of scaling?
+
+72
+00:01:57.230 --> 00:01:59.070
+Or are you actually
+
+73
+00:01:59.070 --> 00:02:00.270
+dividing the data?
+
+74
+00:02:00.270 --> 00:02:02.110
+If you are dividing the data, then
+
+75
+00:02:02.110 --> 00:02:03.950
+how you will know that which data is
+
+76
+00:02:03.950 --> 00:02:06.110
+in which server instance?
+
+77
+00:02:06.110 --> 00:02:08.430
+So let's understand, how can we,
+
+78
+00:02:08.430 --> 00:02:10.710
+you know, scale the database
+
+79
+00:02:10.710 --> 00:02:12.230
+in this particular architecture?
+
+80
+00:02:12.230 --> 00:02:15.310
+Okay, the first way is actually
+
+81
+00:02:15.310 --> 00:02:17.110
+something known as having more
+
+82
+00:02:17.110 --> 00:02:19.120
+replicas, kind of like horizontal
+
+83
+00:02:19.120 --> 00:02:20.360
+scaling, but not exactly.
+
+84
+00:02:20.360 --> 00:02:25.160
+So we can say multi replica of db.
+
+85
+00:02:25.160 --> 00:02:27.120
+But in this particular scenario,
+
+86
+00:02:27.120 --> 00:02:28.760
+when we talk about multi replica
+
+87
+00:02:28.760 --> 00:02:30.200
+of db, we follow
+
+88
+00:02:30.200 --> 00:02:32.560
+an architecture or an algorithm
+
+89
+00:02:32.560 --> 00:02:35.480
+Known as master slave architecture.
+
+90
+00:02:36.040 --> 00:02:37.560
+In this particular thing, what
+
+91
+00:02:37.560 --> 00:02:40.120
+happens is you have one master,
+
+92
+00:02:40.760 --> 00:02:42.440
+this is your one master,
+
+93
+00:02:42.440 --> 00:02:44.760
+and you have multiple slaves, so
+
+94
+00:02:44.760 --> 00:02:46.230
+the size will be decreased.
+
+95
+00:02:46.230 --> 00:02:47.990
+Okay, so let's say you have one
+
+96
+00:02:47.990 --> 00:02:49.950
+master and you have four slaves.
+
+97
+00:02:49.950 --> 00:02:52.310
+And these are exact replica
+
+98
+00:02:52.310 --> 00:02:53.830
+of the database.
+
+99
+00:02:53.830 --> 00:02:56.790
+What happens that the main,
+
+100
+00:02:56.790 --> 00:02:59.190
+okay, the application always
+
+101
+00:02:59.190 --> 00:03:01.430
+inserts or always do the operation
+
+102
+00:03:01.430 --> 00:03:02.950
+on the master database.
+
+103
+00:03:02.950 --> 00:03:04.510
+Let's say you want to insert
+
+104
+00:03:04.510 --> 00:03:05.990
+something into the database,
+
+105
+00:03:05.990 --> 00:03:07.590
+so you always and always
+
+106
+00:03:07.590 --> 00:03:08.870
+do it in the master.
+
+107
+00:03:08.870 --> 00:03:10.590
+Okay, the master instance.
+
+108
+00:03:10.590 --> 00:03:11.350
+So let's say this is
+
+109
+00:03:11.350 --> 00:03:13.090
+the master instance.
+
+110
+00:03:13.090 --> 00:03:14.530
+Always do an insert
+
+111
+00:03:14.530 --> 00:03:15.970
+operation in the master.
+
+112
+00:03:15.970 --> 00:03:17.890
+So master has its own storage.
+
+113
+00:03:17.890 --> 00:03:18.890
+Let's say this is a storage
+
+114
+00:03:18.890 --> 00:03:19.570
+of the master.
+
+115
+00:03:19.570 --> 00:03:21.090
+So it is going to create a record
+
+116
+00:03:21.090 --> 00:03:23.890
+in its database periodically.
+
+117
+00:03:23.890 --> 00:03:25.810
+These slaves are basically
+
+118
+00:03:26.450 --> 00:03:28.170
+syncing themselves from
+
+119
+00:03:28.170 --> 00:03:30.050
+the master and they actually
+
+120
+00:03:30.050 --> 00:03:32.530
+maintain a copy of the data.
+
+121
+00:03:32.530 --> 00:03:34.380
+Okay, so this is not,
+
+122
+00:03:34.380 --> 00:03:35.570
+not real time, right?
+
+123
+00:03:35.570 --> 00:03:36.650
+This is not real time
+
+124
+00:03:36.650 --> 00:03:37.910
+because let's say some,
+
+125
+00:03:37.910 --> 00:03:39.350
+some data is inserted here.
+
+126
+00:03:39.350 --> 00:03:40.790
+So it will take some time
+
+127
+00:03:40.790 --> 00:03:41.990
+to propagate to get
+
+128
+00:03:41.990 --> 00:03:43.350
+copied of that data.
+
+129
+00:03:43.350 --> 00:03:44.670
+So what these slaves are going
+
+130
+00:03:44.670 --> 00:03:46.510
+to do is eventually, maybe
+
+131
+00:03:46.510 --> 00:03:47.870
+after a minute or so, they are
+
+132
+00:03:47.870 --> 00:03:49.510
+also going to update their local
+
+133
+00:03:49.510 --> 00:03:50.950
+copies with the exact data.
+
+134
+00:03:51.510 --> 00:03:53.270
+Now what happens is when your
+
+135
+00:03:53.270 --> 00:03:55.150
+application wants to retrieve
+
+136
+00:03:55.150 --> 00:03:57.230
+some data, rather than
+
+137
+00:03:57.230 --> 00:03:58.910
+disturbing, rather than making
+
+138
+00:03:58.910 --> 00:04:00.390
+all the requests to the master
+
+139
+00:04:00.390 --> 00:04:01.670
+instance, they can actually
+
+140
+00:04:01.670 --> 00:04:03.230
+choose one of the replica.
+
+141
+00:04:03.230 --> 00:04:04.430
+They can actually ask one
+
+142
+00:04:04.430 --> 00:04:06.230
+of the replica to give the data.
+
+143
+00:04:06.230 --> 00:04:07.270
+Now here is the thing.
+
+144
+00:04:07.830 --> 00:04:10.750
+If you want the accuracy, if you
+
+145
+00:04:10.750 --> 00:04:12.230
+want the accuracy and consistency
+
+146
+00:04:12.230 --> 00:04:13.750
+that hey, I want real time
+
+147
+00:04:13.750 --> 00:04:15.230
+data, I don't want any latency.
+
+148
+00:04:15.230 --> 00:04:18.790
+In that case, both read and write.
+
+149
+00:04:18.790 --> 00:04:19.269
+Okay?
+
+150
+00:04:19.269 --> 00:04:20.709
+Both read and write.
+
+151
+00:04:20.709 --> 00:04:23.030
+Goes to master.
+
+152
+00:04:23.030 --> 00:04:25.930
+Okay, goes to the master.
+
+153
+00:04:25.930 --> 00:04:28.790
+What am I typing for?
+
+154
+00:04:28.790 --> 00:04:29.910
+Inserts.
+
+155
+00:04:29.910 --> 00:04:33.590
+Inserts are always done on master.
+
+156
+00:04:34.500 --> 00:04:38.740
+If you are okay, if you are
+
+157
+00:04:39.460 --> 00:04:43.620
+okay with little delay of data,
+
+158
+00:04:44.260 --> 00:04:48.100
+read them from these slaves.
+
+159
+00:04:48.100 --> 00:04:49.779
+Okay, let me give you an example.
+
+160
+00:04:49.779 --> 00:04:51.220
+If you are watching a video
+
+161
+00:04:51.220 --> 00:04:53.380
+on YouTube, you have seen the count,
+
+162
+00:04:53.380 --> 00:04:54.980
+you have seen the like count.
+
+163
+00:04:54.980 --> 00:04:57.020
+So those counts and like count
+
+164
+00:04:57.020 --> 00:04:58.740
+are actually not real time.
+
+165
+00:04:58.740 --> 00:05:00.820
+Okay, Might be a video
+
+166
+00:05:00.820 --> 00:05:03.020
+has 10,000 views and you
+
+167
+00:05:03.020 --> 00:05:04.260
+are seeing 9,000 views.
+
+168
+00:05:04.260 --> 00:05:04.620
+Okay?
+
+169
+00:05:04.620 --> 00:05:05.900
+Because what happens is thousand
+
+170
+00:05:05.900 --> 00:05:07.060
+views are still yet
+
+171
+00:05:07.060 --> 00:05:08.740
+to be propagated in the slaves.
+
+172
+00:05:08.740 --> 00:05:10.700
+So where the data accuracy can
+
+173
+00:05:10.700 --> 00:05:12.100
+be little bit, little bit up
+
+174
+00:05:12.100 --> 00:05:13.740
+and down, that is where you can
+
+175
+00:05:13.740 --> 00:05:15.460
+actually use, actually read the
+
+176
+00:05:15.460 --> 00:05:17.780
+data from the slave and avoid
+
+177
+00:05:17.780 --> 00:05:19.180
+some load on the master
+
+178
+00:05:19.180 --> 00:05:19.860
+database.
+
+179
+00:05:19.860 --> 00:05:21.180
+For example, likes
+
+180
+00:05:21.180 --> 00:05:22.900
+on an Instagram post, right?
+
+181
+00:05:23.780 --> 00:05:25.020
+Views on a reel.
+
+182
+00:05:25.020 --> 00:05:26.500
+So all these kind of data or
+
+183
+00:05:26.500 --> 00:05:27.780
+analytics about something,
+
+184
+00:05:27.780 --> 00:05:30.140
+they can be read from the slave
+
+185
+00:05:30.140 --> 00:05:31.920
+rather than putting a load
+
+186
+00:05:31.920 --> 00:05:33.440
+on the master instance.
+
+187
+00:05:33.440 --> 00:05:34.320
+So this is one way
+
+188
+00:05:34.320 --> 00:05:35.600
+of scaling the database.
+
+189
+00:05:35.600 --> 00:05:37.800
+So this is, known as the replication
+
+190
+00:05:37.800 --> 00:05:39.040
+of the databases.
+
+191
+00:05:39.040 --> 00:05:41.200
+So these are known as read
+
+192
+00:05:41.200 --> 00:05:42.400
+replicas, okay?
+
+193
+00:05:42.400 --> 00:05:43.720
+These are known as read replicas.
+
+194
+00:05:43.720 --> 00:05:45.440
+And this one is known as
+
+195
+00:05:45.440 --> 00:05:48.640
+primary instance, okay?

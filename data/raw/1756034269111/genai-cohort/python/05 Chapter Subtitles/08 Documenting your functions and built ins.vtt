@@ -1,0 +1,1317 @@
+WEBVTT
+
+1
+00:00:00.960 --> 00:00:03.320
+In this huge world of Python
+
+2
+00:00:03.320 --> 00:00:05.040
+we have so many things to cover,
+
+3
+00:00:05.040 --> 00:00:05.960
+but we have covered
+
+4
+00:00:05.960 --> 00:00:07.440
+quite a lot about the Python.
+
+5
+00:00:07.440 --> 00:00:08.680
+Now I want to introduce you
+
+6
+00:00:08.680 --> 00:00:09.920
+something which is built in.
+
+7
+00:00:09.920 --> 00:00:11.000
+We don't have to write
+
+8
+00:00:11.000 --> 00:00:12.000
+anything for this.
+
+9
+00:00:12.000 --> 00:00:13.240
+This actually kind
+
+10
+00:00:13.240 --> 00:00:14.880
+of exists in Python.
+
+11
+00:00:14.880 --> 00:00:16.600
+We don't pay huge attention to this,
+
+12
+00:00:16.600 --> 00:00:18.640
+but we should be paying to this one.
+
+13
+00:00:18.640 --> 00:00:19.880
+So let me take you on the screen
+
+14
+00:00:19.880 --> 00:00:21.000
+and directly walk you through
+
+15
+00:00:21.000 --> 00:00:22.160
+that, what I'm talking about.
+
+16
+00:00:22.720 --> 00:00:25.160
+So this is a direct documentation
+
+17
+00:00:25.160 --> 00:00:27.320
+page that says built in functions.
+
+18
+00:00:27.320 --> 00:00:28.960
+So Python has so many things
+
+19
+00:00:28.960 --> 00:00:30.640
+which we can use directly.
+
+20
+00:00:30.640 --> 00:00:32.700
+The Python interpret has a number
+
+21
+00:00:32.700 --> 00:00:33.700
+of functions and built
+
+22
+00:00:33.700 --> 00:00:35.660
+in types that are always available.
+
+23
+00:00:35.660 --> 00:00:36.420
+They are listed here
+
+24
+00:00:36.420 --> 00:00:37.500
+in alphabetical order.
+
+25
+00:00:38.060 --> 00:00:39.940
+Not only that, some
+
+26
+00:00:39.940 --> 00:00:42.140
+of the functions which you define
+
+27
+00:00:42.140 --> 00:00:43.980
+also comes up with the by default
+
+28
+00:00:43.980 --> 00:00:45.540
+some of the tricks and tips.
+
+29
+00:00:45.540 --> 00:00:46.340
+So I'll show you what
+
+30
+00:00:46.340 --> 00:00:47.180
+actually it means.
+
+31
+00:00:47.900 --> 00:00:49.020
+So we'll just talk about
+
+32
+00:00:49.020 --> 00:00:50.580
+the built ins in Python.
+
+33
+00:00:50.580 --> 00:00:51.820
+So I'll just write this here.
+
+34
+00:00:51.820 --> 00:00:53.500
+Hopefully I'm here.
+
+35
+00:00:53.500 --> 00:00:54.500
+Yep, we are actually
+
+36
+00:00:54.500 --> 00:00:55.500
+on the right track.
+
+37
+00:00:55.500 --> 00:00:57.020
+So let's go ahead and talk about
+
+38
+00:00:58.340 --> 00:01:01.780
+built ins in Python and I
+
+39
+00:01:01.780 --> 00:01:03.420
+think it would be rather accurate
+
+40
+00:01:03.420 --> 00:01:04.739
+to call it as built in.
+
+41
+00:01:04.739 --> 00:01:05.700
+Just like that.
+
+42
+00:01:05.700 --> 00:01:07.780
+Yeah, this is actually fun.
+
+43
+00:01:07.780 --> 00:01:09.340
+So every single function which
+
+44
+00:01:09.340 --> 00:01:10.620
+you go ahead and define.
+
+45
+00:01:10.620 --> 00:01:12.580
+So let's just say we have a simple
+
+46
+00:01:12.580 --> 00:01:15.180
+function name and we
+
+47
+00:01:15.180 --> 00:01:17.220
+go ahead and design it like this
+
+48
+00:01:18.260 --> 00:01:19.940
+and simply say pass.
+
+49
+00:01:19.940 --> 00:01:21.260
+So this is the bare minimum
+
+50
+00:01:21.260 --> 00:01:22.580
+function we are defining.
+
+51
+00:01:22.580 --> 00:01:24.380
+Let's actually go ahead and write
+
+52
+00:01:24.380 --> 00:01:25.460
+the code along with this.
+
+53
+00:01:25.460 --> 00:01:26.180
+Actually that will
+
+54
+00:01:26.180 --> 00:01:27.370
+make much more sense.
+
+55
+00:01:27.370 --> 00:01:29.120
+And I'll close this one
+
+56
+00:01:29.120 --> 00:01:30.680
+and create a new function.
+
+57
+00:01:30.680 --> 00:01:32.320
+This time we are on 12,
+
+58
+00:01:32.320 --> 00:01:34.160
+so 12 underscore.
+
+59
+00:01:34.160 --> 00:01:37.360
+Let's call this one as built in py
+
+60
+00:01:38.320 --> 00:01:39.720
+so let's just say we define a built
+
+61
+00:01:39.720 --> 00:01:41.440
+in or a very basic function.
+
+62
+00:01:41.440 --> 00:01:42.920
+The first step is let's just
+
+63
+00:01:42.920 --> 00:01:46.880
+say we have a chai flavor.
+
+64
+00:01:47.760 --> 00:01:49.120
+Hope I wrote that correct.
+
+65
+00:01:49.120 --> 00:01:50.560
+And this time we are simply
+
+66
+00:01:50.560 --> 00:01:52.920
+saying that the flavor that we
+
+67
+00:01:52.920 --> 00:01:54.360
+have is going to be masala.
+
+68
+00:01:54.360 --> 00:01:56.200
+So we'll put provide a default
+
+69
+00:01:56.200 --> 00:01:57.280
+parameter to this one.
+
+70
+00:01:57.280 --> 00:01:59.040
+By default I mean you can provide
+
+71
+00:01:59.040 --> 00:02:00.560
+the value that will overwrite it,
+
+72
+00:02:00.560 --> 00:02:01.960
+but if you don't provide any, this
+
+73
+00:02:01.960 --> 00:02:03.920
+will be the default value for it.
+
+74
+00:02:03.920 --> 00:02:05.160
+And end of the day I go
+
+75
+00:02:05.160 --> 00:02:06.480
+ahead and simply say whatever
+
+76
+00:02:06.480 --> 00:02:07.520
+the flavor you tell me,
+
+77
+00:02:07.520 --> 00:02:09.199
+I'll just return it back.
+
+78
+00:02:09.199 --> 00:02:11.360
+This is a basic one, but actually
+
+79
+00:02:11.360 --> 00:02:13.120
+you can do something interesting.
+
+80
+00:02:13.120 --> 00:02:15.200
+The very first line in your function
+
+81
+00:02:15.200 --> 00:02:17.120
+definition can be triple quotes.
+
+82
+00:02:17.120 --> 00:02:18.840
+Yeah notice here, triple quotes.
+
+83
+00:02:18.840 --> 00:02:21.000
+This is also a thing in which we are
+
+84
+00:02:21.000 --> 00:02:22.200
+going to use it a lot in which you
+
+85
+00:02:22.200 --> 00:02:24.000
+can add enters and line breaks.
+
+86
+00:02:24.000 --> 00:02:24.800
+And you can define it
+
+87
+00:02:24.800 --> 00:02:25.520
+however you like.
+
+88
+00:02:26.160 --> 00:02:28.080
+This one what it does it return
+
+89
+00:02:28.080 --> 00:02:32.240
+the flavor of Chai.
+
+90
+00:02:32.240 --> 00:02:33.600
+That's all it does.
+
+91
+00:02:33.600 --> 00:02:35.280
+Now this small string,
+
+92
+00:02:35.280 --> 00:02:36.360
+just by adding it.
+
+93
+00:02:36.360 --> 00:02:38.120
+Now you can utilize so many internal
+
+94
+00:02:38.120 --> 00:02:39.840
+things in the Python itself.
+
+95
+00:02:39.840 --> 00:02:41.080
+For example, if I just go
+
+96
+00:02:41.080 --> 00:02:43.600
+ahead and print this chai flavor,
+
+97
+00:02:44.160 --> 00:02:46.240
+I can actually use a dot
+
+98
+00:02:46.240 --> 00:02:47.400
+just on the function name.
+
+99
+00:02:47.400 --> 00:02:48.640
+And you can see so many things,
+
+100
+00:02:48.640 --> 00:02:51.120
+annotations built in, class
+
+101
+00:02:51.120 --> 00:02:52.800
+closure, so many of them.
+
+102
+00:02:53.410 --> 00:02:54.970
+Of course we cannot go with all
+
+103
+00:02:54.970 --> 00:02:56.650
+of them, but there is a small name
+
+104
+00:02:56.650 --> 00:02:58.450
+for this known as dunder.
+
+105
+00:02:59.090 --> 00:03:00.850
+Very, very funny
+
+106
+00:03:00.850 --> 00:03:01.810
+name to go with that.
+
+107
+00:03:01.810 --> 00:03:03.250
+At least I find it funny.
+
+108
+00:03:03.810 --> 00:03:05.130
+The whole point of this dunder
+
+109
+00:03:05.130 --> 00:03:06.410
+is you have one underscore, then
+
+110
+00:03:06.410 --> 00:03:07.810
+you have another underscore.
+
+111
+00:03:07.810 --> 00:03:09.409
+And then the things like
+
+112
+00:03:09.409 --> 00:03:11.410
+for example, we have doc as one
+
+113
+00:03:11.410 --> 00:03:12.850
+of the dunder, then we have also
+
+114
+00:03:12.850 --> 00:03:14.610
+underscore, underscore.
+
+115
+00:03:14.610 --> 00:03:17.730
+So instead of calling it as doc,
+
+116
+00:03:18.610 --> 00:03:20.450
+we just call it as dunderdoc.
+
+117
+00:03:20.990 --> 00:03:23.070
+Yeah, so two underscores are called
+
+118
+00:03:23.070 --> 00:03:24.870
+as dunder, but we don't call it
+
+119
+00:03:24.870 --> 00:03:27.270
+as like underscore, Dunder, dog,
+
+120
+00:03:27.270 --> 00:03:29.230
+Dunder, we just call it once.
+
+121
+00:03:29.230 --> 00:03:30.670
+Yeah, very weird.
+
+122
+00:03:30.670 --> 00:03:32.270
+So one of them is actually
+
+123
+00:03:32.270 --> 00:03:34.430
+this doc, what it does.
+
+124
+00:03:34.430 --> 00:03:36.270
+I'll show you that in a second.
+
+125
+00:03:36.270 --> 00:03:37.510
+But also there is another
+
+126
+00:03:37.510 --> 00:03:38.590
+dunder that you can use.
+
+127
+00:03:38.590 --> 00:03:39.630
+So there is underscore,
+
+128
+00:03:39.630 --> 00:03:41.470
+underscore name for it.
+
+129
+00:03:41.470 --> 00:03:42.470
+Let me show you what
+
+130
+00:03:42.470 --> 00:03:43.550
+each of them does.
+
+131
+00:03:43.550 --> 00:03:44.990
+It's very super easy actually.
+
+132
+00:03:45.950 --> 00:03:48.350
+Python 3 and please run the 12 file.
+
+133
+00:03:48.350 --> 00:03:49.740
+And there we go.
+
+134
+00:03:49.740 --> 00:03:51.100
+The first, when you say doc,
+
+135
+00:03:51.100 --> 00:03:53.980
+this is a doc string, documentation
+
+136
+00:03:53.980 --> 00:03:55.020
+function string or
+
+137
+00:03:55.020 --> 00:03:56.940
+function documentation string or
+
+138
+00:03:56.940 --> 00:03:58.620
+short is better doc string.
+
+139
+00:03:58.620 --> 00:03:59.780
+So this is a doc string
+
+140
+00:03:59.780 --> 00:04:00.580
+which actually prints.
+
+141
+00:04:00.580 --> 00:04:01.540
+So whatever you write it
+
+142
+00:04:01.540 --> 00:04:03.500
+here, it will get printed.
+
+143
+00:04:03.500 --> 00:04:04.580
+What if I go ahead
+
+144
+00:04:04.580 --> 00:04:05.700
+and declare a variable?
+
+145
+00:04:05.700 --> 00:04:09.900
+For example, chai is, ginger,
+
+146
+00:04:09.900 --> 00:04:11.740
+ginger, Something like this.
+
+147
+00:04:11.740 --> 00:04:13.580
+Will it work after this?
+
+148
+00:04:13.580 --> 00:04:14.780
+Here's the interesting part.
+
+149
+00:04:15.470 --> 00:04:16.829
+Now notice here it says none.
+
+150
+00:04:16.829 --> 00:04:18.790
+So it needs to be the very first
+
+151
+00:04:18.790 --> 00:04:19.870
+line and whatever you want
+
+152
+00:04:19.870 --> 00:04:21.390
+to do, you can do after that.
+
+153
+00:04:21.390 --> 00:04:22.670
+Feel free to do it.
+
+154
+00:04:22.670 --> 00:04:23.990
+It needs to be the very
+
+155
+00:04:23.990 --> 00:04:25.190
+first line and then only
+
+156
+00:04:25.190 --> 00:04:26.910
+and only then it works.
+
+157
+00:04:26.910 --> 00:04:27.710
+All right.
+
+158
+00:04:27.710 --> 00:04:29.030
+And then the name of the function,
+
+159
+00:04:29.030 --> 00:04:30.590
+notice here it says chai flavor.
+
+160
+00:04:30.590 --> 00:04:31.830
+So whatever the function you
+
+161
+00:04:31.830 --> 00:04:32.830
+are actually running, you
+
+162
+00:04:32.830 --> 00:04:34.190
+can just provide its name.
+
+163
+00:04:34.190 --> 00:04:35.110
+Why would I do that?
+
+164
+00:04:35.110 --> 00:04:36.670
+I already know the name of it.
+
+165
+00:04:36.670 --> 00:04:37.630
+Yes, you do.
+
+166
+00:04:37.630 --> 00:04:39.510
+But sometimes when you are
+
+167
+00:04:39.510 --> 00:04:40.950
+debugging the application, it's
+
+168
+00:04:40.950 --> 00:04:43.670
+not easy to find that what actually
+
+169
+00:04:44.230 --> 00:04:45.750
+is causing the trouble.
+
+170
+00:04:45.750 --> 00:04:47.590
+Now, not only that, we have actually
+
+171
+00:04:47.590 --> 00:04:48.830
+more inbuilt function.
+
+172
+00:04:48.830 --> 00:04:50.470
+For example, there is one help
+
+173
+00:04:50.470 --> 00:04:52.070
+which is always there and you
+
+174
+00:04:52.070 --> 00:04:53.310
+can pass on anything to it.
+
+175
+00:04:53.310 --> 00:04:54.510
+For example, I don't know
+
+176
+00:04:54.510 --> 00:04:56.590
+what the len does so I just want
+
+177
+00:04:56.590 --> 00:04:57.830
+to know more about it.
+
+178
+00:04:57.830 --> 00:04:59.190
+I can just go ahead and pass
+
+179
+00:04:59.190 --> 00:05:01.830
+on this and any function in between.
+
+180
+00:05:01.830 --> 00:05:03.790
+Notice here it gives you a whole lot
+
+181
+00:05:03.790 --> 00:05:05.350
+of documentation and all that.
+
+182
+00:05:05.350 --> 00:05:06.590
+It's not easy to read it here
+
+183
+00:05:06.590 --> 00:05:09.230
+because it's actually vim based.
+
+184
+00:05:09.230 --> 00:05:11.070
+I don't expect you to work on that.
+
+185
+00:05:11.070 --> 00:05:12.750
+Just press the Q in case you have
+
+186
+00:05:12.750 --> 00:05:13.650
+accidentally opened this up.
+
+187
+00:05:14.190 --> 00:05:15.870
+The better way to learn and study
+
+188
+00:05:15.870 --> 00:05:17.630
+about all of these method is
+
+189
+00:05:17.630 --> 00:05:19.390
+actually this documentation.
+
+190
+00:05:19.390 --> 00:05:20.710
+So built in function just
+
+191
+00:05:20.710 --> 00:05:22.270
+search for that version.
+
+192
+00:05:22.270 --> 00:05:23.110
+Doesn't really matter.
+
+193
+00:05:23.110 --> 00:05:24.350
+They are very standard
+
+194
+00:05:24.350 --> 00:05:25.790
+in every single version.
+
+195
+00:05:26.430 --> 00:05:28.350
+And notice so many of them.
+
+196
+00:05:28.350 --> 00:05:29.790
+There's absolute, there's
+
+197
+00:05:29.790 --> 00:05:31.270
+all and nobody knows
+
+198
+00:05:31.270 --> 00:05:32.470
+what all of them does.
+
+199
+00:05:32.470 --> 00:05:33.950
+We actually find them out
+
+200
+00:05:33.950 --> 00:05:35.190
+as we need some of them.
+
+201
+00:05:35.190 --> 00:05:36.150
+For example filter.
+
+202
+00:05:36.150 --> 00:05:37.470
+Yes, we have seen one of them.
+
+203
+00:05:38.350 --> 00:05:40.830
+Format frozen set, min max Next.
+
+204
+00:05:40.830 --> 00:05:42.030
+Some of them we definitely
+
+205
+00:05:42.030 --> 00:05:43.550
+encounter day to day life.
+
+206
+00:05:43.550 --> 00:05:44.630
+Some of them we never
+
+207
+00:05:44.630 --> 00:05:45.990
+encounter and some of them
+
+208
+00:05:45.990 --> 00:05:46.990
+we don't want to use.
+
+209
+00:05:46.990 --> 00:05:48.350
+Remember we used the zip?
+
+210
+00:05:48.350 --> 00:05:49.470
+Yep, that's exactly.
+
+211
+00:05:49.470 --> 00:05:51.230
+That's where this is coming up from.
+
+212
+00:05:51.230 --> 00:05:52.630
+We have tuple type.
+
+213
+00:05:52.630 --> 00:05:54.190
+Remember we use type once.
+
+214
+00:05:54.190 --> 00:05:55.550
+Yeah, I hope you do.
+
+215
+00:05:55.550 --> 00:05:56.630
+So this is the basics
+
+216
+00:05:56.630 --> 00:05:58.350
+of how it can be done.
+
+217
+00:05:58.350 --> 00:05:59.630
+Now make sure a couple of things
+
+218
+00:05:59.630 --> 00:06:01.230
+you need to take care of it.
+
+219
+00:06:01.230 --> 00:06:03.030
+The first one is it's always a good
+
+220
+00:06:03.030 --> 00:06:04.580
+idea that if you're writing
+
+221
+00:06:04.580 --> 00:06:06.500
+too big of a function on everything,
+
+222
+00:06:06.500 --> 00:06:07.860
+just write the documentation
+
+223
+00:06:07.860 --> 00:06:09.060
+of function right up here.
+
+224
+00:06:09.060 --> 00:06:10.980
+It's actually super easy to be done.
+
+225
+00:06:10.980 --> 00:06:12.820
+It's a good practice as well.
+
+226
+00:06:12.820 --> 00:06:14.380
+So again there's nothing too
+
+227
+00:06:14.380 --> 00:06:16.540
+much but try to give it yourself
+
+228
+00:06:16.540 --> 00:06:17.900
+a couple of more minutes if
+
+229
+00:06:17.900 --> 00:06:19.700
+you're writing production ready app
+
+230
+00:06:19.700 --> 00:06:21.140
+that actually does this.
+
+231
+00:06:21.140 --> 00:06:22.900
+I'll show you a sample example
+
+232
+00:06:22.900 --> 00:06:24.740
+of how it actually looks just
+
+233
+00:06:24.740 --> 00:06:26.100
+to make sure that you get an idea.
+
+234
+00:06:26.100 --> 00:06:27.980
+I'll be little bit exaggerating it
+
+235
+00:06:27.980 --> 00:06:29.940
+but we'll get the point of it.
+
+236
+00:06:30.460 --> 00:06:31.980
+Let's just say I go ahead and create
+
+237
+00:06:31.980 --> 00:06:34.860
+a method which says generate bill
+
+238
+00:06:34.860 --> 00:06:36.940
+which takes chai if nobody gives
+
+239
+00:06:36.940 --> 00:06:39.100
+me I'll take zero as a default.
+
+240
+00:06:39.100 --> 00:06:42.060
+Also snack which is samosa
+
+241
+00:06:42.060 --> 00:06:43.660
+which will also be zero.
+
+242
+00:06:43.660 --> 00:06:44.620
+There we go.
+
+243
+00:06:44.620 --> 00:06:45.980
+Now I take my time
+
+244
+00:06:45.980 --> 00:06:48.220
+by triple quotes to actually write
+
+245
+00:06:48.220 --> 00:06:49.500
+the documentation and you don't have
+
+246
+00:06:49.500 --> 00:06:50.580
+to write it all one line.
+
+247
+00:06:50.580 --> 00:06:52.380
+Once you start with this then I
+
+248
+00:06:52.380 --> 00:06:54.100
+can go ahead and go all freehand.
+
+249
+00:06:54.100 --> 00:06:55.380
+So what it does, it actually
+
+250
+00:06:55.380 --> 00:06:58.060
+goes ahead and calculate the total
+
+251
+00:06:59.420 --> 00:07:03.050
+bill for chai and samosa.
+
+252
+00:07:04.300 --> 00:07:07.090
+And then I can use and say like this,
+
+253
+00:07:07.090 --> 00:07:07.900
+what are the param?
+
+254
+00:07:07.900 --> 00:07:08.860
+This is just for me.
+
+255
+00:07:09.450 --> 00:07:10.700
+Pram chai.
+
+256
+00:07:11.420 --> 00:07:15.980
+And that is number of chai cups.
+
+257
+00:07:15.980 --> 00:07:17.700
+And for example, that
+
+258
+00:07:17.700 --> 00:07:20.700
+would be 10 rupees each.
+
+259
+00:07:20.700 --> 00:07:21.980
+These are just for me.
+
+260
+00:07:21.980 --> 00:07:23.820
+And I can go ahead and say I have
+
+261
+00:07:23.820 --> 00:07:27.210
+another param which is samosa.
+
+262
+00:07:27.210 --> 00:07:29.610
+Samosa and which goes like
+
+263
+00:07:30.410 --> 00:07:33.090
+number of samosa.
+
+264
+00:07:33.090 --> 00:07:37.770
+And that can be 15 rupees each.
+
+265
+00:07:37.770 --> 00:07:38.930
+Again, you don't have to use
+
+266
+00:07:38.930 --> 00:07:40.730
+this format, but it's good.
+
+267
+00:07:40.730 --> 00:07:42.730
+And I also go ahead and calculate
+
+268
+00:07:42.730 --> 00:07:44.450
+what it returns so that anybody who
+
+269
+00:07:44.450 --> 00:07:46.170
+is using it gets to know what
+
+270
+00:07:46.170 --> 00:07:47.850
+the function is expected to return.
+
+271
+00:07:48.570 --> 00:07:50.970
+I just go ahead and return total
+
+272
+00:07:50.970 --> 00:07:54.590
+amount and thank you message.
+
+273
+00:07:55.390 --> 00:07:56.510
+So this gives an idea
+
+274
+00:07:56.510 --> 00:07:57.790
+what this function is.
+
+275
+00:07:57.790 --> 00:07:59.430
+I know you'll not be writing for
+
+276
+00:07:59.430 --> 00:08:00.590
+each one of them, but some
+
+277
+00:08:00.590 --> 00:08:01.990
+companies actually will force you
+
+278
+00:08:01.990 --> 00:08:03.270
+to write all of this because hey,
+
+279
+00:08:03.270 --> 00:08:04.350
+lots of people are going to be
+
+280
+00:08:04.350 --> 00:08:05.630
+using your method.
+
+281
+00:08:05.630 --> 00:08:06.910
+So we'll just go ahead and say
+
+282
+00:08:06.910 --> 00:08:08.229
+we calculate a total like
+
+283
+00:08:08.229 --> 00:08:09.710
+this, which is chai,
+
+284
+00:08:10.430 --> 00:08:12.270
+which gets multiplied by 10.
+
+285
+00:08:12.270 --> 00:08:13.590
+So you get to know that why it
+
+286
+00:08:13.590 --> 00:08:15.230
+is getting multiplied by 10.
+
+287
+00:08:15.230 --> 00:08:16.990
+And we also have samosa
+
+288
+00:08:16.990 --> 00:08:19.150
+which gets multiplied by 15.
+
+289
+00:08:19.790 --> 00:08:20.510
+You get the point.
+
+290
+00:08:21.390 --> 00:08:22.910
+We'll have the consistency.
+
+291
+00:08:22.910 --> 00:08:24.910
+And then we simply go ahead and say
+
+292
+00:08:24.910 --> 00:08:27.350
+we return a, total as well as
+
+293
+00:08:27.350 --> 00:08:29.070
+we return a thank you message.
+
+294
+00:08:29.070 --> 00:08:33.309
+So thank you for visiting
+
+295
+00:08:34.110 --> 00:08:35.749
+chaicode.com, which
+
+296
+00:08:35.749 --> 00:08:36.909
+is my website name.
+
+297
+00:08:36.909 --> 00:08:37.669
+So there we go.
+
+298
+00:08:37.669 --> 00:08:39.190
+Now somebody says returns it
+
+299
+00:08:39.190 --> 00:08:40.549
+returns a total amount as
+
+300
+00:08:40.549 --> 00:08:41.669
+well as a thank you message.
+
+301
+00:08:41.669 --> 00:08:42.789
+Or probably we can actually say
+
+302
+00:08:42.789 --> 00:08:45.470
+thank you message as a string.
+
+303
+00:08:45.470 --> 00:08:47.320
+That is also pretty cool.
+
+304
+00:08:47.320 --> 00:08:49.320
+Now this actually is a nice method
+
+305
+00:08:49.320 --> 00:08:50.640
+although took us a little bit
+
+306
+00:08:50.640 --> 00:08:52.520
+more time and there's a lot more.
+
+307
+00:08:52.520 --> 00:08:54.350
+We can actually return the defined,
+
+308
+00:08:54.350 --> 00:08:55.640
+the return type that there
+
+309
+00:08:55.640 --> 00:08:56.520
+are more ways of playing
+
+310
+00:08:56.520 --> 00:08:58.280
+with that we'll surely do that.
+
+311
+00:08:58.280 --> 00:08:59.840
+But now that you know that, okay,
+
+312
+00:08:59.840 --> 00:09:01.080
+how this is all can be done.
+
+313
+00:09:01.080 --> 00:09:02.400
+And this is the best
+
+314
+00:09:02.400 --> 00:09:03.880
+example for this one.
+
+315
+00:09:03.880 --> 00:09:04.320
+All right.
+
+316
+00:09:04.320 --> 00:09:05.640
+I hope you have enjoyed this,
+
+317
+00:09:06.200 --> 00:09:08.160
+really detailed sessions on Python.
+
+318
+00:09:08.160 --> 00:09:09.400
+I'm enjoying them
+
+319
+00:09:09.400 --> 00:09:10.560
+teaching this whole thing.
+
+320
+00:09:10.560 --> 00:09:11.480
+Hope you are also
+
+321
+00:09:11.480 --> 00:09:12.850
+enjoying learning this.
+
+322
+00:09:12.850 --> 00:09:14.170
+So please do rate us and if you find
+
+323
+00:09:14.170 --> 00:09:15.370
+anything that hey, you should
+
+324
+00:09:15.370 --> 00:09:17.090
+cover more of that topic, tweet me.
+
+325
+00:09:17.090 --> 00:09:17.810
+I'll add this.
+
+326
+00:09:17.810 --> 00:09:19.410
+I want to create the best course
+
+327
+00:09:19.410 --> 00:09:20.610
+on the Python.
+
+328
+00:09:20.610 --> 00:09:21.650
+That is it for this video.
+
+329
+00:09:21.650 --> 00:09:23.090
+Let's catch up in the next one.

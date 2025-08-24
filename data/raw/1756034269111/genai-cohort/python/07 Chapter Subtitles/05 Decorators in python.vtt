@@ -1,0 +1,1329 @@
+WEBVTT
+
+1
+00:00:00.800 --> 00:00:01.600
+Hey there everyone.
+
+2
+00:00:01.600 --> 00:00:03.520
+And welcome to the section
+
+3
+00:00:03.520 --> 00:00:04.560
+of decorators.
+
+4
+00:00:05.120 --> 00:00:06.360
+Now initially I thought I'll
+
+5
+00:00:06.360 --> 00:00:07.560
+keep them as a separate section
+
+6
+00:00:07.560 --> 00:00:09.320
+or a separate module, but then
+
+7
+00:00:09.320 --> 00:00:11.200
+I realized, let's combine them,
+
+8
+00:00:11.860 --> 00:00:13.760
+generators and decorators.
+
+9
+00:00:13.760 --> 00:00:15.360
+Generators we have already studied.
+
+10
+00:00:15.360 --> 00:00:16.239
+Now it's time to go
+
+11
+00:00:16.239 --> 00:00:17.440
+with the decorators.
+
+12
+00:00:17.440 --> 00:00:19.200
+Now, although they sound a little bit
+
+13
+00:00:19.200 --> 00:00:21.280
+similar, but they are not like that.
+
+14
+00:00:21.280 --> 00:00:22.880
+The decorators are simply
+
+15
+00:00:22.880 --> 00:00:24.400
+a way of decorations.
+
+16
+00:00:24.400 --> 00:00:25.560
+Now they could be functional
+
+17
+00:00:25.560 --> 00:00:26.760
+as well, but the primary
+
+18
+00:00:26.760 --> 00:00:28.080
+agenda is decoration.
+
+19
+00:00:28.750 --> 00:00:29.830
+Decoration is something that
+
+20
+00:00:29.830 --> 00:00:31.550
+you do on top of something.
+
+21
+00:00:31.550 --> 00:00:33.240
+For example, when you buy coffee,
+
+22
+00:00:34.260 --> 00:00:35.790
+some people actually sprinkles
+
+23
+00:00:35.790 --> 00:00:36.990
+a little bit of a chocolate
+
+24
+00:00:36.990 --> 00:00:38.510
+powder or coffee on top of it.
+
+25
+00:00:38.510 --> 00:00:40.590
+That's decoration of coffee.
+
+26
+00:00:40.590 --> 00:00:42.350
+Now sometimes it changes the taste
+
+27
+00:00:42.350 --> 00:00:43.830
+a little bit, sometimes it doesn't.
+
+28
+00:00:43.830 --> 00:00:45.630
+Sometimes it adds more value to it.
+
+29
+00:00:45.630 --> 00:00:46.550
+Sometimes it's just
+
+30
+00:00:46.550 --> 00:00:48.030
+a wrapper around it.
+
+31
+00:00:48.030 --> 00:00:49.070
+This is the whole point
+
+32
+00:00:49.070 --> 00:00:50.350
+of having the decorator.
+
+33
+00:00:50.910 --> 00:00:52.150
+It is just a wrapper
+
+34
+00:00:52.150 --> 00:00:53.390
+around your function.
+
+35
+00:00:53.390 --> 00:00:54.510
+And Python gives you
+
+36
+00:00:54.510 --> 00:00:55.550
+actually some superpower.
+
+37
+00:00:55.550 --> 00:00:56.710
+So first let's understand this
+
+38
+00:00:56.710 --> 00:00:57.910
+in the theory part and then
+
+39
+00:00:57.910 --> 00:00:58.910
+it will be super clear.
+
+40
+00:00:59.580 --> 00:01:01.020
+Let's just say you have
+
+41
+00:01:01.020 --> 00:01:03.260
+defined this is my function.
+
+42
+00:01:03.260 --> 00:01:05.260
+How can a square block be a function?
+
+43
+00:01:06.060 --> 00:01:07.180
+Give me on that.
+
+44
+00:01:07.180 --> 00:01:08.340
+This could be super easy.
+
+45
+00:01:08.340 --> 00:01:09.820
+So let's just say this, orange
+
+46
+00:01:09.820 --> 00:01:12.420
+block is our function and we have
+
+47
+00:01:12.420 --> 00:01:14.660
+many such functions and each
+
+48
+00:01:14.660 --> 00:01:16.460
+function does a different job.
+
+49
+00:01:16.460 --> 00:01:17.460
+I really don't want
+
+50
+00:01:17.460 --> 00:01:18.660
+to emphasis on what job.
+
+51
+00:01:18.660 --> 00:01:19.660
+But they are really
+
+52
+00:01:19.660 --> 00:01:20.460
+different functions.
+
+53
+00:01:20.460 --> 00:01:22.140
+So let's just say we have a blue one
+
+54
+00:01:22.140 --> 00:01:25.700
+and we have a pink one as well.
+
+55
+00:01:25.700 --> 00:01:26.700
+Now all of them have
+
+56
+00:01:26.700 --> 00:01:27.420
+their different job.
+
+57
+00:01:27.420 --> 00:01:29.020
+You don't want to change the behavior
+
+58
+00:01:29.020 --> 00:01:30.820
+of a function, but for some reason,
+
+59
+00:01:30.820 --> 00:01:32.260
+I'll just choose one example.
+
+60
+00:01:32.260 --> 00:01:34.100
+But it could be other ways as well.
+
+61
+00:01:34.100 --> 00:01:35.780
+You want to simply log that
+
+62
+00:01:35.780 --> 00:01:37.020
+whenever this function runs.
+
+63
+00:01:37.020 --> 00:01:38.460
+I just want to log that
+
+64
+00:01:38.460 --> 00:01:39.660
+whatever the function has run
+
+65
+00:01:39.660 --> 00:01:41.380
+or some function has run.
+
+66
+00:01:41.380 --> 00:01:43.140
+So what you can do is you can create
+
+67
+00:01:43.140 --> 00:01:45.180
+a simple block just like this.
+
+68
+00:01:45.180 --> 00:01:47.140
+This will be your decorator.
+
+69
+00:01:47.140 --> 00:01:49.140
+And in this decorator you
+
+70
+00:01:49.140 --> 00:01:50.420
+can just move this existing
+
+71
+00:01:50.420 --> 00:01:51.700
+function inside it.
+
+72
+00:01:52.220 --> 00:01:53.020
+That is it.
+
+73
+00:01:53.020 --> 00:01:55.070
+Now whatever you are trying to do,
+
+74
+00:01:55.070 --> 00:01:56.740
+before this function, it
+
+75
+00:01:56.740 --> 00:01:58.740
+can actually execute whatever
+
+76
+00:01:58.740 --> 00:02:00.220
+you want to try to execute.
+
+77
+00:02:00.220 --> 00:02:02.620
+After this, it can also execute.
+
+78
+00:02:02.620 --> 00:02:05.300
+And if sometimes it happens that you
+
+79
+00:02:05.300 --> 00:02:06.940
+are actually going ahead and passing
+
+80
+00:02:06.940 --> 00:02:08.940
+some value inside this function,
+
+81
+00:02:08.940 --> 00:02:10.180
+you can actually go ahead
+
+82
+00:02:10.180 --> 00:02:11.700
+and just pass on these values.
+
+83
+00:02:11.700 --> 00:02:13.180
+So let's just say there are some
+
+84
+00:02:13.180 --> 00:02:15.380
+params, also known as parameters.
+
+85
+00:02:15.380 --> 00:02:16.340
+So you go ahead and pass
+
+86
+00:02:16.340 --> 00:02:17.580
+on these parameters.
+
+87
+00:02:18.160 --> 00:02:19.440
+I'll just go ahead and click this.
+
+88
+00:02:20.240 --> 00:02:21.320
+So if you go ahead and pass
+
+89
+00:02:21.320 --> 00:02:22.600
+on these Parameters.
+
+90
+00:02:22.600 --> 00:02:23.880
+You can just go ahead and do that.
+
+91
+00:02:23.880 --> 00:02:25.680
+You pass on these parameters
+
+92
+00:02:25.680 --> 00:02:27.800
+to this outer function and we are
+
+93
+00:02:27.800 --> 00:02:29.600
+going to, as it is, pass on this
+
+94
+00:02:29.600 --> 00:02:31.360
+exact same parameters, whether
+
+95
+00:02:31.360 --> 00:02:32.680
+the keyword argument or whatever.
+
+96
+00:02:32.680 --> 00:02:33.640
+We are going to just go ahead
+
+97
+00:02:33.640 --> 00:02:35.080
+and pass on to this function so
+
+98
+00:02:35.080 --> 00:02:37.000
+that it executes and behave
+
+99
+00:02:37.000 --> 00:02:38.720
+exactly like what we want to do.
+
+100
+00:02:38.720 --> 00:02:39.880
+So as you have noticed,
+
+101
+00:02:39.880 --> 00:02:40.960
+it's pretty good actually.
+
+102
+00:02:40.960 --> 00:02:42.920
+And this wrapper function, I can
+
+103
+00:02:42.920 --> 00:02:44.000
+just go ahead and take this.
+
+104
+00:02:44.000 --> 00:02:44.200
+That.
+
+105
+00:02:44.200 --> 00:02:45.800
+Hey, I this wrapper function,
+
+106
+00:02:45.800 --> 00:02:46.920
+maybe I want to replace it
+
+107
+00:02:46.920 --> 00:02:47.840
+with something else.
+
+108
+00:02:47.840 --> 00:02:49.120
+So I don't like this.
+
+109
+00:02:49.120 --> 00:02:50.640
+I want to use the blue function.
+
+110
+00:02:50.640 --> 00:02:52.000
+You can just go ahead and use it.
+
+111
+00:02:52.000 --> 00:02:52.640
+That is it.
+
+112
+00:02:52.640 --> 00:02:54.080
+That is your decorators.
+
+113
+00:02:54.080 --> 00:02:55.360
+Exactly like that.
+
+114
+00:02:55.360 --> 00:02:57.040
+Nothing less, nothing more.
+
+115
+00:02:57.040 --> 00:02:58.160
+Let me go ahead and walk you
+
+116
+00:02:58.160 --> 00:02:59.280
+through with some examples so
+
+117
+00:02:59.280 --> 00:03:00.280
+that you actually truly
+
+118
+00:03:00.280 --> 00:03:01.680
+understand what decorators is.
+
+119
+00:03:01.680 --> 00:03:02.600
+We'll do some practice
+
+120
+00:03:02.600 --> 00:03:03.440
+on that as well.
+
+121
+00:03:04.720 --> 00:03:06.560
+We'll definitely create a new folder.
+
+122
+00:03:06.560 --> 00:03:08.240
+Not here for sure.
+
+123
+00:03:09.120 --> 00:03:11.620
+And let's call this one as 09 and.
+
+124
+00:03:11.620 --> 00:03:12.380
+And we will call this
+
+125
+00:03:12.380 --> 00:03:13.540
+one as decorators.
+
+126
+00:03:15.060 --> 00:03:17.460
+And let's call this one as basics.
+
+127
+00:03:17.460 --> 00:03:21.140
+Pretty good basics.
+
+128
+00:03:21.140 --> 00:03:21.700
+Py.
+
+129
+00:03:22.660 --> 00:03:25.060
+Okay, so how does a decorator works?
+
+130
+00:03:25.060 --> 00:03:25.660
+Pretty simple.
+
+131
+00:03:25.660 --> 00:03:26.700
+It's just a function.
+
+132
+00:03:26.700 --> 00:03:28.580
+So I call this one as my
+
+133
+00:03:28.580 --> 00:03:30.420
+decorator to exaggerate.
+
+134
+00:03:30.420 --> 00:03:31.980
+And just make sure that
+
+135
+00:03:31.980 --> 00:03:32.700
+you understand this.
+
+136
+00:03:32.700 --> 00:03:34.340
+What it takes as a parameter,
+
+137
+00:03:34.340 --> 00:03:35.620
+definitely a function.
+
+138
+00:03:36.230 --> 00:03:37.420
+This func doesn't
+
+139
+00:03:37.420 --> 00:03:38.260
+really mean function.
+
+140
+00:03:38.260 --> 00:03:39.220
+It could be Superman,
+
+141
+00:03:39.220 --> 00:03:40.060
+it could be Hitesh.
+
+142
+00:03:40.060 --> 00:03:42.020
+But it's just a name as of now.
+
+143
+00:03:42.020 --> 00:03:42.370
+But.
+
+144
+00:03:42.370 --> 00:03:43.770
+But we expect that what you'll be
+
+145
+00:03:43.770 --> 00:03:45.330
+passing in here will be a function.
+
+146
+00:03:45.330 --> 00:03:46.610
+Remember the diagram.
+
+147
+00:03:46.610 --> 00:03:48.050
+This whole block is a function.
+
+148
+00:03:48.050 --> 00:03:49.650
+And this is further a function
+
+149
+00:03:49.650 --> 00:03:51.490
+that we are passing inside this.
+
+150
+00:03:51.490 --> 00:03:52.530
+What do we do here?
+
+151
+00:03:53.170 --> 00:03:54.530
+We simply go ahead and say
+
+152
+00:03:54.530 --> 00:03:56.250
+that inside this function.
+
+153
+00:03:56.250 --> 00:03:58.129
+Further, I go ahead and define
+
+154
+00:03:58.129 --> 00:04:00.050
+a wrapper just like this.
+
+155
+00:04:00.050 --> 00:04:01.290
+All the decorators are
+
+156
+00:04:01.290 --> 00:04:02.370
+designed like this.
+
+157
+00:04:02.370 --> 00:04:04.690
+And the job of this function is
+
+158
+00:04:04.690 --> 00:04:07.450
+first of all to print something that
+
+159
+00:04:07.450 --> 00:04:13.830
+I will say before function runs.
+
+160
+00:04:13.830 --> 00:04:15.670
+We'll have one more which will say
+
+161
+00:04:17.029 --> 00:04:19.029
+after function runs.
+
+162
+00:04:19.029 --> 00:04:20.910
+And just in between, whatever
+
+163
+00:04:20.910 --> 00:04:23.110
+the function I'm accepting as
+
+164
+00:04:23.110 --> 00:04:25.190
+a params, I'll just execute that.
+
+165
+00:04:25.190 --> 00:04:26.230
+That is it.
+
+166
+00:04:26.230 --> 00:04:27.750
+That is your whole thing.
+
+167
+00:04:27.750 --> 00:04:29.470
+One thing that we also prefer
+
+168
+00:04:29.470 --> 00:04:31.150
+to do in these kinds of things, we
+
+169
+00:04:31.150 --> 00:04:32.910
+go ahead and simply say I want
+
+170
+00:04:32.910 --> 00:04:35.110
+to return, the wrapper as well.
+
+171
+00:04:35.860 --> 00:04:37.100
+So whatever the wrapper is going
+
+172
+00:04:37.100 --> 00:04:38.580
+on, that's getting returned.
+
+173
+00:04:38.580 --> 00:04:40.060
+Now in order to use this
+
+174
+00:04:40.060 --> 00:04:41.620
+function, this is a very special
+
+175
+00:04:41.620 --> 00:04:42.580
+function that you're writing
+
+176
+00:04:42.580 --> 00:04:44.060
+that you are taking a function
+
+177
+00:04:44.060 --> 00:04:45.100
+inside you and you are just
+
+178
+00:04:45.100 --> 00:04:46.540
+executing it and returning the
+
+179
+00:04:46.540 --> 00:04:47.860
+Outer wrapper one.
+
+180
+00:04:47.860 --> 00:04:48.940
+There is a special way
+
+181
+00:04:48.940 --> 00:04:49.780
+of how you use it.
+
+182
+00:04:49.780 --> 00:04:51.540
+You put up an at the rate sign
+
+183
+00:04:51.540 --> 00:04:54.340
+and then you simply say mydecorator.
+
+184
+00:04:54.340 --> 00:04:54.980
+That is it.
+
+185
+00:04:54.980 --> 00:04:57.180
+No parenthesis, nothing is just
+
+186
+00:04:57.180 --> 00:04:58.860
+a name with the at the rate this
+
+187
+00:04:58.860 --> 00:05:00.420
+actually says that hey, whatever
+
+188
+00:05:00.420 --> 00:05:02.260
+is coming up just in the next line
+
+189
+00:05:02.860 --> 00:05:04.300
+will be wrapped up.
+
+190
+00:05:04.300 --> 00:05:05.900
+So I'll just go ahead and say def.
+
+191
+00:05:05.900 --> 00:05:06.820
+Let's just call this one
+
+192
+00:05:06.820 --> 00:05:09.420
+as greet basic function.
+
+193
+00:05:10.700 --> 00:05:12.380
+And I go ahead and simply
+
+194
+00:05:12.380 --> 00:05:15.900
+print this print.
+
+195
+00:05:17.260 --> 00:05:23.100
+I will say hello from decorators
+
+196
+00:05:23.100 --> 00:05:25.660
+class from chai code.
+
+197
+00:05:26.300 --> 00:05:27.020
+There we go.
+
+198
+00:05:27.580 --> 00:05:29.060
+So let's go ahead and run this.
+
+199
+00:05:29.060 --> 00:05:30.940
+I'll open up an integrated terminal
+
+200
+00:05:30.940 --> 00:05:32.770
+just right up here will close
+
+201
+00:05:32.770 --> 00:05:35.650
+the rest of the ones, even this one.
+
+202
+00:05:36.210 --> 00:05:37.890
+I'll again start an integrated
+
+203
+00:05:37.890 --> 00:05:39.090
+terminal and let's
+
+204
+00:05:39.090 --> 00:05:40.050
+go ahead and run this.
+
+205
+00:05:42.370 --> 00:05:44.210
+Let's use Python 3.
+
+206
+00:05:44.210 --> 00:05:48.049
+Python 3 and then the basics 1.
+
+207
+00:05:48.049 --> 00:05:50.690
+And We forgot to call the method.
+
+208
+00:05:50.690 --> 00:05:51.570
+We forgot that.
+
+209
+00:05:51.570 --> 00:05:52.610
+Totally forgot that.
+
+210
+00:05:53.490 --> 00:05:54.130
+Greet.
+
+211
+00:05:54.130 --> 00:05:54.770
+Run this.
+
+212
+00:05:56.210 --> 00:05:57.490
+And We are going to run this.
+
+213
+00:05:57.490 --> 00:05:59.720
+Now notice here, since we have this
+
+214
+00:05:59.720 --> 00:06:01.400
+decorator, this says before
+
+215
+00:06:01.400 --> 00:06:03.160
+the function runs, whatever I want
+
+216
+00:06:03.160 --> 00:06:04.920
+to do and after the function runs
+
+217
+00:06:04.920 --> 00:06:06.880
+and believe it or not, that is it.
+
+218
+00:06:06.880 --> 00:06:08.240
+That is your decorator.
+
+219
+00:06:08.240 --> 00:06:09.720
+The moment you remove this line
+
+220
+00:06:09.720 --> 00:06:11.480
+that means hey, I'm not decorating
+
+221
+00:06:11.480 --> 00:06:12.960
+this function with anything.
+
+222
+00:06:13.600 --> 00:06:15.440
+Nothing sprinkled on top of it.
+
+223
+00:06:15.440 --> 00:06:16.040
+There we go.
+
+224
+00:06:16.040 --> 00:06:16.720
+Basics.
+
+225
+00:06:16.720 --> 00:06:18.040
+If I go ahead and decorate
+
+226
+00:06:18.040 --> 00:06:19.920
+it back with my decorator,
+
+227
+00:06:19.920 --> 00:06:22.240
+it works just like before.
+
+228
+00:06:22.240 --> 00:06:23.240
+So this is the whole
+
+229
+00:06:23.240 --> 00:06:24.160
+point of having it.
+
+230
+00:06:24.780 --> 00:06:25.820
+But there is a problem,
+
+231
+00:06:25.820 --> 00:06:28.620
+there is a small problem with this.
+
+232
+00:06:28.620 --> 00:06:30.420
+So if I go ahead and want to print
+
+233
+00:06:30.420 --> 00:06:31.860
+out something more, let's just
+
+234
+00:06:31.860 --> 00:06:33.500
+say if I want to print this like
+
+235
+00:06:33.500 --> 00:06:36.780
+this and I say I want to print
+
+236
+00:06:36.780 --> 00:06:39.380
+this greet not as a function
+
+237
+00:06:39.380 --> 00:06:40.820
+execution, but I want to know
+
+238
+00:06:40.820 --> 00:06:41.420
+this name.
+
+239
+00:06:41.420 --> 00:06:44.140
+So I have a dunder name for this.
+
+240
+00:06:44.140 --> 00:06:45.340
+What happens when I try
+
+241
+00:06:45.340 --> 00:06:46.540
+to go ahead and print this?
+
+242
+00:06:47.260 --> 00:06:49.740
+Now notice here it says wrapper.
+
+243
+00:06:49.740 --> 00:06:50.920
+Why wrapper?
+
+244
+00:06:50.920 --> 00:06:52.200
+Our function name was greet
+
+245
+00:06:52.920 --> 00:06:54.440
+because technically what we are
+
+246
+00:06:54.440 --> 00:06:56.320
+returning back is actually a repr.
+
+247
+00:06:56.320 --> 00:06:57.760
+So this is a common syntax
+
+248
+00:06:57.760 --> 00:06:59.000
+and common mistake.
+
+249
+00:06:59.000 --> 00:07:00.600
+Not mistake, but this is a common
+
+250
+00:07:00.600 --> 00:07:02.240
+thing which is done that hey,
+
+251
+00:07:02.240 --> 00:07:03.640
+the name of the function changes.
+
+252
+00:07:03.640 --> 00:07:04.960
+Not only the name, couple
+
+253
+00:07:04.960 --> 00:07:06.280
+of other metadata about
+
+254
+00:07:06.280 --> 00:07:07.480
+the function also changes.
+
+255
+00:07:07.480 --> 00:07:09.680
+By the way, if you know metadata is
+
+256
+00:07:09.680 --> 00:07:11.960
+about is like data about the data.
+
+257
+00:07:11.960 --> 00:07:13.560
+For example you have a file,
+
+258
+00:07:13.560 --> 00:07:15.560
+the file actual content, whichever
+
+259
+00:07:15.560 --> 00:07:17.160
+the Movie or the MP3, you are
+
+260
+00:07:17.160 --> 00:07:18.320
+listening, that's actual content.
+
+261
+00:07:18.320 --> 00:07:19.784
+But is it an MP3?
+
+262
+00:07:19.784 --> 00:07:22.020
+Is it a wave, is it 5 minute
+
+263
+00:07:22.020 --> 00:07:23.060
+long, is it 2 minutes
+
+264
+00:07:23.060 --> 00:07:24.860
+long that all is metadata?
+
+265
+00:07:24.860 --> 00:07:26.060
+So this is what we have
+
+266
+00:07:26.060 --> 00:07:27.740
+now Is there a solution for it?
+
+267
+00:07:27.740 --> 00:07:29.380
+Yes, this is where I first time
+
+268
+00:07:29.380 --> 00:07:31.100
+introduce you to the third party
+
+269
+00:07:31.100 --> 00:07:32.900
+or actually built in Python
+
+270
+00:07:32.900 --> 00:07:34.780
+libraries, to be honest.
+
+271
+00:07:34.780 --> 00:07:36.580
+So from we have something
+
+272
+00:07:36.580 --> 00:07:38.900
+known as func tools and from
+
+273
+00:07:38.900 --> 00:07:40.220
+this we are going to import
+
+274
+00:07:40.220 --> 00:07:42.060
+something known as wraps.
+
+275
+00:07:42.060 --> 00:07:43.580
+What does this wrap does?
+
+276
+00:07:43.580 --> 00:07:45.660
+The whole job of this wraps is
+
+277
+00:07:45.660 --> 00:07:46.810
+to make sure to place
+
+278
+00:07:46.810 --> 00:07:48.250
+preserve the metadata.
+
+279
+00:07:48.250 --> 00:07:50.250
+So if I go and just come up here
+
+280
+00:07:50.250 --> 00:07:53.490
+and just use at the rate and simply
+
+281
+00:07:53.490 --> 00:07:55.130
+say wraps just like that.
+
+282
+00:07:55.130 --> 00:07:56.330
+And by the way, ignore this
+
+283
+00:07:56.330 --> 00:07:57.770
+Windsurf all this line.
+
+284
+00:07:57.770 --> 00:07:59.010
+I know this might be bothering
+
+285
+00:07:59.010 --> 00:08:00.010
+you, but this actually comes
+
+286
+00:08:00.010 --> 00:08:01.250
+up from my AI plugin.
+
+287
+00:08:01.250 --> 00:08:02.849
+You totally, totally can ignore it.
+
+288
+00:08:02.849 --> 00:08:03.930
+I should have said it earlier.
+
+289
+00:08:03.930 --> 00:08:05.730
+I'll probably make a video, saying
+
+290
+00:08:05.730 --> 00:08:06.970
+that, hey, please ignore this line.
+
+291
+00:08:06.970 --> 00:08:08.010
+This is just generated.
+
+292
+00:08:08.730 --> 00:08:09.530
+It will not appear
+
+293
+00:08:09.530 --> 00:08:10.650
+in your code editor.
+
+294
+00:08:10.650 --> 00:08:11.930
+I should say this earlier.
+
+295
+00:08:11.930 --> 00:08:12.660
+All right, all right.
+
+296
+00:08:13.220 --> 00:08:14.980
+So once I go ahead and do this,
+
+297
+00:08:14.980 --> 00:08:16.860
+all I have to do is this is it.
+
+298
+00:08:16.860 --> 00:08:18.380
+Once you have this wraps again,
+
+299
+00:08:18.380 --> 00:08:19.540
+the way how you use it,
+
+300
+00:08:20.180 --> 00:08:21.780
+it's not truly a decorator.
+
+301
+00:08:21.780 --> 00:08:23.180
+So you use it like this and then
+
+302
+00:08:23.180 --> 00:08:24.060
+you pass on whatever
+
+303
+00:08:24.060 --> 00:08:25.220
+the function you're passing.
+
+304
+00:08:25.220 --> 00:08:27.060
+You just have to pass it here.
+
+305
+00:08:27.060 --> 00:08:28.180
+This is the syntax.
+
+306
+00:08:28.180 --> 00:08:29.460
+Always keep this in mind.
+
+307
+00:08:29.460 --> 00:08:31.580
+And what this small syntax is
+
+308
+00:08:31.580 --> 00:08:33.500
+going to do is if I run this
+
+309
+00:08:33.500 --> 00:08:35.539
+program again, notice here
+
+310
+00:08:35.539 --> 00:08:36.820
+it's preserving the name.
+
+311
+00:08:36.820 --> 00:08:38.179
+It's not wrap anymore,
+
+312
+00:08:38.179 --> 00:08:40.000
+it's actually greeting.
+
+313
+00:08:40.000 --> 00:08:41.039
+That is it.
+
+314
+00:08:41.039 --> 00:08:45.040
+And trust me, this, is all
+
+315
+00:08:45.040 --> 00:08:46.720
+about the decorators.
+
+316
+00:08:46.720 --> 00:08:48.800
+I know people have spent like 30
+
+317
+00:08:48.800 --> 00:08:50.560
+minutes, 20 minutes, one hour
+
+318
+00:08:50.560 --> 00:08:52.280
+on the decorators, but there is
+
+319
+00:08:52.280 --> 00:08:53.920
+nothing more to decorators.
+
+320
+00:08:53.920 --> 00:08:55.680
+It's just a wrapper function which
+
+321
+00:08:55.680 --> 00:08:57.280
+takes your function, executes that
+
+322
+00:08:57.280 --> 00:08:59.120
+and probably adds some more to it.
+
+323
+00:08:59.120 --> 00:09:01.040
+Probably just the printing statement.
+
+324
+00:09:01.040 --> 00:09:02.440
+Probably checks more things
+
+325
+00:09:02.440 --> 00:09:03.240
+in your function.
+
+326
+00:09:03.240 --> 00:09:04.440
+Inject more values,
+
+327
+00:09:04.440 --> 00:09:05.660
+extract more values.
+
+328
+00:09:05.660 --> 00:09:06.460
+There could be hundreds
+
+329
+00:09:06.460 --> 00:09:07.860
+of things, but the core
+
+330
+00:09:07.860 --> 00:09:09.820
+foundation is this is it.
+
+331
+00:09:09.820 --> 00:09:10.740
+Let's go ahead and catch
+
+332
+00:09:10.740 --> 00:09:11.580
+up in next video.

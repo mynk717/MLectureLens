@@ -1,0 +1,717 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.800
+Okay, so now that you have a great
+
+2
+00:00:01.800 --> 00:00:03.600
+understanding on middlewares,
+
+3
+00:00:03.600 --> 00:00:04.520
+now there is something that
+
+4
+00:00:04.520 --> 00:00:05.720
+I want to really tell you.
+
+5
+00:00:05.720 --> 00:00:07.400
+Number one, that you
+
+6
+00:00:07.400 --> 00:00:08.440
+can define middlewares.
+
+7
+00:00:08.440 --> 00:00:09.680
+You know about middlewares.
+
+8
+00:00:09.680 --> 00:00:11.600
+You can have two kinds
+
+9
+00:00:11.600 --> 00:00:13.120
+of middlewares, okay?
+
+10
+00:00:13.120 --> 00:00:14.720
+So how middlewares can work.
+
+11
+00:00:14.720 --> 00:00:16.000
+So you can have
+
+12
+00:00:16.000 --> 00:00:18.000
+global middlewares, okay?
+
+13
+00:00:18.000 --> 00:00:19.960
+So global middlewares are middlewares
+
+14
+00:00:19.960 --> 00:00:21.200
+which will run every time.
+
+15
+00:00:21.200 --> 00:00:24.080
+For example, these middlewares will
+
+16
+00:00:24.080 --> 00:00:26.640
+run every time, no matter where, on
+
+17
+00:00:26.640 --> 00:00:28.400
+which route the requester is going.
+
+18
+00:00:28.400 --> 00:00:29.640
+Because you have defined it
+
+19
+00:00:29.640 --> 00:00:31.360
+on your very top.
+
+20
+00:00:31.360 --> 00:00:33.120
+These middlewares will always
+
+21
+00:00:33.120 --> 00:00:34.640
+and always run, right?
+
+22
+00:00:35.200 --> 00:00:37.680
+Secondly, you can have, okay, you
+
+23
+00:00:37.680 --> 00:00:39.920
+can have route level middlewares
+
+24
+00:00:39.920 --> 00:00:41.440
+as a root level middlewares.
+
+25
+00:00:41.440 --> 00:00:43.920
+So root level middlewares.
+
+26
+00:00:43.920 --> 00:00:45.680
+So root level middleware means
+
+27
+00:00:45.680 --> 00:00:46.550
+that, let's say,
+
+28
+00:00:47.119 --> 00:00:49.120
+let me define a function here, okay?
+
+29
+00:00:49.120 --> 00:00:51.040
+Now look at me very closely.
+
+30
+00:00:51.040 --> 00:00:52.400
+What I'm going to do is I'm just
+
+31
+00:00:52.400 --> 00:00:54.400
+going to extract out this function
+
+32
+00:00:54.400 --> 00:00:55.720
+and I'm going to put it here.
+
+33
+00:00:55.720 --> 00:00:56.480
+Okay?
+
+34
+00:00:56.480 --> 00:00:58.000
+So this function is basically
+
+35
+00:00:58.000 --> 00:00:59.240
+a logger middleware.
+
+36
+00:00:59.240 --> 00:00:59.990
+Yes or no?
+
+37
+00:00:59.990 --> 00:01:01.830
+Yeah, this is a logger middleware.
+
+38
+00:01:01.830 --> 00:01:03.990
+And I can pass a reference
+
+39
+00:01:03.990 --> 00:01:05.069
+now here, okay, Because
+
+40
+00:01:05.069 --> 00:01:06.390
+I have extracted it out.
+
+41
+00:01:06.390 --> 00:01:07.430
+So that's fine.
+
+42
+00:01:07.430 --> 00:01:08.510
+Now what I can do is
+
+43
+00:01:08.510 --> 00:01:09.630
+this is a middleware.
+
+44
+00:01:09.630 --> 00:01:10.230
+That's fine.
+
+45
+00:01:10.230 --> 00:01:11.070
+Let's create one more
+
+46
+00:01:11.070 --> 00:01:12.470
+middleware that is function.
+
+47
+00:01:12.470 --> 00:01:15.310
+And I can say custom middleware.
+
+48
+00:01:15.310 --> 00:01:16.310
+Okay.
+
+49
+00:01:16.310 --> 00:01:17.550
+I, mean, I was not able to think
+
+50
+00:01:17.550 --> 00:01:19.190
+of a good name, but yeah.
+
+51
+00:01:19.190 --> 00:01:20.910
+So what I can do is let's say that
+
+52
+00:01:20.910 --> 00:01:24.070
+this is console log, that I
+
+53
+00:01:24.070 --> 00:01:27.530
+am, a, custom middle middleware.
+
+54
+00:01:27.530 --> 00:01:28.690
+And then you can just call
+
+55
+00:01:28.690 --> 00:01:30.170
+the next function, right?
+
+56
+00:01:30.170 --> 00:01:32.410
+So what you can do is, if you try
+
+57
+00:01:32.410 --> 00:01:34.490
+to do this thing that is register.
+
+58
+00:01:34.490 --> 00:01:35.250
+Now, this is a global
+
+59
+00:01:35.250 --> 00:01:36.330
+middleware, right?
+
+60
+00:01:36.330 --> 00:01:37.690
+But what you can do is you
+
+61
+00:01:37.690 --> 00:01:39.090
+can just take out this middleware
+
+62
+00:01:39.090 --> 00:01:40.810
+and put it right here.
+
+63
+00:01:40.810 --> 00:01:42.329
+What this means that, hey,
+
+64
+00:01:42.329 --> 00:01:44.330
+if there is a request on this
+
+65
+00:01:44.330 --> 00:01:46.610
+specific route, first you have
+
+66
+00:01:46.610 --> 00:01:47.770
+to run this middleware.
+
+67
+00:01:47.770 --> 00:01:48.250
+Okay?
+
+68
+00:01:48.250 --> 00:01:48.850
+First you have to
+
+69
+00:01:48.850 --> 00:01:49.770
+run this middleware.
+
+70
+00:01:49.770 --> 00:01:52.540
+Now this middleware again can either
+
+71
+00:01:52.540 --> 00:01:53.780
+get the request right.
+
+72
+00:01:53.780 --> 00:01:55.260
+It can like read the request,
+
+73
+00:01:55.260 --> 00:01:56.300
+modify something.
+
+74
+00:01:56.300 --> 00:01:58.180
+So for this particular middleware, it
+
+75
+00:01:58.180 --> 00:02:00.980
+can either end the request response
+
+76
+00:02:00.980 --> 00:02:03.060
+cycle or, in this particular
+
+77
+00:02:03.060 --> 00:02:04.980
+scenario, the next function will
+
+78
+00:02:04.980 --> 00:02:07.980
+point to this particular function.
+
+79
+00:02:07.980 --> 00:02:09.900
+So that means this middleware.
+
+80
+00:02:09.900 --> 00:02:11.620
+So what will happen when the request
+
+81
+00:02:11.620 --> 00:02:13.420
+will come to this particular route?
+
+82
+00:02:13.420 --> 00:02:14.940
+First this middleware will run,
+
+83
+00:02:14.940 --> 00:02:16.700
+then this middleware will run.
+
+84
+00:02:16.700 --> 00:02:18.860
+Then the request will be matched
+
+85
+00:02:18.860 --> 00:02:19.860
+to this particular route
+
+86
+00:02:19.860 --> 00:02:21.340
+which will run this middleware.
+
+87
+00:02:21.340 --> 00:02:23.020
+And this middleware internally
+
+88
+00:02:23.020 --> 00:02:25.240
+calls the next function, which will
+
+89
+00:02:25.240 --> 00:02:26.920
+eventually invoke this function.
+
+90
+00:02:26.920 --> 00:02:28.040
+You can even have series
+
+91
+00:02:28.040 --> 00:02:28.720
+of middleware.
+
+92
+00:02:28.720 --> 00:02:29.480
+For example, you can
+
+93
+00:02:29.480 --> 00:02:30.720
+even do again logger.
+
+94
+00:02:30.720 --> 00:02:34.040
+Okay, so now first this, then he's
+
+95
+00:02:34.040 --> 00:02:35.880
+his next function will actually
+
+96
+00:02:35.880 --> 00:02:37.680
+point to this logger middleware.
+
+97
+00:02:37.680 --> 00:02:39.400
+This logger middleware's next
+
+98
+00:02:39.400 --> 00:02:40.680
+function, which is this will
+
+99
+00:02:40.680 --> 00:02:41.880
+then point to this one.
+
+100
+00:02:41.880 --> 00:02:42.600
+Got it.
+
+101
+00:02:42.600 --> 00:02:44.040
+So this is also possible.
+
+102
+00:02:44.680 --> 00:02:46.320
+So technically you know what
+
+103
+00:02:46.320 --> 00:02:47.720
+happens if I just remove this.
+
+104
+00:02:47.720 --> 00:02:49.720
+Now this is also middleware only.
+
+105
+00:02:50.300 --> 00:02:51.500
+This thing is also a middleware
+
+106
+00:02:51.500 --> 00:02:53.460
+only, which is only and only running
+
+107
+00:02:53.460 --> 00:02:54.780
+for this particular route.
+
+108
+00:02:54.780 --> 00:02:56.300
+So you can even have a next
+
+109
+00:02:56.300 --> 00:02:57.300
+function and call it.
+
+110
+00:02:57.300 --> 00:02:58.620
+But because it's a final
+
+111
+00:02:58.620 --> 00:03:00.380
+middleware, we just terminate
+
+112
+00:03:00.380 --> 00:03:01.940
+the request response cycle.
+
+113
+00:03:01.940 --> 00:03:02.780
+You get it?
+
+114
+00:03:02.780 --> 00:03:03.620
+This is also kind
+
+115
+00:03:03.620 --> 00:03:04.660
+of a middleware only.
+
+116
+00:03:04.660 --> 00:03:05.500
+The only thing is that
+
+117
+00:03:05.500 --> 00:03:06.340
+we are terminating
+
+118
+00:03:06.340 --> 00:03:07.580
+the request response cycle.
+
+119
+00:03:07.580 --> 00:03:09.740
+Okay, so this is how you can even
+
+120
+00:03:09.740 --> 00:03:11.420
+have route specific middlewares,
+
+121
+00:03:11.420 --> 00:03:12.540
+route level middlewares.
+
+122
+00:03:12.540 --> 00:03:14.780
+And thirdly, you can have, okay,
+
+123
+00:03:14.780 --> 00:03:16.780
+you can have router middlewares,
+
+124
+00:03:16.780 --> 00:03:18.700
+router middle wares.
+
+125
+00:03:18.700 --> 00:03:20.180
+Now this router middlewares.
+
+126
+00:03:20.180 --> 00:03:21.020
+For this you have to first
+
+127
+00:03:21.020 --> 00:03:22.820
+cover the concept of routers
+
+128
+00:03:22.820 --> 00:03:25.220
+in Express, okay?
+
+129
+00:03:25.220 --> 00:03:26.820
+And so that we will cover
+
+130
+00:03:26.820 --> 00:03:27.580
+in the next video.
+
+131
+00:03:27.580 --> 00:03:28.940
+So once we cover the routers,
+
+132
+00:03:28.940 --> 00:03:30.100
+then we can cover the router
+
+133
+00:03:30.100 --> 00:03:31.020
+middlewares as well.
+
+134
+00:03:31.020 --> 00:03:32.220
+But I hope the concept
+
+135
+00:03:32.220 --> 00:03:33.700
+of middleware is not clear to you.
+
+136
+00:03:33.700 --> 00:03:34.860
+So now when you will read this
+
+137
+00:03:34.860 --> 00:03:35.780
+code now you will understand
+
+138
+00:03:35.780 --> 00:03:36.980
+this better that why they
+
+139
+00:03:36.980 --> 00:03:38.780
+have written like app dot get.
+
+140
+00:03:38.780 --> 00:03:40.100
+You know what else you can do?
+
+141
+00:03:40.100 --> 00:03:41.500
+You can even do something like this.
+
+142
+00:03:41.500 --> 00:03:43.710
+Now this is very interesting app.
+
+143
+00:03:43.710 --> 00:03:46.310
+Use you can actually give a path, for
+
+144
+00:03:46.310 --> 00:03:49.230
+example, if it is like slash books.
+
+145
+00:03:49.230 --> 00:03:50.550
+Okay, now you can have
+
+146
+00:03:50.550 --> 00:03:51.750
+a middleware function that is
+
+147
+00:03:51.750 --> 00:03:53.710
+request response and next.
+
+148
+00:03:53.710 --> 00:03:55.390
+Now this particular middleware,
+
+149
+00:03:55.390 --> 00:03:56.910
+this middleware will always
+
+150
+00:03:56.910 --> 00:03:59.230
+run if the path matches this.
+
+151
+00:03:59.230 --> 00:04:01.670
+So even if it is, if it is okay, if
+
+152
+00:04:01.670 --> 00:04:05.230
+it is a get or post or any request,
+
+153
+00:04:05.230 --> 00:04:09.300
+any kind of request on okay, on
+
+154
+00:04:09.300 --> 00:04:10.740
+books, this middleware is going to
+
+155
+00:04:10.740 --> 00:04:12.260
+run because you have given a
+
+156
+00:04:12.260 --> 00:04:13.540
+matching path.
+
+157
+00:04:13.540 --> 00:04:16.579
+So for this particular path,
+
+158
+00:04:16.579 --> 00:04:17.980
+this middleware is going to run.
+
+159
+00:04:17.980 --> 00:04:19.459
+So yeah, this is also possible.
+
+160
+00:04:19.459 --> 00:04:21.700
+Okay, so basically you can even
+
+161
+00:04:21.700 --> 00:04:23.100
+have route level middlewares,
+
+162
+00:04:23.100 --> 00:04:24.300
+router level Middlewares,
+
+163
+00:04:24.300 --> 00:04:25.820
+global middlewares, or you can
+
+164
+00:04:25.820 --> 00:04:27.420
+have a logic to match a
+
+165
+00:04:27.420 --> 00:04:28.820
+middleware only when a specific
+
+166
+00:04:28.820 --> 00:04:30.100
+route is matched.
+
+167
+00:04:30.100 --> 00:04:32.180
+So with this you have completed your
+
+168
+00:04:32.180 --> 00:04:33.780
+middlewares, but you will understand
+
+169
+00:04:33.780 --> 00:04:35.740
+them better once we go into our
+
+170
+00:04:35.740 --> 00:04:37.580
+major project where we will have
+
+171
+00:04:37.580 --> 00:04:38.820
+authentication and authorization.
+
+172
+00:04:38.820 --> 00:04:39.880
+So, so there you will understand
+
+173
+00:04:39.880 --> 00:04:41.880
+the actual use of middlewares.
+
+174
+00:04:41.880 --> 00:04:42.280
+Okay?
+
+175
+00:04:42.280 --> 00:04:43.160
+And yeah, one more thing.
+
+176
+00:04:43.160 --> 00:04:44.040
+Starting with Express, five
+
+177
+00:04:44.040 --> 00:04:45.520
+middleware functions that return
+
+178
+00:04:45.520 --> 00:04:47.400
+a promise call, when they
+
+179
+00:04:47.400 --> 00:04:48.566
+reject, they throw an error.

@@ -1,0 +1,513 @@
+WEBVTT
+
+1
+00:00:00.240 --> 00:00:01.440
+All right, now let's understand
+
+2
+00:00:01.440 --> 00:00:03.040
+the other way of scaling
+
+3
+00:00:03.040 --> 00:00:04.440
+the databases on scale.
+
+4
+00:00:04.440 --> 00:00:06.080
+That is known as partitioning.
+
+5
+00:00:06.080 --> 00:00:07.440
+So let me show you what happens
+
+6
+00:00:07.440 --> 00:00:08.720
+in partitioning thing.
+
+7
+00:00:08.720 --> 00:00:10.040
+Let's take one instance
+
+8
+00:00:10.040 --> 00:00:10.800
+of the database.
+
+9
+00:00:10.800 --> 00:00:11.520
+So let's say that this
+
+10
+00:00:11.520 --> 00:00:13.280
+is your instance, okay?
+
+11
+00:00:13.280 --> 00:00:14.600
+What you can do is you can
+
+12
+00:00:14.600 --> 00:00:17.280
+actually create multiple instances
+
+13
+00:00:17.280 --> 00:00:18.360
+of your database.
+
+14
+00:00:18.360 --> 00:00:19.400
+These are multiple different,
+
+15
+00:00:19.400 --> 00:00:20.120
+different servers.
+
+16
+00:00:20.120 --> 00:00:21.280
+There is no redundancy, there
+
+17
+00:00:21.280 --> 00:00:22.320
+is no duplication of data.
+
+18
+00:00:22.320 --> 00:00:22.800
+Okay?
+
+19
+00:00:23.840 --> 00:00:25.720
+What you can do is in this case,
+
+20
+00:00:25.720 --> 00:00:27.320
+let's name these instances, right?
+
+21
+00:00:27.320 --> 00:00:28.640
+This is your instance zero.
+
+22
+00:00:28.640 --> 00:00:30.410
+So, so I'll just name it as zero.
+
+23
+00:00:30.410 --> 00:00:32.409
+This is your instance, one.
+
+24
+00:00:32.409 --> 00:00:33.770
+Okay, Then this is your
+
+25
+00:00:33.770 --> 00:00:35.130
+instance number two.
+
+26
+00:00:35.800 --> 00:00:36.890
+I'll just quickly name them.
+
+27
+00:00:44.410 --> 00:00:46.650
+And finally we have the five here.
+
+28
+00:00:46.650 --> 00:00:48.330
+Now what you can do is see
+
+29
+00:00:48.970 --> 00:00:50.490
+a lot of data is coming, which
+
+30
+00:00:50.490 --> 00:00:52.170
+I need to put it here, right?
+
+31
+00:00:52.170 --> 00:00:53.850
+So what I can do is I can actually
+
+32
+00:00:53.850 --> 00:00:56.320
+create a hash function where you
+
+33
+00:00:56.320 --> 00:00:57.740
+can, you can give me some key,
+
+34
+00:00:57.740 --> 00:00:59.780
+most probably the user id, and
+
+35
+00:00:59.780 --> 00:01:02.260
+this hash function will return an
+
+36
+00:01:02.260 --> 00:01:02.740
+index.
+
+37
+00:01:02.740 --> 00:01:04.019
+How can you return an index?
+
+38
+00:01:04.019 --> 00:01:05.980
+The simplest function is
+
+39
+00:01:05.980 --> 00:01:08.380
+take the ID and mod it with
+
+40
+00:01:08.380 --> 00:01:09.700
+the size of your instances.
+
+41
+00:01:09.700 --> 00:01:10.940
+How many instances do you have?
+
+42
+00:01:10.940 --> 00:01:12.220
+You have six instances, right?
+
+43
+00:01:12.220 --> 00:01:12.980
+Zero to five.
+
+44
+00:01:12.980 --> 00:01:14.300
+So I'll just say six.
+
+45
+00:01:14.300 --> 00:01:16.180
+Whatever is returned to me, I
+
+46
+00:01:16.180 --> 00:01:17.900
+will use that database to store.
+
+47
+00:01:17.900 --> 00:01:19.700
+Now what happens is, let's say
+
+48
+00:01:19.700 --> 00:01:21.020
+you are storing something.
+
+49
+00:01:21.020 --> 00:01:23.580
+So the data is basically divided it
+
+50
+00:01:23.580 --> 00:01:25.190
+into this six, six partitions.
+
+51
+00:01:25.830 --> 00:01:28.110
+Your some data is stored here, some
+
+52
+00:01:28.110 --> 00:01:29.710
+data is stored here, some data is
+
+53
+00:01:29.710 --> 00:01:31.230
+stored here, some data is stored
+
+54
+00:01:31.230 --> 00:01:32.430
+here, some data is stored here.
+
+55
+00:01:32.430 --> 00:01:33.710
+Now the best part about this
+
+56
+00:01:33.710 --> 00:01:34.670
+particular strategy, which
+
+57
+00:01:34.670 --> 00:01:36.070
+is known as partitioning,
+
+58
+00:01:36.070 --> 00:01:37.830
+the data is actually divided
+
+59
+00:01:37.830 --> 00:01:39.510
+into the multiple databases.
+
+60
+00:01:39.510 --> 00:01:40.110
+Okay?
+
+61
+00:01:40.110 --> 00:01:41.630
+So that means one database
+
+62
+00:01:41.630 --> 00:01:42.870
+is not storing the data.
+
+63
+00:01:42.870 --> 00:01:44.390
+Multiple databases are there
+
+64
+00:01:44.390 --> 00:01:45.830
+which are storing your data.
+
+65
+00:01:45.830 --> 00:01:47.350
+How to choose that, which
+
+66
+00:01:47.350 --> 00:01:48.750
+database is perfect for you,
+
+67
+00:01:48.750 --> 00:01:50.300
+you have a hash function.
+
+68
+00:01:50.300 --> 00:01:51.140
+So this is the simplest
+
+69
+00:01:51.140 --> 00:01:51.980
+hash function.
+
+70
+00:01:51.980 --> 00:01:53.220
+You can even write this hash
+
+71
+00:01:53.220 --> 00:01:54.780
+function in such a way that hey,
+
+72
+00:01:54.780 --> 00:01:56.500
+all the India traffic will go here,
+
+73
+00:01:56.500 --> 00:01:58.220
+all the US customer data will go
+
+74
+00:01:58.220 --> 00:02:01.060
+here, all the European, traffic
+
+75
+00:02:01.060 --> 00:02:01.660
+will go here.
+
+76
+00:02:01.660 --> 00:02:02.980
+You can even partition based
+
+77
+00:02:02.980 --> 00:02:03.900
+on the geolocation.
+
+78
+00:02:03.900 --> 00:02:05.100
+You can partition based
+
+79
+00:02:05.100 --> 00:02:06.299
+on the IP address.
+
+80
+00:02:06.299 --> 00:02:08.020
+You can partition it on the user ID
+
+81
+00:02:08.020 --> 00:02:10.100
+basis howsoever you want to do it.
+
+82
+00:02:10.100 --> 00:02:12.060
+So partitioning algorithm is yours.
+
+83
+00:02:12.060 --> 00:02:13.940
+But this is also one way of scaling
+
+84
+00:02:13.940 --> 00:02:15.660
+the databases where you can divide
+
+85
+00:02:15.660 --> 00:02:17.020
+the load between the databases.
+
+86
+00:02:17.720 --> 00:02:19.040
+For this particular approach, there
+
+87
+00:02:19.040 --> 00:02:20.760
+is this one problem that if you
+
+88
+00:02:20.760 --> 00:02:22.960
+have to do a, join lookup, for
+
+89
+00:02:22.960 --> 00:02:25.560
+example, some data is here and some
+
+90
+00:02:25.560 --> 00:02:27.120
+data is here, then you have to
+
+91
+00:02:27.120 --> 00:02:28.720
+query it from two tables and then
+
+92
+00:02:28.720 --> 00:02:30.120
+you have to join them manually in
+
+93
+00:02:30.120 --> 00:02:31.320
+your application.
+
+94
+00:02:31.320 --> 00:02:32.640
+So joining is not easy.
+
+95
+00:02:32.640 --> 00:02:33.720
+It can take time.
+
+96
+00:02:33.720 --> 00:02:34.920
+So that is one downside
+
+97
+00:02:34.920 --> 00:02:36.000
+of this particular method.
+
+98
+00:02:36.000 --> 00:02:38.000
+But yes, partitioning of databases
+
+99
+00:02:38.000 --> 00:02:39.880
+is again a popular strategy
+
+100
+00:02:39.880 --> 00:02:41.160
+to scale the databases.
+
+101
+00:02:41.160 --> 00:02:42.880
+That is by dividing the load into
+
+102
+00:02:42.880 --> 00:02:44.800
+multiple instances of the database.
+
+103
+00:02:44.800 --> 00:02:46.440
+Okay, so now you know two ways
+
+104
+00:02:46.440 --> 00:02:47.560
+to scale a database.
+
+105
+00:02:47.560 --> 00:02:49.440
+That is one is the multi replica.
+
+106
+00:02:49.440 --> 00:02:51.120
+So you can have redundancy.
+
+107
+00:02:51.120 --> 00:02:52.040
+But the only problem
+
+108
+00:02:52.040 --> 00:02:53.520
+is that data is late.
+
+109
+00:02:53.520 --> 00:02:55.520
+The data in the read replicas
+
+110
+00:02:55.520 --> 00:02:57.400
+are late and a master slave
+
+111
+00:02:57.400 --> 00:02:58.480
+architecture is followed.
+
+112
+00:02:58.480 --> 00:02:59.960
+Then is data partitioning that
+
+113
+00:02:59.960 --> 00:03:01.520
+you can actually spin up multiple
+
+114
+00:03:01.520 --> 00:03:03.760
+databases, independent databases
+
+115
+00:03:03.760 --> 00:03:05.280
+which can store the data.
+
+116
+00:03:05.280 --> 00:03:07.040
+And further you can even have
+
+117
+00:03:07.040 --> 00:03:08.720
+read replicas of every instance.
+
+118
+00:03:08.720 --> 00:03:09.760
+I mean it is going to be very
+
+119
+00:03:09.760 --> 00:03:11.650
+costly, but yes, you can do it.
+
+120
+00:03:11.650 --> 00:03:13.010
+Now this is the master.
+
+121
+00:03:13.010 --> 00:03:13.810
+Just a second.
+
+122
+00:03:13.810 --> 00:03:15.330
+Now this is the master database.
+
+123
+00:03:15.330 --> 00:03:17.090
+Then it has three replicas.
+
+124
+00:03:17.090 --> 00:03:18.570
+So this further scales
+
+125
+00:03:18.570 --> 00:03:20.610
+every partition by a lot.
+
+126
+00:03:20.610 --> 00:03:21.930
+So this is how you can actually
+
+127
+00:03:21.930 --> 00:03:23.290
+scale the databases as
+
+128
+00:03:23.290 --> 00:03:24.690
+well in the system design.
