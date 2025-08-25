@@ -1,0 +1,1693 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:01.560
+All right, so welcome to the another
+
+2
+00:00:01.560 --> 00:00:03.160
+video in which we have
+
+3
+00:00:03.160 --> 00:00:04.840
+to detect who is the current logged
+
+4
+00:00:04.840 --> 00:00:06.960
+in user and how we can do that.
+
+5
+00:00:06.960 --> 00:00:08.880
+So what we could do is be simple.
+
+6
+00:00:08.880 --> 00:00:09.560
+It's very simple.
+
+7
+00:00:09.560 --> 00:00:11.080
+We have already studied the concept
+
+8
+00:00:11.080 --> 00:00:12.360
+of middlewares, right?
+
+9
+00:00:12.360 --> 00:00:14.240
+The middlewares.
+
+10
+00:00:15.200 --> 00:00:16.960
+See what I can do is
+
+11
+00:00:16.960 --> 00:00:18.600
+technically, let's say that
+
+12
+00:00:18.600 --> 00:00:20.160
+here is your user, right?
+
+13
+00:00:20.160 --> 00:00:22.760
+This is the user or the client making
+
+14
+00:00:22.760 --> 00:00:25.810
+a request to your express server.
+
+15
+00:00:25.810 --> 00:00:26.530
+So these are your different,
+
+16
+00:00:26.530 --> 00:00:27.170
+different routes.
+
+17
+00:00:27.170 --> 00:00:28.290
+Let's say this is a route.
+
+18
+00:00:28.930 --> 00:00:30.250
+Now one thing is what you can
+
+19
+00:00:30.250 --> 00:00:33.970
+do is like you can write a logic
+
+20
+00:00:33.970 --> 00:00:36.130
+of getting the current user
+
+21
+00:00:36.130 --> 00:00:38.010
+here, right, in every route.
+
+22
+00:00:38.010 --> 00:00:39.370
+For example, let me just
+
+23
+00:00:39.370 --> 00:00:40.850
+code it, okay, for you.
+
+24
+00:00:40.850 --> 00:00:43.250
+So let's say async request
+
+25
+00:00:43.250 --> 00:00:45.410
+and response, correct?
+
+26
+00:00:45.410 --> 00:00:47.730
+So what you can do is how.
+
+27
+00:00:47.730 --> 00:00:50.050
+So you are expecting that request
+
+28
+00:00:50.050 --> 00:00:52.620
+will somehow contain the session id.
+
+29
+00:00:52.620 --> 00:00:54.820
+Okay, so let's say that user, you
+
+30
+00:00:54.820 --> 00:00:56.700
+have told the user that hey, in
+
+31
+00:00:56.700 --> 00:00:59.780
+the headers always give me an header
+
+32
+00:00:59.780 --> 00:01:02.620
+that is let's say Session ID
+
+33
+00:01:02.620 --> 00:01:04.099
+as whatever is your session id.
+
+34
+00:01:04.099 --> 00:01:05.300
+Okay, so this is one thing that
+
+35
+00:01:05.300 --> 00:01:06.940
+you are saying to the user.
+
+36
+00:01:06.940 --> 00:01:08.980
+So you can assume that you are going
+
+37
+00:01:08.980 --> 00:01:10.420
+to get the session ID
+
+38
+00:01:10.420 --> 00:01:12.180
+of the user in the headers, that is
+
+39
+00:01:12.180 --> 00:01:15.660
+Request dot headers, okay, as
+
+40
+00:01:15.660 --> 00:01:18.390
+a key, that is Session id.
+
+41
+00:01:18.390 --> 00:01:20.590
+Let's say now what you can do is
+
+42
+00:01:20.590 --> 00:01:22.070
+you can write a logic, correct?
+
+43
+00:01:22.630 --> 00:01:23.590
+What is the logic?
+
+44
+00:01:23.590 --> 00:01:24.510
+You have to search
+
+45
+00:01:24.510 --> 00:01:25.550
+a session by the id.
+
+46
+00:01:25.550 --> 00:01:26.910
+So first thing first, if there
+
+47
+00:01:26.910 --> 00:01:27.910
+is no session id, that means
+
+48
+00:01:27.910 --> 00:01:29.590
+you are not logged in, right?
+
+49
+00:01:29.590 --> 00:01:31.910
+Return response status
+
+50
+00:01:31.910 --> 00:01:33.430
+code of unauthorized.
+
+51
+00:01:33.430 --> 00:01:36.070
+Okay, so what is the unauthorized
+
+52
+00:01:36.970 --> 00:01:38.230
+status code?
+
+53
+00:01:38.230 --> 00:01:40.910
+Unauthorized status code 401, right?
+
+54
+00:01:40.910 --> 00:01:43.910
+So you can just say 401 JSON
+
+55
+00:01:43.910 --> 00:01:47.270
+and and error that you are
+
+56
+00:01:47.270 --> 00:01:49.310
+not logged in because you
+
+57
+00:01:49.310 --> 00:01:50.950
+don't have a session id.
+
+58
+00:01:50.950 --> 00:01:53.350
+But if you do have a session id, I
+
+59
+00:01:53.350 --> 00:01:55.470
+want to search in the table, right?
+
+60
+00:01:55.470 --> 00:01:57.270
+So I'll just make a query.
+
+61
+00:01:57.270 --> 00:01:59.928
+Await, database.
+
+62
+00:01:59.928 --> 00:02:01.182
+Okay.
+
+63
+00:02:01.182 --> 00:02:04.030
+Select okay from which
+
+64
+00:02:04.030 --> 00:02:05.670
+particular table okay.
+
+65
+00:02:05.670 --> 00:02:07.070
+From which table that
+
+66
+00:02:07.070 --> 00:02:08.070
+is sessions table.
+
+67
+00:02:08.070 --> 00:02:09.350
+Okay, that's nice.
+
+68
+00:02:09.350 --> 00:02:12.120
+Okay, where you will just say table
+
+69
+00:02:12.680 --> 00:02:15.120
+equals okay, what that is
+
+70
+00:02:15.120 --> 00:02:20.040
+table.id is session id nice.
+
+71
+00:02:20.040 --> 00:02:20.840
+So what you are going
+
+72
+00:02:20.840 --> 00:02:22.840
+to basically select from here is id,
+
+73
+00:02:22.840 --> 00:02:26.120
+which is user sessions id.
+
+74
+00:02:26.120 --> 00:02:26.600
+Nice.
+
+75
+00:02:27.160 --> 00:02:29.160
+Now if this is not returning
+
+76
+00:02:29.160 --> 00:02:31.240
+something, if you are not
+
+77
+00:02:31.240 --> 00:02:32.680
+getting something that is const.
+
+78
+00:02:34.040 --> 00:02:35.880
+Let's just call it as data.
+
+79
+00:02:35.880 --> 00:02:37.920
+If there is no data, which basically
+
+80
+00:02:37.920 --> 00:02:39.440
+means that there is no session,
+
+81
+00:02:39.440 --> 00:02:40.840
+the session ID is invalid.
+
+82
+00:02:40.840 --> 00:02:42.280
+Again, you can just say this
+
+83
+00:02:42.280 --> 00:02:43.900
+particular thing, okay, that if
+
+84
+00:02:43.900 --> 00:02:45.820
+there is no data, okay, that
+
+85
+00:02:45.820 --> 00:02:46.820
+means you are not logged in.
+
+86
+00:02:46.820 --> 00:02:48.220
+This is an invalid session
+
+87
+00:02:48.220 --> 00:02:49.540
+ID you are sending me.
+
+88
+00:02:49.540 --> 00:02:51.100
+But if you get it, you want
+
+89
+00:02:51.100 --> 00:02:52.260
+to get the user information.
+
+90
+00:02:53.060 --> 00:02:54.660
+So if you know that you have
+
+91
+00:02:54.660 --> 00:02:56.420
+something known as user id
+
+92
+00:02:56.420 --> 00:03:00.420
+in the user sessions.user id, right?
+
+93
+00:03:00.420 --> 00:03:01.700
+So what you can do is you can
+
+94
+00:03:01.700 --> 00:03:03.980
+basically do a for lookup, right?
+
+95
+00:03:03.980 --> 00:03:06.740
+You can just say dot join.
+
+96
+00:03:07.380 --> 00:03:09.140
+Okay, you can just do a dot left
+
+97
+00:03:09.140 --> 00:03:10.540
+join, you can do a right join.
+
+98
+00:03:10.540 --> 00:03:12.140
+So let's just do a right join.
+
+99
+00:03:12.140 --> 00:03:13.940
+Okay, okay.
+
+100
+00:03:13.940 --> 00:03:15.020
+On what table?
+
+101
+00:03:15.020 --> 00:03:16.700
+On the users table.
+
+102
+00:03:16.700 --> 00:03:18.460
+On the users table.
+
+103
+00:03:18.460 --> 00:03:19.100
+Okay.
+
+104
+00:03:19.660 --> 00:03:20.060
+On.
+
+105
+00:03:20.700 --> 00:03:22.580
+Okay, how do you want to join it?
+
+106
+00:03:22.580 --> 00:03:23.740
+So you have to give the on
+
+107
+00:03:23.740 --> 00:03:26.460
+where users table.id.
+
+108
+00:03:28.300 --> 00:03:31.980
+okay, you can just say where equals
+
+109
+00:03:31.980 --> 00:03:34.300
+this particular thing to what thing?
+
+110
+00:03:34.300 --> 00:03:37.180
+That is user sessions.user ID.
+
+111
+00:03:37.180 --> 00:03:38.300
+So this is how you do a join.
+
+112
+00:03:38.940 --> 00:03:40.620
+Now technically you can get the name
+
+113
+00:03:40.620 --> 00:03:42.540
+of the user how you can just say
+
+114
+00:03:42.540 --> 00:03:45.300
+users table.name and you can also
+
+115
+00:03:45.300 --> 00:03:47.180
+get the email of the current user
+
+116
+00:03:47.180 --> 00:03:49.500
+that is Users table dot email.
+
+117
+00:03:49.500 --> 00:03:51.660
+So now this data contains everything.
+
+118
+00:03:51.660 --> 00:03:53.220
+So you can just say if you got
+
+119
+00:03:53.220 --> 00:03:54.700
+the data you can just say return
+
+120
+00:03:55.420 --> 00:03:57.540
+response JSON and you
+
+121
+00:03:57.540 --> 00:03:59.180
+can just send the data here.
+
+122
+00:03:59.180 --> 00:04:00.420
+Let's first give it a try
+
+123
+00:04:00.420 --> 00:04:01.740
+if everything is working.
+
+124
+00:04:01.740 --> 00:04:02.700
+So let's say this is my
+
+125
+00:04:02.700 --> 00:04:03.980
+session id, I'll just copy it.
+
+126
+00:04:04.550 --> 00:04:05.670
+Let's make a new request,
+
+127
+00:04:06.630 --> 00:04:07.870
+not a websocket request.
+
+128
+00:04:07.870 --> 00:04:09.830
+I want to make an HTTP get request
+
+129
+00:04:09.830 --> 00:04:12.230
+on HTTP user.
+
+130
+00:04:12.230 --> 00:04:14.350
+If I just make a request to this
+
+131
+00:04:14.350 --> 00:04:15.310
+particular route you can see
+
+132
+00:04:15.310 --> 00:04:17.110
+it says you are not logged in.
+
+133
+00:04:17.110 --> 00:04:19.029
+So I can just go into the headers.
+
+134
+00:04:19.029 --> 00:04:20.589
+Let's create a new header
+
+135
+00:04:20.589 --> 00:04:22.790
+of which name Session id.
+
+136
+00:04:22.790 --> 00:04:25.110
+So I can just say session
+
+137
+00:04:26.390 --> 00:04:29.190
+ID and value and send.
+
+138
+00:04:29.190 --> 00:04:30.690
+So you can see this is
+
+139
+00:04:30.690 --> 00:04:32.770
+the current logged in user.
+
+140
+00:04:32.770 --> 00:04:34.930
+If this was an invalid ID
+
+141
+00:04:35.570 --> 00:04:37.010
+let's say invalid ID you can
+
+142
+00:04:37.010 --> 00:04:38.250
+see you are not logged in.
+
+143
+00:04:38.250 --> 00:04:41.570
+Okay so one, so this is the current
+
+144
+00:04:41.570 --> 00:04:43.930
+logged in user and nice.
+
+145
+00:04:43.930 --> 00:04:45.170
+So now you can see that how
+
+146
+00:04:45.170 --> 00:04:46.210
+you can basically save
+
+147
+00:04:46.210 --> 00:04:47.810
+the current logged in user.
+
+148
+00:04:47.810 --> 00:04:50.610
+Now let's say I have one more route
+
+149
+00:04:50.610 --> 00:04:51.930
+that is a private route.
+
+150
+00:04:51.930 --> 00:04:54.050
+Okay, so let's say
+
+151
+00:04:54.050 --> 00:04:55.290
+I have a update route.
+
+152
+00:04:55.290 --> 00:04:56.210
+Let's say user wants
+
+153
+00:04:56.210 --> 00:04:57.730
+to update his some information.
+
+154
+00:04:57.730 --> 00:05:00.230
+So it's a patch request.
+
+155
+00:05:00.230 --> 00:05:04.110
+Okay, let's say router.patch/async
+
+156
+00:05:04.110 --> 00:05:06.990
+request and response.
+
+157
+00:05:06.990 --> 00:05:08.310
+And what you want to do is you want
+
+158
+00:05:08.310 --> 00:05:09.470
+to basically update something
+
+159
+00:05:09.470 --> 00:05:11.110
+from the current logged in user.
+
+160
+00:05:11.110 --> 00:05:11.830
+So let's say he wants
+
+161
+00:05:11.830 --> 00:05:12.590
+to update his name.
+
+162
+00:05:12.590 --> 00:05:13.870
+So request body.
+
+163
+00:05:13.870 --> 00:05:14.950
+So let's say name is
+
+164
+00:05:14.950 --> 00:05:16.350
+something he wants to update.
+
+165
+00:05:16.910 --> 00:05:19.150
+Now here is a problem right as
+
+166
+00:05:19.150 --> 00:05:21.150
+Soon as you update the name you
+
+167
+00:05:21.150 --> 00:05:22.470
+want to see if the current
+
+168
+00:05:22.470 --> 00:05:23.990
+logged in user is who so you
+
+169
+00:05:23.990 --> 00:05:25.820
+have to repeat this code, is
+
+170
+00:05:25.820 --> 00:05:26.780
+that correct?
+
+171
+00:05:26.780 --> 00:05:28.700
+So that means if you have a lot
+
+172
+00:05:28.700 --> 00:05:30.300
+of routes, which has some
+
+173
+00:05:30.300 --> 00:05:31.540
+private information, you want
+
+174
+00:05:31.540 --> 00:05:33.020
+the information about the user,
+
+175
+00:05:33.020 --> 00:05:35.060
+you have to repeat this piece
+
+176
+00:05:35.060 --> 00:05:36.420
+of code, which is not a correct
+
+177
+00:05:36.420 --> 00:05:36.940
+thing.
+
+178
+00:05:36.940 --> 00:05:38.140
+So in Express, what you can
+
+179
+00:05:38.140 --> 00:05:39.220
+do is you can basically create
+
+180
+00:05:39.220 --> 00:05:41.499
+a middleware, a middleware,
+
+181
+00:05:41.499 --> 00:05:43.180
+okay, which always runs.
+
+182
+00:05:43.180 --> 00:05:45.740
+This middleware is responsible for
+
+183
+00:05:45.740 --> 00:05:48.980
+fetching the session and keeping it
+
+184
+00:05:48.980 --> 00:05:51.100
+in the data of the session and then
+
+185
+00:05:51.100 --> 00:05:52.620
+forward the request to the route.
+
+186
+00:05:53.180 --> 00:05:53.540
+Got it.
+
+187
+00:05:53.540 --> 00:05:55.300
+Now so what we can do is this
+
+188
+00:05:55.300 --> 00:05:56.900
+middleware can do the database
+
+189
+00:05:56.900 --> 00:06:00.100
+operation and on the request it
+
+190
+00:06:00.100 --> 00:06:02.460
+can create a new object named as
+
+191
+00:06:02.460 --> 00:06:03.860
+user, which is basically the
+
+192
+00:06:03.860 --> 00:06:05.940
+current logged in user, and then
+
+193
+00:06:05.940 --> 00:06:07.620
+forward the request to the
+
+194
+00:06:07.620 --> 00:06:09.260
+appropriate handler.
+
+195
+00:06:09.820 --> 00:06:12.460
+That means if I go here,
+
+196
+00:06:12.460 --> 00:06:14.380
+what I could basically do is I
+
+197
+00:06:14.380 --> 00:06:16.900
+can create a middleware app.
+
+198
+00:06:16.900 --> 00:06:20.300
+Use an async function.
+
+199
+00:06:21.100 --> 00:06:22.580
+Okay, so this basically
+
+200
+00:06:22.580 --> 00:06:24.540
+has request response.
+
+201
+00:06:24.540 --> 00:06:26.260
+And next, see what I
+
+202
+00:06:26.260 --> 00:06:27.380
+could basically do here.
+
+203
+00:06:27.380 --> 00:06:29.660
+Okay, I'll just copy paste the code
+
+204
+00:06:29.660 --> 00:06:32.540
+first, try to take the session id.
+
+205
+00:06:33.420 --> 00:06:35.059
+If there is no session id,
+
+206
+00:06:35.059 --> 00:06:36.420
+that means there is no user.
+
+207
+00:06:36.420 --> 00:06:37.780
+Just call the next function.
+
+208
+00:06:37.780 --> 00:06:38.300
+Right?
+
+209
+00:06:38.300 --> 00:06:39.380
+Because next function can
+
+210
+00:06:39.380 --> 00:06:40.940
+decide whether it wants
+
+211
+00:06:40.940 --> 00:06:42.380
+to process that request or not.
+
+212
+00:06:42.380 --> 00:06:43.580
+So I can just say a return.
+
+213
+00:06:45.030 --> 00:06:46.550
+But if there is a session id,
+
+214
+00:06:46.550 --> 00:06:47.590
+what do you want to do?
+
+215
+00:06:47.590 --> 00:06:49.390
+You want to query that session.
+
+216
+00:06:49.390 --> 00:06:50.750
+So I can just do a copy
+
+217
+00:06:50.750 --> 00:06:52.310
+of this particular code, right?
+
+218
+00:06:52.310 --> 00:06:53.310
+And paste it here.
+
+219
+00:06:53.310 --> 00:06:54.630
+Now here is a problem.
+
+220
+00:06:54.630 --> 00:06:56.630
+These things need to be imported.
+
+221
+00:06:56.630 --> 00:06:57.310
+So don't forget
+
+222
+00:06:57.310 --> 00:06:58.630
+to import these things.
+
+223
+00:06:58.630 --> 00:07:00.470
+Okay, that is db.
+
+224
+00:07:00.470 --> 00:07:02.710
+So this is just one level up, the db.
+
+225
+00:07:02.710 --> 00:07:04.950
+And you also want to import
+
+226
+00:07:04.950 --> 00:07:06.550
+this thing and this thing.
+
+227
+00:07:06.550 --> 00:07:09.590
+Copy, paste and this thing.
+
+228
+00:07:09.590 --> 00:07:10.490
+Nice.
+
+229
+00:07:10.490 --> 00:07:12.650
+Okay, so that means you got the data.
+
+230
+00:07:13.370 --> 00:07:15.490
+Now what you can do is if there
+
+231
+00:07:15.490 --> 00:07:20.010
+is no data, if there is no data,
+
+232
+00:07:20.010 --> 00:07:21.130
+okay, so that means,
+
+233
+00:07:21.920 --> 00:07:23.850
+where is this ending somewhat here.
+
+234
+00:07:23.850 --> 00:07:25.570
+If there is no data again, you
+
+235
+00:07:25.570 --> 00:07:26.850
+can just call the next function
+
+236
+00:07:26.850 --> 00:07:28.410
+without doing anything much.
+
+237
+00:07:28.410 --> 00:07:29.970
+But if you got the data, you
+
+238
+00:07:29.970 --> 00:07:32.330
+can just say request dot.
+
+239
+00:07:32.330 --> 00:07:34.250
+You can add a new property, user,
+
+240
+00:07:34.810 --> 00:07:35.610
+which is basically
+
+241
+00:07:35.610 --> 00:07:36.830
+this particular data.
+
+242
+00:07:36.830 --> 00:07:37.150
+Okay?
+
+243
+00:07:37.150 --> 00:07:39.070
+Request user as data and then
+
+244
+00:07:39.070 --> 00:07:40.510
+call the next function.
+
+245
+00:07:40.510 --> 00:07:41.870
+So technically what is happening
+
+246
+00:07:41.870 --> 00:07:44.030
+here is if the data is
+
+247
+00:07:44.030 --> 00:07:45.270
+there, the request will have
+
+248
+00:07:45.270 --> 00:07:46.950
+a new property, that is user.
+
+249
+00:07:46.950 --> 00:07:49.070
+So that means if the user is actually
+
+250
+00:07:49.070 --> 00:07:51.430
+logged in, request user will
+
+251
+00:07:51.430 --> 00:07:54.190
+be added to the current request.
+
+252
+00:07:54.190 --> 00:07:56.950
+That means now I don't have
+
+253
+00:07:56.950 --> 00:07:58.830
+to do all this stuff.
+
+254
+00:07:58.830 --> 00:08:00.670
+Okay, What I can just do is
+
+255
+00:08:00.670 --> 00:08:01.870
+to get the current logged
+
+256
+00:08:01.870 --> 00:08:04.010
+in user, I can just say const
+
+257
+00:08:04.010 --> 00:08:06.250
+user equals to request user.
+
+258
+00:08:06.250 --> 00:08:06.890
+That's it.
+
+259
+00:08:07.530 --> 00:08:09.090
+If there is no user, I
+
+260
+00:08:09.090 --> 00:08:09.970
+want to return this.
+
+261
+00:08:09.970 --> 00:08:10.770
+So that means this
+
+262
+00:08:10.770 --> 00:08:12.250
+logic has been removed.
+
+263
+00:08:12.250 --> 00:08:13.810
+I don't want to query anything.
+
+264
+00:08:13.810 --> 00:08:14.170
+Right.
+
+265
+00:08:14.170 --> 00:08:17.330
+And then if the user is
+
+266
+00:08:17.330 --> 00:08:18.570
+there, you just return this.
+
+267
+00:08:18.570 --> 00:08:19.290
+That's it.
+
+268
+00:08:19.290 --> 00:08:20.690
+Because you have moved that
+
+269
+00:08:20.690 --> 00:08:23.210
+particular logic to the middleware,
+
+270
+00:08:23.210 --> 00:08:24.050
+let's make sure if
+
+271
+00:08:24.050 --> 00:08:24.890
+everything is working.
+
+272
+00:08:24.890 --> 00:08:27.210
+Yes, everything is working fine.
+
+273
+00:08:27.210 --> 00:08:27.650
+Got it.
+
+274
+00:08:27.650 --> 00:08:28.250
+Now.
+
+275
+00:08:28.250 --> 00:08:30.250
+Now, if you want to update something,
+
+276
+00:08:30.250 --> 00:08:32.460
+first, you can basically check if
+
+277
+00:08:32.460 --> 00:08:34.580
+that particular user exists or not.
+
+278
+00:08:34.580 --> 00:08:35.419
+That's it.
+
+279
+00:08:35.419 --> 00:08:37.500
+But if that user exists,
+
+280
+00:08:37.500 --> 00:08:38.900
+of course you want the user id.
+
+281
+00:08:38.900 --> 00:08:39.820
+So here is a problem.
+
+282
+00:08:40.380 --> 00:08:43.020
+So this is basically your session ID.
+
+283
+00:08:43.020 --> 00:08:44.179
+This is basically your
+
+284
+00:08:44.179 --> 00:08:46.300
+session ID, not the user ID.
+
+285
+00:08:46.300 --> 00:08:48.380
+So you might want to say where
+
+286
+00:08:48.380 --> 00:08:50.780
+table.session ID and ID should be.
+
+287
+00:08:50.780 --> 00:08:53.900
+Basically, user table ID.
+
+288
+00:08:54.940 --> 00:08:58.460
+Okay, so user table.it nice.
+
+289
+00:08:59.020 --> 00:09:00.340
+So now what you can do is you can
+
+290
+00:09:00.340 --> 00:09:02.500
+just say to update something.
+
+291
+00:09:02.500 --> 00:09:06.580
+I can just say await DB dot update.
+
+292
+00:09:07.300 --> 00:09:08.580
+Okay, which table do
+
+293
+00:09:08.580 --> 00:09:09.260
+you want to update?
+
+294
+00:09:09.260 --> 00:09:12.820
+I want to update the users table dot.
+
+295
+00:09:12.820 --> 00:09:13.940
+Okay, set.
+
+296
+00:09:14.500 --> 00:09:15.460
+What do you want to set?
+
+297
+00:09:15.460 --> 00:09:16.580
+I want to set the name.
+
+298
+00:09:17.139 --> 00:09:18.380
+Okay, but where do you
+
+299
+00:09:18.380 --> 00:09:19.260
+want to set the name?
+
+300
+00:09:19.260 --> 00:09:21.700
+Okay, you can just say aware, where.
+
+301
+00:09:21.700 --> 00:09:22.740
+Now this is very important.
+
+302
+00:09:22.740 --> 00:09:26.260
+Equals user table.id
+
+303
+00:09:26.970 --> 00:09:30.290
+is actually equals to request user.
+
+304
+00:09:30.290 --> 00:09:32.250
+That is user.id.
+
+305
+00:09:32.250 --> 00:09:33.090
+so this is basically
+
+306
+00:09:33.090 --> 00:09:34.730
+request users current id.
+
+307
+00:09:34.730 --> 00:09:35.210
+That's it.
+
+308
+00:09:35.210 --> 00:09:36.930
+So you update it and then you
+
+309
+00:09:36.930 --> 00:09:39.450
+can just say return response.JSON
+
+310
+00:09:39.450 --> 00:09:41.610
+saying status success.
+
+311
+00:09:42.810 --> 00:09:43.690
+That's it.
+
+312
+00:09:43.690 --> 00:09:44.970
+Okay, so this is taking care
+
+313
+00:09:44.970 --> 00:09:46.650
+of the, authentication
+
+314
+00:09:46.650 --> 00:09:48.890
+using the middleware function.
+
+315
+00:09:48.890 --> 00:09:51.170
+So now if I go back and I'm trying
+
+316
+00:09:51.170 --> 00:09:53.280
+to make a get request first,
+
+317
+00:09:53.280 --> 00:09:54.360
+you can see that, yes, I am
+
+318
+00:09:54.360 --> 00:09:56.080
+getting everything that is nice.
+
+319
+00:09:56.080 --> 00:09:58.480
+Now if I do a patch request,
+
+320
+00:09:59.200 --> 00:10:02.640
+okay, on the body raw JSON.
+
+321
+00:10:03.280 --> 00:10:04.640
+Okay, So I can just
+
+322
+00:10:04.640 --> 00:10:06.240
+update my name, right?
+
+323
+00:10:06.240 --> 00:10:07.880
+So from piyushkar, let's
+
+324
+00:10:07.880 --> 00:10:08.880
+make it as piyush.
+
+325
+00:10:09.520 --> 00:10:10.880
+Send success.
+
+326
+00:10:11.440 --> 00:10:13.440
+Now if I make a get request
+
+327
+00:10:13.440 --> 00:10:14.760
+and send, you can see my name
+
+328
+00:10:14.760 --> 00:10:16.080
+is now updated, as piyush.
+
+329
+00:10:16.080 --> 00:10:18.240
+So that means even in the database,
+
+330
+00:10:18.240 --> 00:10:19.400
+okay, if I go into
+
+331
+00:10:19.400 --> 00:10:21.120
+the users, it is now piyush.
+
+332
+00:10:21.120 --> 00:10:22.480
+Okay, let's make it Piyush.
+
+333
+00:10:22.480 --> 00:10:24.480
+Garg again PiyushGarg.
+
+334
+00:10:25.880 --> 00:10:29.120
+Sorry, it's a patch send success.
+
+335
+00:10:29.120 --> 00:10:30.400
+If you try to now get, you
+
+336
+00:10:30.400 --> 00:10:31.680
+are getting piyushkarg.
+
+337
+00:10:31.680 --> 00:10:32.880
+So if I do a refresh.
+
+338
+00:10:34.240 --> 00:10:36.800
+Yeah, you can see it's now piyushkar.
+
+339
+00:10:36.800 --> 00:10:38.240
+So this is how it is updating.
+
+340
+00:10:38.240 --> 00:10:38.760
+Got it.
+
+341
+00:10:38.760 --> 00:10:40.840
+Now, so this middleware is basically
+
+342
+00:10:40.840 --> 00:10:43.600
+taking care of the authentication.
+
+343
+00:10:43.600 --> 00:10:45.000
+So now this is basically what this
+
+344
+00:10:45.000 --> 00:10:46.480
+is session based authentication.
+
+345
+00:10:46.480 --> 00:10:47.880
+The problem with the session
+
+346
+00:10:47.880 --> 00:10:49.480
+based authentication is
+
+347
+00:10:49.480 --> 00:10:51.390
+this, that on every request
+
+348
+00:10:51.390 --> 00:10:53.550
+you are making a database call.
+
+349
+00:10:53.550 --> 00:10:54.590
+Do you see that?
+
+350
+00:10:54.590 --> 00:10:56.430
+On every request you are
+
+351
+00:10:56.430 --> 00:10:57.630
+making a database call.
+
+352
+00:10:57.630 --> 00:10:59.430
+So just imagine if user is
+
+353
+00:10:59.430 --> 00:11:01.030
+repetitively making request, you
+
+354
+00:11:01.030 --> 00:11:02.630
+are actually doing a database
+
+355
+00:11:02.630 --> 00:11:04.590
+operation on every request
+
+356
+00:11:04.590 --> 00:11:06.830
+to exchange the session ID
+
+357
+00:11:06.830 --> 00:11:08.190
+with the user's information.
+
+358
+00:11:08.910 --> 00:11:10.830
+So that means this particular
+
+359
+00:11:10.830 --> 00:11:12.510
+middleware which is always running,
+
+360
+00:11:12.510 --> 00:11:13.350
+where is that middleware?
+
+361
+00:11:13.350 --> 00:11:14.470
+Yeah, this is a very
+
+362
+00:11:14.470 --> 00:11:15.550
+expensive operation.
+
+363
+00:11:16.100 --> 00:11:17.660
+For every request you are making
+
+364
+00:11:17.660 --> 00:11:19.380
+a database call, which is
+
+365
+00:11:19.380 --> 00:11:20.740
+causing multiple problems.
+
+366
+00:11:20.740 --> 00:11:22.140
+Problem number one, you are
+
+367
+00:11:22.140 --> 00:11:22.980
+making a lot of calls
+
+368
+00:11:22.980 --> 00:11:24.220
+to the database, which makes
+
+369
+00:11:24.220 --> 00:11:25.820
+the database overwhelmed.
+
+370
+00:11:25.820 --> 00:11:27.300
+Second problem is you are
+
+371
+00:11:27.300 --> 00:11:28.940
+adding a latency, right?
+
+372
+00:11:28.940 --> 00:11:30.580
+Because it's a database operation.
+
+373
+00:11:30.580 --> 00:11:32.620
+In reality your database is running
+
+374
+00:11:32.620 --> 00:11:33.940
+on a different server.
+
+375
+00:11:33.940 --> 00:11:35.180
+So you are basically going
+
+376
+00:11:35.180 --> 00:11:36.420
+to a database, getting
+
+377
+00:11:36.420 --> 00:11:37.780
+the session information and then
+
+378
+00:11:37.780 --> 00:11:39.140
+processing the request.
+
+379
+00:11:39.140 --> 00:11:40.740
+So that means there is always
+
+380
+00:11:40.740 --> 00:11:43.610
+an added latency, added some
+
+381
+00:11:43.610 --> 00:11:45.330
+processing time to every request.
+
+382
+00:11:45.330 --> 00:11:46.850
+Your every request will be slow
+
+383
+00:11:46.850 --> 00:11:49.450
+because request came, you have first
+
+384
+00:11:49.450 --> 00:11:50.370
+do the session thing
+
+385
+00:11:50.370 --> 00:11:52.250
+in the database and then you have
+
+386
+00:11:52.250 --> 00:11:53.930
+to again do database operation
+
+387
+00:11:53.930 --> 00:11:55.130
+for some other thing.
+
+388
+00:11:55.130 --> 00:11:56.690
+So that means this particular thing
+
+389
+00:11:56.690 --> 00:11:59.850
+is making database call on every
+
+390
+00:11:59.850 --> 00:12:02.250
+request, thus making every request
+
+391
+00:12:02.250 --> 00:12:04.490
+slow and overwhelming the database.
+
+392
+00:12:04.490 --> 00:12:06.090
+But it is more secure, right?
+
+393
+00:12:06.090 --> 00:12:07.250
+Because every time you are
+
+394
+00:12:07.250 --> 00:12:08.570
+making a database call.
+
+395
+00:12:08.570 --> 00:12:10.290
+So what I could ideally do is
+
+396
+00:12:10.290 --> 00:12:12.210
+now if I go back and I just
+
+397
+00:12:12.210 --> 00:12:13.890
+delete the session, see, if I
+
+398
+00:12:13.890 --> 00:12:15.330
+go into the sessions and I
+
+399
+00:12:15.330 --> 00:12:16.650
+delete this particular entry,
+
+400
+00:12:16.650 --> 00:12:18.010
+as soon as I delete now, you're
+
+401
+00:12:18.010 --> 00:12:18.530
+logged out.
+
+402
+00:12:18.530 --> 00:12:18.930
+See.
+
+403
+00:12:18.930 --> 00:12:22.210
+So that means banking systems where
+
+404
+00:12:22.210 --> 00:12:24.130
+the security is important,
+
+405
+00:12:24.130 --> 00:12:26.050
+they use this session based thing.
+
+406
+00:12:26.050 --> 00:12:27.210
+So with this particular
+
+407
+00:12:27.210 --> 00:12:28.730
+approach you can even detect
+
+408
+00:12:28.730 --> 00:12:30.050
+where all he is logged in.
+
+409
+00:12:30.050 --> 00:12:32.290
+You can invoke revoke a session.
+
+410
+00:12:32.290 --> 00:12:33.690
+So technically you can do a lot
+
+411
+00:12:33.690 --> 00:12:34.730
+of things here, right?
+
+412
+00:12:34.730 --> 00:12:35.890
+So this is basically your
+
+413
+00:12:35.890 --> 00:12:37.250
+session based authentication.
+
+414
+00:12:37.830 --> 00:12:39.030
+Now in the next particular video
+
+415
+00:12:39.030 --> 00:12:40.190
+we are going to see how we
+
+416
+00:12:40.190 --> 00:12:42.310
+can make a stateless authentication
+
+417
+00:12:42.310 --> 00:12:43.750
+using JSON web tokens.
+
+418
+00:12:43.750 --> 00:12:46.390
+And we can reduce this overhead.
+
+419
+00:12:46.390 --> 00:12:48.710
+This always making an API call or
+
+420
+00:12:48.710 --> 00:12:50.470
+making a query to the database
+
+421
+00:12:50.470 --> 00:12:52.950
+more faster by not making it.
+
+422
+00:12:52.950 --> 00:12:55.230
+So we will see how JSON web token
+
+423
+00:12:55.230 --> 00:12:56.630
+solves this particular problem.

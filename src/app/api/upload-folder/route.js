@@ -1,6 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
-import { writeFile, mkdir, readFile } from "fs/promises";
-import { existsSync } from "fs";
+import { NextResponse } from "next/server";
+import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 
 export const dynamic = "force-dynamic";
@@ -17,13 +16,11 @@ export async function POST(request) {
 
     console.log(`[UPLOAD] Processing ${files.length} files`);
 
-    // Create data directory structure
-    const dataDir = path.join(process.cwd(), "data");
-    const rawDir = path.join(dataDir, "raw");
-    const processedDir = path.join(dataDir, "processed");
+    const baseDir = "/tmp/data";
+    const rawDir = path.join(baseDir, "raw");
+    const processedDir = path.join(baseDir, "processed");
 
     // Ensure directories exist
-    await mkdir(dataDir, { recursive: true });
     await mkdir(rawDir, { recursive: true });
     await mkdir(processedDir, { recursive: true });
 
@@ -35,12 +32,11 @@ export async function POST(request) {
     const courseStructure = {};
     const parsedDocuments = [];
 
-    // Process each uploaded file
     for (let i = 0; i < files.length; i++) {
       const file = files[i];
       const relativePath = paths[i] || file.name;
 
-      // Only process SRT and VTT files
+      // Only process subtitle files (SRT/VTT)
       if (!relativePath.match(/\.(srt|vtt)$/i)) {
         console.log(`[UPLOAD] Skipping non-subtitle file: ${relativePath}`);
         continue;
@@ -48,66 +44,52 @@ export async function POST(request) {
 
       console.log(`[UPLOAD] Processing: ${relativePath}`);
 
-      // Extract course structure from path
-      const pathParts = relativePath.split("/").filter(part => part.length > 0);
+      // Extract course/chapter info from path
+      const pathParts = relativePath.split("/").filter(Boolean);
       const course = pathParts[0] || "Unknown Course";
       const chapter = pathParts[1] || "Unknown Chapter";
       const filename = pathParts[pathParts.length - 1];
 
-      // Create directory structure
+      // Create full file path
       const filePath = path.join(sessionDir, relativePath);
       const fileDir = path.dirname(filePath);
+      await mkdir(fileDir, { recursive: true });
 
-      if (!existsSync(fileDir)) {
-        await mkdir(fileDir, { recursive: true });
-      }
-
-      // Write file to disk
+      // Write file to /tmp
       const bytes = await file.arrayBuffer();
       const buffer = Buffer.from(bytes);
       await writeFile(filePath, buffer);
 
-      // Parse subtitle content
+      // Parse subtitle content (use your parseSubtitleFile method)
       const content = buffer.toString("utf-8");
       const cleanedContent = parseSubtitleFile(content, relativePath);
 
       if (cleanedContent.trim()) {
-        // Create document entry
-        const documentId = `${course}_${chapter}_${filename}`.replace(
-          /[^a-zA-Z0-9_]/g,
-          "_"
-        );
+        const documentId = `${course}_${chapter}_${filename}`.replace(/[^a-zA-Z0-9_]/g, "_");
 
         parsedDocuments.push({
           id: documentId,
           content: cleanedContent,
           metadata: {
-            course: course,
-            chapter: chapter,
-            filename: filename,
+            course,
+            chapter,
+            filename,
             originalPath: relativePath,
             type: path.extname(filename).toLowerCase(),
           },
         });
 
-        // Track course structure
-        if (!courseStructure[course]) {
-          courseStructure[course] = {};
-        }
-        if (!courseStructure[course][chapter]) {
-          courseStructure[course][chapter] = [];
-        }
+        // Build course structure map
+        courseStructure[course] = courseStructure[course] || {};
+        courseStructure[course][chapter] = courseStructure[course][chapter] || [];
         courseStructure[course][chapter].push(filename);
       }
 
       processedFiles++;
     }
 
-    // Save parsed documents
-    const documentsPath = path.join(
-      processedDir,
-      `documents_${sessionId}.json`
-    );
+    // Save parsed documents JSON in /tmp processed dir
+    const documentsPath = path.join(processedDir, `documents_${sessionId}.json`);
     await writeFile(documentsPath, JSON.stringify(parsedDocuments, null, 2));
 
     console.log(`[UPLOAD] Successfully processed ${processedFiles} files`);
@@ -117,84 +99,54 @@ export async function POST(request) {
       success: true,
       filesProcessed: processedFiles,
       documentsGenerated: parsedDocuments.length,
-      sessionId: sessionId,
-      courseStructure: courseStructure,
-      documentsPath: documentsPath,
+      sessionId,
+      courseStructure,
+      documentsPath,
     });
   } catch (error) {
     console.error("[UPLOAD ERROR]", error);
-    return NextResponse.json(
-      { error: "Upload processing failed", details: error.message },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Upload processing failed", details: error.message }, { status: 500 });
   }
 }
 
-// 🔥 ENHANCED parseSubtitleFile function with better number removal
+// Example parseSubtitleFile function (reuse your existing enhanced version)
 function parseSubtitleFile(content, filename) {
   try {
     let cleanText = "";
 
     if (filename.toLowerCase().endsWith(".srt")) {
-      // Parse SRT format
-      const subtitleBlocks = content
-        .split("\n\n")
-        .filter(block => block.trim());
-
+      const subtitleBlocks = content.split("\n\n").filter(block => block.trim());
       for (const block of subtitleBlocks) {
         const lines = block.split("\n");
         if (lines.length >= 3) {
-          // Skip sequence number and timestamp, get text content
           const textLines = lines.slice(2);
           const text = textLines.join(" ").trim();
-          if (text) {
-            cleanText += text + " ";
-          }
+          if (text) cleanText += text + " ";
         }
       }
     } else if (filename.toLowerCase().endsWith(".vtt")) {
-      // Parse VTT format
       const lines = content.split("\n");
       let inTextBlock = false;
-
       for (const line of lines) {
         const trimmedLine = line.trim();
-
-        // Skip WebVTT header and metadata
-        if (
-          trimmedLine.startsWith("WEBVTT") ||
-          trimmedLine.startsWith("NOTE") ||
-          trimmedLine === ""
-        ) {
-          continue;
-        }
-
-        // Skip timestamp lines
-        if (trimmedLine.includes("-->")) {
-          inTextBlock = true;
-          continue;
-        }
-
-        // Collect text content
-        if (inTextBlock && trimmedLine) {
-          cleanText += trimmedLine + " ";
-        }
+        if (trimmedLine.startsWith("WEBVTT") || trimmedLine.startsWith("NOTE") || trimmedLine === "") continue;
+        if (trimmedLine.includes("-->")) { inTextBlock = true; continue; }
+        if (inTextBlock && trimmedLine) cleanText += trimmedLine + " ";
       }
     }
 
-    // 🔥 ENHANCED CLEANING: Remove all unwanted elements
     return cleanText
-      .replace(/\[.*?\]/g, "") // Remove stage directions [music], [applause]
-      .replace(/\(.*?\)/g, "") // Remove parenthetical notes (pause), (clears throat)
-      .replace(/\b\d+\s+/g, "") // 🔥 NEW: Remove standalone numbers (1, 2, 3, 4, etc.)
-      .replace(/^\d+\s*/gm, "") // 🔥 NEW: Remove numbers at start of lines
-      .replace(/\s+\d+\s+/g, " ") // 🔥 NEW: Remove numbers between words
-      .replace(/\d+\./g, "") // 🔥 NEW: Remove numbered lists (1., 2., 3.)
-      .replace(/\s+/g, " ") // Normalize whitespace
-      .replace(/\s+([.!?])/g, "$1") // Fix punctuation spacing
-      .replace(/\s*,\s*/g, ", ") // Fix comma spacing
-      .replace(/\s*\.\s*/g, ". ") // Fix period spacing
-      .replace(/^\s+|\s+$/g, "") // Trim start and end
+      .replace(/\[.*?\]/g, "")
+      .replace(/\(.*?\)/g, "")
+      .replace(/\b\d+\s+/g, "")
+      .replace(/^\d+\s*/gm, "")
+      .replace(/\s+\d+\s+/g, " ")
+      .replace(/\d+\./g, "")
+      .replace(/\s+/g, " ")
+      .replace(/\s+([.!?])/g, "$1")
+      .replace(/\s*,\s*/g, ", ")
+      .replace(/\s*\.\s*/g, ". ")
+      .replace(/^\s+|\s+$/g, "")
       .trim();
   } catch (error) {
     console.error(`[PARSE ERROR] Failed to parse ${filename}:`, error);
