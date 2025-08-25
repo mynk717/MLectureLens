@@ -181,7 +181,11 @@ export default function Chat() {
                 />
               </div>
               <div>
-                <h1 className="text-3xl font-bold">MLectureLens</h1>
+                <img
+          src="/MLectureLens Logo.png"
+          alt="MLectureLens Logo"
+          className="w-76 h-16 object-contain drop-shadow-lg rounded-xl "
+        />
                 <p className="text-blue-100 text-base">🌟 A fan of Hitesh Sir - Learn Node.js and Python with course insights</p>
               </div>
             </div>
